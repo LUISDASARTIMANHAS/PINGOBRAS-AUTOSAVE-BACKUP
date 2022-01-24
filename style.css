@@ -54,6 +54,7 @@ to this section's matching END comment to see page-specific styles.
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
+  space: 4rem;
   height: 4rem;
   align-items: center;
   cursor: pointer;
@@ -64,6 +65,7 @@ to this section's matching END comment to see page-specific styles.
   text-decoration: none;
   color: #000000;
   white-space: nowrap;
+  margin-height: auto;
   margin-left: 30rem;
 }
 .btn--remix img {
