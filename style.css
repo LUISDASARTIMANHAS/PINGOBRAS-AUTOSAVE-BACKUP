@@ -54,11 +54,11 @@ to this section's matching END comment to see page-specific styles.
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
-  height: 2.75rem;
+  height: 3rem;
   align-items: center;
   cursor: pointer;
   background: #B9BBBE;
-  border: 2px solid #000000;
+  border: 5px solid #000000;
   box-sizing: border-box;
   border-radius: 100px;
   text-decoration: none;
@@ -106,6 +106,75 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
+.btnlogin {
+
+  font-family: HK Grotesk;
+
+  padding: 0.75rem 1rem;
+
+  font-size: 1.1rem;
+
+  line-height: 1rem;
+
+  font-weight: 500;
+
+  height: 5rem;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  background: #00FF00;
+
+  border: 5px solid #000000;
+
+  box-sizing: border-box;
+
+  border-radius: 100px;
+
+  text-decoration: none;
+
+  color: #000000;
+
+  white-space: nowrap;
+
+  margin-left: auto;
+
+}
+
+.btnlogin img {
+
+  margin-right: auto;
+
+}
+
+.btnlogin:hover {
+
+  background-color: #D0FFF1;
+
+}
+
+/* Navigation grid */
+
+.footerlogin {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 1rem auto 0;
+
+  padding: 1rem 0 0.75rem 0;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+
+  border-top: 4px solid #fff;
+
+}
+
+
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
