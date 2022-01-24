@@ -58,16 +58,16 @@ to this section's matching END comment to see page-specific styles.
   align-items: center;
   cursor: pointer;
   background: #B9BBBE;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 100px;
   text-decoration: none;
   color: #000000;
   white-space: nowrap;
   margin-left: auto;
 }
 .btn--remix img {
-  margin-right: 0.5rem;
+  margin-right: auto;
 }
 .btn--remix:hover {
   background-color: #D0FFF1;
