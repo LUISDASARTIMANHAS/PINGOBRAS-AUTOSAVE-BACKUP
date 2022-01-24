@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #FFFFFF;
+  --color-bg: #B9BBBE;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
@@ -132,7 +132,7 @@ a:not(.btn--remix):visited {
 
   box-sizing: border-box;
 
-  border-radius: 100px;
+  border-radius: 0px;
 
   text-decoration: none;
 
@@ -140,7 +140,7 @@ a:not(.btn--remix):visited {
 
   white-space: nowrap;
 
-  margin-left: -30rem;
+  margin-left: -1rem;
 
 }
 
@@ -166,13 +166,13 @@ a:not(.btn--remix):visited {
 
   margin: 1rem auto 0;
 
-  padding: 1rem 0 0.75rem 0;
+  padding: 0rem 0 0rem 0;
 
   width: 100%;
 
   flex-wrap: wrap;
 
-  border-top: 4px solid #fff;
+  border-top: 4px solid #000000;
 
 }
 
@@ -202,7 +202,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #818689;
+  color: #00000;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
