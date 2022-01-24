@@ -57,7 +57,7 @@ to this section's matching END comment to see page-specific styles.
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #0000FF;
+  background: #B9BBBE;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -131,7 +131,7 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color: #818689;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
