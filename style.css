@@ -24,6 +24,10 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
+  --max-width: 390px;
+  --min-height: 180px;
+  max-width:390px;
+  min-height:180px;
 }
 
 /* Basic page style resets */
