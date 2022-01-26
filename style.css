@@ -20,8 +20,8 @@ to this section's matching END comment to see page-specific styles.
   --color-text-main: #000000;
   --color-primary: #FFFF00;
   --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
+  --image-max-width: 400px;
+  --image-margin: 1rem;
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
 }
@@ -202,12 +202,12 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #00000;
+  color: #000000;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
+  font-size: 60px;
+  line-height: 100%;
   margin: 0;
 }
 
