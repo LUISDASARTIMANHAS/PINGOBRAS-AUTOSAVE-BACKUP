@@ -52,7 +52,7 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .btn--remix {
   font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
+  padding: 5px;
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
@@ -60,12 +60,13 @@ to this section's matching END comment to see page-specific styles.
   align-items: center;
   cursor: pointer;
   background: #FFFFFF;
-  border: 1px solid #000000;
+  border: 1px solid black;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 10px;
   text-decoration: none;
   color: #000000;
   white-space: nowrap;
+  margin-left: auto;
 }
 .btn--remix img {
   margin-right: auto;
@@ -112,7 +113,7 @@ a:not(.btn--remix):visited {
 
   padding: 5px;
 
-  font-size: 3rem;
+  font-size: 1.1rem;
 
   line-height: 1rem;
 
@@ -126,7 +127,7 @@ a:not(.btn--remix):visited {
 
   background: #0099FF;
 
-  border: 5px solid #000000;
+  border: 5px solid black;
 
   box-sizing: border-box;
 
@@ -138,7 +139,7 @@ a:not(.btn--remix):visited {
 
   white-space: nowrap;
 
-  margin-left: -1rem;
+  margin-left: auto;
 
 }
 
