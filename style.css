@@ -26,8 +26,6 @@ to this section's matching END comment to see page-specific styles.
   --font-family-header: "HK Grotesk";
   --max-width: 390px;
   --min-height: 180px;
-  max-width:390px;
-  min-height:180px;
 }
 
 /* Basic page style resets */
@@ -58,25 +56,22 @@ to this section's matching END comment to see page-specific styles.
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
-  space: 4rem;
   height: 4rem;
   align-items: center;
   cursor: pointer;
-  background: #B9BBBE;
-  border: 5px solid #000000;
+  background: #FFFFFF;
+  border: 1px solid #000000;
   box-sizing: border-box;
-  border-radius: 100px;
+  border-radius: 4px;
   text-decoration: none;
   color: #000000;
   white-space: nowrap;
-  margin-height: auto;
-  margin-left: 30rem;
 }
 .btn--remix img {
   margin-right: auto;
 }
 .btn--remix:hover {
-  background-color: #D0FFF1;
+  background-color: green;
 }
 
 /* Navigation grid */
@@ -115,9 +110,9 @@ a:not(.btn--remix):visited {
 
   font-family: HK Grotesk;
 
-  padding: 0.75rem 1rem;
+  padding: 5px;
 
-  font-size: 1.1rem;
+  font-size: 3rem;
 
   line-height: 1rem;
 
@@ -155,7 +150,7 @@ a:not(.btn--remix):visited {
 
 .btnlogin:hover {
 
-  background-color: #D0FFF1;
+  background-color: green;
 
 }
 
@@ -184,7 +179,6 @@ END Glitch hello-app default styles
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
-  margin-color: 0px;
 }
 
 /* Page structure */
