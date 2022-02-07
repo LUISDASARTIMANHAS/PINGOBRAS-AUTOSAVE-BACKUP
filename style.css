@@ -56,15 +56,15 @@ to this section's matching END comment to see page-specific styles.
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
-  height: rem;
+  height: 3rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid black;
+  background: gray;
+  border: 3px solid black;
   box-sizing: border-box;
   border-radius: 10px;
   text-decoration: none;
-  color: #000000;
+  color: white;
   white-space: nowrap;
   margin-left: auto;
 }
