@@ -50,7 +50,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Our remix on glitch button */
-.btn--remix {
+.buttondc{
   font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
@@ -107,13 +107,13 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
-.btnlogin {
+.buttonlogin {
 
   font-family: HK Grotesk;
 
   padding: 1px;
 
-  font-size: 1.1rem;
+  font-size: 15px;
 
   line-height: 1rem;
 
