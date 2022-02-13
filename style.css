@@ -108,12 +108,17 @@ a:not(.btn--remix):visited {
   padding: 0 1rem;
 }
 .buttonlogin {
+        position: absolute;
+        top: 110%;
+        left: 31%;
+        transform: translate(-50%, -50%);.  
 
-  font-family: HK Grotesk;
+       transform: translate(-50%, -50%);
+         font-family: HK Grotesk
 
-  padding: 1px;
+        padding: 1px
 
-  font-size: 15px;
+        font-size: 15px;
 
   line-height: 1rem;
 
