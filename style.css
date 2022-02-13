@@ -51,13 +51,14 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our remix on glitch button */
 .buttondc{
-  font-family: HK Grotesk;
+        position: absolute;
+        transform: translate(-50%, -50%);
+ font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
   line-height: 1rem;
   font-weight: 500;
   height: 3rem;
-  align-items: center;
   cursor: pointer;
   background: gray;
   border: 3px solid black;
@@ -110,7 +111,7 @@ a:not(.btn--remix):visited {
 .buttonlogin {
         position: absolute;
         top: 110%;
-        left: 31%;
+        left: 100%;
         transform: translate(-50%, -50%);
          font-family: HK Grotesk
 
