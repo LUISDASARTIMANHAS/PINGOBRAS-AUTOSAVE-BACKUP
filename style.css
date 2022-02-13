@@ -24,8 +24,8 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
-  --max-width: 390px;
-  --min-height: 30px;
+  --max-width: 144px;
+  max-height: 144px;
 }
 
 /* Basic page style resets */
@@ -52,7 +52,7 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .buttondc{
         position: absolute;
-        transform: translate(-50%, -50%);
+        transform: translate(100px, 140px);
  font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
