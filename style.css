@@ -26,7 +26,7 @@ to this section's matching END comment to see page-specific styles.
   --font-family-header: "HK Grotesk";
   --max-width: 144px;
   --max-height: 144px;
-    main-X: 390px;
+    
 }
 /* Basic page style resets */
 * {
@@ -52,7 +52,7 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .buttondc{
         position: absolute;
-        transform: translate(main-X, -200%);
+        transform: translate(89px, 490px);
  font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
@@ -108,12 +108,10 @@ a:not(.btn--remix):visited {
   padding: 0 1rem;
 }
 .buttonlogin {
+        transform: translate(89px, -30px);
         position: absolute;
-        top: 110%;
-        left: 100%;
-        transform: translate(main-X, -50%);
          font-family: HK Grotesk
-
+         left;
         padding: 1px
 
         font-size: 15px;
