@@ -52,7 +52,7 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .buttondc{
         position: absolute;
-        transform: translate(100px, 140px);
+        transform: translate(50%, -200%);
  font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
