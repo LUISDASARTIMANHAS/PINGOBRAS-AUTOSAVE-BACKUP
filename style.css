@@ -26,8 +26,8 @@ to this section's matching END comment to see page-specific styles.
   --font-family-header: "HK Grotesk";
   --max-width: 144px;
   --max-height: 144px;
+  main-X: 390px;
 }
-
 /* Basic page style resets */
 * {
   box-sizing: border-box;
@@ -52,7 +52,7 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .buttondc{
         position: absolute;
-        transform: translate(50%, -200%);
+        transform: translate("main-X, -200%);
  font-family: HK Grotesk;
   padding: 5px;
   font-size: 1.1rem;
