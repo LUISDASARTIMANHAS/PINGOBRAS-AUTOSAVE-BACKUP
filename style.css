@@ -71,7 +71,7 @@ to this section's matching END comment to see page-specific styles.
 .btn--remix img {
   margin-right: auto;
 }
-.btn--remix:hover {
+.buttondc:hover {
   background-color: green;
 }
 
@@ -108,7 +108,7 @@ a:not(.btn--remix):visited {
   padding: 0 1rem;
 }
 .buttonlogin {
-        transform: translate(144px, -30px);
+        transform: translate(144px, -37px);
         position: absolute;
          font-family: HK Grotesk;
         padding: 1px;
@@ -137,13 +137,8 @@ a:not(.btn--remix):visited {
 
   color: #000000;
 
-  white-space: nowrap;
-
-  margin-left: 1px;
-
-}
-
-.btnlogin img {
+  wh
+.bbuttonlgin img {
 
   margin-right: auto;
 
