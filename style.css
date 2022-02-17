@@ -100,8 +100,7 @@ a:not(.btn--remix):visited {
 }
 
 .footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
+  padding: 0.nowrap;
 }
 
 .divider {
@@ -140,11 +139,11 @@ a:not(.btn--remix):visited {
   wh
 .bbuttonlgin img {
 
-  margin-right: auto;
+ mar    gin-right: auto;
 
 }
 
-.btnlogin:hover {
+.btlogin:hover {
 
   background-color: green;
 
@@ -241,6 +240,8 @@ h2 {
 - Toggling this class on and off will move it down and up again
 - The button transition property above determines the speed of the translate (500ms)
 */
-.dipped {
+.divider {
+  padding: 0 1rem;
+}.dipped {
   transform: translateY(5px);
 }
