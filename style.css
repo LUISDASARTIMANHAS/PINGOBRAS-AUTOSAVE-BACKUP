@@ -26,8 +26,10 @@ to this section's matching END comment to see page-specific styles.
   --font-family-header: "HK Grotesk";
   --max-largura: 144px;
   --max-altura: 144px;
-  --max-peso: 0;
+  --max-peso: 500;
   --font-tamanho: 1.0rem;
+  --fundo-padrao: white;
+  --negrito: bold;
     
 }
 /* Basic page style resets */
@@ -46,7 +48,7 @@ to this section's matching END comment to see page-specific styles.
 }
 @font-face {
   font-family: var(--font-principal);
-  font-weight: bold;
+  font-weight: var(--negrito);
   src: url("www.luis-das-artimanhas.com")
     format("opentype");
 }
