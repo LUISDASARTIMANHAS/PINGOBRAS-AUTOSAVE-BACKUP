@@ -36,9 +36,14 @@ to this section's matching END comment to see page-specific styles.
   --font-tamanho-cabecalho: 40px;
   --fundo-padrao: white;
   --negrito: bold;
+  --espaco-em-branco: nowrap;
+  --X: 0px;
+  --Y: 490px;
+ 
   --height: "altuta";
   --Weight: "peso";
   --width: "largura";
+  --white-space: "espaco em branco";
     
 }
 /* Basic page style resets */
@@ -51,7 +56,7 @@ to this section's matching END comment to see page-specific styles.
 /* Iamport fonts *//* Our remix on glitch button */
 .btndc{
         position: absolute;
-        transform: translate(89px, 490px);
+        transform: translate(89px, var(--Y), );
         font-family:  var(--font-tamanho)font-principal);
         padding: 5px;
         font-size: var(--font-tamanho);
@@ -65,7 +70,7 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 0px;
         text-decoration: none;
         color: blue;
-  white-space: nowrap;
+        white-space: var(--espaco-em-branco);
 }
 .btn img {
   margin-right: auto;
@@ -73,30 +78,12 @@ to this section's matching END comment to see page-specific styles.
 .buttondc:hover {
   background-color: green;
 }
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 0rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.footer .links {
-  padding: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
 .btnlogin {
-        transform: translate(144px, -37px);
+        transform: translate(144px, var(--Y), );
         position: absolute;
         font-family: var(--font-principal);
         padding: 5px;
-        font-size: 15px;
+        font-size: var(--font-tamanho);
         line-height: 1rem;
         font-weight: var(--max-peso);
         height: 3rem;
@@ -108,6 +95,7 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 0px;
         text-decoration: none;
         color: blue;
+        white-space: var(--espaco-em-branco);
 }
 .btnlogin img{
  margin-right: auto;
@@ -165,6 +153,32 @@ body {
 /* Instructions */
 .instructions {
   margin: 1rem auto 0;
+}
+/* Navigation grid */
+
+.footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 1rem auto 0;
+
+  padding: 0rem 0 0.75rem 0;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+
+}
+
+.footer .links {
+
+  padding: nowrap;
+
+}
+.divider {
+  padding: 0 1rem;
 }
 
 /* Button - Add it from the README instructions */
