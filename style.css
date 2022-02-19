@@ -64,7 +64,7 @@ to this section's matching END comment to see page-specific styles.
   box-sizing: border-box;
   border-radius: 10px;
   text-decoration: none;
-  color: white;
+  color: blue;
   white-space: nowrap;
 }
 .btn img {
@@ -97,8 +97,8 @@ to this section's matching END comment to see page-specific styles.
         font-family: var(--font-principal);
         padding: 1px;
         font-size: 15px;
-pxine-height: 1rem;
-  font-weight: 500;
+        line-height: 1rem;
+  font-weight: var(--max-peso);
   height: 3rem;
   align-items: left;
   cursor: pointer;
@@ -140,13 +140,16 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: varpadrao-font-principal);
-  background-color: var(--color-bg);
-}
+      font-family: var(font-principal);
+      max-width: var(--max-largura);
+      max-height: var(--max-altura);
+      font-family: Arial, helvetica, sans-serif;
+      background-image: linear-gradient(45deg, cyan, purple);
+  }
 
 /* Page alturaure */
 .wrapper {
-  min-height: var(--wrapper-height);
+  min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
   margin: 0 1rem;
@@ -158,21 +161,6 @@ body {
   justify-content: center;
 }
 
-/* Very lighpurple, yellow, green, blueng for our illustration */
-.family-cabecalho color: #000000;
-  font-family: var(--fovar(--negrito)rincipal);
-  fovar(--font-tamanho-cabecalho)tyle: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 100%;
-  margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustrationlarguramax-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
 
 /* Instructions */
 .instructions {
