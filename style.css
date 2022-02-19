@@ -24,8 +24,10 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-principal: "HK Grotesk";
   --font-family-header: "HK Grotesk";
-  --max-width: 144px;
-  --max-height: 144px;
+  --max-largura: 144px;
+  --max-altura: 144px;
+  --max-peso: 0;
+  --font-tamanho: 1.0rem;
     
 }
 /* Basic page style resets */
@@ -38,12 +40,12 @@ to this section's matching END comment to see page-specific styles.
 
 /* Import fonts */
 @font-face {
-  font-family: Hvar(--font-principal);
+  font-family: var(--font-principal);
   src: url("www.luis-das-artimanhas.com")
     format("opentype");
 }
 @font-face {
-  font-family: HK Grotesk;
+  font-family: var(--font-principal);
   font-weight: bold;
   src: url("www.luis-das-artimanhas.com")
     format("opentype");
@@ -95,7 +97,7 @@ to this section's matching END comment to see page-specific styles.
 .btnlogin {
         transform: translate(144px, -37px);
         position: absolute;
-        font-family: HK Grotesk;
+        font-family: var(--font-principal);
         padding: 1px;
         font-size: 15px;
   line-height: 1rem;
@@ -141,7 +143,7 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
+  font-family: var(--font-principal);
   background-color: var(--color-bg);
 }
 
@@ -162,7 +164,7 @@ body {
 /* Very light scaling for our illustration */
 .title {
   color: #000000;
-  font-family: HK Grotesk;
+  font-family: var(--font-principal);
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -185,7 +187,7 @@ body {
 /* Button - Add it from the README instructions */
  btn,
 input {
-  font-family: inherit;
+  font-family: var(--font-principal);
   font-size: 100%;
   background: #FFFFFF;
   border: 1px solid #000000;
