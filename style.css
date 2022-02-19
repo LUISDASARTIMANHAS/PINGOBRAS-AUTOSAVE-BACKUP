@@ -132,10 +132,17 @@ END Glitch hello-app default styles
 
 body {
       font-family: var(font-principal);
+      font-size: var(font-tamanho);
       max-width: var(--max-largura);
       max-height: var(--max-altura);
       font-family: Arial, helvetica, sans-serif;
       background-image: linear-gradient(45deg, cyan, purple);
+  }
+  .titulo{
+   font-family: var(font-family-cabecalho);
+   font-size: var(font-tamanho-cabecalho);
+   color: gradient(0deg, cyan, purple);
+   
   }
 
 /* Page alturaure */
