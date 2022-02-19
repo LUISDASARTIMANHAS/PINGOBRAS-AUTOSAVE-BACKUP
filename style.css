@@ -43,8 +43,8 @@ to this section's matching END comment to see page-specific styles.
 /* Import fonts */
 @font-face {
   font-family: var(--font-principal);
-  src: url("www.luis-das-artimanhas.com")
-    format("opentype");
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
+    format("font");
 }
 @font-face {
   font-family: var(--font-principal);
