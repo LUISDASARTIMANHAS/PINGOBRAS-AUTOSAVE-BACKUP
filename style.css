@@ -175,8 +175,9 @@ tituloYellow{
 
 
 /* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+  imgilustracao {
+       title="Click the image!";
+       margin: 1rem auto 0;
 }
 /* Navigation grid */
 
