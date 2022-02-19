@@ -90,8 +90,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .btnlogin {
-        transform: translateZ(10px);
-        transform: translateX(-144px);
+        transform: translateX(400rem);
         transform: translateY(var(--Y) );
         position: absolute;
         font-family: var(--font-principal);
@@ -100,7 +99,6 @@ to this section's matching END comment to see page-specific styles.
         line-height: 1rem;
         font-weight: var(--max-peso);
         height: 3rem;
-        align-items: center;
         cursor: pointer;
         background: gray;
         border: 5px solid black;
@@ -109,6 +107,7 @@ to this section's matching END comment to see page-specific styles.
         text-decoration: none;
         color: blue;
         width: 100%;
+        left: 10
         white-space: var(--espaco-em-branco);
 }
 .btnlogin img{
@@ -214,6 +213,11 @@ input {
 }
 
 /* Subheading */
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
 h2 {
   color: #00FFFF;
 }
