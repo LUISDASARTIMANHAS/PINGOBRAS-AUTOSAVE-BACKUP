@@ -21,20 +21,24 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 :root {
-  --color-bg: white;
+  --color-padrao: white;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 400px;
+  --wrapper-altura: 87vh;
+  --image-max-largura: 400px;
   --image-margin: 1rem;
   --font-principal: "Noto Sans Mono";
   --font-family-cabecalho: "Arial";
   --max-largura: 144px;
   --max-altura: 144px;
   --max-peso: 500;
-  --font-tamanho: 1.0rem;
+  --font-tamanho: 25px;
+  --font-tamanho-cabecalho: 40px;
   --fundo-padrao: white;
   --negrito: bold;
+  --height: "altuta";
+  --Weight: "peso";
+  --width: "largura";
     
 }
 /* Basic page style resets */
@@ -136,11 +140,11 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: var(--font-principal);
+  font-family: varpadrao-font-principal);
   background-color: var(--color-bg);
 }
 
-/* Page structure */
+/* Page alturaure */
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
@@ -157,7 +161,7 @@ body {
 /* Very light scaling for our illustration */
 .family-cabecalho color: #000000;
   font-family: var(--fovar(--negrito)rincipal);
-  fovar(--font-tamanho)tyle: normal;
+  fovar(--font-tamanho-cabecalho)tyle: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 100%;
@@ -178,8 +182,7 @@ body {
 
 /* Button - Add it from the README instructions */
  btn,
-input {
-  font-family: var(--font-principal);
+input  var(--font-tamanho){ont-family: var(--font-principal);
   font-size: 100%;
   background: #FFFFFF;
   border: 1px solid #000000;
