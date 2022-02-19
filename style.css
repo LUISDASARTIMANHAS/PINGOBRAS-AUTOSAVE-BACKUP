@@ -15,6 +15,11 @@ to this section's matching END comment to see page-specific styles.
 */
 
 /* Our default values set as CSS variables */
+@font-face{
+  font-family: 'Noto Sans Mono', monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
+    format("opentype");
+}
 :root {
   --color-bg: white;
   --color-text-main: #000000;
@@ -22,8 +27,8 @@ to this section's matching END comment to see page-specific styles.
   --wrapper-height: 87vh;
   --image-max-width: 400px;
   --image-margin: 1rem;
-  --font-principal: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-principal: "Noto Sans Mono";
+  --font-family-cabecalho: "Arial";
   --max-largura: 144px;
   --max-altura: 144px;
   --max-peso: 500;
@@ -39,21 +44,7 @@ to this section's matching END comment to see page-specific styles.
 [hidden] {
   display: none !important;
 }
-
-/* Import fonts */
-@font-face {
-  font-family: var(--font-principal);
-  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
-    format("font");
-}
-@font-face {
-  font-family: var(--font-principal);
-  font-weight: var(--negrito);
-  src: url("www.luis-das-artimanhas.com")
-    format("opentype");
-}
-
-/* Our remix on glitch button */
+/* Iamport fonts *//* Our remix on glitch button */
 .btndc{
         position: absolute;
         transform: translate(89px, 490px);
@@ -164,10 +155,9 @@ body {
 }
 
 /* Very light scaling for our illustration */
-.title {
-  color: #000000;
-  font-family: var(--font-principal);
-  font-style: normal;
+.family-cabecalho color: #000000;
+  font-family: var(--fovar(--negrito)rincipal);
+  fovar(--font-tamanho)tyle: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 100%;
