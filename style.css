@@ -138,22 +138,22 @@ body {
       font-family: Arial, helvetica, sans-serif;
       background-image: linear-gradient(45deg, cyan, purple);
   }
-  tituloRed{
+  .tituloRed{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: red;
   }
-tituloGreen{
+.tituloGreen{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: green;
   }
-tituloBlue{
+.tituloBlue{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: blue;
   }
-tituloYellow{
+.tituloYellow{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: yellow;
@@ -175,9 +175,8 @@ tituloYellow{
 
 
 /* Instructions */
-  imgilustracao {
-       title="Click the image!";
-       margin: 1rem auto 0;
+.instructions {
+  margin: 1rem auto 0;
 }
 /* Navigation grid */
 
