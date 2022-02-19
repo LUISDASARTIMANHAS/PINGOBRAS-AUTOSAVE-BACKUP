@@ -78,6 +78,15 @@ to this section's matching END comment to see page-specific styles.
 .buttondc:hover {
   background-color: green;
 }
+.footerdc{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 0rem 0 0rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .btnlogin {
         transform: translate(144px, var(--Y), );
         position: absolute;
@@ -108,17 +117,11 @@ to this section's matching END comment to see page-specific styles.
 /* Navigation grid */
 
 .footerlogin {
-
   display: flex;
-
   justify-content: space-between;
-
   margin: 1rem auto 0;
-
   padding: 0rem 0 0rem 0;
-
   width: 100%;
-
   flex-wrap: wrap;
 }
 
@@ -157,25 +160,15 @@ body {
 /* Navigation grid */
 
 .footer {
-
   display: flex;
-
   justify-content: space-between;
-
   margin: 1rem auto 0;
-
   padding: 0rem 0 0.75rem 0;
-
   width: 100%;
-
   flex-wrap: wrap;
-
 }
-
 .footer .links {
-
   padding: nowrap;
-
 }
 .divider {
   padding: 0 1rem;
@@ -183,13 +176,14 @@ body {
 
 /* Button - Add it from the README instructions */
  btn,
-input  var(--font-tamanho){ont-family: var(--font-principal);
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
+input {
+  font-family: var(--font-principal);
+  font-size: var(--font-tamanho);
+  background: white;
+  border: 3px solid black;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
+  padding: 1px;
   transition: 500ms;
 }
 
