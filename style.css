@@ -52,19 +52,19 @@ to this section's matching END comment to see page-specific styles.
 .btndc{
         position: absolute;
         transform: translate(89px, 490px);
- font-family:  var(--font-tamanho)font-principal);
-  padding: 5px;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 3rem;
-  cursor: pointer;
-  background: gray;
-  border: 3px solid black;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-decoration: none;
-  color: blue;
+        font-family:  var(--font-tamanho)font-principal);
+        padding: 5px;
+        font-size: var(--font-tamanho);
+        line-height: 1rem;
+        font-weight: var(--max-peso);
+        height: 3rem;
+        cursor: pointer;
+        background: gray;
+        border: 5px solid black;
+        box-sizing: border-box;
+        border-radius: 0px;
+        text-decoration: none;
+        color: blue;
   white-space: nowrap;
 }
 .btn img {
@@ -95,19 +95,19 @@ to this section's matching END comment to see page-specific styles.
         transform: translate(144px, -37px);
         position: absolute;
         font-family: var(--font-principal);
-        padding: 1px;
+        padding: 5px;
         font-size: 15px;
         line-height: 1rem;
-  font-weight: var(--max-peso);
-  height: 3rem;
-  align-items: left;
-  cursor: pointer;
-  background: #0099FF;
-  border: 5px solid black;
-  box-sizing: border-box;
-  boblackdius: 0px;
-  text-decoration: none;
-  color: #000000;
+        font-weight: var(--max-peso);
+        height: 3rem;
+        align-items: center;
+        cursor: pointer;
+        background: gray;
+        border: 5px solid black;
+        box-sizing: border-box;
+        border-radius: 0px;
+        text-decoration: none;
+        color: blue;
 }
 .btnlogin img{
  margin-right: auto;
