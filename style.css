@@ -29,8 +29,8 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-principal: "Arial";
   --font-family-cabecalho: "Arial";
-  --max-largura: 144px;
-  --max-altura: 144px;
+  --max-largura: 100px;
+  --max-altura: 100px;
   --max-peso: 500;
   --font-tamanho: 25px;
   --font-tamanho-cabecalho: 40px;
@@ -38,7 +38,7 @@ to this section's matching END comment to see page-specific styles.
   --negrito: bold;
   --espaco-em-branco: nowrap;
   --X: 0px;
-  --Y: 490px;
+  --Y: 390px;
  
   --height: "altuta";
   --Weight: "peso";
@@ -56,7 +56,8 @@ to this section's matching END comment to see page-specific styles.
 /* Iamport fonts *//* Our remix on glitch button */
 .btndc{
         position: absolute;
-        transform: translate(89px, var(--Y), );
+        transform: translateX(50%);
+        transform: translateY(var(--Y) );
         font-family:  var(font-principal);
         padding: 5px;
         font-size: var(--font-tamanho);
@@ -89,7 +90,9 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .btnlogin {
-        transform: translate(144px, var(--Y), );
+        transform: translateZ(10px);
+        transform: translateX(-144px);
+        transform: translateY(var(--Y) );
         position: absolute;
         font-family: var(--font-principal);
         padding: 5px;
@@ -105,7 +108,7 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 0px;
         text-decoration: none;
         color: blue;
-        width: 10%;
+        width: 100%;
         white-space: var(--espaco-em-branco);
 }
 .btnlogin img{
