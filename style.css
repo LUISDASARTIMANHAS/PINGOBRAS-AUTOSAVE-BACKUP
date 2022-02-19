@@ -32,8 +32,8 @@ to this section's matching END comment to see page-specific styles.
   --max-largura: 100px;
   --max-altura: 100px;
   --max-peso: 500;
-  --font-tamanho: 25px;
-  --font-tamanho-cabecalho: 40px;
+  --font-tamanho: 30px;
+  --font-tamanho-cabecalho: 60px;
   --fundo-padrao: white;
   --negrito: bold;
   --espaco-em-branco: nowrap;
@@ -72,6 +72,7 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 0px;
         text-decoration: none;
         color: blue;
+        right: 100%;
         white-space: var(--espaco-em-branco);
 }
 .btn img {
@@ -107,7 +108,7 @@ to this section's matching END comment to see page-specific styles.
         text-decoration: none;
         color: blue;
         width: 100%;
-        left: 10
+        left: 100%;
         white-space: var(--espaco-em-branco);
 }
 .btnlogin img{
