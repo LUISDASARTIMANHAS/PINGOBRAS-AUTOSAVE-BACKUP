@@ -50,7 +50,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Our remix on glitch button */
-.buttondc{
+.btndc{
         position: absolute;
         transform: translate(89px, 490px);
  font-family: HK Grotesk;
@@ -68,7 +68,7 @@ to this section's matching END comment to see page-specific styles.
   color: white;
   white-space: nowrap;
 }
-.btn--remix img {
+.btn img {
   margin-right: auto;
 }
 .buttondc:hover {
@@ -85,68 +85,37 @@ to this section's matching END comment to see page-specific styles.
   flex-wrap: wrap;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
 .footer .links {
-  padding: 0.nowrap;
+  padding: nowrap;
 }
 
 .divider {
   padding: 0 1rem;
 }
-.buttonlogin {
+.btnlogin {
         transform: translate(144px, -37px);
         position: absolute;
-         font-family: HK Grotesk;
+        font-family: HK Grotesk;
         padding: 1px;
-
         font-size: 15px;
-
   line-height: 1rem;
-
   font-weight: 500;
-
   height: 3rem;
-
   align-items: left;
-
   cursor: pointer;
-
   background: #0099FF;
-
   border: 5px solid black;
-
   box-sizing: border-box;
-
   border-radius: 0px;
-
   text-decoration: none;
-
   color: #000000;
-
-  wh
-.bbuttonlgin img {
-
- mar    gin-right: auto;
-
+}
+.btnlogin img{
+ margin-right: auto;
 }
 
-.btlogin:hover {
-
+.btnlogin:hover {
   background-color: green;
-
 }
 
 /* Navigation grid */
@@ -214,7 +183,7 @@ body {
 }
 
 /* Button - Add it from the README instructions */
-button,
+ button,
 input {
   font-family: inherit;
   font-size: 100%;
@@ -242,6 +211,7 @@ h2 {
 */
 .divider {
   padding: 0 1rem;
-}.dipped {
+}
+  .dipped {
   transform: translateY(5px);
 }
