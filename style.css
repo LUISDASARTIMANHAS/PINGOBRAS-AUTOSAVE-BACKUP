@@ -138,11 +138,25 @@ body {
       font-family: Arial, helvetica, sans-serif;
       background-image: linear-gradient(45deg, cyan, purple);
   }
-  .titulo{
+  .tituloRed{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
-   color: gradient(0deg, cyan, purple);
-   
+   color: red;
+  }
+.tituloGreen{
+   font-family: var(font-family-cabecalho);
+   font-size: var(font-tamanho-cabecalho);
+   color: green;
+  }
+.tituloBlue{
+   font-family: var(font-family-cabecalho);
+   font-size: var(font-tamanho-cabecalho);
+   color: blue;
+  }
+.tituloYellow{
+   font-family: var(font-family-cabecalho);
+   font-size: var(font-tamanho-cabecalho);
+   color: yellow;
   }
 
 /* Page alturaure */
