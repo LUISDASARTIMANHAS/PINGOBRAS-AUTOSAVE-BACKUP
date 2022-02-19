@@ -27,7 +27,7 @@ to this section's matching END comment to see page-specific styles.
   --wrapper-altura: 87vh;
   --image-max-largura: 400px;
   --image-margin: 1rem;
-  --font-principal: "Noto Sans Mono";
+  --font-principal: "Arial";
   --font-family-cabecalho: "Arial";
   --max-largura: 144px;
   --max-altura: 144px;
@@ -64,6 +64,7 @@ to this section's matching END comment to see page-specific styles.
         font-weight: var(--max-peso);
         height: 3rem;
         cursor: pointer;
+        width: 100%;
         background: gray;
         border: 5px solid black;
         box-sizing: border-box;
@@ -104,6 +105,7 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 0px;
         text-decoration: none;
         color: blue;
+        width: 10%;
         white-space: var(--espaco-em-branco);
 }
 .btnlogin img{
@@ -138,22 +140,22 @@ body {
       font-family: Arial, helvetica, sans-serif;
       background-image: linear-gradient(45deg, cyan, purple);
   }
-  .tituloRed{
+  titulored{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: red;
   }
-.tituloGreen{
+titulogreen{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: green;
   }
-.tituloBlue{
+tituloblue{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: blue;
   }
-tituloYellow{
+tituloyellow{
    font-family: var(font-family-cabecalho);
    font-size: var(font-tamanho-cabecalho);
    color: yellow;
@@ -177,7 +179,6 @@ tituloYellow{
 /* Instructions */
       imgilustracao{
         margin: 1rem auto 0;
-        max-height: 400px;
 }
 /* Navigation grid */
 
