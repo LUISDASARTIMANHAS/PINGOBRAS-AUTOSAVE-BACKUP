@@ -143,24 +143,31 @@ body {
       font-family: Arial, helvetica, sans-serif;
       background-image: linear-gradient(45deg, cyan, purple);
   }
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: blue;
+}
+
+
   titulored{
-   font-family: var(font-family-cabecalho);
-   font-size: var(font-tamanho-cabecalho);
+   text-align: center;
+   margin-bottom: 20px;
    color: red;
   }
 titulogreen{
-   font-family: var(font-family-cabecalho);
-   font-size: var(font-tamanho-cabecalho);
+   text-align: center;
+   margin-bottom: 20px;
    color: green;
   }
 tituloblue{
-   font-family: var(font-family-cabecalho);
-   font-size: var(font-tamanho-cabecalho);
+  text-align: center;
+   margin-bottom: 20px;
    color: blue;
   }
 tituloyellow{
-   font-family: var(font-family-cabecalho);
-   font-size: var(font-tamanho-cabecalho);
+   text-align: center;
+   margin-bottom: 20px;
    color: yellow;
   }
 
