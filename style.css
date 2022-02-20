@@ -63,19 +63,11 @@ to this section's matching END comment to see page-specific styles.
         color: white;
         font-size: 15px;
 }
-.btn img {
+.btndc img {
   margin-right: auto;
 }
-.buttondc:hover {
+.btndc:hover {
   background-color: green;
-}
-.footerdc{
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 0rem 0 0rem 0;
-  width: 100%;
-  flex-wrap: wrap;
 }
 
 .btnlogin { 
@@ -97,14 +89,6 @@ to this section's matching END comment to see page-specific styles.
 
 /* Navigation grid */
 
-.footerlogin {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 0rem 0 0rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-}
 
 
 /******************************************************************************
@@ -172,7 +156,8 @@ tituloyellow{
   margin: 1rem auto 0;
   uttond ing: 0rem 0 0.75rem 0;
   width: 100%;
-  flex-wrap: wrap;
+  fl
+  p;
 }
 .footer .links {
   padding: nowrap;
@@ -198,9 +183,6 @@ h1{
   text-align: center;
   margin-bottom: 20px;
   color: white;
-}
-h2 {
-  color: #00FFFF;
 }
 
 /* Interactive image */
