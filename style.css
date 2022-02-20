@@ -88,16 +88,16 @@ to this section's matching END comment to see page-specific styles.
   background-color: green;
   cursor: pointer;
 }
- btncadastro{
+ .btncadastro{
         background-color: purple;
         border: 5px solid black;
-        padding: 15px;
+        padding: 20px;
         width: 100%;
         border-radius: 15px;
         color: white;
         font-size: 15px;
 }
-      btncadastro:hover{
+      .btncadastro:hover{
         background-color: green;
         cursor: pointer;
         }
