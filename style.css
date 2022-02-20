@@ -29,11 +29,11 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-principal: "Arial";
   --font-family-cabecalho: "Arial";
-  --max-largura: 100px;
-  --max-altura: 100px;
+  --max-largura: 144px;
+  --max-altura: 144px;
   --max-peso: 500;
   --font-tamanho: 15px;
-  --font-tamanho-cabecalho: 60px;
+  --font-tamanho-cabecalho: 20px;
   --fundo-padrao: white;
   --negrito: bold;
   --espaco-em-branco: nowrap;
@@ -68,12 +68,13 @@ to this section's matching END comment to see page-specific styles.
 }
 .btndc:hover {
   background-color: green;
+  cursor: pointer;
 }
 
 .btnlogin { 
         background-color: blue;
         border: 5px solid black;
-        padding: 15px;
+        padding: 20px;
         width: 100%;
         border-radius: 15px;
         color: white;
@@ -85,6 +86,7 @@ to this section's matching END comment to see page-specific styles.
 
 .btnlogin:hover {
   background-color: green;
+  cursor: pointer;
 }
 
 /* Navigation grid */
@@ -101,8 +103,8 @@ body {
      }
 h1{
   text-align: center;
-  margin-bottom: 20px;
-  color: blue;
+  margin-bottom: 15px;
+  color: black;
 }
 
 
@@ -113,7 +115,7 @@ h1{
   }
 titulogreen{
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    color: green;
   }
 tituloblue{
@@ -167,11 +169,7 @@ tituloyellow{
 }
 
 /* Button - Add it from the README instructions */
- btn,
-input {
-  font-family: var(--font-principal);tamanho);
-  background: white;
-  border: 3px solid black;
+ btn, 3px solid black;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 1px;
