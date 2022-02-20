@@ -100,7 +100,7 @@ END Glitch hello-app default styles
 body {
       font-family: Arial, helvetica, sans-serif;
        background-image: linear-gradient(45deg, cyan, purple);
-  w.
+       width: var(--max-altura);
      }
 h1{
   text-align: center;
