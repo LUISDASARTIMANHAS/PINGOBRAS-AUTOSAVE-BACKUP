@@ -32,7 +32,7 @@ to this section's matching END comment to see page-specific styles.
   --max-largura: 100px;
   --max-altura: 100px;
   --max-peso: 500;
-  --font-tamanho: 30px;
+  --font-tamanho: 15px;
   --font-tamanho-cabecalho: 60px;
   --fundo-padrao: white;
   --negrito: bold;
@@ -55,25 +55,13 @@ to this section's matching END comment to see page-specific styles.
 }
 /* Iamport fonts *//* Our remix on glitch button */
 .btndc{
-        position: absolute;
-        transform: translateX(50%);
-        transform: translateY(var(--Y) );
-        font-family:  var(font-principal);
-        padding: 5px;
-        font-size: var(--font-tamanho);
-        line-height: 1rem;
-        font-weight: var(--max-peso);
-        height: 3rem;
-        cursor: pointer;
-        width: 100%;
-        background: gray;
+      background-color: gray;
         border: 5px solid black;
-        box-sizing: border-box;
-        border-radius: 0px;
-        text-decoration: none;
-        color: blue;
-        right: 100%;
-        white-space: var(--espaco-em-branco);
+        padding: 10px;
+        width: 100%;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
 }
 .btn img {
   margin-right: auto;
@@ -90,26 +78,14 @@ to this section's matching END comment to see page-specific styles.
   flex-wrap: wrap;
 }
 
-.btnlogin {
-        transform: translateX(400rem);
-        transform: translateY(var(--Y) );
-        position: absolute;
-        font-family: var(--font-principal);
-        padding: 5px;
-        font-size: var(--font-tamanho);
-        line-height: 1rem;
-        font-weight: var(--max-peso);
-        height: 3rem;
-        cursor: pointer;
-        background: gray;
+.btnlogin { 
+        background-color: blue;
         border: 5px solid black;
-        box-sizing: border-box;
-        border-radius: 0px;
-        text-decoration: none;
-        color: blue;
+        padding: 15px;
         width: 100%;
-        left: 100%;
-        white-space: var(--espaco-em-branco);
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
 }
 .btnlogin img{
  margin-right: auto;
@@ -136,13 +112,9 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-      font-family: var(font-principal);
-      font-size: var(font-tamanho);
-      max-width: var(--max-largura);
-      max-height: var(--max-altura);
       font-family: Arial, helvetica, sans-serif;
-      background-image: linear-gradient(45deg, cyan, purple);
-  }
+       background-image: linear-gradient(45deg, cyan, purple);
+     }
 h1{
   text-align: center;
   margin-bottom: 20px;
@@ -183,6 +155,8 @@ tituloyellow{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
 
