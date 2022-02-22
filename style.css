@@ -21,7 +21,6 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 :root {
-  --largura: 140%;
   --color-padrao: white;
   --color-text-main: #000000;
   --color-primary: #FFFF00;
@@ -103,6 +102,10 @@ to this section's matching END comment to see page-specific styles.
         cursor: pointer;
         }
 
+/* Navigation grid */
+
+
+
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -110,7 +113,7 @@ END Glitch hello-app default styles
 body {
       font-family: Arial, helvetica, sans-serif;
        background-image: linear-gradient(45deg, cyan, purple);
-       width: var(--largura);
+       width: var(--max-altura);
      }
 h1{
   text-align: center;
@@ -163,17 +166,35 @@ tituloyellow{
 }
 /* Navigation grid */
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  uttond ing: 0rem 0 0.75rem 0;
+  width: 100%;
+  fl
+  p;
+}
+.footer .links {
+  padding: nowrap;
+}
 .divider {
   padding: 0 1rem;
 }
 
 /* Button - Add it from the README instructions */
- btn,input{
-  border: 3px solid black;
+ btn, 3px solid black;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 1px;
   transition: 500ms;
+}
+
+/* Subheading */
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
 }
 
 /* Interactive image */
