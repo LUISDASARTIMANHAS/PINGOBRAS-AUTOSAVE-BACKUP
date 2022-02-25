@@ -103,9 +103,6 @@ to this section's matching END comment to see page-specific styles.
         }
 
 /* Navigation grid */
-
-
-
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -120,8 +117,6 @@ h1{
   margin-bottom: 15px;
   color: black;
 }
-
-
   t1{
    text-align: left;
    margin-bottom: 20px;
@@ -158,19 +153,15 @@ tituloyellow{
   width: 100%;
   margin-top: 100px;
 }
-
-
 /* Instructions */
       .instructions{
         margin: 1rem auto 0;
 }
 /* Navigation grid */
-
 .footer {
   display: flex;
   justify-content: space-between;
   margin: 1rem auto 0;
-  button img: 0rem 0 0.75rem 0;
   width: 100%;
 }
 .footer .links {
@@ -181,18 +172,12 @@ tituloyellow{
 }
 
 /* Button - Add it from the README instructions */
- btn, 3px solid black;
+btn,input{
+  border: 3px solid black;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 1px;
   transition: 500ms;
-}
-
-/* Subheading */
-h1{
-  text-align: center;
-  margin-bottom: 20px;
-  color: white;
 }
 
 /* Interactive image */
