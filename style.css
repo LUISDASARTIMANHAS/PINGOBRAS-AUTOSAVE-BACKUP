@@ -29,15 +29,15 @@ to this section's matching END comment to see page-specific styles.
   --image-margin: 1rem;
   --font-principal: "Arial";
   --font-family-cabecalho: "Roboto, sans-serif;";
-  --max-largura: 100px;
-  --max-altura: 100px;
+  --max-largura: 144px;
+  --max-altura: 544px;
   --max-peso: 500;
   --font-tamanho: 15px;
   --font-tamanho-cabecalho: 20px;
   --fundo-padrao: white;
   --negrito: bold;
   --espaco-em-branco: nowrap;
-  --btn-tamanho: 12px;
+  --btn-tamanho: 15pt;
   --X: 0px;
   --Y: 390px;
  
@@ -63,7 +63,6 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 15px;
         color: white;
         font-size: 15px;
-        margin-top: 10px;
         align-items: center;
        justify-content: center;
 }
@@ -86,7 +85,6 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 15px;
         color: white;
         font-size: 15px;
-        margin-top: 10px;
         align-items: center;
        justify-content: center;
 }
@@ -109,7 +107,6 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 15px;
         color: white;
         font-size: 15px;
-        margin-top: 10px;
         align-items: center;
        justify-content: center;
 }
@@ -125,7 +122,7 @@ to this section's matching END comment to see page-specific styles.
         position: absolute;
         justify-content: center;
         
-        padding: 40px;
+        padding: 60px;
         border-radius: 20px;
         color: black;
         box-shadow: 3px 3px 43px 0px black;
@@ -138,7 +135,7 @@ END Glitch hello-app default styles
 body {
       font-family: Arial, helvetica, sans-serif;
        background-image: linear-gradient(45deg, cyan, purple);
-       width: var(--max-altura);
+       width: 100%;
      }
 h1{
   text-align: center;
@@ -172,7 +169,7 @@ tituloyellow{
   }
 
 /* Page alturaure */
-.wrapper {
+.site-altura {
   min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
