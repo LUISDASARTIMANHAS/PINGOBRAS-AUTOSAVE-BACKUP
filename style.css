@@ -38,6 +38,7 @@ to this section's matching END comment to see page-specific styles.
   --negrito: bold;
   --espaco-em-branco: nowrap;
   --btn-tamanho: 15pt;
+  --sub-tamanho: 17pt;
   --X: 0px;
   --Y: 390px;
  
@@ -151,20 +152,20 @@ a:hover{
 }
 main-text{
   text-align: center;
-  font-size: ;
+  font-size: 20pt;
   margin-bottom: 15px;
   color: black;
 }
 h2{
    display: inline-block;
    text-align: center;
-   margin-bottom: 20px;
+   font-size: var(--sub-tamanho);
    color: blue;
   }
 h3{
    display: inline-block;
    text-align: center;
-   margin-bottom: 20px;
+   font-size: var(--sub-tamanho);
    color: green;
   }
 hr{
