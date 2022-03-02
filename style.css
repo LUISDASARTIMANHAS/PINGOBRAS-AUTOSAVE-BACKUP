@@ -72,6 +72,8 @@ to this section's matching END comment to see page-specific styles.
   background-image: linear-gradient(45deg, gray, green);
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
 }
 
 .btnlogin { 
@@ -92,6 +94,8 @@ to this section's matching END comment to see page-specific styles.
   background-image: linear-gradient(45deg, blue, green);
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);    
+  transition: all 1s ease-out;
 }
  .btncadastro{
         background-color: purple;
@@ -101,15 +105,27 @@ to this section's matching END comment to see page-specific styles.
         border-radius: 15px;
         color: white;
         font-size: 15px;
-        margin-right: auto;
+        margin-top: 10px;
         align-items: center;
 }
       .btncadastro:hover{
         background-image: linear-gradient(45deg, purple, green);
         cursor: pointer;
         box-shadow: -8px 20px 20px gray;
+        transform: translateY(5px);
+        transition: all 1s ease-out;
         }
-
+.tela{
+        background-color: #ffffff80;
+        position: absolute;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        border-radius: 20px;
+        color: black;
+        box-shadow: 3px 3px 43px 0px black;
+        }
+}
 /* Navigation grid */
 /******************************************************************************
 END Glitch hello-app default styles
@@ -119,7 +135,6 @@ body {
       font-family: Arial, helvetica, sans-serif;
        background-image: linear-gradient(45deg, cyan, purple);
        width: var(--max-altura);
-       align-items: center;
      }
 h1{
   text-align: center;
@@ -136,6 +151,11 @@ h3{
    margin-bottom: 20px;
    color: green;
   }
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
 tituloblue{
   text-align: center;
    margin-bottom: 20px;
