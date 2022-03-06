@@ -19,6 +19,8 @@ if (btn) {
     btn.classList.toggle("dipped");
   };
 }
+function paginalinks(){ window.location.href = "https://google.com"
+ }
 
 // This is a single line JS comment
 /*
