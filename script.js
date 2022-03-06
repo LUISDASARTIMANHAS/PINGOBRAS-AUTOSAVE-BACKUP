@@ -19,8 +19,6 @@ if (btn) {
     btn.classList.toggle("dipped");
   };
 }
-function discord(){ window.location.href = "https://discord.gg/XBEjRZ4Grp"
- }
 
 // This is a single line JS comment
 /*
