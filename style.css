@@ -146,6 +146,7 @@ body {
       font-family: Arial, helvetica, sans-serif;
        background-image: linear-gradient(45deg, cyan, purple);
        width: 100%;
+       justify-content: center;
      }
 a{
   font-weight: bold;
