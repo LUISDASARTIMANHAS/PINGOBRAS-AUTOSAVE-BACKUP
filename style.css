@@ -125,6 +125,7 @@ to this section's matching END comment to see page-specific styles.
         }
 /* Navigation grid */
 .footer {
+  font-size: 15pt;
   text-align: center;
   display: flex;
   justify-content: space-between;
