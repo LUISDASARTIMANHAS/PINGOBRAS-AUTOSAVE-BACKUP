@@ -62,15 +62,9 @@ to this section's matching END comment to see page-specific styles.
 /* Iamport fonts *//* Our remix on glitch button */
 .btndc{
       background-color: gray;
-        border: 5px solid black;
         padding: var(--btn-tamanho);
-        width: 100%;
-        border-radius: 15px;
         color: white;
-        font-size: 15px;
         font-weight: bold;
-        margin-top: 10px;
-        display: flex;
         justify-content: center;
 }
 .btndc img {
@@ -86,21 +80,14 @@ to this section's matching END comment to see page-specific styles.
 
 .btnlogin { 
         background-color: blue;
-        border: 5px solid black;
         padding: var(--btn-tamanho);
-        width: 100%;
-        border-radius: 15px;
         color: white;
-        font-size: 15px;
         align-items: center;
        justify-content: center;
-       display: flex;
-     margin-top: 10px;
 }
 .btnlogin img{
  margin-right: auto;
 }
-
 .btnlogin:hover {
   background-image: linear-gradient(45deg, blue, green);
   cursor: pointer;
@@ -108,17 +95,13 @@ to this section's matching END comment to see page-specific styles.
   transform: translateY(5px);    
   transition: all 1s ease-out;
 }
+
  .btncadastro{
         background-color: purple;
-        border: 5px solid black;
         padding: var(--btn-tamanho);
-        width: 100%;
-        border-radius: 15px;
         color: white;
-        font-size: 15px;
         align-items: center;
        justify-content: center;
-       display: flex;
 }
       .btncadastro:hover{
         background-image: linear-gradient(45deg, purple, green);
@@ -127,11 +110,11 @@ to this section's matching END comment to see page-specific styles.
         transform: translateY(5px);
         transition: all 1s ease-out;
         }
+
 .tela{
         background-color:  linear-gradient(45deg, blue, green);
         position: absolute;
         justify-content: center;
-        
         padding: 60px;
         border-radius: 20px;
         color: black;
@@ -149,10 +132,16 @@ body {
        justify-content: center;
      }
 a{
+  font-size: 15px;
+  border: 5px solid black;
   font-weight: bold;
   text-decoration: none;
   transform: translateY(5px);
   transition: all .3s ease-out;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  margin-top: 20px;
 }
 a:hover{
   color: red;
