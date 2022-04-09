@@ -124,6 +124,19 @@ to this section's matching END comment to see page-specific styles.
         box-shadow: 3px 3px 43px 0px black;
         }
 /* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid white;
+}
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -141,7 +154,7 @@ a{
   text-decoration: none;
   transform: translateY(5px);
   transition: all .3s ease-out;
-  width: 100%;
+  width: 75%;
   border-radius: 15px;
   display: flex;
   margin-top: 15px;
