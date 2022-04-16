@@ -42,7 +42,7 @@ to this section's matching END comment to see page-specific styles.
   --X: 0px;
   --Y: 390px;
   --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929); 
-  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras2.png?v=1650115698692); 
+  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras2.png?v=1650116215172); 
   
   --display: flex formato de celular;
   --height: "altuta";
@@ -147,10 +147,10 @@ END Glitch hello-app default styles
 
 body {
       font-family: Arial, helvetica, sans-serif;
-       background-image: var(--PINGOBRASIMG2);
+       background-image: var(--PINGOBRASIMG);
        width: 100%;
        background-repeat: no-repeat;
-      background-size: 10%;
+      background-size: 240%;
       justify-content: center;
      }
 a{
