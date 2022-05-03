@@ -271,8 +271,8 @@ btn,input{
   transform: translateY(5px);
 }
 .download{
-  background-image: url("https://cdlobal/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/kisspng-download-now-button-red-png-image-transparent-hd-5b7ee51c55df54.6469656515350428443517.jpg?v=1651589053950");
-  padding: var(--btn-tamanho);
+  background-image: url("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/download.jpg?v=1651590597478");
+    padding: var(--btn-tamanho);
     display: inline-flex;
     flex-flow: column;
     justify-content: center;
