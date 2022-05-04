@@ -354,3 +354,18 @@ fieldset {
     margin-left: 30px;
     width: 140px;
 }
+#valueOnid {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(33,200,0,1.00);
+    min-width: 250px;
+    text-align: right;
+    padding-right: 10px;
+}
+.siteUrl span, .siteOn span, .siteOff span {
+    display: inline-block;
+    margin-left: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
