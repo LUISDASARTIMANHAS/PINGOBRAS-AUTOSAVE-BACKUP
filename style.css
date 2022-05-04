@@ -286,3 +286,71 @@ btn,input{
     margin-right: 0px;
     margin-left: 8px;
 }
+.blktabs {
+    width: 250px;
+    height: 250px;
+}
+fieldset {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    /* height: 450px; */
+}
+user agent stylesheet
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+#options ul {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    width: 500px;
+}
+#options li {
+    display: block;
+    width: auto;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.siteOff {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDMvMTIvMTSmKumeAAACNElEQVRYhbWX25XaQAyGP6UBnAriDkIH6w4gFUAH0AF0sHRAUgHbAXRAOjCpAFKB8jDyWr5gZsDROTp4LtJoJP3SIKpKKolIBkxV9ZQs3CZVvcvAEtj2zO8BNd4N6XjEQ4ef3SEHoDA+uHkFjq8YIPdCICIlkEc48aaqX59yP/BlYC3mcIBMRPbPGtDrARFZATs3dbHx7+pQYG6cuT2/gCmgqvojygIX86kp/EkzxpuBPMlp5ornIjoJ7RbXHiXrhwqCbJ8R7ykGzHoURGe3ecLL7pNhSBPbCsyT8AwfTnbyVB0AykpJckGB7TOybRheojK3nz5lRSSPFWobEC3YQ172YP3iMf2nHFACqpaxKFjRRcHpBRRUPHsFhhpzA5M/9cheiUCDV3IAFmaMD8fdYkQoQt71R5OfAatkGLaU+7CcCG+DglCyC0JvuLk9h1Toqg60YwARSXku5ar6J2E/MNyOU+kvhBogInP7zkTkQ0R2d6UGQlDQTKoS2BDypA1ZBRYm58NWunGWmgMz6g7ZyWiaOVICbzTheCYkZdUpP591UQbYIRO7cS+egXczNCf0gtKMLVr7CprtPo8yIKEQLXgAW2DtPDEZ1QA74DgY61AzFHjz82Oi4AKgqre+RTe/bi+McfuCOsbFwJ7Oi2ksD3xz37t2K7ZxVQtu1K/r0Twwcag5E8KxtFsvbXwFvndkx0pCZ8wGOkVKufPIHTMJK8rtd0vdtKD+A9OksT1gXpgNjT3/A1NY+jXlj4l8AAAAAElFTkSuQmCC);
+}
+.siteUrl, .siteOn, .siteOff {
+    background-repeat: no-repeat;
+    background-position: left 0%;
+    height: 32px;
+    padding-left: 36px;
+    display: block;
+    width: auto;
+}
+.siteUrl strong, .siteOn strong, .siteOff strong {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 30px;
+    width: 140px;
+}
