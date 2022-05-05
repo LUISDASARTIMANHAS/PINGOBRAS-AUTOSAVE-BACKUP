@@ -377,4 +377,5 @@ li {
   background: transparent;
   border: none;
   display: block;
+  position: relative;
 }
