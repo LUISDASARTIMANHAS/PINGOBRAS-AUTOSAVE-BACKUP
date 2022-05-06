@@ -136,7 +136,7 @@ body {
        background-image: var(--PINGOBRASIMG2);
        width: 100%;
        background-repeat: no-repeat;
-      background-size: 145%;
+      background-size: cover;
       justify-content: center;
      }
 a{
