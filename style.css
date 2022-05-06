@@ -286,10 +286,17 @@ btn,input{
     margin-right: 0px;
     margin-left: 8px;
 }
+.download:hover{
+  background: green;
+}
 .download-music{
-  background: transparent;
+  background: white;
   display: inline-flex;
   position: relative;
+  color: black;
+}
+.download-music:hover{
+  background: green;
 }
 .blktabs {
   
