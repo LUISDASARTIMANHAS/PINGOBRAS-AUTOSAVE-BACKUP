@@ -136,7 +136,7 @@ body {
        background-image: var(--PINGOBRASIMG2);
        width: 100%;
        background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
       justify-content: center;
      }
 a{
@@ -280,28 +280,28 @@ btn,input{
     vertical-align: baseline;
     padding: 10px 12px 10px 12px;
     min-width: 52px;
-    height: 52px;
+    height: 45px;
     text-align: center;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 8px;
 }
 .download:hover{
   background: green;
 }
 .download-music{
   background: white;
+  height: 45px;
   display: inline-flex;
-  position: relative;
   color: black;
 }
 .download-music:hover{
   background: green;
 }
+.music{
+  height: 45px;
+}
 .blktabs {
-  
-    width: 250px;
-    height: 250px;
+    background: white;
+    width: 50%;
+    height: 90px;
 }
 fieldset {
     padding-top: 10px;
@@ -334,7 +334,7 @@ ul {
     margin-bottom: 0px;
     margin-left: 10px;
     padding: 5px;
-    width: 500px;
+    width: 100px;
 }
 li {
     background: gray;
