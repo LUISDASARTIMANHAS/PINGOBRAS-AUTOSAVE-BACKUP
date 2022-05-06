@@ -134,7 +134,7 @@ END Glitch hello-app default styles
 body {
       font-family: Arial, helvetica, sans-serif;
        background-image: var(--PINGOBRASIMG2);
-       width: 100%;
+       width: auto;
        background-repeat: no-repeat;
       background-size: cover;
       justify-content: center;
@@ -298,11 +298,6 @@ btn,input{
 .music{
   height: 45px;
 }
-.blktabs {
-    background: white;
-    width: 50%;
-    height: 90px;
-}
 fieldset {
     padding-top: 10px;
     padding-right: 10px;
@@ -329,12 +324,9 @@ fieldset {
 ul {
     border: 3px solid black;
     background: white;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
     margin-left: 10px;
     padding: 5px;
-    width: 100px;
+    width: auto;
 }
 li {
     background: gray;
