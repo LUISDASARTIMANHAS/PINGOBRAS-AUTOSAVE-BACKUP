@@ -272,7 +272,7 @@ btn,input{
 }
 .download{
   background: gold;
-    padding: var(--btn-tamanho);
+    padding: 40px;
     display: inline-flex;
     flex-flow: column;
     justify-content: center;
@@ -294,6 +294,9 @@ btn,input{
 }
 .download-music:hover{
   background: green;
+}
+.icone{
+  height: 25px;
 }
 .music{
   height: 45px;
