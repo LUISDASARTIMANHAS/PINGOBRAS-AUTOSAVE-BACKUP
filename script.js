@@ -29,7 +29,7 @@ function barButton() {
 }
 
 var i = 0;
-function barButton() {
+function factorioButton() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("factoriobar");
