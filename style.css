@@ -462,33 +462,18 @@ li {
     line-height: 12px;
     visibility: hidden;
 }
-.dump-storage-space ul.dump-storage-text li {
-    padding: 0px;
-    margin: 0px;
-    cursor: default;
+.dump-storage-text:hover{
+visibility: visible;  
 }
-
-user agent stylesheet
-li {
-    text-align: -webkit-match-parent;
+.dump-storage-bar-fill {
+    border-radius: 1px;
+    text-indent: -9999px;
+    width: 100%;
+    background-color: orange;
 }
-div.dump-storage-space:hover ul.dump-storage-text {
-    visibility: visible;
-}
-.dump-storage-space ul.dump-storage-text {
-    padding: 0px;
-    margin: 0px;
-    margin-right: 8px;
-    color: #fff;
-    font-size: 10px;
-    line-height: 12px;
-    visibility: hidden;
-}
-ul {
-    list-style: none;
-    list-style-type: none;
-}
-user agent stylesheet
-ul {
-    list-style-type: disc;
+.dump-storage-bar-bg {
+    border-radius: 1px;
+    width: 148px;
+    background-color: #4C4848;
+    border: 2px solid black;
 }
