@@ -26,24 +26,6 @@ async>
                border="0" 
                title="contador da pingobras!" 
                alt="ERROR AO CARREGAR">
-      
-        <app-progressbar 
-                         _ngcontent-rek-c40="" 
-                         _nghost-rek-c60="">
-          <span 
-                _ngcontent-rek-c60="" 
-                class="boxProgressCont">
-            <span _ngcontent-rek-c60="" 
-                  class="barProgress" 
-                  style="background-color: rgb(14, 85, 92); width: 71%;">
-            </span>
-            <span _ngcontent-rek-c60="" 
-                  class="ProgressCount"
-                  >
-              71%
-            </span>
-          </span>
-        </app-progressbar>
         
       <div id="Tabs" class="blktabs">
     <fieldset id="options">
@@ -88,7 +70,26 @@ async>
       </div>
       </fieldset>
   </div>
+        <app-progressbar 
+                         _ngcontent-rek-c40="" 
+                         _nghost-rek-c60="">
+          <span 
+                _ngcontent-rek-c60="" 
+                class="boxProgressCont">
+            <span _ngcontent-rek-c60="" 
+                  class="barProgress" 
+                  style="background-color: rgb(14, 85, 92); width: 71%;">
+            </span>
+            <span _ngcontent-rek-c60="" 
+                  class="ProgressCount"
+                  >
+              71%
+            </span>
+          </span>
+        </app-progressbar>
         
+        <label for="file">Downloading progress:</label>
+<progress id="file" value="2" max="100"> 3% </progress>
         <a class="download"
            href="link do download" 
            download="nome do arquivo"
