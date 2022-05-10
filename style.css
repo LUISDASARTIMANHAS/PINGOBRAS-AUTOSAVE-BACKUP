@@ -427,11 +427,11 @@ li {
     text-align: center;
     margin: 20px 0;
 }
-#myProgress {
-  width: 100%;
+boxbar{
+  width: 70%;
   background-color: grey;
 }
-#myBar {
+bar {
   width: 10%;
   height: 30px;
   background-color: #04AA6D;
