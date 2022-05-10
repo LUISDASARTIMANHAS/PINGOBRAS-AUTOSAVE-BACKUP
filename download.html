@@ -94,21 +94,25 @@ async>
            >
           nome de exibição
          </a>
-        <boxbar>
-          <bar id="bar"></bar>
-        </boxbar>
+        <div class="boxbar">
+          <div class="bar" id="bar">0%</div>
+        </div>
       
         
         <a 
            class="download" 
            href="https://www.factorio.com/get-download/1.1.57/demo/win64" 
            download="factorio1.1.57-demo-win64.exe"
+           onclick="barButton()"
            ><img
                  class="arquivos"
                  src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows_logo_-_2012_(dark_blue).svg.png?v=1652101587081"
                  />
           factorio 1.1.57 demo win64
         </a>
+        <div class="boxbar">
+          <div class="bar" id="factoriobar">0%</div>
+        </div>
         
         <a class="download-music"
            href="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/musicas.zip?v=1652103460682" 

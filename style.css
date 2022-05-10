@@ -427,14 +427,14 @@ li {
     text-align: center;
     margin: 20px 0;
 }
-boxbar{
+.boxbar{
   width: 70%;
   background-color: grey;
 }
-bar {
+.bar {
   width: 10%;
   height: 30px;
-  background-color: #04AA6D;
+  background: green;
   text-align: center; /* To center it horizontally (if you want) */
   line-height: 30px; /* To center it vertically */
   color: white;
