@@ -148,6 +148,82 @@ async>
         </a>
         <br>
 				
+      <div class="input" id="uploader627a97320a83b"><div class="qq-uploader-selector qq-uploader">
+	
+				<div class="qq-upload-button-selector qq-upload-button qq-upload-drop-area-selector qq-upload-drop-area qq-upload-button-hover" qq-drop-area-text="Drop files here" style="position: relative; overflow: hidden; direction: ltr;">
+			<div class="qq-upload-drop-area-text">
+				<i class="fa fa-upload"></i> <span class="drop-area-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solte o(s) arquivo(s) ou clique aqui para fazer o upload.</font></font></span>
+				<div class="ng-file-rules-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Extensões permitidas: bmp, gif, jpg, jpeg, png, tif, tiff, webp, swf, fla, swc, as, doc, htm, html, hx, odt, rtf, txt, xml, ace, gz, rar, tar , zip, pdf, psd até 256,0 MB</font></font></div>
+			</div>
+		<input qq-button-id="feb841f2-88e3-46b2-9974-cbb15d88ecc1" title=" " type="file" name="qqfile"></div>
+		
+				<ul class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals"></ul>
+</div></div>
+        
+        <script>
+	(function($) {
+
+
+		var config = {
+    "component": {
+        "path": "dumping_grounds\/upload",
+        "data": {
+            "dump_id": null
+        }
+    },
+    "sizeLimit": 256000000,
+    "dropAreaText": "Drop file, or click here to upload.",
+    "multiple": false,
+    "allowedExtensions": [
+        "bmp",
+        "gif",
+        "jpg",
+        "jpeg",
+        "png",
+        "tif",
+        "tiff",
+        "webp",
+        "swf",
+        "fla",
+        "swc",
+        "as",
+        "doc",
+        "htm",
+        "html",
+        "hx",
+        "odt",
+        "rtf",
+        "txt",
+        "xml",
+        "ace",
+        "gz",
+        "rar",
+        "tar",
+        "zip",
+        "pdf",
+        "psd"
+    ],
+    "liveUpdate": true,
+    "template": "upload_template_627a97320a83d"
+};
+		var uploader = new ngutils.uploader("#uploader627a97320a83b", "\/parkfile", config);
+		
+			})(jQuery);
+</script>
+        <script>
+		ngutils.event.addListener(ngutils.uploadEvent.onComplete, function(event) {
+			event.target.remove();
+			if (event.data.response.error) {
+				alert(event.data.response.error);
+			}
+		});
+		ngutils.event.addListener(ngutils.uploadEvent.onError, function(event) {
+			event.target.remove();
+			alert(event.data.errorMsg);
+		});
+	</script>
+	
+      
     <br>
       </div>
 </body>
