@@ -446,3 +446,19 @@ li {
     color: white;
     cursor: pointer;
 }
+.dump-storage-space{
+    border-radius: 1px;
+    width: 148px;
+    height: 15px;
+    background-color: #4C4848;
+    border: 2px solid black;
+}
+.dump-storage-text {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 8px;
+    color: white;
+    font-size: 10px;
+    line-height: 12px;
+    visibility: hidden;
+}
