@@ -1,0 +1,8 @@
+//definir matrizes
+const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+//definir string de dados
+const txt = {"name":"John","age": 31,"cidade":"colatina"}
+//transformar JSON em javascript
+const java = JSON.parse(text);
+//escrevendo os dados do js no html
+document.getElementById("demo").innerHTML = java["name"];
