@@ -1,8 +1,22 @@
 //definir matrizes
-const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+const textjson = '[ "Ford", "BMW", "Audi", "Fiat" ]';
 //definir string de dados
-const txt = {"name":"John","age": 31,"cidade":"colatina"}
+const txtjson = {"name":"John","age": 31,"cidade":"colatina"}
 //transformar JSON em javascript
-const java = JSON.parse(text);
+const java = JSON.parse(textjson);
 //escrevendo os dados do js no html
 document.getElementById("demo").innerHTML = java["name"];
+//DADOS js
+const DADOSjs = {name: "John", age: 30, city: "New York"};
+//transformando js em JSON
+const myJSON = JSON.stringify(DADOSjs)
+//matriz js para transformar
+const matrizJs = ["John", "Peter", "Sally", "Jane"];
+//transformando em JSON
+const matrizJson = JSON.stringify(matrizJs);
+//armazenando dados json
+const DADOSjs2 = {name: "John", age: 31, city: "New York"};
+const DADOSJson = JSON.stringify(DADOSjs2);
+localStorage.setItem("JSON STORAGE", DADOSJson);
+
+//
