@@ -5,7 +5,7 @@ const txtjson = {"name":"John","age": 31,"cidade":"colatina"}
 //transformar JSON em javascript
 const java = JSON.parse(textjson);
 //escrevendo os dados do js no html
-document.getElementById("java-name").innerHTML = java["name"];
+document.getElementById("java-name").innerHTML = java.name;
 //DADOS js
 const DADOSjs = {name: "John", age: 30, city: "New York"};
 //transformando js em JSON
