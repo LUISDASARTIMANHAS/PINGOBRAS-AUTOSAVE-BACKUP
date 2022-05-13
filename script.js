@@ -47,3 +47,6 @@ function factorioButton() {
     }
   }
 }
+const saldo = {saldo: 11};
+const DADOSJson  = JSON.stringify(saldo);
+localStorage.setItem("JSON", DADOSJson);
