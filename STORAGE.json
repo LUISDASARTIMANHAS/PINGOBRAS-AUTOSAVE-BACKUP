@@ -1,2 +1,7 @@
 
 let client = ["luis", "lukinhas","douglas","valdo","vm"]
+const luis = {name: "luis das artimanhas",saldo: 3.50}
+const lukinhas = {name: "lukinhas",saldo:3.50}
+const douglas = {name: "douglasPG",saldo: 13.00}
+const valdo = {name: "valdo9645",saldo: -3}
+const vm = {name: "slap",saldo: 1.00}
