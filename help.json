@@ -23,3 +23,5 @@ localStorage.setItem("JSON STORAGE", DADOSJson);
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let DADOSjsR = JSON.parse(STORAGE);
 document.getElementById("name-storage").innerHTML = DADOSjsR.name;
+
+
