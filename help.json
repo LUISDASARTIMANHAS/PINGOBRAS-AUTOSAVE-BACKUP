@@ -5,15 +5,17 @@ const txtjson = {"name":"John","age": 31,"cidade":"colatina"}
 //transformar JSON em javascript
 const java = JSON.parse(textjson);
 //escrevendo os dados do js no html
-document.getElementById("java-name").innerHTML = java.name;
+document.getElementById("console").innerHTML = java.name;
 //DADOS js
 const DADOSjs = {name: "John", age: 30, city: "New York"};
 //transformando js em JSON
 const myJSON = JSON.stringify(DADOSjs)
 //matriz js para transformar
 const matrizJs = ["John", "Peter", "Sally", "Jane"];
+
 //transformando em JSON
 const matrizJson = JSON.stringify(matrizJs);
+
 //armazenando dados json
 const DADOSjs2 = {name: "John", age: 31, city: "New York"};
 const DADOSJson = JSON.stringify(DADOSjs2);
@@ -22,6 +24,6 @@ localStorage.setItem("JSON STORAGE", DADOSJson);
 //recebendo dados JSON
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let DADOSjsR = JSON.parse(STORAGE);
-document.getElementById("name-storage").innerHTML = DADOSjsR.name;
+document.getElementById("console").innerHTML = DADOSjsR.name;
 
 
