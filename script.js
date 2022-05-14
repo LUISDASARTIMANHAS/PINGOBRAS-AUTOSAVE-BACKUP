@@ -51,7 +51,10 @@ const saldo = {saldo: 11};
 const DADOSJson  = JSON.stringify(saldo);
 localStorage.setItem("JSON", DADOSJson);
 
-const client = ["luis", "lukinhas","douglas","valdo","vm", "eduardo"]
-
+let client = JSON.parse(localStorage.getItem('client') || '[]')
+client.push({
+      saldoCad: 1.50,
+      nome: "valdo",
+})
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
