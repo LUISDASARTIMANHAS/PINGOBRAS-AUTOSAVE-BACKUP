@@ -1,30 +1,32 @@
 //matriz js 
 const matrizJs = ["John", "Peter", "Sally", "Jane"];
-
 //definir string de dados js
-const stringjs = {"name":"John","age": 31,"cidade":"colatina"}
-
-
+const stringjs = {"name":"John","age": 31,"cidade":"colatina"};
 
 //transformar JSON em javascript
 const java = JSON.parse(json);
-
 //transformando js em JSON
-const json = JSON.stringify(js)
-
-
-
-//transformando em JSON
+const json = JSON.stringify(js);
+//transformando matriz em JSON
 const matrizJson = JSON.stringify(matrizJs);
 
 //armazenando dados json
-const DADOSjs2 = {name: "John", age: 31, city: "New York"};
-const DADOSJson = JSON.stringify(DADOSjs2);
-localStorage.setItem("JSON STORAGE", DADOSJson);
+const Djs = {name: "John", age: 31, city: "New York"};
+const DJson = JSON.stringify(Djs);
+localStorage.setItem("JSON STORAGE", DJson);
 
 //recebendo dados JSON
-let STORAGE = localStorage.getItem("JSON STORAGE");
-let DADOSjsR = JSON.parse(STORAGE);
-document.getElementById("console").innerHTML = DADOSjsR.name;
+let JSON STORAGE = localStorage.getItem("JSON STORAGE");
+let DjsR = JSON.parse(JSON STORAGE);
+document.getElementById("console").innerHTML = DjsR.name;
 
 
+
+const client = ["luis", "lukinhas","douglas","valdo","vm", "eduardo"]
+const luis = {name: "luis das artimanhas",saldo: 3.50}
+const lukinhas = {name: "lukinhas",saldo:3.50}
+const douglas = {name: "douglasPG",saldo: 13.00}
+const valdo = {name: "valdo9645",saldo: -3.00}
+const vm = {name: "skip",saldo: 1.00}
+const eduardo = {name: "dudu",saldo: 2.00}
+document.getElementById("index").innerHTML = client;

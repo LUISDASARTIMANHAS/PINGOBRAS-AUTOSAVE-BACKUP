@@ -50,3 +50,8 @@ function factorioButton() {
 const saldo = {saldo: 11};
 const DADOSJson  = JSON.stringify(saldo);
 localStorage.setItem("JSON", DADOSJson);
+
+const client = ["luis", "lukinhas","douglas","valdo","vm", "eduardo"]
+
+const DJson = JSON.stringify(client);
+localStorage.setItem("JSON STORAGE", DJson);
