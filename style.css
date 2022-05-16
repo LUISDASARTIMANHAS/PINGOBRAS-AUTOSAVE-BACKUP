@@ -521,14 +521,14 @@ visibility: visible;
 }
 .popup button{
     display: block;
-    margin:  0 0 20px auto;
+    margin:  -40px 0 20px auto;
     background-color: transparent;
     font-size: 30px;
     color: white;
     background: black;
     border-radius: 100%;
     width: 40px;
-    height: 20px;
+    height: 40px;
     border: none;
     cursor: pointer;
 }
