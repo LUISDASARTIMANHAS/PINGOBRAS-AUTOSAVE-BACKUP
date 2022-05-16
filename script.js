@@ -1,11 +1,22 @@
 
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
-
 if (btn){
   btn.onclick = function(){
     btn.classList.toggle("dipped");
   };}
+
+
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "visible";
+        },2000
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
 
 
 var i = 0;
@@ -65,15 +76,3 @@ localStorage.setItem("JSON STORAGE", DJson);
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
         
-
-
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },2000
-    )
-});
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
