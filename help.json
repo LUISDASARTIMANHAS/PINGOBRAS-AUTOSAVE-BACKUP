@@ -13,9 +13,9 @@ const matrizJson = JSON.stringify(matrizJs);
 //armazenando dados json
 const Djs = {name: "John", age: 31, city: "New York"};
 const DJson = JSON.stringify(Djs);
-localStorage.setItem("JSON STORAGE", DJson);
+localStorage.setItem("JSON", DJson);
 
 //recebendo dados JSON
-let JSON STORAGE = localStorage.getItem("JSON STORAGE");
-let DjsR = JSON.parse(JSON STORAGE);
+let JSON STORAGE = localStorage.getItem("JSON");
+let DjsR = JSON.parse(JSON );
 document.getElementById("console").innerHTML = DjsR.name;
