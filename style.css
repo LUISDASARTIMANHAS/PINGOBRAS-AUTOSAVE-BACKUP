@@ -502,3 +502,48 @@ visibility: visible;
     font-style: arial;
     color: red;
 }
+
+.popup{
+    background-image: url("https://cdn.glitch.global/1408c7d6-21de-499a-bfb3-9783b283bc8d/Janela_de_Aviso_do_Windows_(sem_texto).png?v=1651278920829");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+    font-family: "arial",sans-serif;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: white;
+    background: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.popup h2{
+   margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup button:hover{
+        background: green;
+        cursor: pointer;
+        box-shadow: -8px 20px 20px white;
+        transition: all 1s ease-out;
+}
