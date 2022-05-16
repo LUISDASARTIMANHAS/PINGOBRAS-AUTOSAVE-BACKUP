@@ -507,10 +507,10 @@ visibility: visible;
     background-image: url("https://cdn.glitch.global/1408c7d6-21de-499a-bfb3-9783b283bc8d/Janela_de_Aviso_do_Windows_(sem_texto).png?v=1651278920829");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100%;
+    width: 75%;
     height: auto;
     padding: 30px 40px;
-    position: absolute;
+    position: fixed;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
@@ -528,12 +528,9 @@ visibility: visible;
     background: black;
     border-radius: 100%;
     width: 40px;
-    height: 40px;
+    height: 20px;
     border: none;
     cursor: pointer;
-}
-.popup h2{
-   margin-top: -20px;
 }
 .popup p{
     font-size: 24px;
