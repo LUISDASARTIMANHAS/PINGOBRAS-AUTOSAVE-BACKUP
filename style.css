@@ -515,7 +515,7 @@ visibility: visible;
     left: 50%;
     top: 50%;
     border-radius: 8px;
-    display: none;
+    display: visible;
     font-family: "arial",sans-serif;
     text-align: center;
 }
