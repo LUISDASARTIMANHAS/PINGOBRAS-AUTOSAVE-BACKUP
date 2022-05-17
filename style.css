@@ -544,3 +544,13 @@ visibility: visible;
         box-shadow: -8px 20px 20px white;
         transition: all 1s ease-out;
 }
+.cabecalho{
+  background: yellow;
+  padding: 10px;
+  width: 110%;
+  border: 5px solid black;
+}
+.list{
+  display: none;
+  color: black;
+}
