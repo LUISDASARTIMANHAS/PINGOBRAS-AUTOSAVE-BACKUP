@@ -562,11 +562,11 @@ li {
 }
 .list {
   display: none;
-  color: black;
+  color: red;
   background: white;
   border: 5px solid black ;
   padding: 10px 10px;
 }
 .list p{
-  
+  color: blue;
 }
