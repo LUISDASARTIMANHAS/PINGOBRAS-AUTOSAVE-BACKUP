@@ -557,7 +557,7 @@ li {
 .cabecalho {
   background: yellow;
   padding: 10px;
-  width: 110%;
+  width: 104%;
   border: 5px solid black;
 }
 .list {
@@ -566,8 +566,13 @@ li {
   background: white;
   border: 5px solid black ;
   padding: 10px 10px;
+  width: 95%;
 }
 .list saldo{
   display: inline-block;
   color: red;
+}
+.list payment{
+  display: inline-block;
+  color: green; 
 }
