@@ -562,11 +562,12 @@ li {
 }
 .list {
   display: none;
-  color: red;
+  color: blue;
   background: white;
   border: 5px solid black ;
   padding: 10px 10px;
 }
-.list p{
-  color: blue;
+.list saldo{
+  display: inline-block;
+  color: red;
 }
