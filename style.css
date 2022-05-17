@@ -78,6 +78,12 @@ to this section's matching END comment to see page-specific styles.
   transition: all 1s ease-out;
 }
 
+.btnList{
+  background-color: gray;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+}
+
 .btnlogin { 
         background-color: blue;
         padding: var(--btn-tamanho);    
@@ -267,6 +273,7 @@ btn,input{
 */
   
   .dipped {
+    background: green;
   transform: translateY(5px);
 }
 .download{
