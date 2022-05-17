@@ -79,3 +79,12 @@ localStorage.setItem("JSON STORAGE", DJson);
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
         
+let btnescondedor = document.getElementById('escondedor');
+var esconder = document.querySelector('.list');
+btnescondedor.addEventListener('click', function() {
+    if(esconder.style.display === 'block') {
+      esconder.style.display = 'none';
+  } else {
+      esconder.style.display = 'block';
+  }
+});
