@@ -80,11 +80,14 @@ to this section's matching END comment to see page-specific styles.
   background-color: gray;
   padding: var(--btn-tamanho);
   font-weight: bold;
+  justify-content: left;
+  border: 3px solid silver;
 }
 
 .btnlogin {
   background-color: blue;
   padding: var(--btn-tamanho);
+  
 }
 .btnlogin img {
   margin-right: auto;
