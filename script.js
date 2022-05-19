@@ -5,12 +5,22 @@ if (btn){
   btn.onclick = function(){
     btn.classList.toggle("dipped");
   };}
-
 const input = document.querySelector("input");
 if (input){
   input.onclick = function(){
     input.classList.toggle("dipped");
   };}
+
+let btnescondedor = document.getElementById('escondedor');
+var esconder = document.querySelector('.list');
+btnescondedor.addEventListener('click', function() {
+    if(esconder.style.display === 'block') {
+      esconder.style.display = 'none';
+  } else {
+      esconder.style.display = 'block';
+  }
+});
+
 
 window.addEventListener("load", function(){
 setTimeout(
@@ -22,45 +32,6 @@ document.querySelector("#close").addEventListener("click", function(){
 });
 
 
-var i = 0;
-function barButton() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("bar");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
-  }
-}
-
-var i = 0;
-function factorioButton() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("factoriobar");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
-  }
-}
 
 let client = JSON.parse(localStorage.getItem('client') || '[]')
 
@@ -72,22 +43,10 @@ client.push(
       valdo: {name: "valdo9645",saldo: -3.00},
       vm: {name: "skip",saldo: 1.00},
       eduardo: {name: "dudu",saldo: 2.00},
-           }
-  }
-)
+           }})
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
 
 
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
-        
-let btnescondedor = document.getElementById('escondedor');
-var esconder = document.querySelector('.list');
-btnescondedor.addEventListener('click', function() {
-    if(esconder.style.display === 'block') {
-      esconder.style.display = 'none';
-  } else {
-      esconder.style.display = 'block';
-  }
-});
