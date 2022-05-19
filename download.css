@@ -180,16 +180,6 @@ hr {
   margin-bottom: 10%;
   width: 60%;
 }
-tituloblue {
-  text-align: center;
-  margin-bottom: 20px;
-  color: blue;
-}
-tituloyellow {
-  text-align: center;
-  margin-bottom: 20px;
-  color: yellow;
-}
 .drawbox{
   width:100%;
   height:100px;
@@ -245,13 +235,19 @@ tituloyellow {
 
 /* Button - Add it from the README instructions */
 input {
-  border: 3px solid gold;
+  width: 100%;
+  background: gray;
   box-sizing: border-box;
-  border-radius: 4px;
-  padding: 1px;
   box-shadow: -8px 4px 20px gray;
-  transition: 2000ms;
   margin-right: auto;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+  font-size: 15px;
+  justify-content: center;
+  border: 3px solid silver;
+}
+input:hover{
+  
 }
 .PNG {
   box-shadow: -8px 20px 20px gray;
