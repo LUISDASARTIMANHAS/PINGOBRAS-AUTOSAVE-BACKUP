@@ -65,48 +65,8 @@ to this section's matching END comment to see page-specific styles.
   padding: var(--btn-tamanho);
   font-weight: bold;
 }
-.btndc img {
-  margin-right: auto;
-}
 .btndc:hover {
   background-image: linear-gradient(45deg, gray, green);
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
-}
-
-.btnList {
-  background-color: gray;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  font-size: 15px;
-  justify-content: center;
-  border: 4px solid silver;
-}
-
-.btnlogin {
-  background-color: blue;
-  padding: var(--btn-tamanho);
-  
-}
-.btnlogin img {
-  margin-right: auto;
-}
-.btnlogin:hover {
-  background-image: linear-gradient(45deg, blue, green);
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
-}
-
-.btncadastro {
-  background-color: purple;
-  padding: var(--btn-tamanho);
-}
-.btncadastro:hover {
-  background-image: linear-gradient(45deg, purple, green);
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -123,7 +83,6 @@ to this section's matching END comment to see page-specific styles.
   transform: translateY(5px);
   transition: all 1s ease-out;
 }
-
 .console {
   background-image: linear-gradient(45deg, gray, silver);
   justify-content: center;
@@ -136,7 +95,6 @@ to this section's matching END comment to see page-specific styles.
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
-
 body {
   font-family: Arial, helvetica, sans-serif;
   background-image: var(--PINGOBRASIMG2);
@@ -162,112 +120,6 @@ a {
 }
 a:hover {
   color: red;
-}
-h2 {
-  display: inline-block;
-  text-align: center;
-  font-size: var(--sub-tamanho);
-  color: blue;
-}
-h3 {
-  display: inline-block;
-  text-align: center;
-  font-size: var(--sub-tamanho);
-  color: green;
-}
-hr {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 60%;
-}
-.drawbox{
-  width:100%;
-  height:100px;
-  border:1px solid black;
-}
-
-/* Page alturaure */
-.site-altura {
-  min-height: var(--wrapper-altura);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 100px;
-}
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  width: 100%;
-  font-size: 15pt;
-  text-align: center;
-  padding: 1rem 0 0.75rem 0;
-  flex-wrap: wrap;
-  border-top: 4px solid white;
-}
-.footer.links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-.footer-dev {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  width: 100%;
-  color: white;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-
-/* Button - Add it from the README instructions */
-input {
-  width: 100%;
-  background: gray;
-  box-sizing: border-box;
-  box-shadow: -8px 4px 20px gray;
-  margin-right: auto;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  font-size: 15px;
-  justify-content: center;
-  border: 3px solid silver;
-}
-input:hover{
-  
-}
-.PNG {
-  box-shadow: -8px 20px 20px gray;
-  width: 50%;
-  justify-content: space-between;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-
-.dipped {
-  background: green;
-  transform: translateY(5px);
 }
 .download {
   background: gold;
@@ -299,6 +151,95 @@ input:hover{
 .music {
   height: 45px;
 }
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+.drawbox{
+  width:100%;
+  height:100px;
+  border:1px solid black;
+}
+
+
+/* Page alturaure */
+.site-altura {
+  min-height: var(--wrapper-altura);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  width: 100%;
+  font-size: 15pt;
+  text-align: center;
+  padding: 1rem 0 0.75rem 0;
+  flex-wrap: wrap;
+  border-top: 4px solid white;
+}
+.footer.links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+.footer-dev {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  width: 100%;
+  color: white;
+}
+.divider {
+  padding: 0 1rem;
+}
+
+
+input {
+  width: 100%;
+  background: gray;
+  box-sizing: border-box;
+  box-shadow: -8px 4px 20px gray;
+  margin-right: auto;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+  font-size: 15px;
+  justify-content: center;
+  border: 3px solid silver;
+}
+input:hover{
+  background-image: linear-gradient(45deg, silver, green);
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  transition: all 1s ease-out;
+}
+.PNG {
+  box-shadow: -8px 20px 20px gray;
+  width: 50%;
+  justify-content: space-between;
+}
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+.dipped {
+  background: green;
+  transform: translateY(5px);
+}
+
+
+
 fieldset {
   padding-top: 10px;
   padding-right: 10px;

@@ -6,6 +6,11 @@ if (btn){
     btn.classList.toggle("dipped");
   };}
 
+const input = document.querySelector("input");
+if (input){
+  input.onclick = function(){
+    input.classList.toggle("dipped");
+  };}
 
 window.addEventListener("load", function(){
 setTimeout(
