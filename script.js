@@ -33,8 +33,8 @@ var btnBack = document.querySelector("#back-to-top");
 btnBack.addEventListener("click", function() {
     window.scrollTo(0, 0);
 });
-var btnDecer = document.querySelector("#back-to-top");
-btnDecer.addEventListener("click", function() {
+var Descer = document.querySelector("#jsDescer");
+Descer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
 });
 
