@@ -336,12 +336,13 @@ tituloyellow {
 }
 
 .open-chat {
+  display: inline-block;
   background-color: gray;
+  font-size: 15px;
   color: white;
-  padding: 16px;
+  padding: var(--btn-tamanho);
   border: 3px solid black;
   cursor: pointer;
-  width: 75%;
 }
 
 .open-chat:hover{
@@ -375,12 +376,12 @@ tituloyellow {
   width: 100%;
   padding: 10px;
   border: 5px solid black;
-  background: transparent;
+  background: white;
 }
 
 /* When the textarea gets focus, do something */
 .form-chat textarea:focus {
-  background-color: white;
+  background-color: yellow;
   outline: none;
 }
 
@@ -399,7 +400,7 @@ tituloyellow {
   color: gold;
   transform: translateY(5px);
   transition: all .3s ease-out;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .btn-cancel{
@@ -416,5 +417,5 @@ tituloyellow {
   color: gold;
   transform: translateY(5px);
   transition: all .3s ease-out;
-  opacity: 1;
+  opacity: 0.8;
 }
