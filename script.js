@@ -11,6 +11,15 @@ if (input){
     input.classList.toggle("dipped");
   };}
 
+function openForm() {
+  document.getElementById("jschat").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("jschat").style.display = "none";
+}
+
+
 let btnescondedor = document.getElementById('escondedor');
 var esconder = document.querySelector('.list');
 btnescondedor.addEventListener('click', function() {
