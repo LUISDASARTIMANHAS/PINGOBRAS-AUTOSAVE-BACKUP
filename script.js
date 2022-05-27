@@ -19,7 +19,6 @@ function closeForm() {
   document.getElementById("jschat").style.display = "none";
 }
 
-
 let btnescondedor = document.getElementById('escondedor');
 var esconder = document.querySelector('.list');
 btnescondedor.addEventListener('click', function() {
@@ -29,6 +28,16 @@ btnescondedor.addEventListener('click', function() {
       esconder.style.display = 'block';
   }
 });
+
+var btnBack = document.querySelector("#back-to-top");
+btnBack.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});
+var btnDecer = document.querySelector("#back-to-top");
+btnDecer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+});
+
 
 
 window.addEventListener("load", function(){
