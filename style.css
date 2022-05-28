@@ -352,8 +352,10 @@ tituloyellow {
   transition: all 1s ease-out;
 }
 .cabecalho {
+  position: absolute;
+  top: 0;
   background: yellow;
-  padding: 10px;
+  padding: 7px;
   width: 104%;
   border: 5px solid black;
 }
