@@ -70,7 +70,3 @@ let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
 
 
-if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
-  // ok, o navegador tem suporte
-}
-const videoStream = navigator.mediaDevices.getUserMedia({ video: true })
