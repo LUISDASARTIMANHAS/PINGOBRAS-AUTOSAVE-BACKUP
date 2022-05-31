@@ -232,7 +232,7 @@ tituloyellow {
   height:100px;
   border:1px solid black;
 }
-a.disabled, a[disabled], fieldset[disabled] .disabled{
+.btn.disabled, button[disabled], a[disabled], fieldset[disabled] .disabled{
  cursor: not-allowed;
  filter: alpha(opacity=65);
  -webkit-box-shadow: none;
