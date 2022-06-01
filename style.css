@@ -70,6 +70,8 @@ to this section's matching END comment to see page-specific styles.
 }
 .btndc:hover {
   background-image: linear-gradient(45deg, gray, green);
+  width: 65%;
+  padding: 5pt;
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -95,6 +97,8 @@ to this section's matching END comment to see page-specific styles.
 }
 .btnlogin:hover {
   background-image: linear-gradient(45deg, blue, green);
+  width: 65%;
+  padding: 5pt;
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -107,6 +111,8 @@ to this section's matching END comment to see page-specific styles.
 }
 .btncadastro:hover {
   background-image: linear-gradient(45deg, purple, green);
+  width: 65%;
+  padding: 5pt;
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -118,6 +124,8 @@ to this section's matching END comment to see page-specific styles.
 }
 .btn-pages:hover {
   background-image: linear-gradient(45deg, green, blue);
+  width: 65%;
+  padding: 5pt;
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -193,6 +201,13 @@ a {
 }
 a:hover {
   color: red;
+}
+.btn:hover{
+  width: 65%;
+  padding: 5pt;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
 }
 main-text {
   text-align: center;
