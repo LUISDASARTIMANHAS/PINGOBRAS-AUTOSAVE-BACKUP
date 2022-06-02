@@ -215,6 +215,11 @@ main-text {
   margin-bottom: 15px;
   color: black;
 }
+.titulo-do-produto {
+  font-size: 20px;
+  color: black;
+  word-break: break-word;
+}
 h2 {
   display: inline-block;
   text-align: center;
@@ -327,14 +332,14 @@ tituloyellow {
   background: transparent;
   border: none;
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
 }
 .img-click:hover{
   border: none;
   display: block;
-  width: 45%;
-  height: 45%;
+  width: 60%;
+  height: 60%;
 }
 
 .popup {
