@@ -37,6 +37,10 @@ var Descer = document.querySelector("#jsDescer");
 Descer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
 });
+var batepapoDescer = document.querySelector("#jsDescerBatePapo");
+batepapoDescer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+});
 
 
 
