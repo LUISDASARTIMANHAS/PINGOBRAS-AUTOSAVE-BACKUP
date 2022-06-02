@@ -72,5 +72,6 @@ localStorage.setItem("JSON STORAGE", DJson);
 
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
+console.log(CR);
 
 
