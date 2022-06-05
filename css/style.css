@@ -224,8 +224,8 @@ tituloyellow {
   background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 55%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -234,8 +234,10 @@ tituloyellow {
   display: block;
   font-family: "arial", sans-serif;
   text-align: center;
+  padding: 0px 10px 0px;
 }
 .popup button {
+  position: absolute;
   display: block;
   margin: -40px 0 20px auto;
   background-color: transparent;
@@ -247,14 +249,16 @@ tituloyellow {
   height: 40px;
   border: none;
   cursor: pointer;
+  top: 15%;
+  right: 0;
 }
 .popup p {
+  border: 5px solid black;
   position: absolute;
   font-size: 24px;
   text-align: justify;
-  margin: 20px 0;
   line-height: 25px;
-  bottom: 50%;
+  bottom: 35%;
 }
 .popup button:hover {
   background: green;
