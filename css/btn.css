@@ -18,6 +18,11 @@
   padding: var(--btn-tamanho);
   font-weight: bold;
 }
+.btnadmin:hover{
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+}
 
 .btnList {
   background-color: gray;
@@ -26,7 +31,7 @@
   font-size: 15px;
   justify-content: center;
 }
-.to:hover{
+.btnList:hover{
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   color: gold;
@@ -36,9 +41,9 @@
   display: inline-block;
   background-color: gray;
   font-size: 15px;
-  color: white;
   padding: var(--btn-tamanho);
   cursor: pointer;
+  font-weight: bold;
 }
 .btn-open-chat:hover{
   cursor: pointer;
@@ -94,12 +99,7 @@
 }
 .btnlogin:hover {
   background-image: linear-gradient(45deg, blue, green);
-  width: 65%;
-  padding: 5pt;
   cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
 }
 
 .btncadastro {
@@ -108,12 +108,7 @@
 }
 .btncadastro:hover {
   background-image: linear-gradient(45deg, purple, green);
-  width: 65%;
-  padding: 5pt;
   cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
 }
 .btn-pages {
   background-color: green;
@@ -121,12 +116,7 @@
 }
 .btn-pages:hover {
   background-image: linear-gradient(45deg, green, blue);
-  width: 65%;
-  padding: 5pt;
   cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transform: translateY(5px);
-  transition: all 1s ease-out;
 }
 
 .btn-subir{
@@ -167,4 +157,26 @@
   transform: translateY(5px);
   transition: all 1s ease-out;
   opacity: 1;
+}
+
+.btn.disabled, button[disabled], a[disabled], fieldset[disabled] .disabled{
+ cursor: not-allowed;
+ filter: alpha(opacity=65);
+ -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+.btn:hover{
+  width: 65%;
+  padding: 5pt;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
+}
+
+
+.dipped {
+  background: green;
+  transform: translateY(5px);
 }
