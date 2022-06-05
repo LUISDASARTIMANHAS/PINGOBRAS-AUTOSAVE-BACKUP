@@ -5,7 +5,7 @@ if (btn){
   btn.onclick = function(){
     btn.classList.toggle("dipped");
   };}
-const input = document.querySelector("input");
+const UPinput = document.querySelector("input");
 if (input){
   input.onclick = function(){
     input.classList.toggle("dipped");
