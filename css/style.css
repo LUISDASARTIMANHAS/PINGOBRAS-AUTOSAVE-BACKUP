@@ -329,5 +329,26 @@ tituloyellow {
   width: 75%;
   padding: 10px;
 }
-
+.input-autentication:focus{
+border-bottom: 3px solid lightblue;
+font-size: 13px;
+margin-top: 0;
+color: blue;
+}
+#msgError{
+  text-align: center;
+  color: red;
+  background: red;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
 /* Set a style for the submit/send button */
