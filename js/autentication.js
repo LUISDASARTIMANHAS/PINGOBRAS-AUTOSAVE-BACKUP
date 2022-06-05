@@ -1,12 +1,15 @@
+let  JsonKeys = localStorage.getItem("JsonKeys");
+let key = JSON.parse(JsonKeys);
+document.getElementById("console").innerHTML = key.senha;
+
+
 function enviar(){
     let senha = document.querySelector('#senha')
   
   let msgError = document.querySelector('#msgError')
   let listaUser = []
-  
-  let key = 12345
+    
   if(senha.value == key.senha){
-    document.documentElement.requestFullscreen();
     window.location.href = 'https://codepen.io/luisdasartimanhas/full/ZEaVByy'
     
     let mathRandom = Math.random().toString(16).substr(2)
