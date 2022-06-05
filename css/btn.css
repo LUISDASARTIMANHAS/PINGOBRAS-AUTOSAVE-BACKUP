@@ -14,13 +14,15 @@
 }
 
 .btnReload{
+  height: 45px;
   position: absolute;
   background: black;
   background-repeat: no repeat;
   border: none;
   width: 15%;
-  left: 85%;
-  border-radius: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
 }
 .btnReload:hover { 
   background: green;
