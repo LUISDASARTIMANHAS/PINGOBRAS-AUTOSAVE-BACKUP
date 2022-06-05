@@ -43,7 +43,7 @@ batepapoDescer.addEventListener("click", function() {
 });
 
 function autentication() {
-window.location.href = ("authentication.html");
+window.location.href = ("authentication=user=true.html");
 };
 
 
