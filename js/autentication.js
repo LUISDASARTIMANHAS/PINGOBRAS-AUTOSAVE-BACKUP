@@ -9,7 +9,7 @@ function entrar(){
     
   let msgError = document.querySelector('#msgError')
     
-  if( password.value === key.senha ){
+  if( password.value === key.senha & password.value == env.ADMIN_KEY ){
     window.location.href = 'https://codepen.io/luisdasartimanhas/full/ZEaVByy'
     
     let mathRandom = Math.random().toString(16).substr(2)
