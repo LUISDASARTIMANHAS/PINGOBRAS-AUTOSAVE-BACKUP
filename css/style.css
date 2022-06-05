@@ -320,4 +320,14 @@ tituloyellow {
   outline: none;
 }
 
+.text-autentication{
+  color: white; 
+  font-weight: bold;
+}
+.input-autentication{
+  color: black;
+  width: 75%;
+  padding: 10px;
+}
+
 /* Set a style for the submit/send button */
