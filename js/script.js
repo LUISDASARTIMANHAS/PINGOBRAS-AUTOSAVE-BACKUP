@@ -82,6 +82,5 @@ localStorage.setItem("JSON STORAGE", DJson);
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
 console.log(CR);
-let UserVm = JSON.parse(CR.vm.name);
 
 
