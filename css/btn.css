@@ -13,6 +13,23 @@
   transition: all 1s ease-out;
 }
 
+.btnReload{
+  position: absolute;
+  background: black;
+  background-repeat: no repeat;
+  border: none;
+  width: 15%;
+  left: 85%;
+  border-radius: 100%;
+}
+.btnReload:hover { 
+  background: green;
+  background-repeat: no repeat;
+  cursor: pointer;
+  transform: translateY(5px);    
+  transition: all 1s ease-out;
+}
+
 .btnadmin {
   background-color: orange;
   padding: var(--btn-tamanho);
