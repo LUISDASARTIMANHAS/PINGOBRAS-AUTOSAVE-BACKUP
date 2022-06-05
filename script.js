@@ -43,7 +43,7 @@ batepapoDescer.addEventListener("click", function() {
 });
 
 function autentication() {
- window.open('www.google.com.br', '_blank');
+window.location.href = ("authentication.html");
 };
 
 
