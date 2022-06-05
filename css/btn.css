@@ -71,6 +71,23 @@
   transition: all .3s ease-out;
   opacity: 0.8;
 }
+.btn-enviar-autentication{
+  background-color: red;
+  color: black;
+  padding: 16px 20px;
+  border: 5px solid black;
+  cursor: pointer;
+  width: 75%;
+}
+.btn-enviar-autentication:hover{
+  background: green;
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
+  opacity: 0.8;
+}
 
 .btn-cancel{
   color: white;
