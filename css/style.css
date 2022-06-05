@@ -221,18 +221,17 @@ tituloyellow {
 }
 
 .popup {
-  background-image: url("https://cdn.glitch.global/1408c7d6-21de-499a-bfb3-9783b283bc8d/Janela_de_Aviso_do_Windows_(sem_texto).png?v=1651278920829");
+  background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 75%;
-  height: auto;
-  padding: 20px 30px;
+  width: 55%;
+  height: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   border-radius: 8px;
-  display: none;
+  display: block;
   font-family: "arial", sans-serif;
   text-align: center;
 }
@@ -250,10 +249,12 @@ tituloyellow {
   cursor: pointer;
 }
 .popup p {
+  position: absolute;
   font-size: 24px;
   text-align: justify;
   margin: 20px 0;
   line-height: 25px;
+  bottom: 50%;
 }
 .popup button:hover {
   background: green;
