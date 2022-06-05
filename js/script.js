@@ -49,7 +49,7 @@ batepapoDescer.addEventListener("click", function() {
 });
 
 function autentication() {
-window.location.href = ("autentication=user=true.html");
+window.location.href = ("https://pingobras-autentication.glitch.me");
 };
 
 
