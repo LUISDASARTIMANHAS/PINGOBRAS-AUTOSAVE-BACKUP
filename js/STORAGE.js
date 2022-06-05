@@ -11,3 +11,7 @@ client.push(
            })
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
+
+const adminKey = {senha: 9645};
+const CryptoKey = JSON.stringify(adminKey);
+localStorage.setItem("JsonKeys", CryptoKey);
