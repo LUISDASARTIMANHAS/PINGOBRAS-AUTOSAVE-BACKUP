@@ -1,11 +1,14 @@
-const btnEnviar = document.querySelector("#btn-enviar-admin");
-const handleLogin = (event) => {
-    event.preventDefault();
+let senha = document.querySelector('#senha')
+let msgError = document.querySelector('#msgError')
 
-    const dados = document.getElementById('password');
-    fetch('http://myapi.com/api/v1/login', { dados })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+function enviar(){ 
+console.log("func-enviar");
+if(senha == 123456){
+    document.documentElement.requestFullscreen();
+    window.location.href = 'https://codepen.io/luisdasartimanhas/full/ZEaVByy'
+    
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom
+    
+    localStorage.setItem('token', token)}
 }
-btnEnviar.addEventListener('click', handleLogin);
