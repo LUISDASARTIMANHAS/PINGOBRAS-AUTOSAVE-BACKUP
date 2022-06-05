@@ -42,6 +42,9 @@ batepapoDescer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
 });
 
+function autentication() {
+ window.open('www.google.com.br', '_blank');
+};
 
 
 window.addEventListener("load", function(){
