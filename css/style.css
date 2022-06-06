@@ -72,6 +72,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+  opacity: 1;
 }
 a {
   font-size: 15px;
@@ -235,6 +236,7 @@ tituloyellow {
   font-family: "arial", sans-serif;
   text-align: center;
   padding: 0px 10px 0px;
+  opacity: 1;
 }
 .popup button {
   position: absolute;
