@@ -358,3 +358,7 @@ color: blue;
   display: none;
 }
 /* Set a style for the submit/send button */
+.youtube-video{
+  width: 75%;
+  height: 440px;
+}
