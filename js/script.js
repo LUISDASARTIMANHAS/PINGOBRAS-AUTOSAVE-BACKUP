@@ -56,14 +56,13 @@ window.location.href = ("https://pingobras-autentication.glitch.me/");
 window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
-document.querySelector(".popup").style.opacity = "1";
-document.querySelector("body").style.opacity = "0.5";
+document.querySelector(".site-altura").style.opacity = "0.5";
 },5000)
 });
 
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
-    document.querySelector("body").style.opacity = "1";
+    document.querySelector(".site-altura").style.opacity = "1";
 });
 
 let STORAGE = localStorage.getItem("JSON STORAGE");
