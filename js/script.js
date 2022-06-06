@@ -54,9 +54,7 @@ window.location.href = ("https://pingobras-autentication.glitch.me/");
 
 
 window.addEventListener("load", function(){
-setTimeout(
-function open(event){
-document.querySelector(".popup").style.display = "block";},5000)
+setTimeout(function open(event){document.querySelector(".popup").style.display = "block";},5000)
 });
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";

@@ -256,7 +256,7 @@ tituloyellow {
   border: 5px dashed black;
   position: absolute;
   font-size: 24px;
-  text-align: justify;
+  text-align: justify content;
   line-height: 25px;
   bottom: 20%;
 }
@@ -293,7 +293,6 @@ tituloyellow {
   display: inline-block;
   color: green; 
 }
-
 
 /* The popup chat - hidden by default */
 .chat{
