@@ -68,3 +68,10 @@ document.querySelector("#close").addEventListener("click", function(){
 let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
 console.log(CR);
+
+const btndisabled = document.querySelector("[disabled]");
+if (btndisabled){
+  btndisabled.onclick = function(){
+    window.location.href = "https://pingobras-404.glitch.me"
+  };}
+
