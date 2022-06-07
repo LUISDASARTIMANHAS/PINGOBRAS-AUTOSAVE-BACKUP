@@ -206,6 +206,26 @@
   transition: all 1s ease-out;
 }
 
+button,input{
+  font-family: inherit;
+  font-size: 100%;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+  border: 3px solid black; 
+}
+
+.btn-votacao-footer{
+  background-color: gray;
+  border: 3px solid black ;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+  font-size: 15px;
+  justify-content: center;
+  width: 25%;
+}
 
 .dipped {
   background: green;
