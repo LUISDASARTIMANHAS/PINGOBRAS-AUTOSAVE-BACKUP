@@ -226,6 +226,11 @@ button,input{
   justify-content: center;
   width: 35%;
 }
+.btn-votacao-footer:hover{
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+}
 
 .dipped {
   background: green;
