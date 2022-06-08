@@ -36,6 +36,7 @@
   background-color: orange;
   padding: var(--btn-tamanho);
   font-weight: bold;
+  margin: 3px;
 }
 .btnadmin:hover{
   cursor: pointer;
@@ -49,6 +50,7 @@
   font-weight: bold;
   font-size: 15px;
   justify-content: center;
+  margin: 3px;
 }
 .btnList:hover{
   cursor: pointer;
@@ -63,6 +65,7 @@
   padding: var(--btn-tamanho);
   cursor: pointer;
   font-weight: bold;
+  margin: 3px;
 }
 .btn-open-chat:hover{
   cursor: pointer;
@@ -190,7 +193,7 @@
   opacity: 1;
 }
 
-.btn.disabled, button[disabled], a[disabled], fieldset[disabled] .disabled{
+.btn.disabled, button[disabled], [disabled], fieldset[disabled] .disabled{
  cursor: not-allowed;
  filter: alpha(opacity=65);
  -webkit-box-shadow: none;
