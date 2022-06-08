@@ -19,10 +19,12 @@ if (UP2input){
 
 function openForm() {
   document.getElementById("jschat").style.display = "block";
+  console.log("chat aberto!");
 }
 
 function closeForm() {
   document.getElementById("jschat").style.display = "none";
+  console.log("chat fechado");
 }
 
 let btnescondedor = document.getElementById('escondedor');
@@ -30,22 +32,27 @@ var esconder = document.querySelector('.list');
 btnescondedor.addEventListener('click', function() {
     if(esconder.style.display === 'block') {
       esconder.style.display = 'none';
+      console.log("lista escondida!");
   } else {
       esconder.style.display = 'block';
+    console.log("lista visivel!");
   }
 });
 
 var btnBack = document.querySelector("#back-to-top");
 btnBack.addEventListener("click", function() {
     window.scrollTo(0, 0);
+  console.log("Usuario redirecionado para cima!");
 });
 var Descer = document.querySelector("#jsDescer");
 Descer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
+  console.log("Usuario redirecionado para baixo!");
 });
 var batepapoDescer = document.querySelector("#jsDescerBatePapo");
 batepapoDescer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
+  console.log("Usuario redirecionado para bate-papo!");
 });
 
 function autentication() {
@@ -57,12 +64,14 @@ window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
 document.querySelector(".site-altura").style.opacity = "0.2";
+  console.log("Anuncio carregado!");
 },5000)
 });
 
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".site-altura").style.opacity = "1";
+  console.log("Anuncio fechado!");
 });
 
 let STORAGE = localStorage.getItem("JSON STORAGE");
@@ -73,5 +82,6 @@ const btndisabled = document.querySelector("[disabled]");
 if (btndisabled){
   btndisabled.onclick = function(){
     window.location.href = "https://pingobras-404.glitch.me"
+    console.log("Usuario redirecionado para site fora do ar!");
   };}
 
