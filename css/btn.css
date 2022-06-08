@@ -11,6 +11,33 @@
     display: flex;
     justify-content: center;
 }
+.btn-entrar:hover{
+        background-image: linear-gradient(50deg, purple, blue);
+        cursor: pointer;
+        box-shadow: -8px 20px 20px gray;
+        transform: translateY(5px);
+        transition: all .5s ease-out;
+        }
+.btnvoltar{
+        position: inline;
+        background-color: blue;
+        border: 5px solid black;
+        padding: 7px;
+        width: 100%;
+        border-radius: 15px;
+        color: white;
+        font-size: 15px;
+        margin-top: 10px;
+        justify-content: center;
+        transform: translateY(5px);
+}
+      .btnvoltar:hover{
+        background-image: linear-gradient(50deg, blue, purple);
+        cursor: pointer;
+        box-shadow: -8px 20px 20px gray;
+        transform: translateY(5px);
+        transition: all .5s ease-out;
+        }
 .btndc {
   background-color: gray;
   padding: var(--btn-tamanho);
@@ -149,11 +176,11 @@
   cursor: pointer;
 }
 
-.btncadastro {
+.btn-cadastro {
   background-color: purple;
   padding: var(--btn-tamanho);
 }
-.btncadastro:hover {
+.btn-cadastro:hover {
   background-image: linear-gradient(45deg, purple, green);
   cursor: pointer;
 }
@@ -222,16 +249,6 @@
   transition: all 1s ease-out;
 }
 
-button,input{
-  font-family: inherit;
-  font-size: 100%;
-  background: white;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-  border: 3px solid black; 
-}
 
 .btn-votacao-footer{
   background-color: gray;
