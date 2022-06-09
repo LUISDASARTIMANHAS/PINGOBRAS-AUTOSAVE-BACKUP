@@ -92,12 +92,9 @@ let YTRe = JSON.parse(YoutubeLinks);
 document.getElementById("console").innerHTML = YTRe.LINK1;
 console.log(YTRe);
 
-
-document.addEventListener("DOMContentLoaded", function(){
-				var audio = document.getElementById("audio");
-				
-				document.getElementById("volume").addEventListener("mousemove", function(){
-					var volume = document.getElementById("volume").value;
-					audio.volume = volume;
-					console.log(volume);
-				}, false);}, false);
+var audio = document.getElementById("audio");
+document.getElementById("volume").addEventListener("mousemove", function(){
+var volume = document.getElementById("volume").value;
+audio.volume = volume;
+console.log(volume);
+}, false);
