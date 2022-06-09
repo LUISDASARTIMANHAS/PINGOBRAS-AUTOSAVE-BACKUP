@@ -17,4 +17,4 @@ const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 
 
-let YTL = {Link1:"" };
+let YTL = {Link1:"https://youtube.com/embed/" };
