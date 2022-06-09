@@ -22,7 +22,7 @@ const LkJson = JSON.stringify(YTL);
 localStorage.setItem("YoutubeLinks",LkJson);
 
 setTimeout( function TRLink() {
-const YTLive = {LINK2:"https://www.youtube.com/embed/?autoplay=1&loop=1" };
+const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
 const TRLkJson = JSON.stringify(YTLive);
 localStorage.setItem("YoutubeLinks",TRLkJson);
 },12500);

@@ -90,4 +90,4 @@ if (btndisabled){
 
 let YTRe = JSON.parse(YoutubeLinks);
 document.getElementById("console").innerHTML = YTRe.LINK1;
-console.log(YTRe)
+console.log(YTRe);
