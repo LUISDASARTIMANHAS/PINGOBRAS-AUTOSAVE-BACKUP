@@ -17,4 +17,10 @@ const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 
 
-let YTL = {Link1:"https://youtube.com/embed/" };
+const YTL = {Link1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
+const LkJson = JSON.stringify(YTL);
+localStorage.setItem("YoutubeLinks",LkJson);
+
+setTimeout({
+  console.log("hello");
+},5000)
