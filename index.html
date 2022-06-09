@@ -25,8 +25,18 @@
         <!-- This is the start of content for our page -->
       <br> <br>
       <main-text>PINGOBRAS S.A ©2010-2022</main-text>
+        
+        <audio controls="controls" id="audio">
+	 <source src="audio.mp3" type="audio/mpeg">
+	 <source src="audio.ogg" type="audio/ogg">
+	 Seu navegador não tem suporte a Tag Audio.
+</audio> 
+        <button id="play">Play</button>
+		<button id="pause">Pause</button>
+		Volume: <input type="range" id="volume" min="0.0" max="10" value="0.5" />
+        <audio controls="controls" autoplay="autoplay" muted="muted" loop="loop" src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3" preload="auto"></audio>
+        
         <div class="cabecalho">
-          
           <button
                   class="btnList btnC"
                   id="escondedor"
