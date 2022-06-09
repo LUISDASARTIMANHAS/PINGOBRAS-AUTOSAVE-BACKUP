@@ -1,3 +1,6 @@
+let STORAGE = localStorage.getItem("JSON STORAGE")
+let YoutubeLinks = localStorage.getItem("YoutubeLinks")
+
 
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
@@ -74,7 +77,6 @@ document.querySelector("#close").addEventListener("click", function(){
   console.log("Anuncio fechado!");
 });
 
-let STORAGE = localStorage.getItem("JSON STORAGE");
 let CR = JSON.parse(STORAGE);
 console.log(CR);
 
@@ -85,3 +87,7 @@ if (btndisabled){
     console.log("Usuario redirecionado para site fora do ar!");
   };}
 
+
+let YTRe = JSON.parse(YoutubeLinks);
+document.getElementById("console").innerHTML = YTRe.LINK1;
+console.log(YTRe)
