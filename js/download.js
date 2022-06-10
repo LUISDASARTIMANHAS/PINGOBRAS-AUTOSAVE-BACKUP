@@ -37,3 +37,7 @@ function factorioButton() {
     }
   }
 }
+
+function contato() {
+  document.getElementById("frm1").submit();
+}
