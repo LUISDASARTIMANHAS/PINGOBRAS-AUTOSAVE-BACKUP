@@ -99,6 +99,9 @@ main-text {
   margin-bottom: 15px;
   color: black;
 }
+.logo-goves, a .logo-goves{
+  border: none;
+}
 .titulo-do-produto {
   font-size: 20px;
   color: black;
