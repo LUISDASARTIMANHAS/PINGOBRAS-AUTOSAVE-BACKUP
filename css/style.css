@@ -104,6 +104,9 @@ main-text {
   color: black;
   word-break: break-word;
 }
+.contator{
+  color: white;
+}
 h2 {
   display: inline-block;
   text-align: center;
@@ -115,6 +118,12 @@ h3 {
   text-align: center;
   font-size: var(--sub-tamanho);
   color: green;
+}
+h4{
+  display: inline-block;
+  text-align: center;
+  font-size: var(--sub-tamanho);
+  color: white;
 }
 hr {
   display: flex;
