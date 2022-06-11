@@ -92,10 +92,18 @@ a{
 a:hover {
   color: red;
 }
-a .none{
-  
-  text-decoration: none;
-  border: none;
+a[links]{
+margin: 0;
+display: block;
+text-align: center;
+font-size: 20px;
+cursor: alias;
+border: none;
+color:purple;
+text-decoration: underline;
+}
+a[links]:hover{
+  color:purple;
 }
 
 main-text {
