@@ -121,9 +121,15 @@ main-text:before{
 }
 
 .logo-goves, a .logo-goves{
+  margin: 0;
+  display: block;
+  text-align: left;
   border: none;
 }
 .direitos{
+  margin: 0;
+  display: block;
+  text-align: center;
   border:none;
   cursor: help;
 }
@@ -277,12 +283,12 @@ tituloyellow {
 }
 /* Navigation grid */
 .footer {
-  display: flex;
+  display: block;
   margin: 10px;
   width: 100%;
   font-size: 15pt;
   text-align: center;
-  height: 50px;
+  padding: 50px;
   flex-wrap: wrap;
   border-top: 4px solid white;
 }
