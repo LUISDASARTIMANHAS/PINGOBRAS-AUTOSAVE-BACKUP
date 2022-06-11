@@ -105,7 +105,6 @@ console.log(volume);
 
 Email.send({
 Host: "smtp.gmail.com",
-Username: "sender@email_address.com",
 Password: "2004",
 To: 'luisaugustodesouza785@gmail.com',
 From: "pingobras@gmail.com",
@@ -113,10 +112,3 @@ Subject: "website gmail automatico",
 Body: "Well that was easy!!",})
 .then(function (message){alert("email enviado")});
 
-
-var link = "mailto:luisaugustodesouza785@gmail.com"
-		 + "?cc=pingobras@glitch.me.com"
-		 + "&subject=" + escape("This is my subject")
-		 + &body="teste"
-;
-window.location.href = link;
