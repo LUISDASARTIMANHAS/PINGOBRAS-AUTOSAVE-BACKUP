@@ -111,8 +111,19 @@
   box-shadow: -8px 20px 20px gray;
   color: gold;
 }
-.btn
-
+.btn-film{
+  background-color: gray;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+  font-size: 15px;
+  justify-content: center;
+  margin: 3px;
+}
+.btn-film:hover{
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transition: all .3s ease-out;
+}
 
 .btn-enviar-msm{
   background-color: green;

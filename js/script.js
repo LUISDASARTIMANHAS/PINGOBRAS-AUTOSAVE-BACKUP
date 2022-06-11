@@ -63,7 +63,9 @@ batepapoDescer.addEventListener("click", function() {
 function autentication() {
 window.location.href = ("https://pingobras-autentication.glitch.me/");
 };
-
+function pageFilmSerie() {
+window.open("https://pingobras.glitch.me/films=pingobras.html");
+};
 
 window.addEventListener("load", function(){
 setTimeout(function open(event){
