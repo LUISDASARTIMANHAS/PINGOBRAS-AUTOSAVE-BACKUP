@@ -74,7 +74,7 @@ body {
   justify-content: center;
   opacity: 1;
 }
-a {
+a{
   font-size: 15px;
   border: 5px solid black;
   font-weight: bold;
@@ -91,6 +91,11 @@ a {
 }
 a:hover {
   color: red;
+}
+a .none{
+  
+  text-decoration: none;
+  border: none;
 }
 
 main-text {
