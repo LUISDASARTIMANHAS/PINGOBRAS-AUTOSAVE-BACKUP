@@ -322,6 +322,7 @@ tituloyellow {
 }
 
 .img-click {
+  cursor: pointer;
   background: transparent;
   border: none;
   display: block;
