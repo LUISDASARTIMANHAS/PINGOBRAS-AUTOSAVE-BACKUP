@@ -98,6 +98,5 @@ setTimeout( function REL(){
 const YTLinks = JSON.parse(STORAGEYT);
 console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
-function myFunction() {
-document.getElementById("ytlink1").innerHTML = "I have changed!";}
+document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
