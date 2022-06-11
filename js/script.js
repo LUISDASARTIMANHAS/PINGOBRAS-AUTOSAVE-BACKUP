@@ -93,14 +93,8 @@ if (btndisabled){
 
 let YTRe = JSON.parse(YoutubeLinks);
 document.getElementById("console").innerHTML = YTRe.LINK1;
-console.log(YTRe);
+document.getElementById("ytlink1").innerHTML = "I have changed!";
 
-var audio = document.getElementById("audio");
-document.getElementById("volume").addEventListener("mousemove", function(){
-var volume = document.getElementById("volume").value;
-audio.volume = volume;
-console.log(volume);
-}, false);
 
 
 Email.send({

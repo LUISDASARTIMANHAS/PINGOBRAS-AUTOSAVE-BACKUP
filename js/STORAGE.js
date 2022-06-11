@@ -25,4 +25,4 @@ setTimeout( function TRLink() {
 const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
 const TRLkJson = JSON.stringify(YTLive);
 localStorage.setItem("YoutubeLinks",TRLkJson);
-},12500);
+},125000);
