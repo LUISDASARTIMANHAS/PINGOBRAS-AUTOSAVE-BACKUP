@@ -110,11 +110,12 @@ main-text {
 .contator{
   color: white;
 }
-h1:hover::before {
+txtcolor:hover:before {
   transform: scaleX(1);
   transform-origin: bottom left;
+  font-size: 20px;
 }
-h1:before {
+txtcolor:before,h2:before,maintext:before{
   content: " ";
   transform: scaleX(0);
   transform-origin: bottom right;
@@ -125,11 +126,13 @@ h1:before {
   bottom: 0; 
   left: 0;
   inset: 0 0 0 0;
-  background-image: linear-hsl(200 100% 80%);
+  background-image: linear-gradient(blue,green);
   z-index: -1;
-  transition: transform .3s ease;
+  transition: transform 2s ease;
+  font-size: 20px;
 }
-h1 {
+txtcolor {
+  font-size: 20px;
   position: relative;
 }
 
