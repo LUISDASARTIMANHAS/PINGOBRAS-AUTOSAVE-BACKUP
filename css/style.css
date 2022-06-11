@@ -381,7 +381,6 @@ tituloyellow {
 }
 .popup button:hover {
   background: green;
-  cursor: cross;
   box-shadow: -8px 20px 20px white;
   transition: all 1s ease-out;
 }

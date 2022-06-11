@@ -100,7 +100,7 @@
   background-color: gray;
   font-size: 15px;
   padding: var(--btn-tamanho);
-  cursor: help;
+  cursor: pointer;
   font-weight: bold;
   margin: 3px;
 }
@@ -175,18 +175,18 @@
 .btn-cadastro {
   background-color: purple;
   padding: var(--btn-tamanho);
+  cursor: help;
 }
 .btn-cadastro:hover {
   background-image: linear-gradient(45deg, purple, green);
-  cursor: pointer;
 }
 .btn-pages {
   background-color: green;
   padding: var(--btn-tamanho);
+  cursor: help;
 }
 .btn-pages:hover {
   background-image: linear-gradient(45deg, green, blue);
-  cursor: pointer;
 }
 
 .btn-subir{
@@ -200,10 +200,10 @@
   align-items: center;
   justify-content: center;
   color: white;
+  cursor: zoom-in;
 }
 .btn-subir:hover{
   background-image: linear-gradient(45deg, gray, green);
-  cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
   transition: all 1s ease-out;
@@ -219,10 +219,10 @@
   bottom: 50px;
   right: 50px;
   opacity: 0.8;
+  cursor: zoom-out;
 }
 .btn-descer:hover{
   background-image: linear-gradient(45deg, purple, green);
-  cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
   transition: all 1s ease-out;
