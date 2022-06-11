@@ -121,16 +121,17 @@ main-text:before{
 }
 
 .logo-goves, a .logo-goves{
-  position: absolute;
   border: none;
-  left: -33px;
-  bottom: -100;
+  position: absolute;
+  justify-content: space-between;
+  position: left;
 }
 .direitos{
+  border:none;
+  cursor: help;
   position: absolute;
-  border: none;
-  right: 0;
-  bottom: -100;
+  justify-content: space-between;
+  position: right;
 }
 
 .titulo-do-produto {
