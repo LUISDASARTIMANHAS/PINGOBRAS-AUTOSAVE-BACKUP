@@ -319,6 +319,7 @@ tituloyellow {
 .dipped {
   background: green;
   transform: translateY(5px);
+  cursor: wait;
 }
 
 .img-click {
@@ -366,7 +367,7 @@ tituloyellow {
   width: 40px;
   height: 40px;
   border: none;
-  cursor: pointer;
+  cursor: crosshair;
   top: 15%;
   right: 0;
 }
@@ -380,7 +381,7 @@ tituloyellow {
 }
 .popup button:hover {
   background: green;
-  cursor: pointer;
+  cursor: cross;
   box-shadow: -8px 20px 20px white;
   transition: all 1s ease-out;
 }
@@ -402,6 +403,7 @@ tituloyellow {
   border: 5px solid black ;
   padding: 10px 10px;
   width: 95%;
+  cursor: help;
 }
 .list saldo{
   display: inline-block;

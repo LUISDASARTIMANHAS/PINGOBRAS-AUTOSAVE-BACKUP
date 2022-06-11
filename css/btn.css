@@ -76,7 +76,7 @@
   margin: 3px;
 }
 .btnadmin:hover{
-  cursor: pointer;
+  cursor: wait;
   box-shadow: -8px 20px 20px gray;
   color: gold;
 }
@@ -90,7 +90,7 @@
   margin: 3px;
 }
 .btnList:hover{
-  cursor: pointer;
+  cursor: help;
   box-shadow: -8px 20px 20px gray;
   color: gold;
 }
@@ -100,12 +100,11 @@
   background-color: gray;
   font-size: 15px;
   padding: var(--btn-tamanho);
-  cursor: pointer;
+  cursor: help;
   font-weight: bold;
   margin: 3px;
 }
 .btn-open-chat:hover{
-  cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   color: gold;
   transition: all .3s ease-out;
