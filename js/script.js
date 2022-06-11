@@ -1,5 +1,7 @@
 let STORAGE = localStorage.getItem("JSON STORAGE")
+console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
+console.log("armazenamento YTL requirido");
 
 
 console.log("Hello 🌎");
@@ -79,8 +81,9 @@ document.querySelector("#close").addEventListener("click", function(){
   console.log("Anuncio fechado!");
 });
 
-let CR = JSON.parse(STORAGE);
-console.log(CR);
+let client = JSON.parse(STORAGE);
+console.log("client descodificada");
+console.log(client);
 
 const btndisabled = document.querySelector("[disabled]");
 if (btndisabled){
@@ -97,15 +100,3 @@ document.getElementById("console").innerHTML = YTLinks.LINK1;
 function myFunction() {
 document.getElementById("ytlink1").innerHTML = "I have changed!";
 }
-
-
-
-Email.send({
-Host: "smtp.gmail.com",
-Password: "2004",
-To: 'luisaugustodesouza785@gmail.com',
-From: "pingobras@gmail.com",
-Subject: "website gmail automatico",
-Body: "Well that was easy!!",})
-.then(function (message){alert("email enviado")});
-
