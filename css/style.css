@@ -121,7 +121,9 @@ main-text:before{
 }
 
 .logo-goves, a .logo-goves{
+  position: absolute;
   border: none;
+  left: 100%;
 }
 
 .titulo-do-produto {
@@ -418,6 +420,7 @@ tituloyellow {
   display: none;
   border: 5px solid black;
   z-index: 9;
+  width: 100%;
 }
 
 /* Add styles to the form container */
