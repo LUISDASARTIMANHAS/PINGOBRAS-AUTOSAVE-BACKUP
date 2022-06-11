@@ -67,6 +67,7 @@ window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
 document.querySelector(".site-altura").style.opacity = "0.2";
+document.querySelector(".site-altura").style.cursor = "not-allowed";
   console.log("Anuncio carregado!");
 },5000)
 });
@@ -74,6 +75,7 @@ document.querySelector(".site-altura").style.opacity = "0.2";
 document.querySelector("#close").addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".site-altura").style.opacity = "1";
+    document.querySelector(".site-altura").style.cursor = "default";
   console.log("Anuncio fechado!");
 });
 
@@ -84,6 +86,7 @@ const btndisabled = document.querySelector("[disabled]");
 if (btndisabled){
   btndisabled.onclick = function(){
     window.location.href = "https://pingobras-404.glitch.me"
+    document.querySelector(".site-altura").style.cursor = "progress";
     console.log("Usuario redirecionado para site fora do ar!");
   };}
 

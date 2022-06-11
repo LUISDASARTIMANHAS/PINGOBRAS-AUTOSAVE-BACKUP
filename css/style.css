@@ -481,6 +481,7 @@ color: blue;
   width: 100%;
 }
 .audio{
+  cursor: progress;
   outline: none;
   border: 5px solid black;
   border-radius: 25%;
