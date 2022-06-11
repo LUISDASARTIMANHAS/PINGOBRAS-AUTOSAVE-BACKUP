@@ -1,5 +1,5 @@
 let STORAGE = localStorage.getItem("JSON STORAGE")
-let YoutubeLinks = localStorage.getItem("YoutubeLinks")
+let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 
 
 console.log("Hello 🌎");
@@ -91,9 +91,12 @@ if (btndisabled){
   };}
 
 
-let YTRe = JSON.parse(YoutubeLinks);
-document.getElementById("console").innerHTML = YTRe.LINK1;
+let YTLinks = JSON.parse(STORAGEYT);
+console.log(YTLinks)
+document.getElementById("console").innerHTML = YTLinks.LINK1;
+function myFunction() {
 document.getElementById("ytlink1").innerHTML = "I have changed!";
+}
 
 
 
