@@ -31,6 +31,7 @@ localStorage.setItem("YoutubeLinks",LkJson);
 console.log("LKJson redefinido");
 
 setTimeout( function TRLink() {
+  
 console.log("timeout terminado");
 const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
 console.log("YTL alterada");
@@ -38,4 +39,5 @@ const TRLkJson = JSON.stringify(YTLive);
 console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
+
 },125000);

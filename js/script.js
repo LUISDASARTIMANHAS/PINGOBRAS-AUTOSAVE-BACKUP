@@ -81,9 +81,9 @@ document.querySelector("#close").addEventListener("click", function(){
   console.log("Anuncio fechado!");
 });
 
-let client = JSON.parse(STORAGE);
+let CL = JSON.parse(STORAGE);
 console.log("client descodificada");
-console.log(client);
+console.log(CL);
 
 const btndisabled = document.querySelector("[disabled]");
 if (btndisabled){
@@ -93,10 +93,11 @@ if (btndisabled){
     console.log("Usuario redirecionado para site fora do ar!");
   };}
 
-
+setTimeout( function REL(){
+  
 const YTLinks = JSON.parse(STORAGEYT);
 console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
 function myFunction() {
-document.getElementById("ytlink1").innerHTML = "I have changed!";
-}
+document.getElementById("ytlink1").innerHTML = "I have changed!";}
+},125000);
