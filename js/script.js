@@ -101,3 +101,15 @@ var volume = document.getElementById("volume").value;
 audio.volume = volume;
 console.log(volume);
 }, false);
+
+      
+Email.send({
+Host: "smtp.gmail.com",
+Username: "pingobras.glitch.me@gmail.com",
+Password: "2004",
+To: 'luisaugustodesouza785@gmail.com',
+From: "pingobras@glitch.me",
+Subject: "website gmail automatico",
+Body: "Well that was easy!!",})
+
+.then(function (message){alert("email enviado")});

@@ -30,24 +30,7 @@
         <script src=
     "https://smtpjs.com/v3/smtp.js">
   </script>
-  
-  <script type="text/javascript">
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'luisaugustodesouza785@gmail.com',
-        From: "websitePingobras@gmail.com",
-        Subject: "website gmail automatico",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
-  
+
   <form method="post">
     <input type="button" value="Send Email" 
         onclick="sendEmail()" />
