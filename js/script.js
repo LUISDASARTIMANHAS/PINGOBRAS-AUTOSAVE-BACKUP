@@ -94,8 +94,8 @@ if (btndisabled){
   };}
 
 
-let YTLinks = JSON.parse(STORAGEYT);
-console.log(YTLinks)
+const YTLinks = JSON.parse(STORAGEYT);
+console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
 function myFunction() {
 document.getElementById("ytlink1").innerHTML = "I have changed!";
