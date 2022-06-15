@@ -75,7 +75,7 @@ setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
 document.querySelector(".site-altura").style.opacity = "0.2";
 document.querySelector(".site-altura").style.cursor = "not-allowed";
-  console.log("Anuncio carregado!");
+  console.log("Anuncio carregado!"); 
 },5000)
 });
 
