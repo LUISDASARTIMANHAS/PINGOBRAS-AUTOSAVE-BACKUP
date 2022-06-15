@@ -24,6 +24,7 @@ if (UP2input){
 
 function openForm() {
   document.getElementById("jschat").style.display = "block";
+  alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
   console.log("chat aberto!");
 }
 
