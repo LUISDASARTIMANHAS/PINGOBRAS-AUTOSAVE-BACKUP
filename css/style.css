@@ -557,6 +557,16 @@ tituloyellow {
   display: inline-block;
   color: green; 
 }
+.list-changelogs{
+  display: block;
+  color: blue;
+  background: white;
+  border: 5px solid black ;
+  padding: 10px 10px;
+  width: 100%;
+  cursor: help;
+  font-size: 17px;
+}
 
 /* The popup chat - hidden by default */
 .chat{
