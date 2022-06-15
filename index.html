@@ -253,8 +253,9 @@ Diogo: <saldo> Em Andamento </saldo> <payment> Pagamento: Em Andamento </payment
   <link rel="stylesheet" href="css/btn.css" />
     <script src="js/script.js" defer></script>
     <script src="js/STORAGE.js" defer></script>
-    <script>
-    if(document.URL == pingobras.glitch.me){
+  <script>
+  const http = "http://pingobras.glitch.me/"
+if(document.URL == http) {
    window.location.href = ("https://pingobras.glitch.me/#"); 
   alert("Pagina insegura execuando Seguranca Da Pagina " + document.URL);
     }
