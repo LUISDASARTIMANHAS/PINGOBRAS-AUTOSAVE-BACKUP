@@ -33,17 +33,29 @@ function closeForm() {
   console.log("chat fechado");
 }
 
-let btnescondedor = document.getElementById('escondedor');
-var esconder = document.querySelector('.list');
-btnescondedor.addEventListener('click', function() {
-    if(esconder.style.display === 'block') {
-      esconder.style.display = 'none';
+let btnlist = document.getElementById('btnlist');
+var listDEV = document.getElementById('listDevedores');
+btnlist.addEventListener('click', function() {
+    if(listDEV.style.display === 'block') {
+      listDEV.style.display = 'none';
       console.log("lista escondida!");
   } else {
-      esconder.style.display = 'block';
+      listDEV.style.display = 'block';
     console.log("lista visivel!");
   }
 });
+let btnlistChangelogs = document.getElementById('btnlistChangelogs');
+var listChangelogs = document.getElementById('listChangelogs');
+btnlistChangelogs.addEventListener('click', function() {
+    if(listChangelogs.style.display === 'block') {
+      listChangelogs.style.display = 'none';
+      console.log("Changelogs escondida!");
+  } else {
+      listChangelogs.style.display = 'block';
+    console.log("Changelogs visivel!");
+  }
+});
+
 
 var btnBack = document.querySelector("#back-to-top");
 btnBack.addEventListener("click", function() {

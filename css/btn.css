@@ -1,5 +1,16 @@
 .btnC{
   border: 4px solid silver;
+  background-color: gray;
+  padding: var(--btn-tamanho);
+  font-weight: bold;
+  font-size: 15px;
+  justify-content: center;
+  margin: 3px;
+}
+.btnC:hover{
+  box-shadow: -8px 20px 20px gray;
+  color: gold;
+  transition: all .3s ease-out;
 }
 
 .btn-entrar{
@@ -73,27 +84,10 @@
   transition: all 1s ease-out;
 }
 
-.btnList {
-  background-color: gray;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  font-size: 15px;
-  justify-content: center;
-  margin: 3px;
-}
 .btnList:hover{
   cursor: help;
   box-shadow: -8px 20px 20px gray;
   color: gold;
-}
-.btn-open-chat{
-  display: inline-block;
-  background-color: gray;
-  font-size: 15px;
-  padding: var(--btn-tamanho);
-  cursor: pointer;
-  font-weight: bold;
-  margin: 3px;
 }
 .btn-open-chat:hover{
   box-shadow: -8px 20px 20px gray;
@@ -110,19 +104,6 @@
   cursor: wait;
   box-shadow: -8px 20px 20px gray;
   color: gold;
-}
-.btn-film{
-  background-color: gray;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  font-size: 15px;
-  justify-content: center;
-  margin: 3px;
-}
-.btn-film:hover{
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transition: all .3s ease-out;
 }
 
 .btn-enviar-msm{
