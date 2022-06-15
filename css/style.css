@@ -223,6 +223,10 @@ text-decoration: underline;
 a[links]:hover{
   color:purple;
 }
+.red-title{
+  font-size: 17px;
+  color: red;
+}
 .yellow-title{
   font-size: 17px;
   color: yellow;
