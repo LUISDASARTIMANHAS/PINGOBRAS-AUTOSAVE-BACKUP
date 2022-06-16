@@ -105,6 +105,17 @@ function contato() {
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 
-if(tokenR == null) {
-  
+function sair(){
+  alert("usuario deslogado");
+let storageToken = {token: null};
+const Cryptotoken = JSON.stringify(storageToken);
+console.log("codificando token");
+localStorage.setItem("JsonToken", Cryptotoken);
+console.log("token redefinido");
+window.location.href = "https://pingobras.glitch.me"
+}
+
+if(tokenR.token == null) {
+  window.location.href = "https://pingobras.glitch.me"
+  alert("usuario não autorizado")
 }
