@@ -89,14 +89,14 @@ function contato() {
   document.getElementById("contato").submit();
 }
 
-
-function sair() {
+var enviar = document.querySelector("#enviar");
+enviar.addEventListener("click", function sair() {
   alert("usuario deslogado");
 const REstorageToken = {token: 0};
 const Cryptotoken = JSON.stringify(REstorageToken);
 console.log("codificando token");
   localStorage.setItem("JsonToken", Cryptotoken);
 console.log("token redefinido");
-  window.location.href = "https://pingobras.glitch.me"};
+  window.location.href = "https://pingobras.glitch.me"});
 
     

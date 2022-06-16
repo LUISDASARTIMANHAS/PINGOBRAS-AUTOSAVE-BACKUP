@@ -649,5 +649,6 @@ color: blue;
   background: white;
   border: 3px solid black;
   color: black;
+  width: 75%;
   cursor: help;
 }
