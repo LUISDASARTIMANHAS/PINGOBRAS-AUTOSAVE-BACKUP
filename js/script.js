@@ -2,6 +2,7 @@ let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
+let JsonToken = localStorage.getItem("JsonToken");
 
 
 console.log("Hello 🌎");
