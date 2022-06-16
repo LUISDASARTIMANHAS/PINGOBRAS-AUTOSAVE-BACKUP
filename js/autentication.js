@@ -17,13 +17,14 @@ enviar.addEventListener("click", function entrar() {
    if(inputsenha.value == key.senha) {
     window.location.href = "https://pingobras.glitch.me/download.html"
     let mathRandom = Math.random().toString(16).substr(2)
+   
     let storageToken = {token: mathRandom};
+    const Cryptotoken = JSON.stringify(storageToken);
+     console.log("codificando token");
+     localStorage.setItem("JsonToken", Cryptotoken);
+     console.log("token redefinido");
     
-const Cryptotoken = JSON.stringify(storageToken);
-console.log("codificando token");
-localStorage.setItem("JsonToken", Cryptotoken);
-console.log("token redefinido");
-    
+     
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
   }
@@ -39,4 +40,13 @@ function refresh(){
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 alert('O banco de dados foi restaurado!')
+}
+
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token)
+
+if(tokenR.token == 0) {
+  window.location.href = "https://pingobras.glitch.me";
+  alert("usuario não autorizado");
 }

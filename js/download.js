@@ -89,21 +89,15 @@ function contato() {
   document.getElementById("contato").submit();
 }
 
-let storageToken = localStorage.getItem("JsonToken");
-let tokendow = JSON.parse(storageToken);
-console.log(tokendow.token)
 
 function sair(){
   alert("usuario deslogado");
-let storageToken = {token: null};
-const Cryptotoken = JSON.stringify(storageToken);
+const REstorageToken = {token: 0};
+const Cryptotoken = JSON.stringify(REstorageToken);
 console.log("codificando token");
-localStorage.setItem("JsonToken", Cryptotoken);
+  localStorage.setItem("JsonToken", Cryptotoken);
 console.log("token redefinido");
-window.location.href = "https://pingobras.glitch.me"
+  window.location.href = "https://pingobras.glitch.me"
 }
 
-if(tokenR.token == null) {
-  window.location.href = "https://pingobras.glitch.me";
-  alert("usuario não autorizado");
-}
+    
