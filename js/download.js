@@ -89,8 +89,8 @@ function contato() {
   document.getElementById("contato").submit();
 }
 
-var enviar = document.querySelector("#enviar");
-enviar.addEventListener("click", function sair() {
+var sair = document.querySelector("#sair");
+sair.addEventListener("click", function sair() {
   alert("usuario deslogado");
 const REstorageToken = {token: 0};
 const Cryptotoken = JSON.stringify(REstorageToken);

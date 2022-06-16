@@ -47,8 +47,13 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
-const userID = document.getElementById("userID");
- userID.innerHTML = tokenR.token;
+const user1 = document.getElementById("userID1");
+const user2 = document.getElementById("userID2");
+const user3 = document.getElementById("userID3");
+ user1.innerHTML = tokenR.token
+ user2.innerHTML = tokenR.token
+ userID3.innerHTML = tokenR.token
+
 
 if(tokenR.token == 0) {
   window.location.href = "https://pingobras.glitch.me"

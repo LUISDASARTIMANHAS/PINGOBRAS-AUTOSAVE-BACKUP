@@ -3,7 +3,7 @@ console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
 
-
+const videoStream = navigator.mediaDevices.getUserMedia({ audio: false, video: false, geolocation: true})
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
 if (btn){
