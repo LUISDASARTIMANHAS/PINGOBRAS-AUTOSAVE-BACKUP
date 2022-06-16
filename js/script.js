@@ -79,7 +79,6 @@ alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
 };
 function pageFilmSerie() {
 window.open("https://pingobras.glitch.me/films=pingobras.html");
-alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
 };
 
 window.addEventListener("load", function(){
