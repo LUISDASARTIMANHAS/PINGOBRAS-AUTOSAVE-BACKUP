@@ -1,5 +1,4 @@
-<html>
-  <head>
+<html><head>
 <meta name="robots" content="noindex">
 <meta name="robots" content="nofollow">
 <meta name="googlebot" content="noindex">
@@ -26,13 +25,13 @@ body {
 	background-color: rgba(216,31,34,1.00);
 }
 .blktabs {
-	margin-right: auto;
-	margin-left: auto;
+	/*margin-right: auto;
+	margin-left: auto;*/
 	width: 250px;
 	height: 250px;
 }
 .tb1,.tb2,.tb3 {
-	width: 30%;
+	/*width: 30%;*/
 }
 fieldset {
 	padding-top: 10px;
@@ -40,23 +39,22 @@ fieldset {
 	padding-bottom: 10px;
 	padding-left: 10px;
 	border:none;
-	background-color: rgba(255,255,255,1.00);
+	/*background-color: rgba(255,255,255,1.00);
 	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,1.00);
 	box-shadow: 0px 0px 2px 0px rgba(0,0,0,1.00);
 	border-style: none;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: auto;
-	margin-bottom: auto;
-	height: 450px;
+	margin-bottom: auto;*/
+	/*height: 450px;*/
 }
-  
 #options {
-	width: auto;
+	/*width: auto;
 	min-width: 450px;
-	max-width: 550px;
+	max-width: 550px;*/
 }
-  
+/*
 #options h5 {
 	margin-top: 2px;
 	margin-right: 2px;
@@ -64,7 +62,7 @@ fieldset {
 	margin-left: 2px;
 	font-size: 105%;
 }
-  
+*/
 #options legend{
 	font-size: 150%;
 	width: 65%;
@@ -474,27 +472,27 @@ function gett() {
 }
 
 onload=function(){gett();}
-</script>
+</script><script>(function(){class RuffleMimeType{constructor(a,b,c){this.type=a,this.description=b,this.suffixes=c}}class RuffleMimeTypeArray{constructor(a){this.__mimetypes=[],this.__named_mimetypes={};for(let b of a)this.install(b)}install(a){let b=this.__mimetypes.length;this.__mimetypes.push(a),this.__named_mimetypes[a.type]=a,this[a.type]=a,this[b]=a}item(a){return this.__mimetypes[a]}namedItem(a){return this.__named_mimetypes[a]}get length(){return this.__mimetypes.length}}class RufflePlugin extends RuffleMimeTypeArray{constructor(a,b,c,d){super(d),this.name=a,this.description=b,this.filename=c}install(a){a.enabledPlugin||(a.enabledPlugin=this),super.install(a)}}class RufflePluginArray{constructor(a){this.__plugins=[],this.__named_plugins={};for(let b of a)this.install(b)}install(a){let b=this.__plugins.length;this.__plugins.push(a),this.__named_plugins[a.name]=a,this[a.name]=a,this[b]=a}item(a){return this.__plugins[a]}namedItem(a){return this.__named_plugins[a]}refresh(){}get length(){return this.__plugins.length}}const FLASH_PLUGIN=new RufflePlugin("Shockwave Flash","Shockwave Flash 32.0 r0","ruffle.js",[new RuffleMimeType("application/futuresplash","Shockwave Flash","spl"),new RuffleMimeType("application/x-shockwave-flash","Shockwave Flash","swf"),new RuffleMimeType("application/x-shockwave-flash2-preview","Shockwave Flash","swf"),new RuffleMimeType("application/vnd.adobe.flash-movie","Shockwave Flash","swf")]);function install_plugin(a){navigator.plugins.install||Object.defineProperty(navigator,"plugins",{value:new RufflePluginArray(navigator.plugins),writable:!1}),navigator.plugins.install(a),0<a.length&&!navigator.mimeTypes.install&&Object.defineProperty(navigator,"mimeTypes",{value:new RuffleMimeTypeArray(navigator.mimeTypes),writable:!1});for(var b=0;b<a.length;b+=1)navigator.mimeTypes.install(a[b])}install_plugin(FLASH_PLUGIN);})();</script><script src="chrome-extension://donbcfbmhbcapadipfkeojnmajbakjdc/dist/ruffle.js?id=21637404803"></script>
 
 </head>
 <body marginwidth="0" marginheight="0">
 <div id="Tabs" class="blktabs">
     <fieldset id="options">
        <ul>
-        <li class="siteOff"><strong>Off Line</strong> <span id="valueOffid">1</span></li>
+        <li class="siteOff"><strong>Off Line</strong> <span id="valueOffid">0</span></li>
         <li class="siteOn"><strong>On Line</strong> <span id="valueOnid">2</span></li>
       </ul>
       <div id="cadreGenGraph">
         <div id="cadre" class="clearfix">
             <div id="graph7" class="clearfix" style="height: 0%;"></div>
-            <div id="graph6" class="clearfix" style="height: 0%;"></div>
+            <div id="graph6" class="clearfix" style="height: 22%;">2</div>
             <div id="graph5" class="clearfix" style="height: 0%;"></div>
-            <div id="graph4" class="clearfix" style="height: 0%;"></div>
-            <div id="graph3" class="clearfix" style="height: 21.9929%;">2</div>
+            <div id="graph4" class="clearfix" style="height: 88%;">8</div>
+            <div id="graph3" class="clearfix" style="height: 33.0099%;">3</div>
             <div id="graph2" class="clearfix" style="height: 0%;"></div>
-            <div id="graph1" class="clearfix" style="height: 88%;">8</div>
-            <div id="graphDay" class="clearfix" style="height: 33.0036%;">1</div>
-            <div id="graphOnline" class="clearfix" style="height: 21.9929%;">2</div>
+            <div id="graph1" class="clearfix" style="height: 33.0099%;">3</div>
+            <div id="graphDay" class="clearfix" style="height: 22%;"></div>
+            <div id="graphOnline" class="clearfix" style="height: 22%;">2</div>
         </div>
       </div>
       </fieldset>
@@ -502,5 +500,4 @@ onload=function(){gett();}
 
 
 
-</body>
-</html>
+</body></html>
