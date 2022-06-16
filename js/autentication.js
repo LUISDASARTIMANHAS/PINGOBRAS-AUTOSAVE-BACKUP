@@ -2,10 +2,6 @@
 let  JsonKeys = localStorage.getItem("JsonKeys");
 let key = JSON.parse(JsonKeys);
 console.log(key.senha);
-let tokenjs = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjs);
-let userID = document.getElementById("userID");
- userID.innerHTML = tokenR.token;
 
 let inputsenha = document.getElementById("senha")
 console.log(inputsenha.value)
@@ -19,7 +15,7 @@ var enviar = document.querySelector("#submit");
 enviar.addEventListener("click", function entrar() {  
   alert('Verificando!...');
    if(inputsenha.value == key.senha) {
-    window.location.href = "https://pingobras.glitch.me"
+    window.location.href = "https://pingobras.glitch.me/download.html"
     let mathRandom = Math.random().toString(16).substr(2)
     let storageToken = {token: mathRandom};
     

@@ -2,6 +2,11 @@ let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+
+let userID = document.getElementById("userID");
+ userID.innerHTML = tokenR.token;
 
 
 console.log("Hello 🌎");

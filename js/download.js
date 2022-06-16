@@ -101,3 +101,10 @@ ngutils.event.addListener(ngutils.uploadEvent.onComplete, function(event) {
 function contato() {
   document.getElementById("contato").submit();
 }
+
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+
+if(tokenR == null) {
+  
+}
