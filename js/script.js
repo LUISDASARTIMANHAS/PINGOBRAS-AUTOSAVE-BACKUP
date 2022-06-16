@@ -74,7 +74,7 @@ batepapoDescer.addEventListener("click", function() {
 });
 
 function autentication() {
-window.location.href = ("https://pingobras-autentication.glitch.me/");
+window.location.href = ("https://pingobras.glitch.me/autentication.html");
 alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
 };
 function pageFilmSerie() {
