@@ -2,9 +2,6 @@
 let  JsonKeys = localStorage.getItem("JsonKeys");
 let key = JSON.parse(JsonKeys);
 console.log(key.senha);
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
-console.log(tokenR.token);
 
 
 let inputsenha = document.getElementById("senha")
@@ -45,6 +42,13 @@ const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 alert('O banco de dados foi restaurado!')
 }
+
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token);
+
+const userID = document.getElementById("userID");
+ userID.innerHTML = tokenR.token;
 
 if(tokenR.token == 0) {
   window.location.href = "https://pingobras.glitch.me"
