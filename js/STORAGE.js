@@ -39,5 +39,4 @@ const TRLkJson = JSON.stringify(YTLive);
 console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
-
 },125000);

@@ -52,9 +52,5 @@ const user2 = document.getElementById("userID2");
 const user3 = document.getElementById("userID3");
  user1.innerHTML = tokenR.token
  user2.innerHTML = tokenR.token
- userID3.innerHTML = tokenR.token
+ user3.innerHTML = tokenR.token
 
-
-if(tokenR.token == 0) {
-  window.location.href = "https://pingobras.glitch.me"
-  alert("usuario não autorizado")};
