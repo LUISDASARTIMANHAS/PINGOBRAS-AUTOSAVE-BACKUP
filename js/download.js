@@ -84,26 +84,14 @@ function factorioButton() {
     "liveUpdate": true,
     "template": "upload_template_627a97320a83d"
 };
-		var uploader = new ngutils.uploader("#uploader627a97320a83b", "\/parkfile", config);
-		
-			})(jQuery);
-ngutils.event.addListener(ngutils.uploadEvent.onComplete, function(event) {
-			event.target.remove();
-			if (event.data.response.error) {
-				alert(event.data.response.error);
-			}
-		});
-		ngutils.event.addListener(ngutils.uploadEvent.onError, function(event) {
-			event.target.remove();
-			alert(event.data.errorMsg);
-		});
 
 function contato() {
   document.getElementById("contato").submit();
 }
 
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
+let storageToken = localStorage.getItem("JsonToken");
+let tokendow = JSON.parse(storageToken);
+console.log(tokendow.token)
 
 function sair(){
   alert("usuario deslogado");
@@ -116,6 +104,6 @@ window.location.href = "https://pingobras.glitch.me"
 }
 
 if(tokenR.token == null) {
-  window.location.href = "https://pingobras.glitch.me"
-  alert("usuario não autorizado")
+  window.location.href = "https://pingobras.glitch.me";
+  alert("usuario não autorizado");
 }
