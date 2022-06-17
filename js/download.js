@@ -90,7 +90,6 @@ function contato() {
 };
 
     
-    
 var sair = document.querySelector("#sair");
 sair.addEventListener("click", function sair() {
   alert("usuario deslogado");

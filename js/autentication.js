@@ -49,3 +49,11 @@ localStorage.setItem("JsonKeys", CryptoKey);
 alert('O banco de dados foi restaurado!')
 }
 
+function autentication() {
+  if(tokenR.token != 0) {
+    setTimeout(
+  alert("admin autorizado")
+   window.location.href = ("https://pingobras.glitch.me/download.html")}
+else{
+  window.location.href = ("https://pingobras.glitch.me/autentication.html");}
+};

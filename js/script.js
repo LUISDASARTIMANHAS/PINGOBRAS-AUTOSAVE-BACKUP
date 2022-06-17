@@ -72,9 +72,7 @@ batepapoDescer.addEventListener("click", function() {
   console.log("Usuario redirecionado para bate-papo!");
 });
 
-function autentication() {
-window.location.href = ("https://pingobras.glitch.me/autentication.html");
-};
+
 function pageFilmSerie() {
 window.open("https://pingobras.glitch.me/films=pingobras.html");
 };
