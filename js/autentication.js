@@ -7,8 +7,15 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
-const adminID1= document.getElementById("admID");
- adminID1.innerHTML = tokenR.token;
+if(tokenR.token != 0) {
+  let status = "Conectado"
+}
+else {
+  const status = "Não conectado"
+}
+
+const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
 
 
 let msgError = document.getElementById("msgError");
