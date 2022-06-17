@@ -42,23 +42,25 @@ enviar.addEventListener("click", function entrar() {
     msgError.innerHTML = 'senha incorreta!'}
 });
 
-var sair = document.querySelector("#sair");
+var sair = document.querySelector("#DESLOGAR");
+
 sair.addEventListener("click", function DESLOGAR() {
-  alert("usuario deslogado");
-const REstorageToken = {token: 0};
-const Cryptotoken = JSON.stringify(REstorageToken);
-console.log("codificando token");
-  localStorage.setItem("JsonToken", Cryptotoken);
-console.log("token redefinido");
-  window.location.href = "https://pingobras.glitch.me"});
+  alert("usuario deslogado")
+  
+const tokenSair = {token: 0}
+const CryptotokenS = JSON.stringify(tokenSair)
+console.log("codificando token")
+  localStorage.setItem("JsonToken", CryptotokenS)
+console.log("token redefinido")
+  window.location.href = "https://pingobras.glitch.me"})
 
 function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
-  const token2 = {token: "Desconectada por refresh"};
-const Cryptotoken2 = JSON.stringify(token2);
-localStorage.setItem("JsonToken", Cryptotoken2);
+  const tokenrefresh = {token: "Desconectada por refresh"};
+const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
+localStorage.setItem("JsonToken", Cryptotokenrefresh);
 alert('O banco de dados foi restaurado!')
 }
 
