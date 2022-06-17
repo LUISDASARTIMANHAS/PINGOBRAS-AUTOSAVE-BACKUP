@@ -50,10 +50,13 @@ alert('O banco de dados foi restaurado!')
 }
 
 function autentication() {
+  
   if(tokenR.token != 0) {
-    setTimeout(
-  alert("admin autorizado")
-   window.location.href = ("https://pingobras.glitch.me/download.html")}
-else{
-  window.location.href = ("https://pingobras.glitch.me/autentication.html");}
-};
+  setTimeout(alert("admin autorizado"),7000)
+   window.location.href = ("https://pingobras.glitch.me/download.html")
+  }
+  else{
+    window.location.href = ("https://pingobras.glitch.me/autentication.html")
+  }
+
+}
