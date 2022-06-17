@@ -43,6 +43,10 @@ btnlist.addEventListener('click', function() {
     console.log("lista visivel!");
   }
 });
+btnlist.addEventListener('mouseover', function() {
+listDEV.style.display = 'block';
+    console.log("lista visivel!");
+})
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
 var listChangelogs = document.getElementById('listChangelogs');
 btnlistChangelogs.addEventListener('click', function() {
@@ -51,11 +55,13 @@ btnlistChangelogs.addEventListener('click', function() {
       console.log("Changelogs escondida!");
   } else {
       listChangelogs.style.display = 'block';
-    console.log("Changelogs visivel!");
-  }
+    console.log("Changelogs visivel!");}
 });
-
-
+btnlistChangelogs.addEventListener('mouseover', function() {
+listChangelogs.style.display = 'block';
+    console.log("Changelogs visivel!");
+})
+  
 var btnBack = document.querySelector("#back-to-top");
 btnBack.addEventListener("click", function() {
     window.scrollTo(0, 0);
@@ -86,7 +92,7 @@ document.querySelector(".site-altura").style.cursor = "not-allowed";
 },5000)
 });
 
-document.querySelector("#close").addEventListener("click", function(){
+document.querySelector("#close").addEventListener("mouseover", function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".site-altura").style.opacity = "1";
     document.querySelector(".site-altura").style.cursor = "default";
