@@ -40,3 +40,8 @@ console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
 },125000);
+
+//armazenando dados json
+const adminsaldo = {bonus: 2};
+const bonusjs = JSON.stringify(adminsaldo);
+localStorage.setItem("bonus", bonusjs);
