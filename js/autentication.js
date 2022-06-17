@@ -8,14 +8,18 @@ let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
 if(tokenR.token != 0) {
-  let status = "Conectado"
+  let status = "Status: Conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: green')
 }
 else {
-  const status = "Não conectado"
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')
 }
 
-const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
 
 
 let msgError = document.getElementById("msgError");
@@ -75,7 +79,7 @@ function autentication() {
   
   if(tokenR.token != 0 ) {
   setTimeout(alert("admin autorizado"),7000)
-   window.location.href = ("https://pingobras.glitch.me/download.html")
+   window.location.href = ("https://pingobras.glitch.me/admin=account.html")
   }
   else{
     window.location.href = ("https://pingobras.glitch.me/autentication.html")

@@ -1,3 +1,9 @@
+.btn-editora{
+        background-image: linear-gradient(45deg, cyan, purple);
+        padding: 10px;
+        color: white;
+        justify-content: center;
+}
 .btnC{
   border: 4px solid silver;
   background-color: gray;
