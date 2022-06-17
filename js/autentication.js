@@ -9,6 +9,7 @@ console.log(tokenR.token);
 
 const adminID1= document.getElementById("admID");
  adminID1.innerHTML = tokenR.token;
+setTimeout(alert("Conta admin desconectada! tempo limite do servidor"),300.000)
 
 
 let msgError = document.getElementById("msgError");
@@ -46,12 +47,15 @@ function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
+  const token2 = {token: 0};
+const Cryptotoken2 = JSON.stringify(token2);
+localStorage.setItem("JsonToken", Cryptotoken2);
 alert('O banco de dados foi restaurado!')
 }
 
 function autentication() {
   
-  if(tokenR.token != 0) {
+  if(tokenR.token != 0 ) {
   setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/download.html")
   }
