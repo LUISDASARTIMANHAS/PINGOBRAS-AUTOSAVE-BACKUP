@@ -42,6 +42,16 @@ enviar.addEventListener("click", function entrar() {
     msgError.innerHTML = 'senha incorreta!'}
 });
 
+var sair = document.querySelector("#sair");
+sair.addEventListener("click", function DESLOGAR() {
+  alert("usuario deslogado");
+const REstorageToken = {token: 0};
+const Cryptotoken = JSON.stringify(REstorageToken);
+console.log("codificando token");
+  localStorage.setItem("JsonToken", Cryptotoken);
+console.log("token redefinido");
+  window.location.href = "https://pingobras.glitch.me"});
+
 function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
