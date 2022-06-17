@@ -265,6 +265,7 @@ main-text:before{
   border: none;
 }
 .direitos{
+  color: yellow;
   margin: 0;
   display: block;
   text-align: center;
