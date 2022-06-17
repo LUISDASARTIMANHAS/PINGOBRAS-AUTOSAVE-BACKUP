@@ -118,3 +118,8 @@ console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
+
+let value1 = 100
+let value2 = 5
+const saldo = value1 - value2
+console.log(saldo)
