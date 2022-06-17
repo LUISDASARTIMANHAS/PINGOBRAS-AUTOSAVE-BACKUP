@@ -87,8 +87,10 @@ function factorioButton() {
 
 function contato() {
   document.getElementById("contato").submit();
-}
+};
 
+    
+    
 var sair = document.querySelector("#sair");
 sair.addEventListener("click", function sair() {
   alert("usuario deslogado");

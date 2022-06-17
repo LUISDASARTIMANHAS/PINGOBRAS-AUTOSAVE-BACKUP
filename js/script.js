@@ -3,7 +3,6 @@ console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
 
-const videoStream = navigator.mediaDevices.getUserMedia({ audio: false, video: false, geolocation: true})
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
 if (btn){
@@ -75,7 +74,6 @@ batepapoDescer.addEventListener("click", function() {
 
 function autentication() {
 window.location.href = ("https://pingobras.glitch.me/autentication.html");
-alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
 };
 function pageFilmSerie() {
 window.open("https://pingobras.glitch.me/films=pingobras.html");

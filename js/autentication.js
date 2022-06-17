@@ -3,9 +3,13 @@ let  JsonKeys = localStorage.getItem("JsonKeys");
 let key = JSON.parse(JsonKeys);
 console.log(key.senha);
 
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token);
 
-let inputsenha = document.getElementById("senha")
-console.log(inputsenha.value)
+const adminID1= document.getElementById("admID");
+ adminID1.innerHTML = tokenR.token;
+
 
 let msgError = document.getElementById("msgError");
 let msgSuccess = document.getElementById("msgSuccess");
@@ -15,6 +19,8 @@ let msgSuccess = document.getElementById("msgSuccess");
 var enviar = document.querySelector("#submit");
 enviar.addEventListener("click", function entrar() {  
   alert('Verificando!...');
+  let inputsenha = document.getElementById("senha");
+   console.log(inputsenha.value);
    if(inputsenha.value == key.senha) {
     window.location.href = "https://pingobras.glitch.me/download.html"
     let mathRandom = Math.random().toString(16).substr(2)
@@ -36,21 +42,10 @@ enviar.addEventListener("click", function entrar() {
     msgError.innerHTML = 'senha incorreta!'}
 });
 
-function refresh(){
+function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 alert('O banco de dados foi restaurado!')
 }
-
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
-console.log(tokenR.token);
-
-const user1 = document.getElementById("userID1");
-const user2 = document.getElementById("userID2");
-const user3 = document.getElementById("userID3");
- user1.innerHTML = tokenR.token
- user2.innerHTML = tokenR.token
- user3.innerHTML = tokenR.token
 
