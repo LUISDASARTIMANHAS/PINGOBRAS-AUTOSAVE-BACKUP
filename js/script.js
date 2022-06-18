@@ -124,7 +124,7 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 
 console.log("Bonus requerido")
 let siteMoney = 36.00
-const userbonus = siteMoney - bonus.moeda
+let userbonus = siteMoney - rebonus.moeda
 console.log(userbonus)
 
 document.getElementById("currentSaldo").innerHTML = userbonus;
