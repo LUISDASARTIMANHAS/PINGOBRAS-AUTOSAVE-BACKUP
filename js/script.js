@@ -2,8 +2,6 @@ let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
-let bonusStorage = localStorage.getItem("sitebonus");
-let bonus = JSON.parse(bonusStorage);
 
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
@@ -122,10 +120,6 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
 
-console.log("Bonus requerido")
-let value2 = 5
-const saldobonus = bonus.webBonus - value2
-console.log(saldobonus);
 
 const usersaldo = document.getElementById("currentSaldo");
  usersaldo.innerHTML = saldobonus;

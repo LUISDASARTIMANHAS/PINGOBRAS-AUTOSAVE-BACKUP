@@ -41,6 +41,13 @@ localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
 },125000);
 
-const webbonus = {WebBonus: 2};
-const bonusjs = JSON.stringify(webbonus);
-localStorage.setItem("siteBonus", bonusjs);
+const siteBonus = {moeda: 2};
+const siteBonusjs = JSON.stringify(siteBonus);
+localStorage.setItem("siteBonus", siteBonusjs);
+
+let siteSaldo = 36.00;
+let bonusStorage = localStorage.getItem("sitebonus");
+let bonus = JSON.parse(bonusStorage);
+console.log(bonus)
+const userBonus = bonus - siteSaldo
+console.log(userBonus);
