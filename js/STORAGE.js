@@ -44,10 +44,3 @@ console.log("YTL re-setada");
 const siteBonus = {moeda: 2};
 const siteBonusjs = JSON.stringify(siteBonus);
 localStorage.setItem("siteBonus", siteBonusjs);
-
-let siteSaldo = 36.00;
-let bonusStorage = localStorage.getItem("sitebonus");
-let bonus = JSON.parse(bonusStorage);
-console.log(bonus)
-const userBonus = bonus - siteSaldo
-console.log(userBonus);
