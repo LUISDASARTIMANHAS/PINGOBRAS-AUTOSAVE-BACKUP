@@ -11,3 +11,13 @@ if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
 }
 const videoStream = navigator.mediaDevices.getUserMedia({ audio: false, video: false, geolocation: true})
 
+let sair = document.querySelector("#DESLOGAR")
+sair.addEventListener("onclick", function DESLOGAR() {
+  alert("usuario deslogado")
+const tokenSair = {token: 0};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+  localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+  window.location.href = "https://pingobras.glitch.me"
+})

@@ -53,16 +53,7 @@ enviar.addEventListener("click", function entrar() {
     msgError.innerHTML = 'senha incorreta!'}
 });
 
-let sair = document.querySelector("#DESLOGAR")
-sair.addEventListener("onclick", function DESLOGAR() {
-  alert("usuario deslogado")
-const tokenSair = {token: 0};
-const CryptotokenS = JSON.stringify(tokenSair);
-console.log("codificando token");
-  localStorage.setItem("JsonToken", CryptotokenS);
-console.log("token redefinido");
-  window.location.href = "https://pingobras.glitch.me"
-})
+
 
 function refresh() {
   const adminKey = {senha: 9645};
@@ -76,12 +67,12 @@ alert('O banco de dados foi restaurado!')
 
 function autentication() {
   
-  if(tokenR.token != 0 ) {
-  setTimeout(alert("admin autorizado"),7000)
-   window.location.href = ("https://pingobras.glitch.me/admin=account.html")
+  if(tokenR.token == "desconectado" ) {
+      window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }
   else{
-    window.location.href = ("https://pingobras.glitch.me/autentication.html")
+    setTimeout(alert("admin autorizado"),7000)
+   window.location.href = ("https://pingobras.glitch.me/admin=account.html")
   }
 
 }

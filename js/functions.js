@@ -56,6 +56,3 @@ batepapoDescer.addEventListener("click", function() {
   console.log("Usuario redirecionado para bate-papo!");
 });
 
-function DESLOGAR() {
-  alert("usuario deslogado")
-})
