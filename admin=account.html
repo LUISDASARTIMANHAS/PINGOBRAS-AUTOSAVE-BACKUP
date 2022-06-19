@@ -91,6 +91,28 @@
             onclick="DESLOGAR2()">
       Sair
     </button>
+        
+        <script>
+const loopToken = setInterval(refreshDesconect, 5000);
+
+function refreshDesconect() {
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token);
+  
+if(tokenR.token != "desconectado") {
+console.log("Usuario conectado!")
+}
+else {
+alert("usuario deslogado")
+const tokenSair = {token: "desconectado"};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+window.location.href = "https://pingobras.glitch.me"}
+}
+</script>
       </div></div>
    </body> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
