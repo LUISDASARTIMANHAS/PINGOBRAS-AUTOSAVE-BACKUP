@@ -1,4 +1,4 @@
-const loopStorage = setInterval(refreshStorage, 10000);
+const loopStorage = setInterval(refreshStorage, 15000);
 
 function refreshStorage() {
 let client = JSON.parse(localStorage.getItem('client') || '[]')
@@ -26,6 +26,12 @@ localStorage.setItem("JsonKeys", CryptoKey);
 console.log("JsonKeys redefinido");
 
 
+const siteBonus = {moeda: 2};
+const siteBonusjs = JSON.stringify(siteBonus);
+localStorage.setItem("siteBonus", siteBonusjs);
+
+}
+
 const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
 console.log("YTL setada");
 const LkJson = JSON.stringify(YTL);
@@ -43,8 +49,3 @@ console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
 },125000);
-
-const siteBonus = {moeda: 2};
-const siteBonusjs = JSON.stringify(siteBonus);
-localStorage.setItem("siteBonus", siteBonusjs);
-}

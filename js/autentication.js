@@ -34,7 +34,7 @@ enviar.addEventListener("click", function entrar() {
    console.log(inputsenha.value);
   
   if(inputsenha.value == key.senha) {
-    setTimeout(window.location.href = "https://pingobras.glitch.me/admin=account.html",7000)
+    setTimeout(window.location.href = "https://pingobras.glitch.me/admin=account.html",6000)
     let mathRandom = Math.random().toString(16).substr(2)
    
     let storageToken = {token: mathRandom};

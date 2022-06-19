@@ -1,3 +1,6 @@
+const loopscript = setInterval(refreshscript, 10000);
+
+function refreshscript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
@@ -6,7 +9,7 @@ console.log("armazenamento YTL requirido");
   const loophorarioLocal = setInterval(temporizadorLocal, 1000);
 function temporizadorLocal() {
   const date = new Date();
-  document.getElementById("demo2").innerHTML = date.toLocaleTimeString();
+  document.getElementById("console").innerHTML = date.toLocaleTimeString();
  }
   
 console.log("Hello 🌎");
@@ -60,13 +63,15 @@ if (btndisabled){
     console.log("Usuario redirecionado para site fora do ar!");
   };}
 
-setTimeout( function REL(){
-  
+  setTimeout( function REL(){
 const YTLinks = JSON.parse(STORAGEYT);
 console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
+}
+
+
 
 
 
