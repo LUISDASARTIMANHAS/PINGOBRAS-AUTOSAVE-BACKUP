@@ -29,13 +29,7 @@ let msgSuccess = document.getElementById("msgSuccess");
 
 var enviar = document.querySelector("#submit");
 enviar.addEventListener("click", function entrar() {  
-  msgSuccess.setAttribute('style', 'display: block')
-    msgSuccess.innerHTML = 'Verificando!...'
-  setTimeout(
-    msgSuccess.setAttribute('style', 'display: none'),
-    msgSuccess.innerHTML = '',7000)
-  
-  setTimeout(
+  alert('Verificando!...');
   let inputsenha = document.getElementById("senha");
    console.log(inputsenha.value);
   
@@ -52,13 +46,13 @@ enviar.addEventListener("click", function entrar() {
      
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
-  },8000)
+  }
   else{
     inputsenha.setAttribute('style', 'color: red')
     inputsenha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'senha incorreta!'}
-    setTimeout(window.location.href = "https://pingobras.glitch.me/autentication.html",7000)
+    setTimeout(window.location.href = "https://pingobras.glitch.me/autentication.html",9000)
 });
 
 

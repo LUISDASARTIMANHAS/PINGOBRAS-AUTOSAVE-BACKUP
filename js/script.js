@@ -3,7 +3,10 @@ console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
 
-
+  const date = new Date();
+  document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+  console.log(date.toLocaleTimeString())
+  
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
 if (btn){
