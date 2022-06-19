@@ -1,3 +1,6 @@
+const loopStorage = setInterval(refreshStorage, 10000);
+
+function refreshStorage() {
 let client = JSON.parse(localStorage.getItem('client') || '[]')
 console.log("client pegou dados de client antigo");
 client.push(
@@ -44,3 +47,4 @@ console.log("YTL re-setada");
 const siteBonus = {moeda: 2};
 const siteBonusjs = JSON.stringify(siteBonus);
 localStorage.setItem("siteBonus", siteBonusjs);
+}
