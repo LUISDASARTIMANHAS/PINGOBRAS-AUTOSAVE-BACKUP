@@ -55,7 +55,7 @@ enviar.addEventListener("click", function entrar() {
 
 var sair = document.querySelector("#DESLOGAR");
 
-sair.addEventListener("click", function DESLOGAR() {
+sair.addEventListener("onclick", function DESLOGAR() {
   alert("usuario deslogado")
   
 const tokenSair = {token: 0}
