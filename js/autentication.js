@@ -53,17 +53,16 @@ enviar.addEventListener("click", function entrar() {
     msgError.innerHTML = 'senha incorreta!'}
 });
 
-var sair = document.querySelector("#DESLOGAR");
-
+let sair = document.querySelector("#DESLOGAR")
 sair.addEventListener("onclick", function DESLOGAR() {
   alert("usuario deslogado")
-  
-const tokenSair = {token: 0}
-const CryptotokenS = JSON.stringify(tokenSair)
-console.log("codificando token")
-  localStorage.setItem("JsonToken", CryptotokenS)
-console.log("token redefinido")
-  window.location.href = "https://pingobras.glitch.me"})
+const tokenSair = {token: 0};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+  localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+  window.location.href = "https://pingobras.glitch.me"
+})
 
 function refresh() {
   const adminKey = {senha: 9645};
