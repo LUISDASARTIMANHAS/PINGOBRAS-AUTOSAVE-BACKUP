@@ -30,6 +30,14 @@ const siteBonus = {moeda: 2};
 const siteBonusjs = JSON.stringify(siteBonus);
 localStorage.setItem("siteBonus", siteBonusjs);
 
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.token); 
+const repeattoken = JSON.stringify(tokenR);
+console.log("repetindo codificanção do token");
+localStorage.setItem("JsonToken", repeattoken);
+console.log("token repitido");
+  
 }
 
 const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
@@ -49,3 +57,5 @@ console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
 console.log("YTL re-setada");
 },125000);
+
+
