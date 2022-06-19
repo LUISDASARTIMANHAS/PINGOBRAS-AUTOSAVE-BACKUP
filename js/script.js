@@ -2,8 +2,7 @@ let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 console.log("armazenamento YTL requirido");
-let rebonusStorage = localStorage.getItem("siteBonus");
-let rebonus = JSON.parse(rebonusStorage);
+
 
 console.log("Hello 🌎");
 const btn = document.querySelector("button");
@@ -82,7 +81,7 @@ batepapoDescer.addEventListener("click", function() {
 
 
 function pageFilmSerie() {
-window.open("https://pingobras.glitch.me/films=pingobras.html");
+window.open("https://pingobras.glitch.me/films&series.html");
 };
 
 window.addEventListener("load", function(){
@@ -122,10 +121,5 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
 
-console.log("Bonus requerido")
-let siteMoney = 36.00
-let userbonus = siteMoney - rebonus.moeda
-console.log(userbonus)
 
-document.getElementById("currentSaldo").innerHTML = userbonus;
 
