@@ -7,4 +7,4 @@ let userbonus = siteMoney - bonus.moeda
 console.log(userbonus);
 
 document.getElementById("currentSaldo").innerHTML = userbonus
-    function DESLOGAR() {alert("usuario deslogado");}
+   

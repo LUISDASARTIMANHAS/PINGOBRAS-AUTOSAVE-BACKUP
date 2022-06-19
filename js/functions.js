@@ -56,3 +56,21 @@ batepapoDescer.addEventListener("click", function() {
   console.log("Usuario redirecionado para bate-papo!");
 });
 
+function DESLOGAR() {
+  alert("usuario deslogado")
+const tokenSair = {token: "desconectado"};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+  localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+  window.location.href = "https://pingobras.glitch.me"
+}
+function DESLOGAR2() {
+  alert("usuario deslogado")
+const tokenSair = {token: "desconectado"};
+const CryptotokenS = JSON.stringify(tokenSair);
+console.log("codificando token");
+  localStorage.setItem("JsonToken", CryptotokenS);
+console.log("token redefinido");
+  window.location.href = "https://pingobras.glitch.me"
+}
