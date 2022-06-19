@@ -34,7 +34,6 @@ enviar.addEventListener("click", function entrar() {
    console.log(inputsenha.value);
   
   if(inputsenha.value == key.senha) {
-    setTimeout(window.location.href = "https://pingobras.glitch.me/admin=account.html",6000)
     let mathRandom = Math.random().toString(16).substr(2)
    
     let storageToken = {token: mathRandom};
@@ -46,13 +45,16 @@ enviar.addEventListener("click", function entrar() {
      
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
+    window.location.href = "https://pingobras.glitch.me/admin=account.html"
   }
   else{
     inputsenha.setAttribute('style', 'color: red')
     inputsenha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'senha incorreta!'}
-    setTimeout(window.location.href = "https://pingobras.glitch.me/autentication.html",9000)
+    msgError.innerHTML = 'senha incorreta!'
+  window.location.href = "https://pingobras.glitch.me/autentication.html"
+  }
+    
 });
 
 

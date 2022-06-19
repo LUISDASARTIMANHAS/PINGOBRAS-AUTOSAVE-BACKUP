@@ -1,6 +1,6 @@
-const loopscript = setInterval(refreshscript, 10000);
+const loopScript = setInterval(refreshScript, 15000);
 
-function refreshscript() {
+function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
 console.log("armazenamento JSON requirido");
 let  STORAGEYT = localStorage.getItem("YoutubeLinks")
@@ -9,7 +9,6 @@ console.log("armazenamento YTL requirido");
   const loophorarioLocal = setInterval(temporizadorLocal, 1000);
 function temporizadorLocal() {
   const date = new Date();
-  document.getElementById("console").innerHTML = date.toLocaleTimeString();
  }
   
 console.log("Hello 🌎");
@@ -69,8 +68,8 @@ console.log(YTLinks);
 document.getElementById("console").innerHTML = YTLinks.LINK1;
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
-}
 
+}
 
 
 
