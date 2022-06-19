@@ -7,7 +7,7 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
-if(tokenR.token != 0) {
+if(tokenR.token != "desconectado") {
   let status = "Status: Conectado"
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
@@ -29,11 +29,18 @@ let msgSuccess = document.getElementById("msgSuccess");
 
 var enviar = document.querySelector("#submit");
 enviar.addEventListener("click", function entrar() {  
-  alert('Verificando!...');
+  msgSuccess.setAttribute('style', 'display: block')
+    msgSuccess.innerHTML = 'Verificando!...'
+  setTimeout(
+    msgSuccess.setAttribute('style', 'display: none'),
+    msgSuccess.innerHTML = '',7000)
+  
+  setTimeout(
   let inputsenha = document.getElementById("senha");
    console.log(inputsenha.value);
-   if(inputsenha.value == key.senha) {
-    window.location.href = "https://pingobras.glitch.me/download.html"
+  
+  if(inputsenha.value == key.senha) {
+    setTimeout(window.location.href = "https://pingobras.glitch.me/admin=account.html",7000)
     let mathRandom = Math.random().toString(16).substr(2)
    
     let storageToken = {token: mathRandom};
@@ -45,12 +52,13 @@ enviar.addEventListener("click", function entrar() {
      
     msgSuccess.setAttribute('style', 'display: block')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
-  }
+  },8000)
   else{
     inputsenha.setAttribute('style', 'color: red')
     inputsenha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'senha incorreta!'}
+    setTimeout(window.location.href = "https://pingobras.glitch.me/autentication.html",7000)
 });
 
 
@@ -59,7 +67,7 @@ function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
-  const tokenrefresh = {token: "Desconectada por refresh"};
+  const tokenrefresh = {token: "desconectado"};
 const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
 localStorage.setItem("JsonToken", Cryptotokenrefresh);
 alert('O banco de dados foi restaurado!')
