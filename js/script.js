@@ -12,7 +12,7 @@ function temporizadorLocal() {
  }
   
 console.log("Hello 🌎");
-const btn = document.querySelector("button");
+const btn = document.querySelector("[dipped]");
 if (btn){
   btn.onclick = function(){
     btn.classList.toggle("dipped");
