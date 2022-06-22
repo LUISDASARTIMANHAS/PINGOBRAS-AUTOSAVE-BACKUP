@@ -56,6 +56,10 @@ batepapoDescer.addEventListener("click", function() {
   console.log("Usuario redirecionado para bate-papo!");
 });
 
+function pageFilmSerie() {
+window.location.href = "https://pingobras.glitch.me/films&series.html";
+};
+
 function DESLOGAR() {
   alert("usuario deslogado")
 const tokenSair = {token: "desconectado"};

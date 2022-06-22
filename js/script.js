@@ -29,10 +29,6 @@ if (UP2input){
     UP2input.classList.toggle("dipped");
   };}
 
-  
-function pageFilmSerie() {
-window.open("https://pingobras.glitch.me/films&series.html");
-};
 
 window.addEventListener("load", function(){
 setTimeout(function open(event){
