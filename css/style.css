@@ -235,7 +235,7 @@ main-text {
   position: relative;
   text-align: center;
   font-size: 20pt;
-  margin-bottom: 15px;
+  margin-top: 20%;
   color: black;
 }
 main-text:hover:before{

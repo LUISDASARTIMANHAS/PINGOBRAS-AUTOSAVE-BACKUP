@@ -21,3 +21,4 @@ console.log("codificando token");
 console.log("token redefinido");
   window.location.href = "https://pingobras.glitch.me"
 })
+https://www.google.com/search?q= + userpesquisa
