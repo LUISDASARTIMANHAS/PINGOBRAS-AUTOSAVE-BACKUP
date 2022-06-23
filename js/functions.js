@@ -78,3 +78,16 @@ console.log("codificando token");
 console.log("token redefinido");
   window.location.href = "https://pingobras.glitch.me"
 }
+
+
+const music = new Audio('adf.wav');
+music.play();
+music.loop =true;
+music.playbackRate = 2;
+music.pause()
+
+const audioContext = new AudioContext();
+const element = document.querySelector("audio");
+const source = audioContext.createMediaElementSource(element);
+source.connect(audioContext.destination)
+element.play();
