@@ -20,16 +20,18 @@ btnlist.addEventListener('click', function() {
     console.log("lista visivel!");
   }
 });
-const music2 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
+const sound2 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
 btnlist.addEventListener('mouseover', function() {
 listDEV.style.display = 'block';
     console.log("lista visivel!");
   
   
-music2.play();
-music2.loop =true;
-setInterval(music2.pause(), 15000)
-
+sound2.play();
+sound2.loop =true;
+setInterval(autopausesound2, 15000);
+function autopausesound2() {
+  sound2.pause() 
+ console.log("sound pausado")}
 })
 
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
