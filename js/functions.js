@@ -1,8 +1,16 @@
+const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
+
 
 function openForm() {
   document.getElementById("jschat").style.display = "block";
   alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
   console.log("chat aberto!");
+  WindowSongError1.play();
+setInterval(autopauseWindowSongError1, 15000);
+function autopauseWindowSongError1() {
+  WindowSongError1.pause() 
+ console.log("Window Song Error1 pausado")}
+
 }
 function closeForm() {
   document.getElementById("jschat").style.display = "none";
@@ -20,18 +28,9 @@ btnlist.addEventListener('click', function() {
     console.log("lista visivel!");
   }
 });
-const sound2 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
 btnlist.addEventListener('mouseover', function() {
 listDEV.style.display = 'block';
     console.log("lista visivel!");
-  
-  
-sound2.play();
-sound2.loop =true;
-setInterval(autopausesound2, 15000);
-function autopausesound2() {
-  sound2.pause() 
- console.log("sound pausado")}
 })
 
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
@@ -86,6 +85,12 @@ console.log("codificando token");
   localStorage.setItem("JsonToken", CryptotokenS);
 console.log("token redefinido");
   window.location.href = "https://pingobras.glitch.me"
+  WindowSongError1.play();
+setInterval(autopauseWindowSongError1, 15000);
+function autopauseWindowSongError1() {
+  WindowSongError1.pause() 
+ console.log("Window Song Error1 pausado")}
+
 }
 
 
