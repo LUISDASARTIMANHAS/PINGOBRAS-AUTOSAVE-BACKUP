@@ -80,14 +80,15 @@ console.log("token redefinido");
 }
 
 
-const music = new Audio('adf.wav');
+const music = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
+function play() {
 music.play();
 music.loop =true;
-music.playbackRate = 2;
+}
 music.pause()
 
 const audioContext = new AudioContext();
 const element = document.querySelector("audio");
 const source = audioContext.createMediaElementSource(element);
 source.connect(audioContext.destination)
-element.play();
+element.play;
