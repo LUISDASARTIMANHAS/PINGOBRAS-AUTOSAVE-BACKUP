@@ -23,10 +23,10 @@ console.log("token redefinido");
 })
 https://www.google.com/search?q= + userpesquisa
 
-const sound2 = new Audio('.mp3');
-sound2.play();
-sound2.loop =true;
-setInterval(autopausesound2, 15000);
-function autopausesound2() {
-  sound2.pause() 
- console.log("sound pausado")}
+const SongError = new Audio('.mp3');
+SongError.play();
+SongError.loop =true;
+setInterval(autopauseSongError, 15000);
+function autopauseSongError() {
+  SongError.pause() 
+ console.log("SongError pausado")}
