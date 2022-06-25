@@ -103,7 +103,7 @@ setTimeout(music.pause(),9000)
 music.pause()
 
 const audioContext = new AudioContext();
-const element = document.querySelector("audio");
+const element = document.querySelector("#audioJs");
 const source = audioContext.createMediaElementSource(element);
 source.connect(audioContext.destination)
 element.play;
