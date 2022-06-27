@@ -486,6 +486,15 @@ tituloyellow {
   color: black;
   word-break: break-word;
 }
+item-loja{
+  cursor: pointer;
+  background: white;
+  border: 3px solid black ;
+  display: block;
+  width: 45%;
+  height: 45%;
+  padding: 5px;
+}
 
 .popup {
   background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
