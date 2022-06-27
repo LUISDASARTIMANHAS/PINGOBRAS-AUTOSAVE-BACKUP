@@ -471,14 +471,14 @@ tituloyellow {
   background: white;
   border: 3px solid black ;
   display: block;
-  width: 45%;
-  height: 45%;
+  width: 55%;
+  height: 55%;
   padding: 5px;
 }
 .img-click:hover{
   display: block;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   transition: all 2s ease-out;
 }
 .titulo-do-produto {
@@ -493,7 +493,7 @@ item-loja{
   display: block;
   width: 45%;
   height: 45%;
-  padding: 5px;
+  padding: 25px;
 }
 
 .popup {
