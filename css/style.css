@@ -471,19 +471,20 @@ tituloyellow {
   background: white;
   border: 3px solid black ;
   display: block;
-  width: 55%;
-  height: 55%;
+  width: 85%;
+  height: 100%;
   padding: 5px;
 }
 .img-click:hover{
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
   transition: all 2s ease-out;
 }
 .titulo-do-produto {
   font-size: 20px;
   color: black;
+  text-align: center;
   word-break: break-word;
 }
 item-loja{
@@ -491,18 +492,18 @@ item-loja{
   background: white;
   border: 3px solid black ;
   display: block;
-  width: 45%;
+  width: 60%;
   height: 45%;
-  padding: 25px;
+  padding: 15px;
+  display: inline-block;
 }
 .item-descricao{
     text-align: right;
-    border: none;
     white-space: normal;
     float: none;
     outline: 0;
   position: right;
-  display: inline;
+  display: inline-block;
 }
 
 .popup {
