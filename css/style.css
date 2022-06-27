@@ -273,11 +273,7 @@ main-text:before{
   cursor: help;
 }
 
-.titulo-do-produto {
-  font-size: 20px;
-  color: black;
-  word-break: break-word;
-}
+
 .contator{
   color: white;
 }
@@ -484,6 +480,15 @@ tituloyellow {
   width: 60%;
   height: 60%;
   transition: all 2s ease-out;
+}
+.titulo-do-produto {
+  font-size: 20px;
+  color: black;
+  word-break: break-word;
+}
+.loja-img{
+  background: white;
+  color: black;
 }
 
 .popup {
