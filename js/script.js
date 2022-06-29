@@ -61,7 +61,6 @@ if (btndisabled){
   setTimeout( function REL(){
 const YTLinks = JSON.parse(STORAGEYT);
 console.log(YTLinks);
-document.getElementById("console").innerHTML = YTLinks.LINK1;
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
