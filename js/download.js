@@ -3,7 +3,7 @@ function factorioButton() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("factoriobar");
-    var width = 331000;
+    var width = 10800000;
     var id = setInterval(frame, 10);
     function frame() {
       if (width >= 100) {
