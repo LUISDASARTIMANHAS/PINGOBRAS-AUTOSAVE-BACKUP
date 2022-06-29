@@ -84,24 +84,21 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 8000);
             downloadImgSrc.src = userImageLink;
   
             
-            function displaySpeed() {
+function displaySpeed() {
                 
-                var timeDuration = (end_time - time_start) / 1000;
-                var loadedBits = downloadSize * 8;
+  var timeDuration = (end_time - time_start) / 1000;
+  var loadedBits = downloadSize * 8;
                 
-                  let MBps = document.getElementById("MBps");
-                  let GBps = document.getElementById("GBps");
+  let MBps = document.getElementById("MBps");
+  let GBps = document.getElementById("GBps");
                   
-                /* Converts a number into string
-                   using toFixed(2) rounding to 2 */
-                var bps = (loadedBits / timeDuration).toFixed(2);
-                var speedInKbps = (bps / 1024).toFixed(2);
-                var speedInMbps = (speedInKbps / 1024).toFixed(2);
-                MBps.innerHTML = speedInMbps + " MBps"
-                var speedInGBps = (speedInMbps / 10024).toFixed(2);
-                GBps.innerHTML = speedInGBps + " GBps"}
+  /* Converts a number into string
+  using toFixed(2) rounding to 2 */
+  var bps = (loadedBits / timeDuration).toFixed(2);
+  var speedInKbps = (bps / 1024).toFixed(2);
+  var speedInMbps = (speedInKbps / 1024).toFixed(2);
+  MBps.innerHTML = speedInMbps + " MBps"
+  MBps.style
+  var speedInGBps = (speedInMbps / 10024).toFixed(2);
+  GBps.innerHTML = speedInGBps + " GBps"}
 }
-
-
-
-
