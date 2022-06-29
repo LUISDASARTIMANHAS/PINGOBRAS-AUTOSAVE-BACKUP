@@ -99,6 +99,6 @@ function displaySpeed() {
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
   MBps.innerHTML = speedInMbps + " MBps"
   MBps.style
-  var speedInGBps = (speedInMbps / 10024).toFixed(2);
+  var speedInGBps = (speedInMbps / 1024).toFixed(2);
   GBps.innerHTML = speedInGBps + " GBps"}
 }
