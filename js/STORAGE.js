@@ -1,10 +1,8 @@
 const loopStorage = setInterval(refreshStorage, 15000);
 
 function refreshStorage() {
-let clientStorage = localStorage.getItem('client');
-let client = JSON.parse(clientStorage);
-
-console.log("client pegou dados de client antigo");
+let client = JSON.parse(localStorage.getItem('client') || '[]')
+console.warn("client pegou dados de client antigo");
 client.push(
   {
       luis: {name: "luis das artimanhas",saldo: 3.50},
@@ -34,11 +32,11 @@ localStorage.setItem("siteBonus", siteBonusjs);
 
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
-console.log(tokenR.token); 
+console.error(tokenR.token); 
 const repeattoken = JSON.stringify(tokenR);
 console.log("repetindo codificanção do token");
 localStorage.setItem("JsonToken", repeattoken);
-console.log("token repitido");
+console.warn("token repitido");
   
 }
 
@@ -47,7 +45,7 @@ console.log("YTL setada");
 const LkJson = JSON.stringify(YTL);
 console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",LkJson);
-console.log("LKJson redefinido");
+console.warn("LKJson redefinido");
 
 setTimeout( function TRLink() {
   
