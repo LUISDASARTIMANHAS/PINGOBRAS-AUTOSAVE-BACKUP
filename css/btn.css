@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Noto Sans Mono", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap")
+    format("opentype");
+}
+:root {
+  --color-padrao: white;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-altura: 87vh;
+  --image-max-largura: 100px;
+  --image-margin: 1rem;
+  --font-principal: "Arial";
+  --font-family-cabecalho: "Roboto, sans-serif;";
+  --max-largura: 144px;
+  --max-altura: 544px;
+  --max-peso: 500;
+  --font-tamanho: 15px;
+  --font-tamanho-cabecalho: 20px;
+  --fundo-padrao: white;
+  --negrito: bold;
+  --espaco-em-branco: nowrap;
+  --btn-tamanho: 10pt;
+  --sub-tamanho: 17pt;
+  --X: 0px;
+  --Y: 390px;
+  --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929);
+  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
+
+  --display: flex formato de celular;
+  --height: "altuta";
+  --Weight: "peso";
+  --width: "largura";
+  --white-space: "espaco em branco";
+}
+
 .btn-editora{
         background-image: linear-gradient(45deg, cyan, purple);
         padding: 10px;
