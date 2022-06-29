@@ -66,7 +66,7 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 
 }
 
-const loopNetSpeed = setInterval(refreshNetSpeed, 8000);
+const loopNetSpeed = setInterval(refreshNetSpeed, 10000);
       
         function refreshNetSpeed() {
         var userImageLink = 
