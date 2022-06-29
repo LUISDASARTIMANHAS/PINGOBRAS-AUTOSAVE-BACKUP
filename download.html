@@ -18,6 +18,7 @@
           <p id="adminStatus">NÃO CONECTADA</p>
           <p>ADMIN SALDO:</p>
           <div class="green-title" id="currentSaldo">SEM SALDO</div>
+          <p></p>
         </div>
         
        <div id="sfczcrmrdqsuts62apq8xn82nu44gqpxtpj">status bar</div> 
@@ -237,9 +238,8 @@
                 var bps = (loadedBits / timeDuration).toFixed(2);
                 var speedInKbps = (bps / 1024).toFixed(2);
                 var speedInMbps = (speedInKbps / 1024).toFixed(2);
-                alert("Your internet connection speed is: \n" 
-                      + bps + " bps\n" + speedInKbps 
-                      + " kbps\n" + speedInMbps + " Mbps\n");
+                var speedInGBps = (speedInMbps / 10024).toFixed(2);
+                alert("Sua conexao com a internet esta na velocidade: \n" + speedInGBps + " GBps\n");
             }
         </script>
     
