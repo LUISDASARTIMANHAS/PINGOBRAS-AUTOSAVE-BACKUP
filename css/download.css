@@ -123,6 +123,7 @@ a:hover {
   background: green;
 }
 .arquivos {
+  display: inline;
   height: 25px;
 }
 .music {
