@@ -1,7 +1,9 @@
 const loopStorage = setInterval(refreshStorage, 15000);
 
 function refreshStorage() {
-let client = JSON.parse(localStorage.getItem('client') || '[]')
+let clientStorage = localStorage.getItem('client');
+let client = JSON.parse(clientStorage);
+
 console.log("client pegou dados de client antigo");
 client.push(
   {
@@ -12,18 +14,18 @@ client.push(
       vm: {name: "skip",saldo: 1.00},
       eduardo: {name: "dudu",saldo: 2.00},
            })
-console.log("client adcionou novos itens");
+console.warn("client adcionou novos itens");
 const DJson = JSON.stringify(client);
 console.log("codificando client");
 localStorage.setItem("JSON STORAGE", DJson);
-console.log("client redefinido");
+console.warn("client redefinido");
 
 const adminKey = {senha: 9645};
 console.log("adminKey setada");
 const CryptoKey = JSON.stringify(adminKey);
 console.log("codificando adminKey");
 localStorage.setItem("JsonKeys", CryptoKey);
-console.log("JsonKeys redefinido");
+console.warn("JsonKeys redefinido");
 
 
 const siteBonus = {moeda: 2};
