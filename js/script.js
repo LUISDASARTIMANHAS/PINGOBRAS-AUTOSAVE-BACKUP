@@ -73,7 +73,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 8000);
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
             // The size in bytes
-            var downloadSize = 5616998;
+            var downloadSize = 40960;
             var downloadImgSrc = new Image();
   
             downloadImgSrc.onload = function () {
