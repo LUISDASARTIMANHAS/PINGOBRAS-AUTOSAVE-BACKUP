@@ -201,8 +201,6 @@
   background-color: blue;
   padding: var(--btn-tamanho);
   cursor: pointer;
-  text-align: left;
-  align-items: center;
   justify-content: center;
 }
 .btnlogin:hover {
