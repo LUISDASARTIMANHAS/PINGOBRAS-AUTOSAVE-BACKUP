@@ -65,8 +65,10 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
 }
+
+const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
       
-function speedtest() {
+        function refreshNetSpeed() {
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
@@ -119,8 +121,11 @@ function displaySpeed() {
   GBps.setAttribute('style', 'color: blue')}
   }
   
- if(speedInMbps < ) {
-   
+ if(speedInMbps < 2048.00) {
+  MBps.setAttribute('style', 'color: red')
+ }
+  if(speedInGBps < 2.048) {
+  GBps.setAttribute('style', 'color: red')
  }
   
 }}
