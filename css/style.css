@@ -192,7 +192,7 @@ body {
   background-size: cover;
   justify-content: center;
   opacity: 1;
-  padding-top: 30% !important;
+  padding-top: 26% !important;
   justify-content: ;
 }
 a.btn-cadastro, .btnlogin, .btn {
@@ -677,4 +677,7 @@ color: blue;
   width: 100%;
   cursor: help;
   display: block;
+}
+[inline]{
+  display: inline;
 }
