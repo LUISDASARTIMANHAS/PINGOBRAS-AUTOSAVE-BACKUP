@@ -183,6 +183,7 @@ to this section's matching END comment to see page-specific styles.
 END Glitch hello-app default styles
 ******************************************************************************/
 
+
 body {
   font-family: Arial, helvetica, sans-serif;
   background-image: var(--PINGOBRASIMG2);
@@ -191,6 +192,8 @@ body {
   background-size: cover;
   justify-content: center;
   opacity: 1;
+  padding-top: 30% !important;
+  justify-content: ;
 }
 a.btn-cadastro, .btnlogin, .btn {
   font-size: 15px;
