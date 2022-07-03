@@ -74,14 +74,14 @@ function speedtest() {
             var min = 5616998
             var KB = "998"
             var MB = "616"
-            var GB = "15"
+            var GB = "30"
             var Size = GB + MB + KB
             let downloadSizeLabel = document.getElementById("DownloadSize");
             downloadSizeLabel.innerHTML = + GB+"." + MB+"." + KB + "GB"
           
             var downloadSize = Size;
             var downloadImgSrc = new Image();
-  
+
             downloadImgSrc.onload = function () {
                 end_time = new Date().getTime();
                 displaySpeed();
@@ -104,8 +104,23 @@ function displaySpeed() {
   var bps = (loadedBits / timeDuration).toFixed(2);
   var speedInKbps = (bps / 1024).toFixed(2);
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
-  MBps.innerHTML = speedInMbps + " MBps"
-  MBps.style
   var speedInGBps = (speedInMbps / 1024).toFixed(2);
-  GBps.innerHTML = speedInGBps + " GBps"}
-}
+  
+  if(speedInKbps != "Infinity" ) {
+  MBps.innerHTML = speedInMbps + " MBps"
+  MBps.setAttribute('style', 'color: green')
+  GBps.innerHTML = speedInGBps + " GBps"
+  GBps.setAttribute('style', 'color: green')}
+  else{
+    if(speedInKbps === "Infinity"){
+  MBps.innerHTML = "Recalculando" + " MBps"
+  MBps.setAttribute('style', 'color: blue')
+  GBps.innerHTML = "Recalculando" + " GBps"
+  GBps.setAttribute('style', 'color: blue')}
+  }
+  
+ if(speedInMbps < ) {
+   
+ }
+  
+}}
