@@ -200,14 +200,13 @@
 .btnlogin {
   background-color: blue;
   padding: var(--btn-tamanho);
-  
-}
-.btnlogin img {
-  margin-right: auto;
+  cursor: pointer;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
 }
 .btnlogin:hover {
   background-image: linear-gradient(45deg, blue, green);
-  cursor: pointer;
 }
 
 .btn-cadastro {
