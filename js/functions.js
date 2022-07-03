@@ -93,6 +93,17 @@ function autopauseWindowSongError1() {
 
 }
 
+if (navigator.share) {
+    navigator.share({
+      title: 'Como usar a Web Share API',
+      url: 'https://evertonstrack.com.br/'
+    }).then(() => {
+      console.log('Compartilhado com sucesso!');
+    })
+    .catch(console.error);
+} else {
+    // fallback
+}
 
 const music = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
 function play() {
