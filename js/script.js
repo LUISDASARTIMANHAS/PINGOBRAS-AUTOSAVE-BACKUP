@@ -65,10 +65,8 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
 }
-
-const loopNetSpeed = setInterval(refreshNetSpeed, 10000);
       
-        function refreshNetSpeed() {
+function speedtest() {
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
@@ -76,7 +74,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 10000);
             var min = 5616998
             var KB = "998"
             var MB = "616"
-            var GB = "5"
+            var GB = "15"
             var Size = GB + MB + KB
             let downloadSizeLabel = document.getElementById("DownloadSize");
             downloadSizeLabel.innerHTML = + GB+"." + MB+"." + KB + "GB"
@@ -95,8 +93,9 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 10000);
 function displaySpeed() {
                 
   var timeDuration = (end_time - time_start) / 1000;
-  var loadedBits = downloadSize * 8;
-                
+  var loadedBits = downloadSize;
+  console.log(end_time)
+  
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
                   
