@@ -674,6 +674,7 @@ color: blue;
   background: white;
   border: 3px solid black;
   color: black;
-  width: 50%;
+  width: 100%;
   cursor: help;
+  display: block;
 }
