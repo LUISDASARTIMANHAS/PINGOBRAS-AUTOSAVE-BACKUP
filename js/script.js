@@ -64,9 +64,9 @@ console.log(YTLinks);
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
   
+window.addEventListener("load", function(){  
 const copyright = document.querySelector("#copyright")
-copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + "Todos os direitos reservados"
-
+  copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
   
 }
 

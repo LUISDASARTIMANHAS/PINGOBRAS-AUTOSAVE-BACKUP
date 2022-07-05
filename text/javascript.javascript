@@ -37,3 +37,7 @@ function autopauseSongError() {
           <br>
           Valdo SCH: <saldo> -7k sonhos </saldo> <payment>Pagamento: 12/12/2022 </payment>          
           roberta: <saldo> -4,00 </saldo> <payment>Pagamento: 11/06/2022 </payment>
+          
+          window.addEventListener("load", function(){  
+const copyright = document.querySelector("#copyright")
+  copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
