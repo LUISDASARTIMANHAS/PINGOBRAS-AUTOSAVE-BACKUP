@@ -7,7 +7,7 @@
         <h1>compartilhamento</h1>
         <form>
             <label for="username">Name: </label>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username" placeholder="username">
             <button id="join_leave">Join call</button>
             <button id="share_screen" disabled>Share screen</button>
         </form>
@@ -17,7 +17,12 @@
             <!-- more participants will be added dynamically here -->
         </div>
 
-        <script src="//media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
-        <script src="{{ url_for('static', filename='app.js') }}"></script>
+        
     </body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/btn.css" />
+  <script src="//media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script src="js/webshare.js" defer></script>
 </html>

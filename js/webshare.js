@@ -4,17 +4,8 @@ function participantConnected(participant) {
     labelDiv.innerHTML = participant.identity;
     participantDiv.appendChild(labelDiv);
   const shareScreen = document.getElementById('share_screen');
-var screenTrack;
+var screenTrack = "https://pingobras.glitch.me";
   
-navigator.mediaDevices.getDisplayMedia().then(stream => {
-            screenTrack = new Twilio.Video.LocalVideoTrack(stream.getTracks()[0]);
-            room.localParticipant.publishTrack(screenTrack);
-            room.localParticipant.unpublishTrack(screenTrack);
-        screenTrack.stop();
-        screenTrack = null;
-        }).catch(() => {
-            alert('Não foi possível compartilhar a tela.')
-        });
 shareScreen.addEventListener('click', shareScreenHandler);
   function shareScreenHandler() {
     event.preventDefault();
