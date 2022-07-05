@@ -7,8 +7,48 @@
     <title>PINGOBRAS WEBSHARE</title>
     </head>
     <body>
-      <h1>COMPARTILHAMENTO</h1>
+      <style>
+      .container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.participant {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.participant div {
+    text-align: center;
+}
+.participant div video {
+    width: 240px;
+    height: 180px;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+.participant .label {
+    background-color: #ddd;
+}
+
+        
+      </style>
       
+      <h1>COMPARTILHAMENTO</h1>
+       <form>
+            <label for="username">Name: </label>
+            <input type="text" name="username" id="username">
+            <button id="join_leave">Join call</button>
+            <button id="share_screen" disabled>Share screen</button>
+        </form>
+        <p id="count">Disconnected.</p>
+        <div id="container" class="container">
+            <div id="local" class="participant"><div></div><div class="label">Me</div></div>
+            <!-- more participants will be added dynamically here -->
+        </div>
+
+        <script src="//media.twiliocdn.com/sdk/js/video/releases/2.3.0/twilio-video.min.js"></script>
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
       
         
     </body>
