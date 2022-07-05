@@ -59,6 +59,24 @@ to this section's matching END comment to see page-specific styles.
 [hidden] {
   display: none !important;
 }
+[branco]{
+  color: white;
+}
+[azul]{
+  color: blue;
+}
+[amarelo]{
+  color: yellow;
+}
+[vermelho]{
+  color: red;
+}
+[verde]{
+  color: green;
+}
+[laranja]{
+  color: orange;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
