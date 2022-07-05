@@ -107,3 +107,7 @@ const element = document.querySelector("#audioJs");
 const source = audioContext.createMediaElementSource(element);
 source.connect(audioContext.destination)
 element.play;
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
