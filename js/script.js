@@ -64,6 +64,17 @@ console.log(YTLinks);
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
 
+  
+document.getElementById("copyright").innerHTML ="
+             <p> 
+             class="direitos"> Desenvolvedores: 
+            <br>
+            ©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script>
+            <br>
+            Todos os direitos reservados
+            <br>
+            <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
+          </p>"
 }
 
 const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
