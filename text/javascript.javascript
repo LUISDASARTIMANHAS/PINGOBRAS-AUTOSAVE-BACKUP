@@ -30,3 +30,10 @@ setInterval(autopauseSongError, 15000);
 function autopauseSongError() {
   SongError.pause() 
  console.log("SongError pausado")}
+ 
+ <saldo> Em Andamento </saldo> <payment> Pagamento: Em Andamento </payment>
+          <br>
+          Valdo Ol: <saldo> -10,00 </saldo> <payment>Pagamento: 12/12/2022 </payment>
+          <br>
+          Valdo SCH: <saldo> -7k sonhos </saldo> <payment>Pagamento: 12/12/2022 </payment>          
+          roberta: <saldo> -4,00 </saldo> <payment>Pagamento: 11/06/2022 </payment>
