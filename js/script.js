@@ -136,3 +136,4 @@ function displaySpeed() {
 let body = document.querySelector("body")
     body.setAttribute('style', 'padding-top: 45% ')
     }
+
