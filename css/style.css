@@ -285,12 +285,13 @@ tela{
   display: block;
   padding: 15px;
   background: white;
-  opacity: 0.7;
+  opacity: 80%;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
   border-radius: 25px;
+  z-index: 2;
 }
 telacalc{
   text-align: left;
@@ -303,7 +304,8 @@ telacalc{
   cursor: help;
   font-size: 18px;
   margin-left: 20px;
-  opacity: 1;
+  opacity: 100%;
+  z-index: 1;
 }
 
 
