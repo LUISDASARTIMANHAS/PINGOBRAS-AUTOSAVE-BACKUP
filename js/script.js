@@ -67,8 +67,14 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 window.addEventListener("load", function(){  
 const copyright = document.querySelector("#copyright")
   copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
+
+  
+  
   
 }
+
+
+
 
 const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
       
