@@ -281,14 +281,24 @@ main-text:before{
 tela{
   background: white;
   opacity: 0.7;
-  justify-content: right;
-  align-items: left;
-  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 25px;
 }
 telacalc{
-  align-items: left;
-  border: 5px dashed black;
-  width: 50%;
+  text-align: left;
+  display: block;
+  color: black;
+  background: white;
+  border: 5px solid black ;
+  padding: 10px 10px;
+  width: 75%;
+  cursor: help;
+  font-size: 18px;
+  margin-left: 20px;
+  
 }
 
 
