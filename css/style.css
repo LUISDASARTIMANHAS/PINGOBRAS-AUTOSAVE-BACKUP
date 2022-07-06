@@ -278,6 +278,20 @@ main-text:before{
   transition: transform 2s ease;
 }
 
+tela{
+  background: white;
+  opacity: 0.7;
+  justify-content: right;
+  align-items: left;
+  
+}
+telacalc{
+  align-items: left;
+  border: 5px dashed black;
+  width: 50%;
+}
+
+
 .logo-goves, a .logo-goves{
   margin: 0;
   display: block;
