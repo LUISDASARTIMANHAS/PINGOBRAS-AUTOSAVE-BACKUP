@@ -56,6 +56,9 @@ to this section's matching END comment to see page-specific styles.
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+[inline]{
+  display: inline;
+}
 [hidden] {
   display: none !important;
 }
@@ -279,6 +282,8 @@ main-text:before{
 }
 
 tela{
+  display: block;
+  padding: 15px;
   background: white;
   opacity: 0.7;
   justify-content: center;
@@ -298,7 +303,7 @@ telacalc{
   cursor: help;
   font-size: 18px;
   margin-left: 20px;
-  
+  opacity: 1;
 }
 
 
@@ -718,7 +723,4 @@ color: blue;
   width: 70%;
   cursor: help;
   display: block;
-}
-[inline]{
-  display: inline;
 }
