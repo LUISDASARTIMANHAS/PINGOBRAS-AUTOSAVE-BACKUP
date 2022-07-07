@@ -3,8 +3,9 @@ const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41
 function CalcJuros() {
   let EMP = document.forms["CalcJuros"]["EMP"].value;
   let JurosSem = document.getElementById("jurosSem")
-  let JutosPorcent = document.getElementById("JurosPorcent")
-}
+  let porcentagem = "20%"
+  let calc = EMP * porcentagem
+  }
 
 const btndisabled = document.querySelector("[disabled]");
 btndisabled.addEventListener('click', function() {
