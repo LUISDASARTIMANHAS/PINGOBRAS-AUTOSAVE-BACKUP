@@ -1,12 +1,9 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 
 function CalcJuros() {
-  let x = document.forms["CalcJuros"]["EMP"].value;
-  
-    if (x == "2") {
-    alert("Name must be filled out");
-    return false;
-  }
+  let EMP = document.forms["CalcJuros"]["EMP"].value;
+  let JurosSem = document.getElementById("jurosSem")
+  let JutosPorcent = document.getElementById("JurosPorcent")
 }
 
 const btndisabled = document.querySelector("[disabled]");
