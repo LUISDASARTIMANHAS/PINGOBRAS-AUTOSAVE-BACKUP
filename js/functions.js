@@ -1,11 +1,11 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 
-
+function CalcJuros() {
 let EMP = document.getElementById("EMP").value;
 let JurosSem = document.getElementById("jurosSem")
 const btncalc = document.getElementById("btnCalc")
-function CalcJuros() {
-  if(EMP == 0){
+
+if(EMP == 0){
     btncalc.style.opacity = "0.7"
     btncalc.style.cursor = "not-allowed"
   }else{
