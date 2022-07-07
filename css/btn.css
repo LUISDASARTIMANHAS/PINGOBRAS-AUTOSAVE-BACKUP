@@ -5,8 +5,8 @@
 }
 :root {
   --color-padrao: white;
-  --color-text-main: #000000;
-  --color-primary: #ffff00;
+  --color-text-main: black;
+  --color-primary: blue;
   --wrapper-altura: 87vh;
   --image-max-largura: 100px;
   --image-margin: 1rem;

@@ -50,13 +50,6 @@ let CL = JSON.parse(STORAGE);
 console.log("client descodificada");
 console.log(CL);
 
-const btndisabled = document.querySelector("[disabled]");
-if (btndisabled){
-  btndisabled.onclick = function(){
-    window.location.href = "https://pingobras-404.glitch.me"
-    document.querySelector(".site-altura").style.cursor = "progress";
-    console.log("Usuario redirecionado para site fora do ar!");
-  };}
 
   setTimeout( function REL(){
 const YTLinks = JSON.parse(STORAGEYT);
