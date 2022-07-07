@@ -728,5 +728,7 @@ color: blue;
 }
 
 .input-calc{
-  
+  width: 20%;
+  height: 20pt;
+  outline-color: orange;
 }
