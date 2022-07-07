@@ -1,7 +1,7 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 
 function CalcJuros() {
-  let EMP = document.forms["CalcJuros"]["EMP"].value;
+  let EMP = document.getElementById("EMP");
   let JurosSem = document.getElementById("jurosSem")
   let porcent = "0.2"
   let calc = EMP * porcent
