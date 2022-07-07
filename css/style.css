@@ -734,5 +734,5 @@ color: blue;
 .input-calc:focus{
   width: 17%;
   height: 17pt;
-  outline-color: green;
+  outline-color: blue;
 }

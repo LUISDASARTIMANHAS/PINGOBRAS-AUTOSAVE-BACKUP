@@ -61,8 +61,14 @@ window.addEventListener("load", function(){
 const copyright = document.querySelector("#copyright")
   copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
 
-const jurosSem = document.getElementById("jurosSem");  
+  function CalcJuros() {
+  let x = document.forms["CalcJuros"]["EMP"].value;
   
+    if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
   
 }
 
