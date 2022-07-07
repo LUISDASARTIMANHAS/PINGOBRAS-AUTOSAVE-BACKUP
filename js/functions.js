@@ -1,11 +1,17 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 
 function CalcJuros() {
-  let EMP = document.getElementById("EMP");
+  let EMP = document.getElementById("EMP").value;
   let JurosSem = document.getElementById("jurosSem")
+  const btncalc = document.getElementById("btnCalc")
+  
+  if(EMP == null){
+    btncalc.style.class = "disabled"
+  }else{
   let porcent = "0.2"
   let calc = EMP * porcent
-  JurosSem.innerHTML = calc
+  JurosSem.innerHTML = calc}
+  
   }
 
 const btndisabled = document.querySelector("[disabled]");
