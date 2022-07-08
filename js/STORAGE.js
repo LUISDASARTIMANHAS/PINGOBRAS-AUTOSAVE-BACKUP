@@ -32,7 +32,7 @@ localStorage.setItem("siteBonus", siteBonusjs);
 
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
-console.error(tokenR.token); 
+  
 const repeattoken = JSON.stringify(tokenR);
 console.log("repetindo codificanção do token");
 localStorage.setItem("JsonToken", repeattoken);

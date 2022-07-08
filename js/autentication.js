@@ -6,6 +6,9 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
+if(tokenR.token == null){
+  
+}else{
 if(tokenR.token != "desconectado") {
   let status = "Status: Conectado"
   const admstatus = document.getElementById("adminStatus");
@@ -17,7 +20,7 @@ else {
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
-}
+}}
 
 
 
