@@ -6,21 +6,18 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log(tokenR.token);
 
-if(tokenR.token == null){
-  
-}else{
+
 if(tokenR.token != "desconectado") {
   let status = "Status: Conectado"
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: green')
-}
-else {
+}else{
   const status = "Status: Não conectado"
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
-}}
+}
 
 
 
@@ -65,6 +62,7 @@ function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
+  
   const tokenrefresh = {token: "desconectado"};
 const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
 localStorage.setItem("JsonToken", Cryptotokenrefresh);
@@ -73,12 +71,22 @@ alert('O banco de dados foi restaurado!')
 
 function autentication() {
   
-  if(tokenR.token == "desconectado" ) {
+  if(tokenR.token == null){
+  const tokenrefresh = {token: "desconectado"};
+const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
+localStorage.setItem("JsonToken", Cryptotokenrefresh);
+  
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')
+}else{
+  if(tokenR.token != "d") {
       window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }
   else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }
+  }}
 
 }
