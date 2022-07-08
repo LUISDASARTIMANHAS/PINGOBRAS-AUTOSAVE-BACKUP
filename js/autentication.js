@@ -70,23 +70,13 @@ alert('O banco de dados foi restaurado!')
 }
 
 function autentication() {
-  
-  if(tokenR.token == null){
-  const tokenrefresh = {token: "desconectado"};
-const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
-localStorage.setItem("JsonToken", Cryptotokenrefresh);
-  
-  const status = "Status: Não conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: red')
-}else{
-  if(tokenR.token != "d") {
+
+  if(tokenR.token == "desconectado") {
       window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }
   else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }}
+  }
 
 }

@@ -306,6 +306,20 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
 <script>
+  
+  if(tokenR.token == null){
+  const tokenrefresh2 = {token: "desconectado"};
+const Cryptotokenrefresh2 = JSON.stringify(tokenrefresh2);
+localStorage.setItem("JsonToken", Cryptotokenrefresh2);
+    window.location.href = ("https://#")
+  
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')
+}
+  </script>
+  <script>
     var sound = new Howl({
       src: ['https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'],
       volume: 100.0,
