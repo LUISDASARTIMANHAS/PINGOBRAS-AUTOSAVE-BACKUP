@@ -306,18 +306,9 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
 <script>
-  
-  if(tokenR.token == null){
-  const tokenrefresh2 = {token: "desconectado"};
-const Cryptotokenrefresh2 = JSON.stringify(tokenrefresh2);
-localStorage.setItem("JsonToken", Cryptotokenrefresh2);
-    window.location.href = ("https://#")
-  
-  const status = "Status: Não conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: red')
-}
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log(tokenR.value);
   </script>
   <script>
     var sound = new Howl({
