@@ -70,7 +70,7 @@ alert('O banco de dados foi restaurado!')
 }
 
 function autentication() {
-let tokenjson2 = localStorage.setItem("JsonToken");
+let tokenjson2 = localStorage.getItem("JsonToken");
 let tokenR2 = JSON.parse(tokenjson2);  
 console.log(tokenR2)
   
@@ -78,7 +78,7 @@ console.log(tokenR2)
   const tokenrefresh2 = {token: "desconectado"};
 const Cryptotokenrefresh2 = JSON.stringify(tokenrefresh2);
 localStorage.setItem("JsonToken", Cryptotokenrefresh2);
-    window.location.href = ("https://#")
+    window.location.href = ("https://pingobras.glitch.me")
   
   const status = "Status: Não conectado"
   const admstatus = document.getElementById("adminStatus");
