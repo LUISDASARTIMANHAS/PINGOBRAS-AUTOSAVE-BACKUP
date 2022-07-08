@@ -18,6 +18,9 @@ if (btn){
     btn.classList.toggle("dipped");
   };}
 
+  CREATE DATABASE testDB;
+
+  
 const UPinput = document.querySelector("#UP1");
 if (UPinput){
   UPinput.onclick = function(){
