@@ -728,11 +728,12 @@ color: blue;
 }
 
 .input-calc{
-  width: 20%;
-  height: 20pt;
+  width: 30%;
+  height: 30pt;
+  text-align: center;
 }
 .input-calc:focus{
-  width: 17%;
-  height: 17pt;
+  width: 27%;
+  height: 27pt;
   outline-color: blue;
 }

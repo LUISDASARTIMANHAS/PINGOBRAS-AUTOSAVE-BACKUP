@@ -8,12 +8,16 @@ const btncalc = document.getElementById("btnCalc")
 if(EMP == 0){
     btncalc.style.opacity = "0.7"
     btncalc.style.cursor = "not-allowed"
+    JurosSem.innerHTML = "Insira o valor na calculadora!"
+    JurosSem.style.color = "red"
+    EMP.style.color = "red"
   }else{
   btncalc.style.opacity = "1"
-  btncalc.style.cursor = "1"
+  btncalc.style.cursor = "pointer"
   let porcent = "0.2"
   let calc = EMP * porcent
-  JurosSem.innerHTML = calc}
+  JurosSem.innerHTML = calc
+  JurosSem.style.color = "green"}
   
   }
 
