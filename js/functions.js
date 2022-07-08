@@ -10,14 +10,15 @@ if(EMP == 0){
     btncalc.style.cursor = "not-allowed"
     JurosSem.innerHTML = "Insira o valor na calculadora!"
     JurosSem.style.color = "red"
-    EMP.style.color = "red"
+    EMP.style.outlineColor = "red"
   }else{
   btncalc.style.opacity = "1"
   btncalc.style.cursor = "pointer"
   let porcent = "0.2"
   let calc = EMP * porcent
   JurosSem.innerHTML = calc
-  JurosSem.style.color = "green"}
+  JurosSem.style.color = "green"
+  EMP.style.outlineColor = "blue"}
   
   }
 
