@@ -221,15 +221,26 @@
         
         <footer class="footer">
         <div class="links"></div>
-       <div class="chat" id="jschat">
+       <div class="chat" id="jschat" style="display: none;">
   <form 
-        action="/index.html" 
+        action="/#" 
         class="form-chat">
     <h1>Bate-Papo</h1>
-    <label 
-           for="msg"><b>MENSAGENS:</b></label>
+    <div class="displayMsm"><label><b>MENSAGENS:</b> 
+      
+      <br>
+      
+      <usermy>Você:</usermy>
+      <my id="myMsm"> Você não mandou nenhuma mensagem</my>
+      
+      <br>
+      
+      <user id="user1">Usuario1:</user>
+      <display id="display1"> Nenuma mensagem!</display>
+      
+    </label></div>
     <textarea 
-              placeholder="OI tudo bem?.." 
+              placeholder="OI tudo bem?" 
               name="msg" 
               required>
     </textarea>
@@ -248,17 +259,6 @@
             <br>
             <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
           </p>
-          
-          <a 
-             nothidden
-             class="logo-goves" 
-             href="http://www.es.gov.br/" 
-             target="_blank" 
-             title="Acessar portal do Governo do Estado do Espírito Santo.">
-						<img 
-                 src="https://cdn.es.gov.br/images/logo/governo/brasao/left-white/Brasao_Governo_240.png" 
-                 alt="brasão Governo do Estado Espírito Santo">
-					</a>
           
         </footer>
         

@@ -54,17 +54,28 @@
         
         <div class="chat" id="jschat" style="display: block;">
   <form 
-        action="/index.html" 
+        action="/#" 
         class="form-chat">
     <h1>Bate-Papo</h1>
-    <label 
-           for="msg"><b>MENSAGENS:</b></label>
+    <div class="displayMsm"><label><b>MENSAGENS:</b> 
+      
+      <br>
+      
+      <usermy>Você:</usermy>
+      <my id="myMsm"> Você não mandou nenhuma mensagem</my>
+      
+      <br>
+      
+      <user id="user1">Usuario1:</user>
+      <display id="display1"> Nenuma mensagem!</display>
+      
+    </label></div>
     <textarea 
               placeholder="OI tudo bem?" 
               name="msg" 
               required>
     </textarea>
-    <button disabled type="submit" class="btn-enviar-msm">Enviar msm</button>
+    <button type="submit" class="btn-enviar-msm">Enviar msm</button>
   </form>
 </div>
         
