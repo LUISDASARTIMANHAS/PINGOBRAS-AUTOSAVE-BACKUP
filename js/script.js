@@ -148,8 +148,9 @@ let hours = time.getHours();
 let minutes = time.getMinutes();
 let seconds = time.getSeconds();
 let horario = hours +":" + minutes +":" + seconds
-document.getElementById("horario").innerHTML = hours +":" + minutes+":" + seconds;
-  if(horario > '10:30:00'){
+document.getElementById("horario").innerHTML = horario;
+document.querySelector("[timer]").innerHTML = horario;
+  if(horario > '18:30:00'){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
   }else{
