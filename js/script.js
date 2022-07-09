@@ -139,3 +139,9 @@ let body = document.querySelector("body")
     body.setAttribute('style', 'padding-top: 45% ')
     }
 
+
+const time = new Date();
+let hours = time.getHours();
+let minutes = time.getMinutes();
+let seconds = time.getSeconds();
+document.getElementById("horario").innerHTML = hours +":" + minutes+":" + seconds;
