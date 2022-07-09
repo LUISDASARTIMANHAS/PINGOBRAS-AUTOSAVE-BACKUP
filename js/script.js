@@ -140,8 +140,21 @@ let body = document.querySelector("body")
     }
 
 
+const looptime = setInterval(timeRefresh, 500);
+      
+function timeRefresh() {
 const time = new Date();
 let hours = time.getHours();
 let minutes = time.getMinutes();
 let seconds = time.getSeconds();
+let horario = hours +":" + minutes +":" + seconds
 document.getElementById("horario").innerHTML = hours +":" + minutes+":" + seconds;
+  if(horario > '10:30:00'){
+    document.querySelector(".site-altura").style.display = "none";
+    document.querySelector(".msg-horario").style.display = "block";
+  }else{
+        document.querySelector(".site-altura").style.display = "block";
+    document.querySelector(".msg-horario").style.display = "block";
+  }
+  
+}
