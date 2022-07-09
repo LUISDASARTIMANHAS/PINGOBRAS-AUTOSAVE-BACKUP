@@ -149,12 +149,12 @@ let minutes = time.getMinutes();
 let seconds = time.getSeconds();
 let horario = hours +":" + minutes +":" + seconds
 document.getElementById("horario").innerHTML = hours +":" + minutes+":" + seconds;
-  if(horario > '10:30:00'){
+  if(horario > '16:30:00'){
     document.querySelector(".site-altura").style.display = "none";
-    document.querySelector(".msg-horario").style.display = "block";
+    document.querySelector(".msg-error-hour").style.display = "block";
   }else{
-        document.querySelector(".site-altura").style.display = "block";
-    document.querySelector(".msg-horario").style.display = "block";
+    document.querySelector(".site-altura").style.display = "block";
+    document.querySelector(".msg-error-hour").style.display = "none";
   }
   
 }
