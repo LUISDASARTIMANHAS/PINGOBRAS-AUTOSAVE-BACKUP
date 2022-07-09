@@ -740,9 +740,13 @@ color: blue;
 userMy, user{
   color: darkblue;
 }
-My1{
+My1, display{
   color: black;
 }
-display{
-  color: black;
+.displayMsm{
+  border: 5px solid black;
+  background: #ffffff80;
+  width: 75%;
+  height: 100%;
+  padding: 5px;
 }
