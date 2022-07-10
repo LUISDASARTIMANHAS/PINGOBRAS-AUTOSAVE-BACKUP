@@ -147,10 +147,10 @@ const time = new Date();
 let hours = time.getHours();
 let minutes = time.getMinutes();
 let seconds = time.getSeconds();
-let horario = "0" + hours +":" + minutes +":" + seconds
+let horario = "0" + hours +":" + "0" + minutes +":" + seconds
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
-  if(horario > '18:30:00'){
+  if(horario > '019:030:00'){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
   }else{
