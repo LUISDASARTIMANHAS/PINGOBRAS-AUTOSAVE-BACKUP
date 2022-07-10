@@ -11,7 +11,7 @@
 
  </head>
   <body>
-    <time id="hoeario" ></time>
+
     <!--
       This is the body of the page
       Look at the elements and see how they appear in the rendered page on the right
@@ -97,30 +97,10 @@ src="https://dlive.tv/Coincard?ref=dlive-gjqnluuvhi?autoplay=1&muted=1">
         <button class="btn-descer" id="jsDescer">Descer Mais Fundo</button>
            </div> </div>
         <div class="msg-error-hour">
-      <p>O Site está fechado apartir das 18:30:00</p><p>Volte amanha!</p><p><time timer>horario</time></p>
+      <p>O Site está fechado apartir das 18:30:00</p><p>Volte amanha!</p><p><time horario timer>horario</time></p>
     </div>
   </body>
-  <script>
-  const looptime = setInterval(timeRefresh, 500);
-      
-function timeRefresh() {
-const time = new Date();
-let hours = time.getHours();
-let minutes = time.getMinutes();
-let seconds = time.getSeconds();
-let horario = "" + hours +":" + minutes +":" + seconds
-document.getElementById("horario").innerHTML = horario;
-document.querySelector("[timer]").innerHTML = horario;
-  if(horario > '18:30:00'){
-    document.querySelector(".site-altura").style.display = "none";
-    document.querySelector(".msg-error-hour").style.display = "block";
-  }else{
-    document.querySelector(".site-altura").style.display = "block";
-    document.querySelector(".msg-error-hour").style.display = "none";
-  }
-  
-}
-  </script>
+
   
     <script src="js/autentication.js" defer></script>
   <link rel="stylesheet" href="css/style.css" />
