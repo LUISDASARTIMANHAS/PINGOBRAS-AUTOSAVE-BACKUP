@@ -10,8 +10,11 @@
         <div class="site-altura">
       <div class="conteudo" role="main">
         
-  <js>0</js><p> horas</p>
+  <p> horas restantes</p><js>0</js>
+  <p>horario:</p><p horario></p>
+  <p>selecionado:</p><p select></p>
   
+        
         
   </div></div>     
   </body>
@@ -26,3 +29,21 @@
     <script src="js/functions.js" defer></script>
       <script src="mysql.sql" defer></script>
 </html>
+<script>
+  const looptime = setInterval(timeRefresh, 500);
+      
+function timeRefresh() {
+  var hourselect = "018:030:00"
+  const time = new Date();
+let hours = time.getHours();
+let minutes = time.getMinutes();
+let seconds = time.getSeconds();
+let horario = "0" + hours +":" + "0" + minutes +":" + seconds
+let calc = hourselect - horario
+document.querySelector("js").innerHTML = calc;  
+document.querySelector("[horario]").innerHTML = horario;  
+document.querySelector("[select]").innerHTML = hourselect;  
+}
+  
+
+</script>
