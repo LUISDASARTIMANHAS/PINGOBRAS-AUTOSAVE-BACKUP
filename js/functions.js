@@ -18,6 +18,8 @@ if(EMP == 0){
     JurosSem.style.color = "red"
     CalcTotal.innerHTML = "Insira o valor na calculadora!"
     CalcTotal.style.color = "red"
+    JurosProxSem.innerHTML = "Insira o valor na calculadora!"
+    JurosProxSem.style.color = "red"
     ProxSem.innerHTML = "Insira o valor na calculadora!"
     ProxSem.style.color = "red"
     EMP.style.outlineColor = "red"
@@ -26,8 +28,8 @@ if(EMP == 0){
   btncalc.style.cursor = "pointer"
   const porcent = 0.2 
   const juros = EMP * porcent;
-  const total = (Number(EMP) + Number(juros)); 
-  const jurosNew = total * juros
+  const total = (Number(EMP) + Number(juros));
+  const jurosNew = total * porcent
   const TotalProxSem = total + jurosNew
   
   JurosSem.innerHTML = juros
@@ -36,6 +38,7 @@ if(EMP == 0){
   ProxSem.innerHTML = TotalProxSem
   JurosSem.style.color = "green"
   CalcTotal.style.color = "green"
+  JurosProxSem.style.color = "green"
   ProxSem.style.color = "green"
   EMP.style.outlineColor = "blue"}
  }catch (err) {
