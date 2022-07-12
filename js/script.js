@@ -141,6 +141,9 @@ let body = document.querySelector("body")
 
 
 const looptime = setInterval(timeRefresh, 500);
+
+const horaselect = "019:30:10"
+document.querySelector("[horaselect]").innerHTML = horaselect;
       
 function timeRefresh() {
 const time = new Date();
@@ -150,7 +153,7 @@ let seconds = time.getSeconds();
 let horario = "0" + hours +":" + "0" + minutes +":" + seconds
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
-  if(horario > '019:030:00'){
+  if(horario > horaselect){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
   }else{
