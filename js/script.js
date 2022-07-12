@@ -155,9 +155,9 @@ let minutes = time.getMinutes();
 let seconds = time.getSeconds();
 const horario = "0" + hours +":" + "0" + minutes +":" + seconds
 
-let faultS = seconds / secondsplayer
-let faultH = hours / hoursplayer
-let faultM = minutes / minutesplayer
+let faultS = seconds - secondsplayer
+let faultH = hours - hoursplayer
+let faultM = minutes - minutesplayer
 const fault = faultH+":" + faultM+":" + faultS
 document.querySelector("[fault]").innerHTML = fault;
 
