@@ -58,14 +58,6 @@ console.log(YTLinks);
 document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
 },125000);
   
-window.addEventListener("load", function(){  
-const copyright = document.querySelector("#copyright")
-  copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
-
-  
-}
-
-
 
 
 const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
@@ -139,6 +131,9 @@ let body = document.querySelector("body")
     body.setAttribute('style', 'padding-top: 45% ')
     }
 
+}
+
+
 
 const looptime = setInterval(timeRefresh, 500);
 
@@ -156,8 +151,8 @@ let seconds = time.getSeconds();
 const horario = "0" + hours +":" + "0" + minutes +":" + seconds
 
 let faultS = seconds - secondsplayer
-let faultH = hours - hoursplayer
-let faultM = minutes - minutesplayer
+let faultH = -hours + hoursplayer
+let faultM = -minutes + minutesplayer
 const fault = faultH+":" + faultM+":" + faultS
 document.querySelector("[fault]").innerHTML = fault;
 
