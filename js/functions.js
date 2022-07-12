@@ -2,8 +2,6 @@ const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41
 
 function CalcJuros() {
  try {
-  const PI = 3.141592653589793;
-  PI = 3.14;
 
    
 let EMP = document.getElementById("EMP").value;
@@ -25,18 +23,23 @@ if(EMP == 0){
   }else{
   btncalc.style.opacity = "1"
   btncalc.style.cursor = "pointer"
-  const porcent = 0.2
-  var calc = EMP * porcent;
-  var total = (EMP + calc); 
-  number()
+  const porcent = 0.2 
+  const calc = EMP * porcent;
+  const total = (Number(EMP) + Number(calc)); 
+  const calcProxSem = total * calc
     
   JurosSem.innerHTML = calc
   CalcTotal.innerHTML = total
+  ProxSem.innerHTML = calcProxSem
   JurosSem.style.color = "green"
   CalcTotal.style.color = "green"
   ProxSem.style.color = "green"
   EMP.style.outlineColor = "blue"}
+ }catch (err) {
+  console.log(err);
+}
   
+   
   }
 
 const btndisabled = document.querySelector("[disabled]");
