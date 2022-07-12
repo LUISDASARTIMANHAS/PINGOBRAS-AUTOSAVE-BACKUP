@@ -6,6 +6,7 @@ function CalcJuros() {
    
 let EMP = document.getElementById("EMP").value;
 const JurosSem = document.getElementById("jurosSem")
+const JurosProxSem = document.getElementById("jurosProxSem")
 const CalcTotal = document.getElementById("calcTotal")
 const ProxSem = document.getElementById("proximasem")
 const btncalc = document.getElementById("btnCalc")
@@ -24,13 +25,15 @@ if(EMP == 0){
   btncalc.style.opacity = "1"
   btncalc.style.cursor = "pointer"
   const porcent = 0.2 
-  const calc = EMP * porcent;
-  const total = (Number(EMP) + Number(calc)); 
-  const calcProxSem = total * calc
-    
-  JurosSem.innerHTML = calc
+  const juros = EMP * porcent;
+  const total = (Number(EMP) + Number(juros)); 
+  const jurosNew = total * juros
+  const TotalProxSem = total + jurosNew
+  
+  JurosSem.innerHTML = juros
   CalcTotal.innerHTML = total
-  ProxSem.innerHTML = calcProxSem
+  JurosProxSem.innerHTML = jurosNew
+  ProxSem.innerHTML = TotalProxSem
   JurosSem.style.color = "green"
   CalcTotal.style.color = "green"
   ProxSem.style.color = "green"
