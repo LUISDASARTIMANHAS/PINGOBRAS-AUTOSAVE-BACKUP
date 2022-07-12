@@ -142,7 +142,10 @@ let body = document.querySelector("body")
 
 const looptime = setInterval(timeRefresh, 500);
 
-const horaselect = "019:30:10"
+let secondsplayer = "5"
+let minutesplayer = "30"
+let horaplayer = "19"
+const horaselect = horaplayer+":" + minutesplayer+":" + secondsplayer
 document.querySelector("[horaselect]").innerHTML = horaselect;
       
 function timeRefresh() {
@@ -150,9 +153,15 @@ const time = new Date();
 let hours = time.getHours();
 let minutes = time.getMinutes();
 let seconds = time.getSeconds();
-let horario = "0" + hours +":" + "0" + minutes +":" + seconds
+const horario = "0" + hours +":" + "0" + minutes +":" + seconds
+
+let faultS = seconds - secondsplayer
+let faultH = hours - horaplayer
+let 
+
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
+
   if(horario > horaselect){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
