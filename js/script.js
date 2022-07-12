@@ -144,8 +144,8 @@ const looptime = setInterval(timeRefresh, 500);
 
 let secondsplayer = "5"
 let minutesplayer = "30"
-let horaplayer = "19"
-const horaselect = horaplayer+":" + minutesplayer+":" + secondsplayer
+let hoursplayer = "19"
+const horaselect = hoursplayer+":" + minutesplayer+":" + secondsplayer
 document.querySelector("[horaselect]").innerHTML = horaselect;
       
 function timeRefresh() {
@@ -155,10 +155,11 @@ let minutes = time.getMinutes();
 let seconds = time.getSeconds();
 const horario = "0" + hours +":" + "0" + minutes +":" + seconds
 
-let faultS = seconds - secondsplayer
-let faultH = hours - horaplayer
-let faultM = minutes - minutes
-const 
+let faultS = seconds / secondsplayer
+let faultH = hours / hoursplayer
+let faultM = minutes / minutesplayer
+const fault = faultH+":" + faultM+":" + faultS
+document.querySelector("[fault]").innerHTML = fault;
 
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
