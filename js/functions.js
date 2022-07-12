@@ -4,6 +4,7 @@ function CalcJuros() {
 let EMP = document.getElementById("EMP").value;
 let JurosSem = document.getElementById("jurosSem")
 let CalcTotal = document.getElementById("calcTotal")
+let ProxSem = document.getElementById("proximasem")
 const btncalc = document.getElementById("btnCalc")
 
 if(EMP == 0){
@@ -12,16 +13,22 @@ if(EMP == 0){
     JurosSem.innerHTML = "Insira o valor na calculadora!"
     JurosSem.style.color = "red"
     CalcTotal.innerHTML = "Insira o valor na calculadora!"
-  
     CalcTotal.style.color = "red"
+    ProxSem.innerHTML = "Insira o valor na calculadora!"
+    ProxSem.style.color = "red"
     EMP.style.outlineColor = "red"
   }else{
   btncalc.style.opacity = "1"
   btncalc.style.cursor = "pointer"
-  let porcent = "0.2"
-  let calc = EMP * porcent
+  let porcent = 0.2
+  let calc = EMP * porcent;
+  let total = EMP + 0.10; 
+  
   JurosSem.innerHTML = calc
+  CalcTotal.innerHTML = total
   JurosSem.style.color = "green"
+  CalcTotal.style.color = "green"
+  ProxSem.style.color = "green"
   EMP.style.outlineColor = "blue"}
   
   }
