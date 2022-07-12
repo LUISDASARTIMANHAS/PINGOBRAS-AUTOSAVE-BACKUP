@@ -1,10 +1,15 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 
 function CalcJuros() {
+ try {
+  const PI = 3.141592653589793;
+  PI = 3.14;
+
+   
 let EMP = document.getElementById("EMP").value;
-let JurosSem = document.getElementById("jurosSem")
-let CalcTotal = document.getElementById("calcTotal")
-let ProxSem = document.getElementById("proximasem")
+const JurosSem = document.getElementById("jurosSem")
+const CalcTotal = document.getElementById("calcTotal")
+const ProxSem = document.getElementById("proximasem")
 const btncalc = document.getElementById("btnCalc")
 
 if(EMP == 0){
@@ -20,10 +25,11 @@ if(EMP == 0){
   }else{
   btncalc.style.opacity = "1"
   btncalc.style.cursor = "pointer"
-  let porcent = 0.2
-  let calc = EMP * porcent;
-  let total = EMP + 0.10; 
-  
+  const porcent = 0.2
+  var calc = EMP * porcent;
+  var total = (EMP + calc); 
+  number()
+    
   JurosSem.innerHTML = calc
   CalcTotal.innerHTML = total
   JurosSem.style.color = "green"
