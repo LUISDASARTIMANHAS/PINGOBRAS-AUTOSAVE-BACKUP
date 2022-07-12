@@ -157,7 +157,8 @@ const horario = "0" + hours +":" + "0" + minutes +":" + seconds
 
 let faultS = seconds - secondsplayer
 let faultH = hours - horaplayer
-let 
+let faultM = minutes - minutes
+const 
 
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
