@@ -3,6 +3,7 @@ const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41
 function CalcJuros() {
 let EMP = document.getElementById("EMP").value;
 let JurosSem = document.getElementById("jurosSem")
+let CalcTotal = document.getElementById("calcTotal")
 const btncalc = document.getElementById("btnCalc")
 
 if(EMP == 0){
@@ -10,6 +11,9 @@ if(EMP == 0){
     btncalc.style.cursor = "not-allowed"
     JurosSem.innerHTML = "Insira o valor na calculadora!"
     JurosSem.style.color = "red"
+    CalcTotal.innerHTML = "Insira o valor na calculadora!"
+  
+    CalcTotal.style.color = "red"
     EMP.style.outlineColor = "red"
   }else{
   btncalc.style.opacity = "1"
