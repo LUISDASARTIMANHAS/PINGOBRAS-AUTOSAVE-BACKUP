@@ -77,20 +77,24 @@
         transition: all .5s ease-out;
         }
 .btnvoltar{
-        background-color: blue;
-        border: 5px solid black;
-        padding: 7px;
-        width: 75%;
-        border-radius: 15px;
-        color: white;
-        font-size: 15px;   
-        align-items: center; 
-        text-align: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: blue;
+  padding: var(--btn-tamanho);
+  cursor: help;
+  font-size: 15px;
+  border: 5px solid black;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  color: white;
+  text-decoration: none;
 }
       .btnvoltar:hover{
         background-image: linear-gradient(50deg, blue, purple);
         cursor: pointer;
-        box-shadow: -8px 20px 20px gray;
         transform: translateY(5px);
         transition: all .5s ease-out;
         }
@@ -217,7 +221,7 @@
   background-image: linear-gradient(45deg, purple, green);
 }
 .btn-cadastrar {
-  justify-content:;
+  justify-content: center;
   text-align: center;
   align-items: center;
   background-color: purple;
@@ -226,11 +230,12 @@
   font-size: 15px;
   border: 5px solid black;
   font-weight: bold;
-  width: 75%;
+  width: 100%;
   border-radius: 15px;
   display: flex;
   color: white;
   text-decoration: none;
+  
 }
 .btn-cadastrar:hover {
   background-image: linear-gradient(45deg, purple, green);
