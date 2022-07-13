@@ -216,6 +216,25 @@
 .btn-cadastro:hover {
   background-image: linear-gradient(45deg, purple, green);
 }
+.btn-cadastrar {
+  justify-content:;
+  text-align: center;
+  align-items: center;
+  background-color: purple;
+  padding: var(--btn-tamanho);
+  cursor: help;
+  font-size: 15px;
+  border: 5px solid black;
+  font-weight: bold;
+  width: 75%;
+  border-radius: 15px;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.btn-cadastrar:hover {
+  background-image: linear-gradient(45deg, purple, green);
+}
 .btn-pages {
   background-color: green;
   padding: var(--btn-tamanho);
