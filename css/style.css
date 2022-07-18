@@ -56,6 +56,10 @@ to this section's matching END comment to see page-specific styles.
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+js{
+  width: auto;
+  display: inline;
+}
 [inline]{
   display: inline;
 }
