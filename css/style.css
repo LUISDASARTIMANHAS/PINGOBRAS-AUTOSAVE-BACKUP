@@ -80,6 +80,12 @@ to this section's matching END comment to see page-specific styles.
 [laranja]{
   color: orange;
 }
+[cinza]{
+  color: gray;
+}
+[gray]{
+  background: gray;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
