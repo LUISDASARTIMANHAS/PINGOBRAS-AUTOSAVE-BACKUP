@@ -12,18 +12,13 @@ client.push(
       vm: {name: "skip",saldo: 1.00},
       eduardo: {name: "dudu",saldo: 2.00},
            })
-console.warn("client adcionou novos itens");
+console.warn("STORAGE/LOG> client adcionou novos itens");
 const DJson = JSON.stringify(client);
-console.log("codificando client");
 localStorage.setItem("JSON STORAGE", DJson);
-console.warn("client redefinido");
 
 const adminKey = {senha: 9645};
-console.log("adminKey setada");
 const CryptoKey = JSON.stringify(adminKey);
-console.log("codificando adminKey");
 localStorage.setItem("JsonKeys", CryptoKey);
-console.warn("JsonKeys redefinido");
 
 
 const siteBonus = {moeda: 2};
@@ -31,31 +26,27 @@ const siteBonusjs = JSON.stringify(siteBonus);
 localStorage.setItem("siteBonus", siteBonusjs);
 
 let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
+let tokenRefresh = JSON.parse(tokenjson);
   
-const repeattoken = JSON.stringify(tokenR);
-console.log("repetindo codificanção do token");
+const repeattoken = JSON.stringify(tokenRefresh);
+console.log("STORAGE/LOG> recarregando codificanção do token...");
 localStorage.setItem("JsonToken", repeattoken);
-console.warn("token repitido");
+console.warn("STORAGE/LOG> token recarregado!");
+ 
+  
   
 }
 
+
+
 const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
-console.log("YTL setada");
 const LkJson = JSON.stringify(YTL);
-console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",LkJson);
-console.warn("LKJson redefinido");
 
 setTimeout( function TRLink() {
-  
-console.log("timeout terminado");
 const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
-console.log("YTL alterada");
 const TRLkJson = JSON.stringify(YTLive);
-console.log("codificando YTL");
 localStorage.setItem("YoutubeLinks",TRLkJson);
-console.log("YTL re-setada");
 },125000);
 
 

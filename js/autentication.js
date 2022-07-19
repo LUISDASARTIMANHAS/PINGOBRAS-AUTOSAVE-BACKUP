@@ -1,10 +1,9 @@
 let  JsonKeys = localStorage.getItem("JsonKeys");
 let key = JSON.parse(JsonKeys);
-console.log(key.senha);
 
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
-console.log(tokenR.token);
+console.log("AUTENTICATION/LOG> Token recebido:" + tokenR.token);
 
 
 if(tokenR.token != "desconectado") {
@@ -37,7 +36,7 @@ enviar.addEventListener("click", function entrar() {
    
     let storageToken = {token: mathRandom};
     const Cryptotoken = JSON.stringify(storageToken);
-     console.log("codificando token");
+     console.log(""AUTENTICATION/LOG>codificando token");
      localStorage.setItem("JsonToken", Cryptotoken);
      console.log("token redefinido");
     
