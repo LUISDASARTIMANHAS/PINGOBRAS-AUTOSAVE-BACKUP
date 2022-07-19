@@ -61,8 +61,8 @@ document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
      
 if(check === true) {
 let body = document.querySelector("body")
-body.setAttribute('style', 'padding-top: 45% ')}
-  alert("LOG> Seu dispositivo: " + window.opera)
+body.setAttribute('style', 'padding-top: 50% ')}
+  alert("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appCodeName)
   
   
   
