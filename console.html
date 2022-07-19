@@ -1,22 +1,42 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<html lang="PT">
+  
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/seo-2-5/64/SEO_-3-_Line-23-512.png" />
+    <title>PINGOBRAS CONSOLE</title>
+    
+  </head>
+  <body>
+<div class="tela-altura">
+      <div class="conteudo" role="main">
+        
+<tela>
+<tela id="demo"></tela>
 
-
-<div id="demo"></div>
-
-<script>
-let text = "<p>Browser CodeName: " + navigator.appCodeName + "</p>" +
-"<p>Browser Name: " + navigator.appName + "</p>" +
-"<p>Browser Version: " + navigator.appVersion + "</p>" +
-"<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>" +
-"<p>Browser Language: " + navigator.language + "</p>" +
-"<p>Browser Online: " + navigator.onLine + "</p>" +
-"<p>Platform: " + navigator.platform + "</p>" +
-"<p>User-agent header: " + navigator.userAgent + "</p>";
-
+</div></div>
+</body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/btn.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/STORAGE.js" defer></script>
+    <script src="js/autentication.js" defer></script>
+    <script src="js/calcs.js" defer></script>
+    <script src="js/functions.js" defer></script>
+    <script src="js/network.js" defer></script>
+  
+  <script>
+let text = "<p>Nome de código do navegador: " + navigator.appCodeName + "</p>" +
+"<p>Nome do navegador: " + navigator.appName + "</p>" +
+"<p>Versão do navegador: " + navigator.appVersion + "</p>" +
+"<p>Os Cookies estão ativados: " + navigator.cookieEnabled + "</p>" +
+"<p>Idioma do navegador: " + navigator.language + "</p>" +
+"<p>Navegador on-line: " + navigator.onLine + "</p>" +
+"<p>Plataforma: " + navigator.platform + "</p>" +
+"<p>Cabeçalho do agente usuário: " + navigator.userAgent + "</p>";
 document.getElementById("demo").innerHTML = text;
 </script>
-
-</body>
 </html>

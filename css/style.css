@@ -292,6 +292,7 @@ main-text:before{
 }
 
 tela{
+  font-size: 17px;
   display: block;
   padding: 15px;
   background: white;
