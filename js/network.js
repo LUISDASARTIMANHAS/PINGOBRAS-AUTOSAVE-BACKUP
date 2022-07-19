@@ -39,6 +39,7 @@ function displaySpeed() {
   var speedInKbps = (bps / 1024).toFixed(2);
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
   var speedInGBps = (speedInMbps / 1024).toFixed(2);
+  console.info("NETWORK/LOG> Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
   
   if(speedInKbps != "Infinity" ) {
   MBps.innerHTML = speedInMbps + " MBps"
