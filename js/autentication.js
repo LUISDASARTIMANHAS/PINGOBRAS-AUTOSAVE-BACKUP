@@ -36,9 +36,9 @@ enviar.addEventListener("click", function entrar() {
    
     let storageToken = {token: mathRandom};
     const Cryptotoken = JSON.stringify(storageToken);
-     console.log(""AUTENTICATION/LOG>codificando token");
+     console.log("AUTENTICATION/LOG> Setando codificação do token...");
      localStorage.setItem("JsonToken", Cryptotoken);
-     console.log("token redefinido");
+     console.log("AUTENTICATION/LOG> Token setado");
     
      
     msgSuccess.setAttribute('style', 'display: block')
@@ -65,30 +65,13 @@ localStorage.setItem("JsonKeys", CryptoKey);
   const tokenrefresh = {token: "desconectado"};
 const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
 localStorage.setItem("JsonToken", Cryptotokenrefresh);
-alert('O banco de dados foi restaurado!')
+alert('AUTENTICATION/LOG> O banco de dados foi restaurado!')
 }
 
-function autentication() {
-let tokenjson2 = localStorage.getItem("JsonToken");
-let tokenR2 = JSON.parse(tokenjson2);  
-console.log(tokenR2)
-  
-  if(tokenR2 == null){
-  const tokenrefresh2 = {token: "desconectado"};
-const Cryptotokenrefresh2 = JSON.stringify(tokenrefresh2);
-localStorage.setItem("JsonToken", Cryptotokenrefresh2);
-    window.location.href = ("https://pingobras.glitch.me")
-  
-  const status = "Status: Não conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: red')
-}else{
+
   if(tokenR.token == "desconectado") {
       window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }else{
     setTimeout(alert("admin autorizado"),7000)
-   window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }}
+   window.location.href = ("https://pingobras.glitch.me/admin=account.html")}
 
-}

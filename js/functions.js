@@ -167,3 +167,18 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }
 
+function autentication() {
+let authToken = localStorage.getItem("JsonToken");
+let auth = JSON.parse(authToken);
+  
+  if(auth == null) {
+  const authDesconectado = {token: "desconectado"};
+  const disconectadm = JSON.stringify(authDesconectado);
+  localStorage.setItem("JsonToken", disconectadm);
+  window.location.href = ("https://pingobras.glitch.me")
+  
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')}
+}
