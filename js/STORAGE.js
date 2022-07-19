@@ -2,7 +2,7 @@ const loopStorage = setInterval(refreshStorage, 15000);
 
 function refreshStorage() {
 let client = JSON.parse(localStorage.getItem('client') || '[]')
-console.warn("client pegou dados de client antigo");
+console.warn("STORAGE/LOG> client pegou dados de client antigo!");
 client.push(
   {
       luis: {name: "luis das artimanhas",saldo: 3.50},
