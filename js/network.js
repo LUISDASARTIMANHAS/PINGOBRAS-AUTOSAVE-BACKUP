@@ -28,7 +28,7 @@ function displaySpeed() {
                 
   var timeDuration = (end_time - time_start) / 1000;
   var loadedBits = downloadSize;
-  console.log(end_time)
+  console.log("NETWORK/LOG> Latencia do servidor: " + end_time + "ms")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
