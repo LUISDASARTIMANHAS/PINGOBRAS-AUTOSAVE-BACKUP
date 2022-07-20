@@ -58,12 +58,13 @@ enviar.addEventListener("click", function entrar() {
 
 
 function refresh() {
-  const adminKey = {senha: 9645};
+const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 
-const bypasstokenJS = {bypass: 1541129000 + Math.random().toString(6).substr(2)}
+const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
 const bypasstoken = JSON.stringify(bypasstokenJS);
+localStorage.setItem("bypass",bypasstoken)
 alert(bypasstoken)
 
   const tokenrefresh = {token: "desconectado"};
