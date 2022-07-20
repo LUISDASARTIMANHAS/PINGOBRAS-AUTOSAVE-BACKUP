@@ -83,7 +83,11 @@ let authbypass = localStorage.getItem("bypass");
 let authbypass2 = JSON.parse(authbypass)
 
 
-  
+  if(authbypass2 == null){
+  const authDesconectado = {token: "desconectado"};
+  const disconectadm = JSON.stringify(authDesconectado);
+  localStorage.setItem("JsonToken", disconectadm);
+window.location.href = ("https://pingobras.glitch.me/autentication.html")}  
 if(authbypass2.bypass == 10101010100) {
   const authDesconectado = {token: "desconectado"};
   const disconectadm = JSON.stringify(authDesconectado);
