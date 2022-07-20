@@ -9,14 +9,6 @@ let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 function temporizadorLocal() {
   const date = new Date();
   
-  let authbypass = localStorage.getItem("bypass");
-let authbypass2 = JSON.parse(authbypass)
-if(authbypass2.bypass == 10101010100) {
-  alert("teste")
-  const authDesconectado = {token: "desconectado2"};
-  const disconectadm = JSON.stringify(authDesconectado);
-  localStorage.setItem("JsonToken", disconectadm);}
-  
  }
   
 

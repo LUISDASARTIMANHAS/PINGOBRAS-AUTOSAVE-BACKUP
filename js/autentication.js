@@ -78,6 +78,14 @@ alert('AUTENTICATION/LOG> O banco de dados foi restaurado!')
 function autentication() {
 let authToken = localStorage.getItem("JsonToken");
 let auth = JSON.parse(authToken);
+let authbypass = localStorage.getItem("bypass");
+let authbypass2 = JSON.parse(authbypass)
+
+
+if(authbypass2.bypass == 10101010100) {
+  const authDesconectado = {token: "desconectado"};
+  const disconectadm = JSON.stringify(authDesconectado);
+  localStorage.setItem("JsonToken", disconectadm);}
   
   if(auth == null){
   const authDesconectado = {token: "desconectado"};
