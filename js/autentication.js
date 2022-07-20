@@ -79,16 +79,17 @@ function autentication() {
 let authToken = localStorage.getItem("JsonToken");
 let auth = JSON.parse(authToken);
 let authbypass = localStorage.getItem("bypass");
-  
+let authbypass2 = JSON.parse(authbypass)
+alert(authbypass2.bypass)
 
   
-  if(authbypass == 10101010100) {
-    alert(authbypass)
+  if(authbypass.bypass == 10101010100){
+  alert("teste")
   const authDesconectado = {token: "desconectado"};
   const disconectadm = JSON.stringify(authDesconectado);
   localStorage.setItem("JsonToken", disconectadm);
-  window.location.href = ("https://pingobras.glitch.me")
-  }else{
+  window.location.href = ("https://pingobras.glitch.me")}
+  
   if(auth == null){
   const authDesconectado = {token: "desconectado"};
   const disconectadm = JSON.stringify(authDesconectado);
@@ -105,6 +106,6 @@ let authbypass = localStorage.getItem("bypass");
   }else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }}}
+  }}
   
 }
