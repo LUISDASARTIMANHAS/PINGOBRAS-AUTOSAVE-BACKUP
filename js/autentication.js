@@ -39,6 +39,8 @@ enviar.addEventListener("click", function entrar() {
      console.log("AUTENTICATION/LOG> Setando codificação do token...");
      localStorage.setItem("JsonToken", Cryptotoken);
      console.log("AUTENTICATION/LOG> Token setado");
+    const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
+    const bypasstoken = JSON.stringify(bypasstokenJS);
     
      
     msgSuccess.setAttribute('style', 'display: block')
@@ -62,10 +64,9 @@ const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
 
-const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
-const bypasstoken = JSON.stringify(bypasstokenJS);
-localStorage.setItem("bypass",bypasstoken)
-alert(bypasstoken)
+const bypasstokenJSR = {bypass: 10101010100, bypass2: 1010010010}
+const bypasstokenR = JSON.stringify(bypasstokenJSR);
+localStorage.setItem("bypass",bypasstokenR)
 
   const tokenrefresh = {token: "desconectado"};
 const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
@@ -76,6 +77,8 @@ alert('AUTENTICATION/LOG> O banco de dados foi restaurado!')
 function autentication() {
 let authToken = localStorage.getItem("JsonToken");
 let auth = JSON.parse(authToken);
+let authbypass = localStorage.getItem("bypass");
+let auth2 = JSON.parse(authbypass.bypass);
   
   if(auth == null){
   const authDesconectado = {token: "desconectado"};
@@ -88,11 +91,12 @@ let auth = JSON.parse(authToken);
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
 }else{
+  }else{
   if(tokenR.token == "desconectado") {
       window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }}
+  }}}
 
 }
