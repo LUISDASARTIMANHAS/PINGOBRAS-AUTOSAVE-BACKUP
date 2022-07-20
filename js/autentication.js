@@ -41,6 +41,7 @@ enviar.addEventListener("click", function entrar() {
      console.log("AUTENTICATION/LOG> Token setado");
     const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
     const bypasstoken = JSON.stringify(bypasstokenJS);
+    localStorage.setItem("bypass",bypasstoken)
     
      
     msgSuccess.setAttribute('style', 'display: block')
@@ -78,22 +79,16 @@ function autentication() {
 let authToken = localStorage.getItem("JsonToken");
 let auth = JSON.parse(authToken);
 let authbypass = localStorage.getItem("bypass");
+  
 
   
-  if(authbypass == null) {
-  const authDesconectado = {bypass: 10101010100};
+  if(authbypass == 10101010100) {
+    alert(authbypass)
+  const authDesconectado = {token: "desconectado"};
   const disconectadm = JSON.stringify(authDesconectado);
   localStorage.setItem("JsonToken", disconectadm);
   window.location.href = ("https://pingobras.glitch.me")
-  
-  const status = "Status: Não conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: red')
   }else{
-    
-  }
-  
   if(auth == null){
   const authDesconectado = {token: "desconectado"};
   const disconectadm = JSON.stringify(authDesconectado);
@@ -110,6 +105,6 @@ let authbypass = localStorage.getItem("bypass");
   }else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin=account.html")
-  }}
+  }}}
   
 }
