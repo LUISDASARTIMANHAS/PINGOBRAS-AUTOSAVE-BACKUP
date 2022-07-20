@@ -61,7 +61,11 @@ function refresh() {
   const adminKey = {senha: 9645};
 const CryptoKey = JSON.stringify(adminKey);
 localStorage.setItem("JsonKeys", CryptoKey);
-  
+
+const bypasstokenJS = {bypass: 1541129000 + Math.random().toString(6).substr(2)}
+const bypasstoken = JSON.stringify(bypasstokenJS);
+alert(bypasstoken)
+
   const tokenrefresh = {token: "desconectado"};
 const Cryptotokenrefresh = JSON.stringify(tokenrefresh);
 localStorage.setItem("JsonToken", Cryptotokenrefresh);
