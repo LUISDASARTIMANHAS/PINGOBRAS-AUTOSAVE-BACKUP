@@ -8,6 +8,15 @@ let  STORAGEYT = localStorage.getItem("YoutubeLinks")
   const loophorarioLocal = setInterval(temporizadorLocal, 1000);
 function temporizadorLocal() {
   const date = new Date();
+  
+  let authbypass = localStorage.getItem("bypass");
+let authbypass2 = JSON.parse(authbypass)
+if(authbypass2.bypass == 10101010100) {
+  alert("teste")
+  const authDesconectado = {token: "desconectado2"};
+  const disconectadm = JSON.stringify(authDesconectado);
+  localStorage.setItem("JsonToken", disconectadm);}
+  
  }
   
 
@@ -28,7 +37,7 @@ if (UP2input){
   UP2input.onclick = function(){
     UP2input.classList.toggle("dipped");
   };}
-
+  
 
 window.addEventListener("load", function(){
 setTimeout(function open(event){
