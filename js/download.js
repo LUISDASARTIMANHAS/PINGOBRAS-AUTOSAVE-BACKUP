@@ -1,17 +1,18 @@
-var i = 0;
+var iniciar = "sim";
+var downloadSize = 100;
 
 
 function factorioButton() {
-  if (i == 0) {
-    i = 1;
+  if (iniciar == "sim") {
+    iniciar = "no";
     var barload = document.getElementById("factoriobar");
-    var width = 1324;
-    var id = setInterval(frame, 1000);
+    var width = downloadSize;
+    var id = setInterval(frame, 10);
     
     function frame() {
-      if (width >= 1000) {
+      if (width >= downloadSize) {
         clearInterval(id);
-        i = 0;
+        iniciar = "sim";
       }else{
         width++;
         barload.style.width = width + "%";
@@ -21,23 +22,24 @@ function factorioButton() {
 }
 
 
-var i = 0;
+var iniciar2 = "sim";
+
 function barButton() {
-  if (i == 0) {
-    i = 1;
+  if (iniciar2 == "sim") {
+    iniciar2 = "no";
     var elem = document.getElementById("bar");
     var width = 10;
     var id = setInterval(frame, 100);
+
     function frame() {
       if (width >= 100) {
         window.location.href = "https://pingobras.glitch.me"
         clearInterval(id);
-        i = 0;
-      } else {
+        iniciar2 = "sim";
+      }else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
+        elem.innerHTML = width + "%";}
     }
   }
 }
