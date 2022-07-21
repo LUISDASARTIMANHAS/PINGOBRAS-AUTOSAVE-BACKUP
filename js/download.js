@@ -1,16 +1,16 @@
 var iniciar = "sim";
-var downloadSize = 100;
+var downloadSize = 1324*12024/3024 ;
 
 
 function factorioButton() {
   if (iniciar == "sim") {
     iniciar = "no";
     var barload = document.getElementById("factoriobar");
-    var width = downloadSize;
-    var id = setInterval(frame, 10);
+    var width = 1;
+    var id = setInterval(frame, downloadSize);
     
     function frame() {
-      if (width >= downloadSize) {
+      if (width >= 100) {
         clearInterval(id);
         iniciar = "sim";
       }else{
@@ -36,7 +36,7 @@ function barButton() {
         window.location.href = "https://pingobras.glitch.me"
         clearInterval(id);
         iniciar2 = "sim";
-      }else {
+      }else{
         width++;
         elem.style.width = width + "%";
         elem.innerHTML = width + "%";}
