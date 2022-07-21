@@ -717,7 +717,7 @@ font-size: 13px;
 margin-top: 0;
 color: blue;
 }
-#msgError{
+msgerror{
   text-align: center;
   color: red;
   background: white;
@@ -725,7 +725,7 @@ color: blue;
   border-radius: 4px;
   display: none;
 }
-#msgSuccess{
+msgSuccess{
   text-align: center;
   color: green;
   background-color: white;
