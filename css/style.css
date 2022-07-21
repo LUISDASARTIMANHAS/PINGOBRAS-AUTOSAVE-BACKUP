@@ -722,7 +722,7 @@ item-loja{
     place-items: center;
 }
 .input-autentication:focus{
-border-bottom: 3px solid lightblue;
+border-bottom: 3px solid orange;
 font-size: 13px;
 margin-top: 0;
 color: blue;
@@ -750,7 +750,7 @@ label-float label {
     padding: 13px;
     margin-top: 5%;
     color: blue;
-    cursor: none;
+    cursor: auto;
     transition: all .3s ease-out;
 }
 msgerror{
@@ -768,6 +768,26 @@ msgsuccess{
   padding: 10px;
   border-radius: 4px;
   display: none;
+}
+teladelogin {
+    display: block;
+    padding: 15px;
+    background: #ffffff80;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 75%;
+    border-radius: 25px;
+    z-index: 2;
+}
+faeye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #0d009c;
+    height: 20px;
+    padding: 15px;
 }
 /* Set a style for the submit/send button */
 .youtube-video{
