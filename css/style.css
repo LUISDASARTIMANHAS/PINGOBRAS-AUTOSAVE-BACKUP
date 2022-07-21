@@ -707,7 +707,7 @@ item-loja{
   font-weight: bold;
 }
 .input-autentication{
-    width: 95%;
+    width: 85%;
     padding: 5px 5px;
     display: inline-block;
     border: 0;
@@ -781,13 +781,15 @@ teladelogin {
     z-index: 2;
 }
 faeye {
+    border-bottom: 3px solid blue;
     position: absolute;
     top: 15px;
     right: 10px;
     cursor: pointer;
-    color: #0d009c;
-    height: 20px;
+    color: red;
+    height: 30px;
     padding: 15px;
+    display: inline-block;
 }
 /* Set a style for the submit/send button */
 .youtube-video{
