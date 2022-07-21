@@ -1,7 +1,7 @@
 const looptime = setInterval(timeRefresh, 500);
 
 
-let secondsplayer = "5"
+let secondsplayer = "15"
 let setminutesplayer = "30"
 let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
 let sethoursplayer = "19"
@@ -35,7 +35,7 @@ document.querySelector("[fault]").innerHTML = fault;
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
 
-  
+  console.log("TIME/LOG>" + horariojs + ">" + horaselect)
   if(horariojs > horaselect){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
