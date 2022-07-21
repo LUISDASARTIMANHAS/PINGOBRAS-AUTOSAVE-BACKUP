@@ -707,15 +707,51 @@ item-loja{
   font-weight: bold;
 }
 .input-autentication{
-  color: black;
-  width: 75%;
-  padding: 10px;
+    width: 95%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 3px solid blue;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    text-align: left;
+    align-items: center;
+    place-items: center;
 }
 .input-autentication:focus{
 border-bottom: 3px solid lightblue;
 font-size: 13px;
 margin-top: 0;
 color: blue;
+}
+.input-float {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 3px solid blue;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+}
+label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+label-float label {
+    padding: 13px;
+    margin-top: 5%;
+    color: blue;
+    cursor: none;
+    transition: all .3s ease-out;
 }
 msgerror{
   text-align: center;
@@ -725,7 +761,7 @@ msgerror{
   border-radius: 4px;
   display: none;
 }
-msgSuccess{
+msgsuccess{
   text-align: center;
   color: green;
   background-color: white;
