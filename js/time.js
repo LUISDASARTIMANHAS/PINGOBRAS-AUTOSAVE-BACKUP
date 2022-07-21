@@ -9,10 +9,13 @@ document.querySelector("[horaselect]").innerHTML = horaselect;
       
 function timeRefresh() {
 const time = new Date();
-let hours = time.getHours();
-let minutes = time.getMinutes();
-let seconds = time.getSeconds();
-const horario = "0" + hours +":" + "0" + minutes +":" + seconds
+let Gethours = time.getHours();
+let hours = Gethours < 10 ? "0" + Gethours : Gethours;
+let Getminutes = time.getMinutes();
+let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
+let Getseconds = time.getSeconds();
+let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;  
+const horario = hours +":" + minutes +":" + seconds
 
 let faultS = seconds - secondsplayer
 let faultH = hours - hoursplayer
