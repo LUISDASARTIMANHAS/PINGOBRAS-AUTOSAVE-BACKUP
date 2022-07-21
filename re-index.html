@@ -50,11 +50,11 @@ let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;
   let horario = hours +":" + minutes +":" + seconds
 
 let calcS = -seconds + 60;
-let setcalcM = -minutes + 90;
-let calcM = setcalcM > 10 ? "0" + setcalcM : "00";
-let setcalcH = -hours + 14;   
-let calcH = setcalcH > 0 ? "0" + setcalcH : "00";
-
+let setcalcM = 60-;
+let calcM = setcalcM < 0 ? "00" + setcalcM : "00";
+let setcalcH = 19 - hours;   
+let calcH = setcalcH < 0 ?  "00" : setcalcH;
+console.log(setcalcH)
   
 let calc = calcH+":" + calcM+":" + calcS
 document.querySelector("js").innerHTML = calc;  
