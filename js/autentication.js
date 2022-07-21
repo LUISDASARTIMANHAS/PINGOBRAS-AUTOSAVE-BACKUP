@@ -5,15 +5,17 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log("AUTENTICATION/LOG> Token recebido:" + tokenR.token);
 
-let mostrarsenha = document.querySelector('.fa-eye')
+let mostrarsenha = document.getElementById('verSenha')
 mostrarsenha.addEventListener('click', ()=>{
   let inputSenha = document.getElementById('senha')
   
   if(inputSenha.getAttribute('type') == 'password'){
     inputSenha.setAttribute('type', 'text')
-  } else {
+    inputSenha.placeholder = "1234"
+  }else {
     inputSenha.setAttribute('type', 'password')
-  }
+    inputSenha.placeholder = "****"}
+  
 })
 
 
