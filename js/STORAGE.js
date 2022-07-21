@@ -20,12 +20,8 @@ const adminKeyJS = {senha: 9645};
 const adminKey = JSON.stringify(adminKeyJS);
 localStorage.setItem("JsonKeys", adminKey);
 
-  
-const NetworkObj = {Bps: 0, KBps: 0, MBps: 0, GBps: 0};
-const Network = JSON.stringify(NetworkObj);
-localStorage.setItem("Network", Network);  
-  
 
+  
 const siteBonusJS = {moeda: 2};
 const siteBonus = JSON.stringify(siteBonusJS);
 localStorage.setItem("siteBonus", siteBonus);
@@ -49,6 +45,9 @@ console.warn("STORAGE/LOG> token recarregado!");
 }
 
 
+let NetworkObj = localStorage.getItem("Network");  
+const Network = JSON.stringify(NetworkObj);
+localStorage.setItem("Network", Network);  
 
 const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
 const LkJson = JSON.stringify(YTL);

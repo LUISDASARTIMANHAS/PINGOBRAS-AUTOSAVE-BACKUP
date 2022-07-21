@@ -40,6 +40,9 @@ function displaySpeed() {
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
   var speedInGBps = (speedInMbps / 1024).toFixed(2);
   console.info("NETWORK/LOG> Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
+  const NetworkObj = {Bps: bps, KBps: speedInKbps, MBps: speedInMbps, GBps: speedInGBps}
+  const Network = JSON.stringify(NetworkObj);
+  localStorage.setItem("Network", Network);  
   
   if(speedInKbps != "Infinity" ) {
   MBps.innerHTML = speedInMbps + " MBps"
