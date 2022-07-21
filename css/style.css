@@ -257,6 +257,8 @@ cursor: alias;
 border: none;
 color:purple;
 text-decoration: underline;
+font-weight: 900;
+font-size: 1.7em;
 }
 [links]:hover{
   color:purple;
@@ -267,11 +269,12 @@ text-decoration: underline;
     box-sizing: border-box;
     display: block;
     align-items: center;
-    width: 75%;
+    width: 50%;
     padding: 8px;   
     background-image: linear-gradient(290deg, rgb(59, 43, 115) 55%, rgb(111, 47, 147), #6f2f93);
     background-position: center;
     text-align: center;
+    text-decoration: none;
 }
 .red-title{
   font-size: 17px;
