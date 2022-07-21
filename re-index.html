@@ -49,9 +49,13 @@ let Getseconds = time.getSeconds();
 let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds; 
   
 let horario = hours +":" + minutes +":" + seconds
-let calcS = seconds - 35;
-let calcM = minutes - 30;
-let calcH = hours - 19;
+let setcalcS = seconds - 35;
+let calcS = setcalcS > 0 ? let calcS=0 :setcalcS
+let setcalcM = minutes - 30;
+let calcM = setcalcM > 0 ? "0" + setcalcM : setcalcM; 
+let setcalcH = hours - 19;
+let calcH = setcalcH > 0 ? "0" + setcalcH : setcalcH;   
+  
 let calc = calcH+":" + calcM+":" + calcS
 document.querySelector("js").innerHTML = calc;  
 document.querySelector("[horario]").innerHTML = horario;  
