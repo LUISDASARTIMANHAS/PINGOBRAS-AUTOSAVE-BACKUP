@@ -3,7 +3,8 @@ const looptime = setInterval(timeRefresh, 500);
 
 let secondsplayer = "5"
 let minutesplayer = "30"
-let hoursplayer = "19"
+let sethoursplayer = "19"
+let hoursplayer = sethoursplayer < 10 ? "0" + sethoursplayer : sethoursplayer;
 const horaselect = hoursplayer+":" + minutesplayer+":" + secondsplayer
 document.querySelector("[horaselect]").innerHTML = horaselect;
       
