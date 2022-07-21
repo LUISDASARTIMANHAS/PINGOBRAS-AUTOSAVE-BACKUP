@@ -1,20 +1,22 @@
 var i = 0;
+
+
 function factorioButton() {
   if (i == 0) {
     i = 1;
-    var elem = document.getElementById("factoriobar");
-    var width = 10800000;
-    var id = setInterval(frame, 10);
+    var barload = document.getElementById("factoriobar");
+    var width = 1324;
+    var id = setInterval(frame, 1000);
+    
     function frame() {
-      if (width >= 100) {
+      if (width >= 1000) {
         clearInterval(id);
         i = 0;
-      } else {
+      }else{
         width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
-    }
+        barload.style.width = width + "%";
+        barload.innerHTML = "loading..." + width + "%";}
+                     }
   }
 }
 
