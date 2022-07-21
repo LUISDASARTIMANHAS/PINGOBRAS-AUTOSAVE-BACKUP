@@ -16,16 +16,18 @@ console.warn("STORAGE/LOG> client adcionou novos itens");
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
 
-const adminKey = {senha: 9645};
+const adminKeyJS = {senha: 9645};
+const adminKey = JSON.stringify(adminKeyJS);
 localStorage.setItem("JsonKeys", adminKey);
 
   
 const NetworkObj = {Bps: 0, KBps: 0, MBps: 0, GBps: 0};
-const  = JSON.stringify(Network);
+const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
   
 
-const siteBonus = {moeda: 2};
+const siteBonusJS = {moeda: 2};
+const siteBonus = JSON.stringify(siteBonusJS);
 localStorage.setItem("siteBonus", siteBonus);
 
 let tokenjson = localStorage.getItem("JsonToken");
