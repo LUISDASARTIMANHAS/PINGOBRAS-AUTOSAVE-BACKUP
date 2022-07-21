@@ -1,12 +1,12 @@
 var iniciar = "sim";
-var downloadSize = 1324*12024/3024 ;
+var downloadSize = 1324*10024/3024 ;
 
 
 function factorioButton() {
   if (iniciar == "sim") {
     iniciar = "no";
     var barload = document.getElementById("factoriobar");
-    var width = 1;
+    var width = -1;
     var id = setInterval(frame, downloadSize);
     
     function frame() {
