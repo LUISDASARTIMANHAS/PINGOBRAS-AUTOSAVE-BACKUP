@@ -248,10 +248,7 @@ a.btn-cadastro, .btnlogin, .btn {
   justify-content: center;
   color: white;
 }
-a:hover {
-  color: red;
-}
-a[links]{
+[links]{
 margin: 0;
 display: block;
 text-align: center;
@@ -261,8 +258,20 @@ border: none;
 color:purple;
 text-decoration: underline;
 }
-a[links]:hover{
+[links]:hover{
   color:purple;
+}
+.video-game{
+    font-size: 1.7rem;
+    color: white;          
+    box-sizing: border-box;
+    display: block;
+    align-items: center;
+    width: 75%;
+    padding: 8px;   
+    background-image: linear-gradient(290deg, rgb(59, 43, 115) 55%, rgb(111, 47, 147), #6f2f93);
+    background-position: center;
+    text-align: center;
 }
 .red-title{
   font-size: 17px;
