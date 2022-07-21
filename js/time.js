@@ -2,25 +2,32 @@ const looptime = setInterval(timeRefresh, 500);
 
 
 let secondsplayer = "5"
-let minutesplayer = "30"
+let setminutesplayer = "30"
+let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
 let sethoursplayer = "19"
 let hoursplayer = sethoursplayer < 10 ? "0" + sethoursplayer : sethoursplayer;
-const horaselect = hoursplayer+":" + minutesplayer+":" + secondsplayer
-document.querySelector("[horaselect]").innerHTML = horaselect;
+
+const horaselect = hoursplayer + minutesplayer + secondsplayer
       
 function timeRefresh() {
 const time = new Date();
+  
 let Gethours = time.getHours();
 let hours = Gethours < 10 ? "0" + Gethours : Gethours;
 let Getminutes = time.getMinutes();
 let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
 let Getseconds = time.getSeconds();
-let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;  
-const horario = hours +":" + minutes +":" + seconds
+let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;
+  
+let horario = hours +":" + minutes +":" + seconds
+let horariojs = hours + minutes + seconds
 
-let faultS = seconds - secondsplayer
-let faultH = hours - hoursplayer
-let faultM = minutes - minutesplayer
+let faultS = -seconds + 60;
+let setfaultM = -minutes + 60;
+let faultM = setfaultM < 0 ? "00" : setfaultM;
+let setfaultH = 19 - hours;   
+let faultH = setfaultH < 0 ?  "00" : setfaultH;
+  
 const fault = faultH+":" + faultM+":" + faultS
 document.querySelector("[fault]").innerHTML = fault;
 
@@ -28,7 +35,8 @@ document.querySelector("[fault]").innerHTML = fault;
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
 
-  if(horario > horaselect){
+  
+  if(horariojs > horaselect){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
   }else{

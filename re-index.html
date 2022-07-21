@@ -38,7 +38,7 @@
   const looptime = setInterval(timeRefresh, 500);
       
 function timeRefresh() {
-  var hourselect = "183000"
+  var hourselect = "19:30:00"
   const time = new Date();
   
 let Gethours = time.getHours();
@@ -47,14 +47,13 @@ let Getminutes = time.getMinutes();
 let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
 let Getseconds = time.getSeconds();
 let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds; 
-  let horario = hours +":" + minutes +":" + seconds
+let horario = hours +":" + minutes +":" + seconds
 
 let calcS = -seconds + 60;
-let setcalcM = 60-;
-let calcM = setcalcM < 0 ? "00" + setcalcM : "00";
+let setcalcM = -minutes + 60;
+let calcM = setcalcM < 0 ? "00" : setcalcM;
 let setcalcH = 19 - hours;   
 let calcH = setcalcH < 0 ?  "00" : setcalcH;
-console.log(setcalcH)
   
 let calc = calcH+":" + calcM+":" + calcS
 document.querySelector("js").innerHTML = calc;  
