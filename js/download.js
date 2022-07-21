@@ -1,5 +1,5 @@
 var iniciar = "sim";
-var downloadSize = 1324*10024/3024 ;
+var downloadSize = 1324*4 ;
 
 
 function factorioButton() {
