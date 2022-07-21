@@ -49,10 +49,10 @@ let Getseconds = time.getSeconds();
 let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds; 
   
 let horario = hours +":" + minutes +":" + seconds
-let calcS = seconds + -00;
-let calcM = minutes + -30;
-let calcH = hours + -18;
-let calc = calcH+":" + -calcM+":" + -calcS
+let calcS = seconds - 35;
+let calcM = minutes - 30;
+let calcH = hours - 19;
+let calc = calcH+":" + calcM+":" + calcS
 document.querySelector("js").innerHTML = calc;  
 document.querySelector("[horario]").innerHTML = horario;  
 document.querySelector("[select]").innerHTML = hourselect;  
