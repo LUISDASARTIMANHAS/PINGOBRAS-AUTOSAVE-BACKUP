@@ -47,17 +47,16 @@ let Getminutes = time.getMinutes();
 let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
 let Getseconds = time.getSeconds();
 let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds; 
-  
+  let horario = hours +":" + minutes +":" + seconds
 
-let horario = hours +":" + minutes +":" + seconds
-let setcalcS = seconds - 60;
-let setcalcM = minutes - 60;
-let calcM = setcalcM > 0 ? "0" + setcalcM : setcalcM; 
-let setcalcH = hours - 15;
-let calcH = setcalcH > 0 ? "0" + setcalcH : setcalcH;   
+let calcS = -seconds + 60;
+let setcalcM = -minutes + 90;
+let calcM = setcalcM > 10 ? "0" + setcalcM : "00";
+let setcalcH = -hours + 14;   
+let calcH = setcalcH > 0 ? "0" + setcalcH : "00";
 
   
-let calc = -calcH+":" + -calcM+":" + -setcalcS
+let calc = calcH+":" + calcM+":" + calcS
 document.querySelector("js").innerHTML = calc;  
 document.querySelector("[horario]").innerHTML = horario;  
 document.querySelector("[select]").innerHTML = hourselect;  
