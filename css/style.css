@@ -248,7 +248,7 @@ a.btn-cadastro, .btnlogin, .btn {
   justify-content: center;
   color: white;
 }
-[links]{
+a[links]{
 margin: 0;
 display: block;
 text-align: center;
@@ -257,14 +257,14 @@ cursor: alias;
 border: none;
 color:purple;
 text-decoration: underline;
-font-weight: 900;
-font-size: 1.7em;
 }
-[links]:hover{
+a[links]:hover{
   color:purple;
 }
 .video-game{
     font-size: 1.7rem;
+    font-weight: 900;
+    font-size: 1.7em;
     color: white;          
     box-sizing: border-box;
     display: block;
