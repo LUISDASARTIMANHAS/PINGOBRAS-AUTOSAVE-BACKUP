@@ -115,18 +115,15 @@ const loopToken = setInterval(refreshDesconect, 5000);
 function refreshDesconect() {
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
-console.log(tokenR.token);
   
 if(tokenR.token != "desconectado") {
-console.log("Usuario conectado!")
+console.log("AUTH/LOG> Usuario conectado!")
 }
 else {
-alert("usuario deslogado")
+alert("AUTH/LOG> Usuario deslogado")
 const tokenSair = {token: "desconectado"};
 const CryptotokenS = JSON.stringify(tokenSair);
-console.log("codificando token");
 localStorage.setItem("JsonToken", CryptotokenS);
-console.log("token redefinido");
 window.location.href = "https://pingobras.glitch.me"}
 }
 </script>
