@@ -5,6 +5,17 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
 console.log("AUTENTICATION/LOG> Token recebido:" + tokenR.token);
 
+let mostrarsenha = document.querySelector('.fa-eye')
+mostrarsenha.addEventListener('click', ()=>{
+  let inputSenha = document.getElementById('senha')
+  
+  if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
+
 
 if(tokenR.token != "desconectado") {
   let status = "Status: Conectado"
@@ -45,6 +56,7 @@ enviar.addEventListener("click", function entrar() {
     
      
     msgSuccess.setAttribute('style', 'display: block')
+    msgError.setAttribute('style', 'display: none')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
     window.location.href = "https://pingobras.glitch.me/admin=account.html"
   }
@@ -52,8 +64,8 @@ enviar.addEventListener("click", function entrar() {
     inputsenha.setAttribute('style', 'color: red')
     inputsenha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
+    msgSuccess.setAttribute('style', 'display: none')
     msgError.innerHTML = 'senha incorreta!'
-  window.location.href = "https://pingobras.glitch.me/autentication.html"
   }
     
 });
