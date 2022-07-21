@@ -55,6 +55,18 @@ btndisabled.addEventListener('click', function() {
     console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
 });
 
+function mostrarsenha() {
+  let inputSenha = document.getElementById('senha')
+  
+  if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type', 'text')
+    inputSenha.placeholder = "1234"
+  }else {
+    inputSenha.setAttribute('type', 'password')
+    inputSenha.placeholder = "****"}
+  
+}
+
 function openForm() {
   document.getElementById("jschat").style.display = "block";
   alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
