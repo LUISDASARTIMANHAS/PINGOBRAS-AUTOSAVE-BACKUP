@@ -75,6 +75,15 @@ if(check === true) {
 let body = document.querySelector("body")
 body.setAttribute('style', 'padding-top: 50% ')}
   console.warn("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName)
+
+  
+  const btndisabled = document.querySelector("[disabled]");
+btndisabled.addEventListener('click', function() {
+    window.location.href = "https://pingobras-404.glitch.me"
+    document.querySelector("[disabled]").style.cursor = "progress"
+    console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
+});
+
   
   
   

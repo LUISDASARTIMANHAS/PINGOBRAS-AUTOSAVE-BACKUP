@@ -26,7 +26,7 @@ let msgSuccess = document.getElementById("msgSuccess");
 
 
 
-var enviar = document.querySelector("#submit");
+var enviar = document.getElementById("autenticar");
 enviar.addEventListener("click", function entrar() {  
   alert('Verificando!...');
   let inputsenha = document.getElementById("senha");

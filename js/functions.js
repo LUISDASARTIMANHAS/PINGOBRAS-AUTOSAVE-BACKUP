@@ -48,13 +48,6 @@ if(EMP == 0){
    
   }
 
-const btndisabled = document.querySelector("[disabled]");
-btndisabled.addEventListener('click', function() {
-    window.location.href = "https://pingobras-404.glitch.me"
-    document.querySelector("[disabled]").style.cursor = "progress"
-    console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
-});
-
 function mostrarsenha() {
   let inputSenha = document.getElementById('senha')
   
