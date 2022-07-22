@@ -4,10 +4,10 @@ const looptime = setInterval(timeRefresh, 500);
 let secondsplayer = "15"
 let setminutesplayer = "30"
 let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
-let sethoursplayer = "00"
+let sethoursplayer = "19"
 let hoursplayer = sethoursplayer < 10 ? "0" + sethoursplayer : sethoursplayer;
 
-const horaselect = hoursplayer + minutesplayer 
+const horaselect = hoursplayer + minutesplayer
       
 function timeRefresh() {
 const time = new Date();
@@ -39,7 +39,7 @@ let dispalyH = faultH < 10 ?  "0" + faultH : faultH;
 const fault = dispalyH+":" + dispalyM+":" + dispalyS
 document.querySelector("[fault]").innerHTML = fault;
 
-  
+document.querySelector("[horaselect]").innerHTML = hoursplayer+":" + minutesplayer+":" + secondsplayer;  
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
 
@@ -47,7 +47,6 @@ document.querySelector("[timer]").innerHTML = horario;
   if(horariojs > horaselect){
     document.querySelector(".site-altura").style.display = "none";
     document.querySelector(".msg-error-hour").style.display = "block";
-    document.querySelector("#auto").innerHTML = "<p>" + "text auto" + "</p>"
   }else{
     document.querySelector(".site-altura").style.display = "block";
     document.querySelector(".msg-error-hour").style.display = "none";

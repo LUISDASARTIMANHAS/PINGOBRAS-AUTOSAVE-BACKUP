@@ -7,11 +7,21 @@ let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 
   const loophorarioLocal = setInterval(temporizadorLocal, 1000);
 function temporizadorLocal() {
-  const date = new Date();
+  const date = new Date();}
   
- }
+<p 
+             class="direitos"> Desenvolvedores: 
+            <br>
+            ©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script> <script>document.write(navigator.language);</script>
+            <br>
+            Todos os direitos reservados
+            <br>
+            <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
+          </p>
   
-
+  
+  
+  
 const btn = document.querySelector("[dipped]");
 if (btn){
   btn.onclick = function(){
