@@ -70,32 +70,51 @@
         
         <br>
         
-        <div class="chat" id="jschat" style="display: block;">
-  <form 
-        action="/#" 
-        class="form-chat">
+        <chat 
+          id="jschat" 
+          style="display: block;">
     <h1>Bate-Papo</h1>
-    <div class="displayMsm"><label><b>MENSAGENS:</b> 
+    <b>MENSAGENS:</b> 
+    <div class="displayMsm">
+      <label>
+        
       
       <br>
       
       <usermy>Você:</usermy>
-      <my id="myMsm"> Você não mandou nenhuma mensagem</my>
+      <my1
+          id="myMsm"> 
+        Você não mandou nenhuma mensagem
+        </my1>
       
       <br>
       
-      <user id="user1">Usuario1:</user>
-      <display id="display1"> Nenuma mensagem!</display>
+      <user>Usuario1:</user>
+      <display 
+               id="display1"> 
+        Nenuma mensagem!
+        </display>
+      </label>
       
-    </label></div>
-    <textarea 
-              placeholder="OI tudo bem?" 
-              name="msg" 
-              required>
-    </textarea>
-    <button type="submit" class="btn-enviar-msm">Enviar msm</button>
-  </form>
-</div>
+      <br>
+      
+    <input 
+           class="input-chat"
+           placeholder="OI tudo bem?" 
+           id="msg" 
+           type="text"
+           required>
+      <br>
+      
+      </div>
+      
+    <button 
+            onclick="printmsm()" 
+            id="submit" 
+            class="btn-enviar-msm">
+      Enviar msm
+      </button>
+</chat>
         
         <footer class="footer">
         <div class="links"></div>
