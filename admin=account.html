@@ -91,17 +91,7 @@
         <footer class="footer">
         <div class="links"></div>
        
-          <p 
-             class="direitos"> Desenvolvedores: 
-            <br>
-            ©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script>
-            <br>
-            Todos os direitos reservados
-            <br>
-            <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
-          </p>
-          
-
+          <div id="direitos" class="direitos"></div>  
         </footer>
         <button
             class="btn-descer"
@@ -109,7 +99,20 @@
       Sair
     </button>
         
-        <script>
+
+      </div></div>
+   </body> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/btn.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/STORAGE.js" defer></script>
+    <script src="js/autentication.js" defer></script>
+    <script src="js/calcs.js" defer></script>
+    <script src="js/functions.js" defer></script>
+    <script src="js/network.js" defer></script>
+
+  <script>
 const loopToken = setInterval(refreshDesconect, 5000);
 
 function refreshDesconect() {
@@ -127,16 +130,4 @@ localStorage.setItem("JsonToken", CryptotokenS);
 window.location.href = "https://pingobras.glitch.me"}
 }
 </script>
-      </div></div>
-   </body> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/btn.css" />
-    <script src="js/script.js" defer></script>
-    <script src="js/STORAGE.js" defer></script>
-    <script src="js/autentication.js" defer></script>
-    <script src="js/calcs.js" defer></script>
-    <script src="js/functions.js" defer></script>
-    <script src="js/network.js" defer></script>
-  
 </html>
