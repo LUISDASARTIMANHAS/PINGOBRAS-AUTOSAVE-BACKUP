@@ -226,12 +226,13 @@ body {
   padding-top: 7%;
 }
 left{
-left: 0; 
-position: absolute;
+padding: 15px;
+left: 100; 
+position: relative;
 align-items: left;
 text-align: left;
 justify-content: left;
-  margin-bottom: 10%;
+background: lightgray;
 }
 .console{
   background-image: linear-gradient(45deg, gray, silver);
