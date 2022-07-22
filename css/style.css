@@ -857,16 +857,32 @@ faeye {
   height: 27pt;
   outline-color: blue;
 }
+.input-chat{
+    width: 100%;
+    padding: 7px;
+    margin-top: 15px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 3px solid darkblue;
+    background-color: gold;
+    outline: none;
+    font-size: 16px;
+    transition: all .3s ease-out;
+}
 userMy, user{
   color: darkblue;
+  text-align: left;
+  align-items: left;
 }
 My1, display{
   color: black;
 }
 .displayMsm{
   border: 5px solid black;
-  background: #ffffff80;
+  background: white;
   width: 75%;
   height: 100%;
   padding: 5px;
+  text-align: left;
+  align-items: left;
 }
