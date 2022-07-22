@@ -9,15 +9,16 @@ let  STORAGEYT = localStorage.getItem("YoutubeLinks")
 function temporizadorLocal() {
   const date = new Date();}
   
-<p 
-             class="direitos"> Desenvolvedores: 
-            <br>
-            ©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script> <script>document.write(navigator.language);</script>
-            <br>
-            Todos os direitos reservados
-            <br>
-            <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
-          </p>
+let ano = new Date().getFullYear();  
+let navegadorLang = navigator.language;
+document.querySelector("#direitos").innerHTML = "<p class=direitos>"+ "Desenvolvedores:"+
+"<br>"+
+"©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano + navegadorLang+
+"<br>"+
+"Todos os direitos reservados" +
+"<br>"+
+"<a" + "links" +target=_blank href=mailto:luisaugustodesouza785@gmail.com>" + "luis_das_artimanhas@gmail" + "</a>"+
+"</p>"
   
   
   
