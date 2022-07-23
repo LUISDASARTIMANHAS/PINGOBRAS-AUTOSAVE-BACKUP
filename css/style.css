@@ -519,13 +519,13 @@ tituloyellow {
   text-align: center;
 }
 .conteudo {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  mar
+  margin-top: 50%;
 }
 /* Instructions */
 .instructions {
