@@ -5,12 +5,14 @@
   padding: 5px;
   width: 100%;
   border: 5px solid black;
-  margin-bottom: 100pt;
+  margin-bottom: 100%;
+  margin-top: 0%;
   z-index: 1;
   height: auto; 
   display: block;
 }
 .list {
+  margin-top: auto;
   display: none;
   color: blue;
   background: white;
