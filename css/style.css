@@ -117,7 +117,10 @@ js{
 [purple]{
 background: purple;
 }
-
+[border]{
+  padding: 4px;
+  border: 2px solid black;
+}
 
 .fa {
   padding: 20px;
