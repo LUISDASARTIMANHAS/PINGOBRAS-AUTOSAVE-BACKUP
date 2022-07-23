@@ -1,0 +1,44 @@
+.cabecalho {
+  position: absolute;
+  top: 0;
+  background: yellow;
+  padding: 10px;
+  width: 101%;
+  border: 5px solid black;
+  margin: 0;
+}
+.list {
+  display: none;
+  color: blue;
+  background: white;
+  border: 5px solid black ;
+  padding: 10px 10px;
+  width: 95%;
+  cursor: help;
+}
+.list saldo{
+  display: inline-block;
+  color: red;
+}
+.list payment{
+  display: inline-block;
+  color: green; 
+}
+.list-changelogs{
+  display: block;
+  color: blue;
+  background: white;
+  border: 5px solid black ;
+  padding: 10px 10px;
+  width: 100%;
+  cursor: help;
+  font-size: 17px;
+}
+.adminID{
+  background: white;
+  border: 3px solid black;
+  color: black;
+  width: 70%;
+  cursor: help;
+  display: block;
+}

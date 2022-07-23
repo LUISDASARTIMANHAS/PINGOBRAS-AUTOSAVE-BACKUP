@@ -61,7 +61,6 @@ to this section's matching END comment to see page-specific styles.
 }
 
 
-/* Navigation grid */
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -157,7 +156,7 @@ hr {
   width: 100%;
   margin-top: 100px;
 }
-/* Navigation grid */
+/* footer grid */
 .footer {
   display: flex;
   justify-content: space-between;

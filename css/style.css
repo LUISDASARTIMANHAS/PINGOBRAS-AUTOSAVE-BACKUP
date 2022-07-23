@@ -208,8 +208,6 @@ js{
   background: #ff6600;
   color: white;
 }
-/* Iamport fonts */ /* Our remix on glitch button */
-/* Navigation grid */
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
@@ -525,7 +523,7 @@ tituloyellow {
 .instructions {
   margin: 1rem auto 0;
 }
-/* Navigation grid */
+/* footer grid */
 .footer {
   display: block;
   margin: 10px;
@@ -661,42 +659,6 @@ item-loja{
   box-shadow: -8px 20px 20px white;
   transition: all 1s ease-out;
 }
-.cabecalho {
-  position: absolute;
-  top: 0;
-  background: yellow;
-  padding: 10px;
-  width: 100%;
-  border: 5px solid black;
-  margin: 0;
-}
-.list {
-  display: none;
-  color: blue;
-  background: white;
-  border: 5px solid black ;
-  padding: 10px 10px;
-  width: 95%;
-  cursor: help;
-}
-.list saldo{
-  display: inline-block;
-  color: red;
-}
-.list payment{
-  display: inline-block;
-  color: green; 
-}
-.list-changelogs{
-  display: block;
-  color: blue;
-  background: white;
-  border: 5px solid black ;
-  padding: 10px 10px;
-  width: 100%;
-  cursor: help;
-  font-size: 17px;
-}
 
 .text-autentication{
   color: white; 
@@ -807,14 +769,6 @@ faeye {
   width: 100%;
   height: 55px;
   margin: 10px;
-}
-.adminID{
-  background: white;
-  border: 3px solid black;
-  color: black;
-  width: 70%;
-  cursor: help;
-  display: block;
 }
 
 .input-calc{
