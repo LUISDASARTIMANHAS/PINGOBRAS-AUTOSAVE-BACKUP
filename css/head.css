@@ -1,6 +1,6 @@
 .cabecalho {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -90px;
   background: yellow;
   padding: 10px;
   width: 101%;

@@ -225,7 +225,17 @@ body {
 }
 left{
 display:inline-block;
-position: sticky;
+padding: 3px;
+align-items: left;
+text-align: left;
+justify-content: left;
+z-index: 1;
+margin-bottom: 3%;
+margin-right: 50%;
+width: 30%;
+}
+.discord{
+display:inline-block;
 border: 5px solid black;
 padding: 3px;
 align-items: left;
