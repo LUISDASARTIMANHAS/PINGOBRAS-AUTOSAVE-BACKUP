@@ -72,6 +72,12 @@ js{
 [azul]{
   color: blue;
 }
+[blue]{
+  background: blue;
+}
+[lightblue]{
+  background: lightblue;
+}
 [amarelo]{
   color: yellow;
 }
