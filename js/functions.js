@@ -104,11 +104,11 @@ listChangelogs.style.display = 'block';
 })
 
 
-var btnBack = document.querySelector("#back-to-top");
-btnBack.addEventListener("click", function() {
+
+function subir() {
     window.scrollTo(0, 0);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para cima!");
-});
+};
 var Descer = document.querySelector("#jsDescer");
 Descer.addEventListener("click", function() {
     window.scrollTo(0, 2000);
