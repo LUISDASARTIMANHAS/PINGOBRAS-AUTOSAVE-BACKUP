@@ -517,6 +517,10 @@ tituloyellow {
   justify-content: center;
   text-align: center;
 }
+conteudo .index{
+  margin-top: auto;
+  top: 470px;
+}
 .conteudo {
   position: relative;
   display: flex;
@@ -524,7 +528,6 @@ tituloyellow {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: auto;
 }
 /* Instructions */
 .instructions {
