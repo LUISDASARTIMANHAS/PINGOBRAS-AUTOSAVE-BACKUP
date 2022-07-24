@@ -11,7 +11,7 @@ client.push(
       valdo: {name: "valdo9645",saldo: -3.00},
       vm: {name: "skip",saldo: 1.00},
       eduardo: {name: "dudu",saldo: 2.00},
-           })
+      JoseEduardo: {name: "José Eduardo Batista de Souza",saldo: 1.50, senha: 10062002}     })
 console.warn("STORAGE/LOG> client adcionou novos itens");
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
