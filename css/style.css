@@ -803,11 +803,27 @@ faeye {
 }
 /* Set a style for the submit/send button */
 .youtube-video{
-  width: 100%;
+  width: 95%;
   height: 440px;
+  background: white;
+  border: 5px solid silver;
 }
-.social-live{
-  width: 100%;
+.youtube-video:hover:before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.youtube-video:before{
+  border: 5px solid gold;
+  content: " ";
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  display: block;
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  inset: 0 0 0 0;
 }
 .audio{
   cursor: progress;
