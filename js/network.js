@@ -11,7 +11,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             var GB = "30"
             var Size = GB + MB + KB
             let downloadSizeLabel = document.getElementById("DownloadSize");
-            downloadSizeLabel.innerHTML = + GB+"." + MB+"." + KB + "GB"
+            console.log("TAMANHO DO DOWLOAD" + GB+"." + MB+"." + KB + "GB")
           
             var downloadSize = Size;
             var downloadImgSrc = new Image();
