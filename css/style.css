@@ -832,6 +832,11 @@ faeye {
   height: 27pt;
   outline-color: blue;
 }
+.buscar{
+ box-shadow:0px 0px 50px 0px red;
+ width:75%;
+ height:30pt;
+}
 .input-chat{
     width: 100%;
     padding: 7px;
