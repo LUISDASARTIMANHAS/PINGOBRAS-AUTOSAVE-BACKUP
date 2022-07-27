@@ -371,7 +371,7 @@ tela{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 85%;
   border-radius: 25px;
   z-index: 2;
 }
