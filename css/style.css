@@ -148,6 +148,7 @@ background: purple;
 .fa-google {
   background: #dd4b39;
   color: white;
+  align-items: center;
 }
 
 .fa-linkedin {
