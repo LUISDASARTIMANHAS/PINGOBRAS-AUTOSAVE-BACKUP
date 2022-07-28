@@ -10,8 +10,8 @@ function buscar() {
 const inputbuscar = document.getElementById("inputbuscar")
 console.log(inputbuscar.value)
   
-  const node = document.createElement("tela");
-  document.getElementById("telasearch").appendChild(node);
-  const textnode = document.createTextNode("Water");
-node.appendChild(textnode);
+  const tela = document.createElement("tela");
+  tela.classList.add("#dbug");
+  document.getElementById("telasearch").appendChild(tela);
+  
 }
