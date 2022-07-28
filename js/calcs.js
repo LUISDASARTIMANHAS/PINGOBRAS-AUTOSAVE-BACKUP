@@ -10,8 +10,12 @@ function buscar() {
 const inputbuscar = document.getElementById("inputbuscar")
 console.log(inputbuscar.value)
   
-  const tela = document.createElement("tela");
-  tela.classList.add("#dbug");
-  document.getElementById("telasearch").appendChild(tela);
+//const tela = document.createElement("tela");
+//const id = document.createAttribute("id");
+//tela.value = inputbuscar.value
+//id.value = "democlass";
+//tela.setAttributeNode(id);
+//document.getElementById("telasearch").appendChild(tela);
+  
   
 }
