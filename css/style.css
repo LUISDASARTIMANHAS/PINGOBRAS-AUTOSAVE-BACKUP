@@ -843,21 +843,17 @@ faeye {
  height:30pt;
 }
 .btn-secondary{
-  font-size: 15px;
-  border: 5px solid black;
-  font-weight: bold;
-  text-decoration: none;
-  transform: translateY(5px);
-  transition: all 0.3s ease-out;
-  width: 75%;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+ font-size: 15px;
+ border: 5px solid black;
+ font-weight: bold;
+ transform: translateY(5px);
+ transition: all 0.3s ease-out;
+ border-radius: 15px;
+ align-items: center;
+ justify-content: center;
+ color: white;
  width: 10%;
  cursor:wait;
- height:30pt;
  background-color: gray;
  display:inline
 }
