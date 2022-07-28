@@ -822,8 +822,11 @@ faeye {
   height: 55px;
   margin: 10px;
 }
-
+.calcJurosTxt{
+  font-size: 20px;
+}
 .input-calc{
+  font-size: 18px;
   width: 30%;
   height: 30pt;
   text-align: center;
