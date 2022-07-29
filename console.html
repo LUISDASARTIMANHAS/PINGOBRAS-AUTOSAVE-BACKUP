@@ -43,11 +43,6 @@
     <script src="js/network.js" defer></script>
   
   <script>
-    let hostname = location.hostname;
-document.getElementById("demo").innerHTML = hostname;
-  </script>
-  
-  <script>
 let text = "<p>Nome de código do navegador: " + navigator.appCodeName + "</p>" + 
 "<br>" +
 "<p>Nome do navegador: " + navigator.appName + "</p>" + 
@@ -62,4 +57,25 @@ let text = "<p>Nome de código do navegador: " + navigator.appCodeName + "</p>" 
 "<p>Cabeçalho do agente usuário: " + navigator.userAgent + "</p>" + "<br>";
 document.getElementById("multiconsole").innerHTML = text;
 </script>
+  
+  
+  
+  <api>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    async function getIpClient() {
+  try {
+    const response = await axios.get('https://ipinfo.io/json');
+    document.getElementById("demo").innerHTML = response
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getIpClient();
+</script>    
+  
+  
+  </api>
 </html>
