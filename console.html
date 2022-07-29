@@ -35,8 +35,11 @@
        <br>
        <p style="display:inline;">Endereco IP: </p><js id="IP">Sem informações</js>
        <br>
+       <p style="display:inline;">Host/Getaway IP: </p><js id="HostIP">Sem informações</js>
+       <br>
        <p style="display:inline;">localização: </p><js id="location">Sem informações</js>
-        
+       <br> 
+       <p style="display:inline;">Codigo Postal: </p><js id="postal">Sem informações</js> 
         
       </tela>
         
@@ -86,6 +89,7 @@ document.getElementById("multiconsole").innerHTML = text;
     document.getElementById("timezone").innerHTML = response.data.timezone;
     document.getElementById("location").innerHTML = response.data.loc
     document.getElementById("IP").innerHTML = response.data.ip
+    document.getElementById("HostIP").innerHTML = response.data.hostname
     document.getElementById("postal").innerHTML = response.data.postal
     console.log(response);
   } catch (error) {
