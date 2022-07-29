@@ -2,17 +2,15 @@ const loopRotation = setInterval(rotation, 1000);
   let dire = document.querySelector("#direitos")
     
   
-function rotation(x) {
-  return new Promise(resolve => {   
-  let rotacao = 175
-  dire.style.transform = "rotateY(20deg)"
-  resolve(x)
-  });
-  }async function rotation2() {
-    var x = await rotation(10);
-  console.log(x);
-  }
-rotation2()
+async function rotation(x) {
+let promessa = new Promise(function(resolve) {
+      resolve(dire.style.transform = "rotateY(20deg)")
+    })  
+async function rotation2() {
+  await promessa = 
+}
+
+}
 
 
 let text = "<p>Nome de código do navegador: " + navigator.appCodeName + "</p>" + 
