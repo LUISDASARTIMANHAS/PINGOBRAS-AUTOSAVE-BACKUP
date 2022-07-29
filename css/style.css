@@ -400,6 +400,7 @@ telacalc{
   border: none;
 }
 .direitos{
+  font-size: 18px;
   color: yellow;
   margin: 0;
   display: block;
