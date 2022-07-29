@@ -23,6 +23,10 @@
       <tela 
           style="width:75%;">
        <p>Console1:</p><js id="demo">Sem informações</js>
+       <p>Cidade:</p><js id="city">Sem informações</js>
+       <p>Pais:</p><js id="pais">Sem informações</js>
+       <p>Região:</p><js id="regiao">Sem informações</js>
+        
         
       </tela>
         
@@ -66,7 +70,9 @@ document.getElementById("multiconsole").innerHTML = text;
     async function getIpClient() {
   try {
     const response = await axios.get('https://ipinfo.io/json');
-    //document.getElementById("demo").innerHTML = JSON.parse(response);
+    document.getElementById("demo").innerHTML = response.data.city;
+    document.getElementById("demo").innerHTML = response.data.city;
+    document.getElementById("demo").innerHTML = response.data.city;
     console.log(response);
   } catch (error) {
     console.error(error);
