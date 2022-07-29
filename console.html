@@ -21,16 +21,22 @@
       </tela>
 
       <tela 
-          style="width:75%;">
+          style="display:inline;">
        <h1>Console1:</h1>
        <js id="demo">Sem informações Analogicas</js>
        <br>
        <p style="display:inline;">Cidade: </p><js id="city">Sem informações</js>
        <br>
-       <p style="display:inline;">Pais:</p><js id="pais">Sem informações</js>
+       <p style="display:inline;">Pais: </p><js id="pais">Sem informações</js>
        <br>
-       <p>Região:</p><js id="regiao">Sem informações</js>
+       <p style="display:inline;">Região: </p><js id="regiao">Sem informações</js>
        <br> 
+       <p style="display:inline;">Fuso Horario: </p><js id="timezone">Sem informações</js>
+       <br>
+       <p style="display:inline;">Endereco IP: </p><js id="IP">Sem informações</js>
+       <br>
+       <p style="display:inline;">localização: </p><js id="location">Sem informações</js>
+        
         
       </tela>
         
@@ -77,6 +83,10 @@ document.getElementById("multiconsole").innerHTML = text;
     document.getElementById("city").innerHTML = response.data.city;
     document.getElementById("pais").innerHTML = response.data.country;
     document.getElementById("regiao").innerHTML = response.data.region;
+    document.getElementById("timezone").innerHTML = response.data.timezone;
+    document.getElementById("location").innerHTML = response.data.loc
+    document.getElementById("IP").innerHTML = response.data.ip
+    document.getElementById("postal").innerHTML = response.data.postal
     console.log(response);
   } catch (error) {
     console.error(error);
