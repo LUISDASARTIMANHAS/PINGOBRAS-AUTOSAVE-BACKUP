@@ -15,7 +15,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
           
             var downloadSize = Size;
             var downloadImgSrc = new Image();
-
+          
             downloadImgSrc.onload = function () {
                 end_time = new Date().getTime();
                 displaySpeed();
