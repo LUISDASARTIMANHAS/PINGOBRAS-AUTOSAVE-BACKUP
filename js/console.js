@@ -3,8 +3,13 @@ const loopRotation = setInterval(rotation, 1000);
     
   
 function rotation() {
+  return new Promise(resolve => {   
   let rotacao = 175
-    dire.style.transform.rotateY = rotacao
+  dire.style.transform = "rotateY(20deg)"
+  resolve("20deg")
+  });
+  }async function rptation2() {
+    
   }
 
 
