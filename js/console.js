@@ -2,13 +2,8 @@ const loopRotation = setInterval(rotation, 1000);
   let dire = document.querySelector("#direitos")
     
   
-async function rotation(x) {
-let promessa = new Promise(function(resolve) {
-      resolve(dire.style.transform = "rotateY(20deg)")
-    })  
-async function rotation2() {
-  await promessa = 
-}
+async function rotation() {
+  dire.style.transform = "rotateY(20deg)"
 
 }
 
