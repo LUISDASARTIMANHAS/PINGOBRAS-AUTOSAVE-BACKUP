@@ -47,7 +47,7 @@ setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
 document.querySelector(".site-altura").style.opacity = "0.2";
 document.querySelector(".site-altura").style.cursor = "not-allowed";
-  console.log("LOG> Anuncio carregado!"); 
+  console.log("LOG> ⚠️Anuncio carregado!"); 
 },5000)
 });
 
@@ -55,7 +55,7 @@ document.querySelector("#close").addEventListener("mouseover", function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".site-altura").style.opacity = "1";
     document.querySelector(".site-altura").style.cursor = "default";
-  console.log("LOG> Anuncio fechado!");
+  console.log("LOG> ⚠️Anuncio fechado!");
 });
 
 

@@ -3,7 +3,7 @@ let key = JSON.parse(JsonKeys);
 
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
-console.log("AUTENTICATION/LOG> Token recebido:" + tokenR.token);
+console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR.token);
 
 
 
@@ -30,16 +30,15 @@ var enviar = document.getElementById("autenticar");
 enviar.addEventListener("click", function entrar() {  
   alert('Verificando!...');
   let inputsenha = document.getElementById("senha");
-   console.log(inputsenha.value);
   
   if(inputsenha.value == key.senha) {
     let mathRandom = Math.random().toString(16).substr(2)
    
     let storageToken = {token: mathRandom};
     const Cryptotoken = JSON.stringify(storageToken);
-     console.log("AUTENTICATION/LOG> Setando codificação do token...");
+     console.log("AUTENTICATION/LOG> ⚠️Setando codificação do token...");
      localStorage.setItem("JsonToken", Cryptotoken);
-     console.log("AUTENTICATION/LOG> Token setado");
+     console.log("AUTENTICATION/LOG> ⚠️Token setado");
     const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
     const bypasstoken = JSON.stringify(bypasstokenJS);
     localStorage.setItem("bypass",bypasstoken)

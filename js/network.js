@@ -28,7 +28,7 @@ function displaySpeed() {
                 
   var timeDuration = (end_time - time_start) / 1000;
   var loadedBits = downloadSize;
-  console.log("NETWORK/LOG> Latencia do servidor: " + end_time + "ms")
+  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + end_time + "ms")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
@@ -39,7 +39,7 @@ function displaySpeed() {
   var speedInKbps = (bps / 1024).toFixed(2);
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
   var speedInGBps = (speedInMbps / 1024).toFixed(2);
-  console.info("NETWORK/LOG> Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
+  console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
   const NetworkObj = {Bps: bps, KBps: speedInKbps, MBps: speedInMbps, GBps: speedInGBps}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  

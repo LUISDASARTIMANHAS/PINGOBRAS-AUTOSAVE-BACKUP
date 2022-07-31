@@ -29,14 +29,14 @@ localStorage.setItem("siteBonus", siteBonus);
 let tokenjson = localStorage.getItem("JsonToken");
 let tokenRefresh = JSON.parse(tokenjson);
 const repeattoken = JSON.stringify(tokenRefresh);
-console.log("STORAGE/LOG> recarregando codificanção do token...");
+console.log("STORAGE/LOG> ⚠️recarregando codificanção do token...");
 localStorage.setItem("JsonToken", repeattoken);
 console.warn("STORAGE/LOG> token recarregado!");
   
 let bypass = localStorage.getItem("bypass");
 let bypassRefresh = JSON.parse(bypass);  
 const repeatbypass = JSON.stringify(bypassRefresh);
-console.log("STORAGE/LOG> recarregando codificanção do token...");
+console.log("STORAGE/LOG> ⚠️recarregando codificanção do token...");
 localStorage.setItem("bypass", repeatbypass);
 console.warn("STORAGE/LOG> token recarregado!");
 
