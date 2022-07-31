@@ -18,9 +18,10 @@ document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
 "Todos os direitos reservados" +
 "<br>"+
 "<a links target=_blank href=mailto:luisaugustodesouza785@gmail.com>" + "luis_das_artimanhas@gmail" + "</a>"+
-"<i class=fa class=fa-whatsapp>" + "</i>" +
+"<i class=fa id=WA>" + "</i>" +
 "</p>" 
-  
+var wa = document.getElementById("WA");
+wa.classList.add("fa-whatsapp");
   
   
   
