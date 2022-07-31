@@ -18,7 +18,8 @@ document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
 "Todos os direitos reservados" +
 "<br>"+
 "<a links target=_blank href=mailto:luisaugustodesouza785@gmail.com>" + "luis_das_artimanhas@gmail" + "</a>"+
-"</p>"
+"<i class=fa class=fa-whatsapp>" + "</i>" +
+"</p>" 
   
   
   

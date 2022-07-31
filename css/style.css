@@ -140,6 +140,11 @@ background: purple;
   color: white;
 }
 
+.fa-whatsapp:before{
+  content:"\f232";
+  color: green;
+}
+
 .fa-twitter {
   background: #55ACEE;
   color: white;
