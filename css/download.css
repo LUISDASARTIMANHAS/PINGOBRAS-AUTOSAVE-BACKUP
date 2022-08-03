@@ -59,6 +59,14 @@ to this section's matching END comment to see page-specific styles.
 [hidden] {
   display: none !important;
 }
+.fa-whatsapp:before{
+  content:"\f232";
+  color: green;
+  width: 15%;
+}
+#WA{
+  width: 30%;
+}
 
 
 /******************************************************************************

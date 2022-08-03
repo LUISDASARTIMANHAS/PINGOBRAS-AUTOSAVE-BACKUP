@@ -43,3 +43,12 @@ const copyright = document.querySelector("#copyright")
   copyright.innerHTML = "Desenvolvedores:" + "©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-" + document.write(new Date().getFullYear()) + "Todos os direitos reservados"})
   
   <iframe jsname="L5Fo6c" class="YMEQtf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Map" src="https://maps-api-ssl.google.com/maps?hl=pt-BR&amp;ll=-12.032199,-409.713569&amp;output=embed&amp;z=3" allowfullscreen=""></iframe>
+  
+          
+        <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="contato" action="download.html">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="contato()" value="Submit">
+</form>

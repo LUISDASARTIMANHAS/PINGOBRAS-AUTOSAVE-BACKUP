@@ -16,13 +16,10 @@
         <div class="adminID">
           <p>ADMINISTRADOR ACCOUNT:</p>
           <p id="adminStatus">NÃO CONECTADA</p>
-          <p>ADMIN SALDO:</p>
-          <div class="green-title" id="currentSaldo">SEM SALDO</div>
+          <p>ADMIN SALDO:</p><js id="currentSaldo" red>SEM SALDO</js>
           <p>Velocidade da Internet:</p>
           <p id="MBps" >SEM CONEXÃO MBps</p>
           <p id="GBps" >SEM CONEXÃO GBps</p>
-          <p>TAMANHO DO DOWNLOAD:</p>
-          <js inline id="DownloadSize">0</js>
         </div>
         
        <div id="sfczcrmrdqsuts62apq8xn82nu44gqpxtpj">status bar</div> 
@@ -154,15 +151,8 @@
           Retornar para PINGOBRAS
         </a>
         <br>
-				<div id="direitos" class="direitos"></div>  
-        
-        <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+				<div id="direitos" class="direitos">loading...</div>  
 
-<form id="contato" action="download.html">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br><br>
-  <input type="button" onclick="contato()" value="Submit">
-</form>
        
         
       <div class="input" id="uploader627a97320a83b"><div class="qq-uploader-selector qq-uploader">
@@ -217,6 +207,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/download.css" />
   <link rel="stylesheet" href="css/btn.css" />
+  <link rel="stylesheet" href="css/head.css" />
   <script src="js/download.js" defer></script>
   <script src="js/autentication.js" defer></script>
   <script src="js/script.js" defer></script>
@@ -234,7 +225,7 @@ let tokenjson = localStorage.getItem("JsonToken");
 let tokenR = JSON.parse(tokenjson);
   
 if(tokenR.token != "desconectado") {
-console.log("Usuario conectado!")
+console.log("AUTH/LOG>Usuario conectado!")
 }
 else {
 alert("⚠️usuario deslogado")
