@@ -21,7 +21,8 @@
           <p>ADMINISTRADOR ACCOUNT:</p>
           <p id="adminStatus">NÃO CONECTADA</p>
           <p>ADMIN SALDO:</p>
-          <div class="green-title" id="currentSaldo">SEM SALDO</div>
+          <div vermelho id="currentSaldo">SEM SALDO</div>
+          <p>Segurança:</p><js id="security" >Desativada</js>
         </div>
       <left class="discord">
          <iframe 
@@ -119,7 +120,7 @@
         <footer class="footer">
         <div class="links"></div>
        
-          <div id="direitos" class="direitos"></div>  
+          <div id="direitos" class="direitos">Loading...</div>  
         </footer>
         <button
             class="btn-descer"
@@ -141,23 +142,6 @@
     <script src="js/functions.js" defer></script>
     <script src="js/network.js" defer></script>
     <script src="https://pingobras-chat.glitch.me/chat.js" defer></script>
+    <script src="js/auth.js" defer></script>     
 
-  <script>
-const loopToken = setInterval(refreshDesconect, 5000);
-
-function refreshDesconect() {
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
-  
-if(tokenR.token != "desconectado") {
-console.log("AUTH/LOG> Usuario conectado!")
-}
-else {
-alert("AUTH/LOG> ⚠️Usuario deslogado")
-const tokenSair = {token: "desconectado"};
-const CryptotokenS = JSON.stringify(tokenSair);
-localStorage.setItem("JsonToken", CryptotokenS);
-window.location.href = "https://pingobras.glitch.me"}
-}
-</script>
 </html>
