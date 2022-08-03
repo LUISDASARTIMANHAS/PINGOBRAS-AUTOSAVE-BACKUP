@@ -16,7 +16,8 @@
         <div class="adminID">
           <p>ADMINISTRADOR ACCOUNT:</p>
           <p id="adminStatus">NÃO CONECTADA</p>
-          <p>ADMIN SALDO:</p><js id="currentSaldo" red>SEM SALDO</js>
+          <p>ADMIN SALDO:</p><js id="currentSaldo" vermelho>SEM SALDO</js>
+          <p>Segurança:</p><js id="security" >Desativada</js>
           <p>Velocidade da Internet:</p>
           <p id="MBps" >SEM CONEXÃO MBps</p>
           <p id="GBps" >SEM CONEXÃO GBps</p>
@@ -216,23 +217,6 @@
   <script src="js/functions.js" defer></script>
   <script src="js/network.js" defer></script>
   <script src="js/time.js" defer></script>
+  <script src="js/auth.js" defer></script>
   
-  <script>
-const loopToken = setInterval(refreshDesconect, 5000);
-
-function refreshDesconect() {
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
-  
-if(tokenR.token != "desconectado") {
-console.log("AUTH/LOG>Usuario conectado!")
-}
-else {
-alert("⚠️usuario deslogado")
-const tokenSair = {token: "desconectado"};
-const CryptotokenS = JSON.stringify(tokenSair);
-localStorage.setItem("JsonToken", CryptotokenS);
-window.location.href = "https://pingobras.glitch.me"}
-}
-</script>
 </html>
