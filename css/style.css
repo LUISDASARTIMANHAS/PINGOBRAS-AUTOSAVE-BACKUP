@@ -143,6 +143,10 @@ background: purple;
 .fa-whatsapp:before{
   content:"\f232";
   color: green;
+  width: 15%;
+}
+#WA{
+  width: 15%;
 }
 
 .fa-twitter {
