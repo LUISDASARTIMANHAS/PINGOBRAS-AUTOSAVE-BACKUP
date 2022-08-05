@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="PT">
+  
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/f7a18f61-4d9e-41a1-97e0-eaad906a5b2f/ban-martelo.jpg?v=1652279714558" />
+    <title>PINGOBRAS ADMIN CONTA</title>
+    
+  </head>
+  <body>
+    
+    <div class="tela-altura">
+      <div class="conteudo" role="main">
+        <!-- This is the start of content for our page -->
+      <h1 class="title">PINGOBRAS CONFIG-ACCOUNT!</h1>
+      <div class="links"></div>
+        
+        <div class="list-changelogs">  
+          <p>ADMINISTRADOR ACCOUNT:</p>
+          <p id="adminStatus">NÃO CONECTADA</p>
+          <p>ADMIN SALDO:</p>
+          <div vermelho id="currentSaldo">SEM SALDO</div>
+          <p>Segurança:</p><js id="security" >Desativada</js>
+        </div>
+         
+        
+        
+        <a 
+          class="btndc btn"
+          href="https://pingobras.glitch.me/admin">
+          Retornar 
+        </a>
+        
+        <br>
+        
+        <chat 
+          id="jschat" 
+          style="display: block;">
+    <h1>Bate-Papo</h1>
+    <b>MENSAGENS:</b> 
+    <div class="displayMsm">
+      <label>
+        
+      
+      <br>
+      
+      <usermy>Você:</usermy>
+      <my1
+          id="myMsm"> 
+        Você não mandou nenhuma mensagem
+        </my1>
+      
+      <br>
+      
+      <user>Usuario1:</user>
+      <display 
+               id="display1"> 
+        Nenuma mensagem!
+        </display>
+      </label>
+      
+      <br>
+      
+    <input 
+           class="input-chat"
+           placeholder="OI tudo bem?" 
+           id="msg" 
+           type="text"
+           required>
+      <br>
+      
+      </div>
+      
+    <button 
+            onclick="printmsm()" 
+            id="submit" 
+            class="btn-enviar-msm">
+      Enviar msm
+      </button>
+</chat>
+        
+        <footer class="footer">
+        <div class="links"></div>
+       
+          <div id="direitos" class="direitos">Loading...</div>  
+        </footer>
+        <button
+            class="btn-descer"
+            onclick="DESLOGAR2()">
+      Sair
+    </button>
+        
+
+      </div></div>
+   </body> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" />
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
+    <script src="https://pingobras.glitch.me/js/script.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/autentication.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/calcs.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/network.js" defer></script>
+    <script src="https://pingobras-chat.glitch.me/chat.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/auth.js" defer></script>     
+
+</html>
