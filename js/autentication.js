@@ -47,7 +47,7 @@ enviar.addEventListener("click", function entrar() {
     msgSuccess.setAttribute('style', 'display: block')
     msgError.setAttribute('style', 'display: none')
     msgSuccess.innerHTML = 'senha correta! redirecionando!'
-    window.location.href = "https://pingobras.glitch.me/admin=account.html"
+    window.location.href = "https://pingobras.glitch.me/admin"
   }
   else{
     inputsenha.setAttribute('style', 'color: red')
@@ -109,7 +109,7 @@ if(authbypass2.bypass == 10101010100) {
       window.location.href = ("https://pingobras.glitch.me/autentication.html")
   }else{
     setTimeout(alert("admin autorizado"),7000)
-   window.location.href = ("https://pingobras.glitch.me/admin=account.html")
+   window.location.href = ("https://pingobras.glitch.me/admin")
   }}
   
 }
