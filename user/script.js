@@ -1,19 +1,11 @@
-let btntema = document.getElementById('tema');
-let userbg = localStorage.getItem('UserBackground')
-let body = document.querySelector('body');
-let inputColor = document.querySelector('#colorTema');
+let DBuserbg = localStorage.getItem('UserBackground')
+let body2 = document.querySelector('body');
 
-if(userbg == "null") {
-  body.style.background = "white"
+if(DBuserbg == "null") {
+  body2.style.background = "white"
 }else{
-  body.style.background = userbg
+  body2.style.background = DBuserbg
 }
-
-btntema.addEventListener('click', function() {
-      body.style.background = inputColor.value;
-      localStorage.setItem( 'UserBackground',inputColor.value);
-      body.style.color = 'black';
-  });
 
 
 if(localStorage.getItem('token') == null){
@@ -31,9 +23,6 @@ function sair(){
 }
 
 
-function abrirAba(){ window.open(
-  "https://codepen.io/luisdasartimanhas/pen/ZEaVByy?editors=0011");
- }
 let fullscreen;
 let fsEnter = document.getElementById('fullscr');
 fsEnter.addEventListener('click', function (e) {

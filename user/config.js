@@ -9,3 +9,8 @@ if(userbg == "null") {
   body.style.background = userbg
   inputColor.value = userbg
 }
+btntema.addEventListener('click', function() {
+      body.style.background = inputColor.value;
+      localStorage.setItem( 'UserBackground',inputColor.value);
+      body.style.color = 'black';
+  });
