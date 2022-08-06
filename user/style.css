@@ -139,6 +139,17 @@ body{
   background: white;
 }
 .btnTema{
+  border: 3px solid black;
+ height:30px;
+ border-style:solid;
+ border-color:#19ff79;
+ border-width:3px;
+ background: gray;
+ float:right;
+ margin-left: 50%;
+ display:block;
+ cursor:wait;
+ position:fixed;
 }
 
 .esconder{
