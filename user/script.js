@@ -19,34 +19,19 @@ btntema.addEventListener('click', function() {
 
 
 
-let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-let saldo = document.querySelector('#userSaldo')
-let usuario = document.querySelector('#usuario')
-let senha = document.querySelector('#senha')
+let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+let logado = document.querySelector('#logado')
+logado.innerHTML = "Olá" + userLogado.nome
 
-usuario.innerHTML = ` ${userLogado.user}`
-senha.innerHTML = ` ${userLogado.senha}`
-saldo.innerHTML = ` ${userLogado.saldoCad}`
-
-
-   if(localStorage.getItem(userLogado.saldoCad) ){
-  alert('usuario desconhecido, sera kickado em 3 segundos')
-     console.log('usuario kickado') 
-     window.location.href='https://codepen.io/luisdasartimanhas/full/rNYoWpY'
-       }
-       
 if(localStorage.getItem('token') == null){
   alert('Você precisa estar logado para acessar essa página')
-  window.location.href = 'https://codepen.io/luisdasartimanhas/full/rNYoWpY'
+  window.location.href = '/login'
 }
-
-
 function sair(){
   localStorage.removeItem('token')
   localStorage.removeItem('userLogado')
   window.location.href = 'https://pingobras.glitch.me'
- }
-
+}
 
 
 function abrirAba(){ window.open(
@@ -77,8 +62,3 @@ btnescondedor.addEventListener('click', function() {
       esconder.style.display = 'block';
   }
 });
-
-
-let varToken = JSON.parse(localStorage.getItem('token'));
-let userID = document.querySelector("#userID")
-userID.innerHTML = `${varToken.token}`
