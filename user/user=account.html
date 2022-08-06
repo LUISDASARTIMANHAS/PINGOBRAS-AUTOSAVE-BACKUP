@@ -1,1 +1,56 @@
-status 200 ok
+<html lang="PT">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <link rel="icon" href="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/2020-11-03_12-58-10-1.jpg?v=1643163953526" />
+    <title>PINGOBRAS ACCOUNT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="site-altura">
+      <div class="conteudo" role="main">
+        <div class="links"></div>
+         <h1>Configurações da Conta</h1> 
+            
+           <h2> USUARIO:</h2>
+           <usuario id="usuario"></usuario>
+           <br>
+           <h2> ID:</h2>
+           <usuario id="userID">Sem Nome de Usuario</usuario>
+           <button 
+                   class="btnDeslogar" 
+                   onclick="sair()" > 
+             DESLOGAR 
+           </button>
+           
+           <br>
+           <br>
+   
+           <h3> SENHA:</h3>
+             <senha class="esconder" 
+                    id="senha">Sem Senha</senha>
+           <br>
+           <button class="btn-esconder" id="escondedor">Ocultar/mostrar</button>
+           <br><br>
+           
+           <h4>SALDO:</h4>
+           <saldo id="userSaldo">0,00</saldo>
+           <button class="btnReload" onclick="btnReload()">
+           <img            
+           src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pngwing.com.png?v=1651355832699"
+           height="45px" /> 
+           </button>
+
+
+</div> </div>
+</body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/head.css" />
+  <link rel="stylesheet" href="css/btn.css" />
+  <link rel="stylesheet" href="user/style.css" />
+  <script src="user/script.js" defer></script>
+</html>
