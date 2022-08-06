@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3534/3534138.png" />
+    <title>PINGOBRAS CADASTRO!</title>
+  </head>
+    
+  <body>
+   <div class="site-altura">
+      <div class="conteudo" role="main">
+  
+    <teladelogin>
+    <h1> PINGOBRAS CADASTRO </h1>
+    <div id="msgError"></div>
+    <div id="msgSuccess"></div>
+    
+    <label-float>
+      <label 
+           id="labelNome" 
+           for="nome">
+      Nome
+      </label>
+    <input 
+           class="input-float"
+           type="text" 
+           id="nome" 
+           placeholder="Seu Primeiro Nome" required>
+     </label-float>
+
+      <br>
+      
+     <label-float>
+       <label 
+            id="labelUsuario" 
+            for="usuario">
+       Usuário
+       </label>
+     <input 
+            class="input-float"
+            type="text" 
+            id="usuario" 
+            placeholder="Seu Nome Social" 
+            required>
+     </label-float>
+
+      <br>
+      
+     <label-float>
+       <label 
+            id="labelSenha" 
+            for="senha">
+       Senha
+       </label>
+     <input 
+            class="input-float"
+            type="password" 
+            id="senha" 
+            placeholder="******" 
+            required>
+  
+     <img 
+          src="https://cdn-icons-png.flaticon.com/512/1621/1621629.png" 
+          id="verSenha" 
+          class="faeye" 
+          aria-hidden="true">
+     </label-float>
+    
+      <br>
+      
+     <label-float>
+       <label 
+            id="labelConfirmSenha" 
+            for="confirmSenha">
+       Confirmar Senha
+       </label>
+     <input 
+            class="input-float"
+            type="password" 
+            id="confirmSenha" 
+            placeholder="******" 
+            required>
+       
+     <img 
+        src="https://cdn-icons-png.flaticon.com/512/1621/1621629.png"
+        id="verConfirmSenha" 
+        class="faeye" 
+        aria-hidden="true"/>
+     </label-float>
+
+      <br>
+      
+     <button 
+             style="width: 75%;"
+             class="btn btn-cadastrar"
+             onclick="cadastrar()">
+       Cadastrar
+  </button>
+      
+      <br>
+      
+      <console style="display: block;">Leituras:
+      <js id="debugNome">Sem leituras</js>, 
+      <js id="debugUsuario">Sem leituras</js>, 
+      <js id="debugSenha">Sem leituras</js>
+      <js id="debugSenha2">Sem leituras</js>
+      </console>
+        <a
+        class="btndc btn"
+        href="https://pingobras.glitch.me"
+      >
+        RETORNAR PARA PINGOBRAS
+      </a>
+        </teladelogin>
+        
+        
+        <footer class="footer">
+        <div class="links"></div>
+       
+          <p 
+             class="direitos"> Desenvolvedores: 
+            <br>
+            ©LUIS_DAS_ARTIMANHAS &amp; DOUGLAS_PG 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script>
+            <br>
+            Todos os direitos reservados
+            <br>
+            <a links target="_blank" href="mailto:luisaugustodesouza785@gmail.com">luis_das_artimanhas@gmail</a>
+          </p>
+          
+        </footer>
+        
+  
+</div></div>
+</body>
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="STORAGEcad.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
+    <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
+</html>
