@@ -136,15 +136,15 @@ footer {height: 50vh}
 END Glitch hello-app default styles
 ******************************************************************************/
 body{
-  background: white;
+  background: transparent;
 }
 .btnTema{
  padding: 5px;
  border: 3px solid black;
- 
  background: gray;
  float:right;
- margin-left: 65%;
+ right: 1%;
+ bottom: 1%;
  display:block;
  cursor:wait;
  position:fixed;
