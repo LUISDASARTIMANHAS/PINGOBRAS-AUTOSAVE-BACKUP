@@ -40,8 +40,9 @@ function autenticar(){
     }
   })
      
-    if(usuario.value == userValid.user && senha.value == userValid.senha){
-    setTimeout(window.location.href = 'https://pingobras.glitch.me/user',7000);
+if(usuario.value == userValid.user && senha.value == userValid.senha){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
     
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
@@ -52,7 +53,7 @@ function autenticar(){
     msgError.setAttribute('style', 'display: none')
     msgSuccess.innerHTML = 'Validando acesso...'
     msgSuccess.setAttribute('style', 'display: block')
-  }else{
+}else{
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')
