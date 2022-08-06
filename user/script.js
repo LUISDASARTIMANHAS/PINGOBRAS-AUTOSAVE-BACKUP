@@ -1,15 +1,19 @@
 let btntema = document.getElementById('tema');
+let userbg = localStorage.getItem('UserBackground')
+let body = document.querySelector('body');
+
+if(userbg == "null") {
+  body.style.background = "white"
+}else{
+  body.style.background = userbg
+}
 
 btntema.addEventListener('click', function() {
-let body = document.querySelector('body');
 let inputColor = document.querySelector('#colorTema');
   
-  
-  if(body.style.background === 'white') {
       body.style.background = inputColor.value;
-      body.style.color = 'black';
-  } else {
-      body.style.background = 'white';
-      body.style.color = 'black';
+      localStorage.setItem( 'UserBackground',inputColor.value);
+      body.style.color = 'white';
   }
+  
 });
