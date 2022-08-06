@@ -7,7 +7,6 @@ if(userbg == "null") {
   body.style.background = "white"
 }else{
   body.style.background = userbg
-  inputColor.value = userbg
 }
 
 btntema.addEventListener('click', function() {
