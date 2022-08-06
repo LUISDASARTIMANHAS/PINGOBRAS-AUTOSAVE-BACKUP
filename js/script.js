@@ -80,12 +80,19 @@ body.setAttribute('style', 'padding-top: 50% ')}
   console.warn("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName)
 
   
-  const btndisabled = document.querySelector("[disabled]");
+    const btndisabled = document.querySelector("[disabled]");
+    const btndisabled2 = document.querySelector("[disabled2]");
+  
 btndisabled.addEventListener('click', function() {
-    window.location.href = "https://pingobras-404.glitch.me"
-    document.querySelector("[disabled]").style.cursor = "progress"
+    btndisabled.href = "https://pingobras-404.glitch.me"
+    btndisabled.style.cursor = "progress"
     console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
 });
+btndisabled2.addEventListener('click', function() {
+    btndisabled2.href = "https://pingobras-404.glitch.me"
+    btndisabled2.style.cursor = "progress"
+    console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
+  });
 
   
   
