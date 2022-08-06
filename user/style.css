@@ -138,6 +138,8 @@ END Glitch hello-app default styles
 body{
   background: white;
 }
+.btnTema{
+}
 
 .esconder{
   display: none;
