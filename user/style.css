@@ -139,14 +139,12 @@ body{
   background: white;
 }
 .btnTema{
-  border: 3px solid black;
- height:30px;
- border-style:solid;
- border-color:#19ff79;
- border-width:3px;
+ padding: 5px;
+ border: 3px solid black;
+ 
  background: gray;
  float:right;
- margin-left: 50%;
+ margin-left: 65%;
  display:block;
  cursor:wait;
  position:fixed;

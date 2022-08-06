@@ -101,7 +101,7 @@ document.querySelector('#debugSenha2').innerHTML = DBvalidConfirmSenha
     msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
     msgError.setAttribute('style', 'display: none')
     msgError.innerHTML = 'Nenhum erro encontrado'
-    setTimeout(()=>{window.location.href = 'https://pingobras-login.glitch.me'}, 7000)
+    setTimeout(()=>{window.location.href = 'https://pingobras.glitch.me/login'}, 7000)
 
   }else{
     msgError.setAttribute('style', 'display: block')
