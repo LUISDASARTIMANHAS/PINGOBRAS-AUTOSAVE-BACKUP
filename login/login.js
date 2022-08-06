@@ -12,12 +12,12 @@
 
 function autenticar(){
   let usuario = document.querySelector('#usuario')
-  let userLabel = document.querySelector('#userLabel')
   
   let senha = document.querySelector('#senha')
-  let senhaLabel = document.querySelector('#senhaLabel')
   
   let msgError = document.querySelector('#msgError')
+  let msgSuccess = document.querySelector('#msgSuccess')
+  
   let listaUser = []
   
   let userValid = {
@@ -39,7 +39,9 @@ function autenticar(){
       
     }
   })
-   
+   msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: none')
   if(usuario.value == userValid.user && senha.value == userValid.senha){
     window.location.href = 'https://pingobras.glitch.me/user'
     
@@ -49,13 +51,9 @@ function autenticar(){
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
   } else {
-    userLabel.setAttribute('style', 'color: red')
-    usuario.setAttribute('style', 'border-color: red')
-    senhaLabel.setAttribute('style', 'color: red')
-    senha.setAttribute('style', 'border-color: red')
     msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Usuário ou senha incorretos'
-    usuario.focus()
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
   }
   
 }

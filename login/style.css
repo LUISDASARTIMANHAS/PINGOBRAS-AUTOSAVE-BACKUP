@@ -247,3 +247,23 @@ hr{
   border-radius: 4px;
   display: hidden;
 }
+.msg-Error{
+  border-bottom: 3px solid red;
+  text-align: center;
+  color: red;
+  background: white;
+  padding: 7px;
+  border-radius: 4px;
+  display: none;
+  opacity: 70%;
+}
+.msg-Success{
+  border-bottom: 3px solid green;
+  text-align: center;
+  color: green;
+  background: white;
+  padding: 7px;
+  border-radius: 4px;
+  display: none;
+  opacity: 70%;
+}
