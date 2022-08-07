@@ -344,8 +344,16 @@
 .btnDeslogar{
  float:right;
  cursor:pointer;
+ margin: 3px;
+}
+.btnDeslogar:hover{
+  opacity: 0.5;
 }
 .btnMostrarSenha{
  float:right;
  cursor:pointer;
+ margin: 3px;
+}
+.btnMostrarSenha:hover{
+  opacity: 0.5;
 }

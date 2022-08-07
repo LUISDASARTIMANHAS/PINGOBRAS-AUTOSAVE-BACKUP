@@ -6,7 +6,7 @@ let userConta = document.getElementById("userConta")
 let nomeConta = document.getElementById("nomeConta")
 let senhaConta = document.getElementById("senhaConta") 
 let SaldoConta = document.getElementById("saldoConta") 
-
+let IDConta = document.getElementById("IDConta")
 
 if(userbg == "null") {
   body.style.background = "white"
@@ -26,4 +26,5 @@ function sair(){
   alert("Usuario Desconectado!")
 }
 
-
+userConta.innerHTML = localStorage.getItem('userLogado').nome
+IDConta.innerHTML = localStorage.getItem('token')
