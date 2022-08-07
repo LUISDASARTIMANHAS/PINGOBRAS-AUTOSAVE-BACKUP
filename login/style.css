@@ -125,11 +125,11 @@ teladelogin{
   z-index: 2;
         }
 .input-float-login{
-      width: 45%;
+      width: 75%;
       padding: 5px 5px;
       display: inline-block;
       border: 0;
-      border-bottom: 3px solid blue;
+      border-bottom: 3px solid purple;
       background-color: transparent;
       outline: none;
       min-width: 180px;
@@ -142,27 +142,28 @@ label-float{
   margin-top: 5%;
   margin-bottom: 5%;
 }
-label-float label{
-     padding: 13px;
-     margin-top: 5%;
-     color: blue;
-     cursor: none;
-     transition: all .3s ease-out;
+label-login{
+margin-top: 5px;
+color: red;     
+cursor: help;
+transition: all .3s ease-out;
+text-align: left;
+align-items: left;
+display: block;
+
 }
 .input-float-login:focus{
-     border-bottom: 3px solid orange;
-     font-size: 13px;
-     margin-top: 0;
-     color: blue;
-     border-bottom: 2px solid #4038a0;
-    font-size: 13px;
-    margin-top: 0;
-    color: green
+border-bottom: 3px solid orange;
+font-size: 13px;
+margin-top: 0;
+border-bottom: 2px solid #4038a0;
+color: green
 }
 .input-foat-login:valid{
   font-size: 13px;
   margin-top: 0;
-  color: #4038a0
+  color: gold;
+  border-bottom: 3px solid gold;
 }
 
 label:valid{
@@ -172,7 +173,7 @@ label:valid{
 }
 
 p-cadastro{
-  color: blue;
+  color: red;
   font-size: 15pt;
   text-align: center;
 }
@@ -190,13 +191,6 @@ text-decoration: underline;
 a[links]:hover{
 color:purple;
 }
-.fa-eye{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  cursor: pointer;
-  color: #272262;
-  }
 
 
 /* Subheading */
