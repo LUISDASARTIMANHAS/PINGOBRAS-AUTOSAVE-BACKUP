@@ -6,7 +6,7 @@ function storagecad() {
   if(STORAGE == null){
   alert("null user auto complete online")
    let listacad = [
-{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1.00},
+{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1500.90},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 2.00},
 {nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00}
    ];
@@ -23,7 +23,7 @@ function storagecad() {
 
 let UNIVERSALACCOUNT = JSON.parse(localStorage.getItem('listaUser') || '[]')
 UNIVERSALACCOUNT.push(
-{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1.00},
+{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1750.97},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 5.00},
 {nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00}
 )

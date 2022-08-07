@@ -7,12 +7,16 @@
   let userscad2 = document.querySelector("#userCad2")
   let userscad3 = document.querySelector("#userCad3")
   let userscad4 = document.querySelector("#userCad4")
+  let userscad5 = document.querySelector("#userCad5")
+  let userscad6 = document.querySelector("#userCad6")
   let sep = ","
 
   userscad.innerHTML = finder[0].userCad + sep 
   userscad2.innerHTML =  finder[1].userCad + sep 
   userscad3.innerHTML =  finder[2].userCad + sep
-  userscad4.innerHTML = finder[3].userCad  
+  userscad4.innerHTML = finder[3].userCad + sep
+  userscad5.innerHTML = finder[4].userCad + sep
+  userscad6.innerHTML = finder[5].userCad 
   
 
 function autenticar(){
