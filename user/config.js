@@ -2,6 +2,11 @@ let btntema = document.getElementById('tema');
 let userbg = localStorage.getItem('UserBackground')
 let body = document.querySelector('body');
 let inputColor = document.querySelector('#colorTema');
+let userConta = document.getElementById("userConta") 
+let nomeConta = document.getElementById("nomeConta")
+let senhaConta = document.getElementById("senhaConta") 
+let SaldoConta = document.getElementById("SaldoConta") 
+
 
 if(userbg == "null") {
   body.style.background = "white"
@@ -14,3 +19,5 @@ btntema.addEventListener('click', function() {
       localStorage.setItem( 'UserBackground',inputColor.value);
       body.style.color = 'black';
   });
+
+
