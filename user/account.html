@@ -29,16 +29,6 @@
               
         <h2> ID:</h2>
         <usuario id="IDConta">Desconectado</usuario>
-        
-        <br>
-        
-        <button 
-            class="btnDeslogar" 
-            onclick="sair()" >
-          <img
-            src="https://w7.pngwing.com/pngs/207/133/png-transparent-computer-icons-exit-wikimedia-commons-brand-button.png"
-            height="35px"/> 
-        </button>
            
         <br>
               
@@ -48,20 +38,30 @@
                id="senhaConta">
           Server Timeout 501-401
         </senha>
-          
-        <button inline
-                class="btn-esconder" 
+        <button 
+                inline
+                class="btnMostrarSenha" 
                 id="escondedor">
-          <img 
+        <img 
                src="https://cdn-icons-png.flaticon.com/512/102/102643.png"
-               height="25px"/>
-          </button>
-              
+               height="35px"/>
+        </button>
+        
+        <br>  
         <br>
            
         <h4>SALDO:</h4>
         <saldo id="saldoConta">0,00</saldo>
           
+          
+          
+          <button 
+            class="btnDeslogar" 
+            onclick="sair()" >
+          <img
+            src="https://w7.pngwing.com/pngs/207/133/png-transparent-computer-icons-exit-wikimedia-commons-brand-button.png"
+            height="35px"/> 
+        </button>
           
         <button hidden class="btnReload" onclick="btnReload()">
         <img            
