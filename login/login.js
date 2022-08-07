@@ -3,6 +3,7 @@
   let finder = JSON.parse(listaUser)
   let STORAGE = localStorage.getItem("JSON STORAGE");
   let STORAGER = JSON.parse(STORAGE);
+  let btnVerSenhaL = document.getElementById("verSenhaLogin")
   let userscad = document.querySelector("#userCad")
   let userscad2 = document.querySelector("#userCad2")
   let userscad3 = document.querySelector("#userCad3")
@@ -71,3 +72,13 @@ if(usuario.value == userValid.user && senha.value == userValid.senha){
   }
   
 }
+
+btnVerSenhaL.addEventListener('click', ()=>{
+  let inputVerSenhaL = document.getElementById('senha')
+  if(inputVerSenhaL.getAttribute('type') == 'password'){
+    inputVerSenhaL.setAttribute('type', 'text')
+    inputVerSenhaL.placeholder = "123456"
+  }else{
+    inputVerSenhaL.setAttribute('type', 'password')
+    inputVerSenhaL.placeholder = "******"}
+})

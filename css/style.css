@@ -791,17 +791,6 @@ msgsuccess{
   display: none;
   opacity: 70%;
 }
-teladelogin {
-    display: block;
-    padding: 15px;
-    background: #ffffff80;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 75%;
-    border-radius: 25px;
-    z-index: 2;
-}
 faeye {
     border-bottom: 3px solid blue;
     position: absolute;
