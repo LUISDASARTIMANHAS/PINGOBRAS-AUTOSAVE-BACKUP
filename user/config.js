@@ -19,5 +19,11 @@ btntema.addEventListener('click', function() {
       localStorage.setItem( 'UserBackground',inputColor.value);
       body.style.color = 'black';
   });
+function sair(){
+  localStorage.removeItem('token')
+  localStorage.removeItem('userLogado')
+  window.location.href = 'https://pingobras.glitch.me'
+  alert("Usuario Desconectado!")
+}
 
 
