@@ -3,12 +3,17 @@
   let finder = JSON.parse(listaUser)
   let STORAGE = localStorage.getItem("JSON STORAGE");
   let STORAGER = JSON.parse(STORAGE);
-  let userscad = document.querySelector("#userCads")
+  let userscad = document.querySelector("#userCad")
+  let userscad2 = document.querySelector("#userCad2")
+  let userscad3 = document.querySelector("#userCad3")
+  let userscad4 = document.querySelector("#userCad4")
   let sep = ","
 
   userscad.innerHTML = finder[0].userCad + sep 
-  userscad.innerHTML =  finder[1].userCad + sep
-  userscad.innerHTML =  finder[2].userCad + sep
+  userscad2.innerHTML =  finder[1].userCad + sep 
+  userscad3.innerHTML =  finder[2].userCad + sep
+  userscad4.innerHTML = finder[3].userCad  
+  
 
 function autenticar(){
   let usuario = document.querySelector('#usuario')
