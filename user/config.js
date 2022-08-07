@@ -5,7 +5,7 @@ let inputColor = document.querySelector('#colorTema');
 let userConta = document.getElementById("userConta") 
 let nomeConta = document.getElementById("nomeConta")
 let senhaConta = document.getElementById("senhaConta") 
-let SaldoConta = document.getElementById("SaldoConta") 
+let SaldoConta = document.getElementById("saldoConta") 
 
 
 if(userbg == "null") {

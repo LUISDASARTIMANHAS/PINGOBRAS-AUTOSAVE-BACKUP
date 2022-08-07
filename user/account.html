@@ -13,36 +13,53 @@
     <div class="site-altura">
       <div class="conteudo" role="main">
         <div class="links"></div>
-         <h1>Configurações da Conta</h1> 
-            <tela></tela>
-           <h2> USUARIO:</h2>
-           <usuario id="userConta"></usuario>
-           <br>
-           <h2> ID:</h2>
-           <usuario id="IDConta">Sem Nome de Usuario</usuario>
-           <button 
-                   class="btnDeslogar" 
-                   onclick="sair()" > 
-             DESLOGAR 
-           </button>
+        
+      <h1>Configurações da Conta</h1> 
+        <list style="display: block;" class="list">
+              
+        <h2> Nome:</h2>
+        <usuario id="nomeConta">Server Timeout 501-401</usuario>
+        
+        <br>
+          
+        <h2> USUARIO:</h2>
+        <usuario id="userConta">Server Timeout 501-401</usuario>
            
-           <br>
-           <br>
-   
-           <h3> SENHA:</h3>
-             <senha class="esconder" 
-                    id="senhaConta">Sem Senha</senha>
-           <br>
-           <button class="btn-esconder" id="escondedor">Ocultar/mostrar</button>
-           <br><br>
+        <br>
+              
+        <h2> ID:</h2>
+        <usuario id="IDConta">Desconectado</usuario>
+        
+        <br>
+        
+        <button 
+            class="btnDeslogar" 
+            onclick="sair()" > 
+            DESLOGAR 
+        </button>
            
-           <h4>SALDO:</h4>
-           <saldo id="saldoConta">0,00</saldo>
-           <button class="btnReload" onclick="btnReload()">
-           <img            
-           src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pngwing.com.png?v=1651355832699"
-           height="45px" /> 
-           </button>
+        <br>
+              
+        <h3> SENHA:</h3>
+        <senha 
+               class="esconder" 
+               id="senhaConta">Server Timeout 501-401</senha>
+        <br>
+        <button class="btn-esconder" id="escondedor">Ocultar/mostrar</button>
+              
+        <br>
+           
+        <h4>SALDO:</h4>
+        <saldo id="saldoConta">0,00</saldo>
+        <button hidden class="btnReload" onclick="btnReload()">
+        
+          
+        <img            
+          src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pngwing.com.png?v=1651355832699"
+          height="35px" /> 
+        </button>
+        </list>
+       
         
           <a 
           class="btndc btn"
