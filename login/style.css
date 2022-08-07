@@ -124,8 +124,8 @@ teladelogin{
   border-radius: 25px;
   z-index: 2;
         }
-.input-float{
-      width: 100%;
+.input-float-login{
+      width: 45%;
       padding: 5px 5px;
       display: inline-block;
       border: 0;
@@ -149,17 +149,17 @@ label-float label{
      cursor: none;
      transition: all .3s ease-out;
 }
-.input-float:focus{
-     border-bottom: 3px solid lightblue;
+.input-float-login:focus{
+     border-bottom: 3px solid orange;
      font-size: 13px;
      margin-top: 0;
      color: blue;
      border-bottom: 2px solid #4038a0;
     font-size: 13px;
     margin-top: 0;
-    color: #4038a0
+    color: green
 }
-.input-foat:valid{
+.input-foat-login:valid{
   font-size: 13px;
   margin-top: 0;
   color: #4038a0
