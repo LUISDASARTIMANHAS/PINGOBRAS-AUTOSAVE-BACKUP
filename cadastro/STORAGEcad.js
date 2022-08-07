@@ -1,4 +1,4 @@
-const loopcad = setInterval(storagecad, 15000);
+const loopcad = setInterval(storagecad, 5000);
 function storagecad() {
   let storage = localStorage.getItem('listaUser')
   console.log(storage)
@@ -10,8 +10,9 @@ function storagecad() {
    let refreshcad = JSON.stringify(listacad)
    localStorage.setItem( 'listaUser',refreshcad);
    }else{
-   let storageadd = storage.push[{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1.00},
+   let StorageObj = storage.push[{nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1.00},
                    {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 5.00}]
-   localStorage.setItem( 'listaUser',storageadd); }
+   let StorageAdd = JSON.stringify(StorageObj)
+   localStorage.setItem( 'listaUser',StorageAdd); }
   
   }
