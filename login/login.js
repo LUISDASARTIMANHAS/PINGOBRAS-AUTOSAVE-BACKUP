@@ -23,7 +23,8 @@ function autenticar(){
   let userValid = {
     nome: '',
     user: '',
-    senha: ''
+    senha: '',
+    saldo: ''
   }
   
   listaUser = JSON.parse(localStorage.getItem('listaUser'))
@@ -34,7 +35,8 @@ function autenticar(){
       userValid = {
          nome: item.nomeCad,
          user: item.userCad,
-         senha: item.senhaCad
+         senha: item.senhaCad,
+         saldo: item.saldoCad
        }
       
     }

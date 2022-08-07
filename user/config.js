@@ -5,8 +5,9 @@ let inputColor = document.querySelector('#colorTema');
 let userConta = document.getElementById("userConta") 
 let nomeConta = document.getElementById("nomeConta")
 let senhaConta = document.getElementById("senhaConta") 
-let SaldoConta = document.getElementById("saldoConta") 
+let saldoConta = document.getElementById("saldoConta") 
 let IDConta = document.getElementById("IDConta")
+let Logado = JSON.parse(localStorage.getItem('userLogado'))
 
 if(userbg == "null") {
   body.style.background = "white"
@@ -25,6 +26,8 @@ function sair(){
   window.location.href = 'https://pingobras.glitch.me'
   alert("Usuario Desconectado!")
 }
-
-userConta.innerHTML = localStorage.getItem('userLogado').nome
+nomeConta.innerHTML = Logado.nome
+userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
+senhaConta.innerHTML = Logado.senha
+saldoConta.innerHTML = Logado.saldo
