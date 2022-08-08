@@ -1,3 +1,4 @@
+//usado para bloquear as paginas somente para admins
 const loopToken = setInterval(refreshDesconect, 5000);
 
 function refreshDesconect() {
