@@ -22,7 +22,10 @@ function storagecad() {
   
 }
 
-
+const d = new Date();
+  d.setTime(d.getTime() + (1400));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = "RefreshUniv" + "=" + "Nao reccaregar" + ";" + expires + ";path=/";
 
 let UNIVERSALACCOUNT = JSON.parse(localStorage.getItem('listaUser') || '[]')
 UNIVERSALACCOUNT.push(
