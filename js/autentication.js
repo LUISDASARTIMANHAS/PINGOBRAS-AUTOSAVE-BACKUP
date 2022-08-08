@@ -1,3 +1,18 @@
+let tokenjson = localStorage.getItem("JsonToken");
+let tokenR = JSON.parse(tokenjson);
+console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR.token);
+
+if(tokenR.token != "desconectado") {
+  let status = "Status: Conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: green')
+}else{
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+  admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')
+}
 
 function autentication() {
 let authToken = localStorage.getItem("JsonToken");

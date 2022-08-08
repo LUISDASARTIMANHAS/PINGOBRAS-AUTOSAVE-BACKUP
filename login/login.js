@@ -51,54 +51,38 @@ function autenticar(){
       
     }
   })
-     
+  if(usuario.value == "equipe" && senha.value == "administrador"){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
+  
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+    
+    
+    const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
+    const bypasstoken = JSON.stringify(bypasstokenJS);
+    localStorage.setItem("bypass",bypasstoken)
+    console.log("LOGIN> bypass setado!")
+    window.location.href = "https://pingobras.glitch.me/admin"
+  
+    
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
+  }   
+  
 if(usuario.value == userValid.user && senha.value == userValid.senha){
     setTimeout(wait,7000);
     function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
     
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
-    
-    localStorage.setItem('token', token)
-    localStorage.setItem('userLogado', JSON.stringify(userValid))
-      
-    msgError.setAttribute('style', 'display: none')
-    msgSuccess.innerHTML = 'Validando acesso...'
-    msgSuccess.setAttribute('style', 'display: block')
-}else{if(usuario.value == "equipe" && senha.value == "administrador"){
-    setTimeout(wait,7000);
-    function wait() {window.location.href = 'https://pingobras.glitch.me/admin'}
-    
-    let mathRandom = Math.random().toString(16).substr(2)
-    let token = mathRandom + mathRandom
-    
-    let  JsonKeys = localStorage.getItem("JsonKeys");
-let key = JSON.parse(JsonKeys);
-
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
-console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR.token);
-let storageToken = {token: mathRandom};
-    const Cryptotoken = JSON.stringify(storageToken);
-     console.log("AUTENTICATION/LOG> ⚠️Setando codificação do token...");
-     localStorage.setItem("JsonToken", Cryptotoken);
-     console.log("AUTENTICATION/LOG> ⚠️Token setado");
-    const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
-    const bypasstoken = JSON.stringify(bypasstokenJS);
-    localStorage.setItem("bypass",bypasstoken)
-  
-if(tokenR.token != "desconectado") {
-  let status = "Status: Conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: green')
-}else{
-  const status = "Status: Não conectado"
-  const admstatus = document.getElementById("adminStatus");
- admstatus.innerHTML = status;
-  admstatus.setAttribute('style', 'color: red')
-}
-
     
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
@@ -122,5 +106,4 @@ btnVerSenhaL.addEventListener('click', ()=>{
   }else{
     inputVerSenhaL.setAttribute('type', 'password')
     inputVerSenhaL.placeholder = "******"}
-});
-  
+})
