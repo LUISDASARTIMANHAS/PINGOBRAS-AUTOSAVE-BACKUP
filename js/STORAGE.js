@@ -22,9 +22,8 @@ const siteBonus = JSON.stringify(siteBonusJS);
 localStorage.setItem("siteBonus", siteBonus);
 
 let repeattoken = localStorage.getItem("token");
-const repeattoken = JSON.stringify(tokenRefresh);
 console.log("STORAGE/LOG> ⚠️recarregando codificanção do token...");
-localStorage.setItem("JsonToken", repeattoken);
+localStorage.setItem("token", repeattoken);
 console.warn("STORAGE/LOG> token recarregado!");
   
 let bypass = localStorage.getItem("bypass");
