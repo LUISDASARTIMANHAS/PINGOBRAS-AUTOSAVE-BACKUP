@@ -2,16 +2,16 @@ const loopToken = setInterval(refreshDesconect, 5000);
 
 function refreshDesconect() {
 let labelSecurity = document.getElementById("security");
-let tokenjson = localStorage.getItem("JsonToken");
-let tokenR = JSON.parse(tokenjson);
+let tokenR = localStorage.getItem("token");
+console.log("AUTH> token: " + tokenR + " recebido!")
 labelSecurity.innerHTML = "ATIVADA"
   
-if(tokenR.token != "desconectado") {
+if(tokenR != "desconectado") {
 console.log("AUTH/LOG>Usuario conectado!")
 }else {
 alert("⚠️usuario deslogado")
-const tokenSair = {token: "desconectado"};
+const tokenSair ="desconectado";
 const CryptotokenS = JSON.stringify(tokenSair);
-localStorage.setItem("JsonToken", CryptotokenS);
-window.location.href = "https://pingobras.glitch.me"}
+localStorage.setItem("token", CryptotokenS);
+window.location.href = "https://pingobras.glitch.me/login"}
 }

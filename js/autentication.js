@@ -15,7 +15,7 @@ if(tokenR != "desconectado") {
 }
 
 function autentication() {
-let authToken = localStorage.getItem("JsonToken");
+let authToken = localStorage.getItem("token");
 let auth = JSON.parse(authToken);
 let authbypass = localStorage.getItem("bypass");
 let authbypass2 = JSON.parse(authbypass)
@@ -42,7 +42,7 @@ if(authbypass2.bypass == 10101010100) {
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
 }else{
-  if(tokenR.token == "desconectado") {
+  if(tokenR == "desconectado") {
       window.location.href = ("https://pingobras.glitch.me/login")
   }else{
     setTimeout(alert("admin autorizado"),7000)
