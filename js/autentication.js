@@ -29,6 +29,7 @@ if(authbypass2.bypass == 10101010100) {
   const disconectadm = "desconectado";
   localStorage.setItem("token", disconectadm);}
   
+  console.log("Verificando... " + tokenR + "==" + "null")
   if(tokenAuth == "null"){
   const disconectadm = "desconectado";
   localStorage.setItem("token", disconectadm);
@@ -39,11 +40,14 @@ if(authbypass2.bypass == 10101010100) {
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
 }else{
+  console.log("Verificando... " + tokenR + "==" + "desconectado")
   if(tokenR == "desconectado") {
       window.location.href = ("https://pingobras.glitch.me/login")
   }else{
+    console.log("Verificando... " + tokenR + "==" + "conectado")
+    if(tokenR == "conectado"){
     setTimeout(alert("admin autorizado"),7000)
-   window.location.href = ("https://pingobras.glitch.me/admin")
+   window.location.href = ("https://pingobras.glitch.me/admin")}
   }}
   
 }
