@@ -126,16 +126,14 @@ window.location.href = "https://pingobras.glitch.me/films&series.html";
 
 function DESLOGAR() {
   alert("usuario deslogado")
-const tokenSair = {token: "desconectado"};
-const CryptotokenS = JSON.stringify(tokenSair);
-  localStorage.setItem("JsonToken", CryptotokenS);
+const tokenSair = "desconectado";
+  localStorage.setItem("token", tokenSair);
   window.location.href = "https://pingobras.glitch.me"
 }
 function DESLOGAR2() {
-  alert("usuario deslogado")
-const tokenSair = {token: "desconectado"};
-const CryptotokenS = JSON.stringify(tokenSair);
-  localStorage.setItem("JsonToken", CryptotokenS);
+alert("usuario deslogado")
+const tokenSair = "desconectado";
+  localStorage.setItem("token", tokenSair);
   window.location.href = "https://pingobras.glitch.me"
   WindowSongError1.play();
 setInterval(autopauseWindowSongError1, 15000);

@@ -8,7 +8,8 @@ function storagecad() {
    let listacad = [
 {nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1500.90},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 2.00},
-{nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00}
+{nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00},
+{nomeCad: "José Eduardo Batista de Souza", userCad: "", senhaCad: "10062002", saldoCad: 1.50}
    ];
     
    let refreshcad = JSON.stringify(listacad)
