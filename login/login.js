@@ -53,48 +53,44 @@ function autenticar(){
   })
   if(usuario.value == "equipe" && senha.value == "administrador"){
     setTimeout(wait,7000);
-    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
+    function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
   
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
-    
+    console.log("LOGIN> token admin setado!")
     
     const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
     const bypasstoken = JSON.stringify(bypasstokenJS);
     localStorage.setItem("bypass",bypasstoken)
     console.log("LOGIN> bypass setado!")
-    window.location.href = "https://pingobras.glitch.me/admin"
-  
+    
     
     msgError.setAttribute('style', 'display: none')
     msgSuccess.innerHTML = 'Validando acesso...'
     msgSuccess.setAttribute('style', 'display: block')
-}else{
-    msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Usuário ou Senha Incorretos'
-    msgSuccess.setAttribute('style', 'display: none')
-  }   
-  
+}else{   
 if(usuario.value == userValid.user && senha.value == userValid.senha){
     setTimeout(wait,7000);
     function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
     
     let mathRandom = Math.random().toString(16).substr(2)
     let token = mathRandom + mathRandom
-    
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
-      
+    console.log("LOGIN> token User setado!")  
+  
     msgError.setAttribute('style', 'display: none')
     msgSuccess.innerHTML = 'Validando acesso...'
     msgSuccess.setAttribute('style', 'display: block')
 }else{
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
-    msgSuccess.setAttribute('style', 'display: none')
+    msgSuccess.setAttribute('style', 'display: none')}
   }
+  
+  
   
 }
 

@@ -1,8 +1,8 @@
-let tokenjson = localStorage.getItem("JsonToken");
+let tokenjson = localStorage.getItem("token");
 let tokenR = JSON.parse(tokenjson);
-console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR.token);
+console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR);
 
-if(tokenR.token != "desconectado") {
+if(tokenR != "desconectado") {
   let status = "Status: Conectado"
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
@@ -22,20 +22,20 @@ let authbypass2 = JSON.parse(authbypass)
 
 
   if(authbypass2 == null){
-  const authDesconectado = {token: "desconectado"};
+  const authDesconectado = "desconectado";
   const disconectadm = JSON.stringify(authDesconectado);
-  localStorage.setItem("JsonToken", disconectadm);
-window.location.href = ("https://pingobras.glitch.me/autentication.html")}  
+  localStorage.setItem("token", disconectadm);
+window.location.href = ("https://pingobras.glitch.me/login")}  
 if(authbypass2.bypass == 10101010100) {
-  const authDesconectado = {token: "desconectado"};
+  const authDesconectado = "desconectado";
   const disconectadm = JSON.stringify(authDesconectado);
   localStorage.setItem("JsonToken", disconectadm);}
   
   if(auth == null){
-  const authDesconectado = {token: "desconectado"};
+  const authDesconectado = "desconectado";
   const disconectadm = JSON.stringify(authDesconectado);
-  localStorage.setItem("JsonToken", disconectadm);
-  window.location.href = ("https://pingobras.glitch.me")
+  localStorage.setItem("token", disconectadm);
+  window.location.href = ("https://pingobras.glitch.me/login")
   
   const status = "Status: Não conectado"
   const admstatus = document.getElementById("adminStatus");
@@ -43,7 +43,7 @@ if(authbypass2.bypass == 10101010100) {
   admstatus.setAttribute('style', 'color: red')
 }else{
   if(tokenR.token == "desconectado") {
-      window.location.href = ("https://pingobras.glitch.me/autentication.html")
+      window.location.href = ("https://pingobras.glitch.me/login")
   }else{
     setTimeout(alert("admin autorizado"),7000)
    window.location.href = ("https://pingobras.glitch.me/admin")

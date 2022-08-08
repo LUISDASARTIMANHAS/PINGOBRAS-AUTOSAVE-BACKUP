@@ -16,11 +16,6 @@ console.warn("STORAGE/LOG> client adcionou novos itens");
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
 
-const adminKeyJS = {senha: 9645};
-const adminKey = JSON.stringify(adminKeyJS);
-localStorage.setItem("JsonKeys", adminKey);
-
-
   
 const siteBonusJS = {moeda: 2};
 const siteBonus = JSON.stringify(siteBonusJS);
