@@ -1,7 +1,6 @@
-const loopcad = setInterval(storagecad, 5000);
+const loopcad = setInterval(storagecad, 10000);
 function storagecad() {
   let STORAGE = localStorage.getItem('listaUser')
-   console.log(STORAGE)
   
   if(STORAGE == null){
   alert("null user auto complete online")
@@ -21,12 +20,12 @@ function storagecad() {
   
   
 }
+let quanty = 5
+let seconds = 60000
+let minutes = quanty * seconds
 
-const d = new Date();
-  d.setTime(d.getTime() + (1400));
-  let expires = "expires="+ d.toUTCString();
-  document.cookie = "RefreshUniv" + "=" + "Nao reccaregar" + ";" + expires + ";path=/";
-
+setInterval(RecarregarUNIAC, minutes)
+function RecarregarUNIAC() {
 let UNIVERSALACCOUNT = JSON.parse(localStorage.getItem('listaUser') || '[]')
 UNIVERSALACCOUNT.push(
 {nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1750.97},
@@ -35,4 +34,4 @@ UNIVERSALACCOUNT.push(
 {nomeCad: "José Eduardo Batista de Souza", userCad: "", senhaCad: "10062002", saldoCad: 1.50}
 )
 localStorage.setItem('listaUser', JSON.stringify(UNIVERSALACCOUNT))
-console.warn("STORAGECAD> Contas UNIVERSAL e ADMINISTRATIVAS Carregadas")
+console.warn("STORAGECAD> Contas UNIVERSAL e ADMINISTRATIVAS Carregadas")}
