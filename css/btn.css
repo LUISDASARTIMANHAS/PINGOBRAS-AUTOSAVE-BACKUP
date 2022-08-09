@@ -353,6 +353,7 @@
  float:right;
  cursor:pointer;
  margin: 3px;
+ width: auto;
 }
 .btnMostrarSenha:hover{
   opacity: 0.5;
