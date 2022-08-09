@@ -9,12 +9,7 @@ let saldoConta = document.getElementById("saldoConta")
 let IDConta = document.getElementById("IDConta")
 let Logado = JSON.parse(localStorage.getItem('userLogado'))
 
-if(userbg == "null") {
-  body.style.background = "white"
-}else{
-  body.style.background = userbg
-  inputColor.value = userbg
-}
+
 btntema.addEventListener('click', function() {
       body.style.background = inputColor.value;
       localStorage.setItem( 'UserBackground',inputColor.value);
@@ -41,3 +36,10 @@ btnmostrarsenha.addEventListener('click', function() {
       senhaConta.style.display = 'block';
   }
 });
+
+if(userbg == "null") {
+  body.style.background = "white"
+}else{
+  body.style.background = userbg
+  inputColor.value = userbg
+}
