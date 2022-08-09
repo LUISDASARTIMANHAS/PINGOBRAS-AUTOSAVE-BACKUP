@@ -51,7 +51,12 @@ function autenticar(){
       
     }
   })
-  if(usuario.value == "equipe" && senha.value == "administrador"){
+  if(usuario.value == "" && senha.value == "") {
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
+    
+  }else{if(usuario.value == "equipe" && senha.value == "administrador"){
     setTimeout(wait,7000);
     function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
   
@@ -88,7 +93,7 @@ if(usuario.value == userValid.user && senha.value == userValid.senha){
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')}
   }
-  
+       }
   
   
 }
