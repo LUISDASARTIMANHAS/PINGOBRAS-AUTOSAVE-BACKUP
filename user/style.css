@@ -67,7 +67,6 @@ usuario{
   display: inline-block;
    text-align: center;
    font-size: 17pt;
-   color: green;
 }
 senha{
   display: inline-block;
@@ -88,10 +87,6 @@ saldo{
   cursor: pointer;
   color: #0d009c;
   background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pikpng.com%2Fpngl%2Fm%2F166-1666105_eye-png-svg-black-and-white-library-eye.png&imgrefurl=https%3A%2F%2Fwww.pikpng.com%2Fpngvi%2FwJxmxi_eye-png-svg-black-and-white-library-eye-password-png-icon-clipart%2F&tbnid=TuHzRZsi15zwGM&vet=12ahUKEwjl2IPQq6P3AhUaNbkGHYqGD2AQMygKegUIARDbAQ..i&docid=GNrhPpYSbv4ACM&w=840&h=579&q=eye%20password%20icon&hl=pt-BR&safe=active&ved=2ahUKEwjl2IPQq6P3AhUaNbkGHYqGD2AQMygKegUIARDbAQ");
-}
-::selection {
-  background: #87cd33;
-  color: white;
 }
 
 ul {
@@ -228,4 +223,15 @@ gradient{
 .config-conta:hover{
   color: red;
   text-decoration: underline;
+  border-bottom: 3px dashed orange;
+}
+conta{
+  margin-top: auto;
+  display: block;
+  color: black;
+  background: white;
+  border: 5px solid black ;
+  padding: 10px;
+  width: auto;
+  cursor: help;
 }

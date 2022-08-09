@@ -27,7 +27,7 @@
 }
 .list payment{
   display: inline-block;
-  color: red; 
+  color: green; 
 }
 .list-changelogs{
   display: block;
