@@ -221,3 +221,11 @@ gradient{
   padding: 0px;
   margin: 0px;
 }
+.config-conta{
+  color: black;
+  display:block;
+}
+.config-conta:hover{
+  color: red;
+  text-decoration: underline;
+}
