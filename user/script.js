@@ -39,12 +39,4 @@ fsEnter.addEventListener('click', function (e) {
     }
 });
 
-let btnescondedor = document.getElementById('escondedor');
-var esconder = document.querySelector('.esconder');
-btnescondedor.addEventListener('click', function() {
-    if(esconder.style.display === 'block') {
-      esconder.style.display = 'none';
-  } else {
-      esconder.style.display = 'block';
-  }
-});
+

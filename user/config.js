@@ -31,3 +31,13 @@ userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
 senhaConta.innerHTML = Logado.senha
 saldoConta.innerHTML = Logado.saldo
+
+let btnmostrarsenha = document.getElementById('mostrarsenha');
+
+btnmostrarsenha.addEventListener('click', function() {
+    if(senhaConta.style.display === 'block') {
+      senhaConta.style.display = 'none';
+  } else {
+      senhaConta.style.display = 'block';
+  }
+});
