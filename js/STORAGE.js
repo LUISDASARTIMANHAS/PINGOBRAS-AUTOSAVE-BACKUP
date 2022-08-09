@@ -4,7 +4,6 @@ function refreshStorage() {
 let client = JSON.parse(localStorage.getItem('client') || '[]')
 console.warn("STORAGE/LOG> client pegou dados de client antigo!");
 client.push({
-      luis: {name: "luis das artimanhas",saldo: 3.50},
         lukinhas: {name: "lukinhas",saldo:3.50},
         douglas: {name: "douglasPG",saldo: 13.00},
         valdo: {name: "valdo9645",saldo: -3.00},
@@ -25,6 +24,11 @@ let repeattoken = localStorage.getItem("token");
 console.log("STORAGE/LOG> ⚠️recarregando codificanção do token...");
 localStorage.setItem("token", repeattoken);
 console.warn("STORAGE/LOG> token recarregado!");
+  
+let repeatADMtoken = localStorage.getItem("ADMtoken");
+console.log("STORAGE/LOG> ⚠️recarregando codificanção do ADMtoken...");
+localStorage.setItem("ADMtoken", repeatADMtoken);
+console.warn("STORAGE/LOG> ADMtoken recarregado!");  
   
 let bypass = localStorage.getItem("bypass");
 let bypassRefresh = JSON.parse(bypass);  

@@ -60,8 +60,8 @@ function autenticar(){
     setTimeout(wait,7000);
     function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
   
-    let token = "conectado"
-    localStorage.setItem('token', token)
+    let ADMtoken = "conectado"
+    localStorage.setItem('ADMtoken', ADMtoken)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
     console.log("LOGIN> token admin setado!")
     

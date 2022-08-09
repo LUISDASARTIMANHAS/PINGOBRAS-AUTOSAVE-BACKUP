@@ -1,4 +1,4 @@
-let tokenR = localStorage.getItem("token");
+let tokenR = localStorage.getItem("ADMtoken");
 
 console.log("AUTENTICATION/LOG> ⚠️Token recebido:" + tokenR);
 
@@ -15,24 +15,24 @@ if(tokenR == "conectado") {
 }
 
 function autentication() {
-let tokenAuth = localStorage.getItem("token");
+let tokenAuth = localStorage.getItem("ADMtoken");
 let authbypass = localStorage.getItem("bypass");
 let authbypass2 = JSON.parse(authbypass)
 
 
   if(authbypass2 == "null"){
   const disconectadm = "desconectado";
-  localStorage.setItem("token", disconectadm);
+  localStorage.setItem("ADMtoken", disconectadm);
 window.location.href = ("https://pingobras.glitch.me/login")}
   
 if(authbypass2.bypass == 10101010100) {
   const disconectadm = "desconectado";
-  localStorage.setItem("token", disconectadm);}
+  localStorage.setItem("ADMtoken", disconectadm);}
   
   console.log("Verificando... " + tokenR + "==" + "null")
   if(tokenAuth == "null"){
   const disconectadm = "desconectado";
-  localStorage.setItem("token", disconectadm);
+  localStorage.setItem("ADMtoken", disconectadm);
   window.location.href = ("https://pingobras.glitch.me/login")
   
   const status = "Status: Não conectado"
