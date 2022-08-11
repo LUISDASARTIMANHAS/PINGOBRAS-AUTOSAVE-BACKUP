@@ -1,64 +1,273 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    
-  </head>
-  <body>
-    
-    <tr class="warning" 
-        style="height: 130px;">
-      <th rowspan="2" 
-          class="texto-centralizado">
-        Disciplina
-      </th>
-      <th colspan="2" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim ajuste-boletim">
-          1º TRIMESTRE
-        </div>
-      </th>
-      <th colspan="2" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim ajuste-boletim">
-          2º TRIMESTRE
-        </div>
-      </th>
-      <th colspan="2" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim ajuste-boletim">
-          3º TRIMESTRE
-        </div>
-      </th>
-      <th colspan="2" 
-               class="texto-esquerda">
-      <div class="texto-vertical-boletim ajuste-boletim">
-        RECUPERAÇÃO
-        <br>
-        FINAL
-        </div>
-      </th>
-      <th colspan="1" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim">
-          MÉDIA FINAL
-        </div>
-      </th>
-      <th colspan="1" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim">
-          FREQ. (%)
-        </div>
-      </th>
-      <th colspan="1" 
-          class="texto-esquerda">
-        <div class="texto-vertical-boletim">
-          RESULTADO FINAL
-        </div>
-      </th>
-    </tr>
-    
-    
-  </body>
-  <link rel="stylesheet" href="https://segespais.caedufjf.net/seges/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://segespais.caedufjf.net/seges/bootstrap/css/bootstrap.min.css" />
-  
-</html>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+<title>SEGES</title>
+<link class="component" href="/seges/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__.faces" rel="stylesheet" type="text/css"><link class="component" href="/seges/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__.faces" rel="stylesheet" type="text/css"><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/seges/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript.faces" type="text/javascript"></script><script src="/seges/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.PrototypeScript.faces" type="text/javascript"></script><script src="/seges/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/utils.js.faces" type="text/javascript"></script><script src="/seges/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/browser_info.js.faces" type="text/javascript"></script><script src="/seges/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/modalPanel.js.faces" type="text/javascript"></script><script src="/seges/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/modalPanelBorders.js.faces" type="text/javascript"></script><link class="component" href="/seges/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/modalPanel.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__.faces" rel="stylesheet" type="text/css"><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="/seges/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/skinning.js.faces" type="text/javascript"></script><link rel="shortcut icon" type="image/x-icon" href="/seges/imagens/faviconEspiritoSanto.ico">
+<!-- Mobile viewport optimisation -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="/seges/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/seges/css/fixBootstrap.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<link href="/seges/css/personalizadoEspiritoSanto.css" rel="stylesheet" type="text/css">
+	<link href="/seges/css/formBootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/seges/css/form_censo.css" rel="stylesheet" type="text/css">
+	<link href="/seges/css/estiloBiblioteca.css" rel="stylesheet" type="text/css">
+<link href="/seges/css/richfaces.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/seges/js/js.js"></script>
+<script type="text/javascript" src="/seges/js/formatacao.js"></script>
+<script type="text/javascript" src="/seges/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/seges/js/jquery.meio.mask-1.1.14.min.js"></script>
+<script type="text/javascript" src="/seges/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="/seges/bootstrap/js/boostrap.custom.min.js"></script>
+<script type="text/javascript" src="/seges/js/pnotify-3.0.0/pnotify.custom.min.js"></script>
+<link href="/seges/js/pnotify-3.0.0/pnotify.custom.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/seges/js/ptags-1.1.2/jquery.ptags.min.js"></script>
+<link href="/seges/js/ptags-1.1.2/jquery.ptags.default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/seges/colorbox/jquery.colorbox-min.js"></script>
+<link href="/seges/colorbox/colorbox.css" rel="stylesheet" type="text/css" media="screen">
+
+<script type="text/javascript" src="/seges/js/bootstrap-wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<script type="text/javascript" src="/seges/js/bootstrap-wysihtml5/bootstrap-wysihtml5.min.js"></script>
+<script type="text/javascript" src="/seges/js/bootstrap-wysihtml5/bootstrap-wysihtml5.pt-BR.js"></script>
+<link href="/seges/js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css">
+<link href="/seges/js/bootstrap-wysihtml5/wysiwyg-color.css" rel="stylesheet" type="text/css">
+
+
+
+<link href="/seges/css/jquery-ui-1.10.2.custom/css/smoothness/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css">
+<link href="/seges/css/icones/cus-icons.css" rel="stylesheet" type="text/css">
+	<link href="/seges/css/textAreaUpperCase.css" rel="stylesheet" type="text/css">
+	<link href="/seges/css/componentsUpperCase.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+		var raizAplicacao = "/seges";
+	</script>
+<script type="text/javascript" src="/seges/js/sislame.js"></script>
+<link href="/seges/css/chosen.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/seges/js/chosen.jquery.js"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-111186191-1"></script>
+	<script type="text/javascript">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-111186191-1');
+
+		myLoad();
+        window.onload = myLoad;
+	</script>
+</head>
+	<body>
+		<header>
+	<div class="container"><span id="regionInstituicao:status"><span id="regionInstituicao:status.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('regionInstituicao:status.start').onstart=function(){document.getElementById('panelStatus').component.show();;};
+</script><span id="regionInstituicao:status.stop"></span><script type="text/javascript">
+window.document.getElementById('regionInstituicao:status.stop').onstop=function(){document.getElementById('panelStatus').component.hide();;};
+</script></span>
+<form id="formInstituicao" name="formInstituicao" method="post" action="/seges/novo/acessoPais/telaAcessoPais.faces" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formInstituicao" value="formInstituicao">
+
+				<div class="row-fluid">
+					<div class="span4"><div class="nomeEscola"><span class="usuario">CEEFMTI CONDE DE LINHARES</span></div>
+					</div>
+					<div class="span4"><div id="formInstituicao:botoes" class="row-fluid box texto-centralizado btn-group" style="padding: 2px 0 0 0;"></div>
+					</div>
+					<div class="span2">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td><img alt="" class="rich-spacer " height="22" id="formInstituicao:j_id21" src="/seges/a4j/g/3_3_3.Finalimages/spacer.gif.faces" width="140">
+								</td>
+								<td valign="middle" align="center">
+									<div id="info0800"></div>
+								</td>
+								<td><img alt="" class="rich-spacer " height="22" id="formInstituicao:j_id23" src="/seges/a4j/g/3_3_3.Finalimages/spacer.gif.faces" width="10">
+								</td>
+								<td>
+									<a href="http://www.chat.caed.ufjf.br/chatUserIndex.php?projeto=16" target="_blank" tabindex="0">
+										<div id="infoChat"></div>
+									</a>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+					<div style="float: right; padding-top: 3px;">
+					</div>
+				</div>
+					<div class="row-fluid">
+						<div class="span12 texto-direita">
+							<div class="dropdown menu-alteracao-usuario">
+								<a class="btn dropdown-toggle" data-toggle="dropdown" href="#" tabindex="0">
+									<i class="cus-user-suit"></i><span style="padding-left: 5px;">ELISANGELA DE SOUZA CARVALHO MOURA</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu texto-esquerda" id="menuAlteracaoUsuario" role="menu" aria-labelledby="dLabel">
+									<li><a href="#" id="formInstituicao:menuAlterarMeusDados" name="formInstituicao:menuAlterarMeusDados" onclick="A4J.AJAX.Submit('formInstituicao',event,{'similarityGroupingId':'formInstituicao:menuAlterarMeusDados','parameters':{'formInstituicao:menuAlterarMeusDados':'formInstituicao:menuAlterarMeusDados'} ,'containerId':'regionInstituicao'} );return false;" tabindex="0">
+											<i class="cus-application-edit"></i> Alterar meus dados</a>
+									</li>
+									<li><a href="#" id="formInstituicao:menuAlterarMinhaSenha" name="formInstituicao:menuAlterarMinhaSenha" onclick="A4J.AJAX.Submit('formInstituicao',event,{'similarityGroupingId':'formInstituicao:menuAlterarMinhaSenha','parameters':{'formInstituicao:menuAlterarMinhaSenha':'formInstituicao:menuAlterarMinhaSenha'} ,'containerId':'regionInstituicao'} );return false;" tabindex="0">
+											<i class="cus-lock-edit"></i> Alterar minha senha</a>
+									</li>
+										<li><a href="#" id="formInstituicao:menuTrocarPerifl" name="formInstituicao:menuTrocarPerifl" onclick="A4J.AJAX.Submit('formInstituicao',event,{'similarityGroupingId':'formInstituicao:menuTrocarPerifl','parameters':{'formInstituicao:menuTrocarPerifl':'formInstituicao:menuTrocarPerifl'} ,'containerId':'regionInstituicao'} );return false;" tabindex="0">
+												<i class="cus-group-go"></i> Trocar perfil</a>
+										</li>
+									<li><a href="#" id="formInstituicao:manuSair" name="formInstituicao:manuSair" onclick="A4J.AJAX.Submit('formInstituicao',event,{'similarityGroupingId':'formInstituicao:manuSair','parameters':{'formInstituicao:manuSair':'formInstituicao:manuSair'} ,'containerId':'regionInstituicao'} );return false;" tabindex="0">
+											<i class="cus-cancel"></i> Sair</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id4" autocomplete="off">
+</form>
+	</div> </header>
+		<div id="main" class="container">
+<form id="formulario" name="formulario" method="post" action="/seges/novo/acessoPais/telaAcessoPais.faces" enctype="application/x-www-form-urlencoded" style="margin-bottom:17px;">
+<input type="hidden" name="formulario" value="formulario">
+
+		<div class="caixaDados">
+			<h1>Boletim</h1>
+			<div class="box">
+				<fieldset class="box">
+					<legend>Aluno</legend>
+					<div class="row-fluid">
+						<div class="span8">
+							<label for="nome">Nome</label><input id="formulario:nome" type="text" name="formulario:nome" value="LUIS AUGUSTO DE SOUZA CARVALHO" class="input-block-level" disabled="disabled">
+						</div>
+						<div class="span2">
+							<label for="dtNascimento">Data de nascimento</label><input id="formulario:dtNascimento" type="text" name="formulario:dtNascimento" value="11/10/2004" class="rich-calendario input-block-level hasDatepicker" disabled=""><img class="ui-datepicker-trigger" src="/seges/imagens/icones/calendario.png" alt="Calendário" title="Calendário" style="opacity: 0.5; cursor: default;">
+		<script>$j("[id='formulario:dtNascimento']").datepicker(); 
+		        $j("[id='formulario:dtNascimento']").setMask("date"); 
+		        $j("[id='formulario:dtNascimento']").datepicker("disable");</script>
+						</div>
+						<div class="span2">
+							<label for="codMatricula">Matrícula</label><input id="formulario:codMatricula" type="text" name="formulario:codMatricula" value="05301921" class="input-block-level" disabled="disabled">
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8">
+							<label for="nivel">Ano/Série/Módulo/Etapa</label><input id="formulario:nivel" type="text" name="formulario:nivel" value="ENSINO MÉDIO - 3ª SÉRIE" class="input-block-level" disabled="disabled">
+						</div>
+						<div class="span4">
+							<label for="status">Status da matrícula</label><input id="formulario:status" type="text" name="formulario:status" value="Em curso" class="input-block-level" disabled="disabled">
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span6">
+							<label for="turma">Turma</label><input id="formulario:turma" type="text" name="formulario:turma" value="3ªI02-EM" class="input-block-level" disabled="disabled">
+						</div>
+						<div class="span5">
+							<label for="nivel">Turno</label><input id="formulario:turno" type="text" name="formulario:turno" value="INTEGRAL" class="input-block-level" disabled="disabled">
+						</div>
+						<div class="span1">
+							<label for="numero">Número</label><input id="formulario:numero" type="text" name="formulario:numero" value="15" class="input-block-level" disabled="disabled">
+						</div>
+					</div>
+				</fieldset>
+				<div class="row-fluid mg-inf"><div id="formulario:botoes" class="span12 texto-centralizado btn-group"><a class="btn  " href="#" id="formulario:verBoletim" name="formulario:verBoletim" onclick="A4J.AJAX.Submit('formulario',event,{'oncomplete':function(request,event,data){},'similarityGroupingId':'formulario:verBoletim','parameters':{'formulario:verBoletim':'formulario:verBoletim'} ,'containerId':'regionConteudo'} );return false;" tabindex="0">
+						<i class="cus-table"></i> Visualizar Boletim</a><a class="btn  " href="#" id="formulario:imprimirBoletim" name="formulario:imprimirBoletim" onclick="A4J.AJAX.Submit('formulario',event,{'oncomplete':function(request,event,data){},'similarityGroupingId':'formulario:imprimirBoletim','parameters':{'formulario:imprimirBoletim':'formulario:imprimirBoletim'} ,'containerId':'regionConteudo'} );return false;" tabindex="0">
+						<i class="cus-printer"></i> Imprimir Boletim</a><a class="btn  " href="#" id="formulario:fechar" name="formulario:fechar" onclick="A4J.AJAX.Submit('formulario',event,{'oncomplete':function(request,event,data){},'similarityGroupingId':'formulario:fechar','parameters':{'formulario:fechar':'formulario:fechar'} ,'containerId':'regionConteudo'} );return false;" tabindex="0">
+						<i class="cus-door"></i> Fechar</a></div>
+				</div><div xmlns="http://www.w3.org/1999/xhtml" id="formulario:tabelaResultados" class="row-fluid"><div class="span12"><table class="table table-condensed table-striped table-bordered table-hover" style="table-layout: fixed; background-color: #ffffff;"><colgroup><col width="100%"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"><col width="50px"></colgroup><thead><tr class="warning" style="height: 130px;"><th rowspan="2" class="texto-centralizado">Disciplina</th><th colspan="2" class="texto-esquerda"><div class="texto-vertical-boletim ajuste-boletim">1º TRIMESTRE</div></th><th colspan="2" class="texto-esquerda"><div class="texto-vertical-boletim ajuste-boletim">2º TRIMESTRE</div></th><th colspan="2" class="texto-esquerda"><div class="texto-vertical-boletim ajuste-boletim">3º TRIMESTRE</div></th><th colspan="2" class="texto-esquerda"><div class="texto-vertical-boletim ajuste-boletim">RECUPERAÇÃO<br>FINAL</div></th><th colspan="1" class="texto-esquerda"><div class="texto-vertical-boletim">MÉDIA FINAL</div></th><th colspan="1" class="texto-esquerda"><div class="texto-vertical-boletim">FREQ. (%)</div></th><th colspan="1" class="texto-esquerda"><div class="texto-vertical-boletim">RESULTADO FINAL</div></th></tr><tr class="warning cabecalhoCentralizado"><th style="width: 50px;">Faltas</th><th style="width: 50px;">Nota</th><th style="width: 50px;">Faltas</th><th style="width: 50px;">Nota</th><th style="width: 50px;">Faltas</th><th style="width: 50px;">Nota</th><th style="width: 50px;">Faltas</th><th style="width: 50px;">Nota</th><th style="width: 50px;">Nota</th><th style="width: 50px;"></th><th style="width: 50px;">Nota</th></tr></thead><tbody><tr><td>LÍNGUA PORTUGUESA</td><td class="texto-direita">1</td><td class="texto-direita">21</td><td class="texto-direita">2</td><td class="texto-direita">13</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">34</td><td class="texto-direita">98.8</td><td class="texto-direita">-</td></tr><tr><td>LÍNGUA INGLESA</td><td class="texto-direita">0</td><td class="texto-direita">21</td><td class="texto-direita">0</td><td class="texto-direita">7</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">28</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>ARTE</td><td class="texto-direita">0</td><td class="texto-direita">19</td><td class="texto-direita">0</td><td class="texto-direita">23</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">42</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>EDUCAÇÃO FÍSICA</td><td class="texto-direita">0</td><td class="texto-direita">21</td><td class="texto-direita">1</td><td class="texto-direita">11</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">32</td><td class="texto-direita">98.8</td><td class="texto-direita">-</td></tr><tr><td>FÍSICA</td><td class="texto-direita">0</td><td class="texto-direita">27</td><td class="texto-direita">0</td><td class="texto-direita">17</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">44</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>QUÍMICA</td><td class="texto-direita">1</td><td class="texto-direita">24</td><td class="texto-direita">0</td><td class="texto-direita">17</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">41</td><td class="texto-direita">98.8</td><td class="texto-direita">-</td></tr><tr><td>BIOLOGIA</td><td class="texto-direita">0</td><td class="texto-direita">20</td><td class="texto-direita">0</td><td class="texto-direita">10</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">30</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>MATEMÁTICA</td><td class="texto-direita">1</td><td class="texto-direita">25</td><td class="texto-direita">0</td><td class="texto-direita">18</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">43</td><td class="texto-direita">99.5</td><td class="texto-direita">-</td></tr><tr><td>HISTÓRIA</td><td class="texto-direita">0</td><td class="texto-direita">24</td><td class="texto-direita">0</td><td class="texto-direita">22</td><td class="texto-direita">0</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">46</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>GEOGRAFIA</td><td class="texto-direita">1</td><td class="texto-direita">26</td><td class="texto-direita">0</td><td class="texto-direita">12</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">38</td><td class="texto-direita">99.2</td><td class="texto-direita">-</td></tr><tr><td>SOCIOLOGIA</td><td class="texto-direita">0</td><td class="texto-direita">26</td><td class="texto-direita">0</td><td class="texto-direita">12</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">38</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>FILOSOFIA</td><td class="texto-direita">0</td><td class="texto-direita">21</td><td class="texto-direita">0</td><td class="texto-direita">24</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">45</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>LÍNGUA ESPANHOLA</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>ATIVIDADE DE PESQUISA</td><td class="texto-direita">DISP</td><td class="texto-direita">DISP</td><td class="texto-direita">DISP</td><td class="texto-direita">DISP</td><td class="texto-direita">DISP</td><td class="texto-direita">DISP</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">DISP</td><td class="texto-direita">-</td><td class="texto-direita">-</td></tr><tr><td>ESTUDO ORIENTADO</td><td class="texto-direita">1</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">98.8</td><td class="texto-direita">-</td></tr><tr><td>ELETIVAS</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>PRÁTICAS EXPERIMENTAIS DE FÍSICA</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">1</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">97.5</td><td class="texto-direita">-</td></tr><tr><td>PRÁTICAS EXPERIMENTAIS DE QUÍMICA</td><td class="texto-direita">1</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">97.5</td><td class="texto-direita">-</td></tr><tr><td>PRÁTICAS EXPERIMENTAIS DE MATEMÁTICA</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>PRÁTICAS EXPERIMENTAIS DE BIOLOGIA</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">1</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">97.5</td><td class="texto-direita">-</td></tr><tr><td>PROTAGONISMO/CLUBE</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">0</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">100.0</td><td class="texto-direita">-</td></tr><tr><td>PROJETO DE VIDA</td><td class="texto-direita">0</td><td class="texto-direita">C</td><td class="texto-direita">2</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">C</td><td class="texto-direita">97.5</td><td class="texto-direita">-</td></tr><tr><td>TOTAL DE FALTAS</td><td class="texto-direita">6</td><td class="texto-direita">-</td><td class="texto-direita">7</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td><td class="texto-direita">-</td></tr></tbody></table></div></div>
+			</div>
+		</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id4" autocomplete="off">
+</form>
+			<div style="display: none;">
+			</div><div id="panelStatus" style="display: none;"><input autocomplete="off" id="panelStatusOpenedState" name="panelStatusOpenedState" type="hidden"><script type="text/javascript"></script><div class="rich-modalpanel " id="panelStatusContainer" style="position: absolute; z-index: 9999; background-color: inherit; display: none;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="panelStatusDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="panelStatusFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="panelStatusCDiv" style="position: absolute; left: 581px; top: 257px; z-index: 9;"><div class="rich-mpnl-shadow" id="panelStatusShadowDiv" style="width: 204px; height: 104px;"></div><div class="rich-mpnl-ovf-hd rich-mpnl-trim rich-mpnl-content" id="panelStatusContentDiv" style="width: 200px; height: 100px;"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="panelStatusContentTable" style="height: 100%; width: 100%;"><tbody><tr style="height: 99%"><td class="rich-mpnl-body" valign="top">
+		<div style="margin-left:35px; margin-top:20px;"><span class="textoProcessando">Processando...</span>
+			<img src="/seges/imagens/loading.gif">
+		</div></td></tr></tbody></table></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="panelStatusCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="panelStatusLastHref"></button></div><script type="text/javascript">new ModalPanel('panelStatus',
+				{
+					width: 200,
+					height: 100,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: false,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 9999,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div></div><span id="regionConteudo:status"><span id="regionConteudo:status.start" style="display: none;"></span><script type="text/javascript">
+window.document.getElementById('regionConteudo:status.start').onstart=function(){document.getElementById('panelStatus').component.show();;};
+</script><span id="regionConteudo:status.stop" style=""></span><script type="text/javascript">
+window.document.getElementById('regionConteudo:status.stop').onstop=function(){document.getElementById('panelStatus').component.hide();;};
+</script></span>
+		</div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+<form id="formFilaMensagens" name="formFilaMensagens" method="post" action="/seges/novo/acessoPais/telaAcessoPais.faces" enctype="application/x-www-form-urlencoded" style="display:none;">
+<input type="hidden" name="formFilaMensagens" value="formFilaMensagens">
+<span xmlns="http://www.w3.org/1999/xhtml" id="formFilaMensagens:panelFilaMensagens"><script type="text/javascript">//<![CDATA[
+                                        mensagensInfo  = ""; 
+                                        mensagensWarn  = ""; 
+                                        mensagensError = ""; 
+                                        mensagensWarnModal = ""; 
+                                        mostrarMensagens(mensagensInfo, mensagensWarn, mensagensError, mensagensWarnModal);
+                                //]]>
+</script> <script type="text/javascript">//<![CDATA[
+                                
+//]]>
+</script> <script type="text/javascript">//<![CDATA[
+                                        $j(document).ready(function() {
+                                                
+                                                $j('[data-toggle="tooltip"]').tooltip();
+                                                $j('[data-toggle="popover"]').popover();
+                                                $j('input[type="text"]').setMask();
+                                                montarTodosChosen();
+                                        });
+                        //]]>
+</script></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id4" autocomplete="off">
+</form>
+	<span id="_viewRoot:status"><span id="_viewRoot:status.start" style="display: none"></span><span id="_viewRoot:status.stop"></span></span><div id="panelStatusProgresso" style="display: none;"><input autocomplete="off" id="panelStatusProgressoOpenedState" name="panelStatusProgressoOpenedState" type="hidden"><div class="rich-modalpanel " id="panelStatusProgressoContainer" style="position: absolute; display: none; z-index: 9999; background-color: inherit;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="panelStatusProgressoDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="panelStatusProgressoFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="panelStatusProgressoCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="rich-mpnl-shadow" id="panelStatusProgressoShadowDiv"></div><div class="rich-mpnl-ovf-hd rich-mpnl-trim rich-mpnl-content" id="panelStatusProgressoContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="panelStatusProgressoContentTable" style="height: 100%; width: 100%;"><tbody><tr style="height: 99%"><td class="rich-mpnl-body" valign="top">
+<form id="formPollProgresso" name="formPollProgresso" method="post" action="/seges/novo/acessoPais/telaAcessoPais.faces" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formPollProgresso" value="formPollProgresso">
+<span style="display:none;" id="formPollProgresso:pollProcessandoComProgresso"><script type="text/javascript">
+A4J.AJAX.StopPoll('formPollProgresso:pollProcessandoComProgresso');
+</script></span>
+					<div class="texto-centralizado" style="margin-top:20px;">
+						<p><span id="formPollProgresso:textoProgresso">Processando...</span></p>
+						<div class="progress"><div id="formPollProgresso:barraProcessando" class="bar" style="width:0%;"></div>
+						</div>
+					</div><script id="formPollProgresso:j_id113" type="text/javascript">//<![CDATA[
+		desabilitarPollProgresso=function(){A4J.AJAX.Submit('formPollProgresso',null,{'status':'_viewRoot:status','similarityGroupingId':'formPollProgresso:j_id113','parameters':{'formPollProgresso:j_id113':'formPollProgresso:j_id113'} ,'containerId':'regiaoPollProgresso'} )};
+		//]]></script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id4" autocomplete="off">
+</form></td></tr></tbody></table></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="panelStatusProgressoCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="panelStatusProgressoLastHref"></button></div><script type="text/javascript">new ModalPanel('panelStatusProgresso',
+				{
+					width: 450,
+					height: 110,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: false,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 9999,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><span id="statusComProgresso"><span id="statusComProgresso.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('statusComProgresso.start').onstart=function(){document.getElementById('panelStatusProgresso').component.show(); ligarPoll();;};
+</script><span id="statusComProgresso.stop"></span><script type="text/javascript">
+window.document.getElementById('statusComProgresso.stop').onstop=function(){document.getElementById('panelStatusProgresso').component.hide(); A4J.AJAX.StopPoll('formPollProgresso:pollProcessandoComProgresso'); desabilitarPollProgresso();;};
+</script></span>
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><script xmlns="http://www.w3.org/1999/xhtml">A4J.AJAX._scriptEvaluated=true;</script>
+      </body>
+    </html>
