@@ -1,0 +1,59 @@
+.texto-esquerda {
+    text-align: left !important;
+}
+    tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table-bordered {
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+.caixaDados {
+    font-size: 12px;
+    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+    /* color: #333333; */
+    /* width: 600px; */
+    height: auto;
+    background: #f0f5fa;
+    display: block;
+    /* overflow: hidden; */
+    *overflow: visible;
+    _overflow: visible;
+    border: 1px solid #8cbce0;
+}
+body {
+    margin: 0;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #333333;
+    background-color: #ffffff;
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+injected stylesheet
+html {
+    font-family: sans-serif;
+}
