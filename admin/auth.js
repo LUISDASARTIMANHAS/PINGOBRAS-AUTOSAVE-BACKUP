@@ -7,16 +7,17 @@ let labelSecurity = document.getElementById("security");
 let tokenR = localStorage.getItem("ADMtoken");
 console.log("AUTH> token: " + tokenR + " recebido!")
 labelSecurity.innerHTML = "ATIVADA"
-let body = document.query("body"); 
-  
+let site = document.querySelector(".site-altura"); 
+let
   
 if(tokenR == "conectado") {
 console.log("AUTH/LOG>Usuario conectado!")
 }else {
-alert("⚠️ADMIN deslogado")
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
+  site.style.display = "none";
+  
 const myTimeout = setTimeout(REDIRECIONAR, 10000);  
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 
