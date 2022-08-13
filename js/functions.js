@@ -1,4 +1,5 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
+const alarm = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
 
 function CalcJuros() {
  try {
@@ -75,50 +76,11 @@ function closeForm() {
   console.log("FUNCTIONS/LOG> O chat foi fechado");
 }
 
-let btnlist = document.getElementById('btnlist');
-var listDEV = document.getElementById('listDevedores');
-btnlist.addEventListener('click', function() {
-    if(listDEV.style.display === 'block') {
-      listDEV.style.display = 'none';
-  } else {
-      listDEV.style.display = 'block';
-  }
-});
-btnlist.addEventListener('mouseover', function() {
-listDEV.style.display = 'block';
-})
-
-let btnlistChangelogs = document.getElementById('btnlistChangelogs');
-var listChangelogs = document.getElementById('listChangelogs');
-btnlistChangelogs.addEventListener('click', function() {
-    if(listChangelogs.style.display === 'block') {
-      listChangelogs.style.display = 'none';
-      console.log("FUNCTIONS/LOG> A Changelogs foi escondida!");
-  } else {
-      listChangelogs.style.display = 'block';
-    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");}
-});
-btnlistChangelogs.addEventListener('mouseover', function() {
-listChangelogs.style.display = 'block';
-    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");
-})
-
-
 
 function subir() {
     window.scrollTo(0, 0);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para cima!");
 };
-var Descer = document.querySelector("#jsDescer");
-Descer.addEventListener("click", function() {
-    window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
-});
-var batepapoDescer = document.querySelector("#jsDescerBatePapo");
-batepapoDescer.addEventListener("click", function() {
-    window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");
-});
 
 function pageFilmSerie() {
 window.location.href = "https://pingobras.glitch.me/films&series.html";
@@ -127,20 +89,18 @@ window.location.href = "https://pingobras.glitch.me/films&series.html";
 function DESLOGAR() {
   alert("usuario deslogado")
 const tokenSair = "desconectado";
-  localStorage.setItem("ADMtoken", tokenSair);
-  window.location.href = "https://pingobras.glitch.me"
+localStorage.setItem("ADMtoken", tokenSair);
+alarm.play();
+const myTimeout = setTimeout(REDIRECIONAR, 15000);  
+function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me"}
 }
 function DESLOGAR2() {
 alert("usuario deslogado")
 const tokenSair = "desconectado";
-  localStorage.setItem("ADMtoken", tokenSair);
-  window.location.href = "https://pingobras.glitch.me"
-  
-WindowSongError1.play();
-setInterval(autopauseWindowSongError1, 15000);
-function autopauseWindowSongError1() {
-  WindowSongError1.pause() }
-
+localStorage.setItem("ADMtoken", tokenSair);
+alarm.play();
+const myTimeout = setTimeout(REDIRECIONAR, 15000);  
+function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me"}
 }
 
 
@@ -157,3 +117,43 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }
 
+let btnlist = document.getElementById('btnlist');
+var listDEV = document.getElementById('listDevedores');
+btnlist.addEventListener('click', function() {
+    if(listDEV.style.display === 'block') {
+      listDEV.style.display = 'none';
+  } else {
+      listDEV.style.display = 'block';
+  }
+});
+btnlist.addEventListener('mouseover', function() {
+listDEV.style.display = 'block';
+})
+
+
+//Events listener
+let btnlistChangelogs = document.getElementById('btnlistChangelogs');
+var listChangelogs = document.getElementById('listChangelogs');
+btnlistChangelogs.addEventListener('click', function() {
+    if(listChangelogs.style.display === 'block') {
+      listChangelogs.style.display = 'none';
+      console.log("FUNCTIONS/LOG> A Changelogs foi escondida!");
+  } else {
+      listChangelogs.style.display = 'block';
+    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");}
+});
+btnlistChangelogs.addEventListener('mouseover', function() {
+listChangelogs.style.display = 'block';
+    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");
+})
+
+var Descer = document.querySelector("#jsDescer");
+Descer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
+});
+var batepapoDescer = document.querySelector("#jsDescerBatePapo");
+batepapoDescer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");
+});
