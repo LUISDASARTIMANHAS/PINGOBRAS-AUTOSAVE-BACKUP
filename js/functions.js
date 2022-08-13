@@ -135,7 +135,8 @@ alert("usuario deslogado")
 const tokenSair = "desconectado";
   localStorage.setItem("ADMtoken", tokenSair);
   window.location.href = "https://pingobras.glitch.me"
-  WindowSongError1.play();
+  
+WindowSongError1.play();
 setInterval(autopauseWindowSongError1, 15000);
 function autopauseWindowSongError1() {
   WindowSongError1.pause() }
