@@ -8,7 +8,7 @@ let tokenR = localStorage.getItem("ADMtoken");
 console.log("AUTH> token: " + tokenR + " recebido!")
 labelSecurity.innerHTML = "ATIVADA"
 let site = document.querySelector(".site-altura"); 
-let
+let labelAlarm = document.querySelector("alert");
   
 if(tokenR == "conectado") {
 console.log("AUTH/LOG>Usuario conectado!")
@@ -17,6 +17,7 @@ const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
   site.style.display = "none";
+  labelAlarm.style.display = "block";
   
 const myTimeout = setTimeout(REDIRECIONAR, 10000);  
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
