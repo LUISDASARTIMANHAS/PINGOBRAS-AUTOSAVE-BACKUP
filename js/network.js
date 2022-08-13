@@ -5,12 +5,11 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
             // The size in bytes
-            var min = 5616998
+            var min = 15616998
             var KB = "998"
             var MB = "616"
-            var GB = "30"
+            var GB = "50"
             var Size = GB + MB + KB
-            let downloadSizeLabel = document.getElementById("DownloadSize");
             console.log("TAMANHO DO DOWLOAD" + GB+"." + MB+"." + KB + "GB")
           
             var downloadSize = Size;
@@ -33,12 +32,11 @@ function displaySpeed() {
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
                   
-  /* Converts a number into string
-  using toFixed(2) rounding to 2 */
+  /* Converte um número em string usando toFixed(2) arredondando para 2 */
   var bps = (loadedBits / timeDuration).toFixed(2);
-  var speedInKbps = (bps / 1024).toFixed(2);
-  var speedInMbps = (speedInKbps / 1024).toFixed(2);
-  var speedInGBps = (speedInMbps / 1024).toFixed(2);
+  var speedInKbps = (bps / 1000).toFixed(2);
+  var speedInMbps = (speedInKbps / 1000).toFixed(2);
+  var speedInGBps = (speedInMbps / 1000);
   console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
   const NetworkObj = {Bps: bps, KBps: speedInKbps, MBps: speedInMbps, GBps: speedInGBps}
   const Network = JSON.stringify(NetworkObj);
