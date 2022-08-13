@@ -9,8 +9,11 @@ if(DBuserbg == "null") {
 
 
 if(localStorage.getItem('token') == null){
-  alert('Você precisa estar logado para acessar essa página')
-  window.location.href = '/login'
+const alarmAuto = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
+alert('Você precisa estar logado para acessar essa página')
+alarmAuto.play();
+const myTimeout = setTimeout(REDIRECIONAR, 10000);
+function REDIRECIONAR() {window.location.href = "/login"}
 }
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let logado = document.querySelector('#logado')
