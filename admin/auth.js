@@ -29,6 +29,8 @@ alert("⚠️ADMIN SEM INDENTIFICAÇÃO!")
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
+site.style.display = "none";
+labelAlarm.style.display = "block";
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }else {
