@@ -12,15 +12,13 @@ console.log("AUTH/LOG>Usuario conectado!")
 }else {
 alert("⚠️ADMIN deslogado")
 const tokenSair ="desconectado";
-const CryptotokenS = JSON.stringify(tokenSair);
-localStorage.setItem("token", CryptotokenS);
+localStorage.setItem("ADMtoken", tokenSair);
 window.location.href = "https://pingobras.glitch.me/login"}
   
 if(tokenR == "null") {
-alert("⚠️ADMIN deslogado")
+alert("⚠️ADMIN SEM INDENTIFICAÇÃO!")
 const tokenSair ="desconectado";
-const CryptotokenS = JSON.stringify(tokenSair);
-localStorage.setItem("token", CryptotokenS);
+localStorage.setItem("ADMtoken", tokenSair);
 window.location.href = "https://pingobras.glitch.me/login"
 }else {
   console.log("AUTH/LOG>Usuario conectado!")
