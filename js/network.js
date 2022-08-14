@@ -4,15 +4,12 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
-            // The size in bytes
-            var min = 15616998
-            var KB = "998"
-            var MB = "616"
+            var KB = "024"
+            var MB = "024"
             var GB = "50"
             var Size = GB + MB + KB
-            console.log("TAMANHO DO DOWLOAD" + GB+"." + MB+"." + KB + "GB")
+            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB+"." + KB + "GB")
           
-            var downloadSize = Size;
             var downloadImgSrc = new Image();
           
             downloadImgSrc.onload = function () {
@@ -26,7 +23,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
 function displaySpeed() {
                 
   var timeDuration = (end_time - time_start) / 1000;
-  var loadedBits = downloadSize;
+  var loadedBits = Size;
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + end_time + "ms")
   
   let MBps = document.getElementById("MBps");
@@ -34,9 +31,9 @@ function displaySpeed() {
                   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
   var bps = (loadedBits / timeDuration).toFixed(2);
-  var speedInKbps = (bps / 1000).toFixed(2);
-  var speedInMbps = (speedInKbps / 1000).toFixed(2);
-  var speedInGBps = (speedInMbps / 1000);
+  var speedInKbps = (bps / 1024).toFixed(2);
+  var speedInMbps = (speedInKbps / 1024).toFixed(2);
+  var speedInGBps = (speedInMbps / 1024);
   console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
   const NetworkObj = {Bps: bps, KBps: speedInKbps, MBps: speedInMbps, GBps: speedInGBps}
   const Network = JSON.stringify(NetworkObj);
