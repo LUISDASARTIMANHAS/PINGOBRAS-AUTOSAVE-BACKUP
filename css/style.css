@@ -400,6 +400,20 @@ telacalc{
   opacity: 100%;
   z-index: 1;
 }
+telacarteira{
+  text-align: left;
+  display: block;
+  color: white;
+  background: gray;
+  border: 5px solid black ;
+  padding: 10px 10px;
+  width: 75%;
+  cursor: help;
+  font-size: 18px;
+  margin-left: 20px;
+  opacity: 100%;
+  z-index: 1;
+}
 
 
 .logo-goves, a .logo-goves{
