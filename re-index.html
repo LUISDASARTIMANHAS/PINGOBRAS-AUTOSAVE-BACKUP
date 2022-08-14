@@ -27,9 +27,24 @@
     <script src="js/autentication.js" defer></script>
     <script src="js/calcs.js" defer></script>
     <script src="js/functions.js" defer></script>
-    <script src="mysql.sql" defer></script>
+    <script src="MYSQL.sql" defer></script>
     <script src="js/network.js" defer></script>
     <script src="js/time.js" defer></script>
+  <script type="text/sql">
+  create database aulaBD;
+
+use aulaBD;
+
+create table Tbl_Cliente(
+id_cliente int auto_increment not null primary key,
+nome varchar(30),
+telefone varchar(30),
+debitos double);
+
+insert into Tbl_Cliente (nome, telefone, debitos) VALUES ('Ana','12345678', '90.50');
+
+select*from Tbl_Cliente WHERE nome = 'Ana';
+  </script>
   
 </html>
 
