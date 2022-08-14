@@ -1,5 +1,9 @@
 let DBuserbg = localStorage.getItem('UserBackground')
 let body2 = document.querySelector('body');
+let saldoConta = document.getElementById("header_wallet_balance") 
+let Logado = JSON.parse(localStorage.getItem('userLogado'))
+
+saldoConta.innerHTML = "R$:" + Logado.saldo+",00"
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -17,7 +21,7 @@ function REDIRECIONAR() {window.location.href = "/login"}
 }
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let logado = document.querySelector('#logado')
-logado.innerHTML = "Olá " + userLogado.nome + " Bem Vindo de Volta!"
+logado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
 
 function sair(){
   localStorage.removeItem('token')
