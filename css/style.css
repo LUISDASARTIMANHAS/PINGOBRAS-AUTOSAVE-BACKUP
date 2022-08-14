@@ -414,7 +414,11 @@ telacarteira{
   opacity: 100%;
   z-index: 1;
 }
-
+#header_wallet_ctn {
+    text-align: right;
+    padding-right: 15px;
+  line-height: normal;
+ background: #b8b6b4;}
 
 .logo-goves, a .logo-goves{
   margin: 0;
