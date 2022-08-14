@@ -28,7 +28,10 @@ function displaySpeed() {
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
-                  
+  let downloadTime = document.getElementById("downloadTime");
+  downloadTime.innerHTML = end_time + "/" + time_start+ "/" + (end_time-time_start)
+  
+  
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
   var bps = (loadedBits / timeDuration).toFixed(2);
   var speedInKbps = (bps / 1024).toFixed(2);
