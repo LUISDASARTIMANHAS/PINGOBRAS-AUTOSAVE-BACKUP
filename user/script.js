@@ -1,9 +1,7 @@
 let DBuserbg = localStorage.getItem('UserBackground')
 let body2 = document.querySelector('body');
-let saldoConta = document.getElementById("header_wallet_balance") 
-let Logado = JSON.parse(localStorage.getItem('userLogado'))
-
-saldoConta.innerHTML = "R$:" + Logado.saldo+",00"
+let saldoContamain = document.getElementById("header_wallet_balance") 
+let Logadomain = JSON.parse(localStorage.getItem('userLogado'))
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -19,6 +17,7 @@ alarmAuto.play();
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "/login"}
 }
+saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"
 
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let logado = document.querySelector('#logado')
@@ -31,10 +30,10 @@ function sair(){
 }
 
 
-//let fullscreen;
-//let fsEnter = document.getElementById('fullscr');
-//fsEnter.addEventListener('click', function (e) {
-  / e.preventDefault();
+/* let fullscreen;
+let fsEnter = document.getElementById('fullscr');
+fsEnter.addEventListener('click', function (e) {
+    e.preventDefault();
     if (!fullscreen) {
         fullscreen = true;
         document.documentElement.requestFullscreen();
@@ -45,6 +44,4 @@ function sair(){
         document.exitFullscreen();
         fsEnter.innerHTML = "TELA CHEIA";
     }
-});
-
-///
+}); */

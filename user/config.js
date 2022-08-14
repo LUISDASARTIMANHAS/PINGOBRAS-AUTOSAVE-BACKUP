@@ -25,7 +25,6 @@ nomeConta.innerHTML = Logado.nome
 userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
 senhaConta.innerHTML = Logado.senha
-saldoConta.innerHTML = Logado.saldo
 
 let btnmostrarsenha = document.getElementById('mostrarsenha');
 
