@@ -6,7 +6,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             var time_start, end_time;
             var KB = "024"
             var MB = "024"
-            var GB = "50"
+            var GB = "5"
             var Size = GB + MB + KB
             var Size8 = Size*8
             console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB+"." + KB + "GB")
@@ -24,7 +24,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
 function displaySpeed() {
                 
   var timeseconds = (end_time - time_start)/1000
-  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + end_time + "ms")
+  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
@@ -34,10 +34,11 @@ function displaySpeed() {
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
   var bps = (Size8 / timeseconds).toFixed(2);
-  var speedInKbps = (bps / 2024).toFixed(2);
-  var speedInMbps = (speedInKbps / 2024).toFixed(2);
-  var speedInGBps = (speedInMbps / 2024).toFixed(2);
-  console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"kbps  " + speedInMbps+"mbps" )
+  var speedInKbps = (bps/1024).toFixed(2);
+  var speedInMbps = (speedInKbps/1024).toFixed(2);
+  var speedInGBps = (speedInMbps/1024).toFixed(2);
+  var speedInTBps = (speedInGBps/1024).toFixed(2)
+  console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
   const NetworkObj = {Bps: bps, KBps: speedInKbps, MBps: speedInMbps, GBps: speedInGBps}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
