@@ -19,6 +19,7 @@ alarmAuto.play();
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "/login"}
 }
+
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let logado = document.querySelector('#logado')
 logado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
@@ -30,10 +31,10 @@ function sair(){
 }
 
 
-let fullscreen;
-let fsEnter = document.getElementById('fullscr');
-fsEnter.addEventListener('click', function (e) {
-    e.preventDefault();
+//let fullscreen;
+//let fsEnter = document.getElementById('fullscr');
+//fsEnter.addEventListener('click', function (e) {
+  / e.preventDefault();
     if (!fullscreen) {
         fullscreen = true;
         document.documentElement.requestFullscreen();
@@ -46,4 +47,4 @@ fsEnter.addEventListener('click', function (e) {
     }
 });
 
-
+///

@@ -18,11 +18,16 @@
       <telacarteira>
         <h1>DETALHES DA CARTEIRA</h1>
         <div id="header_wallet_ctn">
-				<a 
+          <span 
+                style="padding-right:50%;
+                       color:white;"
+                id="logado">
+          Server Not Response 401-501 Bad Getaway
+          </span>
+				<p>Saldo:</p><a 
            class="global_action_link" 
            id="header_wallet_balance" 
            href="/carteira">
-          <p>Saldo:</p>
           R$ 0,00
           </a>
 				  </div>
@@ -64,7 +69,6 @@
 
     />
   <link rel="stylesheet" href="login/style.css" />
-  <script src="login/login.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css">
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css">
@@ -77,7 +81,16 @@
   <link rel="stylesheet" href="https://store.akamai.steamstatic.com/public/css/v6/account.css?v=P2WLI8B6ddJe&l=portuguese">
   <link rel="stylesheet" href="https://store.akamai.steamstatic.com/public/css/v6/game.css?v=-uLT3t5ow-oO&l=portuguese">
   <script src="https://pingobras.glitch.me/cadastro/STORAGEcad.js" defer></script>
+  <script src="https://pingobras.glitch.me/user/script.js" defer></script>
   
     <!-- Import the webpage's javascript file -->
-   
+   <script>
+  if(localStorage.getItem('token') == null){
+const alarmAuto = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
+alert('Você precisa estar logado para acessar essa página')
+alarmAuto.play();
+const myTimeout = setTimeout(REDIRECIONAR, 10000);
+function REDIRECIONAR() {window.location.href = "/login"}
+}
+  </script>
 </html>
