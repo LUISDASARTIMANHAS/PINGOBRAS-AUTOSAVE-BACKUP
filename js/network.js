@@ -6,7 +6,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             var time_start, end_time;
             var KB = "024"
             var MB = "024"
-            var GB = "50"
+            var GB = "500"
             var Size = GB + MB + KB
             console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB+"." + KB + "GB")
           
@@ -22,18 +22,17 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             
 function displaySpeed() {
                 
-  var timeDuration = (end_time - time_start) / 1000;
-  var loadedBits = Size;
+  var timeseconds = (end_time - time_start)/1000
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + end_time + "ms")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
   let downloadTime = document.getElementById("downloadTime");
-  downloadTime.innerHTML = end_time + "/" + time_start+ "/" + (end_time-time_start)
+  downloadTime.innerHTML = timeseconds + "s"
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  var bps = (loadedBits / timeDuration).toFixed(2);
+  var bps = (Size / timeseconds).toFixed(2);
   var speedInKbps = (bps / 1024).toFixed(2);
   var speedInMbps = (speedInKbps / 1024).toFixed(2);
   var speedInGBps = (speedInMbps / 1024);
