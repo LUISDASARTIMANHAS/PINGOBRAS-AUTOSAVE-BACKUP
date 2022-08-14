@@ -29,7 +29,7 @@ function displaySpeed() {
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
   let downloadTime = document.getElementById("downloadTime");
-  downloadTime.innerHTML = timeseconds + "s " +  time_start
+  downloadTime.innerHTML = timeseconds + "s "
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
