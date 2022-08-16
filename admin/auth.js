@@ -11,7 +11,7 @@ let site = document.querySelector(".site-altura");
 let labelAlarm = document.querySelector("alert");
   
 if(tokenR == "conectado") {
-console.log("AUTH/LOG>Usuario conectado!")
+console.log("AUTH/LOG>ADMIN conectado!")
 }else {
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
@@ -33,8 +33,6 @@ site.style.display = "none";
 labelAlarm.style.display = "block";
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
-}else {
-  console.log("AUTH/LOG>Usuario conectado!")
 }
  
   
