@@ -1,3 +1,4 @@
+
 let token = localStorage.getItem('token')
 let labelAlarm = document.querySelector("alert");
 
@@ -10,4 +11,6 @@ labelAlarm.style.display = "block";
 alarmAuto.play();
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "/login"}
+}else{
+ localStorage.setItem( 'token',token);
 }
