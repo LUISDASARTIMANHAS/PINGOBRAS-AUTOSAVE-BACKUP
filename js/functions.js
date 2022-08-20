@@ -1,5 +1,6 @@
 const WindowSongError1 = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Windows-error-song?v=1656019161212.mp3?v=1651870846885.mp3');
 const alarm = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
+const ClickMouseFUNCTIONS = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 
 function CalcJuros() {
  try {
@@ -51,6 +52,7 @@ if(EMP == 0){
 
 function mostrarsenha() {
   let inputSenha = document.getElementById('senha')
+  ClickMouseFUNCTIONS.play();
   
   if(inputSenha.getAttribute('type') == 'password'){
     inputSenha.setAttribute('type', 'text')
@@ -62,6 +64,7 @@ function mostrarsenha() {
 }
 
 function openForm() {
+  ClickMouseFUNCTIONS.play();
   document.getElementById("jschat").style.display = "block";
   alert("ESSA FUNÇÃO E EXPERIMENTAL E PODE NÃO FUNCIONAR OU CONTER BUGS!");
   console.log("FUNCTIONS/LOG> O chat foi aberto!");
@@ -72,21 +75,25 @@ function autopauseWindowSongError1() {
 
 }
 function closeForm() {
+  ClickMouseFUNCTIONS.play();
   document.getElementById("jschat").style.display = "none";
   console.log("FUNCTIONS/LOG> O chat foi fechado");
 }
 
 
 function subir() {
+  ClickMouseFUNCTIONS.play();
     window.scrollTo(0, 0);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para cima!");
 };
 
 function pageFilmSerie() {
+ClickMouseFUNCTIONS.play();
 window.location.href = "https://pingobras.glitch.me/films&series.html";
 };
 
 function DESLOGAR() {
+  ClickMouseFUNCTIONS.play();
   alert("usuario deslogado")
 const tokenSair = "desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
@@ -95,6 +102,7 @@ const myTimeout = setTimeout(REDIRECIONAR, 15000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me"}
 }
 function DESLOGAR2() {
+  ClickMouseFUNCTIONS.play();
 alert("usuario deslogado")
 const tokenSair = "desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
@@ -119,7 +127,9 @@ function myFunction() {
 
 let btnlist = document.getElementById('btnlist');
 var listDEV = document.getElementById('listDevedores');
+
 btnlist.addEventListener('click', function() {
+  ClickMouseFUNCTIONS.play();
     if(listDEV.style.display === 'block') {
       listDEV.style.display = 'none';
   } else {
@@ -127,6 +137,7 @@ btnlist.addEventListener('click', function() {
   }
 });
 btnlist.addEventListener('mouseover', function() {
+ClickMouseFUNCTIONS.play();
 listDEV.style.display = 'block';
 })
 

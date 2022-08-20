@@ -84,15 +84,34 @@ body.setAttribute('style', 'padding-top: 50% ')}
   
 }
 
-const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Mouse Click Sound Effect.mp3?v=1661003496010');
+const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 function click(){
   ClickMouse.play();
 }
-const buttons = document.querySelector("button");
-if (buttons){buttons.onclick = function(){
+const button1 = document.querySelector("button");
+const button2 = document.querySelector("button");
+const button3 = document.querySelector("button");
+const button4 = document.querySelector("a");
+if (button1){
+  button1.onclick = function(){
   console.log("click do mouse")
-  ClickMouse.play();
-  };}
+  ClickMouse.play();}
+}
+if (button2){
+  button2.onclick = function(){
+  console.log("click do mouse")
+  ClickMouse.play();}
+}
+if (button3){
+  button3.onclick = function(){
+  console.log("click do mouse")
+  ClickMouse.play();}
+}
+if (button4){
+  button4.onclick = function(){
+  console.log("click do mouse")
+  ClickMouse.play();}
+}
 
 
 
