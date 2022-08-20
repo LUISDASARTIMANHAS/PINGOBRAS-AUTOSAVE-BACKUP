@@ -1,13 +1,17 @@
 const miliseconds2 = "000"
-setTimeout(mudarlink,30+miliseconds2);
+setTimeout(mudarlink,45+miliseconds2);
+setTimeout(mudarlink2,120+miliseconds2);
 
 function mudarlink() {
-let STORAGEYT = localStorage.getItem("YoutubeLinks");
-let YT = JSON.parse(STORAGEYT);
 let labelLink = document.getElementById("ytlink1")
+let link = ""
 
 let VIDEO = document.querySelector("#yt");
-VIDEO.setAttribute('src', YT.LINK1);
-  
-labelLink.innerHTML = YT.LINK1;
+VIDEO.setAttribute('src', link);
+labelLink.innerHTML = link;
 };
+
+function mudarlink2() {
+let LIVE = document.querySelector("#cryptomoedas");
+LIVE.setAttribute('src', "https://dlive.tv/Coincard?ref=dlive-gjqnluuvhi?autoplay=1&muted=0");
+}
