@@ -84,6 +84,16 @@ body.setAttribute('style', 'padding-top: 50% ')}
   
 }
 
+const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Mouse Click Sound Effect.mp3?v=1661003496010');
+function click(){
+  ClickMouse.play();
+}
+const buttons = document.querySelector("button");
+if (buttons){buttons.onclick = function(){
+  console.log("click do mouse")
+  ClickMouse.play();
+  };}
+
 
 
 const btndisabled = document.querySelector("[disabled]");
