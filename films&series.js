@@ -6,7 +6,7 @@ function mudarlink() {
 let labelLink = document.getElementById("ytlink1")
 let preyoutube = "https://www.youtube.com/embed/"
 let precontroles = "?muted=1&autoplay=1"
-let id = "VzhqsznK_L"
+let id = "DIDesej4ljc"
 let link = preyoutube + id + precontroles
 
 let VIDEO = document.querySelector("#yt");
