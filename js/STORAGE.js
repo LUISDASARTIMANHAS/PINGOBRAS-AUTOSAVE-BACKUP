@@ -40,23 +40,25 @@ console.warn("STORAGE/LOG> bypass recarregado!");
   
   
 }
+const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
+const LkJson = JSON.stringify(YTL);
+localStorage.setItem("YoutubeLinks",LkJson);
+const miliseconds = "000"
+setTimeout(TRLINK,20+miliseconds);
+function TRLINK() {
+console.log("link alterado!")
+const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
+const TRLkJson = JSON.stringify(YTLive);
+localStorage.setItem("YoutubeLinks",TRLkJson);
+}
+
 
 
 let NetworkObj = localStorage.getItem("Network");  
 const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
 
-const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1" };
-const LkJson = JSON.stringify(YTL);
-localStorage.setItem("YoutubeLinks",LkJson);
 
-const mili
-setTimeout(TRLINK,12000);
 
-function TRLINK() {
-const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
-const TRLkJson = JSON.stringify(YTLive);
-localStorage.setItem("YoutubeLinks",TRLkJson);
-}
 
 
