@@ -50,10 +50,13 @@ const YTL = {LINK1:"https://www.youtube.com/embed/OiL1kFo4C8Y?autoplay=1&loop=1"
 const LkJson = JSON.stringify(YTL);
 localStorage.setItem("YoutubeLinks",LkJson);
 
-setTimeout( function TRLink() {
+const mili
+setTimeout(TRLINK,12000);
+
+function TRLINK() {
 const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
 const TRLkJson = JSON.stringify(YTLive);
 localStorage.setItem("YoutubeLinks",TRLkJson);
-},125000);
+}
 
 

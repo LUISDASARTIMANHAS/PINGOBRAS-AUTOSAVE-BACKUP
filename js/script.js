@@ -2,7 +2,7 @@ const loopScript = setInterval(refreshScript, 15000);
 
 function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
-let  STORAGEYT = localStorage.getItem("YoutubeLinks")
+
 
 
   const loophorarioLocal = setInterval(temporizadorLocal, 1000);
@@ -62,11 +62,7 @@ document.querySelector("#close").addEventListener("mouseover", function(){
 });
 
 
-  setTimeout( function REL(){
-const YTLinks = JSON.parse(STORAGEYT);
-console.log(YTLinks);
-document.getElementById("ytlink1").innerHTML = YTLinks.LINK1;
-},125000);
+
   
 
 
