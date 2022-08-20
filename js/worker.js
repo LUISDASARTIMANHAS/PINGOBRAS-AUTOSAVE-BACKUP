@@ -8,7 +8,7 @@ if ("serviceWorker" in navigator) {
 					reg.active.postMessage("claimMe");
 				});
 			}
-			console.log("Worker registrado!");
+			console.log("Worker network registrado!");
 		})
 		.catch(function (err) {
 			console.log("Erro ao registrar worker: ", err);
@@ -24,7 +24,7 @@ if ("serviceWorker" in navigator) {
 					reg.active.postMessage("claimMe");
 				});
 			}
-			console.log("Worker registrado!");
+			console.log("Worker js registrado!");
 		})
 		.catch(function (err) {
 			console.log("Erro ao registrar worker: ", err);

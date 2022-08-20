@@ -23,13 +23,13 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             
 function displaySpeed() {
                 
-  var timeseconds = (end_time - time_start)/1000
+  var timeseconds = (end_time - time_start)/100
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
   let downloadTime = document.getElementById("downloadTime");
-  downloadTime.innerHTML = timeseconds + "s "
+  downloadTime.innerHTML = "IMG:5MB/"+ timeseconds + "s "
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */

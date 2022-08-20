@@ -16,6 +16,5 @@ const DJson = JSON.stringify(Djs);
 localStorage.setItem("JSON", DJson);
 
 //recebendo dados JSON
-let JSON STORAGE = localStorage.getItem("JSON");
-let DjsR = JSON.parse(JSON );
-document.getElementById("console").innerHTML = DjsR.name;
+let JSONSTORAGE = localStorage.getItem("JSON");
+let DjsR = JSON.parse(JSONSTORAGE);
