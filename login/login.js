@@ -98,7 +98,10 @@ if(usuario.value == userValid.user && senha.value == userValid.senha){
   
 }
 
+const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
+
 btnVerSenhaL.addEventListener('click', ()=>{
+ClickMouseLOGIN.play();
   let inputVerSenhaL = document.getElementById('senha')
   if(inputVerSenhaL.getAttribute('type') == 'password'){
     inputVerSenhaL.setAttribute('type', 'text')
