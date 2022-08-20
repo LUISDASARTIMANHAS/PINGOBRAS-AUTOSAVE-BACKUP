@@ -4,7 +4,10 @@ setTimeout(mudarlink2,120+miliseconds2);
 
 function mudarlink() {
 let labelLink = document.getElementById("ytlink1")
-let link = ""
+let preyoutube = "https://www.youtube.com/embed/"
+let precontroles = "?muted=1&autoplay=1"
+let id = "VzhqsznK_L"
+let link = preyoutube + id + precontroles
 
 let VIDEO = document.querySelector("#yt");
 VIDEO.setAttribute('src', link);
