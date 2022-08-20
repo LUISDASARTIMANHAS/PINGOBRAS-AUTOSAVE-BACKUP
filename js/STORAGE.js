@@ -47,11 +47,10 @@ const miliseconds = "000"
 setTimeout(TRLINK,20+miliseconds);
 function TRLINK() {
 console.log("link alterado!")
-const YTLive = {LINK1:"https://www.youtube.com/embed/?autoplay=1" };
+const YTLive = {LINK1:"https://www.youtube.com/embed/iAS5SqkloJ0?list=OLAK5uy_lhKlVVdmgoqn1EeVDAUgbMJr7hr5BzbUk?autoplay=1" };
 const TRLkJson = JSON.stringify(YTLive);
 localStorage.setItem("YoutubeLinks",TRLkJson);
 }
-
 
 
 let NetworkObj = localStorage.getItem("Network");  
