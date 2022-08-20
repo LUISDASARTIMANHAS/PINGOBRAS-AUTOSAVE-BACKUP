@@ -80,12 +80,12 @@ function closeForm() {
   console.log("FUNCTIONS/LOG> O chat foi fechado");
 }
 
-
-function subir() {
+var Descer = document.querySelector("#back-to-top");
+Descer.addEventListener("click", function() {
   ClickMouseFUNCTIONS.play();
     window.scrollTo(0, 0);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para cima!");
-};
+});
 
 function pageFilmSerie() {
 ClickMouseFUNCTIONS.play();
@@ -146,6 +146,7 @@ listDEV.style.display = 'block';
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
 var listChangelogs = document.getElementById('listChangelogs');
 btnlistChangelogs.addEventListener('click', function() {
+ClickMouseFUNCTIONS.play();
     if(listChangelogs.style.display === 'block') {
       listChangelogs.style.display = 'none';
       console.log("FUNCTIONS/LOG> A Changelogs foi escondida!");
@@ -154,12 +155,14 @@ btnlistChangelogs.addEventListener('click', function() {
     console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");}
 });
 btnlistChangelogs.addEventListener('mouseover', function() {
+ClickMouseFUNCTIONS.play();  
 listChangelogs.style.display = 'block';
     console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");
 })
 
 var Descer = document.querySelector("#jsDescer");
 Descer.addEventListener("click", function() {
+  ClickMouseFUNCTIONS.play();
     window.scrollTo(0, 2000);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
 });
