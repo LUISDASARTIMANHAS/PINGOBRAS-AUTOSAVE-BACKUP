@@ -937,8 +937,10 @@ chat{
   padding: 5px;
 }
 .dividendos{
+  border: 5px solid black;
+  margin-top: 5px;
   background: white;
-  width: 75%;
+  width: auto;
   align-items: center;
   text-align: center;
 }

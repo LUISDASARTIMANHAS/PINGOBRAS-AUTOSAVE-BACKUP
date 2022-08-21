@@ -75,17 +75,19 @@ if(EMP == 0){
 
 function buscarDiv() {
 document.getElementById('buscadorLista').style.display="block";
-    var i = "1"
-    let input = document.getElementById('inputbuscar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('dividendos');
+    var i;
+    let pesquisado = document.getElementById('inputbuscar').value  
+    pesquisado=pesquisado.toLowerCase();
+    let items = document.getElementsByClassName('dividendos');
       
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
+    for (i = 0; i < items.length; i++) { 
+        if (!items[i].innerHTML.toLowerCase().includes(pesquisado)) {
+            items[i].style.display="none";
+          document.getElementById('buscadorLista').style.color="green";
         }
         else {
-            x[i].style.display="list-item";                 
+            items[i].style.display="block";  
+          document.getElementById('buscadorLista').style.color="red";
         }
     }
 }
