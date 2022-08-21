@@ -74,7 +74,7 @@ if(EMP == 0){
   }
 
 function buscarDiv() {
-document.getElementById('buscadorLista').style.display="block";
+
     var i;
     let pesquisado = document.getElementById('inputbuscar').value  
     pesquisado=pesquisado.toLowerCase();
@@ -82,14 +82,16 @@ document.getElementById('buscadorLista').style.display="block";
       
     for (i = 0; i < items.length; i++) { 
         if (!items[i].innerHTML.toLowerCase().includes(pesquisado)) {
+          document.getElementById('buscadorLista').style.display="block";
               items[i].style.display="none";
           document.getElementById('buscadorLista').style.color="green";
           document.getElementById('Nenhum').style.display="block";
         }
         else {
+          document.getElementById('buscadorLista').style.display="none";
             items[i].style.display="block";  
           document.getElementById('buscadorLista').style.color="red";
-          document.getElementById('Nenhum').style.display="none";
+          document.getElementById('Nenhum').style.display="block";
         }
     }
 }
