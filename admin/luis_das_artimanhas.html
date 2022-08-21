@@ -149,7 +149,14 @@
   
   <script>
   let person = prompt("Insira A Senha de Luis Das Artimanhas", "0000");
-  let name = prompt("Insira Seu Nome","","teste",)
+  
+let name2 = localStorage.getItem("nameST")
+
+if(name2==null){
+localStorage.setItem("nameST",prompt("INSIRA Seu Nome!",))
+}else{
+alert("bem vindo de volta " + name2 +"!")
+}
   if (person == 2004) {
     alert()
   }else{
