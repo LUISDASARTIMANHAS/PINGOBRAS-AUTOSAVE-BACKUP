@@ -1,3 +1,6 @@
+const loopcopy = setInterval(refreshcopy, 5000);
+
+function refreshcopy() {
 let ano = new Date().getFullYear();  
 let navegadorLang = navigator.language;
 document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
@@ -12,3 +15,6 @@ document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
 "</p>" 
 var wa = document.getElementById("WA");
 wa.classList.add("fa-whatsapp");
+
+
+}
