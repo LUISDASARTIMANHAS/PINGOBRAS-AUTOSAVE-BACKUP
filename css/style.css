@@ -929,3 +929,16 @@ chat{
   padding: 7px;
   background-color: gray;
 }
+.listaDiv{
+  display: none;
+  background: gray;
+  color: black;
+  width: auto;
+  padding: 5px;
+}
+.dividendos{
+  background: white;
+  width: 75%;
+  align-items: center;
+  text-align: center;
+}

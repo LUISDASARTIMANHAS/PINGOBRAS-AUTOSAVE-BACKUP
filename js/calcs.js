@@ -74,7 +74,7 @@ if(EMP == 0){
   }
 
 function buscarDiv() {
-    .style.display="none";
+document.getElementById('buscadorLista').style.display="block";
     var i = "1"
     let input = document.getElementById('inputbuscar').value
     input=input.toLowerCase();
