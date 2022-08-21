@@ -82,12 +82,14 @@ document.getElementById('buscadorLista').style.display="block";
       
     for (i = 0; i < items.length; i++) { 
         if (!items[i].innerHTML.toLowerCase().includes(pesquisado)) {
-            items[i].style.display="none";
+              items[i].style.display="none";
           document.getElementById('buscadorLista').style.color="green";
+          document.getElementById('Nenhum').style.display="block";
         }
         else {
             items[i].style.display="block";  
           document.getElementById('buscadorLista').style.color="red";
+          document.getElementById('Nenhum').style.display="none";
         }
     }
 }
