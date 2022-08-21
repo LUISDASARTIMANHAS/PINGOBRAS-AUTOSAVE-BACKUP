@@ -72,3 +72,20 @@ if(EMP == 0){
   
    
   }
+
+function buscarDiv() {
+    .style.display="none";
+    var i = "1"
+    let input = document.getElementById('inputbuscar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('dividendos');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
