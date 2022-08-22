@@ -149,16 +149,16 @@
   
   <script>
   let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas")
-
-//if(name2==null){
-localStorage.setItem("Local-Luis-das-artimanhas",Userlogin)
-}else{
-alert("bem vindo de volta " + name2 +"!")
-}
-  if (person == 2004) {
-    alert()
-  }else{
-    window.location.href = "https://pingobras.glitch.me/admin"
+  let senhaPG = Storage_luisdasartimanhas.senhaPG
+  let userPG = Storage_luisdasartimanhas.userPG
+  
+  if(Storage_luisdasartimanhas == "null"){
+    let dataname 
+    let dadosuser = {userPG:dataname,senhaPG:"2004"}
+    localStorage.setItem("Local-Luis-das-artimanhas",dadosuser)
   }
+  
+    window.location.href = "https://pingobras.glitch.me/admin"
+  
   </script>
 </html>
