@@ -146,13 +146,14 @@
   <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
   
   <script>
-  
-  let senhaPG = Storage_luisdasartimanhas.senhaPG
-  let userPG = Storage_luisdasartimanhas.userPG
-  
-  
-  
-    window.location.href = "https://pingobras.glitch.me/admin"
+  let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas");
+  let userinput = prompt("Insira a Senha Para Continuar!","0000")
+    if(Storage_luisdasartimanhas == userinput) {
+      alert("Bem Vindo de volta Luis Das Artimanhas!")
+    }else{
+      alert("Não Foi Possivel Logar Tente Novamente!")
+      window.location.href = "https://pingobras.glitch.me/admin"
+    }
   
   </script>
 </html>
