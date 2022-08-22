@@ -142,21 +142,15 @@
   <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
   <script src="https://pingobras.glitch.me/js/calcs.js" defer></script>
   <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
-  <script src="https://pingobras.glitch.me/js/network.js" defer></script>
-  <script src="https://pingobras.glitch.me/js/time.js" defer></script>
   <script src="https://pingobras.glitch.me/admin/auth.js" defer></script>
   <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
   
   <script>
-  let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas")
+  
   let senhaPG = Storage_luisdasartimanhas.senhaPG
   let userPG = Storage_luisdasartimanhas.userPG
   
-  if(Storage_luisdasartimanhas == "null"){
-    let dataname 
-    let dadosuser = {userPG:dataname,senhaPG:"2004"}
-    localStorage.setItem("Local-Luis-das-artimanhas",dadosuser)
-  }
+  
   
     window.location.href = "https://pingobras.glitch.me/admin"
   

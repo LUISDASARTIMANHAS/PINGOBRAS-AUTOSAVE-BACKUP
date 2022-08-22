@@ -37,7 +37,9 @@ console.log("STORAGE/LOG> ⚠️recarregando codificanção do bypass...");
 localStorage.setItem("bypass", repeatbypass);
 console.warn("STORAGE/LOG> bypass recarregado!");
 
-  
+let senhaPG = "2004"
+localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
+console.warn("STORAGE/LOG> Local-luis-das-artimanhas setado!");
   
 }
 
