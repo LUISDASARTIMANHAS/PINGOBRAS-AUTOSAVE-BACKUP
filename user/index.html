@@ -8,23 +8,10 @@
     <title>PINGOBRAS ACCOUNT</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     
-    <nav>
-    
-    </nav>
-  
-  </head>
-  
-  <body>
-    <div class="site-altura">
-      <div class="conteudo" role="main">
-        <div class="links"></div>
-         
-        
-        <div id="header_wallet_ctn"
+    <nav class="cabecalho">
+    <div id="header_wallet_ctn"
              style="width:100%">
-          <span 
-                style="margin-right:70%;
-                       color:white;"
+          <span class="carteira"
                 id="logado">
           Server Not Response 401-501 Bad Getaway
           </span>
@@ -36,7 +23,21 @@
           R$ 0,00
           </a>
 				  </div>
-       
+      <button 
+                  class="btnNav"
+                  id="btnfilms"
+                  onclick="pageFilmSerie()"
+                  target="_blank">
+          FILMES/SERIES 
+          </button>
+    </nav>
+  </head>
+  
+  <body style="margin:20%;">
+    <div class="site-altura">
+      <div class="conteudo" role="main">
+        <div class="links"></div>
+         
         <br>
         
         <img   class="contador"
@@ -51,13 +52,6 @@
           Configurar Conta
         </a>   
         
-        <button 
-                  class="btnNav"
-                  id="btnfilms"
-                  onclick="pageFilmSerie()"
-                  target="_blank">
-          FILMES/SERIES 
-          </button>
         
         <a
         class="btndc btn"
