@@ -43,7 +43,7 @@ Descer.addEventListener("click", function() {
 
 function pageFilmSerie() {
 ClickMouseFUNCTIONS.play();
-window.location.href = "https://pingobras.glitch.me/films&series.html";
+window.location.href = "https://pingobras.glitch.me/user/films&series.html";
 };
 
 function DESLOGAR() {

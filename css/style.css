@@ -631,7 +631,11 @@ conteudo, .index{
   width: 100%;
   color: white;
 }
-
+.carteira{
+  color: white;
+  display: block;
+  text-align: left;
+}
 .divider {
   padding: 0 1rem;
 }

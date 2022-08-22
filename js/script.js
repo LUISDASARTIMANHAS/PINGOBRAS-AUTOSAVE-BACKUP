@@ -69,7 +69,7 @@ const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-
 function click(){
   ClickMouse.play();
 }
-const button1 = document.querySelector("button");
+const button1 = document.querySelector("[button]");
 const button2 = document.querySelector("[click]");
 const button3 = document.querySelector("[click2]");
 const button4 = document.querySelector("a");
