@@ -4,9 +4,11 @@ let labelAlarm = document.querySelector("alert");
 
 if(token == "null"){
 let site = document.querySelector(".site-altura") 
+let head = document.querySelector("head") 
 const alarmAuto = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
 alert('Você precisa estar logado para acessar essa página')
 site.style.display = "none"
+head.style.display = "none"
 labelAlarm.style.display = "block";
 alarmAuto.play();
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
