@@ -8,7 +8,8 @@ function storagecad() {
 {nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1500.90},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 2.00},
 {nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 3.50},
-{nomeCad: "José Eduardo Batista de Souza", userCad: "notfound", senhaCad: "10062002", saldoCad: 1.50}
+{nomeCad: "José Eduardo Batista de Souza", userCad: "notfound", senhaCad: "10062002", saldoCad: 1.50},
+{nomeCad: "Diogo Antonio Nienke Batista", userCad: "did zin", senhaCad: "z0mbieltr2", saldoCad: 1.50}
    ];
     
    let refreshcad = JSON.stringify(listacad)
@@ -31,7 +32,8 @@ UNIVERSALACCOUNT.push(
 {nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1750.97},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 5.00},
 {nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00},
-{nomeCad: "José Eduardo Batista de Souza", userCad: "notfound", senhaCad: "10062002", saldoCad: 1.50}
+{nomeCad: "José Eduardo Batista de Souza", userCad: "notfound", senhaCad: "10062002", saldoCad: 1.50},
+{nomeCad: "Diogo Antonio Nienke Batista", userCad: "did zin", senhaCad: "z0mbieltr2", saldoCad: 1.50}
 )
 localStorage.setItem('listaUser', JSON.stringify(UNIVERSALACCOUNT))
 console.warn("STORAGECAD> Contas UNIVERSAL e ADMINISTRATIVAS Carregadas")}
