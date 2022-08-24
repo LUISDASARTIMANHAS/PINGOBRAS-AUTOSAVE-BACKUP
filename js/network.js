@@ -39,7 +39,7 @@ function displaySpeed() {
   var speedInGBps = (speedInMbps/1024).toFixed(2);
   var speedInTBps = (speedInGBps/1024).toFixed(2)
   console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
-  const NetworkObj = {"Bps": bps,"KBps": speedInKbps,"MBps": speedInMbps,"GBps": speedInGBps}
+  const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds;}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
   
