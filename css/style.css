@@ -55,6 +55,7 @@ to this section's matching END comment to see page-specific styles.
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  max-width:100%;
 }
 js{
   width: auto;
@@ -141,11 +142,13 @@ background: purple;
 }
 
 .fa-whatsapp:before{
+  max-width:100%;
   content:"\f232";
   color: green;
   width: 15%;
 }
 #WA{
+  max-width:100%;
   width: 30%;
 }
 
@@ -263,6 +266,7 @@ body {
   background-size: cover;
   justify-content: center;
   opacity: 1;
+  max-width:100%;
 }
 left{
 display:inline-block;
@@ -434,6 +438,7 @@ telacarteira{
   text-align: center;
   border:none;
   cursor: help;
+  max-width:100%;
 }
 
 
@@ -612,13 +617,14 @@ conteudo, .index{
 /* footer grid */
 .footer {
   display: block;
-  margin: 10px;
+  margin: 30px;
   width: 100%;
   font-size: 15pt;
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
   flex-wrap: wrap;
   border-top: 4px solid white;
+  max-width:100%;
 }
 .footer.links {
   padding: 40px;

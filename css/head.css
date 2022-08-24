@@ -10,6 +10,7 @@
   z-index: 1;
   height: auto; 
   display: block;
+  max-width:100%;
 }
 .list, list{
   margin-top: auto;
@@ -20,6 +21,7 @@
   padding: 10px 10px;
   width: 95%;
   cursor: help;
+  max-width:100%;
 }
 .list saldo{
   display: inline-block;
