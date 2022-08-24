@@ -23,7 +23,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             
 function displaySpeed() {
                 
-  var timeseconds = (end_time - time_start)/100
+  var timeseconds = (end_time - time_start)
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
   let MBps = document.getElementById("MBps");
@@ -39,7 +39,7 @@ function displaySpeed() {
   var speedInGBps = (speedInMbps/1024).toFixed(2);
   var speedInTBps = (speedInGBps/1024).toFixed(2)
   console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
-  const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds;}
+  const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
   
