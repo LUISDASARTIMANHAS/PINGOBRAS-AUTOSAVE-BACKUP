@@ -1,6 +1,7 @@
 
 let token = localStorage.getItem('token')
 let labelAlarm = document.querySelector("alert");
+let head = document.querySelector("nav") 
 
 if(token == "null"){
 let site = document.querySelector(".site-altura") 
@@ -13,8 +14,7 @@ alarmAuto.play();
   
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "/login"}
+head.style.display = "none"
 }else{
  localStorage.setItem( 'token',token);
 }
-let head = document.querySelector("nav") 
-head.style.display = "none"
