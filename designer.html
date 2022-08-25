@@ -27,7 +27,8 @@
         </div>
         
         <br>
-        <img src="https://image.shutterstock.com/image-vector/vector-line-icon-img-260nw-2050481222.jpg">
+        <img id="img"
+             src="https://image.shutterstock.com/image-vector/vector-line-icon-img-260nw-2050481222.jpg">
         
        <button onclick="add()">
          teste
@@ -37,7 +38,8 @@
           
         function add(){
        let linkIMG =  prompt("add imagem","link")
-       
+       var img = document.getElementById("img");
+          img.src = linkIMG
         }
         </script>
         
