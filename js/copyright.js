@@ -1,4 +1,4 @@
-const loopcopy = setInterval(refreshcopy, 5000);
+const loopcopy = setInterval(refreshcopy, 10000);
 
 function refreshcopy() {
 let ano = new Date().getFullYear();  
