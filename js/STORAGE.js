@@ -8,17 +8,15 @@ client.push({
         douglas: {name: "douglasPG",saldo: 13.00},
         valdo: {name: "valdo9645",saldo: -3.00},
         vm: {name: "skip",saldo: 1.00},
-        Eduardo: {name: "dudu",saldo: 2.00},
-        José: {name: "José Eduardo Batista de Souza",saldo: 1.50, senha: 10062002}
+        Eduardo: {name: "dudu",saldo: 2.00}
   })
 console.warn("STORAGE/LOG> client adcionou novos itens");
 const DJson = JSON.stringify(client);
 localStorage.setItem("JSON STORAGE", DJson);
 
   
-const siteBonusJS = {moeda: 2};
-const siteBonus = JSON.stringify(siteBonusJS);
-localStorage.setItem("siteBonus", siteBonus);
+const siteSaldo = 81.50;
+localStorage.setItem("SITESALDO", siteSaldo);
 
 let repeattoken = localStorage.getItem("token");
 console.log("STORAGE/LOG> ⚠️recarregando codificanção do token...");

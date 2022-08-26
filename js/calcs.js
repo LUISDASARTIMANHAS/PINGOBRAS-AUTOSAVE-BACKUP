@@ -1,12 +1,4 @@
-let rebonusStorage = localStorage.getItem("siteBonus");
-let bonus = JSON.parse(rebonusStorage);
 const ClickMouseCalc = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
-
-let siteMoney = 36.00
-let userbonus = siteMoney - bonus.moeda
-
-let currentSaldo = document.getElementById("currentSaldo")
-//currentSaldo.innerHTML = userbonus
    
 
 function buscar() {
