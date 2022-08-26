@@ -38,15 +38,29 @@ var Subir = document.querySelector("#back-to-top");
 if(!Subir) {
 console.warn("Deu Pau No Redirect Para Subir Do Site")
 }else{
-Descer.addEventListener("click", function() {
+Subir.addEventListener("click", function() {
   ClickMouseFUNCTIONS.play();
     window.scrollTo(0, 0);
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para cima!");
 });
 }
-
-
-
+var Descer = document.querySelector("#jsDescer");
+var batepapoDescer = document.querySelector("#jsDescerBatePapo");
+if(!Descer || !batepapoDescer) {
+console.warn("Deu Pau No Redirect Para Descer Do Site")
+}else{
+Descer.addEventListener("click", function() {
+  ClickMouseFUNCTIONS.play();
+    window.scrollTo(0, 2000);
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
+});
+batepapoDescer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");
+});
+}
+  
+  
 function pageFilmSerie() {
 ClickMouseFUNCTIONS.play();
 window.location.href = "https://pingobras.glitch.me/user/films&series.html";
@@ -76,9 +90,6 @@ const music = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3c
 function play() {
 music.play();
 music.loop =true;
-setTimeout(music.pause(),9000)
-}
-music.pause()
 
 
 function myFunction() {
@@ -128,14 +139,4 @@ listChangelogs.style.display = 'block';
 })
 }
 
-var Descer = document.querySelector("#jsDescer");
-Descer.addEventListener("click", function() {
-  ClickMouseFUNCTIONS.play();
-    window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
-});
-var batepapoDescer = document.querySelector("#jsDescerBatePapo");
-batepapoDescer.addEventListener("click", function() {
-    window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");
-});
+
