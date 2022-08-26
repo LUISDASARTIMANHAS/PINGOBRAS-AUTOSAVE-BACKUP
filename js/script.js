@@ -110,7 +110,3 @@ btndisabled2.addEventListener('click', function() {
     console.warn("FUNCTIONS/LOG> Usuario redirecionado para site fora do ar!")
   });
 
-let labelSiteSaldo = document.getElementById("siteSaldo")
-let Saldo = localStorage.getItem("SITESALDO")
-
-labelSiteSaldo.innerHTML = Saldo

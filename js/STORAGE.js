@@ -39,14 +39,15 @@ let senhaPG = "2004"
 localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
 
 
-
+  
 }
 
 let NetworkObj = localStorage.getItem("Network");  
 const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
 
+let labelSiteSaldo = document.getElementById("siteSaldo")
+let Saldo = localStorage.getItem("SITESALDO")
 
-
-
+labelSiteSaldo.innerHTML = Saldo
 
