@@ -41,13 +41,18 @@ localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
 
   
 }
+let labelSiteSaldo = document.getElementById("siteSaldo")  
+if(!labelSiteSaldo) {
+console.warn("Deu Pau No Dinheiro Do Site")
+}else{
+let Saldo = localStorage.getItem("SITESALDO")
+labelSiteSaldo.innerHTML = Saldo  
+}
+
 
 let NetworkObj = localStorage.getItem("Network");  
 const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
 
-let labelSiteSaldo = document.getElementById("siteSaldo")
-let Saldo = localStorage.getItem("SITESALDO")
 
-labelSiteSaldo.innerHTML = Saldo
 

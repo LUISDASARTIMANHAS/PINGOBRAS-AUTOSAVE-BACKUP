@@ -28,8 +28,13 @@ function displaySpeed() {
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
-  let downloadTime = document.getElementById("downloadTime");
+let downloadTime = document.getElementById("downloadTime");
+if(!downloadTime) {
+console.warn("Deu Pau Na Internet Do Site")
+}else{
   downloadTime.innerHTML = "IMG:5MB/"+ timeseconds + "s "
+}
+  
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
@@ -44,23 +49,26 @@ function displaySpeed() {
   localStorage.setItem("Network", Network);  
   
   if(speedInKbps != "Infinity" ) {
+  if(!MBps || !GBps) {
+console.warn("Deu Pau No Calculo Da Internet Do Site")
+}else{  
   MBps.innerHTML = speedInMbps + " MBps"
   MBps.setAttribute('style', 'color: green')
   GBps.innerHTML = speedInGBps + " GBps"
   GBps.setAttribute('style', 'color: green')}
-  else{
+  }else{
     if(speedInKbps === "Infinity"){
+if(!MBps || !GBps) {
+console.warn("Deu Pau No Calculo Da Internet Do Site")
+}else{
   MBps.innerHTML = "Recalculando" + " MBps"
   MBps.setAttribute('style', 'color: blue')
   GBps.innerHTML = "Recalculando" + " GBps"
-  GBps.setAttribute('style', 'color: blue')}
-  }
+  GBps.setAttribute('style', 'color: blue')}}
   
  if(speedInMbps < 2048.00) {
-  MBps.setAttribute('style', 'color: red')
- }
+  MBps.setAttribute('style', 'color: red')}
   if(speedInGBps < 2.048) {
-  GBps.setAttribute('style', 'color: red')
- }
-  
+  GBps.setAttribute('style', 'color: red')}
+
 }}
