@@ -48,27 +48,27 @@ console.warn("Deu Pau Na Internet Do Site")
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
   
-  if(speedInKbps != "Infinity" ) {
   if(!MBps || !GBps) {
 console.warn("Deu Pau No Calculo Da Internet Do Site")
-}else{  
+}else{
+  
+  if(speedInKbps != "Infinity" ) {
   MBps.innerHTML = speedInMbps + " MBps"
   MBps.setAttribute('style', 'color: green')
   GBps.innerHTML = speedInGBps + " GBps"
-  GBps.setAttribute('style', 'color: green')}
+  GBps.setAttribute('style', 'color: green')
   }else{
     if(speedInKbps === "Infinity"){
-if(!MBps || !GBps) {
-console.warn("Deu Pau No Calculo Da Internet Do Site")
-}else{
   MBps.innerHTML = "Recalculando" + " MBps"
   MBps.setAttribute('style', 'color: blue')
   GBps.innerHTML = "Recalculando" + " GBps"
-  GBps.setAttribute('style', 'color: blue')}}
+  GBps.setAttribute('style', 'color: blue')}
+    }
   
  if(speedInMbps < 2048.00) {
   MBps.setAttribute('style', 'color: red')}
   if(speedInGBps < 2.048) {
   GBps.setAttribute('style', 'color: red')}
-
+}
+  
 }}

@@ -39,13 +39,17 @@ document.querySelector(".site-altura").style.cursor = "not-allowed";
 },5000)
 });
 
-document.querySelector("#close").addEventListener("mouseover", function(){
+let fechar = document.querySelector("#close")
+if(!fechar) {
+console.warn("Deu Pau No Fechar Do Anúncio")
+}else{
+  fechar.addEventListener("mouseover", function(){
     document.querySelector(".popup").style.display = "none";
     document.querySelector(".site-altura").style.opacity = "1";
     document.querySelector(".site-altura").style.cursor = "default";
   console.log("LOG> ⚠️Anuncio fechado!");
 });
-
+}
 
 
   
