@@ -269,7 +269,7 @@ body {
   max-width:100%;
 }
 left{
-display:inline-block;
+display:block;
 padding: 3px;
 align-items: left;
 text-align: left;
@@ -279,11 +279,14 @@ width: 50%;
 border-right: 5px solid black;
 }
 right{
-display:block;
+position: absolute;
+display: inline-block;
 padding: 3px;
 align-items: right;
 text-align: right;
 justify-content: right;
+
+  
 z-index: 1;
 width: 50%;
 }
