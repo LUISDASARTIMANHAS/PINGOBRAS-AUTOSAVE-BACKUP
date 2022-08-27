@@ -275,10 +275,17 @@ align-items: left;
 text-align: left;
 justify-content: left;
 z-index: 1;
-margin-bottom: 3%;
-margin-right: 50%;
 width: 50%;
 border-right: 5px solid black;
+}
+right{
+display:block;
+padding: 3px;
+align-items: right;
+text-align: right;
+justify-content: right;
+z-index: 1;
+width: 50%;
 }
 .discord{
 display:inline-block;
