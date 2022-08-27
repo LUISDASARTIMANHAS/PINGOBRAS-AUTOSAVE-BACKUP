@@ -12,6 +12,19 @@
   display: block;
   max-width:100%;
 }
+.diogo-cabecalho{
+  background: black;
+  border: 5px solid gray;
+}
+.info{
+  background: white;
+  border: 3px solid gray;
+  color: black;
+  width: 100%;
+  cursor: help;
+  height: 150pt;
+  display: block;
+}
 .list, list{
   margin-top: auto;
   display: none;

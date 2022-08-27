@@ -278,6 +278,17 @@ z-index: 1;
 width: 50%;
 border-right: 5px solid black;
 }
+left.diogo{
+display:block;
+padding: 3px;
+align-items: left;
+text-align: left;
+justify-content: left;
+z-index: 1;
+width: 50%;
+border-right: 5px solid black;
+height: 200pt;
+}
 right{
 text-align: left;
 float: right;
