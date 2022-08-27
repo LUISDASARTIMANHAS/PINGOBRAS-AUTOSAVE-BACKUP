@@ -45,19 +45,14 @@ Subir.addEventListener("click", function() {
 });
 }
 var Descer = document.querySelector("#jsDescer");
-var batepapoDescer = document.querySelector("#jsDescerBatePapo");
-if(!Descer || !batepapoDescer) {
+
+if(!Descer) {
 console.warn("Deu Pau No Redirect Para Descer Do Site")
 }else{
 Descer.addEventListener("click", function() {
   ClickMouseFUNCTIONS.play();
     window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");
-});
-batepapoDescer.addEventListener("click", function() {
-    window.scrollTo(0, 2000);
-  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");
-});
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");});
 }
   
   
@@ -137,6 +132,13 @@ btnlistChangelogs.addEventListener('mouseover', function() {
 ClickMouseFUNCTIONS.play();  
 listChangelogs.style.display = 'block';
     console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");})
-
 }
 
+var batepapoDescer = document.querySelector("#jsDescerBatePapo");
+if(!batepapoDescer) {
+ console.warn("Deu Pau No Bate-Papo do Site!")  
+}else{
+batepapoDescer.addEventListener("click", function() {
+    window.scrollTo(0, 2000);
+  console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para bate-papo!");});
+}
