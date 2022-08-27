@@ -279,14 +279,14 @@ width: 50%;
 border-right: 5px solid black;
 }
 right{
-position: absolute;
 display: inline-block;
 padding: 3px;
-align-items: right;
-text-align: right;
-justify-content: right;
-
-  
+align-items: left;
+text-align: left;
+justify-content: left;
+float:right;
+position:relative;
+top:-195px;
 z-index: 1;
 width: 50%;
 }
