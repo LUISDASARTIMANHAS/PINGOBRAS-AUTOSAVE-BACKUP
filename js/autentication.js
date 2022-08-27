@@ -20,7 +20,7 @@ let authbypass = localStorage.getItem("bypass");
 let authbypass2 = JSON.parse(authbypass)
 
 
-  if(authbypass2 == "null" || authbypass2.bypass == 10101010100){
+  if(authbypass2 == null || authbypass2.bypass == 10101010100){
   const disconectadm = "desconectado";
   localStorage.setItem("ADMtoken", disconectadm);
 window.location.href = ("https://pingobras.glitch.me/login")}

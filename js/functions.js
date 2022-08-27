@@ -89,7 +89,7 @@ function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me"}
 const music = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Electro-Light%20-%20Symbolism%20%5BNCS%20Release%5D.mp3?v=1651870846885.mp3');
 function play() {
 music.play();
-music.loop =true;
+music.loop =true;}
 
 
 function myFunction() {
@@ -123,20 +123,20 @@ var listChangelogs = document.getElementById('listChangelogs');
 if(!btnlistChangelogs || !listChangelogs) {
 console.warn("Deu Pau Nos Dados Da Changelogs Do Site")
 }else{
+  
 btnlistChangelogs.addEventListener('click', function() {
 ClickMouseFUNCTIONS.play();
     if(listChangelogs.style.display === 'block') {
       listChangelogs.style.display = 'none';
       console.log("FUNCTIONS/LOG> A Changelogs foi escondida!");
-  } else {
+  }else{
       listChangelogs.style.display = 'block';
-    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");}
-});
+    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!")};});
+  
 btnlistChangelogs.addEventListener('mouseover', function() {
 ClickMouseFUNCTIONS.play();  
 listChangelogs.style.display = 'block';
-    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");
-})
-}
+    console.log("FUNCTIONS/LOG> A Changelogs esta visivel!");})
 
+}
 
