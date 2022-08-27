@@ -277,17 +277,11 @@ justify-content: left;
 z-index: 1;
 width: 50%;
 border-right: 5px solid black;
+height: auto;
 }
-left.diogo{
-display:block;
-padding: 3px;
-align-items: left;
-text-align: left;
-justify-content: left;
-z-index: 1;
-width: 50%;
-border-right: 5px solid black;
-height: 200pt;
+.left-diogo{
+border-right: 5px solid gray;
+min-height: 150pt;
 }
 right{
 text-align: left;
@@ -297,6 +291,10 @@ z-index: 2;
 width: 50%;
 display: inline-block;
 padding: 3px;
+height: auto;
+}
+.right-diogo{
+min-height: auto;
 }
 .discord{
 display:inline-block;
