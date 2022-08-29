@@ -32,7 +32,7 @@ let downloadTime = document.getElementById("downloadTime");
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
 }else{
-  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ //timeseconds + "s "
+  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ timeseconds + "s "
 }
   
   
