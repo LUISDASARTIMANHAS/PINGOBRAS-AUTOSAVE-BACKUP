@@ -32,13 +32,13 @@ let downloadTime = document.getElementById("downloadTime");
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
 }else{
-  downloadTime.innerHTML = "IMG:5MB/"+ timeseconds + "s "
+  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ //timeseconds + "s "
 }
   
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  var bps = (Size8 / timeseconds).toFixed(2);
+  var bps = (Size / timeseconds).toFixed(2);
   var speedInKbps = (bps/1024).toFixed(2);
   var speedInMbps = (speedInKbps/1024).toFixed(2);
   var speedInGBps = (speedInMbps/1024).toFixed(2);
