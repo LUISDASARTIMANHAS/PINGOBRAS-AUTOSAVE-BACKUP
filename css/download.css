@@ -109,7 +109,7 @@ a:hover {
   text-decoration: none;
   transform: translateY(5px);
   transition: all 0.3s ease-out;
-  width: 75%;
+  width: 50%;
   border-radius: 15px;
   display: flex;
   margin-top: 15px;
