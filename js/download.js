@@ -45,9 +45,7 @@ function barButton() {
 }
 
 
-function contato() {
-  document.getElementById("contato").submit();
-};
+
 
 
     
