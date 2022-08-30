@@ -42,6 +42,7 @@ to this section's matching END comment to see page-specific styles.
   --Y: 390px;
   --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929);
   --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
+  --IMGLuisdasartimanhas: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/doge-angry.png?v=1661855131002);
 
   --display: flex formato de celular;
   --height: "altuta";
@@ -267,6 +268,13 @@ body {
   justify-content: center;
   opacity: 1;
   max-width:100%;
+}
+body.luis-das-artimanhas{
+background-image: var(--IMGLuisdasartimanhas);
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
 left{
 display:block;
