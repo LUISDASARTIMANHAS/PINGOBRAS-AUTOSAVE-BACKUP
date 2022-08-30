@@ -135,8 +135,20 @@ a:hover {
   height: 45px;
   display: inline-flex;
   color: black;
+  font-size: 15px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-decoration: none;
+  width: 65%;
+  border-radius: 15px;
+  margin-top: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .download-music:hover {
+  transform: translateY(5px);
+  transition: all 0.3s ease-out;
   background: green;
 }
 .arquivos {
