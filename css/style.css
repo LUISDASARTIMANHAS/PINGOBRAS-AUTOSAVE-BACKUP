@@ -735,12 +735,12 @@ item-loja{
 }
 
 .popup {
-/*background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
+background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   background-repeat: no-repeat;
-  background-size: cover; */
-  background: white;
+  background-size: cover; 
+  min-height: 50%;
   width: 75%;
-  height: 50%;
+  height: auto;
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -749,7 +749,6 @@ item-loja{
   display: block;
   font-family: "arial", sans-serif;
   text-align: center;
-  padding: 0px 10px 0px;
   opacity: 1;
   border: 5px dashed black;
 }
@@ -760,7 +759,7 @@ item-loja{
   background-color: transparent;
   font-size: 30px;
   color: white;
-  background: black;
+  background: red;
   border-radius: 100%;
   width: 40px;
   height: 40px;
@@ -770,12 +769,11 @@ item-loja{
   right: 0;
 }
 .popup p {
-  border: 5px dashed black;
-  position: absolute;
+  margin-top: 25%;
+  padding: 5px;
   font-size: 24px;
-  text-align: justify content;
-  line-height: 25px;
-  bottom: 20%;
+  text-align: center;
+  margin-top: 10%;
 }
 .popup button:hover {
   background: green;
