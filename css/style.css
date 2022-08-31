@@ -746,7 +746,7 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   left: 50%;
   top: 50%;
   border-radius: 8px;
-  display: block;
+  display: none;
   font-family: "arial", sans-serif;
   text-align: center;
   opacity: 1;
@@ -769,11 +769,10 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   right: 0;
 }
 .popup p {
-  margin-top: 25%;
+  margin-top: 35%;
   padding: 5px;
   font-size: 24px;
   text-align: center;
-  margin-top: 10%;
 }
 .popup button:hover {
   background: green;
