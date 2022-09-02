@@ -270,14 +270,18 @@ body {
   max-width:100%;
 }
 body.luis-das-artimanhas{
-background-image: var(--IMGLuisdasartimanhas);
+  background-image: var(--IMGLuisdasartimanhas);
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
 }
-body.trailer-{
-  
+body.trailer-game{
+  background-image: url(https://c.tenor.com/zjbXreUb5_YAAAAd/steam.gif);
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
 left{
 display:block;
@@ -655,7 +659,7 @@ conteudo, .index{
   max-width:100%;
 }
 .footer-gray{
-    margin-top: 10%;
+    margin-top: 7%;
     background: gray;
     display: block;
     width: 100%;
