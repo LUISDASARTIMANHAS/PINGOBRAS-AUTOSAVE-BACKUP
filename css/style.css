@@ -649,7 +649,7 @@ conteudo, .index{
 /* footer grid */
 .footer {
   display: block;
-  margin: 30px;
+  margin-top: 30px;
   width: 100%;
   font-size: 15pt;
   text-align: center;
@@ -659,17 +659,16 @@ conteudo, .index{
   max-width:100%;
 }
 .footer-gray{
-    margin-top: 7%;
+    margin-top: 10%;
     background: gray;
     display: block;
     width: 100%;
     font-size: 17pt;
     text-align: center;
-    padding-top: 10%;
+    padding: 7%;
     flex-wrap: wrap;
     border-top: 5px solid white;
     max-width: 100%;
-    padding-bottom: 5%;
 }
 .footer.links {
   padding: 40px;
