@@ -1,10 +1,16 @@
+const loopCalc = setInterval(refreshCalcs, 1000);
+
+function refreshCalcs() {
+
+
+
 const ClickMouseCalc = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
    
 
 function buscar() {
 const inputbuscar = document.getElementById("inputbuscar")
 console.log(inputbuscar.value)
-  
+
 //const tela = document.createElement("tela");
 //const id = document.createAttribute("id");
 //tela.value = inputbuscar.value
@@ -12,25 +18,19 @@ console.log(inputbuscar.value)
 //tela.setAttributeNode(id);
 //document.getElementById("telasearch").appendChild(tela);
   
-  
 }
 
 
-function CalcJuros() {
+
  try {
-console.log("click do mouse")
-ClickMouseCalc.play()
-   
 let EMP = document.getElementById("EMP").value;
 const JurosSem = document.getElementById("jurosSem")
 const JurosProxSem = document.getElementById("jurosProxSem")
 const CalcTotal = document.getElementById("calcTotal")
 const ProxSem = document.getElementById("proximasem")
-const btncalc = document.getElementById("btnCalc")
+
 
 if(EMP == 0){
-    btncalc.style.opacity = "0.7"
-    btncalc.style.cursor = "not-allowed"
     JurosSem.innerHTML = "Insira o valor na calculadora!"
     JurosSem.style.color = "red"
     CalcTotal.innerHTML = "Insira o valor na calculadora!"
@@ -41,8 +41,6 @@ if(EMP == 0){
     ProxSem.style.color = "red"
     EMP.style.outlineColor = "red"
   }else{
-  btncalc.style.opacity = "1"
-  btncalc.style.cursor = "pointer"
   const porcent = 0.2 
   const juros = EMP * porcent;
   const total = (Number(EMP) + Number(juros));
@@ -63,7 +61,7 @@ if(EMP == 0){
 }
   
    
-  }
+  
 
 function buscarDiv() {
 
@@ -86,4 +84,8 @@ function buscarDiv() {
           document.getElementById('Nenhum').style.display="block";
         }
     }
+}
+
+  
+  
 }
