@@ -651,6 +651,18 @@ conteudo, .index{
   border-top: 4px solid white;
   max-width:100%;
 }
+.footer-gray{
+  background: gray;
+  display: block;
+  bottom:100%;
+  width: 100%;
+  font-size: 17pt;
+  text-align: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  border-top: 4px solid white;
+  max-width:100%;
+}
 .footer.links {
   padding: 40px;
   white-space: nowrap;
