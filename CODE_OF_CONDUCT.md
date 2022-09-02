@@ -41,7 +41,6 @@ Além disso, os organizadores da comunidade estão disponíveis para ajudar os m
 
 6. Lidando com Reclamações
 Se você sentir que foi falsa ou injustamente acusado de violar este Código de Conduta, você deve notificar luisaugustodesouza785@gmail.com com uma descrição concisa de sua reclamação. Sua reclamação será tratada de acordo com nossas políticas governamentais existentes. 
-https://pingobras-politicas
 
 [NOTA: As políticas governamentais de cada organização devem ditar como você lida com advertências e expulsões de membros da comunidade. É altamente recomendável que você mencione essas políticas aqui ou na Seção 6 e inclua um mecanismo para lidar com reclamações.]
 
@@ -50,4 +49,4 @@ Esperamos que todos os participantes da comunidade (colaboradores, pagos ou não
 Este código de conduta e seus procedimentos relacionados também se aplicam a comportamentos inaceitáveis que ocorram fora do escopo das atividades da comunidade quando tal comportamento tiver o potencial de afetar adversamente a segurança e o bem-estar dos membros da comunidade.
 
 8. Informações de contato
-[https://discord.gg/TUpNd6CQgg -https://wa.me/55027995744791- deve ser uma única pessoa ou uma pequena equipe que possa responder a problemas diretamente]
+https://discord.gg/TUpNd6CQgg -https://wa.me/55027995744791- deve ser uma pequena equipe que possa responder a problemas diretamente.
