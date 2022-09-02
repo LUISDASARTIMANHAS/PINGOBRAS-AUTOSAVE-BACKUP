@@ -34,7 +34,8 @@ Espera-se que qualquer pessoa solicitada a interromper um comportamento inaceit�
 Se um membro da comunidade se envolver em um comportamento inaceitável, os organizadores da comunidade podem tomar qualquer ação que considerem apropriada, incluindo uma proibição temporária ou expulsão permanente da comunidade sem aviso prévio (e sem reembolso no caso de um evento pago).
 
 5. Diretrizes para relatórios
-Se você estiver sujeito ou testemunhar um comportamento inaceitável, ou tiver outras preocupações, notifique um organizador da comunidade o mais rápido possível. https://report-pingobras.
+Se você estiver sujeito ou testemunhar um comportamento inaceitável, ou tiver outras preocupações, notifique um organizador da comunidade o mais rápido possível. 
+mailto:luisaugustodesouza785@gmail.com
 
 Além disso, os organizadores da comunidade estão disponíveis para ajudar os membros da comunidade a se envolverem com as autoridades locais ou para ajudar aqueles que experimentam comportamentos inaceitáveis ​​a se sentirem seguros. No contexto de eventos presenciais, os organizadores também fornecerão acompanhantes conforme desejado pela pessoa em sofrimento.
 
@@ -49,4 +50,4 @@ Esperamos que todos os participantes da comunidade (colaboradores, pagos ou não
 Este código de conduta e seus procedimentos relacionados também se aplicam a comportamentos inaceitáveis que ocorram fora do escopo das atividades da comunidade quando tal comportamento tiver o potencial de afetar adversamente a segurança e o bem-estar dos membros da comunidade.
 
 8. Informações de contato
-[https://discord -- deve ser uma única pessoa ou uma pequena equipe que possa responder a problemas diretamente]
+[https://discord.gg/TUpNd6CQgg -https://wa.me/55027995744791- deve ser uma única pessoa ou uma pequena equipe que possa responder a problemas diretamente]
