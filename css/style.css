@@ -647,10 +647,10 @@ conteudo, .index{
   margin: 1rem auto 0;
 }
 /* footer grid */
-.footer {
+footer {
   display: block;
   margin-top: 10%;
-  width: 105%;
+  width: 100%;
   font-size: 15pt;
   text-align: center;
   padding-top: 50px;
