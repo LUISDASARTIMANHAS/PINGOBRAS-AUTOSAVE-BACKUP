@@ -28,7 +28,7 @@ const JurosSem = document.getElementById("jurosSem")
 const JurosProxSem = document.getElementById("jurosProxSem")
 const CalcTotal = document.getElementById("calcTotal")
 const ProxSem = document.getElementById("proximasem")
-
+const LOCalc = document.getElementById("loadingCalc")
 
 if(EMP == 0){
     JurosSem.innerHTML = "Insira o valor na calculadora!"
@@ -39,6 +39,8 @@ if(EMP == 0){
     JurosProxSem.style.color = "red"
     ProxSem.innerHTML = "Insira o valor na calculadora!"
     ProxSem.style.color = "red"
+    LOCalc.style.display = "none"
+    EMP.style.border = "5px solid black"
   }else{
   const porcent = 0.2 
   const juros = EMP * porcent;
@@ -53,7 +55,8 @@ if(EMP == 0){
   JurosSem.style.color = "green"
   CalcTotal.style.color = "green"
   JurosProxSem.style.color = "green"
-  ProxSem.style.color = "green"}
+  ProxSem.style.color = "green"
+  LOCalc.style.display = "inline"}
  }catch (err) {
   console.log(err);
 }
