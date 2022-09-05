@@ -23,7 +23,8 @@ console.log(inputbuscar.value)
 
 
  try {
-let EMP = document.getElementById("EMP").value;
+const EMPstyle = document.getElementById("EMP");
+const EMP = document.getElementById("EMP").value;
 const JurosSem = document.getElementById("jurosSem")
 const JurosProxSem = document.getElementById("jurosProxSem")
 const CalcTotal = document.getElementById("calcTotal")
@@ -40,13 +41,13 @@ if(EMP == 0){
     ProxSem.innerHTML = "Insira o valor na calculadora!"
     ProxSem.style.color = "red"
     LOCalc.style.display = "none"
-    EMP.style.border = "5px solid black"
+    EMPstyle.style.border = "5px solid black"
   }else{
   const porcent = 0.2 
-  const juros = EMP * porcent;
-  const total = (Number(EMP) + Number(juros));
-  const jurosNew = total * porcent
-  const TotalProxSem = total + jurosNew
+  let juros = EMP * porcent;
+  let total = (Number(EMP) + Number(juros));
+  let jurosNew = total * porcent
+  let TotalProxSem = total + jurosNew
   
   JurosSem.innerHTML = juros
   CalcTotal.innerHTML = total
@@ -56,7 +57,8 @@ if(EMP == 0){
   CalcTotal.style.color = "green"
   JurosProxSem.style.color = "green"
   ProxSem.style.color = "green"
-  LOCalc.style.display = "inline"}
+  LOCalc.style.display = "inline"
+  LOCalc.innerHTML = "inline"}
  }catch (err) {
   console.log(err);
 }
