@@ -41,7 +41,7 @@ if(EMP == 0){
     ProxSem.innerHTML = "Insira o valor na calculadora!"
     ProxSem.style.color = "red"
     LOCalc.style.display = "none"
-    EMPstyle.style.border = "5px solid black"
+    EMPstyle.style.border = "2px dashed red"
   }else{
   const porcent = 0.2 
   let juros = EMP * porcent;
