@@ -86,11 +86,16 @@ js{
 }
 .game-over{
   position: absolute;
-  width: 50%;
+  width: 280px;
   height: 280px;
-  animation: game-over-animation 15s linear;
-}
+  left: 35%;
+  display: none;
+  z-index: 1;
 
+}
+.animation-game-over{
+  animation: game-over-animation 7s linear;  
+}
 
 @keyframes pipe-animation{
   from{
@@ -156,36 +161,36 @@ js{
 }
 @keyframes game-over-animation{
   0%{
-    bottom: 0%;
+    bottom: -50%;
   }
   10%{
-    bottom: 10%;
+    bottom: -45%;
   }
   20%{
-    bottom: 20%;
+    bottom: -35%;
   }
   30%{
-    bottom: 30%;
+    bottom: -25%;
   }
   40%{
-    bottom: 40%;
+    bottom: -15%;
   }
   50%{
-    bottom: 50%;
+    bottom: 0%;
   }
   60%{
-    bottom: 60%;
+    bottom: 10%;
   }
   70%{
-    bottom: 70%;
+    bottom: 20%;
   }
   80%{
-    bottom: 80%;
+    bottom: 30%;
   }
   90%{
-    bottom: 90%;
+    bottom: 40%;
   }
   100%{
-    bottom: 100%;
+    bottom: 50%;
   }
 }

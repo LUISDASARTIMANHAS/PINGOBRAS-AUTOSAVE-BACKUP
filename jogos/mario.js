@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const gameover = document.querySelector(".game-over");
 
 document.addEventListener("keydown", jump);
 function jump() {
@@ -26,6 +27,9 @@ function perdeu() {
     mario.style.width = "80px"
     mario.style.height = "80px"
     mario.style.marginLeft = "50px"
+    gameover.classList.add("animation-game-over");
+    gameover.style.display = "block";
+    
     clearInterval(loopPerdeu)
   }
 }
