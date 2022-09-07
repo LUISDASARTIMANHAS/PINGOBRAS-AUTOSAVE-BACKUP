@@ -23,6 +23,7 @@ body {
 }
 
 .sidenav {
+  
   height: 100%;
   width: 0;
   position: fixed;
@@ -66,7 +67,17 @@ body {
 
 <h2>Animated Sidenav Example</h2>
 <p>Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="
+ font-size:30px;
+ cursor:pointer;
+ float:left;
+ display:block;
+ justify-content: left;
+ text-transform:capitalize;
+ text-align:left;
+ text-decoration:underline;
+ text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
+ direction:ltr;" onclick="openNav()">&#9776; open</span>
         
         <info>
           <p>ADMINISTRADOR ACCOUNT:</p>
