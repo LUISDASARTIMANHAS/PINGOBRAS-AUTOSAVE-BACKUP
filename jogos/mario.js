@@ -3,6 +3,8 @@ const pipe = document.querySelector(".pipe");
 const gameover = document.querySelector(".game-over");
 
 document.addEventListener("keydown", jump);
+document.addEventListener("click", jump);
+
 function jump() {
   mario.classList.add("jump");
   
