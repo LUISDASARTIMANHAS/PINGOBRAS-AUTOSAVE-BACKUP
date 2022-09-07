@@ -14,9 +14,11 @@ function jump() {
 const loopPerdeu = setInterval(perdeu, 10)
 function perdeu() {
   const pipePosition =  pipe.offsetLeft;
+  const marioPosition =  window.getComputedStyle(mario).bottom.replace;
+  
   if(pipePosition <= 120){
     
     pipe.style.animation = "none"
-    pipe.stile.left = `${pipePosition}px`
+    pipe.style.left = `${pipePosition}px`
   }
 }
