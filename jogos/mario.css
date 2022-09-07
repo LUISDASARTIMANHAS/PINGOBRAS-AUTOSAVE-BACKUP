@@ -76,7 +76,13 @@ js{
   position: absolute;
   width: 450px;
   height: 450px;
-  animation: clouds-animation 12s infinite linear;
+  animation: clouds-animation 22s infinite linear;
+}
+.bird{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  animation: bird-animation 15s infinite linear;
 }
 
 
@@ -111,5 +117,34 @@ js{
   }
   to{
     right:100%;
+  }
+}
+@keyframes bird-animation{
+  from{
+    right: -550px;
+  }
+  to{
+    right:100%;
+  }
+  0%{
+    bottom: 90%;
+  }
+  30{
+    bottom: 75%;
+  }
+  40%{
+    bottom: 65%;
+  }
+  50%{
+    bottom: 50%;
+  }
+  60%{
+    bottom: 65%;
+  }
+  70%{
+    bottom: 75%;
+  }
+  100%{
+    bottom: 90%;
   }
 }
