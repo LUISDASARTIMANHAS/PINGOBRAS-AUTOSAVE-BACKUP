@@ -1,10 +1,13 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const gameover = document.querySelector(".game-over");
-const telaWidth = screen.availWidth
+const telaWidth = screen.availWidth;
+const body = document.querySelector("body")
+const 
 
-if(telaWidth <= 750){
-  alert("A tela do usuario e muito curta!")
+if(telaWidth <= 650){
+  alert("A tela do usuario e muito curta!");
+  body.style.display = "none"
 }
 
 

@@ -53,6 +53,7 @@ js{
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  bottom: 0;
   background: linear-gradient(white,lightblue)
 }
 .pipe{
