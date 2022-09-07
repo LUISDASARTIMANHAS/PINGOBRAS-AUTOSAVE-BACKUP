@@ -20,5 +20,10 @@ function perdeu() {
     
     pipe.style.animation = "none"
     pipe.style.left = `${pipePosition}px`
+    mario.style.animation = "none"
+    mario.style.bottom = `${marioPosition}px`
+    mario.src = "https://preview.redd.it/dz7i4gsisu721.png?auto=webp&s=dfa780e2356ebec9b84c7537a852fc1732e50aba"
+    mario.style.width = "90px"
+    mario.style.height = "90px"
   }
 }
