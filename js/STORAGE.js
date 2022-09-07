@@ -54,5 +54,3 @@ let NetworkObj = localStorage.getItem("Network");
 const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
 
-
-
