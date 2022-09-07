@@ -47,8 +47,9 @@ function perdeu() {
     
     clearInterval(loopPerdeu)
   }else{
-    setTimeout(() => ,1000)
-    placarGB = placarGB + 1
-    labelPlacar.innerHTML = placarGB
+    if(pipePosition < 0){
+    placarGB = placarGB + 0.1;
+    labelPlacar.innerHTML = placarGB;}
+    
   }
 }
