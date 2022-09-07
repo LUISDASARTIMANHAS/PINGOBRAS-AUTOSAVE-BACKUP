@@ -84,6 +84,12 @@ js{
   height: 75px;
   animation: bird-animation 15s infinite linear;
 }
+.game-over{
+  position: absolute;
+  width: 50%;
+  height: 280px;
+  animation: game-over-animation 15s linear;
+}
 
 
 @keyframes pipe-animation{
@@ -146,5 +152,40 @@ js{
   }
   100%{
     bottom: 90%;
+  }
+}
+@keyframes game-over-animation{
+  0%{
+    bottom: 0%;
+  }
+  10%{
+    bottom: 10%;
+  }
+  20%{
+    bottom: 20%;
+  }
+  30%{
+    bottom: 30%;
+  }
+  40%{
+    bottom: 40%;
+  }
+  50%{
+    bottom: 50%;
+  }
+  60%{
+    bottom: 60%;
+  }
+  70%{
+    bottom: 70%;
+  }
+  80%{
+    bottom: 80%;
+  }
+  90%{
+    bottom: 90%;
+  }
+  100%{
+    bottom: 100%;
   }
 }
