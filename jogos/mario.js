@@ -3,19 +3,19 @@ const pipe = document.querySelector(".pipe");
 const gameover = document.querySelector(".game-over");
 const telaWidth = screen.availWidth;
 const body = document.querySelector("body")
-const 
+const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Jump Sound Effect.mp3?v=1662589743636');
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
   body.style.display = "none"
 }
 
-
 document.addEventListener("keydown", jump);
 document.addEventListener("click", jump);
 
 function jump() {
   mario.classList.add("jump");
+  marioJump.play();
   
   setTimeout(() => {
   mario.classList.remove("jump");
