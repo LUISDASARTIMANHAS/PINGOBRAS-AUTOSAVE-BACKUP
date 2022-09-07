@@ -7,6 +7,7 @@ const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-2
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
 let placarGB = 0
 const labelPlacar = document.querySelector("#placar");
+const HightScore = document.querySelector()
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -47,8 +48,8 @@ function perdeu() {
     
     clearInterval(loopPerdeu)
   }else{
-    if(pipePosition < 0){
-    placarGB = placarGB + 0.1;
+    if(pipePosition < "-17" && marioPosition >= 80){
+    placarGB = placarGB + 1;
     labelPlacar.innerHTML = placarGB;}
     
   }
