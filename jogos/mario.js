@@ -1,6 +1,12 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const gameover = document.querySelector(".game-over");
+const telaWidth = screen.availWidth
+
+if(telaWidth <= 750){
+  alert("A tela do usuario e muito curta!")
+}
+
 
 document.addEventListener("keydown", jump);
 document.addEventListener("click", jump);
