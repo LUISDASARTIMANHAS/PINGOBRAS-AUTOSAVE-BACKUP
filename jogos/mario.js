@@ -4,6 +4,9 @@ const gameover = document.querySelector(".game-over");
 const telaWidth = screen.availWidth;
 const body = document.querySelector("body")
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
+const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
+let placarGB = 0
+const labelPlacar = document.querySelector("#placar");
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -40,7 +43,12 @@ function perdeu() {
     mario.style.marginLeft = "50px"
     gameover.classList.add("animation-game-over");
     gameover.style.display = "block";
+    marioGameover.play();
     
     clearInterval(loopPerdeu)
+  }else{
+    setTimeout(() => ,1000)
+    placarGB = placarGB + 1
+    labelPlacar.innerHTML = placarGB
   }
 }
