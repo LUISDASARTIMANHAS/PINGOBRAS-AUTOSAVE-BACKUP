@@ -94,7 +94,7 @@ js{
   position: absolute;
   width: 133px;
   height: 100px;
-  animation: airplane-animation 45s infinite linear;
+  animation: airplane-animation 245s infinite linear;
 }
 .game-over{
   position: absolute;
@@ -160,7 +160,7 @@ js{
 }
 @keyframes bird-animation{
   from{
-    right: -550px;
+    right: -750px;
   }
   to{
     right:100%;
@@ -189,7 +189,7 @@ js{
 }
 @keyframes airplane-animation{
   from{
-    right: -250px;
+    right: -5750px;
   }
   to{
     right:100%;
@@ -210,10 +210,10 @@ js{
     bottom: 55%;
   }
   70%{
-    bottom: 65%;
+    bottom: 50%;
   }
   100%{
-    bottom: 70%;
+    bottom: 55%;
   }
 }
 @keyframes game-over-animation{
