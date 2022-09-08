@@ -10,9 +10,13 @@ const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930
 let placarGB = 0
 const labelPlacar = document.querySelector("#placar");
 const LabelHightScore = document.querySelector("#HightScore")
-const LabelReload = document.getElementById("ReloadT");
-const timeReload = new Date();
-const secondsReload = timeReload.getSeconds();
+const runTime = document.getElementById("runTime");
+var iniciar = 1
+
+  const timeGame = setInterval(() => {
+  iniciar = iniciar+1
+  runTime.innerHTML = iniciar
+  },1000)
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -57,19 +61,19 @@ function perdeu() {
     gameover.style.display = "block";
     marioGameover.play();
     
+    clearInterval(timeGame)
     clearInterval(loopPerdeu)
-    LabelReload.innerHTML = secondsReload
     setTimeout(Reload,9000)
     function Reload(){
-      LabelReload.innerHTML = secondsReload
       window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
-      
-    }
+      }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80){
     placarGB = placarGB + 1;
     labelPlacar.innerHTML = placarGB;} 
   }
+
+  
   
   let HightScore = localStorage.getItem("Mario Jump HightScore");
   LabelHightScore.innerHTML = HightScore
