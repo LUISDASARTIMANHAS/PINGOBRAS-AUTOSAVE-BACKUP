@@ -63,6 +63,13 @@ js{
   height: 80px;
   animation: pipe-animation 2s infinite linear;
 }
+.pipe-plant{
+  position: absolute;
+  bottom: -18px;
+  width: 100px;
+  height: 150px;
+  animation: plant-animation 2s infinite linear;
+}
 .castelo{
   position: absolute;
   bottom: 0;
