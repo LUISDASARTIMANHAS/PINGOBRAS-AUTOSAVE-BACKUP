@@ -68,7 +68,7 @@ js{
   bottom: -18px;
   width: 150px;
   height: 150px;
-  animation: plant-animation 2s infinite linear;
+  animation: pipe-plant-animation 20s infinite linear;
 }
 .castelo{
   position: absolute;
@@ -134,7 +134,7 @@ js{
 }
 @keyframes pipe-plant-animation{
   from{
-    right: -80px;
+    right: -780px;
   }
   to{
     right:100%;

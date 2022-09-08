@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const pipePlant = document.querySelector(".pipe-plant");
 const gameover = document.querySelector(".game-over");
 const cubo = document.querySelector(".cubo");
 const telaWidth = screen.availWidth;
@@ -31,6 +32,7 @@ function jump() {
 const loopPerdeu = setInterval(perdeu, 10)
 function perdeu() {
   const pipePosition =  pipe.offsetLeft;
+  const pipePlantPosition =  pipePlant.offsetLeft;
   const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
@@ -38,6 +40,8 @@ function perdeu() {
     
     pipe.style.animation = "none"
     pipe.style.left = `${pipePosition}px`
+    pipePlant.style.animation = "none"
+    pipePlant.style.left = `${pipePosition}px`
     mario.style.animation = "none"
     mario.style.bottom = `${marioPosition}px`
     cubo.style.animation = "none"
