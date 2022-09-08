@@ -89,7 +89,6 @@ var minute = 0;
   runTime.innerHTML = minute+":" + second
     
   }else{
-  runTime.innerHTML = +second
+  runTime.innerHTML = +second} 
   }
-    
-  }
+const userMario = prompt("Insira Seu Nome","LDA");
