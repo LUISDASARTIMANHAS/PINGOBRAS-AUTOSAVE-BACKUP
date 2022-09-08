@@ -4,19 +4,14 @@ const pipePlant = document.querySelector(".pipe-plant");
 const gameover = document.querySelector(".game-over");
 const cubo = document.querySelector(".cubo");
 const telaWidth = screen.availWidth;
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
 let placarGB = 0
 const labelPlacar = document.querySelector("#placar");
-const LabelHightScore = document.querySelector("#HightScore")
+const LabelHightScore = document.querySelector("#HightScore");
 const runTime = document.getElementById("runTime");
-var iniciar = 1
-
-  const timeGame = setInterval(() => {
-  iniciar = iniciar+1
-  runTime.innerHTML = iniciar
-  },1000)
+const timeGame = setInterval(CalctimeGame,1000)
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -65,23 +60,36 @@ function perdeu() {
     clearInterval(loopPerdeu)
     setTimeout(Reload,9000)
     function Reload(){
-      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
-      }
+      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"}
   }else{
     if(pipePosition < "-17" && marioPosition >= 80){
     placarGB = placarGB + 1;
     labelPlacar.innerHTML = placarGB;} 
   }
 
-  
-  
   let HightScore = localStorage.getItem("Mario Jump HightScore");
   LabelHightScore.innerHTML = HightScore
   if(placarGB >= HightScore){
-    localStorage.setItem("Mario Jump HightScore", placarGB);
-  }
+    localStorage.setItem("Mario Jump HightScore", placarGB);}
   
-  
+
   
   
 }
+
+
+function CalctimeGame(){
+var second = 0;
+var minute = 0;
+  second = second+1
+  
+  if(iniciar => 60){
+  second = 0
+  minute = minute+1
+  runTime.innerHTML = minute+":" + second
+    
+  }else{
+  runTime.innerHTML = +second
+  }
+    
+  }
