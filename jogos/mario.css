@@ -94,11 +94,27 @@ js{
   z-index: 1;
 
 }
+.cubo{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  bottom: 180px;
+  animation: cubo-animation 22s infinite linear;
+}
+
 .animation-game-over{
   animation: game-over-animation 7s linear;  
 }
 
 @keyframes pipe-animation{
+  from{
+    right: -80px;
+  }
+  to{
+    right:100%;
+  }
+}
+@keyframes cubo-animation{
   from{
     right: -80px;
   }
