@@ -14,16 +14,9 @@ if(telaWidth <= 650){
   body.style.display = "none"
 }
 
-const loopKey = setInterval(keys,1000);
-function keys(){
-  var x = event.key;
-  console.log(x)
-if(x == "ArrowUp" || x == "w"){
-document.addEventListener("keydown", jump);}
-}
-
-
+document.addEventListener("keydown", jump);
 document.addEventListener("click", jump);
+
 function jump() {
   mario.classList.add("jump");
   marioJump.play();
