@@ -76,7 +76,7 @@ function perdeu() {
 }
 
 const userMario = prompt("Insira Seu Nome","LDA");
-
+const DadosM
 
 
 function CalctimeGame(){
