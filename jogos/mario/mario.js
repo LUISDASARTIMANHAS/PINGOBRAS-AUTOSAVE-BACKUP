@@ -8,10 +8,12 @@ const body = document.querySelector("body");
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
 let placarGB = 0
+var second = 0;
 const labelPlacar = document.querySelector("#placar");
 const LabelHightScore = document.querySelector("#HightScore");
 const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
+let HightScore = localStorage.getItem("Mario Jump HightScore");
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -67,29 +69,22 @@ function perdeu() {
     labelPlacar.innerHTML = placarGB;} 
   }
 
-  let HightScore = localStorage.getItem("Mario Jump HightScore");
+  
   LabelHightScore.innerHTML = HightScore
   if(placarGB >= HightScore){
   localStorage.setItem("Mario Jump HightScore", placarGB);}  
   
   
 }
-
-const userMario = prompt("Insira Seu Nome","LDA");
-const DadosM
-
-
 function CalctimeGame(){
-var second = 0;
-var minute = 0;
-  second = second+1
-  
-  if(iniciar => 60){
-  second = 0
-  minute = minute+1
-  runTime.innerHTML = minute+":" + second
-    
-  }else{
-  runTime.innerHTML = +second} 
+
+second = second+1
+runTime.innerHTML = second
   }
+
+/*const userMario = prompt("Insira Seu Nome","LDA");
+const dadosMarioObj = {nome:userMario,pontos: HightScore};
+const dadosMario = JSON.stringify(dadosMarioObj);
+alert(dadosMario)*/
+
 
