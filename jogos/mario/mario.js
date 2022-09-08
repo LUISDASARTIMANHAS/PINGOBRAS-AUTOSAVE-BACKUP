@@ -70,12 +70,13 @@ function perdeu() {
   let HightScore = localStorage.getItem("Mario Jump HightScore");
   LabelHightScore.innerHTML = HightScore
   if(placarGB >= HightScore){
-    localStorage.setItem("Mario Jump HightScore", placarGB);}
-  
-
+  localStorage.setItem("Mario Jump HightScore", placarGB);}  
   
   
 }
+
+const userMario = prompt("Insira Seu Nome","LDA");
+
 
 
 function CalctimeGame(){
@@ -91,4 +92,4 @@ var minute = 0;
   }else{
   runTime.innerHTML = +second} 
   }
-const userMario = prompt("Insira Seu Nome","LDA");
+
