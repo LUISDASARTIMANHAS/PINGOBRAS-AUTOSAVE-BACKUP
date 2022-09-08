@@ -10,6 +10,7 @@ const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930
 let placarGB = 0
 const labelPlacar = document.querySelector("#placar");
 const LabelHightScore = document.querySelector("#HightScore")
+const Label
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -36,12 +37,12 @@ function perdeu() {
   const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
-  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80){
+  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80 || pipePlantPosition <= 120 && pipePlantPosition > 0 ){
     
     pipe.style.animation = "none"
     pipe.style.left = `${pipePosition}px`
     pipePlant.style.animation = "none"
-    pipePlant.style.left = `${pipePosition}px`
+    pipePlant.style.left = `${pipePlantPosition}px`
     mario.style.animation = "none"
     mario.style.bottom = `${marioPosition}px`
     cubo.style.animation = "none"
@@ -55,6 +56,13 @@ function perdeu() {
     marioGameover.play();
     
     clearInterval(loopPerdeu)
+    setTimeout(Reload,9000)
+    function Reload(){
+      const timeReload = new Date();
+      
+      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
+      
+    }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80){
     placarGB = placarGB + 1;
