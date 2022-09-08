@@ -1,3 +1,69 @@
+js{
+  width: auto;
+  display: inline;
+}
+[inline]{
+  display: inline;
+}
+[hidden] {
+  display: none !important;
+}
+[branco]{
+  color: white;
+}
+[white]{
+  background: white;
+}
+[azul]{
+  color: blue;
+}
+[blue]{
+  background: blue;
+}
+[lightblue]{
+  background: lightblue;
+}
+[amarelo]{
+  color: yellow;
+}
+[yellow]{
+  background: yellow;
+}
+[vermelho]{
+  color: red;
+}
+[red]{
+  background: red;
+}
+[verde]{
+  color: green;
+}
+[green]{
+  background: green;
+}
+[laranja]{
+  color: orange;
+}
+[orange]{
+  background: orange;
+}
+[cinza]{
+  color: gray;
+}
+[gray]{
+  background: gray;
+}
+[roxo]{
+  color: purple;
+}
+[purple]{
+background: purple;
+}
+[border]{
+  padding: 4px;
+  border: 2px solid black;
+}
+
 .cabecalho {
   position: absolute;
   top: 0;

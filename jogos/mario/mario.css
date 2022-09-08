@@ -94,7 +94,7 @@ js{
   position: absolute;
   width: 133px;
   height: 100px;
-  animation: airplane-animation 245s infinite linear;
+  animation: airplane-animation 120s infinite linear;
 }
 .game-over{
   position: absolute;
