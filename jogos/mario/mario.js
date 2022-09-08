@@ -58,6 +58,7 @@ function perdeu() {
     marioGameover.play();
     
     clearInterval(loopPerdeu)
+    LabelReload.innerHTML = secondsReload
     setTimeout(Reload,9000)
     function Reload(){
       LabelReload.innerHTML = secondsReload
