@@ -1,6 +1,7 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const gameover = document.querySelector(".game-over");
+const cubo = document.querySelector(".cubo");
 const telaWidth = screen.availWidth;
 const body = document.querySelector("body")
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
@@ -30,6 +31,7 @@ function jump() {
 const loopPerdeu = setInterval(perdeu, 10)
 function perdeu() {
   const pipePosition =  pipe.offsetLeft;
+  const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
   if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80){
@@ -38,6 +40,8 @@ function perdeu() {
     pipe.style.left = `${pipePosition}px`
     mario.style.animation = "none"
     mario.style.bottom = `${marioPosition}px`
+    cubo.style.animation = "none"
+    cubo.style.left = `${cuboPosition}px`
     mario.src = "https://preview.redd.it/dz7i4gsisu721.png?auto=webp&s=dfa780e2356ebec9b84c7537a852fc1732e50aba"
     mario.style.width = "80px"
     mario.style.height = "80px"

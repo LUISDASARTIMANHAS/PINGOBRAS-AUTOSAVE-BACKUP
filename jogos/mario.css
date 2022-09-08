@@ -96,10 +96,10 @@ js{
 }
 .cubo{
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   bottom: 180px;
-  animation: cubo-animation 22s infinite linear;
+  animation: cubo-animation 30s infinite linear;
 }
 
 .animation-game-over{
