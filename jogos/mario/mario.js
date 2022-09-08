@@ -10,7 +10,9 @@ const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930
 let placarGB = 0
 const labelPlacar = document.querySelector("#placar");
 const LabelHightScore = document.querySelector("#HightScore")
-const Label
+const LabelReload = document.getElementById("ReloadT");
+const timeReload = new Date();
+const secondsReload = timeReload.getSeconds();
 
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -58,8 +60,7 @@ function perdeu() {
     clearInterval(loopPerdeu)
     setTimeout(Reload,9000)
     function Reload(){
-      const timeReload = new Date();
-      
+      LabelReload.innerHTML = secondsReload
       window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
       
     }
