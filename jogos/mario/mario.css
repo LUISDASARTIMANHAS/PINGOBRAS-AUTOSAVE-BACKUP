@@ -63,7 +63,12 @@ js{
   height: 80px;
   animation: pipe-animation 2s infinite linear;
 }
-
+.castelo{
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 90%;
+}
 .mario{
   position: absolute;
   bottom: 0;
