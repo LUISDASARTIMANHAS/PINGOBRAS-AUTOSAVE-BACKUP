@@ -62,7 +62,8 @@ function perdeu() {
     clearInterval(loopPerdeu)
     setTimeout(Reload,9000)
     function Reload(){
-      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"}
+      //window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
+    }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80){
     placarGB = placarGB + 1;
