@@ -50,6 +50,14 @@ to this section's matching END comment to see page-specific styles.
   --width: "largura";
   --white-space: "espaco em branco";
 }
+@keyframes piscar{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.6;
+  }
+}
 /* Basic page style resets */
 * {
   box-sizing: border-box;
@@ -122,6 +130,13 @@ background: purple;
 [border]{
   padding: 4px;
   border: 2px solid black;
+}
+.img-status{
+    height: 30px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    animation: piscar 1s infinite linear; 
 }
 
 .fa {
