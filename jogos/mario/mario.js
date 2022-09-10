@@ -67,10 +67,14 @@ function perdeu() {
   }else{
     if(pipePosition < "-17" && marioPosition >= 80){
     placarLocal = placarLocal + 1;
-    labelPlacar.innerHTML = placarLocal;} 
+    labelPlacar.innerHTML = placarLocal;
+    if(placarLocal > 10){
+    pipe.src = "https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Piranha_Plant_Lucoshi.png?v=1662647742243"
+    body.style.background = "https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Piranha_Plant_Lucoshi.png?v=1662647742243"}
+    } 
   }
   
-  if(placarLocal => ||)
+  
 
   
   LabelHightScore.innerHTML = HightScore
