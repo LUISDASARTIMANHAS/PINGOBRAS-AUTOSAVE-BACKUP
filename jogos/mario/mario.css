@@ -54,7 +54,10 @@ js{
   position: relative;
   overflow: hidden;
   bottom: 0;
-  background: linear-gradient(white,lightblue)
+  background: linear-gradient(white,lightblue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .pipe{
   position: absolute;
