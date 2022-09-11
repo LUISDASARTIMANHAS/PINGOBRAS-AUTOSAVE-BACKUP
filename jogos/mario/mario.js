@@ -9,7 +9,7 @@ const gameBoard = document.querySelector(".game-board");
 const btnHit = document.querySelector("#btnHit");
 const Labelconfigs = document.querySelector("#configsM");
 const btnAutoReplay = document.querySelector("#btnRestart");
-const labelTela = document.querySelector("labelTela");
+const labelTela = document.querySelector("#labelTela");
 const body = document.querySelector("body");
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
@@ -22,7 +22,6 @@ const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
 
-labelTela.innerHTML = telaWidth + "X" + telaHeight
 
 function restart() {
   autoReplay = "sim"
@@ -30,7 +29,7 @@ function restart() {
 }
 
 gameBoard.style.display = "none"
-
+labelTela.innerHTML = "largura: " + telaWidth + "X " + "altura: " + telaHeight;
 function playGame(){
 gameBoard.style.display = "block"
 Labelconfigs.style.display = "none"
