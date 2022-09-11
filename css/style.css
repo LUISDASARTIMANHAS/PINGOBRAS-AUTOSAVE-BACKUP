@@ -830,6 +830,7 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   text-align: center;
   opacity: 1;
   border: 5px dashed black;
+  z-index: 1;
 }
 .popup button {
   position: absolute;
