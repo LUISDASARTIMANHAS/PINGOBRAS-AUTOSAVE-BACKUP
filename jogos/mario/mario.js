@@ -15,14 +15,15 @@ const LabelHightScore = document.querySelector("#HightScore");
 const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
+const pipePosition =  pipe.offsetLeft;
+  const pipePlantPosition =  pipePlant.offsetLeft;
+  const cuboPosition =  cubo.offsetLeft;
+  const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
 
+gameBoard.style.display = "none"
 
 function playGame(){
-    pipe.style.animation = "pipe-animation "
-    pipePlant.style.animation = "none"
-    mario.style.animation = "none"
-    cubo.style.animation = "none"
-
+gameBoard.style.display = "block"
 }
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
@@ -86,14 +87,7 @@ function perdeu() {
     } 
   }
   
-    pipe.style.animation = "none"
-    pipe.style.left = `${pipePosition}px`
-    pipePlant.style.animation = "none"
-    pipePlant.style.left = `${pipePlantPosition}px`
-    mario.style.animation = "none"
-    mario.style.bottom = `${marioPosition}px`
-    cubo.style.animation = "none"
-    cubo.style.left = `${cuboPosition}px`
+    
 
 
   
