@@ -31,13 +31,14 @@ function restart() {
 gameBoard.style.display = "none"
 labelTela.innerHTML = "largura: " + telaWidth + "X " + "altura: " + telaHeight;
 function playGame(){
-gameBoard.style.display = "block"
-Labelconfigs.style.display = "none"
-}
 if(telaWidth <= 650){
   alert("A tela do usuario e de: "+ telaWidth + "pixeis sendo muito curta! Certifiqui-se que sua tela seja 650X650 pixeis! tente colocar o celular na horizontal!");
   body.style.display = "none"
-} 
+}else{ 
+gameBoard.style.display = "block"
+Labelconfigs.style.display = "none"}
+}
+
 
 document.addEventListener("keydown", jump);
 document.addEventListener("click", jump);
