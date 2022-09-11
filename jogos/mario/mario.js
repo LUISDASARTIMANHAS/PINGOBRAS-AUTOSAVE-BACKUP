@@ -4,10 +4,12 @@ const pipePlant = document.querySelector(".pipe-plant");
 const gameover = document.querySelector(".game-over");
 const cubo = document.querySelector(".cubo");
 const telaWidth = screen.availWidth;
+const telaHeight = screen.availHeight;
 const gameBoard = document.querySelector(".game-board");
 const btnHit = document.querySelector("#btnHit");
 const Labelconfigs = document.querySelector("#configsM");
 const btnAutoReplay = document.querySelector("#btnRestart");
+const labelTela = document.querySelector("labelTela");
 const body = document.querySelector("body");
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
@@ -19,6 +21,8 @@ const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
+
+
 
 function restart() {
   autoReplay = "sim"
@@ -32,9 +36,9 @@ gameBoard.style.display = "block"
 Labelconfigs.style.display = "none"
 }
 if(telaWidth <= 650){
-  alert("A tela do usuario e muito curta!");
+  alert("A tela do usuario e de: "+ telaWidth + "pixeis sendo muito curta! Certifiqui-se que sua tela seja 650X650 pixeis! tente colocar o celular na horizontal!");
   body.style.display = "none"
-}
+} 
 
 document.addEventListener("keydown", jump);
 document.addEventListener("click", jump);
