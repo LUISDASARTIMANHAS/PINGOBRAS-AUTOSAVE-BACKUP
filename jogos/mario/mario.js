@@ -38,10 +38,11 @@ const loopPerdeu = setInterval(perdeu, 10)
 function perdeu() {
   const pipePosition =  pipe.offsetLeft;
   const pipePlantPosition =  pipePlant.offsetLeft;
+  console.log(pipePlantPosition)
   const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
-  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80 || pipePlantPosition <= 130 && pipePlantPosition > 10 ){
+  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80 || pipePlantPosition <= 100 && pipePlantPosition > 0 && marioPosition <= 10){
     
     pipe.style.animation = "none"
     pipe.style.left = `${pipePosition}px`
@@ -69,7 +70,7 @@ function perdeu() {
     if(pipePosition < "-17" && marioPosition >= 80){
     placarLocal = placarLocal + 1;
     labelPlacar.innerHTML = placarLocal;
-    if(placarLocal > 30){
+    if(placarLocal > 5){
     pipe.style.display = "none"
     pipePlant.style.display = "block"
     gameBoard.style.backgroundImage = "url(https://i.pinimg.com/originals/a5/5c/20/a55c2095383926772effb542eb1c1451.gif)"
