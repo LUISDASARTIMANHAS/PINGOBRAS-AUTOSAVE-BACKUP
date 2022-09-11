@@ -16,6 +16,14 @@ const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 
+
+function playGame(){
+    pipe.style.animation = "pipe-animation "
+    pipePlant.style.animation = "none"
+    mario.style.animation = "none"
+    cubo.style.animation = "none"
+
+}
 if(telaWidth <= 650){
   alert("A tela do usuario e muito curta!");
   body.style.display = "none"
@@ -38,7 +46,6 @@ const loopPerdeu = setInterval(perdeu, 10)
 function perdeu() {
   const pipePosition =  pipe.offsetLeft;
   const pipePlantPosition =  pipePlant.offsetLeft;
-  console.log(pipePlantPosition)
   const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
@@ -79,7 +86,15 @@ function perdeu() {
     } 
   }
   
-  
+    pipe.style.animation = "none"
+    pipe.style.left = `${pipePosition}px`
+    pipePlant.style.animation = "none"
+    pipePlant.style.left = `${pipePlantPosition}px`
+    mario.style.animation = "none"
+    mario.style.bottom = `${marioPosition}px`
+    cubo.style.animation = "none"
+    cubo.style.left = `${cuboPosition}px`
+
 
   
   LabelHightScore.innerHTML = HightScore
@@ -95,6 +110,13 @@ function CalctimeGame(){
 second = second+1
 runTime.innerHTML = second
   }
+
+function HitBox() {
+  cubo.style.border = "2px solid black"
+  pipe.style.border = "2px solid black"
+  pipePlant.style.border = "2px solid black"
+  mario.style.border = "2px solid black"
+}
 
 /*if(placarST){
 const userMario = prompt("Insira Seu Nome","LDA");
