@@ -8,6 +8,7 @@
     <link rel="icon" href="https://www.pngitem.com/pimgs/m/399-3992589_super-mario-3d-world-mario-icon-hd-png.png" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/jogos/mario/mario.css" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
+    <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
     <meta
       name="description"
       content="Jogo do Mario / Divirta-se tentando escapar dos canos! / Todos os direitos ©luis_das_artimanhas©"/>
@@ -74,24 +75,33 @@
                alt="cano do mario"
                class="pipe">
         </div>
-        <button>
-          Easy mode
-        </button>
+       <div id="configsM">
+         
+      
         <audio  
             controls
             class="audio"
             loop
-            autoplay
             volume="0.1"
             preload="auto"
             src="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/MÚSICA TEMA DO SUPER MARIO WORLD.mp3?v=1662587661787">
           </audio>
-        <button onclick="HitBox()"> 
-          Hit Box
+        <button verde class="btnNav">
+          Easy mode
         </button>
-        <button onclick="playGame()"> 
+        <button laranja class="btnNav">
+          Medium mode
+        </button>
+        <button vermelho class="btnNav">
+          Hard mode
+        </button>
+        <button class="btnNav" id="btnHit" onclick="HitBox()"> 
+          Ativar Hit Box?
+        </button>
+        <button class="btnNav" onclick="playGame()"> 
           Iniciar Jogo
         </button>
+         </div>
         
       </div></div>
   </body>

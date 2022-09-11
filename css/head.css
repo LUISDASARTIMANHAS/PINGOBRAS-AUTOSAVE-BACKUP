@@ -78,6 +78,81 @@ background: purple;
   display: block;
   max-width:100%;
 }
+/* Page alturaure */
+.site-altura {
+  min-height: var(--wrapper-altura);
+  display: grid;
+  place-items: center;
+}
+.msg-error-hour{
+  position: absolute;
+  display: none;
+  font-size: 25px;
+  color: red;
+  border: 5px solid black;
+  bottom: 5%;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+conteudo, .index{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 470px;
+
+}
+.conteudo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+/* footer grid */
+footer {
+  display: block;
+  margin-top: 10%;
+  width: 100%;
+  font-size: 15pt;
+  text-align: center;
+  padding-top: 50px;
+  border-top: 5px solid white;
+  max-width:102%;
+}
+.footer-gray{
+    margin-top: 10%;
+    background: gray;
+    display: block;
+    width: 100%;
+    font-size: 17pt;
+    text-align: center;
+    padding: 7%;
+    border-top: 5px solid white;
+    max-width: 100%;
+}
+.footer.links {
+  padding: 40px;
+  white-space: nowrap;
+}
+.footer-dev {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  width: 100%;
+  color: white;
+}
+
 .diogo-cabecalho{
   background: black;
   border: 5px solid black;
