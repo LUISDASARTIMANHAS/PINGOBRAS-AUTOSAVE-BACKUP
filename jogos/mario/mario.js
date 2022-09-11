@@ -22,7 +22,7 @@ const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
 
-
+labelTela.innerHTML = telaWidth + "X" + telaHeight
 
 function restart() {
   autoReplay = "sim"
