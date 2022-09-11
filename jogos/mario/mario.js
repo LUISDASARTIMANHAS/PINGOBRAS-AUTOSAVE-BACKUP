@@ -6,7 +6,8 @@ const cubo = document.querySelector(".cubo");
 const telaWidth = screen.availWidth;
 const gameBoard = document.querySelector(".game-board");
 const btnHit = document.querySelector("#btnHit");
-const Labelconfigs = document.querySelector("#cconfigsM");
+const Labelconfigs = document.querySelector("#configsM");
+const btnAutoReplay = 
 const body = document.querySelector("body");
 const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/jump%20super%20mario.mp3?v=1662590435349');
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
@@ -17,7 +18,12 @@ const LabelHightScore = document.querySelector("#HightScore");
 const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
+let autoReplay = "não"
 
+function restart() {
+  let autoReplay = "sim"
+  btnAutoReplay.innerHTML = "Ativado!" 
+}
 
 gameBoard.style.display = "none"
 
@@ -72,7 +78,8 @@ function perdeu() {
     clearInterval(loopPerdeu)
     setTimeout(Reload,9000)
     function Reload(){
-      //window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
+      if(autoReplay == "sim"){
+      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"}
     }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80||pipePlantPosition < "-17" && marioPosition >= 90){
@@ -110,6 +117,7 @@ function HitBox() {
   pipe.style.border = "2px solid black"
   pipePlant.style.border = "2px solid black"
   mario.style.border = "2px solid black"
+  btnHit.innerHTML = "Ativado!"
 }
 
 /*if(placarST){
