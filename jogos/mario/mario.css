@@ -69,9 +69,10 @@ js{
 .pipe-plant{
   position: absolute;
   bottom: -18px;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 90px;
   animation: pipe-plant-animation 20s infinite linear;
+  display: none;
 }
 .castelo{
   position: absolute;
