@@ -42,7 +42,7 @@ function perdeu() {
   const cuboPosition =  cubo.offsetLeft;
   const marioPosition =  +window.getComputedStyle(mario).bottom.replace("px", "");
   
-  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80 || pipePlantPosition <= 100 && pipePlantPosition > 0 && marioPosition <= 10){
+  if(pipePosition <= 120 && pipePosition > 0 && marioPosition <= 80 || pipePlantPosition <= 120 && pipePlantPosition > 0 && marioPosition <= 90){
     
     pipe.style.animation = "none"
     pipe.style.left = `${pipePosition}px`
@@ -67,10 +67,10 @@ function perdeu() {
       //window.location.href = "https://pingobras.glitch.me/jogos/mario.html"
     }
   }else{
-    if(pipePosition < "-17" && marioPosition >= 80){
+    if(pipePosition < "-17" && marioPosition >= 80||pipePlantPosition < "-17" && marioPosition >= 90){
     placarLocal = placarLocal + 1;
     labelPlacar.innerHTML = placarLocal;
-    if(placarLocal > 5){
+    if(placarLocal > 45){
     pipe.style.display = "none"
     pipePlant.style.display = "block"
     gameBoard.style.backgroundImage = "url(https://i.pinimg.com/originals/a5/5c/20/a55c2095383926772effb542eb1c1451.gif)"
