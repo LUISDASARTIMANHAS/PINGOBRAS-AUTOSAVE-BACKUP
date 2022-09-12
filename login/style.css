@@ -116,7 +116,7 @@ body{
 teladelogin{
   display: block;
   padding: 15px;
-  background: lightblue;
+  background: black;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -225,7 +225,8 @@ hr{
   height: 600%;
   background-color: black;
 }
-
+.reload-db{
+}
 
 /* Button dip
 - Toggling this class on and off will move it down and up again
