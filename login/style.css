@@ -232,10 +232,12 @@ hr{
   position: absolute;
   left: 0;
   top: 0;
+  font-size: 20px;
   
 }
 .reload-db:hover{
-  
+  opacity: 0.5;
+  font-size: 18px;
 }
 
 /* Button dip
