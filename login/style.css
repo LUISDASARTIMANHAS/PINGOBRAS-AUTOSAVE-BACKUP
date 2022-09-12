@@ -114,8 +114,10 @@ body{
 
 
 teladelogin{
+  position: relative;
   display: block;
   padding: 15px;
+  padding-top: 50px;
   background: black;
   justify-content: center;
   align-items: center;
@@ -123,6 +125,7 @@ teladelogin{
   width: 75%;
   border-radius: 25px;
   z-index: 2;
+  color: white;
         }
 .input-float-login{
       width: 75%;
@@ -226,6 +229,13 @@ hr{
   background-color: black;
 }
 .reload-db{
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+.reload-db:hover{
+  
 }
 
 /* Button dip
