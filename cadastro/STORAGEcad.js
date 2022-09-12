@@ -31,7 +31,7 @@ let UNIVERSALACCOUNT = JSON.parse(localStorage.getItem('listaUser') || '[]')
 UNIVERSALACCOUNT.push(
 {nomeCad: "administrador", userCad: "equipe", senhaCad: "administrador", saldoCad: 1750.97},
 {nomeCad: "Florisvaldo de Oliveira Schulz", userCad: "Valdo", senhaCad: "96451290", saldoCad: 5.00},
-{nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 5.00},
+{nomeCad: "Luis Augusto de Souza Carvalho", userCad: "LUIS DAS ARTIMANHAS", senhaCad: "998774163", saldoCad: 7.00},
 {nomeCad: "José Eduardo Batista de Souza", userCad: "notfound", senhaCad: "10062002", saldoCad: 1},
 {nomeCad: "Diogo Antonio Nienke Batista", userCad: "did zin", senhaCad: "z0mbieltr2", saldoCad: 1}
 )
