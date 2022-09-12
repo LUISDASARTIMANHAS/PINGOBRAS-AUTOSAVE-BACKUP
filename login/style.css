@@ -138,6 +138,7 @@ teladelogin{
       min-width: 180px;
       font-size: 16px;
       transition: all .3s ease-out;
+  background: white;
 }
 label-float{
   position: relative;
@@ -160,8 +161,8 @@ border-bottom: 3px solid orange;
 font-size: 13px;
 margin-top: 0;
 border-bottom: 2px solid #4038a0;
-color: green
-background
+color: green;
+background: gold;
 }
 .input-foat-login:valid{
   font-size: 13px;
