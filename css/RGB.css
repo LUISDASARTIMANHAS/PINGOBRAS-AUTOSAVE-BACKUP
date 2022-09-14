@@ -1,43 +1,44 @@
 [rgb], .rgb{
 font-family: "Roboto",sans-serif, arial;
-border-color: white;
-  animation: rbg 5s infinite linear;
+  animation: rbg 1s infinite linear;
 }
 .linear-gradient{
 font-family: "Roboto",sans-serif, arial;
 background-image: linear-gradient(60deg,red,blue,purple);
-  animation: auto-deg 5s infinite linear;
+  animation: auto-deg 1s infinite linear;
 }
 
 @keyframes rgb{
   0%{
-    
+    border-color: white;
+    color: white;
   }
   14%{
-    
+    border-color: white;
+    color: white;
   }
-  24%{
-    
+  28%{
+    border-color: white;
+    color: white;
   }
-  34%{
-    
+  42%{
+    border-color: white;
+    color: white;
   }
-  40%{
-    
-  }
-  50%{
-    
-  }
-  60%{
-
+  56%{
+    border-color: white;
+    color: white;
   }
   70%{
-    
+    border-color: white;
+    color: white;
   }
-  80%{
-
+  84%{
+    border-color: white;
+    color: white;
   }
-  90%{
-    
+  98%{
+    border-color: purple;
+    color: purple;
   }
 }
