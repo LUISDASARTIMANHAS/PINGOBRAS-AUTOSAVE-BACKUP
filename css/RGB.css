@@ -1,6 +1,6 @@
-[rgb], .rgb{
+[rgb]{
 font-family: "Roboto",sans-serif, arial;
-  animation: rbg 1s infinite linear;
+animation: ani-rbg 5s infinite;
 }
 .linear-gradient{
 font-family: "Roboto",sans-serif, arial;
@@ -8,26 +8,26 @@ background-image: linear-gradient(60deg,red,blue,purple);
   animation: auto-deg 1s infinite linear;
 }
 
-@keyframes rgb{
+@keyframes ani-rgb{
   0%{
-    border-color: white;
-    color: white;
+    border-color: red;
+    color: red;
   }
   14%{
-    border-color: white;
-    color: white;
+    border-color: blue;
+    color: blue;
   }
   28%{
-    border-color: white;
-    color: white;
+    border-color: green;
+    color: green;
   }
   42%{
-    border-color: white;
-    color: white;
+    border-color: yellow;
+    color: yellow;
   }
   56%{
-    border-color: white;
-    color: white;
+    border-color: orange;
+    color: orange;
   }
   70%{
     border-color: white;
