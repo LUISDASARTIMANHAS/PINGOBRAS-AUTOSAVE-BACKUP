@@ -1061,7 +1061,7 @@ chat{
   margin-top: 5px;
   background: white;
   width: auto;
-  min-width: 340px;
+  min-width: 75%;
   align-items: center;
   text-align: left;
   position: relative;
@@ -1071,4 +1071,5 @@ chat{
   right: 0;
   height: 100%;
   margin-left: 20px;
+  padding-left: 15px;
 }
