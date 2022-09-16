@@ -3,7 +3,8 @@ const loopcopy = setInterval(refreshcopy, 10000);
 function refreshcopy() {
 let ano = new Date().getFullYear();  
 let navegadorLang = navigator.language;
-document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
+const direitos = document.querySelector("#direitos");
+direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
 "<br>"+
 "©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano + navegadorLang+
 "<br>"+
@@ -13,9 +14,8 @@ document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
 "<a href=https://wa.me/55027995744791 target=_blank>" +
 "<i class=fa id=WA>" + "Fale conosco!" + "</i>" + "</a>" +
 "</p>" 
-var wa = document.getElementById("WA");
+const wa = document.getElementById("WA");
 wa.classList.add("fa-whatsapp");
-wa.classList.add("copyright");
 
 
 }
