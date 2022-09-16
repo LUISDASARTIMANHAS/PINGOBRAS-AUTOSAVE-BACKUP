@@ -4,10 +4,9 @@ const looptime = setInterval(timeRefresh, 500);
 let secondsplayer = "15"
 let setminutesplayer = "30"
 let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
-let sethoursplayer = "19"
-let hoursplayer = sethoursplayer < 10 ? "0" + sethoursplayer : sethoursplayer;
+let sethoursplayer = "19"  
 
-const horaselect = hoursplayer + minutesplayer
+const horaselect = sethoursplayer + minutesplayer
       
 function timeRefresh() {
 const time = new Date();
@@ -39,7 +38,7 @@ let dispalyH = faultH < 10 ?  "0" + faultH : faultH;
 const fault = dispalyH+":" + dispalyM+":" + dispalyS
 document.querySelector("[fault]").innerHTML = fault;
 
-document.querySelector("[horaselect]").innerHTML = hoursplayer+":" + minutesplayer+":" + secondsplayer;  
+document.querySelector("[horaselect]").innerHTML = sethoursplayer+":" + minutesplayer+":" + secondsplayer;  
 document.querySelector("[horario]").innerHTML = horario;
 document.querySelector("[timer]").innerHTML = horario;
 

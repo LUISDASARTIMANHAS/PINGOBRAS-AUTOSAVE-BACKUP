@@ -36,7 +36,8 @@ let body = document.querySelector("body")
 body.setAttribute('style', 'padding-top: 50% ')}
   console.warn("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName)
 
-  
+const linkIP = document.querySelector("#linkIP");
+linkIP.href = "http://" + linkIP.name
   
   
 }
@@ -72,9 +73,6 @@ if (button4){
   console.log("click do mouse")
   ClickMouse.play();}
 }
-
-const linkIP = document.querySelector("#linkIP");
-linkIP.href = "http://" + linkIP.name
 
 
 const btndisabled = document.querySelector("[disabled]");
