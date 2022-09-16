@@ -41,6 +41,9 @@ body.setAttribute('style', 'padding-top: 50% ')}
   
 }
 
+
+
+
 const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 function click(){
   ClickMouse.play();
@@ -70,6 +73,8 @@ if (button4){
   ClickMouse.play();}
 }
 
+const linkIP = document.querySelector("#linkIP");
+linkIP.href = "192.168.100.1"
 
 
 const btndisabled = document.querySelector("[disabled]");
@@ -80,10 +85,10 @@ btndisabled.addEventListener('click', function() {
     btndisabled.style.cursor = "progress"
     console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
 });}
-if(!btndisabled2){}
+if(!btndisabled2){
 btndisabled2.addEventListener('click', function() {
     window.location.href = "https://pingobras-404.glitch.me"
     btndisabled2.style.cursor = "progress"
     console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
-  });
+  });}
 
