@@ -66,6 +66,12 @@ to this section's matching END comment to see page-specific styles.
   font-family: "Roboto", sans-serif;
   max-width:100%;
 }
+.copyright{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
 js{
   width: auto;
   display: inline;

@@ -15,6 +15,7 @@ document.querySelector("#direitos").innerHTML = "<p>"+ "Desenvolvedores:"+
 "</p>" 
 var wa = document.getElementById("WA");
 wa.classList.add("fa-whatsapp");
+wa.classList.add("copyright");
 
 
 }
