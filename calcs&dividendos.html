@@ -60,26 +60,30 @@
                  onclick="buscarDiv()">
          </button>
          <p>Buscar Por Ano: /22</p>
+         <p>Buscar Por Mês: /0<js id="Mes">01</js></p>
          <p>Buscar Por divida: 1,00</p>
          <p>Buscar Por nome: Meu Nome</p>
+         <p>Buscar Por Codigo: 00000000000</p>
          <ol id="buscadorLista" class="listaDiv" style="display: none; background:gray;">
         <li class="dividendos">
           <p>Nome: Valdo</p>
-          <p>Devendo: 00,00</p>
+          <p>Devendo: 10,00</p>
+          <p>Emitido: 14/09/22</p>
           <p>Data de Pagamento: DD/MM/AAAA</p>
           <p inline>Codigo Licenciado:</p><cod>08244891793</cod>
         </li>
         
         <li class="dividendos">
           <p>Nome: Isaque</p>
-          <p>Devendo: 21,50</p>
-          <p>Data de Pagamento: 06/09/22</p>
+          <p>Devendo: 00,00</p>
+          <p>Data de Pagamento: DD/MM/AAAA</p>
           <p inline>Codigo Licenciado:</p><cod>12345678911</cod>
         </li>
            
         <li class="dividendos">
           <text>Nome: Fernando</text>
           <p>Devendo: 25,00</p>
+          <p>Emitido: 05/08/22</p>
           <p>Data de Pagamento: 20/08/22</p>
           <p inline>Codigo Licenciado:</p><cod>12345678914</cod>
         </li>
@@ -161,4 +165,9 @@
     <script src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
   </host>  
   
+<script>
+const d = new Date();
+let month = d.getMonth();
+document.getElementById("Mes").innerHTML = month;
+</script>
 </html>
