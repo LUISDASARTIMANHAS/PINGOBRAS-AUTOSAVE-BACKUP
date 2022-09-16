@@ -53,14 +53,14 @@
          <input id="inputbuscar" class="buscar" 
                 type="searcher" 
                 placeholder="Digite O Devedor Que Você Procura" 
-                autocomplete="off">
+                autocomplete="on">
          <button class="btn-secondary fa fa-search" 
                  type="button"
                  id="btnbuscador"
                  onclick="buscarDiv()">
          </button>
          <p>Buscar Por Ano: /22</p>
-         <p>Buscar Por Mês: /0<js id="Mes">01</js></p>
+         <p>Buscar Por Mês: /0<js id="Mes">01</js>/</p>
          <p>Buscar Por divida: 1,00</p>
          <p>Buscar Por nome: Meu Nome</p>
          <p>Buscar Por Codigo: 00000000000</p>
@@ -81,6 +81,14 @@
         </li>
            
         <li class="dividendos">
+          <p>Nome: Lukas</p>
+          <p>Devendo: 00,00</p>
+          <p>Emitido: 16/09/22</p>
+          <p>Data de Pagamento: DD/MM/AAAA</p>
+          <p inline>Codigo Licenciado:</p><cod>12345678912</cod>
+        </li>
+           
+        <li class="dividendos">
           <text>Nome: Fernando</text>
           <p>Devendo: 25,00</p>
           <p>Emitido: 05/08/22</p>
@@ -97,6 +105,7 @@
         </li>
            
         <li class="dividendos">
+          <img src="https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048" />
           <p>Nome: Luis_Das_Artimanhas</p>
           <p>Devendo: 00,00</p>
           <p>Data de Pagamento: DD/MM/AAAA</p>
@@ -167,7 +176,7 @@
   
 <script>
 const d = new Date();
-let month = d.getMonth();
+let month = d.getMonth()+1;
 document.getElementById("Mes").innerHTML = month;
 </script>
 </html>
