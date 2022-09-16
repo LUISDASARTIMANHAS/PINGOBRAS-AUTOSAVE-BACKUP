@@ -1061,6 +1061,14 @@ chat{
   margin-top: 5px;
   background: white;
   width: auto;
+  min-width: 340px;
   align-items: center;
   text-align: left;
+  position: relative;
+}   
+.tumb-dividendos{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  margin-left: 20px;
 }
