@@ -21,12 +21,12 @@ let horario = hours +":" + minutes +":" + seconds
 let horariojs = hours +""+ minutes 
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
-let setfaultS = -seconds + 60;
-let faultS = setfaultS < 0 ? "00" : setfaultS;
-let setfaultM = -minutes + 60;
-let faultM = setfaultM < 0 ? "00" : setfaultM;
+let setfaultS = -seconds + 10;
+let faultS = setfaultS < 0 ? "0" : setfaultS;
+let setfaultM = -minutes + 30;
+let faultM = setfaultM < 0 ? "0" : setfaultM;
 let setfaultH = 19 - hours;   
-let faultH = setfaultH < 0 ?  "00" : setfaultH;
+let faultH = setfaultH < 0 ?  "0" : setfaultH;
 //>  
   
 //< para ficar igual relogio digital  
