@@ -74,7 +74,7 @@ if (button4){
 }
 
 const linkIP = document.querySelector("#linkIP");
-linkIP.href = "192.168.100.1"
+linkIP.href = "http://" + linkIP.name
 
 
 const btndisabled = document.querySelector("[disabled]");
