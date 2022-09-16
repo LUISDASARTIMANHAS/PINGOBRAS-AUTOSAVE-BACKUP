@@ -1073,3 +1073,7 @@ chat{
   margin-left: 20px;
   padding-left: 15px;
 }
+.perfil-icon{
+float: left;
+height: 35px;
+}
