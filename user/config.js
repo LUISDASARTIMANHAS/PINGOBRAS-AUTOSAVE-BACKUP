@@ -19,8 +19,8 @@ btntema.addEventListener('click', function() {
   });
 function trocarPerfilImg(){
   let linkIMGPerfil = prompt("Insira O Link Da Foto De Perfil","https://")
-  perfilIcon.src = linkIMGPerfil.value;
-  localStorage.setItem( 'UserPerfil',inputColor.value);
+  perfilIcon.src = linkIMGPerfil;
+  localStorage.setItem( 'UserPerfil',linkIMGPerfil);
 }
 
 function sair(){
@@ -49,4 +49,10 @@ if(userbg == "null") {
 }else{
   body.style.background = userbg
   inputColor.value = userbg
+}
+
+if(perfilIconLink == "null") {
+  alert("usuario sem perfil!")
+}else{
+  perfilIcon.src = perfilIconLink
 }
