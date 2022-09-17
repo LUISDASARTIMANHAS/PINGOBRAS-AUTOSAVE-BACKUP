@@ -10,6 +10,7 @@ let IDConta = document.getElementById("IDConta")
 let Logado = JSON.parse(localStorage.getItem('userLogado'))
 
 
+
 btntema.addEventListener('click', function() {
       body.style.background = inputColor.value;
       localStorage.setItem( 'UserBackground',inputColor.value);
