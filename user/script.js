@@ -3,7 +3,7 @@ let body2 = document.querySelector('body');
 let saldoContamain = document.getElementById("header_wallet_balance") 
 let Logadomain = JSON.parse(localStorage.getItem('userLogado'))
 let DBperfilIconLink = localStorage.getItem('UserPerfil')
-let perfilIcon = document.getElementById("perfilIcon")
+let perfilIcon2 = document.getElementById("perfilIcon")
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -11,11 +11,12 @@ if(DBuserbg == "null") {
   body2.style.background = DBuserbg
 }
 
+if(!perfilIcon2||DBperfilIconLink){
 if(DBperfilIconLink == "null") {
   alert("usuario sem perfil!")
 }else{
-  perfilIcon.src = DBperfilIconLink
-}
+  perfilIcon2.src = DBperfilIconLink
+}}
 
 
 saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"

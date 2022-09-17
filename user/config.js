@@ -1,15 +1,15 @@
-let btntema = document.getElementById('tema');
-let userbg = localStorage.getItem('UserBackground')
-let perfilIconLink = localStorage.getItem('UserPerfil')
-let body = document.querySelector('body');
-let inputColor = document.querySelector('#colorTema');
-let userConta = document.getElementById("userConta") 
-let nomeConta = document.getElementById("nomeConta")
-let senhaConta = document.getElementById("senhaConta") 
-let saldoConta = document.getElementById("header_wallet_balance") 
-let IDConta = document.getElementById("IDConta")
-let Logado = JSON.parse(localStorage.getItem('userLogado'))
-let perfilIcon = document.getElementById("perfilIcon")
+var btntema = document.getElementById('tema');
+var userbg = localStorage.getItem('UserBackground');
+var perfilIconLink = localStorage.getItem('UserPerfil');
+var body = document.querySelector('body');
+var inputColor = document.querySelector('#colorTema');
+var userConta = document.getElementById("userConta");
+var nomeConta = document.getElementById("nomeConta");
+var senhaConta = document.getElementById("senhaConta"); 
+var saldoConta = document.getElementById("header_wallet_balance"); 
+var IDConta = document.getElementById("IDConta");
+var Logado = JSON.parse(localStorage.getItem('userLogado'));
+var perfilIcon = document.getElementById("perfilIcon");
 
 
 btntema.addEventListener('click', function() {
