@@ -1,5 +1,6 @@
 let btntema = document.getElementById('tema');
 let userbg = localStorage.getItem('UserBackground')
+let perfilIconLink = localStorage.getItem('UserPerfil')
 let body = document.querySelector('body');
 let inputColor = document.querySelector('#colorTema');
 let userConta = document.getElementById("userConta") 
@@ -8,7 +9,7 @@ let senhaConta = document.getElementById("senhaConta")
 let saldoConta = document.getElementById("header_wallet_balance") 
 let IDConta = document.getElementById("IDConta")
 let Logado = JSON.parse(localStorage.getItem('userLogado'))
-
+let perfilIcon = document.getElementById("perfilIcon")
 
 
 btntema.addEventListener('click', function() {
@@ -16,6 +17,12 @@ btntema.addEventListener('click', function() {
       localStorage.setItem( 'UserBackground',inputColor.value);
       body.style.color = 'black';
   });
+function trocarPerfilImg(){
+  let linkIMGPerfil = prompt("Insira O Link Da Foto De Perfil","https://")
+  perfilIcon.src = linkIMGPerfil.value;
+  localStorage.setItem( 'UserPerfil',inputColor.value);
+}
+
 function sair(){
   localStorage.removeItem('token')
   localStorage.removeItem('userLogado')
