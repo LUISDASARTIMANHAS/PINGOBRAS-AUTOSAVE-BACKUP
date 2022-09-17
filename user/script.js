@@ -14,6 +14,7 @@ if(DBuserbg == "null") {
 
 if(DBperfilIconLink == "null") {
   alert("usuario sem perfil!")
+  perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
 }else{
   perfilIcon2.src = DBperfilIconLink
 }
