@@ -11,12 +11,12 @@ if(DBuserbg == "null") {
   body2.style.background = DBuserbg
 }
 
-if(!perfilIcon2||DBperfilIconLink){
+
 if(DBperfilIconLink == "null") {
   alert("usuario sem perfil!")
 }else{
   perfilIcon2.src = DBperfilIconLink
-}}
+}
 
 
 saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"
