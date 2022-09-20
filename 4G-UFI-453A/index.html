@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="PT">
+  
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" />
+    <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
+    <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
+    
+  </head>
+  <body>
+<div class="site-altura">
+      <div class="conteudo" role="main">
+
+        <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>        
+        
+     <tela 
+      style="width:75%;"
+      class="console" 
+      id="multiconsole">
+      Console sem informações
+      </tela>
+
+      <tela 
+          style="display:inline;">
+       <h1>Console1:</h1>
+       <br>
+       <p style="display:inline;">Cidade: </p><js id="city">Sem informações</js>
+       <br>
+       <p style="display:inline;">Pais: </p><js id="pais">Sem informações</js>
+       <br>
+       <p style="display:inline;">Região: </p><js id="regiao">Sem informações</js>
+       <br> 
+       <p style="display:inline;">Fuso Horario: </p><js id="timezone">Sem informações</js>
+       <br>
+       <p style="display:inline;">Provedor IP: </p><js id="IP">Sem informações</js>
+       <br>
+       <p style="display:inline;">Host/Getaway IP: </p><js id="HostIP">Sem informações</js>
+       <br>
+       <p style="display:inline;">Fornecedor de acesso à internet: </p><js id="ISP">Sem informações</js>
+       <br>
+       <p style="display:inline;">localização: </p><js id="location">Sem informações</js>
+       <br> 
+       <p style="display:inline;">Codigo Postal: </p><js id="postal">Sem informações</js> 
+        
+      </tela>
+        
+        <br>
+        <div id="direitos" class="direitos">Loading...</div>  
+        
+        
+</div></div>
+</body>
+    <script src="https://pingobras.glitch.me/js/script.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/autentication.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/calcs.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/network.js" defer></script>
+    <script src="https://pingobras.glitch.me/admin/console.js" defer></script>
+    <script src="https://pingobras.glitch.me/admin/auth.js" defer></script>        
+    <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
+     
+  
+  <api>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    async function getIpClient() {
+  try {
+    const response = await axios.get('https://ipinfo.io/json');
+    document.getElementById("city").innerHTML = response.data.city;
+    document.getElementById("pais").innerHTML = response.data.country;
+    document.getElementById("regiao").innerHTML = response.data.region;
+    document.getElementById("timezone").innerHTML = response.data.timezone;
+    document.getElementById("location").innerHTML = response.data.loc
+    document.getElementById("IP").innerHTML = response.data.ip
+    document.getElementById("HostIP").innerHTML = response.data.hostname
+    document.getElementById("postal").innerHTML = response.data.postal
+    document.getElementById("ISP").innerHTML = response.data.org
+    alert("SENHA DA INTERNET: "+ response.data.org)
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getIpClient();
+</script>    
+  
+  </api>
+</html>
