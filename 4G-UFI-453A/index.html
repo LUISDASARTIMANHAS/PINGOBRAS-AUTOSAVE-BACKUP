@@ -18,6 +18,7 @@
 
         <style>
 body {
+  display: none;
   background-image: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/logo.png?v=1663674509545);
   font-family: "Lato", sans-serif;
 }
@@ -53,7 +54,7 @@ body {
        <br> 
        <p style="display:inline;">Codigo Postal: </p><js id="postal">Sem informações</js> 
        <br>
-       <p style="display:inline;">Senha Da Internet:</p><js style="color: yellow;">AS22085Claro</js>  
+       <p style="display:inline;">Senha Da Internet: </p><js style="color: yellow;">AS22085Claro</js>  
       </tela>
         
         <br>
@@ -69,7 +70,22 @@ body {
     <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
     <script src="https://pingobras.glitch.me/js/network.js" defer></script>       
     <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
+    <script src="auth.js" defer></script>
      
+  
+    <script>
+  const body = document.querySelector = "body"
+  const Registro = localStorage.getItem("Registo4G");
+  const userinput = prompt("Insira Seu Usuario!","Administrador")
+    if(Registro == userinput) {
+      body.style.display = "block"
+    }else{
+      alert("Não Foi Possivel Logar Tente Novamente!")
+      window.location.href = "https://pingobras.glitch.me/4G-UFI-453A"
+    }
+  
+  </script>
+  
     <script>
   const http = "http://pingobras.glitch.me/4G-UFI-453A"
 if(document.URL == http) {
