@@ -1,27 +1,8 @@
 const loopCalc = setInterval(refreshCalcs, 1000);
 
 function refreshCalcs() {
-
-
-
 const ClickMouseCalc = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
    
-
-function buscar() {
-const inputbuscar = document.getElementById("inputbuscar")
-console.log(inputbuscar.value)
-
-//const tela = document.createElement("tela");
-//const id = document.createAttribute("id");
-//tela.value = inputbuscar.value
-//id.value = "democlass";
-//tela.setAttributeNode(id);
-//document.getElementById("telasearch").appendChild(tela);
-  
-}
-
-
-
  try {
 const EMPstyle = document.getElementById("EMP");
 const EMP = document.getElementById("EMP").value;
@@ -66,8 +47,8 @@ if(EMP == 0){
    
   
 }//final do repetidor
-
-
+const INPpesquisado = document.getElementById("inputbuscar")
+INPpesquisado.addEventListener("keyup", buscarDiv);
 
 function buscarDiv() {
 
