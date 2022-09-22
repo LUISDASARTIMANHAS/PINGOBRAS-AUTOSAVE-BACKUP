@@ -471,6 +471,12 @@ telacarteira{
   opacity: 100%;
   z-index: 1;
 }
+.wifi-tela{
+display:inline;
+background: gray;
+opacity: 1;
+width: 25%;
+}
 .open-sidenav{
 width: 100%;
 font-size: 30px;
