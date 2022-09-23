@@ -1,4 +1,5 @@
 const loopStorage = setInterval(refreshStorage, 15000);
+const TentativasRestantesST = localStorage.getItem("Tentativas4G");
 
 function refreshStorage() {
 let client = JSON.parse(localStorage.getItem('client') || '[]')
@@ -41,11 +42,20 @@ localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
 const refreshPerfil = localStorage.getItem( 'UserPerfil')
 localStorage.setItem( 'UserPerfil',refreshPerfil)
 
-const TentativasRestantes = localStorage.getItem("Tentativas4G");
-if(TentativasRestantes < "1")
-var tentativasIni = 3
-}
+if(TentativasRestantesST < "1"){
+  var tentativasIni = 3
+  localStorage.setItem("Tentativas4G",tentativasIni)
+  console.warn("STORAGE/LOG> Tentativas recarregadas!");}
 
+  
+}//Fim do loop Storage
+
+
+
+if(TentativasRestantesST < "1"){
+  var tentativasIni = 3
+  localStorage.setItem("Tentativas4G",tentativasIni)
+  console.warn("STORAGE/LOG> Tentativas recarregadas!");}
 
 let labelSiteSaldo = document.getElementById("siteSaldo")  
 if(!labelSiteSaldo) {
