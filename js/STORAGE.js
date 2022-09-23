@@ -41,7 +41,9 @@ localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
 const refreshPerfil = localStorage.getItem( 'UserPerfil')
 localStorage.setItem( 'UserPerfil',refreshPerfil)
 
-  
+const TentativasRestantes = localStorage.getItem("Tentativas4G");
+if(TentativasRestantes < "1")
+var tentativasIni = 3
 }
 
 

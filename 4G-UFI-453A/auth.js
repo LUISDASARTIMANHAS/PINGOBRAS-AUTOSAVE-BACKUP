@@ -2,9 +2,9 @@ const body = document.querySelector("body")
 const STRegistro = localStorage.getItem("Registo4G");
 const TentativasRestantes = localStorage.getItem("Tentativas4G");
 const labelUserWifi = document.getElementById("userWifi");
-var tentativasIni = 3
 
-if(STRegistro == "null"||STRegistro == null){
+
+if(STRegistro == "null"||STRegistro == null||TentativasRestantes < "1"){
   const usercadInp = prompt("Cadastre seu usuario","Meu Nome") 
   localStorage.setItem("Registo4G",usercadInp)
   labelUserWifi.innerHTML = STRegistro
