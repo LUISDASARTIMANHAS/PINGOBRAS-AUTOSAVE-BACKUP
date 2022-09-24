@@ -12,31 +12,20 @@ function timeRefresh() {
 const time = new Date();
   
 let Gethours = time.getHours();
-let hours = Gethours < 10 ? "0" + Gethours : Gethours;
 let Getminutes = time.getMinutes();
-let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
 let Getseconds = time.getSeconds();
-let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;
-let horario = hours +":" + minutes +":" + seconds
-let horariojs = hours +""+ minutes 
+let horario = Gethours +":" + Getminutes +":" + Getseconds
+let horariojs = Gethours +""+ Getminutes 
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
-let setfaultS = -seconds + 10;
-let faultS = setfaultS < 0 ? "0" : setfaultS;
-let setfaultM = -minutes + 30;
-let faultM = setfaultM < 0 ? "0" : setfaultM;
-let setfaultH = 19 - hours;   
-let faultH = setfaultH < 0 ?  "0" : setfaultH;
+let setfaultS = Getseconds + secondsplayer;
+let setfaultM = Getminutes + setminutesplayer;
+let setfaultH = Gethours + sethoursplayer ;  
+console.log(setfaultH+":"+setfaultM)
 //>  
   
-//< para ficar igual relogio digital  
-let dispalyS = faultS < 10 ?  "0" + faultS : faultS;  
-let dispalyM = faultM < 10 ?  "0" + faultM : faultM;  
-let dispalyH = faultH < 10 ?  "0" + faultH : faultH;
-//>
   
-const fault = dispalyH+":" + dispalyM+":" + dispalyS
-document.querySelector("[fault]").innerHTML = fault;
+document.querySelector("[fault]").innerHTML = "error";
 
 document.querySelector("[horaselect]").innerHTML = sethoursplayer+":" + minutesplayer+":" + secondsplayer;  
 document.querySelector("[horario]").innerHTML = horario;
