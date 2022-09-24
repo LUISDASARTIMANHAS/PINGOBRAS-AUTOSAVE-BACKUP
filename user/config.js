@@ -10,7 +10,7 @@ var saldoConta = document.getElementById("header_wallet_balance");
 var IDConta = document.getElementById("IDConta");
 var Logado = JSON.parse(localStorage.getItem('userLogado'));
 var perfilIcon = document.getElementById("perfilIcon");
-let userLogadoImg = Logado.PerfilImg
+let userLogadoImg2 = Logado.PerfilImg
 
 
 btntema.addEventListener('click', function() {
@@ -54,6 +54,11 @@ if(userbg == "null") {
 
 if(perfilIconLink == "null") {
   alert("usuario sem perfil!")
+  perfilIcon.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
 }else{
-  perfilIcon.src = perfilIconLink
+  if(userLogadoImg2 == "null"||userLogadoImg2 == ""){
+    perfilIcon.src = perfilIconLink
+  }else{
+    perfilIcon.src = userLogadoImg2
+  }
 }
