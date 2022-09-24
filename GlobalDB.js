@@ -22,7 +22,7 @@ let db = [
 {"nomeCad": "Diogo Antonio Nienke Batista", 
  "userCad": "did zin", 
  "senhaCad": "z0mbieltr2", 
- "saldoCad": 1}
-  
+ "saldoCad": 1} 
 ]
-localStorage.setItem("teste",)
+const dbString = JSON.stringify(db);
+localStorage.setItem("GlobalDB",dbString)
