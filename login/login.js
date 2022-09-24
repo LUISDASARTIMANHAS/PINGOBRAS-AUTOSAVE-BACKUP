@@ -13,36 +13,32 @@
   const userscad6 = document.querySelector("#userCad6")
   let sep = ","
 
-  userscad.innerHTML = finder[0].userCad + sep 
-  userscad2.innerHTML =  finder[1].userCad + sep 
-  userscad3.innerHTML =  finder[2].userCad + sep
+  userscad.innerHTML = finder2[0].userCad + sep 
+  userscad2.innerHTML =  finder2[1].userCad + sep 
+  userscad3.innerHTML =  finder2[2].userCad + sep
   userscad4.innerHTML = finder2[3].userCad + sep
   userscad5.innerHTML = finder2[4].userCad + sep
-  userscad6.innerHTML = finder2[5].userCad 
+  userscad6.innerHTML = finder[0].userCad 
   
 
 function autenticar(){
   let usuario = document.querySelector('#usuario')
-  
   let senha = document.querySelector('#senha')
   
   let msgError = document.querySelector('#msgError')
   let msgSuccess = document.querySelector('#msgSuccess')
   
-  let listaUser = []
   
+  let listaUser = []
   let userValid = {
     nome: '',
     user: '',
     senha: '',
     saldo: ''
   }
-  
   listaUser = JSON.parse(localStorage.getItem('listaUser'))
-  
   listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
-       
       userValid = {
          nome: item.nomeCad,
          user: item.userCad,
@@ -52,6 +48,26 @@ function autenticar(){
       
     }
   })
+  let STGlobalDBObj = []
+  let userValid2 = {
+    nome: '',
+    user: '',
+    senha: '',
+    saldo: ''
+  }
+  STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
+  STGlobalDBObj.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid2 = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad,
+         saldo: item.saldoCad
+       }
+      
+    }
+  })
+  
   if(usuario.value == "" && senha.value == "") {
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
@@ -76,7 +92,7 @@ function autenticar(){
     msgSuccess.innerHTML = 'Validando acesso...'
     msgSuccess.setAttribute('style', 'display: block')
 }else{   
-if(usuario.value == userValid.user && senha.value == userValid.senha){
+if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.value == userValid2.user && senha.value == userValid2.senha){
     setTimeout(wait,7000);
     function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
     
@@ -84,6 +100,7 @@ if(usuario.value == userValid.user && senha.value == userValid.senha){
     let token = mathRandom + mathRandom
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
+    localStorage.setItem('userLogado', JSON.stringify(userValid2))
     console.log("LOGIN> token User setado!")  
   
     msgError.setAttribute('style', 'display: none')
