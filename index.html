@@ -414,6 +414,21 @@ getIpClient();
   
   
   </api>
+  
+  <script>
+    
+async function ini() {
+  try {
+    const response = await axios.get('https://pingobras.glitch.me/DB.json');
+    alert(response.data.city)
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getIpClient();
+  </script>
 </html>
 
 
