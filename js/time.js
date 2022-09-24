@@ -1,7 +1,7 @@
 const looptime = setInterval(timeRefresh, 500);
 
 
-let secondsplayer = "15"
+let secondsplayer = "58"
 let setminutesplayer = "30"
 let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
 let sethoursplayer = "19"  
@@ -19,16 +19,21 @@ let horariojs = Gethours +""+ Getminutes
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
 const calcS = Getseconds - secondsplayer;
-let faultS = calcS > 0 ? "00"  : calcS;
+let calcS2 = calcS > 0 ? "00"  : calcS;
+let faultS = calcS2 < 10 ? "0" + calcS : calcS2;
 const calcM = Getminutes - setminutesplayer;
-let faultM = calcM > 0 ? "00"  : calcM;
+let calcM2 = calcM > 0 ? "00"  : calcM;
+let faultM = calcM2 < 10 ? "0" + calcM : calcM2;
 const calcH = Gethours - sethoursplayer;
-let faultH = calcH > 0 ? "00"  : calcH;
-console.log(faultH+":"+faultM+":"+faultS)
+let calcH2 = calcH > 0 ? "00"  : calcH;
+let faultH = calcH2 < 10 ? "0" + calcH : calcH2;
+  
+const fault = faultH+":"+faultM+":"+faultS; 
+console.log(fault)
 //>  
   
   
-document.querySelector("[fault]").innerHTML = "error";
+document.querySelector("[fault]").innerHTML = fault;
 
 document.querySelector("[horaselect]").innerHTML = sethoursplayer+":" + minutesplayer+":" + secondsplayer;  
 document.querySelector("[horario]").innerHTML = horario;
