@@ -4,8 +4,9 @@ let saldoContamain = document.getElementById("header_wallet_balance")
 let Logadomain = JSON.parse(localStorage.getItem('userLogado'))
 let DBperfilIconLink = localStorage.getItem('UserPerfil')
 let perfilIcon2 = document.getElementById("perfilIcon")
-const GlobalDBObj2 = localStorage.getItem('GlobalDB')
-const GlobalDB2 = JSON.parse(GlobalDBObj2)
+let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+let userLogadoImg = userLogado.PerfilImg
+
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -18,13 +19,17 @@ if(DBperfilIconLink == "null") {
   alert("usuario sem perfil!")
   perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
 }else{
-  perfilIcon2.src = DBperfilIconLink
+  if(userLogadoImg == "null"||userLogadoImg == ""){
+    perfilIcon2.src = DBperfilIconLink
+  }else{
+    perfilIcon2.src = userLogadoImg
+  }
 }
 
 
 saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"
 
-let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+
 let logado = document.querySelector('#logado')
 logado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
 

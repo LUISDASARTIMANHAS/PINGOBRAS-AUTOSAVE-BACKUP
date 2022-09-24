@@ -10,6 +10,7 @@ var saldoConta = document.getElementById("header_wallet_balance");
 var IDConta = document.getElementById("IDConta");
 var Logado = JSON.parse(localStorage.getItem('userLogado'));
 var perfilIcon = document.getElementById("perfilIcon");
+let userLogadoImg = Logado.PerfilImg
 
 
 btntema.addEventListener('click', function() {
