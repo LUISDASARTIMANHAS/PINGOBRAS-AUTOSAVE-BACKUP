@@ -1,12 +1,12 @@
 //matriz js 
 const matrizJs = ["John", "Peter", "Sally", "Jane"];
 //definir string de dados js
-const stringjs = {"name":"John","age": 31,"cidade":"colatina"};
+const obj2 = {"name":"John","age": 31,"cidade":"colatina"};
 
-//transformar JSON em javascript
-const java = JSON.parse(json);
-//transformando js em JSON
-const json = JSON.stringify(js);
+//transformar String em obj
+const string = JSON.parse(obj);
+//transformando obj em String
+const obj = JSON.stringify(string);
 //transformando matriz em JSON
 const matrizJson = JSON.stringify(matrizJs);
 
