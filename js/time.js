@@ -18,10 +18,13 @@ let horario = Gethours +":" + Getminutes +":" + Getseconds
 let horariojs = Gethours +""+ Getminutes 
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
-let setfaultS = Getseconds + secondsplayer;
-let setfaultM = Getminutes + setminutesplayer;
-let setfaultH = Gethours + sethoursplayer ;  
-console.log(setfaultH+":"+setfaultM)
+const calcS = Getseconds - secondsplayer;
+let faultS = calcS > 0 ? "00"  : calcS;
+const calcM = Getminutes - setminutesplayer;
+let faultM = calcM > 0 ? "00"  : calcM;
+const calcH = Gethours - sethoursplayer;
+let faultH = calcH > 0 ? "00"  : calcH;
+console.log(faultH+":"+faultM+":"+faultS)
 //>  
   
   
