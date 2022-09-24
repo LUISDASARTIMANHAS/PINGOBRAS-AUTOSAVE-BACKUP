@@ -53,7 +53,8 @@ function autenticar(){
     nome: '',
     user: '',
     senha: '',
-    saldo: ''
+    saldo: '',
+    PerfilImg: ''
   }
   STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
   STGlobalDBObj.forEach((item) => {
@@ -62,7 +63,8 @@ function autenticar(){
          nome: item.nomeCad,
          user: item.userCad,
          senha: item.senhaCad,
-         saldo: item.saldoCad
+         saldo: item.saldoCad,
+         PerfilImg: item.PerfilIMG
        }
       
     }
