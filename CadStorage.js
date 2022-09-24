@@ -1,4 +1,4 @@
-[
+let db = [
 {"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
@@ -25,3 +25,4 @@
  "saldoCad": 1}
   
 ]
+localStorage.setItem("teste",)
