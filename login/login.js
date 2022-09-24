@@ -1,23 +1,24 @@
-  let buttonAutenticar = document.querySelector('#autenticador')
-  let listaUser = localStorage.getItem("listaUser");
-  let finder = JSON.parse(listaUser)
-  let STORAGE = localStorage.getItem("JSON STORAGE");
-  let STORAGER = JSON.parse(STORAGE);
-  let btnVerSenhaL = document.getElementById("verSenhaLogin")
-  let userscad = document.querySelector("#userCad")
-  let userscad2 = document.querySelector("#userCad2")
-  let userscad3 = document.querySelector("#userCad3")
-  let userscad4 = document.querySelector("#userCad4")
-  let userscad5 = document.querySelector("#userCad5")
-  let userscad6 = document.querySelector("#userCad6")
+  const buttonAutenticar = document.querySelector('#autenticador')
+  const listaUserObj = localStorage.getItem("listaUser");
+  const STGlobalDBObj = localStorage.getItem('GlobalDB')
+  const finder = JSON.parse(listaUserObj)
+  const finder2 = JSON.parse(STGlobalDBObj)
+  
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad = document.querySelector("#userCad")
+  const userscad2 = document.querySelector("#userCad2")
+  const userscad3 = document.querySelector("#userCad3")
+  const userscad4 = document.querySelector("#userCad4")
+  const userscad5 = document.querySelector("#userCad5")
+  const userscad6 = document.querySelector("#userCad6")
   let sep = ","
 
   userscad.innerHTML = finder[0].userCad + sep 
   userscad2.innerHTML =  finder[1].userCad + sep 
   userscad3.innerHTML =  finder[2].userCad + sep
-  userscad4.innerHTML = finder[3].userCad + sep
-  userscad5.innerHTML = finder[4].userCad + sep
-  userscad6.innerHTML = finder[5].userCad 
+  userscad4.innerHTML = finder2[3].userCad + sep
+  userscad5.innerHTML = finder2[4].userCad + sep
+  userscad6.innerHTML = finder2[5].userCad 
   
 
 function autenticar(){
