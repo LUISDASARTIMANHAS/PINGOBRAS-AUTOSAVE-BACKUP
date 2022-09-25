@@ -19,16 +19,16 @@ let horariojs = Gethours +""+ Getminutes
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
 const calcS = Getseconds - secondsplayer;
-let calcS2 = calcS > 0 ? "00"  : calcS;
-let faultS = calcS2 < 10 ? "0" + calcS : calcS2;
+var calcS2 = -calcS
+let faultS = calcS2 < 0 ? "00"  : calcS2;
 const calcM = Getminutes - setminutesplayer;
-let calcM2 = calcM > 0 ? "00"  : calcM;
-let faultM = calcM2 < 10 ? "0" + calcM : calcM2;
+var calcM2 = -calcM
+let faultM = calcM2 < 0 ? "00"  : calcM2;
 const calcH = Gethours - sethoursplayer;
-let calcH2 = calcH > 0 ? "00"  : calcH;
-let faultH = calcH2 < 10 ? "0" + calcH : calcH2;
+var calcH2 = -calcH
+let faultH = calcH2 < 0 ? "00"  : calcH2;
   
-const fault = faultH+":"+faultM+":"+faultS; 
+const fault = faultH +":"+ faultM+ ":"+ faultS; 
 console.log(fault)
 //>  
   
