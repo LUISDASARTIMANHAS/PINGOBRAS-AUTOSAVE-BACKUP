@@ -11,11 +11,14 @@ const horaselect = sethoursplayer + minutesplayer
 function timeRefresh() {
 const time = new Date();
   
-let Gethours = time.getHours();
-let Getminutes = time.getMinutes();
-let Getseconds = time.getSeconds();
-let horario = Gethours +":" + Getminutes +":" + Getseconds
-let horariojs = Gethours +""+ Getminutes 
+const Gethours = time.getHours();
+let hours = Gethours < 10 ? "0" + Gethours : Gethours;
+const Getminutes = time.getMinutes();
+let minutes = Getminutes < 10 ? "0" + Getminutes : Getminutes;
+const Getseconds = time.getSeconds();
+let seconds = Getseconds < 10 ? "0" + Getseconds : Getseconds;
+let horario = hours +":" + minutes +":" + Getseconds
+let horariojs = hours +""+ minutes 
 
 //< para zerar o relogio caso fique negativo ou ultrapasseo horario definido
 const calcS = Getseconds - secondsplayer;
