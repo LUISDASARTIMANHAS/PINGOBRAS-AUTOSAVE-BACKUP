@@ -24,15 +24,17 @@ let horariojs = hours +""+ minutes
 const calcS = Getseconds - secondsplayer;
 var calcS2 = -calcS
 let faultS = calcS2 < 0 ? "00"  : calcS2;
+  
 const calcM = Getminutes - setminutesplayer;
 var calcM2 = -calcM
 let faultM = calcM2 < 0 ? "00"  : calcM2;
+  
 const calcH = Gethours - sethoursplayer;
 var calcH2 = -calcH
 let faultH = calcH2 < 0 ? "00"  : calcH2;
   
 const fault = faultH +":"+ faultM+ ":"+ faultS; 
-console.log(fault)
+console.log(calcM2)
 //>  
   
   
