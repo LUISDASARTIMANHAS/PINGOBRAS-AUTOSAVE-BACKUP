@@ -30,7 +30,7 @@ if(DBperfilIconLink == "null") {
 saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"
 
 
-let logado = document.querySelector('#logado')
+let labellogado = document.querySelector('#logado')
 logado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
 
 function sair(){
