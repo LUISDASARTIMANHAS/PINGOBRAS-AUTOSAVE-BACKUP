@@ -1,7 +1,6 @@
 let DBuserbg = localStorage.getItem('UserBackground')
 let body2 = document.querySelector('body');
 let saldoContamain = document.getElementById("header_wallet_balance") 
-let Logadomain = JSON.parse(localStorage.getItem('userLogado'))
 let DBperfilIconLink = localStorage.getItem('UserPerfil')
 let perfilIcon2 = document.getElementById("perfilIcon")
 let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
@@ -27,11 +26,11 @@ if(DBperfilIconLink == "null") {
 }
 
 
-saldoContamain.innerHTML = "R$:" + Logadomain.saldo+",00"
+saldoContamain.innerHTML = "R$:" + userLogado.saldo+",00"
 
 
 let labellogado = document.querySelector('#logado')
-logado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
+labellogado.innerHTML = userLogado.user + " Bem Vindo de Volta!"
 
 function sair(){
   localStorage.removeItem('token')
