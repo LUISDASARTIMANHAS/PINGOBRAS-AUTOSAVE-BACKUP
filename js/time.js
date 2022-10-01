@@ -1,4 +1,4 @@
-const looptime = setInterval(timeRefresh, 500);
+const looptime = setInterval(timeRefresh, 1000);
 
 
 let secondsplayer = "58"

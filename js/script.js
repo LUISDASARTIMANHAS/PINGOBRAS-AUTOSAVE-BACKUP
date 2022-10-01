@@ -3,10 +3,6 @@ const loopScript = setInterval(refreshScript, 15000);
 function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
 
-  const loophorarioLocal = setInterval(temporizadorLocal, 1000);
-function temporizadorLocal() {
-  const date = new Date();}
-
 window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
