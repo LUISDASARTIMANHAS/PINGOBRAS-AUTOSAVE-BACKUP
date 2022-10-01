@@ -33,8 +33,7 @@ const calcH = Gethours - sethoursplayer;
 var calcH2 = -calcH
 let faultH = calcH2 < 0 ? "00"  : calcH2;
   
-const fault = faultH +":"+ faultM+ ":"+ faultS; 
-console.log(calcM2)
+const fault = faultH +":"+ faultM+ ":"+ faultS;
 //>  
   
   
