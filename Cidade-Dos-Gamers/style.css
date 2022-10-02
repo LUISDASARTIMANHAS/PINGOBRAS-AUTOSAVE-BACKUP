@@ -74,6 +74,15 @@ body{
 h1{
   font-size: 50px;
 }
-p.text-CDG{
+p.text-CDG-orangered{
+  font-size: 18px;
+  width: 75%;
+  text-align: center;
   
+}
+p.text-CDG2{
+  font-size: 18px;
+  width: 75%;
+  text-align: center;
+  color:orange;
 }
