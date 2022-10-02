@@ -9,8 +9,10 @@ let userLogadoImg = userLogado.PerfilImg
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
+  console.log("Background NotFound!")
 }else{
   body2.style.background = DBuserbg
+  console.log("Background seted!")
 }
 
 
