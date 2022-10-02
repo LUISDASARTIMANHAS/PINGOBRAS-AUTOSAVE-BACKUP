@@ -55,7 +55,8 @@ js{
 /* Basic page style resets final */
 
 body{
-  background-image: url("https://cdn.discordapp.com/attachments/1022972920517099580/1026201565314416650/PSX_20220927_183707.jpg");
+  /*background-image: url("https://cdn.discordapp.com/attachments/1022972920517099580/1026201565314416650/PSX_20220927_183707.jpg");*/
+  background-color:black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
