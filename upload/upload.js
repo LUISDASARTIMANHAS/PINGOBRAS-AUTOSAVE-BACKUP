@@ -1,14 +1,37 @@
 
 const fileInput = document.querySelector("#fileInput");
 const StatusUP = document.getElementById("statusUP");
-const statusLoad = document.getElementById("statusLoad")
-const statusServer = document.getElementById("statusServer")
-const statusLoad = document.getElementById("statusLoad")
-const statusLoad = document.getElementById("statusLoad")
-const statusLoad = document.getElementById("statusLoad")
+const statusLoad = document.getElementById("statusLoad");
+const statusServer = document.getElementById("statusServer");
+const fileID = document.getElementById("fileID");
+const keyLink = document.getElementById("keyLink");
+const fileName = document.getElementById("fileName");
+const fileSize = document.getElementById("fileSize");
+const fileLink = document.getElementById("fileLink");
+const fileExpire = document.getElementById("fileExpire");
+const maxDownloads = document.getElementById("maxDownloads");
+const fileType = document.getElementById("fileType");
+const filecreated = document.getElementById("filecreated");
+const filemodified = document.getElementById("filemodified");
+const Llink = document.getElementById("labelLink");
+
+
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
-console.log(UPDB)
+
+
+statusLoad.innerHTML = UPDB.success
+statusServer.innerHTML = UPDB.status
+fileID.innerHTML = UPDB.id
+keyLink.innerHTML = UPDB.key
+fileName.innerHTML = UPDB.name
+fileSize.innerHTML = UPDB.size
+fileLink.innerHTML = UPDB.link
+fileExpire.innerHTML = UPDB.expires
+maxDownloads.innerHTML = UPDB.maxDownloads
+fileType.innerHTML = UPDB.mimeType
+filecreated.innerHTML = UPDB.created
+filemodified.innerHTML = UPDB.modified
 
 const uploadFile = file => {
   console.log("Uploading file...");
