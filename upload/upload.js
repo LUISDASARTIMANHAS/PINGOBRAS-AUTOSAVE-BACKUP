@@ -15,9 +15,9 @@ const filecreated = document.getElementById("filecreated");
 const filemodified = document.getElementById("filemodified");
 const Llink = document.getElementById("labelLink");
 
-
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
+let sizeCalc = UPDB.size/1000
 
 
 statusLoad.innerHTML = UPDB.success
@@ -25,7 +25,7 @@ statusServer.innerHTML = UPDB.status
 fileID.innerHTML = UPDB.id
 keyLink.innerHTML = UPDB.key
 fileName.innerHTML = UPDB.name
-fileSize.innerHTML = UPDB.size+"Kb"
+fileSize.innerHTML = sizeCalc+"Kb"
 fileLink.innerHTML = UPDB.link
 fileExpire.innerHTML = UPDB.expires
 maxDownloads.innerHTML = UPDB.maxDownloads
@@ -58,4 +58,8 @@ fileInput.addEventListener("change", event => {
   const files = event.target.files;
   uploadFile(files[0]);
 });
-      
+     
+function Upar() {
+  const files = event.target.files;
+  uploadFile(files[0]);
+}
