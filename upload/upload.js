@@ -1,8 +1,11 @@
 
 const fileInput = document.querySelector("#fileInput");
+const StatusUP = document.getElementById("statusUP");
+const Dados = document.getElementById("dados")
 
 const uploadFile = file => {
   console.log("Uploading file...");
+  StatusUP.innerHTML = "Carregando Arquivo..."
   const API_ENDPOINT = "https://file.io/";
   const request = new XMLHttpRequest();
   const formData = new FormData();
@@ -11,7 +14,9 @@ const uploadFile = file => {
   request.onreadystatechange = () => {
     if (request.readyState === 4 && request.status === 200) {
       console.log(request.responseText);
-      localStorage}
+      localStorage.setItem("Upload",request.responseText)
+      StatusUP.innerHTML = "Arquivo Carregado!"
+      Dados.innerHTML = request.responseText}
   };
   formData.append("file", file);
   request.send(formData);
