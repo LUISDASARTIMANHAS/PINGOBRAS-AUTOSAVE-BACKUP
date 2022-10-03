@@ -46,7 +46,8 @@ const uploadFile = file => {
     if (request.readyState === 4 && request.status === 200) {
       console.log(request.responseText);
       localStorage.setItem("Upload",request.responseText)
-      StatusUP.innerHTML = "Arquivo Carregado!"}
+      StatusUP.innerHTML = "Arquivo Carregado!"
+      window.location.href = "/upload"}
   };
   formData.append("file", file);
   request.send(formData);
