@@ -11,8 +11,7 @@ const uploadFile = file => {
   request.onreadystatechange = () => {
     if (request.readyState === 4 && request.status === 200) {
       console.log(request.responseText);
-      console.log(request.responseText.link);
-    }
+      localStorage}
   };
   formData.append("file", file);
   request.send(formData);
