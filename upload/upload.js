@@ -25,13 +25,14 @@ statusServer.innerHTML = UPDB.status
 fileID.innerHTML = UPDB.id
 keyLink.innerHTML = UPDB.key
 fileName.innerHTML = UPDB.name
-fileSize.innerHTML = UPDB.size
+fileSize.innerHTML = UPDB.size+"Kb"
 fileLink.innerHTML = UPDB.link
 fileExpire.innerHTML = UPDB.expires
 maxDownloads.innerHTML = UPDB.maxDownloads
 fileType.innerHTML = UPDB.mimeType
 filecreated.innerHTML = UPDB.created
 filemodified.innerHTML = UPDB.modified
+Llink.href = UPDB.link
 
 const uploadFile = file => {
   console.log("Uploading file...");

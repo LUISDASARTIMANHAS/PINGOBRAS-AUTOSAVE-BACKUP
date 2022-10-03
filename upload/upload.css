@@ -4,3 +4,12 @@ p{
 js{
   display: inline-block;
 }
+upador{
+ background-color:#808080;
+ border-width:5px;
+ border-style:solid;
+ border-top-color:#008000;
+ border-right-color:#0000ff;
+ border-bottom-color:#ffffff;
+ border-left-color:#ff0000;
+}
