@@ -4,17 +4,31 @@
 <head>
 	<title>Server uploader</title>
 	<meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/head.css" />
+  <link rel="stylesheet" href="/css/btn.css" />
+  <link rel="stylesheet" href="/upload/upload.css" />
 </head>
 
 <body>
+<div class="site-altura">
+<div class="conteudo" role="main">
 <h1>Upador De Arquivos</h1>
 
    <div>
    <input type="file" id="fileInput" />
 </div>
-  <p>Status:</p><js id="statusUP">Sem Arquivo!</js>
-  <p>Dados Do Arquivo:</p><js id="dados">Sem Dados</js>
-
+  
+  <tela style="text-align: center;">
+  <p vermelho>Status:</p><js id="statusUP">Sem Arquivo!</js>
+  <br>
+  <p amarelo>Dados Do Arquivo:</p>
+  <br>
+  <p laranja>Status de carregaento:</p><js id="dados">Sem Dados</js>
+  </tela>
+  
+</div></div>  
 </body>
 <script src="upload/upload.js" defer></script>
 </html>
