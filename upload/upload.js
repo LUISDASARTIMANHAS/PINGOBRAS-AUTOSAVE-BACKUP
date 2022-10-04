@@ -67,7 +67,7 @@ function Upar() {
 const uploadFile = file => {
   console.log("Uploading file...");
   StatusUP.innerHTML = "Carregando Arquivo..."
-  const API_ENDPOINT = "https://file.io/";
+  const API_ENDPOINT = "https://file.io/NCZYB2M.YJ3NGBB-8ZNMENT-MK9M8HY-3Y8GXQY";
   const request = new XMLHttpRequest();
   const formData = new FormData();
 
