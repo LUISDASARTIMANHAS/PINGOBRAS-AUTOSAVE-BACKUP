@@ -15,6 +15,7 @@ const filecreated = document.getElementById("filecreated");
 const filemodified = document.getElementById("filemodified");
 const Llink = document.getElementById("labelLink");
 
+
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
 let sizeCalc = UPDB.size/1000
@@ -79,11 +80,13 @@ const uploadFile = file => {
       window.location.href = "/upload"}
   };
   formData.append("file", file);
-  request.send(formData);
-};  
-const files = event.target.files;
-  uploadFile(files);}
-  catch (err) {
-  alert(err);
-}
+  request.send(formData);};
+    
+fileInput.addEventListener("click", event => {
+  const files = event.target.files;
+  uploadFile(files[0]);
+});
+
+}catch (err){
+  alert(err);}
 }
