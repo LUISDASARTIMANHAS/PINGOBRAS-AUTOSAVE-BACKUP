@@ -34,6 +34,7 @@ filecreated.innerHTML = UPDB.created
 filemodified.innerHTML = UPDB.modified
 Llink.href = UPDB.link
 
+
 const uploadFile = file => {
   console.log("Uploading file...");
   StatusUP.innerHTML = "Carregando Arquivo..."
@@ -54,12 +55,35 @@ const uploadFile = file => {
 };
 
 
+  
 fileInput.addEventListener("change", event => {
   const files = event.target.files;
   uploadFile(files[0]);
 });
-     
+
 function Upar() {
-  const files = event.target.files;
-  uploadFile(files[0]);
+  try{
+const uploadFile = file => {
+  console.log("Uploading file...");
+  StatusUP.innerHTML = "Carregando Arquivo..."
+  const API_ENDPOINT = "https://file.io/";
+  const request = new XMLHttpRequest();
+  const formData = new FormData();
+
+  request.open("POST", API_ENDPOINT, true);
+  request.onreadystatechange = () => {
+    if (request.readyState === 4 && request.status === 200) {
+      console.log(request.responseText);
+      localStorage.setItem("Upload",request.responseText)
+      StatusUP.innerHTML = "Arquivo Carregado!"
+      window.location.href = "/upload"}
+  };
+  formData.append("file", file);
+  request.send(formData);
+};  
+const files = event.target.files;
+  uploadFile(files);}
+  catch (err) {
+  alert(err);
+}
 }
