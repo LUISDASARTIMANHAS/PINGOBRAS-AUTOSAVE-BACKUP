@@ -98,8 +98,9 @@ if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.va
     setTimeout(wait,7000);
     function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
     
+    let clientID = Math.random().toString(2)
     let mathRandom = Math.random().toString(16).substr(2)
-    let token = mathRandom + mathRandom
+    let token = mathRandom + mathRandom+"ValidDB:"+clientID
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
     localStorage.setItem('userLogado', JSON.stringify(userValid2))
