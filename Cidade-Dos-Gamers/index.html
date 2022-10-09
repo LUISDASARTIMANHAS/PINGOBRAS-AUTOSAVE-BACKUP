@@ -32,10 +32,12 @@
 <div class="site-altura">
       <div class="conteudo" role="main">
        
+        
         <img class="rotate copyright"
          height="350px"
          src="https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"/>
-
+        
+         <button onclick="notifyMe()">Notifique me!</button> 
          <h1 class="copyright" style="color:yellow;
                     filter: saturate(10);">Cidade dos</h1> <h1 class="copyright" style="color: red;
                                                                       filter: saturate(10);">Gamers</h1>
@@ -91,7 +93,6 @@
         <br>
         <br>
         <br>
-        <button onclick="notifyMe()">Notifique me!</button>
 
 </div></div>
 </body>
@@ -120,7 +121,9 @@ if (Notification.permission === "granted") {
   
   var opcoes = {
       body: "Ainda não a recrutamento de Staffs!",
-      icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"
+      icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
+      silent: false,
+      vibrate: [200, 100, 200]
   }
   var n = new Notification("Recrutamento De Staffs",opcoes);}
 
