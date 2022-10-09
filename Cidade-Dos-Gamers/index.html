@@ -120,7 +120,7 @@
     let siteAltura = document.querySelector(".site-altura");
     let btn = document.querySelector("button");
     let a = document.querySelector("a");
-    
+    let notify = false
     
   function notifyMe() {
   // Otherwise, we need to ask the user for permission
@@ -129,19 +129,33 @@
       // If the user accepts, let's create a notification
       if (permission === "granted") {
         var notification = new Notification("As notificações foram ativadas!")
-        alert("As notificações foram ativadas!");}});
+        alert("As notificações foram ativadas!");
+        notify = true
+        if(notify == true){openEvento()}
+      }});
         
-  }
+  }}
     
-  window.addEventListener("load", function(){
-setTimeout(function open(event){
+function openEvento(){
 document.querySelector(".popup").style.display = "block";
 siteAltura.style.opacity = "0.2";
 siteAltura.style.cursor = "not-allowed";
 btn.style.display = "none"
 a.style.display = "none"
-  console.log("LOG> ⚠️Anuncio carregado!"); 
-},5000)
+console.log("LOG> ⚠️Anuncio carregado!"); 
+}
+    
+  window.addEventListener("load", function(){
+setTimeout(open,2000)
+    
+function open(event){
+document.querySelector(".popup").style.display = "block";
+siteAltura.style.opacity = "0.2";
+siteAltura.style.cursor = "not-allowed";
+btn.style.display = "none"
+a.style.display = "none"
+console.log("LOG> ⚠️Anuncio carregado!"); 
+}
 });
 
 let fechar = document.querySelector("#close")
