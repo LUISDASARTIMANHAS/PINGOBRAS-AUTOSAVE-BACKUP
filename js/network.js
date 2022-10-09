@@ -4,9 +4,9 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
-            var KB = "024"
+            var KB = "698"
             var MB = "024"
-            var GB = "5"
+            var GB = "1"
             var Size = GB + MB + KB
             var Size8 = Size*8
             console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB+"." + KB + "GB")
@@ -24,7 +24,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
 function displaySpeed() {
                 
   var timeseconds = (end_time - time_start)
-  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
+  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds+0 + "s")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
