@@ -103,12 +103,6 @@
     alert("Este browser não suporta notificações de Desktop");
   }
 
-  // Let's check whether notification permissions have already been granted
-  else if (Notification.permission === "granted") {
-    // If it's okay let's create a notification
-    var notification = new Notification("Hi there!");
-  }
-
   // Otherwise, we need to ask the user for permission
   else if (Notification.permission !== 'denied') {
     Notification.requestPermission(function (permission) {
@@ -122,7 +116,14 @@
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them any more.
 }
-var notification = new Notification("Ainda não a recrutamento de Staffs!");
+if (Notification.permission === "granted") {
+  
+  var opcoes = {
+      body: "Ainda não a recrutamento de Staffs!",
+      icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"
+  }
+  var n = new Notification("Recrutamento De Staffs",opcoes);}
+
   </script>
   
 <script>
