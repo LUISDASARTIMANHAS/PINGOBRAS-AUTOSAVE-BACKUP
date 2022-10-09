@@ -16,21 +16,22 @@
 function autenticar(){
   let usuario = document.querySelector('#usuario')
   let senha = document.querySelector('#senha')
-  
   let msgError = document.querySelector('#msgError')
   let msgSuccess = document.querySelector('#msgSuccess')
-  
-  
-  let listaUser = []
   let userValid = {nome: '',user: '',senha: '',saldo: ''}
-  listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  let listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  console.log("usuario esperado: " + userValid)
+  console.log("lista esperada: " + listaUser)
   
-
-  listaUser.forEach((item) => {
+if(listaUser != "null"|| listaUser != null){
+  console.log("Não e : " + listaUser)
+}else{
+    listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
       userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
     }
   })
+  }
   
   let STGlobalDBObj = []
   let userValid2 = {
