@@ -117,12 +117,17 @@
   <script src="Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
   
   <script>
-    let siteAltura = document.querySelector(".site-altura")
+    let siteAltura = document.querySelector(".site-altura");
+    let btn = document.querySelector("button");
+    let a = document.querySelector("a");
+    
   window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
 siteAltura.style.opacity = "0.2";
 siteAltura.style.cursor = "not-allowed";
+btn.style.display = "none"
+a.style.display = "none"
   console.log("LOG> ⚠️Anuncio carregado!"); 
 },5000)
 });
@@ -135,6 +140,8 @@ console.warn("Deu Pau No Fechar Do Anúncio")
     document.querySelector(".popup").style.display = "none";
     siteAltura.style.opacity = "1";
     siteAltura.style.cursor = "default";
+    btn.style.display = "block"
+    a.style.display = "block"
   console.log("LOG> ⚠️Anuncio fechado!");
 });}
   </script>
