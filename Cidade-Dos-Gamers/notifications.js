@@ -11,9 +11,42 @@
 if (Notification.permission === 'denied') {
     alert('Usuário não deu permissão para notificações');
   }
-
     
+  //buscador de erros notify  
+  if(!window.Notification) {
+    alert('Este browser não suporta Web Notifications!');;
   }
+function softwareFindNotify(){
+  if (Notification.permission === 'default') {
+    Notification.requestPermission(function() {
+     alert('Usuário não falou se quer ou não notificações. Logo, o requestPermission pede a permissão pra ele.');
+    });
+  } else if (Notification.permission === 'granted') {
+    alert('Usuário deu permissão');
+
+    var notification = new Notification('O título da Notifcação', {
+     body: 'Mensagem do corpo da notificação',
+     tag: 'string única que previne notificações duplicadas',
+    });
+    notification.onshow = function() {
+     alert('onshow: evento quando a notificação é exibida')
+    },
+    notification.onclick = function() {
+     alert('onclick: evento quando a notificação é clicada')
+    },
+    notification.onclose = function() {
+     alert('onclose: evento quando a notificação é fechada')
+    },
+    notification.onerror = function() {
+     alert('onerror: evento quando a notificação não pode ser exibida. É disparado quando a permissão é defualt ou denied')
+    }
+
+  } else if (Notification.permission === 'denied') {
+   alert('Usuário não deu permissão');
+  }}
+
+};
+    
       var opcoes = {
       body: "Ainda não a recrutamento de Staffs!",
       icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
@@ -28,7 +61,7 @@ if (Notification.permission === 'denied') {
       silent: false,
       vibrate: [200, 100, 200],
       renotify: true,
-      tag: "song"
+      tag: "Recrutamento",
   }
     
   function notifyMe() {
