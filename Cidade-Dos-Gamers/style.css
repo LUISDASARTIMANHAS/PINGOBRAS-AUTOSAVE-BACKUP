@@ -159,20 +159,12 @@ js{
 
 
 body{
-  margin-top: 30%;
+  margin-top: 0;
   background: var(--FundoCDG); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: red;
-  
-  text-align:center;
- text-transform:capitalize;
-  background: #000000CD;
-  align-items: center;
-  text-align: center;
-  opacity: 1;
-  width: 100%;
 }
 h1{
   font-size: 50px;
@@ -201,7 +193,7 @@ p.text-CDG2{
 telaap{
 text-align:center;
  text-transform:capitalize;
-  background: #000000CD;
+  color: white;
   align-items: center;
   text-align: center;
   opacity: 1;
@@ -211,5 +203,16 @@ telaap p.copyright{
  text-align:center;
   width:100%;
 }
-.conteudo{
+.site-altura{
+  
+  text-align:center;
+ text-transform:capitalize;
+  background: #000000CD;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  width: 100%;
+}
+html{
+  background: #000000BB;
 }
