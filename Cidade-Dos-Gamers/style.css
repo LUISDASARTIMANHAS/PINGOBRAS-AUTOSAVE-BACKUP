@@ -28,7 +28,8 @@
   --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929);
   --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
   --IMGLuisdasartimanhas: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/doge-angry.png?v=1661855131002);
-
+  --FundoCDG: url("https://cdn.discordapp.com/attachments/1022972920517099580/1026489426009931796/png_20221003_104205_0000.png");
+  
   --display: flex formato de celular;
   --height: "altuta";
   --Weight: "peso";
@@ -65,7 +66,7 @@ js{
 
 body{
   margin-top: 30%;
-  background-image: url("https://cdn.discordapp.com/attachments/1022972920517099580/1026489426009931796/png_20221003_104205_0000.png");
+  background:black; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
