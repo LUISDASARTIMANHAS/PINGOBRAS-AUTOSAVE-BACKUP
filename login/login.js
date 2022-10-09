@@ -23,8 +23,11 @@ function autenticar(){
   console.log("usuario esperado: " + userValid)
   console.log("lista esperada: " + listaUser)
   
-if(listaUser != "null"|| listaUser != null){
-  console.log("Não e : " + listaUser)
+if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
 }else{
     listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
