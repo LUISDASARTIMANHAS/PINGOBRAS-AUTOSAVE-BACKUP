@@ -88,3 +88,7 @@ p.text-CDG2{
   text-align: center;
   color:orange;
 }
+.btn-CDG{
+  border: 5px dashed black;
+  border-radius: 50%;
+}
