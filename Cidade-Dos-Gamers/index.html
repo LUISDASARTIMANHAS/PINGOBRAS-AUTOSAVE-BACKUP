@@ -99,35 +99,19 @@
 </body>
   
   <script>
-  function notifyMe() {
-  // Verifica se o browser suporta notificações
+    // Verifica se o browser suporta notificações
   if (!("Notification" in window)) {
     alert("Este browser não suporta notificações de Desktop");
   }
-
-  // Otherwise, we need to ask the user for permission
-  else if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function (permission) {
-      // If the user accepts, let's create a notification
-      if (permission === "granted") {
-        var notification = new Notification("As notificações foram ativadas!");
-      document.addEventListener('visibilitychange', () => {
+    
+    document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       // The tab has become visible so clear the now-stale Notification.
      n.close(); 
     }
   });
-
-      }
-    });
-  }
-
-  // At last, if the user has denied notifications, and you
-  // want to be respectful there is no need to bother them any more.
-}
-if (Notification.permission === "granted") {
-  
-  var opcoes = {
+    
+      var opcoes = {
       body: "Ainda não a recrutamento de Staffs!",
       icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
       silent: false,
@@ -135,13 +119,28 @@ if (Notification.permission === "granted") {
       renotify: true,
       tag: "song"
   }
+    
+  function notifyMe() {
+  // Otherwise, we need to ask the user for permission
+   if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("As notificações foram ativadas!");}});
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them any more.
+}
+    
+    
+if (Notification.permission === "granted") {
   var n = new Notification("Recrutamento De Staffs",opcoes);
+  
 document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') {
+  if (document.visibilityState === 'visible') {
       // The tab has become visible so clear the now-stale Notification.
-     n.close(); 
-    }
-  });
+     n.close(); }});
 }
    
 
