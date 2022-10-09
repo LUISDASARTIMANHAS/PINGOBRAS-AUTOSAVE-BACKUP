@@ -38,7 +38,7 @@
          height="350px"
          src="https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"/>
         
-         <button class="btn" onclick="notifyMe()">Notifique me!</button> 
+         <button class="ANA" onclick="notifyMe()">Clique para ativar as notificações do site</button> 
          <h1 class="copyright" style="color:yellow;
                     filter: saturate(10);">Cidade dos</h1> <h1 class="copyright" style="color: red;
                                                                       filter: saturate(10);">Gamers</h1>
@@ -126,6 +126,7 @@ if (Notification.permission === "granted") {
       silent: false,
       vibrate: [200, 100, 200],
       renotify: true
+      
   }
   var n = new Notification("Recrutamento De Staffs",opcoes);
 document.addEventListener('visibilitychange', () => {
