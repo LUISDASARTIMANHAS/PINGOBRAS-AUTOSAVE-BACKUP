@@ -130,7 +130,7 @@ slideshow-container {
 }
 
 .popup {
-
+  background: #000000EE;
   min-height: 50%;
   width: 75%;
   height: auto;
@@ -145,6 +145,7 @@ slideshow-container {
   opacity: 1;
   border: 5px dashed black;
   z-index: 1;
+  color: white;
 }
 .popup button {
   position: absolute;
@@ -163,7 +164,7 @@ slideshow-container {
   right: 0;
 }
 .popup p {
-  margin-top: 35%;
+  margin-top: 20%;
   padding: 5px;
   font-size: 24px;
   text-align: center;

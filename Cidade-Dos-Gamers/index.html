@@ -103,7 +103,11 @@
       
 </div></div>
 <div class="popup">
-<p></p>
+<h1>Evento novo no servidor</h1>
+<p>Terá um evento,
+  onde a pessoa que enviar mais mensagems no servidor e interagir,
+  irá ganhar uma certa quantia de Sonhos e um cargos específico também,
+  esse é o nosso primeiro evento da Cidade dos Gamers.</p>
 <br>
 <button id="close">&times;</button>
 </div>
@@ -113,11 +117,12 @@
   <script src="Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
   
   <script>
+    let siteAltura = document.querySelector(".site-altura")
   window.addEventListener("load", function(){
 setTimeout(function open(event){
 document.querySelector(".popup").style.display = "block";
-document.querySelector(".site-altura").style.opacity = "0.2";
-document.querySelector(".site-altura").style.cursor = "not-allowed";
+siteAltura.style.opacity = "0.2";
+siteAltura.style.cursor = "not-allowed";
   console.log("LOG> ⚠️Anuncio carregado!"); 
 },5000)
 });
@@ -126,10 +131,10 @@ let fechar = document.querySelector("#close")
 if(!fechar) {
 console.warn("Deu Pau No Fechar Do Anúncio")
 }else{
-  fechar.addEventListener("mouseover", function(){
+  fechar.addEventListener("click", function(){
     document.querySelector(".popup").style.display = "none";
-    document.querySelector(".site-altura").style.opacity = "1";
-    document.querySelector(".site-altura").style.cursor = "default";
+    siteAltura.style.opacity = "1";
+    siteAltura.style.cursor = "default";
   console.log("LOG> ⚠️Anuncio fechado!");
 });}
   </script>
