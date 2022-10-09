@@ -191,7 +191,15 @@ p.text-CDG2{
   background: black;
 }
 telaap{
-  background: black;
+text-align:center;
+ text-transform:capitalize;
+  background: #000000CD;
   align-items: center;
   text-align: center;
+  opacity: 1;
+  width: 100%;
+}
+telaap p.copyright{
+ text-align:center;
+  width:100%;
 }
