@@ -102,9 +102,37 @@
         <br>
       
 </div></div>
+<div class="popup">
+<p></p>
+<br>
+<button id="close">&times;</button>
+</div>
+
 </body>
-  <script src="Cidade-Dos-Gamers/notifications.js" defer></script>
+  <script -src="Cidade-Dos-Gamers/notifications.js" defer></script>
   <script src="Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
+  
+  <script>
+  window.addEventListener("load", function(){
+setTimeout(function open(event){
+document.querySelector(".popup").style.display = "block";
+document.querySelector(".site-altura").style.opacity = "0.2";
+document.querySelector(".site-altura").style.cursor = "not-allowed";
+  console.log("LOG> ⚠️Anuncio carregado!"); 
+},5000)
+});
+
+let fechar = document.querySelector("#close")
+if(!fechar) {
+console.warn("Deu Pau No Fechar Do Anúncio")
+}else{
+  fechar.addEventListener("mouseover", function(){
+    document.querySelector(".popup").style.display = "none";
+    document.querySelector(".site-altura").style.opacity = "1";
+    document.querySelector(".site-altura").style.cursor = "default";
+  console.log("LOG> ⚠️Anuncio fechado!");
+});}
+  </script>
   
 <script>
   const http = "http://pingobras.glitch.me/Cidade-Dos-Gamers"
