@@ -124,10 +124,20 @@ if (Notification.permission === "granted") {
       body: "Ainda não a recrutamento de Staffs!",
       icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
       silent: false,
-      vibrate: [200, 100, 200]
+      vibrate: [200, 100, 200],
+      renotify: true
   }
-  var n = .new Notification("Recrutamento De Staffs",opcoes);}
+  var n = new Notification("Recrutamento De Staffs",opcoes);
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      // The tab has become visible so clear the now-stale Notification.
+      n.close();
+    }
+  });
+}
+   
 
+    
   </script>
   
 <script>
