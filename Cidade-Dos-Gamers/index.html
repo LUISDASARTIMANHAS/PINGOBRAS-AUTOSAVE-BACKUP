@@ -111,6 +111,13 @@
       // If the user accepts, let's create a notification
       if (permission === "granted") {
         var notification = new Notification("As notificações foram ativadas!");
+      document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      // The tab has become visible so clear the now-stale Notification.
+     n.close(); 
+    }
+  });
+
       }
     });
   }
@@ -125,14 +132,14 @@ if (Notification.permission === "granted") {
       icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
       silent: false,
       vibrate: [200, 100, 200],
-      renotify: true
-      
+      renotify: true,
+      tag: "song"
   }
   var n = new Notification("Recrutamento De Staffs",opcoes);
 document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       // The tab has become visible so clear the now-stale Notification.
-      n.close();
+     n.close(); 
     }
   });
 }
