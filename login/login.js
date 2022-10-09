@@ -10,6 +10,7 @@
   const userscad4 = document.querySelector("#userCad4")
   const userscad5 = document.querySelector("#userCad5")
   const userscad6 = document.querySelector("#userCad6")
+  const userscad7 = document.querySelector("#userCad7")
   let sep = ","
   
 
@@ -126,4 +127,5 @@ ClickMouseLOGIN.play();
   userscad3.innerHTML =  finder2[2].userCad + sep
   userscad4.innerHTML = finder2[3].userCad + sep
   userscad5.innerHTML = finder2[4].userCad + sep
-  userscad6.innerHTML = finder[0].userCad 
+  userscad6.innerHTML = finder2[5].userCad + sep 
+  userscad7.innerHTML = finder[0].userCad
