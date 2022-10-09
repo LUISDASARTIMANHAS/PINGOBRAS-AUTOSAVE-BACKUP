@@ -3,7 +3,6 @@
   const STGlobalDBObj = localStorage.getItem('GlobalDB')
   const finder = JSON.parse(listaUserObj)
   const finder2 = JSON.parse(STGlobalDBObj)
-  
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
   const userscad = document.querySelector("#userCad")
   const userscad2 = document.querySelector("#userCad2")
@@ -12,13 +11,6 @@
   const userscad5 = document.querySelector("#userCad5")
   const userscad6 = document.querySelector("#userCad6")
   let sep = ","
-
-  userscad.innerHTML = finder2[0].userCad + sep 
-  userscad2.innerHTML =  finder2[1].userCad + sep 
-  userscad3.innerHTML =  finder2[2].userCad + sep
-  userscad4.innerHTML = finder2[3].userCad + sep
-  userscad5.innerHTML = finder2[4].userCad + sep
-  userscad6.innerHTML = finder[0].userCad 
   
 
 function autenticar(){
@@ -30,24 +22,16 @@ function autenticar(){
   
   
   let listaUser = []
-  let userValid = {
-    nome: '',
-    user: '',
-    senha: '',
-    saldo: ''
-  }
+  let userValid = {nome: '',user: '',senha: '',saldo: ''}
   listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  
+
   listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
-      userValid = {
-         nome: item.nomeCad,
-         user: item.userCad,
-         senha: item.senhaCad,
-         saldo: item.saldoCad
-       }
-      
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
     }
   })
+  
   let STGlobalDBObj = []
   let userValid2 = {
     nome: '',
@@ -131,3 +115,11 @@ ClickMouseLOGIN.play();
     inputVerSenhaL.setAttribute('type', 'password')
     inputVerSenhaL.placeholder = "******"}
 })
+
+
+  userscad.innerHTML = finder2[0].userCad + sep 
+  userscad2.innerHTML =  finder2[1].userCad + sep 
+  userscad3.innerHTML =  finder2[2].userCad + sep
+  userscad4.innerHTML = finder2[3].userCad + sep
+  userscad5.innerHTML = finder2[4].userCad + sep
+  userscad6.innerHTML = finder[0].userCad 
