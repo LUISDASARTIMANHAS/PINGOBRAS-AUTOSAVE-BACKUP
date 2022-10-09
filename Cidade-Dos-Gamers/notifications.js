@@ -7,15 +7,9 @@
   console.log('Seu browser suporta Notifications');
 }else {
   console.warn('Seu browser não suporta Notifications =(');
-}
-if (Notification.permission === 'denied') {
-    alert('Usuário não deu permissão para notificações');
-  }
+}}
     
   //buscador de erros notify  
-  if(!window.Notification) {
-    alert('Este browser não suporta Web Notifications!');;
-  }
 function softwareFindNotify(){
   if (Notification.permission === 'default') {
     Notification.requestPermission(function() {
@@ -43,9 +37,8 @@ function softwareFindNotify(){
 
   } else if (Notification.permission === 'denied') {
    alert('Usuário não deu permissão');
-  }}
+  }}//Fim do software
 
-};
     
       var opcoes = {
       body: "Ainda não a recrutamento de Staffs!",
@@ -70,7 +63,9 @@ function softwareFindNotify(){
     Notification.requestPermission(function (permission) {
       // If the user accepts, let's create a notification
       if (permission === "granted") {
-        var notification = new Notification("As notificações foram ativadas!");}});
+        var notification = new Notification("As notificações foram ativadas!")
+        alert("As notificações foram ativadas!");}});
+        
   }
 }
   
