@@ -165,6 +165,14 @@ body{
   background-size: cover;
   background-position: center;
   color: red;
+  
+  text-align:center;
+ text-transform:capitalize;
+  background: #000000CD;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  width: 100%;
 }
 h1{
   font-size: 50px;
@@ -202,4 +210,6 @@ text-align:center;
 telaap p.copyright{
  text-align:center;
   width:100%;
+}
+.conteudo{
 }
