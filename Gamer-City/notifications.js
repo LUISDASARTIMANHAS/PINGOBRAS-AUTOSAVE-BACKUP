@@ -9,6 +9,7 @@
   console.warn('Seu browser não suporta Notifications =(');
 }}
     
+const serverImg = "https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg"
   //buscador de erros notify  
 function softwareFindNotify(){
   if (Notification.permission === 'default') {
@@ -42,7 +43,7 @@ function softwareFindNotify(){
     
       var opcoes = {
       body: "Ainda não a recrutamento de Staffs!",
-      icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
+      icon: serverImg,
       silent: false,
       vibrate: [200, 100, 200],
       renotify: true,
@@ -50,7 +51,7 @@ function softwareFindNotify(){
   }
   var Evento = {
       body: "Terá um evento, onde a pessoa que enviar mais mensagems no servidor e interagir, irá ganhar uma certa quantia de Sonhos e um cargos específico também, esse é o nosso primeiro evento da Cidade dos Gamers.",
-      icon: "https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg",
+      icon: serverImg,
       silent: false,
       vibrate: [200, 100, 200],
       renotify: true,
