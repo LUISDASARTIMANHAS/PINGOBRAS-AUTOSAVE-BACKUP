@@ -16,13 +16,21 @@ const popup2 = document.getElementById("popup2");
         var notification = new Notification("As notificações foram ativadas!")
         alert("As notificações foram ativadas!");
         notify = true
-        if(notify == true){openEvento()}
+        if(notify == true){openEvento(); setTimeout(openEvento2(),12000);}
       }});
         
   }}
     
 function openEvento(){
 document.querySelector(".popup").style.display = "block";
+siteAltura.style.opacity = "0.2";
+siteAltura.style.cursor = "not-allowed";
+btn.style.display = "none"
+a.style.display = "none"
+console.log("LOG> ⚠️Anuncio carregado!"); 
+}
+function openEvento2(){
+popup2.style.display = "block";
 siteAltura.style.opacity = "0.2";
 siteAltura.style.cursor = "not-allowed";
 btn.style.display = "none"
