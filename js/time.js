@@ -4,7 +4,7 @@ const looptime = setInterval(timeRefresh, 1000);
 let secondsplayer = "58"
 let setminutesplayer = "30"
 let minutesplayer = setminutesplayer < 10 ? "0" + setminutesplayer : setminutesplayer;
-let sethoursplayer = "21"  
+let sethoursplayer = "19"  
 
 const horaselect = sethoursplayer + minutesplayer
       

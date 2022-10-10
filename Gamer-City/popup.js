@@ -1,9 +1,11 @@
-let siteAltura = document.querySelector(".site-altura");
-let btn = document.querySelector("button");
-let a = document.querySelector("a");
+const siteAltura = document.querySelector(".site-altura");
+const btn = document.querySelector("button");
+const a = document.querySelector("a");
 let notify = false
-let fechar = document.querySelector("#close")
-let fechar2 = document.querySelector("#close2")    
+const fechar = document.getElementById("close");
+const fechar2 = document.getElementById("close2");
+const popup = document.getElementById("popup");
+const popup2 = document.getElementById("popup2");
 
   function notifyMe() {
   // Otherwise, we need to ask the user for permission
@@ -57,7 +59,7 @@ if(!fechar) {
 console.warn("Deu Pau No Fechar Do Anúncio")
 }else{
   fechar.addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
+    popup.style.display = "none";
     siteAltura.style.opacity = "1";
     siteAltura.style.cursor = "default";
     btn.style.display = "block"
@@ -68,8 +70,8 @@ console.warn("Deu Pau No Fechar Do Anúncio")
 if(!fechar2) {
 console.warn("Deu Pau No Fechar Do Anúncio")
 }else{
-  fechar.addEventListener("click", function(){
-    document.querySelector("#popup2").style.display = "none";
+  fechar2.addEventListener("click", function(){
+    popup2.style.display = "none";
     siteAltura.style.opacity = "1";
     siteAltura.style.cursor = "default";
     btn.style.display = "block"
