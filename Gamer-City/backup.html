@@ -6,29 +6,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Refresh" content="300">
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg" />
-    <link rel="stylesheet" href="/Cidade-Dos-Gamers/style.css" />
-    <link rel="stylesheet" href="/css/btn.css" />
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg" />
+    <link rel="stylesheet" href="https://pingobras.glitch.me/Gamer-City/style.css" />
+    <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
     
     <seo>
     <meta
       name="description"
-      content="Entre já na Cidade dos Gamers, você irá fazer novas amizades, e poderá pedido trocas e farmar tranquilamente"/>
+      content="Entre já na Gamer City, você irá fazer novas amizades, e poderá pedido trocas e farmar tranquilamente"/>
     <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Cidade dos Gamers #50" />
+    <meta property="og:title" content="Gamer City" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://pingobras.glitch.me/Cidade-Dos-Gamers" />
+    <meta property="og:url" content="https://pingobras.glitch.me/Gamer City" />
     <meta
       property="og:description"
-      content="Entre já na Cidade dos Gamers, você irá fazer novas amizades, e poderá pedido trocas e farmar tranquilamente"/>
+      content="Entre já na Gamer City, você irá fazer novas amizades, e poderá pedido trocas e farmar tranquilamente"/>
     <meta
       property="og:image"
-      content="https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"/>
+      content="https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg"/>
     <meta name="twitter:card" content="summary" />
     </seo>
     
-    <title>Cidade Dos Gamers</title>
+    <title>Gamer City</title>
   </head>
   <body>
 <div class="site-altura">
@@ -37,13 +37,13 @@
           
         <img class="rotate copyright"
          height="350px"
-         src="https://cdn.discordapp.com/attachments/1022972920517099580/1026201314457296956/Picsart_22-09-27_22-49-32-293.jpg"/>
+         src="https://cdn.discordapp.com/attachments/1022972920517099580/1029141982041346158/Picsart_22-10-10_12-04-30-983.jpg"/>
         
         
          <button class="ANA" onclick="notifyMe()">Clique para ativar as notificações do site</button> 
          <h1 class="copyright" style="color:yellow;
-                    filter: saturate(10);">Cidade dos</h1> <h1 class="copyright" style="color: red;
-                                                                      filter: saturate(10);">Gamers</h1>
+                    filter: saturate(10);">Gamer</h1> <h1 class="copyright" style="color: red;
+                                                                      filter: saturate(10);">City</h1>
         <a class="copyright"
            style="font-size: 18px;"
            target="_blank" 
@@ -53,8 +53,8 @@
         <br>
         
         <telaap class="copyright" style="height: 600px;">
-        <h2>🎃「Cidade dos Gamers 」🎮</h2>
-        <p>「Olá, A Cidade dos Gamers é uma comunidade focada em divertir os Membros Sempre visando o respeito e a igualdade entre todos」</p>
+        <h2>🎃「Gamer City 」🎮</h2>
+        <p>「Olá, A Gamer City é uma comunidade focada em divertir os Membros Sempre visando o respeito e a igualdade entre todos」</p>
         
         <br>
         
@@ -82,7 +82,7 @@
         
         <br>
         
-        <p>🥋┆Temos um site próprio do servidor aqui caso queira "https://pingobras.glitch.me/Cidade-Dos-Gamers":</p>
+        <p>🥋┆Temos um site próprio do servidor aqui caso queira "https://pingobras.glitch.me/Gamer-City":</p>
         
         <br>
         
@@ -100,36 +100,69 @@
         <br>
         <br>
         <br>
-      
+        
+        
+<footer>
+<div class="links"></div>
+          
+<div id="direitos" class="direitos">Loading...</div>
+</footer>
 </div></div>
 <div class="popup">
 <h1>Evento novo no servidor</h1>
 <p>Terá um evento,
   onde a pessoa que enviar mais mensagems no servidor e interagir,
   irá ganhar uma certa quantia de Sonhos e um cargos específico também,
-  esse é o nosso primeiro evento da Cidade dos Gamers.</p>
+  esse é o nosso primeiro evento da Gamer City.</p>
 <br>
 <button id="close">&times;</button>
 </div>
 
 </body>
-  <script src="/Cidade-Dos-Gamers/notifications.js" defer></script>
-  <script src="/Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
+  <script -src="https://pingobras.glitch.me/Cidade-Dos-Gamers/notifications.js" defer></script>
+  <script src="https://pingobras.glitch.me/Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
+  <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
   
   <script>
     let siteAltura = document.querySelector(".site-altura");
     let btn = document.querySelector("button");
     let a = document.querySelector("a");
+    let notify = false
     
-  window.addEventListener("load", function(){
-setTimeout(function open(event){
+  function notifyMe() {
+  // Otherwise, we need to ask the user for permission
+   if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("As notificações foram ativadas!")
+        alert("As notificações foram ativadas!");
+        notify = true
+        if(notify == true){openEvento()}
+      }});
+        
+  }}
+    
+function openEvento(){
 document.querySelector(".popup").style.display = "block";
 siteAltura.style.opacity = "0.2";
 siteAltura.style.cursor = "not-allowed";
 btn.style.display = "none"
 a.style.display = "none"
-  console.log("LOG> ⚠️Anuncio carregado!"); 
-},5000)
+console.log("LOG> ⚠️Anuncio carregado!"); 
+}
+    
+  window.addEventListener("load", function(){
+setTimeout(open,2000)
+    
+function open(event){
+document.querySelector(".popup").style.display = "block";
+siteAltura.style.opacity = "0.2";
+siteAltura.style.cursor = "not-allowed";
+btn.style.display = "none"
+a.style.display = "none"
+console.log("LOG> ⚠️Anuncio carregado!"); 
+}
 });
 
 let fechar = document.querySelector("#close")
@@ -147,8 +180,8 @@ console.warn("Deu Pau No Fechar Do Anúncio")
   </script>
   
 <script>
-  const http = "http://pingobras.glitch.me/Cidade-Dos-Gamers/backup.html"
+  const http = "http://pingobras.glitch.me/Cidade-Dos-Gamers"
 if(document.URL == http) {
-   window.location.href = ("https://pingobras.glitch.me/Cidade-Dos-Gamers/backup.html"); }
+   window.location.href = ("https://pingobras.glitch.me/Cidade-Dos-Gamers"); }
   </script>
 </html>
