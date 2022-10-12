@@ -9,17 +9,15 @@
 <script>
 var db = openDatabase('PINGOBRASDB', '1.0', 'PINGOBRAS DB', 2 * 1024 * 1024); 
          var msg; 
-    
-const trasação =  db.transaction
-const create = db.transaction(function (tx) { 
+     db.transaction(function (tx) { 
             tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)'); 
-            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (402, "PINGOBRAS")'); 
-            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (402, "ADMINS")'); 
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (2, "PINGOBRAS")'); 
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (1, "ADMINS")'); 
             msg = '<p>Mensagem de log criada e DADOS INSERIDOS.</p>'; 
             document.querySelector('#status').innerHTML =  msg; 
          })
-
-const select = db.transaction(function (tx) { 
+  
+ db.transaction(function (tx) { 
             tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) { 
                var len = results.rows.length, i; 
                msg = "<p>DADOS ENCONTRADOS: " + len + "</p>"; 
