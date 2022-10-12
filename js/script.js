@@ -2,6 +2,7 @@ const loopScript = setInterval(refreshScript, 15000);
 
 function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
+let STDEVICE = JSON.parse(sessionStorage.getItem("LASTDEVICES") || '[]')
 
 window.addEventListener("load", function(){
 setTimeout(function open(event){
@@ -31,7 +32,9 @@ if(check === true) {
 let body = document.querySelector("body")
 body.setAttribute('style', 'padding-top: 50% ')}
   console.warn("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName)
-
+let NewDevice = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
+  STDEVICE.push(NewDevice)
+  
 const linkIP = document.querySelector("#linkIP");
 linkIP.href = "http://" + linkIP.name
   
