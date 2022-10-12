@@ -56,4 +56,8 @@ fsEnter.addEventListener('click', function (e) {
         fsEnter.innerHTML = "TELA CHEIA";
     }
 }); */
-var len = results.rows.length, i;
+var deicesFound = ultimosDevices.rows.length, maxDevices;
+for (maxDevices = 0; maxDevices < deicesFound; maxDevices++) { 
+let devicesConected = "<p><b>" + deicesFound.rows.item(maxDevices).log + "</b></p>"; 
+document.querySelector("labelDevices").innerHTML +=  devicesConected; 
+} 
