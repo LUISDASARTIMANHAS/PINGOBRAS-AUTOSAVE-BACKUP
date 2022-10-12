@@ -5,7 +5,8 @@
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Refresh" content="300">
+    <meta http-equiv="Refresh" content="20">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/Gamer-City/style.css" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" />
@@ -17,14 +18,10 @@
 
 STATUS: OK
 <br>
-CODE:200
+CODE: <js>200</js>200
 <br>  
-Cidade: <js verde id="city">Sem informações</js>
-       <br>
 Pais: <js verde id="pais">Sem informações</js>
        <br>
-Região: <js verde id="regiao">Sem informações</js>
-       <br> 
 Fuso Horario: <js verde id="timezone">Sem informações</js>
        <br>
 Provedor IP: <js verde id="IP">Sem informações</js>
@@ -33,12 +30,26 @@ Host/Getaway IP: <js verde id="HostIP">Sem informações</js>
        <br>
 Fornecedor de acesso à internet: <js verde id="ISP">Sem informações</js>
        <br>
-localização: <js verde id="location">Sem informações</js>
-       <br> 
-Codigo Postal: <js verde id="postal">Sem informações</js>
-  <br>
 Analogico:N/D}
   
 </div></div>
 </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+async function getIpClient() {
+  try {
+    const response = await axios.get('https://ipinfo.io/json');
+    document.getElementById("pais").innerHTML = response.data.country;
+    document.getElementById("timezone").innerHTML = response.data.timezone;
+    document.getElementById("IP").innerHTML = response.data.ip
+    document.getElementById("HostIP").innerHTML = response.data.hostname
+    document.getElementById("ISP").innerHTML = response.data.org
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getIpClient();
+  </script>
 </html>
