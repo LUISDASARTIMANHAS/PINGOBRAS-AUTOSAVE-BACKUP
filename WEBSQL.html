@@ -3,82 +3,32 @@
    <title>WEB SQL</title>
    </head>   
 <body>
-
+      <div id = "status" name = "status">Status Message</div> 
    
  </body>
 <script>
-// o método OpenDatabase precisa de 4 parametros; o nome do banco de dados, a versão, a descrição e o tamanho estimado (em bytes)
-var db = openDatabase("Teste", "1.0", "Teste Web SQL Database", 200000);
+var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024); 
+         var msg; 
+    
+         db.transaction(function (tx) { 
+            tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)'); 
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (1, "foobar")'); 
+            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (2, "logmsg")'); 
+            msg = '<p>Log message created and row inserted.</p>'; 
+            document.querySelector('#status').innerHTML =  msg; 
+         })
 
-// deverá mostrar "Database"
-console.log(db);
-
-// de qualquer forma, sempre teste que o objeto foi instanciado direito antes de usá-lo
-if(!db){
-    alert('deu pau!');
-}
-  // o método transaction aceita uma função anônima que recebe um objeto SQLTransaction como parâmetro
-db.transaction(function(transaction){
-    transaction.executeSql("SELECT COUNT(*) FROM Teste", null, null, null);
-});
-
-// os parametros são, respectivamente: a consulta, as variáveis a serem "bindadas", callback de sucesso e callback de erro, ou seja:
-
-db.transaction(function(transaction){
-    transaction.executeSql(
-        // a consulta
-        "SELECT COUNT(*) FROM Teste",
-        // variáveis para bind, como é um SELECT, passamos um array vazio
-        [[]],
-        // callback de sucesso, uma função anônima que recebe um objeto SQLTransaction e um SQLResultSet
-        function(transaction, result){
-            console.log('deu certo!');
-            console.log(result);
-        },
-        // callback de erro, função anônima que recebe um objeto SQLTransaction e um SQLError
-        function(transaction, error){
-            console.log('deu pau!');
-            console.log(error);
-        }
-    );
-});
-Se rodar o código acima, verá que a consulta dará um erro e retornará um objeto SQLError, para acessar a mensagem de erro é só acessar as propriedades “code” e “message” do objeto.
-
-Dê uma olhada na mensagem de erro… pois é não criamos a tabela!
-
-Como criar e popular uma tabela
-
-O SQL não é nenhuma novidade, só é necessário envolvê-lo nos métodos corretos:
-(alias, ele utiliza statements preparados, para proteção contra SQL Injection, mas isto está fora do escopo deste artigo!)
-
-db.transaction(function(transaction){
-    // criar a tabela
-    transaction.executeSql("CREATE TABLE Teste (id REAL UNIQUE, nome TEXT, timestamp REAL)", [[]], null, null);
-
-    // num caso de verdade, iríamos incluir callbacks para verificar que deu tudo certo mas para não estender demais o código vou pular esta parte...
-
-    // inserir dados
-    // obs - repare que usamos um "statement preparado", colocamos interrogações no lugar das variáveis e as listamos em um array no segundo parametro, fazendo bind delas
-    transaction.executeSql("INSERT INTO Teste (nome, timestamp) values(?, ?)", [['Alex', new Date().getTime()]], null, null);
-});
-db.transaction(function(transaction){
-    transaction.executeSql(
-        "SELECT * FROM Teste",
-        [[]],
-        function(transaction, result){
-            console.log('deu certo!');
-            console.log(result);
-
-           for(var i = 0; i < result.rows.length; i++){
-               console.log(result.rows.item(i)[['nome']]);
-           }
-        },
-        function(transaction, error){
-            console.log('deu pau!');
-            console.log(error);
-        }
-    );
-});
-
-</script>   
+         db.transaction(function (tx) { 
+            tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) { 
+               var len = results.rows.length, i; 
+               msg = "<p>Found rows: " + len + "</p>"; 
+               document.querySelector('#status').innerHTML +=  msg; 
+      
+               for (i = 0; i < len; i++) { 
+                  msg = "<p><b>" + results.rows.item(i).log + "</b></p>"; 
+                  document.querySelector('#status').innerHTML +=  msg; 
+               } 
+            }, null); 
+         }); 
+  </script>   
 </html>
