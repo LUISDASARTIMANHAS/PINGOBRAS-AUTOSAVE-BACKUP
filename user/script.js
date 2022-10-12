@@ -1,11 +1,11 @@
-let DBuserbg = localStorage.getItem('UserBackground')
+const DBuserbg = localStorage.getItem('UserBackground')
 let body2 = document.querySelector('body');
 let saldoContamain = document.getElementById("header_wallet_balance") 
-let DBperfilIconLink = localStorage.getItem('UserPerfil')
+const DBperfilIconLink = localStorage.getItem('UserPerfil')
 let perfilIcon2 = document.getElementById("perfilIcon")
-let userLogado = JSON.parse(localStorage.getItem('userLogado')) 
+const userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let userLogadoImg = userLogado.PerfilImg
-
+const ultimosDevices = sessionStorage.getItem("LASTDEVICES")
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -56,3 +56,4 @@ fsEnter.addEventListener('click', function (e) {
         fsEnter.innerHTML = "TELA CHEIA";
     }
 }); */
+var len = results.rows.length, i;
