@@ -33,7 +33,13 @@ let db = [
  "userCad": "AbDomineEst", 
  "senhaCad": "826961415130185749", 
  "saldoCad": 1,
- "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg"}
+ "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg"},
+  
+{"nomeCad": "Marquinhos",
+"userCad": "Marq",
+"senhaCad": "9595",
+"saldoCad": 2,
+"PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",}
 ]
 const dbString = JSON.stringify(db);
 localStorage.setItem("GlobalDB",dbString)
