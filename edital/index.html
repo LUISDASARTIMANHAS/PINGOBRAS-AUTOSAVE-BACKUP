@@ -28,24 +28,7 @@
                                     
             
 <body id="pgpage-concurso" class="sidebar-desktop-active" data-page-entry="list" data-inactivity-timeout="0">
-<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
 
-<div class="toggle-sidebar pull-left" title="Alternar a Barra Lateral (Ctrl+[, Ctrl+])">
-<button class="icon-toggle-sidebar"></button>
-</div>
-    
-    <div class="container-fluid">
-        <div class="navbar-header">
-<h3>Publicações - Colatina</h3>
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navnav" aria-expanded="false" aria-controls="navbar">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-</div>
-</div>
-</nav>
 
 
     
@@ -164,130 +147,7 @@ Chamamento Público
                         </a>
                     </li>
                                     </ul>
-    </div>
-        
-        
-    </div>
-
-                <div class="btn-group js-selection-actions-container fade" style="display: none">
-        <div class="btn-group">
-            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                            <span class="hidden-xs">
-                                <span class="js-count">0</span> item(s) selecionados
-                            </span>
-                <span class="js-count visible-xs-inline">0</span>
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#" class="js-action" data-type="clear">Clear</a></li>
-                                    <li class="divider"></li>
-                    <li class="dropdown dropdown-sub-menu">
-                        <a href="#">Selection filter</a>
-                        <ul class="dropdown-menu sub-menu">
-                            <li><a href="#" class="js-action" data-type="select" data-condition="selected" data-url="concurso.php">Show selected only</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#" class="js-action" data-type="select" data-condition="unselected" data-url="concurso.php">Show unselected only</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#" class="js-action" data-type="select" data-condition="all" data-url="concurso.php">Show all</a></li>
-                        </ul>
-                    </li>
-                                                                    <li class="divider"></li>
-                    <li class="dropdown dropdown-sub-menu">
-                        <a href="#">Exportar</a>
-                        <ul class="dropdown-menu sub-menu">
-                                                            <li><a href="#" target="_blank" class="js-action" data-type="export" data-export-type="pdf" data-url="concurso.php">Exportar para PDF</a></li>
-                                                            <li><a href="#" class="js-action" data-type="export" data-export-type="excel" data-url="concurso.php">Exportar para Excel</a></li>
-                                                            <li><a href="#" class="js-action" data-type="export" data-export-type="word" data-url="concurso.php">Exportar para Word</a></li>
-                                                            <li><a href="#" class="js-action" data-type="export" data-export-type="xml" data-url="concurso.php">Exportar para XML</a></li>
-                                                            <li><a href="#" class="js-action" data-type="export" data-export-type="csv" data-url="concurso.php">Exportar para CSV</a></li>
-                                                    </ul>
-                    </li>
-                                                    <li class="divider"></li>
-                    <li><a href="#" target="_blank" class="js-action" data-type="print" data-url="concurso.php">Imprimir</a></li>
-                                                            </ul>
-        </div>
-    </div>
-        </div>
-
-                    <div class="addition-block-right pull-right">
-                
-                
-                
-                            </div>
-            <div class="addition-block-right pull-right js-quick-filter">
-    <div class="quick-filter-toolbar btn-group">
-        <div class="input-group js-filter-control">
-            <input placeholder="Pesquisa rápida" type="text" size="16" class="js-input form-control" name="quick_filter" value="">
-            <div class="input-group-btn dropdown dropdown-lg">
-                <button id="toggle-dropdown" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
-                <div class="dropdown-menu dropdown-menu-right" role="menu">
-                    <form class="form-horizontal quick-filter">
-                        <div class="form-group form-group-sm">
-                            <label class="control-label" for="quick-filter-fields">Columns</label>
-                            <div class="col-input input-group-sm" style="width:100%;max-width:100%" data-column="quick_filter_fields">
-                                <div class="select2-container select2-container-multi form-control" id="s2id_quick-filter-fields" style="width: 100%;"><ul class="select2-choices">  <li class="select2-search-field">    <label for="s2id_autogen1" class="select2-offscreen">Columns</label>    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen1" placeholder="" style="width: 120%;">  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">Não foram encontradas equivalências</li></ul></div></div><select id="quick-filter-fields" class="form-control" name="quick_filter_fields[]" multiple="" data-max-selection-size="0" data-placeholder="Todos" data-editor="multivalue_select" tabindex="-1" style="display: none;">
-                                                                            <option value="num_edital">Edital Nº</option>
-                                                                            <option value="data_pub">Publicação</option>
-                                                                            <option value="descricao">Descrição</option>
-                                                                            <option value="status">Status</option>
-                                                                            <option value="edital">Edital de Publicação</option>
-                                                                            <option value="referencia">Referência</option>
-                                                                            <option value="possui_convoc">Possui Convocação</option>
-                                                                            <option value="edital_convoc">Edital de Convocação</option>
-                                                                    </select>
-                            </div>
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <label class="control-label" for="quick-filter-operator">Condições de Pesquisa</label>
-                            <div class="col-input input-group-sm" style="width:100%;max-width:100%" data-column="quick_filter_operator">
-                                <select id="quick-filter-operator" class="form-control" name="quick_filter_operator">
-                                                                            <option value="Contains" selected="">
-                                                                                        Contém
-                                        </option>
-                                                                            <option value="BeginsWith">
-                                                                                        Inicia com
-                                        </option>
-                                                                            <option value="EndsWith">
-                                                                                        Finaliza com
-                                        </option>
-                                                                            <option value="Equals">
-                                                                                        Igual
-                                        </option>
-                                                                            <option value="DoesNotContain">
-                                                                                        Não contém
-                                        </option>
-                                                                            <option value="DoesNotEqual">
-                                                                                        Não é igual
-                                        </option>
-                                                                    </select>
-                            </div>
-                        </div>
-                        <hr class="quick-filter-separator">
-                        <span class="pull-right">
-                            <button type="button" class="js-cancel btn btn-sm btn-default">Cancelar</button>
-                            <button type="button" class="js-submit btn btn-sm btn-primary">Apply</button>
-                        </span>
-                    </form>
-                </div>
-                <button type="button" class="btn btn-default js-submit" title="Procurar"><i class="icon-search"></i></button>
-                <button type="button" class="btn btn-default js-reset" title="Limpar"><i class="icon-filter-reset"></i></button>
-            </div>
-        </div>
-    </div>
-    <span class="hidden-xs"> </span>
-</div>
-            </div>
-
-
-
-
-    <div class="filter-status js-filter-status">
-        
-
-        
-        
-            </div>
-
+</div></div></div></div>
 
 <div class="js-grid-message-container"></div>
         <table class="table text-center table-striped table-hover table-bordered table-condensed">
@@ -300,41 +160,48 @@ Chamamento Público
                         
                         
                                             
-                                            <th colspan="1" rowspan="1" class="" data-field-caption="Edital Nº" data-name="num_edital" data-field-name="num_edital" data-column-name="num_edital" data-sort-index="">
-                        <span>Edital Nº</span>
-</th>                                            <th colspan="1" rowspan="1" class=" filterable" data-field-caption="Publicação" data-name="data_pub" data-field-name="data_pub" data-column-name="data_pub" data-sort-index="0" data-sort-order="desc">
-                        <span>Publicação</span><i class="icon-sort-desc"></i><a href="#" class="column-filter-trigger js-filter-trigger" title=""><i class="icon-filter"></i></a>
-</th>                                            <th colspan="1" rowspan="1" class="" data-field-caption="Descrição" data-name="descricao" data-field-name="descricao" data-column-name="descricao" data-sort-index="">
-                        <span>Descrição</span>
-</th>                                            <th colspan="1" rowspan="1" class="" data-field-caption="Status" data-name="status" data-field-name="status_nome" data-column-name="status_nome" data-sort-index="" data-comment="id_status" data-original-title="" title="">
-                        <span class="commented">Status</span>
-</th>                                            <th colspan="1" rowspan="1" class="" data-field-caption="Edital de Publicação" data-name="edital" data-field-name="edital" data-column-name="edital" data-sort-index="">
-                        <span>Edital de Publicação</span>
-</th>                                            <th colspan="1" rowspan="1" class="" data-field-caption="Edital de Convocação" data-name="edital_convoc" data-field-name="edital_convoc" data-column-name="edital_convoc" data-sort-index="">
-                        <span>Edital de Convocação</span>
-</th>                                            <th colspan="1" rowspan="1" class="" data-field-caption="Referência" data-name="referencia" data-field-name="referencia_ano" data-column-name="referencia_ano" data-sort-index="" data-comment="ano_id" data-original-title="" title="">
-                        <span class="commented">Referência</span>
+<th colspan="1" rowspan="1" class="" data-field-caption="Edital Nº" data-name="num_edital" data-field-name="num_edital" data-column-name="num_edital" data-sort-index="">
+<span>Edital Nº</span>
+</th><th colspan="1" rowspan="1" class=" filterable" data-field-caption="Publicação" data-name="data_pub" data-field-name="data_pub" data-column-name="data_pub" data-sort-index="0" data-sort-order="desc">
+<span>Publicação</span><i class="icon-sort-desc"></i><a href="#" class="column-filter-trigger js-filter-trigger" title=""><i class="icon-filter"></i></a>
+</th><th colspan="1" rowspan="1" class="" data-field-caption="Descrição" data-name="descricao" data-field-name="descricao" data-column-name="descricao" data-sort-index="">
+<span>Descrição</span>
+</th><th colspan="1" rowspan="1" class="" data-field-caption="Status" data-name="status" data-field-name="status_nome" data-column-name="status_nome" data-sort-index="" data-comment="id_status" data-original-title="" title="">
+<span class="commented">Status</span>
+</th><th colspan="1" rowspan="1" class="" data-field-caption="Edital de Publicação" data-name="edital" data-field-name="edital" data-column-name="edital" data-sort-index="">
+<span>Edital de Publicação</span>
+</th><th colspan="1" rowspan="1" class="" data-field-caption="Edital de Convocação" data-name="edital_convoc" data-field-name="edital_convoc" data-column-name="edital_convoc" data-sort-index="">
+<span>Edital de Convocação</span>
+</th><th colspan="1" rowspan="1" class="" data-field-caption="Referência" data-name="referencia" data-field-name="referencia_ano" data-column-name="referencia_ano" data-sort-index="" data-comment="ano_id" data-original-title="" title="">
+<span class="commented">Referência</span>
 </th>                    
-                                                                        <th style="width:1%;" rowspan="1">
-                                Ações
-                            </th>
-                                                            </tr>
-                    </thead>
-        <tbody class="pg-row-list">
-                
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__351" type="checkbox" name="rec0" data-value="[&quot;351&quot;]">
-                    </div>
-                </td>
+<th style="width:1%;" rowspan="1">
+Ações
+</th>
+</tr>
+</thead>
+        
+<tbody class="pg-row-list">
+<tr class="pg-row" style="">
+<td style="checkbox">
+<div class="row-selection">
+<input id="record__351" 
+       type="checkbox" 
+       name="rec0" 
+       data-value="[&quot;351&quot;]">
+</div>
+</td>
             
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 095/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">14.10.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos classificados no Processo Seletivo Simplificado,
-de ... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos classificados no Processo Seletivo Simplificado,
+<td data-column-name="num_edital" data-edit-url="">
+  Edital de Convocação - 095/2022
+</td>
+<td data-column-name="data_pub" data-edit-url="">
+14.10.2022
+</td>
+<td data-column-name="descricao" data-edit-url="">
+  ,
+  
+<div class="js-more-box hide">Convoca os candidatos classificados no Processo Seletivo Simplificado,
 de que trata o Edital SEMURH N° 007/2021, para contratação
 temporária para atendimento emergencial às Unidades Escolares
 vinculadas à Secretaria Municipal de Educação de Colatina / ES;</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 095-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
@@ -354,321 +221,6 @@ vinculadas à Secretaria Municipal de Educação de Colatina / ES;</div></td>   
         </span>    
                 </td>
                     </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__350" type="checkbox" name="rec1" data-value="[&quot;350&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 094/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">07.10.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos classificados no Processo
-Seletivo Simplificado, de ... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos classificados no Processo
-Seletivo Simplificado, de que trata o Edital SEMURH n°
-005/2021, que estabelece normas para a seleção de
-profissionais para contratação temporária para atender
-às necessidades de excepcional interesse público na
-execução do serviço de acolhimento institucional para
-pessoas idosas da Secretaria Municipal de Assistência
-Social, do Município de Colatina – ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 094-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=350" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__348" type="checkbox" name="rec2" data-value="[&quot;348&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 092/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">04.10.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos classificados no Processo Seletivo
-Simplificado, de ... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos classificados no Processo Seletivo
-Simplificado, de que trata o Edital SEMURH n° 001/2022,
-para a seleção de professores regentes de classe para compor
-cadastro de reserva e contratação, em Regime de Designação
-Temporária, visando atendimento às necessidades de
-excepcional interesse público da Rede Municipal de Educação
-de Colatina-ES.</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 092-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=348" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__349" type="checkbox" name="rec3" data-value="[&quot;349&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 093/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">04.10.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos classificados no Processo Seletivo
-Simplificado, de ... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos classificados no Processo Seletivo
-Simplificado, de que trata o Edital SEMURH n° 003/2022,
-que estabelece normas para seleção e contratação de
-profissionais habilitados em Biologia e Técnico em Meio
-Ambiente, para atuarem em regime de designação
-temporária, visando atendimento às necessidades de
-excepcional interesse público na Secretaria Municipal de
-Desenvolvimento Urbano e Meio Ambiente de Colatina-ES.</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 093-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=349" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__347" type="checkbox" name="rec4" data-value="[&quot;347&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 091/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">30.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trat... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trata o EDITAL
-001/2017, para provimento efetivo de vagas no
-quadro de pessoal da Prefeitura Municipal de
-Colatina-ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 091-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=347" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__346" type="checkbox" name="rec5" data-value="[&quot;346&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 090/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">29.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trat... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trata o EDITAL
-001/2017, para provimento efetivo de vagas no
-quadro de pessoal da Prefeitura Municipal de
-Colatina-ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 090-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=346" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__344" type="checkbox" name="rec6" data-value="[&quot;344&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 088/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">27.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos classificados no Processo
-Seletivo Simplificado, de ... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos classificados no Processo
-Seletivo Simplificado, de que trata o Edital SEMURH n°
-005/2021, que estabelece normas para a seleção de
-profissionais para contratação temporária para atender
-às necessidades de excepcional interesse público na
-execução do serviço de acolhimento institucional para
-pessoas idosas da Secretaria Municipal de Assistência
-Social, do Município de Colatina – ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 088-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=344" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__345" type="checkbox" name="rec7" data-value="[&quot;345&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 089/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">27.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trat... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trata o EDITAL
-001/2017, para provimento efetivo de vagas no
-quadro de pessoal da Prefeitura Municipal de
-Colatina-ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 089-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=345" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__343" type="checkbox" name="rec8" data-value="[&quot;343&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 087/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">23.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trat... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trata o EDITAL
-001/2017, para provimento efetivo de vagas no
-quadro de pessoal da Prefeitura Municipal de
-Colatina-ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 087-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-                <a href="concurso.php?operation=view&amp;pk0=343" title="Ver" class="link-icon">
-
-                                            <i class="icon-view"></i>
-                    
-                </a>
-
-            
-        </span>    
-                </td>
-                    </tr>
-    
-                            
-        <tr class="pg-row" style="">
-                            <td style="">
-                    <div class="row-selection">
-                        <input id="record__341" type="checkbox" name="rec9" data-value="[&quot;341&quot;]">
-                    </div>
-                </td>
-            
-            
-            
-            
-                                            <td data-column-name="num_edital" data-edit-url="">Edital de Convocação - 085/2022</td>                                            <td data-column-name="data_pub" data-edit-url="">20.09.2022</td>                                            <td data-column-name="descricao" data-edit-url="">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trat... <a class="js-more-hint" href="#" data-original-title="" title="">mais</a><div class="js-more-box hide">Convoca os candidatos aprovados no Concurso
-Público de Provas, de que trata o EDITAL
-001/2017, para provimento efetivo de vagas no
-quadro de pessoal da Prefeitura Municipal de
-Colatina-ES:</div></td>                                            <td data-column-name="status" data-edit-url="">Aberto</td>                                            <td data-column-name="edital" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="sem anexo">Descarregar</a></td>                                            <td data-column-name="edital_convoc" data-edit-url=""><i class="icon-download"></i>&nbsp;<a target="_blank" title="" href="arquivos/concursos/editais/EDITAL DE CONVOCAÇÃO Nº 085-2022.pdf">Descarregar</a></td>                                            <td data-column-name="referencia" data-edit-url="">2022</td>            
-                            <td class="operation-column">
-                    
-
-
-            <span data-column-name="view" class="operation-item">
-            
-<a href="concurso.php?operation=view&amp;pk0=341" 
-   title="Ver" 
-   class="link-icon">
-<i class="icon-view"></i>                    
-</a>
-</span>    
-</td>
-</tr>
     
 <tr class="empty-grid hidden">
 <td colspan="9">
