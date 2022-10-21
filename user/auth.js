@@ -3,6 +3,7 @@ let token = localStorage.getItem('token')
 let labelAlarm = document.querySelector("alert");
 let head = document.querySelector("nav") 
 
+
 if(token == "null"){
 let site = document.querySelector(".site-altura") 
 

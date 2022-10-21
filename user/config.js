@@ -1,17 +1,18 @@
-var btntema = document.getElementById('tema');
-var userbg = localStorage.getItem('UserBackground');
-var perfilIconLink = localStorage.getItem('UserPerfil');
-var body = document.querySelector('body');
-var inputColor = document.querySelector('#colorTema');
-var userConta = document.getElementById("userConta");
-var nomeConta = document.getElementById("nomeConta");
-var senhaConta = document.getElementById("senhaConta"); 
-var saldoConta = document.getElementById("header_wallet_balance"); 
-var IDConta = document.getElementById("IDConta");
-var Logado = JSON.parse(localStorage.getItem('userLogado'));
-var perfilIcon = document.getElementById("perfilIcon");
+const btntema = document.getElementById('tema');
+const userbg = localStorage.getItem('UserBackground');
+const perfilIconLink = localStorage.getItem('UserPerfil');
+const body = document.querySelector('body');
+const inputColor = document.querySelector('#colorTema');
+const userConta = document.getElementById("userConta");
+const nomeConta = document.getElementById("nomeConta");
+const senhaConta = document.getElementById("senhaConta"); 
+const saldoConta = document.getElementById("header_wallet_balance"); 
+const IDConta = document.getElementById("IDConta");
+const Logado = JSON.parse(localStorage.getItem('userLogado'));
+const perfilIcon = document.getElementById("perfilIcon");
 let userLogadoImg2 = Logado.PerfilImg
-
+const LASTDEVICES = JSON.parse(sessionStorage.getItem("LASTDEVICES"));
+const labelDevices = document.
 
 btntema.addEventListener('click', function() {
       body.style.background = inputColor.value;
@@ -34,6 +35,7 @@ nomeConta.innerHTML = Logado.nome
 userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
 senhaConta.innerHTML = Logado.senha
+labelDevices.innerHTML = LASTDEVICES
 
 let btnmostrarsenha = document.getElementById('mostrarsenha');
 

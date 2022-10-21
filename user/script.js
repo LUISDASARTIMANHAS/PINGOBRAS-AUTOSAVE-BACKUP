@@ -5,11 +5,12 @@ const DBperfilIconLink = localStorage.getItem('UserPerfil')
 let perfilIcon2 = document.getElementById("perfilIcon")
 const userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let userLogadoImg = userLogado.PerfilImg
-let STDEVICE2 = JSON.parse(sessionStorage.getItem("LASTDEVICES") || )
-let NewDeviceUser = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
-  NewDeviceUser.push(STDEVICE2)
-sessionStorage.setItem("LASTDEVICES",NewDeviceUser)
 
+let NewDeviceUser = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
+    var STDEVICE2 = [];
+    STDEVICE2 = JSON.parse(sessionStorage.getItem("LASTDEVICES")) || [];
+    STDEVICE2.push(NewDeviceUser);
+    sessionStorage.setItem('LASTDEVICES', JSON.stringify(STDEVICE2));
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
