@@ -29,8 +29,8 @@
            href="link do download" 
            download="EXECUTAVEL.bat"
            onclick="barExe()">
-          nome de exibição
-         </a>
+          Executavel.bat 
+        </a>
         <div class="boxbar">
           <div class="bar" id="exeBar">0%</div>
         </div>
@@ -81,7 +81,7 @@
 function barExe() {
   if (iniciar2 == "sim") {
     iniciar2 = "no";
-    var elem = document.getElementById("bar");
+    var elem = document.getElementById("exebar");
     var width = 10;
     var id = setInterval(frame, 100);
 
