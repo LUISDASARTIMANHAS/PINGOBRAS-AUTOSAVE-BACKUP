@@ -24,6 +24,16 @@
         <div class="boxbar">
           <div class="bar" id="bar">0%</div>
         </div>
+        
+        <a class="download"
+           href="link do download" 
+           download="EXECUTAVEL.bat"
+           onclick="barExe()">
+          nome de exibição
+         </a>
+        <div class="boxbar">
+          <div class="bar" id="exeBar">0%</div>
+        </div>
                 
         <a 
           class="btndc btn"
@@ -64,6 +74,30 @@
       window.location.href = "executavel.html"
     }
   
+  </script>
+  <script>
+  var iniciar2 = "sim";
+
+function barExe() {
+  if (iniciar2 == "sim") {
+    iniciar2 = "no";
+    var elem = document.getElementById("bar");
+    var width = 10;
+    var id = setInterval(frame, 100);
+
+    function frame() {
+      if (width >= 100) {
+        window.location.href = "https://pingobras.glitch.me"
+        clearInterval(id);
+        iniciar2 = "sim";
+      }else{
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width + "%";}
+    }
+  }
+}
+
   </script>
   <host>
     <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>
