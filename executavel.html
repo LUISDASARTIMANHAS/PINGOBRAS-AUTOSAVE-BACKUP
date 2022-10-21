@@ -83,8 +83,8 @@
 function barExe() {
   if (iniciar2 == "sim") {
     iniciar2 = "no";
-    var elem = document.getElementById("exeBar");
-    var width = 10;
+    var barload = document.getElementById("exeBar");
+    var width = 50;
     var id = setInterval(frame, 100);
 
     function frame() {
@@ -92,9 +92,9 @@ function barExe() {
         clearInterval(id);
         iniciar2 = "sim";
       }else{
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";}
+        width+15++;
+        barload.style.width = width + "%";
+        barload.innerHTML = "loading..." + width + "%";}
     }
   }
 }
