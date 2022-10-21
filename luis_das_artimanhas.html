@@ -117,16 +117,16 @@
   
   <script>
   let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas");
-  const executavel = document.querySelector("#main")
-  const body = document.querySelector("#screenLoad")
-  let executavelSty = executavel.style
-  let bodySty = body.style
+  const main = document.querySelector("#main")
+  const screenloading = document.querySelector("#screenLoad")
+  let mainSty = main.style
+  let sclSty = screenloading.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")  
   
   if(Storage_luisdasartimanhas == userinput) {
       alert("Bem Vindo de volta Luis Das Artimanhas!")
-      bodySty.display = "none"
-      executavelSty.display = ""
+      sclSty.display = "none"
+      mainSty.display = ""
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
       window.location.href = "luis_das_artimanhas.html"
