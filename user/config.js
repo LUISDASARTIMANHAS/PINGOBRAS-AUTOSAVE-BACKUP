@@ -12,7 +12,9 @@ const Logado = JSON.parse(localStorage.getItem('userLogado'));
 const perfilIcon = document.getElementById("perfilIcon");
 let userLogadoImg2 = Logado.PerfilImg
 const LASTDEVICES = JSON.parse(sessionStorage.getItem("LASTDEVICES"));
-const labelDevices = document.
+const labelDevices = document.getElementById("labelDevices")
+let last = LASTDEVICES.length - 1
+
 
 btntema.addEventListener('click', function() {
       body.style.background = inputColor.value;
@@ -35,7 +37,7 @@ nomeConta.innerHTML = Logado.nome
 userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
 senhaConta.innerHTML = Logado.senha
-labelDevices.innerHTML = LASTDEVICES
+labelDevices.innerHTML = LASTDEVICES[last]
 
 let btnmostrarsenha = document.getElementById('mostrarsenha');
 
