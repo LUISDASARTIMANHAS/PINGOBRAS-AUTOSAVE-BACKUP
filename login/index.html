@@ -16,6 +16,7 @@
         <br>
         
       <teladelogin>
+       <form id="form">
         <h1>LOGIN PINGOBRAS S.A</h1>
         <js id="msgError" class="msg-Error">Nenhum Erro Encontrado!</js>
         <js id="msgSuccess" class="msg-Success">Verificando...</js>
@@ -105,6 +106,7 @@
                height="50px">
           Recarregar Banco de Dados
         </button>
+         </form>
         </teladelogin>
         
         
@@ -113,7 +115,6 @@
         
           </div></div>
   </body>
-
 
 <meta name="robots" content="index,follow" />
     <meta property="og:title" content="PINGOBRAS LOGIN" />
@@ -136,5 +137,14 @@
 if(document.URL == http) {
    window.location.href = ("https://pingobras.glitch.me/login");}
   </script>
+  <script>
+function stopDefAction(evt) {
+    evt.preventDefault();
+}
+
+document.getElementById('form').addEventListener(
+    'click', stopDefAction, false
+);
+</script>
   
 </html>
