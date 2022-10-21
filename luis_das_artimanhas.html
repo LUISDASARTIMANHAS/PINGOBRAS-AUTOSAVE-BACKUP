@@ -12,7 +12,7 @@
  </head>
   <body class="luis-das-artimanhas">
     <div class="site-altura">
-      <div class="conteudo" role="main"> 
+      <div id="main" style="display: none;" class="conteudo" role="main"> 
         
         <info>
           <p>ADMINISTRADOR ACCOUNT:</p>
@@ -90,14 +90,15 @@
         
         <div id="direitos" class="direitos">loading...</div>  
 
-      </div></div>  
-    <br>
-    
-    <alert> 
-          <p> ADMINISTRADOR DESLOGADO! OU INTRUSO DETECTADO! </p>
-          <p> CASO SEJE UM BUG ENTRE EM CONTATO COM O ADMINISTRADOR DO SITE!</p>
-          <a target="_blank" href="mailto:luisaugustodesouza785@gmail.com">ENTRAR EM CONTATO</a>
-        </alert>
+      </div> 
+        <div id="screenLoad" class="conteudo" role="main">
+      
+      <h1>AGUARDANDO LOGIN...</h1>
+      <img
+           src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
+           height="200px"/>
+      
+      </div></div>
 </body>
   
   <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=zcrmrdqsuts62apq8xn82nu44gqpxtpj&down=async" async></script>
@@ -116,12 +117,19 @@
   
   <script>
   let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas");
-  let userinput = prompt("Insira a Senha Para Continuar!","0000")
-    if(Storage_luisdasartimanhas == userinput) {
+  const executavel = document.querySelector("#main")
+  const body = document.querySelector("#screenLoad")
+  let executavelSty = executavel.style
+  let bodySty = body.style
+  let userinput = prompt("Insira a Senha Para Continuar!","0000")  
+  
+  if(Storage_luisdasartimanhas == userinput) {
       alert("Bem Vindo de volta Luis Das Artimanhas!")
+      bodySty.display = "none"
+      executavelSty.display = ""
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
-      window.location.href = "https://pingobras.glitch.me/admin"
+      window.location.href = "luis_das_artimanhas.html"
     }
   
   </script>

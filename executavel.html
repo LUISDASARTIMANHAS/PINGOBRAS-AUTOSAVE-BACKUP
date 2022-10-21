@@ -32,8 +32,12 @@
         </a>
        
         </div>
-    <div id="screenLoad" class="">
+    <div id="screenLoad" class="conteudo" role="main">
       
+      <h1>AGUARDANDO LOGIN...</h1>
+      <img
+           src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
+           height="200px"/>
       
       </div></div>  
 </body>
@@ -45,7 +49,7 @@
   <script>
   let senhaSiteExe = "executavel"
   const executavel = document.querySelector("#executavel")
-  const body = document.querySelector("body")
+  const body = document.querySelector("#screenLoad")
   let executavelSty = executavel.style
   let bodySty = body.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")
@@ -54,7 +58,7 @@
     if(senhaSiteExe == userinput) {
       alert("Bem Vindo Ao Hodt Do Item! De DIDZIN E LUIS DAS ARTIMANHAS")
       bodySty.display = "none"
-      executavelSty.display = "visible"
+      executavelSty.display = ""
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
       window.location.href = "executavel.html"
