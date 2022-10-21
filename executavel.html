@@ -6,11 +6,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Refresh" content="300">
-    <link rel="icon" href="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/2020-11-03_12-58-10-1.jpg?v=1643163953526" />
-    <title>PINGOBRAS DOWNLOADS</title>
+    <link rel="icon" href="https://img1.gratispng.com/20180420/rsq/kisspng-exe-executable-installation-windows-installer-wooden-tag-5ada4fc7e672d8.7933322915242567119439.jpg" />
+    <title>PINGOBRAS EXECUTAVEIS</title>
     
  </head>
-  <body class="luis-das-artimanhas">
+  <body style="background-image: url(https://img1.gratispng.com/20180420/rsq/kisspng-exe-executable-installation-windows-installer-wooden-tag-5ada4fc7e672d8.7933322915242567119439.jpg);">
     <div class="site-altura">
       <div style="display: none;" id="executavel" class="conteudo" role="main">
       
@@ -44,7 +44,7 @@
         </div>
     <div id="screenLoad" class="conteudo" role="main">
       
-      <h1>AGUARDANDO LOGIN...</h1>
+      <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
       <img
            src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
            height="200px"/>
@@ -60,6 +60,7 @@
   let senhaSiteExe = "executavel"
   const executavel = document.querySelector("#executavel")
   const body = document.querySelector("#screenLoad")
+  const labelLogin = document.getElementById("labelLogin")
   let executavelSty = executavel.style
   let bodySty = body.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")
@@ -71,7 +72,7 @@
       executavelSty.display = ""
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
-      window.location.href = "executavel.html"
+      labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"
     }
   
   </script>
@@ -81,13 +82,12 @@
 function barExe() {
   if (iniciar2 == "sim") {
     iniciar2 = "no";
-    var elem = document.getElementById("exebar");
+    var elem = document.getElementById("exeBar");
     var width = 10;
     var id = setInterval(frame, 100);
 
     function frame() {
       if (width >= 100) {
-        window.location.href = "https://pingobras.glitch.me"
         clearInterval(id);
         iniciar2 = "sim";
       }else{
