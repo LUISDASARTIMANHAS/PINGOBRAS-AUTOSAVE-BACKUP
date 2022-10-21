@@ -5,7 +5,11 @@ const DBperfilIconLink = localStorage.getItem('UserPerfil')
 let perfilIcon2 = document.getElementById("perfilIcon")
 const userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let userLogadoImg = userLogado.PerfilImg
-const ultimosDevices = sessionStorage.getItem("LASTDEVICES")
+let STDEVICE2 = JSON.parse(sessionStorage.getItem("LASTDEVICES") || )
+let NewDeviceUser = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
+  NewDeviceUser.push(STDEVICE2)
+sessionStorage.setItem("LASTDEVICES",NewDeviceUser)
+
 
 if(DBuserbg == "null") {
   body2.style.background = "white"
@@ -56,8 +60,8 @@ fsEnter.addEventListener('click', function (e) {
         fsEnter.innerHTML = "TELA CHEIA";
     }
 }); */
-var deicesFound = ultimosDevices.rows.length, maxDevices;
+/*var deicesFound = ultimosDevices.rows.length, maxDevices;
 for (maxDevices = 0; maxDevices < deicesFound; maxDevices++) { 
 let devicesConected = "<p><b>" + deicesFound.rows.item(maxDevices).log + "</b></p>"; 
 document.querySelector("labelDevices").innerHTML +=  devicesConected; 
-} 
+}*/
