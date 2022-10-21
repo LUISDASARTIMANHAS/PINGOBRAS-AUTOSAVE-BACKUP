@@ -12,7 +12,7 @@
  </head>
   <body class="luis-das-artimanhas">
     <div class="site-altura">
-      <div class="conteudo" role="main">
+      <div style="display: none;" id="executavel" class="conteudo" role="main">
       
         <a class="download"
            href="link do download" 
@@ -31,9 +31,12 @@
           Retornar para PINGOBRAS
         </a>
        
-        </div></div>  
+        </div>
+    <div id="screenLoad" class="">
+      
+      
+      </div></div>  
 </body>
-  
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/style.css" defer/>
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/download.css" defer/>
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/btn.css" defer/>
@@ -41,12 +44,20 @@
   
   <script>
   let senhaSiteExe = "executavel"
+  const executavel = document.querySelector("#executavel")
+  const body = document.querySelector("body")
+  let executavelSty = executavel.style
+  let bodySty = body.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")
+  
+  
     if(senhaSiteExe == userinput) {
       alert("Bem Vindo Ao Hodt Do Item! De DIDZIN E LUIS DAS ARTIMANHAS")
+      bodySty.display = "none"
+      executavelSty.display = "visible"
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
-      window.location.href = "http://about:blank"
+      window.location.href = "executavel.html"
     }
   
   </script>
