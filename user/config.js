@@ -13,7 +13,15 @@ const perfilIcon = document.getElementById("perfilIcon");
 let userLogadoImg2 = Logado.PerfilImg
 const LASTDEVICES = JSON.parse(sessionStorage.getItem("LASTDEVICES"));
 const labelDevices = document.getElementById("labelDevices")
+const labelDevices2 = document.getElementById("labelDevices2")
+const labelDevices3 = document.getElementById("labelDevices3")
+const labelDevices4 = document.getElementById("labelDevices4")
+const labelDevices5 = document.getElementById("labelDevices5")
 let last = LASTDEVICES.length - 1
+let last2 = LASTDEVICES.length - 2
+let last3 = LASTDEVICES.length - 3
+let last4 = LASTDEVICES.length - 4
+let last5 = LASTDEVICES.length - 5
 
 
 btntema.addEventListener('click', function() {
@@ -38,6 +46,14 @@ userConta.innerHTML = Logado.user
 IDConta.innerHTML = localStorage.getItem('token')
 senhaConta.innerHTML = Logado.senha
 labelDevices.innerHTML = LASTDEVICES[last]
+labelDevices2.innerHTML = LASTDEVICES[last2]
+labelDevices3.innerHTML = LASTDEVICES[last3]
+labelDevices4.innerHTML = LASTDEVICES[last4]
+labelDevices5.innerHTML = LASTDEVICES[last5]
+if(last == 5 || last > 5) {
+  sessionStorage.setItem("LASTDEVICES","[]")
+}
+
 
 let btnmostrarsenha = document.getElementById('mostrarsenha');
 
