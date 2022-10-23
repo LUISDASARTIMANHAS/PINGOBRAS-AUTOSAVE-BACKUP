@@ -25,8 +25,8 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
   let timeseconds = timemili + "0"
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
-  let MBps = document.getElementById("MBps");
-  let GBps = document.getElementById("GBps");
+let MBps = document.getElementById("MBps");
+let GBps = document.getElementById("GBps");
 let downloadTime = document.getElementById("downloadTime");
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
@@ -37,12 +37,12 @@ console.warn("Deu Pau Na Internet Do Site")
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  var bps = (Size / timeseconds+0).toFixed(3);
-  var speedInKbps = (bps/1024).toFixed(3);
-  var speedInMbps = (speedInKbps/1024).toFixed(3);
-  var speedInGBps = (speedInMbps/1024).toFixed(3);
-  var speedInTBps = (speedInGBps/1024).toFixed(3);
-  console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
+  let bps = (Size / timeseconds).toFixed(2);
+  var speedInKbps = (bps/1024).toFixed(2);
+  var speedInMbps = (speedInKbps/1024).toFixed(2);
+  var speedInGBps = (speedInMbps/1024).toFixed(2);
+  var speedInTBps = (speedInGBps/1024).toFixed(2);
+  console.info("NETWORK/LOG> ⚠️Network signal:" bps+"Bps "+ speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
   const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
