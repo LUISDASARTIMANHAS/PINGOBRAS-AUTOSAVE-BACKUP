@@ -91,14 +91,14 @@
         <div id="direitos" class="direitos">loading...</div>  
 
       </div> 
-        <div id="screenLoad" class="conteudo" role="main">
+        <login id="screenLoad" class="conteudo" role="main">
       
-      <h1>AGUARDANDO LOGIN...</h1>
+      <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
       <img
            src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
            height="200px"/>
       
-      </div></div>
+      </login></div>
 </body>
   
   <script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=zcrmrdqsuts62apq8xn82nu44gqpxtpj&down=async" async></script>
@@ -119,6 +119,7 @@
   let Storage_luisdasartimanhas = localStorage.getItem("Local-Luis-das-artimanhas");
   const main = document.querySelector("#main")
   const screenloading = document.querySelector("#screenLoad")
+  const labelLogin = document.getElementById("labelLogin")
   let mainSty = main.style
   let sclSty = screenloading.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")  
@@ -129,7 +130,7 @@
       mainSty.display = ""
     }else{
       alert("Não Foi Possivel Logar Tente Novamente!")
-      window.location.href = "luis_das_artimanhas.html"
+      labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"
     }
   
   </script>
