@@ -4,12 +4,12 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
-            var KB = "698"
-            var MB = "024"
-            var GB = "1"
-            var Size = GB + MB + KB
+            var KB = "000";
+            var MB = "024";
+            var GB = "50";
+            var Size = GB + MB
             var Size8 = Size*8
-            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB+"." + KB + "GB")
+            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB")
           
             var downloadImgSrc = new Image();
           
@@ -23,8 +23,9 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             
 function displaySpeed() {
                 
-  var timeseconds = (end_time - time_start)
-  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds+0 + "s")
+  var timemili = (end_time - time_start)
+  let timeseconds = timemili + "0"
+  console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");
@@ -38,7 +39,7 @@ console.warn("Deu Pau Na Internet Do Site")
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  var bps = (Size / timeseconds).toFixed(2);
+  var bps = (Size / timeseconds+0).toFixed(2);
   var speedInKbps = (bps/1024).toFixed(2);
   var speedInMbps = (speedInKbps/1024).toFixed(2);
   var speedInGBps = (speedInMbps/1024).toFixed(2);
