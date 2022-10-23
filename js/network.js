@@ -30,7 +30,7 @@ function displaySpeed() {
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
 }else{
-  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ downloadtime + "min "
+  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ downloadtime + "s "
 }
   
     
