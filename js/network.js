@@ -5,14 +5,12 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
             var KB = "998"
-            var MB = "016";
-            var GB = "56";
-            var Size = 5616998
-            var Size8 = Size*8
-            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size8)
+            var MB = "616";
+            var GB = "5";
+            var Size = GB+MB+KB
+            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size)
           
             var downloadImgSrc = new Image();
-          
             downloadImgSrc.onload = function () {
                 end_time = new Date().getTime();
                 displaySpeed();
@@ -20,34 +18,33 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             time_start = new Date().getTime();
             downloadImgSrc.src = userImageLink;
   
-          function displaySpeed() {
-                
-  var timemili = (end_time - time_start)+8
-  let timeseconds = timemili + "00"
-  console.log("Calculando... "+ "size:"+Size8 + "/time:" + timeseconds)
+function displaySpeed() {                
+  var timeseconds = (end_time - time_start)/1000
+  var loadedBits = Size * 8;
+  let MBps = document.getElementById("MBps");
+  let GBps = document.getElementById("GBps");
+  let downloadTime = document.getElementById("downloadTime");
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
-let MBps = document.getElementById("MBps");
-let GBps = document.getElementById("GBps");
-let downloadTime = document.getElementById("downloadTime");
+
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
 }else{
   downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ timeseconds + "s "
 }
   
-  
-  
+    
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  let bps = (Size8 / timeseconds).toFixed(2);
-  var speedInKbps = (bps/1024).toFixed(2);
-  var speedInMbps = (speedInKbps/1024).toFixed(2);
+  var bps = (loadedBits / timeseconds).toFixed(2);
+  var speedInKbps = (bps / 1024).toFixed(2);
+  var speedInMbps = (speedInKbps / 1024).toFixed(2);
   var speedInGBps = (speedInMbps/1024).toFixed(2);
   var speedInTBps = (speedInGBps/1024).toFixed(2);
   console.info("NETWORK/LOG> ⚠️Network signal:" + bps+"Bps "+ speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
   const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
+  
   
   if(!MBps || !GBps) {
 console.warn("Deu Pau No Calculo Da Internet Do Site")
