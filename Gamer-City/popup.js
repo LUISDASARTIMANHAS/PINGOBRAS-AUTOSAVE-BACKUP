@@ -8,21 +8,9 @@ const popup = document.getElementById("popup");
 const popup2 = document.getElementById("popup2");
 
   function notifyMe() {
-  // Otherwise, we need to ask the user for permission
-   if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function (permission) {
-      // If the user accepts, let's create a notification
-      if (permission === "granted") {
-        var notification = new Notification("As notificações foram ativadas!")
         alert("As notificações foram ativadas!");
-        notify = true
-        if(notify == true){
           openEvento()
-          setTimeout(openEvento2(),12000);
-        }
-      }});
-        
-  }}
+          setTimeout(openEvento2(),12000);};
     
 function openEvento(){
 document.querySelector(".popup").style.display = "block";

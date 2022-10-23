@@ -8,9 +8,9 @@
 }else {
   console.warn('Seu browser não suporta Notifications =(');
 }}
-    
 const serverImg = "https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg"
-  //buscador de erros notify  
+  
+//buscador de erros notify  
 function softwareFindNotify(){
   if (Notification.permission === 'default') {
     Notification.requestPermission(function() {
@@ -65,8 +65,7 @@ function softwareFindNotify(){
       // If the user accepts, let's create a notification
       if (permission === "granted") {
         var notification = new Notification("As notificações foram ativadas!")
-        alert("As notificações foram ativadas!");}});
-        
+        alert("As notificações foram ativadas!");}});    
   }
 }
   
