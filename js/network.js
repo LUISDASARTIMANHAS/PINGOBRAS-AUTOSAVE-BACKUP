@@ -4,11 +4,12 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
+            var KB = ".877555"
             var MB = "024";
             var GB = "5";
-            var Size = GB + MB
+            var Size = GB + MB + KB
             var Size8 = Size*8
-            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB")
+            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size8)
           
             var downloadImgSrc = new Image();
           
@@ -21,8 +22,9 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
   
           function displaySpeed() {
                 
-  var timemili = (end_time - time_start)
+  var timemili = (end_time - time_start)+8
   let timeseconds = timemili + "0"
+  console.log("Calculando... "+ "size:"+Size8 + "/time:" + timeseconds)
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
   
 let MBps = document.getElementById("MBps");
@@ -37,12 +39,12 @@ console.warn("Deu Pau Na Internet Do Site")
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  let bps = (Size / timeseconds).toFixed(2);
+  let bps = (Size8 / timeseconds).toFixed(2);
   var speedInKbps = (bps/1024).toFixed(2);
   var speedInMbps = (speedInKbps/1024).toFixed(2);
   var speedInGBps = (speedInMbps/1024).toFixed(2);
   var speedInTBps = (speedInGBps/1024).toFixed(2);
-  console.info("NETWORK/LOG> ⚠️Network signal:" bps+"Bps "+ speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
+  console.info("NETWORK/LOG> ⚠️Network signal:" + bps+"Bps "+ speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
   const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds}
   const Network = JSON.stringify(NetworkObj);
   localStorage.setItem("Network", Network);  
