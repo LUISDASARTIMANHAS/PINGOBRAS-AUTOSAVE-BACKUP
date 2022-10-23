@@ -4,9 +4,8 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
         var userImageLink = 
 "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
-            var KB = "000";
             var MB = "024";
-            var GB = "50";
+            var GB = "5";
             var Size = GB + MB
             var Size8 = Size*8
             console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB")
@@ -20,8 +19,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             time_start = new Date().getTime();
             downloadImgSrc.src = userImageLink;
   
-            
-function displaySpeed() {
+          function displaySpeed() {
                 
   var timemili = (end_time - time_start)
   let timeseconds = timemili + "0"
@@ -39,11 +37,11 @@ console.warn("Deu Pau Na Internet Do Site")
   
   
   /* Converte um número em string usando toFixed(2) arredondando para 2 */
-  var bps = (Size / timeseconds+0).toFixed(2);
-  var speedInKbps = (bps/1024).toFixed(2);
-  var speedInMbps = (speedInKbps/1024).toFixed(2);
-  var speedInGBps = (speedInMbps/1024).toFixed(2);
-  var speedInTBps = (speedInGBps/1024).toFixed(2)
+  var bps = (Size / timeseconds+0).toFixed(3);
+  var speedInKbps = (bps/1024).toFixed(3);
+  var speedInMbps = (speedInKbps/1024).toFixed(3);
+  var speedInGBps = (speedInMbps/1024).toFixed(3);
+  var speedInTBps = (speedInGBps/1024).toFixed(3);
   console.info("NETWORK/LOG> ⚠️Network signal:" + speedInKbps+"KBps  " + speedInMbps+"MBps  " + speedInGBps+"GBps  " + speedInTBps+"TBps")
   const NetworkObj = {Bps: bps,KBps: speedInKbps,MBps: speedInMbps,GBps: speedInGBps, timeduration:timeseconds}
   const Network = JSON.stringify(NetworkObj);
@@ -72,4 +70,7 @@ console.warn("Deu Pau No Calculo Da Internet Do Site")
   GBps.setAttribute('style', 'color: red')}
 }
   
-}}
+}
+}//Fim do loop
+
+
