@@ -1098,3 +1098,10 @@ chat{
   height: 70px;
   border-radius: 55%;
 }
+.item-account-left{
+  display:block;
+  text-align: left;
+  color: white;
+  background: gray;
+  font-size: 22px;
+}
