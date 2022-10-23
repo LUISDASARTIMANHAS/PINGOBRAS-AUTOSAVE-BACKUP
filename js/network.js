@@ -19,7 +19,7 @@ const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
             downloadImgSrc.src = userImageLink;
   
 function displaySpeed() {                
-  var timeseconds = (end_time - time_start)/1000
+  var timeseconds = (end_time - time_start)/1024
   var loadedBits = Size * 8;
   let MBps = document.getElementById("MBps");
   let GBps = document.getElementById("GBps");

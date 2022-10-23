@@ -22,6 +22,9 @@
           <script type="text/javascript" src="https://www.usersonline.org/uo-Z68D49z08AW8bZxZ-6-1.js"></script>
           <br>
           <img src="https://www.usersonline.org/selo/selo-uo.gif" alt="users online">
+          <button onclick="NetSpeed()">
+            Calcular Velociade De Internet
+          </button>
         </info>
           
         
@@ -135,6 +138,36 @@
     }
   
   </script>
+  <script type="text/javascript">
+function NetSpeed(){
+    var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+            var time_start, end_time;
+            
+            // The size in bytes
+            var downloadSize = 5616998;
+            var downloadImgSrc = new Image();
+  
+            downloadImgSrc.onload = function () {
+                end_time = new Date().getTime();
+                displaySpeed();
+            };
+            time_start = new Date().getTime();
+            downloadImgSrc.src = userImageLink;
+  
+            function displaySpeed() {
+                var timeDuration = (end_time - time_start) / 1000;
+                var loadedBits = downloadSize * 8;
+                
+                /* Converts a number into string
+                   using toFixed(2) rounding to 2 */
+                var bps = (loadedBits / timeDuration).toFixed(2);
+                var speedInKbps = (bps / 1024).toFixed(2);
+                var speedInMbps = (speedInKbps / 1024).toFixed(2);
+                alert("Your internet connection speed is: \n" 
+                      + bps + " bps\n" + speedInKbps 
+                      + " kbps\n" + speedInMbps + " Mbps\n");
+            }}
+        </script>
   <host>
     <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>
     <script src="https://equipe-host.glitch.me/bot.js" defer></script>
