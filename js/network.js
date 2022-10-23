@@ -25,12 +25,12 @@ function displaySpeed() {
   let GBps = document.getElementById("GBps");
   let downloadTime = document.getElementById("downloadTime");
   console.log("NETWORK/LOG> ⚠️Latencia do servidor: " + timeseconds + "s")
-  
+  let downloadtime = timeseconds*1024
 
 if(!downloadTime) {
 console.warn("Deu Pau Na Internet Do Site")
 }else{
-  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ timeseconds + "s "
+  downloadTime.innerHTML = "IMG: "+ GB+"GB/"+ downloadtime + "min "
 }
   
     
