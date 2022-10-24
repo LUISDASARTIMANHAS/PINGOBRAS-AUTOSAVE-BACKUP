@@ -40,7 +40,7 @@
          src="https://cdn.discordapp.com/attachments/1022972920517099580/1029141982041346158/Picsart_22-10-10_12-04-30-983.jpg"/>
         
         
-         <button class="ANA" onclick="notifyMe()">Clique para ativar as notificações do site</button> 
+         <button class="ANA" onclick="notifyMe()">Notas de atualização</button> 
          <h1 class="copyright" style="color:yellow;
                     filter: saturate(10);">Gamer</h1> <h1 class="copyright" style="color: red;
                                                                       filter: saturate(10);">City</h1>
@@ -91,7 +91,7 @@
         <br>
           
         <p>🍂┆E por último não menos importante, a famosa frase "Eita como ele tá de boa...👽"</p>  
-        <a 
+        <a target="_blank"
            href="https://discord.gg/wGyUR4r3Uc" 
            class="text-CDG2">https://discord.gg/wGyUR4r3Uc</a>
         </telaap>
@@ -108,80 +108,41 @@
 <div id="direitos" class="direitos">Loading...</div>
 </footer>
 </div></div>
-<div class="popup">
-<h1>Evento novo no servidor</h1>
-<p>Terá um evento,
-  onde a pessoa que enviar mais mensagems no servidor e interagir,
-  irá ganhar uma certa quantia de Sonhos e um cargos específico também,
-  esse é o nosso primeiro evento da Gamer City.</p>
+<div class="popup copyright" id="-popup">
+<h1>Nova atualização no Gamer city!!!</h1>
+<p>Nós da equipe do Gamer City, 
+  que estamos nos esforçando o maximo pra fazer a comunidade crescer,
+  estamos atualizando toda semana,
+  tanto o servidor, tanto o site,
+  estamos criando novas fotos pro servidor,
+  estamos criando gifs,
+  temos planejamento para dar impulso com Nitro no servidor,
+  chamar pessoas para o servidor,
+  e diversas coisas,
+  isso so é possível se você que ainda não está no servidor,
+  entre já! Estamos esperando por você.</p
+  >
 <br>
 <button id="close">&times;</button>
 </div>
+<div class="popup copyright" id="-popup2">
+<h1>Novo impulso no Gamer City!!!</h1>
+<p>O dono(PhantoM) do Gamer city, 
+  acaba de dar impulso no servidor, 
+  isso fez o Fundador do servidor (AbDomineEst) ficar muito feliz!!</p>
+<br>
+<button id="close2">&times;</button>
+</div>
 
 </body>
-  <script -src="https://pingobras.glitch.me/Cidade-Dos-Gamers/notifications.js" defer></script>
-  <script src="https://pingobras.glitch.me/Cidade-Dos-Gamers/rolagem-horizontal.js" defer></script>
+  <script -src="https://pingobras.glitch.me/Gamer-City/notifications.js" defer></script>
+  <script src="https://pingobras.glitch.me/Gamer-City/rolagem-horizontal.js" defer></script>
   <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
-  
-  <script>
-    let siteAltura = document.querySelector(".site-altura");
-    let btn = document.querySelector("button");
-    let a = document.querySelector("a");
-    let notify = false
-    
-  function notifyMe() {
-  // Otherwise, we need to ask the user for permission
-   if (Notification.permission !== 'denied') {
-    Notification.requestPermission(function (permission) {
-      // If the user accepts, let's create a notification
-      if (permission === "granted") {
-        var notification = new Notification("As notificações foram ativadas!")
-        alert("As notificações foram ativadas!");
-        notify = true
-        if(notify == true){openEvento()}
-      }});
-        
-  }}
-    
-function openEvento(){
-document.querySelector(".popup").style.display = "block";
-siteAltura.style.opacity = "0.2";
-siteAltura.style.cursor = "not-allowed";
-btn.style.display = "none"
-a.style.display = "none"
-console.log("LOG> ⚠️Anuncio carregado!"); 
-}
-    
-  window.addEventListener("load", function(){
-setTimeout(open,2000)
-    
-function open(event){
-document.querySelector(".popup").style.display = "block";
-siteAltura.style.opacity = "0.2";
-siteAltura.style.cursor = "not-allowed";
-btn.style.display = "none"
-a.style.display = "none"
-console.log("LOG> ⚠️Anuncio carregado!"); 
-}
-});
-
-let fechar = document.querySelector("#close")
-if(!fechar) {
-console.warn("Deu Pau No Fechar Do Anúncio")
-}else{
-  fechar.addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-    siteAltura.style.opacity = "1";
-    siteAltura.style.cursor = "default";
-    btn.style.display = "block"
-    a.style.display = "block"
-  console.log("LOG> ⚠️Anuncio fechado!");
-});}
-  </script>
+  <script src="https://pingobras.glitch.me/Gamer-City/popup.js" defer></script>
   
 <script>
-  const http = "http://pingobras.glitch.me/Cidade-Dos-Gamers"
+  const http = "http://pingobras.glitch.me/Gamer-City"
 if(document.URL == http) {
-   window.location.href = ("https://pingobras.glitch.me/Cidade-Dos-Gamers"); }
+   window.location.href = ("https://pingobras.glitch.me/Gamer-City"); }
   </script>
 </html>
