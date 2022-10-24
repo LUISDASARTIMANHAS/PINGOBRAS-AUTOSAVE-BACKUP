@@ -11,8 +11,10 @@ direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
 "Todos os direitos reservados" +
 "<br>"+
 "<a links target=_blank href=mailto:luisaugustodesouza785@gmail.com>" + "luis_das_artimanhas@gmail" + "</a>"+
+"<br>"+
 "<a href=https://wa.me/55027995744791 target=_blank>" +
 "<i class=fa id=WA>" + "Fale conosco!" + "</i>" + "</a>" +
+ "<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>" +
 "</p>" 
 const wa = document.getElementById("WA");
 wa.classList.add("fa-whatsapp");
