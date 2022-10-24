@@ -1105,3 +1105,7 @@ chat{
   background: gray;
   font-size: 22px;
 }
+.arquivos {
+  display: inline;
+  height: 25px;
+}
