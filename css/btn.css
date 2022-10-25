@@ -376,3 +376,8 @@
   transform: translateY(5px);
   transition: all 1s ease-out;
 }
+.eduIcon{
+  height: 50px;
+  align-items: left;
+  text-align: left;
+}
