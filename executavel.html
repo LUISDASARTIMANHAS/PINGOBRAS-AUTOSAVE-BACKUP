@@ -46,7 +46,7 @@
     <login id="screenLoad" class="conteudo" role="main">
       
       <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
-      <img
+      <img id="loadingBar"
            src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
            height="250px"/>
       
@@ -59,9 +59,10 @@
   
   <script>
   let senhaSiteExe = "executavel"
-  const executavel = document.querySelector("#executavel")
-  const body = document.querySelector("#screenLoad")
-  const labelLogin = document.getElementById("labelLogin")
+  const executavel = document.querySelector("#executavel");
+  const body = document.querySelector("#screenLoad");
+  const labelLogin = document.getElementById("labelLogin");
+  const loadingBar = document.getElementById("loadingBar");
   let executavelSty = executavel.style
   let bodySty = body.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")
@@ -72,8 +73,8 @@
       bodySty.display = "none"
       executavelSty.display = ""
     }else{
-      alert("Não Foi Possivel Logar Tente Novamente!")
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"
+      loadingBar.src = "https://www.pngfind.com/pngs/m/645-6455283_file-not-available-icon-png-transparent-png.png"
     }
   
   </script>
