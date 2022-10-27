@@ -46,9 +46,9 @@
     <login id="screenLoad" class="conteudo" role="main">
       
       <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
-      <img id="loadingBar"
-           src="https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-4.gif"
-           height="250px"/>
+      <div class="boxbar">
+          <div class="bar" id="barlogin">50%</div>
+        </div>
       
       </login></div>  
 </body>
@@ -67,14 +67,28 @@
   let bodySty = body.style
   let userinput = prompt("Insira a Senha Para Continuar!","0000")
   
-  
-    if(senhaSiteExe == userinput) {
+    iniciar2 = "no";
+    var barload = document.getElementById("barlogin");
+    var width = 50;
+    var barspeed = 200;
+    var id = setInterval(frame, barspeed);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        iniciar2 = "sim";
+if(senhaSiteExe == userinput) {
       alert("Bem Vindo Ao Hodt Do Item! De DIDZIN E LUIS DAS ARTIMANHAS")
       bodySty.display = "none"
       executavelSty.display = ""
     }else{
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"
       loadingBar.src = "https://www.pngfind.com/pngs/m/645-6455283_file-not-available-icon-png-transparent-png.png"
+    }
+      }else{
+        width++;
+        barload.style.width = width + "%";
+        barload.innerHTML = "loading..." + width + "%";}
     }
   
   </script>
@@ -86,7 +100,8 @@ function barExe() {
     iniciar2 = "no";
     var barload = document.getElementById("exeBar");
     var width = 50;
-    var id = setInterval(frame, 100);
+    var barspeeedexe = 100;
+    var id = setInterval(frame, barspeeedexe);
 
     function frame() {
       if (width >= 100) {

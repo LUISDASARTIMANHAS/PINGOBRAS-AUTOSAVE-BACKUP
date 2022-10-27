@@ -7,7 +7,8 @@ function factorioButton() {
     iniciar = "no";
     var barload = document.getElementById("factoriobar");
     var width = -1;
-    var id = setInterval(frame, downloadSize);
+    var factoriobarspeed = 1324;
+    var id = setInterval(frame, factoriobarspeed);
     
     function frame() {
       if (width >= 100) {
