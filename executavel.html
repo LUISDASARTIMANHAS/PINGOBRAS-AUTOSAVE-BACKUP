@@ -5,7 +5,8 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
-    <meta http-equiv="Refresh" content="300">
+    <meta http-equiv="Refresh" content="120">
+    <meta http-retry-after="120">
     <link rel="icon" href="https://img1.gratispng.com/20180420/rsq/kisspng-exe-executable-installation-windows-installer-wooden-tag-5ada4fc7e672d8.7933322915242567119439.jpg" />
     <title>PINGOBRAS EXECUTAVEIS</title>
     
@@ -47,7 +48,7 @@
       
       <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
       <div class="boxbar">
-          <div class="bar" id="barlogin">50%</div>
+          <div class="bar" id="barlogin">Loading... 50%</div>
         </div>
       
       </login></div>  
@@ -58,10 +59,12 @@
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" defer/>
   
   <script>
+setInterval(netRecebida,7000)
 function netRecebida(){
 const network = localStorage.getItem("Network");
 let networkjson = JSON.parse(network)
-console.log(networkjson.Mbps)}
+console.log(networkjson)
+}
   </script>
   
   <script>
@@ -90,12 +93,11 @@ if(senhaSiteExe == userinput) {
       executavelSty.display = ""
     }else{
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"
-      loadingBar.src = "https://www.pngfind.com/pngs/m/645-6455283_file-not-available-icon-png-transparent-png.png"
     }
       }else{
         width++;
         barload.style.width = width + "%";
-        barload.innerHTML = "loading..." + width + "%";}
+        barload.innerHTML = "Loading... " + width + "%";}
     }
   
   </script>
@@ -114,6 +116,7 @@ function barExe() {
       if (width >= 100) {
         clearInterval(id);
         iniciar2 = "sim";
+        
       }else{
         width++;
         barload.style.width = width + "%";
