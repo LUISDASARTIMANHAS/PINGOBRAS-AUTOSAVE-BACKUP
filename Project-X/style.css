@@ -29,7 +29,7 @@
   --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
   --IMGLuisdasartimanhas: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/doge-angry.png?v=1661855131002);
   --FundoCDG: url("https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg");
-  --FundoPretoPd: "background:black;";
+  --FundoPretoPd: "black";
   
   --display: flex formato de celular;
   --height: "altuta";
@@ -206,7 +206,7 @@ js{
 
 body{
   margin-top: 0;
-  background: var(--FundoCDG); 
+  background: var(--FundoPretoPd);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
