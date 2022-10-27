@@ -58,6 +58,13 @@
   <link rel="stylesheet" href="https://pingobras.glitch.me/css/head.css" defer/>
   
   <script>
+function netRecebida(){
+const network = localStorage.getItem("Network");
+let networkjson = JSON.parse(network)
+console.log(networkjson.Mbps)}
+  </script>
+  
+  <script>
   let senhaSiteExe = "executavel"
   const executavel = document.querySelector("#executavel");
   const body = document.querySelector("#screenLoad");
