@@ -8,7 +8,7 @@
 }else {
   console.warn('Seu browser não suporta Notifications =(');
 }}
-const serverImg = "https://cdn.discordapp.com/attachments/1022972920517099580/1029047151696826438/Picsart_22-10-10_12-04-30-983.jpg"
+const serverImg = "https://toppng.com/uploads/preview/erreur-404-11550708744oo95egrxlp.png"
   
 //buscador de erros notify  
 function softwareFindNotify(){
