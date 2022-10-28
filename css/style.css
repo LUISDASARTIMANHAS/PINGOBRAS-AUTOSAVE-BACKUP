@@ -1109,8 +1109,8 @@ chat{
   display: inline;
   height: 25px;
 }
-.jogosweb{
-  width:75%;
+tela-jogos{
+width:75%;
  margin-top: 20%;
  display:flex;
  flex-wrap:wrap;
