@@ -1109,3 +1109,13 @@ chat{
   display: inline;
   height: 25px;
 }
+.jogosweb{
+  margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  z-index: 1;
+ display:grid;
+ grid-template-columns:auto auto auto;
+ grid-template-rows:auto;
+}
