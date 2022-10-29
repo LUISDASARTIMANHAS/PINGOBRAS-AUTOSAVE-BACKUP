@@ -886,8 +886,9 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   transition: all 1s ease-out;
 }
 
-.painel {
-  background: #000000EE;
+.painelResgate {
+  display: block;
+  background: white;
   min-height: 50%;
   width: 75%;
   height: auto;
@@ -900,18 +901,23 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   font-family: "arial", sans-serif;
   text-align: center;
   opacity: 1;
-  border: 5px dashed black;
+ border-width:5px;
+ border-style:solid;
+ border-top-color: green;
+ border-right-color: blue;
+ border-bottom-color: black;
+ border-left-color: red;
   z-index: 1;
   color: white;
 }
-button.painel {
+painel button{
   position: absolute;
   display: block;
   margin: -40px 0 20px auto;
   background-color: transparent;
   font-size: 30px;
   color: white;
-  background: red;
+  background: purple;
   border-radius: 100%;
   width: 40px;
   height: 40px;
@@ -920,15 +926,15 @@ button.painel {
   top: 15%;
   right: 0;
 }
-p.painel {
+painel p{
   margin-top: 20%;
   padding: 5px;
   font-size: 24px;
   text-align: center;
 }
-button.painel:hover {
-  background: green;
-  box-shadow: -8px 20px 20px white;
+painel button:hover {
+  background: red;
+  box-shadow: -8px 20px 20px gold;
   transition: all 1s ease-out;
 }
 
