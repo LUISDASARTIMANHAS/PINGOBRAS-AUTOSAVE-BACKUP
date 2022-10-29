@@ -868,7 +868,7 @@ item-loja{
  text-align:center;
  text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
 }
-.painelResgate button{
+.painelResgate .fecharPainel{
   position: absolute;
   display: block;
   margin: -40px 0 20px auto;
@@ -889,7 +889,7 @@ item-loja{
   font-size: 24px;
   text-align: center;
 }
-.painelResgate button:hover {
+.painelResgate .fecharPainel:hover {
   background: red;
   box-shadow: -8px 20px 20px gold;
   transition: all 1s ease-out;
