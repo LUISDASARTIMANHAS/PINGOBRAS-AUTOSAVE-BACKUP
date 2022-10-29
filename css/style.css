@@ -140,6 +140,9 @@ background: purple;
   padding: 4px;
   border: 2px solid black;
 }
+[upercase]{
+  text-transform:uppercase;
+}
 .img-status{
     height: 30px;
     width: 40px;
@@ -861,6 +864,9 @@ item-loja{
  border-left-color: red;
   z-index: 1;
   color: black;
+  text-transform:uppercase;
+ text-align:center;
+ text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
 }
 .painelResgate button{
   position: absolute;
