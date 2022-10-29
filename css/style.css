@@ -838,6 +838,57 @@ item-loja{
   position: right;
   display: inline-block;
 }
+.painelResgate {
+  display: block;
+  background: white;
+  min-height: 50%;
+  width: 75%;
+  height: auto;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  display: none;
+  font-family: "arial", sans-serif;
+  text-align: center;
+  opacity: 1;
+ border-width:5px;
+ border-style:solid;
+ border-top-color: green;
+ border-right-color: blue;
+ border-bottom-color: black;
+ border-left-color: red;
+  z-index: 1;
+  color: black;
+}
+.painelResgate button{
+  position: absolute;
+  display: block;
+  margin: -40px 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  background: purple;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: crosshair;
+  top: 15%;
+  right: 0;
+}
+.painelResgate p{
+  margin-top: 20%;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+.painelResgate button:hover {
+  background: red;
+  box-shadow: -8px 20px 20px gold;
+  transition: all 1s ease-out;
+}
 
 .popup {
 background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
@@ -886,57 +937,6 @@ background-image: url("https://www.pngarts.com/files/10/Notice-PNG-Image.png");
   transition: all 1s ease-out;
 }
 
-.painelResgate {
-  display: block;
-  background: white;
-  min-height: 50%;
-  width: 75%;
-  height: auto;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 8px;
-  display: none;
-  font-family: "arial", sans-serif;
-  text-align: center;
-  opacity: 1;
- border-width:5px;
- border-style:solid;
- border-top-color: green;
- border-right-color: blue;
- border-bottom-color: black;
- border-left-color: red;
-  z-index: 1;
-  color: white;
-}
-painel button{
-  position: absolute;
-  display: block;
-  margin: -40px 0 20px auto;
-  background-color: transparent;
-  font-size: 30px;
-  color: white;
-  background: purple;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: crosshair;
-  top: 15%;
-  right: 0;
-}
-painel p{
-  margin-top: 20%;
-  padding: 5px;
-  font-size: 24px;
-  text-align: center;
-}
-painel button:hover {
-  background: red;
-  box-shadow: -8px 20px 20px gold;
-  transition: all 1s ease-out;
-}
 
 .text-autentication{
   color: white; 
