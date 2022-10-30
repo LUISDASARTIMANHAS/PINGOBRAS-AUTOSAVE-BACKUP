@@ -17,11 +17,11 @@ function searchVideo(){
     let videoNovo2 = "https://www.youtube.com/embed"
     
     console.error("Video Não Indentificado!")
-    jsL.innerHTML = videoNovo2;
+    jsL.placeholder = videoNovo2;
     iframe.setAttribute('src', videoNovo2);
     title.innerHTML = "PINGOBRAS EMBUTIR VIDEO?NDA"
   }else{
-  jsL.innerHTML = videoNovo
+  jsL.placeholder = videoNovo
   iframe.setAttribute('src', videoNovo)
   title.innerHTML = "PINGOBRAS?" + videoNovo}
     
@@ -32,11 +32,11 @@ function searchVideo(){
     let videoNovo2 = "https://www.youtube.com/embed"
     
     console.error("Video Não Indentificado!")
-    jsL.innerHTML = videoNovo2;
+    jsL.placeholder = videoNovo2;
     iframe.setAttribute('src', videoNovo2);
     title.innerHTML = "PINGOBRAS EMBUTIR VIDEO?NDA"
   }else{
-  jsL.innerHTML = videoNovo
+  jsL.placeholder = videoNovo
   iframe.setAttribute('src', videoNovo)
   title.innerHTML = "PINGOBRAS?" + videoNovo}
     
