@@ -70,7 +70,13 @@ videoL.addEventListener("keyup", searchVideo);
     
 function searchVideo(){
   let video = videoL.value
-  let videoNovo = video.replace("watch?v=", "embed/")+"?autoplay=1"
+  const autoplay = document.getElementById("autoplay").checked
+  
+  if(autoplay == false){
+    let videoNovo = video.replace("watch?v=", "embed/")
+  }else{
+    let videoNovo = video.replace("watch?v=", "embed/")+"?autoplay=1"
+  }
   
   if(video == ""||video == " "){
     let videoNovo2 = "https://www.youtube.com/embed"
