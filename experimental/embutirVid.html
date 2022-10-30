@@ -55,9 +55,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
   <script>
 const videoL = document.getElementById("video")
-const jsL = document.getElementById('#"jsL"')
-const iframe = document.getElementById('#"iframe"')
-const title = document.getElementById("")
+const jsL = document.getElementById("jsL")
+const iframe = document.getElementById("iframe")
+const title = document.getElementById("title")
 videoL.addEventListener("keyup", searchVideo);
     
     
@@ -68,11 +68,13 @@ function searchVideo(){
   if(video == ""||video == " "){
     let videoNovo2 = "https://www.youtube.com/embed"
     console.error("Video Não Indentificado!")
-    jsL.innerHTML = videoNovo2
-    iframe.setAttribute('src', videoNovo2)
+    jsL.innerHTML = videoNovo2;
+    iframe.setAttribute('src', videoNovo2);
+    title.innerHTML = "PINGOBRAS EMBUTIR VIDEO?NDA"
   }else{
   jsL.innerHTML = videoNovo
-  iframe.setAttribute('src', videoNovo)}
+  iframe.setAttribute('src', videoNovo)
+  title.innerHTML = "PINGOBRAS?" + videoNovo}
 }
 </script>
 </html>
