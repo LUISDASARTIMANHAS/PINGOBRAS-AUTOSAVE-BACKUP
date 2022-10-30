@@ -41,7 +41,7 @@
                gyroscope; 
                picture-in-picture" 
         allowfullscreen
-        src="https://pingobras.glitch.me/">
+        src="https://www.youtube.com/embed">
       Loading...
 </iframe>
 <p style="display: inline;">Novo Link:</p> <js id="jsL">https://</js>
@@ -58,15 +58,18 @@ let videoL = document.querySelector('#video')
 let jsL = document.querySelector('#jsL')
 let iframe = document.querySelector('#iframe')
 videoL.addEventListener("keyup", searchVideo);
-
-if(videoL == ""){
-  
-}    
+    
     
 function searchVideo(){
   let videoNovo = video.value.replace("watch?v=", "embed/")+"?autoplay=1"
-  jsL.innerHTML = videoNovo
+  
+  if(videoL == ""){
+    let videoNovo = "https://www.youtube.com/embed"
+    jsL.innerHTML = videoNovo
   iframe.setAttribute('src', videoNovo)
+  }else{
+  jsL.innerHTML = videoNovo
+  iframe.setAttribute('src', videoNovo)}
 }
 </script>
 </html>
