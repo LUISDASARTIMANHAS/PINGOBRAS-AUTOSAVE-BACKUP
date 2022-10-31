@@ -402,6 +402,7 @@ a[links]:hover{
     background-position: center;
     text-align: center;
     text-decoration: none;
+    height: max-content;
 }
 .red-title{
   font-size: 17px;
