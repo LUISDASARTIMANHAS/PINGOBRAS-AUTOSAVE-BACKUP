@@ -1248,11 +1248,13 @@ chat{
   height: 25px;
 }
 tela-jogos{
-width:75%;
- margin-top: 20%;
- display:flex;
- flex-wrap:wrap;
- flex-direction:row;
- align-items:center;
-  z-index: 0;
+    width: 80%;
+    margin-top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+    text-align: center;
+    justify-content: center;
 }
