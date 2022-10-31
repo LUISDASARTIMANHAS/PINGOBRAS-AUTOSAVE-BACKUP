@@ -403,6 +403,7 @@ a[links]:hover{
     text-align: center;
     text-decoration: none;
     height: max-content;
+    margin: 5px;
 }
 .red-title{
   font-size: 17px;
