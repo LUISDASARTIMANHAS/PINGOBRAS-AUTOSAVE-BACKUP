@@ -1257,4 +1257,6 @@ tela-jogos{
     z-index: 0;
     text-align: center;
     justify-content: center;
+    background: #FFFFFFB5;
+    border-radius: 25px;
 }
