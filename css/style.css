@@ -396,7 +396,7 @@ a[links]:hover{
     box-sizing: border-box;
     display: block;
     align-items: center;
-    width: 50%;
+    width: 25%;
     padding: 8px;   
     background-image: linear-gradient(290deg, rgb(59, 43, 115) 55%, rgb(111, 47, 147), #6f2f93);
     background-position: center;
