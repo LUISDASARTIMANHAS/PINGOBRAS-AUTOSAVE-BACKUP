@@ -7,9 +7,11 @@ const direitos = document.querySelector("#direitos");
   
 if(!direitos){
 const newDireitos = document.createElement("div");
+const att = document.createAttribute("id");
+att.value = "direitos"
 
-newDireitos.add("direitos");
-document.body.appendChild(newDireitos);
+newDireitos.setAttributeNode(att);  
+document.footer.appendChild(newDireitos);
 }  
   
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
