@@ -4,6 +4,14 @@ function refreshcopy() {
 let ano = new Date().getFullYear();  
 let navegadorLang = navigator.language;
 const direitos = document.querySelector("#direitos");
+  
+if(!direitos){
+const newDireitos = document.createElement("div");
+
+newDireitos.add("direitos");
+document.body.appendChild(newDireitos);
+}  
+  
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
 "<br>"+
 "©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano + navegadorLang+
