@@ -72,12 +72,10 @@ if(listaUser == "null"|| listaUser == null){
   
     let ADMtoken = "conectado"
     localStorage.setItem('ADMtoken', ADMtoken)
-    console.log("LOGIN> token admin setado!")
     
     const bypasstokenJS = {bypass: 1541129000, bypass2: 65810473921}
     const bypasstoken = JSON.stringify(bypasstokenJS);
     localStorage.setItem("bypass",bypasstoken)
-    console.log("LOGIN> bypass setado!")
     
     
     msgError.setAttribute('style', 'display: none')
