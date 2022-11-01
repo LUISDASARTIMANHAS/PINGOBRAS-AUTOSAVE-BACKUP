@@ -11,9 +11,10 @@ const att = document.createAttribute("id");
 att.value = "direitos"
 
 newDireitos.setAttributeNode(att);  
-document.footer.appendChild(newDireitos);
+document.body.appendChild(newDireitos);
 }  
   
+direitos.classList.add("direitos")
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
 "<br>"+
 "©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano + navegadorLang+
