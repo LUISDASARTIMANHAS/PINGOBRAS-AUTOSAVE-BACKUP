@@ -31,4 +31,5 @@ const wa = document.getElementById("WA");
 wa.classList.add("fa-whatsapp");
 
 
+  
 }
