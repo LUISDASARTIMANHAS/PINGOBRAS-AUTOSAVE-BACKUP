@@ -45,6 +45,10 @@ function autenticar(){
       
     }
   })
+  
+  if(!listaUser) {
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");   
+}else{
   if(listaUser == "null"|| listaUser == null){
   console.log("Não e possivel logar não há usuarios cadastrados localmente!");
   msgError.setAttribute('style', 'display: block')
@@ -54,7 +58,7 @@ function autenticar(){
     listaUser.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
       userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
-  })}
+  })}}
   
   if(usuario.value == "" && senha.value == "") {
     msgError.setAttribute('style', 'display: block')
@@ -127,4 +131,5 @@ ClickMouseLOGIN.play();
   userscad5.innerHTML = finder2[4].userCad + sep
   userscad6.innerHTML = finder2[5].userCad + sep 
   userscad7.innerHTML = finder2[6].userCad + sep 
-  userscad8.innerHTML = finder[0].userCad
+  if(!finder[0]){}else{
+  userscad8.innerHTML = finder[0].userCad}

@@ -1,1 +1,135 @@
-const _0x32e7ad=_0x1572;(function(_0x2b3cbc,_0x2d819d){const _0x4029c1=_0x1572,_0x76b58a=_0x2b3cbc();while(!![]){try{const _0x2184ff=parseInt(_0x4029c1(0x1e8))/0x1*(parseInt(_0x4029c1(0x1fa))/0x2)+parseInt(_0x4029c1(0x1f7))/0x3*(-parseInt(_0x4029c1(0x1ce))/0x4)+-parseInt(_0x4029c1(0x1ef))/0x5*(-parseInt(_0x4029c1(0x1d4))/0x6)+-parseInt(_0x4029c1(0x1f1))/0x7+parseInt(_0x4029c1(0x1de))/0x8*(-parseInt(_0x4029c1(0x1eb))/0x9)+-parseInt(_0x4029c1(0x1ea))/0xa+-parseInt(_0x4029c1(0x1f5))/0xb*(-parseInt(_0x4029c1(0x1ee))/0xc);if(_0x2184ff===_0x2d819d)break;else _0x76b58a['push'](_0x76b58a['shift']());}catch(_0x520a07){_0x76b58a['push'](_0x76b58a['shift']());}}}(_0x115c,0xb223c));function _0x115c(){const _0x2100d2=['#msgError','6oQtKvf','placeholder','display:\x20none','#autenticador','LOGIN>\x20bypass\x20setado!','equipe','querySelector','#msgSuccess','ValidDB:','parse','7478968zFyhER','password','href','userCad','getDate','location','userLogado','display:\x20block','senha','#userCad','10772zySYsj','******','11988810dQbjMy','9qSqAWo','log','getItem','7073904ggHszU','2321065NsDYjR','GlobalDB','3310818hOqTIs','saldoCad','https://pingobras.glitch.me/user','nomeCad','55nEQKUY','Usuário\x20ou\x20Senha\x20Incorretos','2261769gCppQb','verSenhaLogin','style','126zsXVIO','LOGIN>\x20token\x20User\x20setado!','#userCad6','getAttribute','user','toString','#senha','Validando\x20acesso...','LOGIN>\x20token\x20admin\x20setado!','null','Não\x20e\x20possivel\x20logar\x20não\x20há\x20usuarios\x20cadastrados\x20localmente!','addEventListener','stringify','forEach','123456','#usuario','random','bypass','play','innerHTML','senhaCad','value','#userCad5','listaUser','#userCad7','https://pingobras.glitch.me/admin','getElementById','setAttribute','setItem','text','4XTkpuw','substr','lista\x20esperada:\x20','type','#userCad3'];_0x115c=function(){return _0x2100d2;};return _0x115c();}const buttonAutenticar=document['querySelector'](_0x32e7ad(0x1d7)),listaUserObj=localStorage[_0x32e7ad(0x1ed)]('listaUser'),STGlobalDBObj=localStorage['getItem'](_0x32e7ad(0x1f0)),finder=JSON[_0x32e7ad(0x1dd)](listaUserObj),finder2=JSON[_0x32e7ad(0x1dd)](STGlobalDBObj),btnVerSenhaL=document['getElementById'](_0x32e7ad(0x1f8)),userscad=document[_0x32e7ad(0x1da)](_0x32e7ad(0x1e7)),userscad2=document[_0x32e7ad(0x1da)]('#userCad2'),userscad3=document[_0x32e7ad(0x1da)](_0x32e7ad(0x1d2)),userscad4=document[_0x32e7ad(0x1da)]('#userCad4'),userscad5=document[_0x32e7ad(0x1da)](_0x32e7ad(0x210)),userscad6=document['querySelector'](_0x32e7ad(0x1fc)),userscad7=document[_0x32e7ad(0x1da)](_0x32e7ad(0x1c8)),userscad8=document['querySelector']('#userCad8');let sep=',';function autenticar(){const _0x511137=_0x32e7ad;let _0x2ba717=document[_0x511137(0x1da)](_0x511137(0x209)),_0x25cbef=document[_0x511137(0x1da)](_0x511137(0x200)),_0x148ccf=document['querySelector'](_0x511137(0x1d3)),_0x54e93b=document['querySelector'](_0x511137(0x1db)),_0x282923={'nome':'','user':'','senha':'','saldo':''},_0x130503=JSON['parse'](localStorage[_0x511137(0x1ed)](_0x511137(0x211)));console[_0x511137(0x1ec)]('usuario\x20esperado:\x20'+_0x282923),console['log'](_0x511137(0x1d0)+_0x130503);let _0x42806e=[],_0x3ebb4e={'nome':'','user':'','senha':'','saldo':'','PerfilImg':''};_0x42806e=JSON[_0x511137(0x1dd)](localStorage[_0x511137(0x1ed)](_0x511137(0x1f0))),_0x42806e[_0x511137(0x207)](_0x78357f=>{const _0x166a20=_0x511137;_0x2ba717[_0x166a20(0x20f)]==_0x78357f[_0x166a20(0x1e1)]&&_0x25cbef[_0x166a20(0x20f)]==_0x78357f[_0x166a20(0x20e)]&&(_0x3ebb4e={'nome':_0x78357f['nomeCad'],'user':_0x78357f['userCad'],'senha':_0x78357f[_0x166a20(0x20e)],'saldo':_0x78357f[_0x166a20(0x1f2)],'PerfilImg':_0x78357f['PerfilIMG']});});_0x130503==_0x511137(0x203)||_0x130503==null?(console[_0x511137(0x1ec)](_0x511137(0x204)),_0x148ccf[_0x511137(0x1cb)](_0x511137(0x1f9),'display:\x20block'),_0x148ccf[_0x511137(0x20d)]=_0x511137(0x204),_0x54e93b[_0x511137(0x1cb)]('style',_0x511137(0x1d6))):_0x130503[_0x511137(0x207)](_0x1d0d3a=>{const _0x18920c=_0x511137;_0x2ba717['value']==_0x1d0d3a['userCad']&&_0x25cbef[_0x18920c(0x20f)]==_0x1d0d3a['senhaCad']&&(_0x282923={'nome':_0x1d0d3a[_0x18920c(0x1f4)],'user':_0x1d0d3a['userCad'],'senha':_0x1d0d3a[_0x18920c(0x20e)],'saldo':_0x1d0d3a[_0x18920c(0x1f2)]});});if(_0x2ba717[_0x511137(0x20f)]==''&&_0x25cbef[_0x511137(0x20f)]=='')_0x148ccf[_0x511137(0x1cb)](_0x511137(0x1f9),'display:\x20block'),_0x148ccf['innerHTML']=_0x511137(0x1f6),_0x54e93b[_0x511137(0x1cb)](_0x511137(0x1f9),_0x511137(0x1d6));else{if(_0x2ba717[_0x511137(0x20f)]==_0x511137(0x1d9)&&_0x25cbef['value']=='administrador'){setTimeout(_0x400e9e,0x1b58);function _0x400e9e(){const _0x4b30eb=_0x511137;window[_0x4b30eb(0x1e3)][_0x4b30eb(0x1e0)]=_0x4b30eb(0x1c9);}let _0x2f38a3='conectado';localStorage[_0x511137(0x1cc)]('ADMtoken',_0x2f38a3),console[_0x511137(0x1ec)](_0x511137(0x202));const _0x4d59ec=new Date();let _0x29a400=_0x4d59ec[_0x511137(0x1e2)]();const _0x2ce392={'bypass':0x650b56ac+_0x29a400,'bypass2':0x47c3ac5e1+_0x29a400},_0x5bf640=JSON['stringify'](_0x2ce392);localStorage[_0x511137(0x1cc)](_0x511137(0x20b),_0x5bf640),console[_0x511137(0x1ec)](_0x511137(0x1d8)),_0x148ccf[_0x511137(0x1cb)](_0x511137(0x1f9),_0x511137(0x1d6)),_0x54e93b[_0x511137(0x20d)]=_0x511137(0x201),_0x54e93b['setAttribute'](_0x511137(0x1f9),_0x511137(0x1e5));}else{if(_0x2ba717[_0x511137(0x20f)]==_0x282923[_0x511137(0x1fe)]&&_0x25cbef[_0x511137(0x20f)]==_0x282923[_0x511137(0x1e6)]||_0x2ba717[_0x511137(0x20f)]==_0x3ebb4e[_0x511137(0x1fe)]&&_0x25cbef[_0x511137(0x20f)]==_0x3ebb4e[_0x511137(0x1e6)]){setTimeout(_0x1202b1,0x1b58);function _0x1202b1(){const _0x3117e9=_0x511137;window[_0x3117e9(0x1e3)][_0x3117e9(0x1e0)]=_0x3117e9(0x1f3);}let _0x501a33=Math[_0x511137(0x20a)]()[_0x511137(0x1ff)](0x9)[_0x511137(0x1cf)](0x10),_0x26f653=Math[_0x511137(0x20a)]()[_0x511137(0x1ff)](0x10)['substr'](0x2),_0x21d568=_0x26f653+_0x26f653+_0x511137(0x1dc)+_0x501a33;localStorage[_0x511137(0x1cc)]('token',_0x21d568),localStorage[_0x511137(0x1cc)]('userLogado',JSON['stringify'](_0x282923)),localStorage[_0x511137(0x1cc)](_0x511137(0x1e4),JSON[_0x511137(0x206)](_0x3ebb4e)),console[_0x511137(0x1ec)](_0x511137(0x1fb)),_0x148ccf[_0x511137(0x1cb)](_0x511137(0x1f9),_0x511137(0x1d6)),_0x54e93b[_0x511137(0x20d)]=_0x511137(0x201),_0x54e93b[_0x511137(0x1cb)](_0x511137(0x1f9),'display:\x20block');}else _0x148ccf[_0x511137(0x1cb)](_0x511137(0x1f9),_0x511137(0x1e5)),_0x148ccf[_0x511137(0x20d)]=_0x511137(0x1f6),_0x54e93b[_0x511137(0x1cb)]('style',_0x511137(0x1d6));}}}const ClickMouseLOGIN=new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');function _0x1572(_0x493512,_0x1a4826){const _0x115c16=_0x115c();return _0x1572=function(_0x1572a1,_0x2d4d16){_0x1572a1=_0x1572a1-0x1c8;let _0x1e1914=_0x115c16[_0x1572a1];return _0x1e1914;},_0x1572(_0x493512,_0x1a4826);}btnVerSenhaL[_0x32e7ad(0x205)]('click',()=>{const _0x5a77e9=_0x32e7ad;ClickMouseLOGIN[_0x5a77e9(0x20c)]();let _0x3c78a5=document[_0x5a77e9(0x1ca)](_0x5a77e9(0x1e6));_0x3c78a5[_0x5a77e9(0x1fd)](_0x5a77e9(0x1d1))==_0x5a77e9(0x1df)?(_0x3c78a5[_0x5a77e9(0x1cb)](_0x5a77e9(0x1d1),_0x5a77e9(0x1cd)),_0x3c78a5[_0x5a77e9(0x1d5)]=_0x5a77e9(0x208)):(_0x3c78a5['setAttribute'](_0x5a77e9(0x1d1),_0x5a77e9(0x1df)),_0x3c78a5[_0x5a77e9(0x1d5)]=_0x5a77e9(0x1e9));}),userscad[_0x32e7ad(0x20d)]=finder2[0x0][_0x32e7ad(0x1e1)]+sep,userscad2[_0x32e7ad(0x20d)]=finder2[0x1][_0x32e7ad(0x1e1)]+sep,userscad3['innerHTML']=finder2[0x2]['userCad']+sep,userscad4[_0x32e7ad(0x20d)]=finder2[0x3]['userCad']+sep,userscad5[_0x32e7ad(0x20d)]=finder2[0x4]['userCad']+sep,userscad6['innerHTML']=finder2[0x5][_0x32e7ad(0x1e1)]+sep,userscad7[_0x32e7ad(0x20d)]=finder2[0x6]['userCad']+sep,userscad8[_0x32e7ad(0x20d)]=finder[0x0][_0x32e7ad(0x1e1)];
+  const buttonAutenticar = document.querySelector('#autenticador')
+  const listaUserObj = localStorage.getItem("listaUser");
+  const STGlobalDBObj = localStorage.getItem('GlobalDB')
+  const finder = JSON.parse(listaUserObj)
+  const finder2 = JSON.parse(STGlobalDBObj)
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad = document.querySelector("#userCad")
+  const userscad2 = document.querySelector("#userCad2")
+  const userscad3 = document.querySelector("#userCad3")
+  const userscad4 = document.querySelector("#userCad4")
+  const userscad5 = document.querySelector("#userCad5")
+  const userscad6 = document.querySelector("#userCad6")
+  const userscad7 = document.querySelector("#userCad7")
+  const userscad8 = document.querySelector("#userCad8")
+  let sep = ","
+  
+  
+function autenticar(){
+  let usuario = document.querySelector('#usuario')
+  let senha = document.querySelector('#senha')
+  let msgError = document.querySelector('#msgError')
+  let msgSuccess = document.querySelector('#msgSuccess')
+  let userValid = {nome: '',user: '',senha: '',saldo: ''}
+  let listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  console.log("usuario esperado: " + userValid)
+  console.log("lista esperada: " + listaUser)
+  
+  let STGlobalDBObj = []
+  let userValid2 = {
+    nome: '',
+    user: '',
+    senha: '',
+    saldo: '',
+    PerfilImg: ''}
+  
+  STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
+  STGlobalDBObj.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid2 = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad,
+         saldo: item.saldoCad,
+         PerfilImg: item.PerfilIMG}
+      
+    }
+  })
+  
+  if(!listaUser) {
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");   
+}else{
+  if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
+}else{
+    listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
+  })}}
+  
+  if(usuario.value == "" && senha.value == "") {
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
+  }else{
+    if(usuario.value == "equipe" && senha.value == "administrador"){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
+  
+    let ADMtoken = "conectado"
+    localStorage.setItem('ADMtoken', ADMtoken)
+    console.log("LOGIN> token admin setado!")
+    const d = new Date();
+    let day = d.getDate();
+      
+    const bypasstokenJS = {bypass: 1695241900+day, bypass2: 19264095713+day}
+    const bypasstoken = JSON.stringify(bypasstokenJS);
+    localStorage.setItem("bypass",bypasstoken)
+    console.log("LOGIN> bypass setado!")
+    
+    
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{   
+if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.value == userValid2.user && senha.value == userValid2.senha){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
+    
+    let clientID = Math.random().toString(9).substr(16)
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom+"ValidDB:"+clientID
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+    localStorage.setItem('userLogado', JSON.stringify(userValid2))
+    console.log("LOGIN> token User setado!")  
+  
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')}
+  }}//fim elses
+  
+  
+}//fim do autenticar
+
+
+const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
+
+btnVerSenhaL.addEventListener('click', ()=>{
+ClickMouseLOGIN.play();
+  let inputVerSenhaL = document.getElementById('senha')
+  if(inputVerSenhaL.getAttribute('type') == 'password'){
+    inputVerSenhaL.setAttribute('type', 'text')
+    inputVerSenhaL.placeholder = "123456"
+  }else{
+    inputVerSenhaL.setAttribute('type', 'password')
+    inputVerSenhaL.placeholder = "******"}
+})
+
+
+  userscad.innerHTML = finder2[0].userCad + sep 
+  userscad2.innerHTML =  finder2[1].userCad + sep 
+  userscad3.innerHTML =  finder2[2].userCad + sep
+  userscad4.innerHTML = finder2[3].userCad + sep
+  userscad5.innerHTML = finder2[4].userCad + sep
+  userscad6.innerHTML = finder2[5].userCad + sep 
+  userscad7.innerHTML = finder2[6].userCad + sep 
+  if(!finder[0]){}else{
+  userscad8.innerHTML = finder[0].userCad}
