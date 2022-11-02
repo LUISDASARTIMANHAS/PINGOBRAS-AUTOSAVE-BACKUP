@@ -1,4 +1,4 @@
-[
+let db = [
 {"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
