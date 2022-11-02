@@ -1,5 +1,5 @@
 
-let db = [
+const db = [
 {"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
@@ -49,4 +49,3 @@ let db = [
 "PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
 "Token":"192.168.100.3"}
 ]
-export * from "GlobalDB.js";
