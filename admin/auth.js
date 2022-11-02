@@ -1,6 +1,9 @@
 //usado para bloquear as paginas somente para admins
 const loopToken = setInterval(refreshDesconect, 2000);
 const alarmAuto = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
+let bypassJson = localStorage.getItem("bypass");
+let authbypass2 = JSON.parse(bypassJson)
+
 
 function refreshDesconect() {
 let labelSecurity = document.getElementById("security");
@@ -33,7 +36,13 @@ labelAlarm.style.display = "block";
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
- 
+if(authbypass2 == null || authbypass2.bypass == 10101010100){    
+  const disconectadm = "desconectado";
+    
+  localStorage.setItem("ADMtoken", disconectadm);
+  window.location.href = ("https://pingobras.glitch.me/login")
+  alert("⚠️ADMIN SEM INDENTIFICAÇÃO!")
+  } 
   
   
 }
