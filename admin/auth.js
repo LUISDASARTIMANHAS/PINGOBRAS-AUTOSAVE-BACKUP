@@ -2,7 +2,7 @@
 const loopToken = setInterval(refreshDesconect, 2000);
 const alarmAuto = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Shop empire 2 - Alarm.mp3?v=1660420687299.mp3');
 let bypassJson = localStorage.getItem("bypass");
-let authbypass2 = JSON.parse(bypassJson)
+let bypass = JSON.parse(bypassJson)
 
 
 function refreshDesconect() {
@@ -36,13 +36,32 @@ labelAlarm.style.display = "block";
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
-if(authbypass2 == null || authbypass2.bypass == 10101010100){    
-  const disconectadm = "desconectado";
-    
-  localStorage.setItem("ADMtoken", disconectadm);
-  window.location.href = ("https://pingobras.glitch.me/login")
-  alert("⚠️ADMIN SEM INDENTIFICAÇÃO!")
-  } 
+  
+if(bypass == 1541129000 || bypass.bypass2 == 65810473921) {
+console.log("AUTH/LOG>ADMIN conectado!")
+}else {
+const tokenSair ="desconectado";
+localStorage.setItem("ADMtoken", tokenSair);
+alarmAuto.play();
+  site.style.display = "none";
+  labelAlarm.style.display = "block";
+  
+const myTimeout = setTimeout(REDIRECIONAR, 10000);
+function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
+}
+  
+if(bypass != null || bypass.bypass2 !== null ) {
+console.log("AUTH/LOG>ADMIN conectado!")
+}else {
+const tokenSair ="desconectado";
+localStorage.setItem("ADMtoken", tokenSair);
+alarmAuto.play();
+  site.style.display = "none";
+  labelAlarm.style.display = "block";
+  
+const myTimeout = setTimeout(REDIRECIONAR, 10000);
+function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
+}
   
   
 }
