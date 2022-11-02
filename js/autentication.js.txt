@@ -1,4 +1,4 @@
-let bypassJson2 = localStorage.getItem("bypassST");
+let bypassJson2 = localStorage.getItem("bypass");
 let bypassST = JSON.parse(bypassJson2)
 let token = localStorage.getItem("ADMtoken");
 
