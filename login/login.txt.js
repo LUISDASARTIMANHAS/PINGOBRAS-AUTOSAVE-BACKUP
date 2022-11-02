@@ -1,6 +1,5 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
-  import { readFile } from 'fs/promises';
   let db 
   const finder = JSON.parse(listaUserObj)
   const finder2 = JSON.parse(db)
