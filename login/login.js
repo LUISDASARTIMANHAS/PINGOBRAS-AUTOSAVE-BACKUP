@@ -62,7 +62,7 @@
   const userscad7 = document.querySelector("#userCad7")
   const userscad8 = document.querySelector("#userCad8")
   let sep = ","
-  
+  let STGlobalDBObj = JSON.stringfy(db)
 
   
 function autenticar(){
@@ -91,17 +91,25 @@ function autenticar(){
          user: item.userCad,
          senha: item.senhaCad,
          saldo: item.saldoCad,
-         PerfilImg: item.PerfilIMG
-       }
+         PerfilImg: item.PerfilIMG}
       
     }
   })
+  if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
+}else{
+    listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
+  })}
   
   if(usuario.value == "" && senha.value == "") {
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')
-    
   }else{
     if(usuario.value == "equipe" && senha.value == "administrador"){
     setTimeout(wait,7000);
@@ -142,9 +150,11 @@ if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.va
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')}
-  }    }
+  }}//fim elses
+  
   
 }//fim do autenticar
+
 
 const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 

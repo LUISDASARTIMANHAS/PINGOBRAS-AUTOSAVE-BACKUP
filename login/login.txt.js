@@ -1,53 +1,3 @@
-  let db = [
-{"nomeCad": "administrador",
- "userCad": "equipe",
- "senhaCad": "administrador",
- "saldoCad": 1500.90,
- "PerfilIMG":"",
- "Token":"192.168.100.1"},
-
-{"nomeCad": "Florisvaldo de Oliveira Schulz", 
- "userCad": "Valdo", 
- "senhaCad": "96451290", 
- "saldoCad": 88,
- "PerfilIMG":"https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313",
-"Token":"192.168.100.22"},
-
-{"nomeCad": "Luis Augusto de Souza Carvalho", 
- "userCad": "LUIS DAS ARTIMANHAS", 
- "senhaCad": "998774163", 
- "saldoCad": 24,
- "PerfilIMG":"https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048",
-"Token":"192.168.100.11"},
-
-{"nomeCad": "José Eduardo Batista de Souza", 
- "userCad": "notfound", 
- "senhaCad": "10062002", 
- "saldoCad": 1,
- "PerfilIMG":"",
-"Token":"192.168.100.45"},
-  
-{"nomeCad": "Diogo Antonio Nienke Batista", 
- "userCad": "did zin", 
- "senhaCad": "z0mbieltr2", 
- "saldoCad": 7,
- "PerfilIMG":"https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg",
-"Token":"192.168.100.47"},
-  
-{"nomeCad": "Vinícius Lopes", 
- "userCad": "AbDomineEst", 
- "senhaCad": "826961415130185749", 
- "saldoCad": 2,
- "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg",
-"Token":"192.168.100.2"},
-  
-{"nomeCad": "Marquinhos",
-"userCad": "Marq",
-"senhaCad": "9595",
-"saldoCad": 2,
-"PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
-"Token":"192.168.100.3"}
-]  
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
   const finder = JSON.parse(listaUserObj)
@@ -62,7 +12,7 @@
   const userscad7 = document.querySelector("#userCad7")
   const userscad8 = document.querySelector("#userCad8")
   let sep = ","
-  
+  let STGlobalDBObj = JSON.stringfy(db)
 
   
 function autenticar(){
@@ -81,8 +31,8 @@ function autenticar(){
     user: '',
     senha: '',
     saldo: '',
-    PerfilImg: ''
-  }
+    PerfilImg: ''}
+  
   STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
   STGlobalDBObj.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
@@ -91,17 +41,25 @@ function autenticar(){
          user: item.userCad,
          senha: item.senhaCad,
          saldo: item.saldoCad,
-         PerfilImg: item.PerfilIMG
-       }
+         PerfilImg: item.PerfilIMG}
       
     }
   })
+  if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
+}else{
+    listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
+  })}
   
   if(usuario.value == "" && senha.value == "") {
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')
-    
   }else{
     if(usuario.value == "equipe" && senha.value == "administrador"){
     setTimeout(wait,7000);
@@ -142,23 +100,11 @@ if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.va
     msgError.setAttribute('style', 'display: block')
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')}
-  }
-       }
-  if(listaUser == "null"|| listaUser == null){
-  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
-  msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
-    msgSuccess.setAttribute('style', 'display: none')
-}else{
-    listaUser.forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
-    }
-  })
-  }
+  }}//fim elses
   
   
-}
+}//fim do autenticar
+
 
 const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 
