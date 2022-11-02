@@ -21,8 +21,9 @@ console.log("AUTH/LOG>ADMIN conectado!")
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
-  site.style.display = "none";
-  labelAlarm.style.display = "block";
+site.style.display = "none";
+labelAlarm.style.display = "block";
+localStorage.setItem("bypass","0")  
   
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
@@ -35,6 +36,8 @@ localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
 site.style.display = "none";
 labelAlarm.style.display = "block";
+localStorage.setItem("bypass","0")
+  
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
@@ -46,8 +49,9 @@ console.log("AUTH/LOG>ADMIN conectado!")
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
-  site.style.display = "none";
-  labelAlarm.style.display = "block";
+site.style.display = "none";
+labelAlarm.style.display = "block";
+localStorage.setItem("bypass","0")
   
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
@@ -59,9 +63,10 @@ console.log("AUTH/LOG>ADMIN conectado!")
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 alarmAuto.play();
-  site.style.display = "none";
-  labelAlarm.style.display = "block";
-  
+site.style.display = "none";
+labelAlarm.style.display = "block";
+localStorage.setItem("bypass","0")  
+
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }

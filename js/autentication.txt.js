@@ -25,7 +25,7 @@ window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//adm falso
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
-localStorage.setItem("bypass","null")
+localStorage.setItem("bypass","0")
 window.location.href = "https://pingobras.glitch.me/login"
 }}
   
