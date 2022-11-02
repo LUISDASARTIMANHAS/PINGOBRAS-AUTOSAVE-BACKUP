@@ -1,6 +1,6 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
-  const STGlobalDBObj = require('/GlobalDB.js');
+  import * as STGlobalDBObj from "GlobalDB.js";
   const finder = JSON.parse(listaUserObj)
   const finder2 = JSON.parse(STGlobalDBObj)
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
