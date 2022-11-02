@@ -1,19 +1,4 @@
-  const buttonAutenticar = document.querySelector('#autenticador')
-  const listaUserObj = localStorage.getItem("listaUser");
-  const finder = JSON.parse(listaUserObj)
-  const finder2 = JSON.parse(db)
-  const btnVerSenhaL = document.getElementById("verSenhaLogin")
-  const userscad = document.querySelector("#userCad")
-  const userscad2 = document.querySelector("#userCad2")
-  const userscad3 = document.querySelector("#userCad3")
-  const userscad4 = document.querySelector("#userCad4")
-  const userscad5 = document.querySelector("#userCad5")
-  const userscad6 = document.querySelector("#userCad6")
-  const userscad7 = document.querySelector("#userCad7")
-  const userscad8 = document.querySelector("#userCad8")
-  let sep = ","
-  
-let db = [
+  let db = [
 {"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
@@ -62,7 +47,23 @@ let db = [
 "saldoCad": 2,
 "PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
 "Token":"192.168.100.3"}
-]
+]  
+  const buttonAutenticar = document.querySelector('#autenticador')
+  const listaUserObj = localStorage.getItem("listaUser");
+  const finder = JSON.parse(listaUserObj)
+  const finder2 = db
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad = document.querySelector("#userCad")
+  const userscad2 = document.querySelector("#userCad2")
+  const userscad3 = document.querySelector("#userCad3")
+  const userscad4 = document.querySelector("#userCad4")
+  const userscad5 = document.querySelector("#userCad5")
+  const userscad6 = document.querySelector("#userCad6")
+  const userscad7 = document.querySelector("#userCad7")
+  const userscad8 = document.querySelector("#userCad8")
+  let sep = ","
+  
+
   
 function autenticar(){
   let usuario = document.querySelector('#usuario')
@@ -73,19 +74,6 @@ function autenticar(){
   let listaUser = JSON.parse(localStorage.getItem('listaUser'))
   console.log("usuario esperado: " + userValid)
   console.log("lista esperada: " + listaUser)
-  
-if(listaUser == "null"|| listaUser == null){
-  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
-  msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
-    msgSuccess.setAttribute('style', 'display: none')
-}else{
-    listaUser.forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
-    }
-  })
-  }
   
   let STGlobalDBObj = []
   let userValid2 = {
@@ -156,6 +144,18 @@ if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.va
     msgSuccess.setAttribute('style', 'display: none')}
   }
        }
+  if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
+}else{
+    listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
+    }
+  })
+  }
   
   
 }

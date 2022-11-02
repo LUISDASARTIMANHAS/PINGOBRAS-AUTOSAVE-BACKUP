@@ -1,1 +1,170 @@
-const _0x2c56e0=_0x4d6e;(function(_0x3100a7,_0x186366){const _0x1bab22=_0x4d6e,_0xb87af0=_0x3100a7();while(!![]){try{const _0x22809f=-parseInt(_0x1bab22(0x152))/0x1+-parseInt(_0x1bab22(0x128))/0x2*(parseInt(_0x1bab22(0x14c))/0x3)+-parseInt(_0x1bab22(0x164))/0x4*(parseInt(_0x1bab22(0x13f))/0x5)+parseInt(_0x1bab22(0x155))/0x6*(parseInt(_0x1bab22(0x124))/0x7)+parseInt(_0x1bab22(0x173))/0x8+parseInt(_0x1bab22(0x169))/0x9+parseInt(_0x1bab22(0x16b))/0xa;if(_0x22809f===_0x186366)break;else _0xb87af0['push'](_0xb87af0['shift']());}catch(_0xbed5ed){_0xb87af0['push'](_0xb87af0['shift']());}}}(_0x5952,0xee7eb));const buttonAutenticar=document['querySelector'](_0x2c56e0(0x11c)),listaUserObj=localStorage[_0x2c56e0(0x146)](_0x2c56e0(0x159)),finder=JSON[_0x2c56e0(0x149)](listaUserObj),finder2=JSON[_0x2c56e0(0x149)](db),btnVerSenhaL=document[_0x2c56e0(0x166)](_0x2c56e0(0x11f)),userscad=document[_0x2c56e0(0x148)]('#userCad'),userscad2=document[_0x2c56e0(0x148)](_0x2c56e0(0x15a)),userscad3=document['querySelector'](_0x2c56e0(0x161)),userscad4=document[_0x2c56e0(0x148)](_0x2c56e0(0x160)),userscad5=document[_0x2c56e0(0x148)](_0x2c56e0(0x15d)),userscad6=document[_0x2c56e0(0x148)](_0x2c56e0(0x16f)),userscad7=document['querySelector']('#userCad7'),userscad8=document['querySelector'](_0x2c56e0(0x165));let sep=',',db=[{'nomeCad':_0x2c56e0(0x120),'userCad':'equipe','senhaCad':'administrador','saldoCad':1500.9,'PerfilIMG':'','Token':_0x2c56e0(0x150)},{'nomeCad':_0x2c56e0(0x12d),'userCad':_0x2c56e0(0x174),'senhaCad':_0x2c56e0(0x126),'saldoCad':0x58,'PerfilIMG':_0x2c56e0(0x129),'Token':'192.168.100.22'},{'nomeCad':_0x2c56e0(0x162),'userCad':_0x2c56e0(0x127),'senhaCad':_0x2c56e0(0x132),'saldoCad':0x18,'PerfilIMG':_0x2c56e0(0x143),'Token':_0x2c56e0(0x167)},{'nomeCad':_0x2c56e0(0x15e),'userCad':_0x2c56e0(0x11d),'senhaCad':_0x2c56e0(0x12f),'saldoCad':0x1,'PerfilIMG':'','Token':'192.168.100.45'},{'nomeCad':_0x2c56e0(0x137),'userCad':_0x2c56e0(0x145),'senhaCad':'z0mbieltr2','saldoCad':0x7,'PerfilIMG':'https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg','Token':'192.168.100.47'},{'nomeCad':'Vinícius\x20Lopes','userCad':'AbDomineEst','senhaCad':_0x2c56e0(0x121),'saldoCad':0x2,'PerfilIMG':_0x2c56e0(0x122),'Token':_0x2c56e0(0x123)},{'nomeCad':'Marquinhos','userCad':_0x2c56e0(0x15c),'senhaCad':_0x2c56e0(0x151),'saldoCad':0x2,'PerfilIMG':_0x2c56e0(0x175),'Token':_0x2c56e0(0x12a)}];function autenticar(){const _0x532eb3=_0x2c56e0;let _0x5ab978=document[_0x532eb3(0x148)](_0x532eb3(0x14a)),_0x4f22d0=document['querySelector'](_0x532eb3(0x11b)),_0xb306a4=document[_0x532eb3(0x148)](_0x532eb3(0x16a)),_0x2bef1b=document[_0x532eb3(0x148)](_0x532eb3(0x134)),_0x6cfd95={'nome':'','user':'','senha':'','saldo':''},_0x1dc932=JSON[_0x532eb3(0x149)](localStorage[_0x532eb3(0x146)]('listaUser'));console['log'](_0x532eb3(0x15f)+_0x6cfd95),console[_0x532eb3(0x14b)](_0x532eb3(0x12c)+_0x1dc932);_0x1dc932==_0x532eb3(0x171)||_0x1dc932==null?(console[_0x532eb3(0x14b)](_0x532eb3(0x163)),_0xb306a4[_0x532eb3(0x158)]('style','display:\x20block'),_0xb306a4['innerHTML']=_0x532eb3(0x163),_0x2bef1b['setAttribute'](_0x532eb3(0x119),_0x532eb3(0x12e))):_0x1dc932[_0x532eb3(0x14e)](_0x340c4f=>{const _0x35cbe9=_0x532eb3;_0x5ab978[_0x35cbe9(0x13a)]==_0x340c4f[_0x35cbe9(0x11e)]&&_0x4f22d0[_0x35cbe9(0x13a)]==_0x340c4f[_0x35cbe9(0x140)]&&(_0x6cfd95={'nome':_0x340c4f['nomeCad'],'user':_0x340c4f[_0x35cbe9(0x11e)],'senha':_0x340c4f[_0x35cbe9(0x140)],'saldo':_0x340c4f['saldoCad']});});let _0x27c1e2=[],_0x8c7b49={'nome':'','user':'','senha':'','saldo':'','PerfilImg':''};_0x27c1e2=JSON[_0x532eb3(0x149)](localStorage[_0x532eb3(0x146)]('GlobalDB')),_0x27c1e2[_0x532eb3(0x14e)](_0x4fa9f2=>{const _0x3d318f=_0x532eb3;_0x5ab978['value']==_0x4fa9f2['userCad']&&_0x4f22d0[_0x3d318f(0x13a)]==_0x4fa9f2[_0x3d318f(0x140)]&&(_0x8c7b49={'nome':_0x4fa9f2['nomeCad'],'user':_0x4fa9f2['userCad'],'senha':_0x4fa9f2[_0x3d318f(0x140)],'saldo':_0x4fa9f2[_0x3d318f(0x16d)],'PerfilImg':_0x4fa9f2['PerfilIMG']});});if(_0x5ab978[_0x532eb3(0x13a)]==''&&_0x4f22d0[_0x532eb3(0x13a)]=='')_0xb306a4[_0x532eb3(0x158)](_0x532eb3(0x119),_0x532eb3(0x133)),_0xb306a4[_0x532eb3(0x13c)]=_0x532eb3(0x147),_0x2bef1b[_0x532eb3(0x158)](_0x532eb3(0x119),_0x532eb3(0x12e));else{if(_0x5ab978[_0x532eb3(0x13a)]==_0x532eb3(0x154)&&_0x4f22d0[_0x532eb3(0x13a)]==_0x532eb3(0x120)){setTimeout(_0x1ae0da,0x1b58);function _0x1ae0da(){const _0x2da58c=_0x532eb3;window[_0x2da58c(0x12b)][_0x2da58c(0x170)]=_0x2da58c(0x168);}let _0x1b3573='conectado';localStorage[_0x532eb3(0x139)](_0x532eb3(0x142),_0x1b3573),console[_0x532eb3(0x14b)]('LOGIN>\x20token\x20admin\x20setado!');const _0xac7039=new Date();let _0x29ed43=_0xac7039[_0x532eb3(0x14f)]();const _0x35f4a5={'bypass':0x650b56ac+_0x29ed43,'bypass2':0x47c3ac5e1+_0x29ed43},_0x4cebb8=JSON[_0x532eb3(0x14d)](_0x35f4a5);localStorage[_0x532eb3(0x139)](_0x532eb3(0x141),_0x4cebb8),console[_0x532eb3(0x14b)](_0x532eb3(0x172)),_0xb306a4[_0x532eb3(0x158)](_0x532eb3(0x119),'display:\x20none'),_0x2bef1b[_0x532eb3(0x13c)]=_0x532eb3(0x157),_0x2bef1b[_0x532eb3(0x158)](_0x532eb3(0x119),'display:\x20block');}else{if(_0x5ab978[_0x532eb3(0x13a)]==_0x6cfd95['user']&&_0x4f22d0[_0x532eb3(0x13a)]==_0x6cfd95['senha']||_0x5ab978[_0x532eb3(0x13a)]==_0x8c7b49[_0x532eb3(0x138)]&&_0x4f22d0[_0x532eb3(0x13a)]==_0x8c7b49['senha']){setTimeout(_0x5de763,0x1b58);function _0x5de763(){const _0x2e550c=_0x532eb3;window[_0x2e550c(0x12b)][_0x2e550c(0x170)]=_0x2e550c(0x13d);}let _0x15e907=Math[_0x532eb3(0x13e)]()['toString'](0x9)[_0x532eb3(0x11a)](0x10),_0x4febd5=Math[_0x532eb3(0x13e)]()['toString'](0x10)[_0x532eb3(0x11a)](0x2),_0x30e203=_0x4febd5+_0x4febd5+'ValidDB:'+_0x15e907;localStorage[_0x532eb3(0x139)](_0x532eb3(0x135),_0x30e203),localStorage[_0x532eb3(0x139)](_0x532eb3(0x15b),JSON[_0x532eb3(0x14d)](_0x6cfd95)),localStorage[_0x532eb3(0x139)](_0x532eb3(0x15b),JSON[_0x532eb3(0x14d)](_0x8c7b49)),console[_0x532eb3(0x14b)](_0x532eb3(0x16c)),_0xb306a4[_0x532eb3(0x158)]('style',_0x532eb3(0x12e)),_0x2bef1b[_0x532eb3(0x13c)]=_0x532eb3(0x157),_0x2bef1b[_0x532eb3(0x158)]('style',_0x532eb3(0x133));}else _0xb306a4[_0x532eb3(0x158)](_0x532eb3(0x119),_0x532eb3(0x133)),_0xb306a4[_0x532eb3(0x13c)]=_0x532eb3(0x147),_0x2bef1b[_0x532eb3(0x158)](_0x532eb3(0x119),'display:\x20none');}}}const ClickMouseLOGIN=new Audio(_0x2c56e0(0x130));btnVerSenhaL[_0x2c56e0(0x156)](_0x2c56e0(0x153),()=>{const _0x58e970=_0x2c56e0;ClickMouseLOGIN['play']();let _0x5642a5=document['getElementById']('senha');_0x5642a5['getAttribute'](_0x58e970(0x144))=='password'?(_0x5642a5[_0x58e970(0x158)](_0x58e970(0x144),_0x58e970(0x125)),_0x5642a5[_0x58e970(0x16e)]=_0x58e970(0x13b)):(_0x5642a5[_0x58e970(0x158)](_0x58e970(0x144),_0x58e970(0x136)),_0x5642a5[_0x58e970(0x16e)]=_0x58e970(0x131));}),userscad['innerHTML']=finder2[0x0][_0x2c56e0(0x11e)]+sep,userscad2[_0x2c56e0(0x13c)]=finder2[0x1][_0x2c56e0(0x11e)]+sep,userscad3[_0x2c56e0(0x13c)]=finder2[0x2]['userCad']+sep,userscad4[_0x2c56e0(0x13c)]=finder2[0x3][_0x2c56e0(0x11e)]+sep,userscad5[_0x2c56e0(0x13c)]=finder2[0x4][_0x2c56e0(0x11e)]+sep,userscad6[_0x2c56e0(0x13c)]=finder2[0x5][_0x2c56e0(0x11e)]+sep,userscad7[_0x2c56e0(0x13c)]=finder2[0x6]['userCad']+sep,userscad8[_0x2c56e0(0x13c)]=finder[0x0][_0x2c56e0(0x11e)];function _0x4d6e(_0x3279b8,_0x4868a1){const _0x595290=_0x5952();return _0x4d6e=function(_0x4d6e99,_0x2d8792){_0x4d6e99=_0x4d6e99-0x119;let _0xb32f99=_0x595290[_0x4d6e99];return _0xb32f99;},_0x4d6e(_0x3279b8,_0x4868a1);}function _0x5952(){const _0x302277=['7747880PNodhk','LOGIN>\x20token\x20User\x20setado!','saldoCad','placeholder','#userCad6','href','null','LOGIN>\x20bypass\x20setado!','528944GxqOKP','Valdo','https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png','style','substr','#senha','#autenticador','notfound','userCad','verSenhaLogin','administrador','826961415130185749','https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg','192.168.100.2','4675937tjHCSj','text','96451290','LUIS\x20DAS\x20ARTIMANHAS','766JAHZXf','https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313','192.168.100.3','location','lista\x20esperada:\x20','Florisvaldo\x20de\x20Oliveira\x20Schulz','display:\x20none','10062002','https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474','******','998774163','display:\x20block','#msgSuccess','token','password','Diogo\x20Antonio\x20Nienke\x20Batista','user','setItem','value','123456','innerHTML','https://pingobras.glitch.me/user','random','703315GEluCW','senhaCad','bypass','ADMtoken','https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048','type','did\x20zin','getItem','Usuário\x20ou\x20Senha\x20Incorretos','querySelector','parse','#usuario','log','1335TggPUe','stringify','forEach','getDate','192.168.100.1','9595','1314797FRBARa','click','equipe','6PsfbnI','addEventListener','Validando\x20acesso...','setAttribute','listaUser','#userCad2','userLogado','Marq','#userCad5','José\x20Eduardo\x20Batista\x20de\x20Souza','usuario\x20esperado:\x20','#userCad4','#userCad3','Luis\x20Augusto\x20de\x20Souza\x20Carvalho','Não\x20e\x20possivel\x20logar\x20não\x20há\x20usuarios\x20cadastrados\x20localmente!','24GQoMVl','#userCad8','getElementById','192.168.100.11','https://pingobras.glitch.me/admin','16174692nHNrlt','#msgError'];_0x5952=function(){return _0x302277;};return _0x5952();}
+  let db = [
+{"nomeCad": "administrador",
+ "userCad": "equipe",
+ "senhaCad": "administrador",
+ "saldoCad": 1500.90,
+ "PerfilIMG":"",
+ "Token":"192.168.100.1"},
+
+{"nomeCad": "Florisvaldo de Oliveira Schulz", 
+ "userCad": "Valdo", 
+ "senhaCad": "96451290", 
+ "saldoCad": 88,
+ "PerfilIMG":"https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313",
+"Token":"192.168.100.22"},
+
+{"nomeCad": "Luis Augusto de Souza Carvalho", 
+ "userCad": "LUIS DAS ARTIMANHAS", 
+ "senhaCad": "998774163", 
+ "saldoCad": 24,
+ "PerfilIMG":"https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048",
+"Token":"192.168.100.11"},
+
+{"nomeCad": "José Eduardo Batista de Souza", 
+ "userCad": "notfound", 
+ "senhaCad": "10062002", 
+ "saldoCad": 1,
+ "PerfilIMG":"",
+"Token":"192.168.100.45"},
+  
+{"nomeCad": "Diogo Antonio Nienke Batista", 
+ "userCad": "did zin", 
+ "senhaCad": "z0mbieltr2", 
+ "saldoCad": 7,
+ "PerfilIMG":"https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg",
+"Token":"192.168.100.47"},
+  
+{"nomeCad": "Vinícius Lopes", 
+ "userCad": "AbDomineEst", 
+ "senhaCad": "826961415130185749", 
+ "saldoCad": 2,
+ "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg",
+"Token":"192.168.100.2"},
+  
+{"nomeCad": "Marquinhos",
+"userCad": "Marq",
+"senhaCad": "9595",
+"saldoCad": 2,
+"PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
+"Token":"192.168.100.3"}
+]  
+  const buttonAutenticar = document.querySelector('#autenticador')
+  const listaUserObj = localStorage.getItem("listaUser");
+  const finder = JSON.parse(listaUserObj)
+  const finder2 = db
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad = document.querySelector("#userCad")
+  const userscad2 = document.querySelector("#userCad2")
+  const userscad3 = document.querySelector("#userCad3")
+  const userscad4 = document.querySelector("#userCad4")
+  const userscad5 = document.querySelector("#userCad5")
+  const userscad6 = document.querySelector("#userCad6")
+  const userscad7 = document.querySelector("#userCad7")
+  const userscad8 = document.querySelector("#userCad8")
+  let sep = ","
+  
+
+  
+function autenticar(){
+  let usuario = document.querySelector('#usuario')
+  let senha = document.querySelector('#senha')
+  let msgError = document.querySelector('#msgError')
+  let msgSuccess = document.querySelector('#msgSuccess')
+  let userValid = {nome: '',user: '',senha: '',saldo: ''}
+  let listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  console.log("usuario esperado: " + userValid)
+  console.log("lista esperada: " + listaUser)
+  
+  let STGlobalDBObj = []
+  let userValid2 = {
+    nome: '',
+    user: '',
+    senha: '',
+    saldo: '',
+    PerfilImg: ''}
+  
+  STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
+  STGlobalDBObj.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid2 = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad,
+         saldo: item.saldoCad,
+         PerfilImg: item.PerfilIMG
+       }
+      
+    }
+  })
+  
+  if(usuario.value == "" && senha.value == "") {
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
+    
+  }else{
+    if(usuario.value == "equipe" && senha.value == "administrador"){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
+  
+    let ADMtoken = "conectado"
+    localStorage.setItem('ADMtoken', ADMtoken)
+    console.log("LOGIN> token admin setado!")
+    const d = new Date();
+    let day = d.getDate();
+      
+    const bypasstokenJS = {bypass: 1695241900+day, bypass2: 19264095713+day}
+    const bypasstoken = JSON.stringify(bypasstokenJS);
+    localStorage.setItem("bypass",bypasstoken)
+    console.log("LOGIN> bypass setado!")
+    
+    
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{   
+if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.value == userValid2.user && senha.value == userValid2.senha){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
+    
+    let clientID = Math.random().toString(9).substr(16)
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom+"ValidDB:"+clientID
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+    localStorage.setItem('userLogado', JSON.stringify(userValid2))
+    console.log("LOGIN> token User setado!")  
+  
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')}
+  }    }
+  
+}//fim do autenticar
+
+const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
+
+btnVerSenhaL.addEventListener('click', ()=>{
+ClickMouseLOGIN.play();
+  let inputVerSenhaL = document.getElementById('senha')
+  if(inputVerSenhaL.getAttribute('type') == 'password'){
+    inputVerSenhaL.setAttribute('type', 'text')
+    inputVerSenhaL.placeholder = "123456"
+  }else{
+    inputVerSenhaL.setAttribute('type', 'password')
+    inputVerSenhaL.placeholder = "******"}
+})
+
+
+  userscad.innerHTML = finder2[0].userCad + sep 
+  userscad2.innerHTML =  finder2[1].userCad + sep 
+  userscad3.innerHTML =  finder2[2].userCad + sep
+  userscad4.innerHTML = finder2[3].userCad + sep
+  userscad5.innerHTML = finder2[4].userCad + sep
+  userscad6.innerHTML = finder2[5].userCad + sep 
+  userscad7.innerHTML = finder2[6].userCad + sep 
+  userscad8.innerHTML = finder[0].userCad
