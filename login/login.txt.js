@@ -1,7 +1,8 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
+  const STGlobalDBObj = localStorage.getItem('GlobalDB')
   const finder = JSON.parse(listaUserObj)
-  const finder2 = db
+  const finder2 = JSON.parse(STGlobalDBObj)
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
   const userscad = document.querySelector("#userCad")
   const userscad2 = document.querySelector("#userCad2")
@@ -12,8 +13,7 @@
   const userscad7 = document.querySelector("#userCad7")
   const userscad8 = document.querySelector("#userCad8")
   let sep = ","
-  let STGlobalDBObj = JSON.stringfy(db)
-
+  
   
 function autenticar(){
   let usuario = document.querySelector('#usuario')
