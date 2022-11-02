@@ -7,7 +7,8 @@ let labelSecurity = document.getElementById("security");
 let tokenR = localStorage.getItem("ADMtoken");
 let site = document.querySelector(".site-altura"); 
 let labelAlarm = document.querySelector("alert");
-
+const d = new Date();
+let day = d.getDate();
 
 function refreshDesconect() {
 labelSecurity.innerHTML = "ATIVADA"
@@ -36,7 +37,8 @@ const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
   
-if(bypass == 1695241900 || bypass.bypass2 == 19264095713) {
+  
+if(bypass == 1695241900-day || bypass.bypass2 == 19264095713-day) {
 console.log("AUTH/LOG>ADMIN conectado!")
 }else {
 const tokenSair ="desconectado";
