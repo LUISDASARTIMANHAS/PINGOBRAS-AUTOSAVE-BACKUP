@@ -36,7 +36,7 @@ const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
   
-if(bypass == 1541129000 || bypass.bypass2 == 65810473921) {
+if(bypass == 1695241900 || bypass.bypass2 == 19264095713) {
 console.log("AUTH/LOG>ADMIN conectado!")
 }else {
 const tokenSair ="desconectado";
