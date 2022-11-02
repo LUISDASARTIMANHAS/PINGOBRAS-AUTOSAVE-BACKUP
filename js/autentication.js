@@ -44,3 +44,15 @@ function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/log
 }
 
 }
+
+if(token == "conectado") {
+  let status = "Status: Conectado"
+  const admstatus = document.getElementById("adminStatus");
+ admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: green')
+}else{
+  const status = "Status: Não conectado"
+  const admstatus = document.getElementById("adminStatus");
+  admstatus.innerHTML = status;
+  admstatus.setAttribute('style', 'color: red')
+}
