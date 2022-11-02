@@ -1,11 +1,14 @@
 let bypassJson2 = localStorage.getItem("bypass");
 let bypassST = JSON.parse(bypassJson2)
 let token = localStorage.getItem("ADMtoken");
-
+const d3 = new Date();
+let day3 = d3.getDate();
+let auth3 = 1695241900+day3
+let auth4 = 19264095713+day3
 
 function autentication(){
   if(token == "conectado") {
-    setTimeout(alert("admin autorizado"),7000)    
+    setTimeout(alert("admin autorizado code:token"),7000)    
     window.location.href = ("https://pingobras.glitch.me/admin")
 }else {
 const tokenSair ="desconectado";
@@ -24,8 +27,8 @@ const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
   
-if(bypassST == 1541129000 || bypassST.bypass2 == 65810473921) {
-    setTimeout(alert("admin autorizado"),7000)    
+if(bypassST == auth3 || bypassST.bypass2 == auth4) {
+    setTimeout(alert("admin autorizado code:bypass"),7000)    
     window.location.href = ("https://pingobras.glitch.me/admin")
 }else {
 const tokenSair ="desconectado";
@@ -35,17 +38,17 @@ const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
 }
   
+  
+}
+
+
 if(bypassST != null || bypassST.bypass2 != null ) {
-    setTimeout(alert("admin autorizado"),7000)    
-    window.location.href = ("https://pingobras.glitch.me/admin")
 }else {
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 
 const myTimeout = setTimeout(REDIRECIONAR, 10000);
 function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/login"}
-}
-
 }
 
 if(token == "conectado") {
