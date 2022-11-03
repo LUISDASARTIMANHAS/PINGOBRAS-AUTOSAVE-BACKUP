@@ -1,4 +1,6 @@
+const loopToken = setInterval(refreshDesconect, 2000);
 
+function refreshDesconect() {
 let token = localStorage.getItem('token')
 let labelAlarm = document.querySelector("alert");
 let head = document.querySelector("nav") 
@@ -19,3 +21,6 @@ head.style.display = "none"
 }else{
  localStorage.setItem( 'token',token);
 }
+  
+  
+}//Fim do Refresh desconectar
