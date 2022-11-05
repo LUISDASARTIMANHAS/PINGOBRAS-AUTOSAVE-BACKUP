@@ -83,7 +83,7 @@ function perdeu() {
     setTimeout(Reload,9000)
     function Reload(){
       if(autoReplay == "sim"){
-      window.location.href = "https://pingobras.glitch.me/jogos/mario.html"}
+      window.location.href = "https://pingobras.glitch.me/jogos/web/mario.html"}
     }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80||pipePlantPosition < "-17" && marioPosition >= 90){
