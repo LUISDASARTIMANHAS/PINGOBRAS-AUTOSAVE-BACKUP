@@ -74,6 +74,17 @@ senha{
    font-size: 17pt;
    color: green;
 }
+.senhaNum{
+  
+}
+.ofuscar{
+  color: transparent; 
+  text-shadow: black 0px 0px 10px;
+}
+.ofuscar:hover{
+  color: black;
+  text-shadow: none; 
+}
 saldo{
    display: inline-block;
    text-align: center;
