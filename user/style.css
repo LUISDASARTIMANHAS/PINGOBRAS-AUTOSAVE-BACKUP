@@ -67,19 +67,27 @@ usuario{
   display: inline-block;
    text-align: center;
    font-size: 17pt;
+   align-items: center;
+   width: 100%;
 }
 senha{
   display: inline-block;
    text-align: center;
    font-size: 17pt;
    color: green;
+   align-items: center;
+   width: 100%;
 }
 .senhaNum{
-  
+   text-align: center;
+   font-size: 30px;
+   color: green;
+   width: 100%;
+   border-bottom: 3px dashed orange;
 }
 .ofuscar{
   color: transparent; 
-  text-shadow: black 0px 0px 10px;
+  text-shadow: black 0px 0px 15px;
 }
 .ofuscar:hover{
   color: black;
@@ -88,6 +96,8 @@ senha{
 saldo{
    display: inline-block;
    text-align: center;
+   align-items: center;
+   width: 100%;
    font-size: 17pt;
    color: yellow;
 }
