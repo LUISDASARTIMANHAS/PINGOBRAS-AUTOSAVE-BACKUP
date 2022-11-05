@@ -797,13 +797,11 @@ footer {
 - Toggling this class on and off will move it down and up again
 - The button transition property above determines the speed of the translate (500ms)
 */
-
-.dipped {
+.dipped{
   background: green;
   transform: translateY(5px);
   cursor: wait;
 }
-
 .img-click {
   cursor: pointer;
   background: white;

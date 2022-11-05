@@ -248,11 +248,6 @@ input:hover{
 .illustration:active {
   transform: translateY(5px);
 }
-.dipped {
-  background: green;
-  transform: translateY(5px);
-}
-
 
 
 fieldset {

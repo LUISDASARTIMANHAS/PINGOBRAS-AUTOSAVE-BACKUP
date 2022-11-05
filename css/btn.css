@@ -341,10 +341,6 @@
   color: gold;
 }
 
-.dipped {
-  background: green;
-  transform: translateY(5px);
-}
 .btnDeslogar{
  float:right;
  cursor:pointer;

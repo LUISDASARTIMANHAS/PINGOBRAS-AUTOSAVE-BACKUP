@@ -104,7 +104,7 @@ listDEV.style.display = 'block';
 
 function pausePingobras(){
 const music = document.getElementById('pingobras-music');
-music.pause
+music.pause()
   
 }
 
