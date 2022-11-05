@@ -799,9 +799,35 @@ footer {
 */
 .muted{
  background:red; 
+ font-style:italic;
+ text-transform:capitalize;
+ text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
+ background-color:#8e44ad;
+ border-radius:25px;
+ border-top-width:5px;
+ border-top-color:yellow;
+ border-right-width:5px;
+ border-right-color:red;
+ border-bottom-color:green;
+ border-bottom-width:5px;
+ border-bottom-style:solid;
+ border-left-color:blue;
+ border-left-width:5px;
+ overflow:hidden;
+ width:50px;
+ height:50px;
 }
 .muted:hover{
-  opacity: 0.6;
+  opacity: 0.8;
+  border-top-width:5px;
+ border-top-color:red;
+ border-right-width:5px;
+ border-right-color:yellow;
+ border-bottom-color:blue;
+ border-bottom-width:5px;
+ border-bottom-style:solid;
+ border-left-color:green;
+ border-left-width:5px;
 }
 .dipped{
   background: green;
