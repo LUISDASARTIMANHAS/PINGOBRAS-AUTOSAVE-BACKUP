@@ -12,7 +12,7 @@ att.value = "direitos"
 
 newDireitos.setAttributeNode(att);  
 document.body.appendChild(newDireitos);
-}  
+}else  
   
 direitos.classList.add("direitos")
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+

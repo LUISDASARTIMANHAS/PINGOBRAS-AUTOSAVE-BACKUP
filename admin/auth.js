@@ -13,7 +13,9 @@ let auth1 = 1695241900+day2
 let auth2 = 19264095713+day2
 
 function refreshDesconect() {
-labelSecurity.innerHTML = "ATIVADA"
+if(!labelSecurity){
+console.warn("Deu Pau Na Segurança Do Admin")
+}else{labelSecurity.innerHTML = "ATIVADA"}
   
 if(tokenR == "conectado") {
 console.log("AUTH/LOG>ADMIN conectado!")
