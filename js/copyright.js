@@ -4,6 +4,7 @@ function refreshcopy() {
 let ano = new Date().getFullYear();  
 let navegadorLang = navigator.language;
 const direitos = document.querySelector("#direitos");
+const footer = document.querySelector("footer")
   
 if(!direitos){
 const newDireitos = document.createElement("div");
@@ -11,8 +12,8 @@ const att = document.createAttribute("id");
 att.value = "direitos"
 
 newDireitos.setAttributeNode(att);  
-document.body.appendChild(newDireitos);
-}else  
+footer.appendChild(newDireitos);
+}else{  
   
 direitos.classList.add("direitos")
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
@@ -35,6 +36,6 @@ let user = navigator.userAgent
 if(user == block){
 alert("USER BLOCKED")
 window.location.href = "https://google.com"
-}
+}}
   
-}
+}//Fim do refreshCopy
