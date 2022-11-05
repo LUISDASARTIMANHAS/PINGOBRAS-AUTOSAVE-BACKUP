@@ -135,44 +135,43 @@ getIpClient();
 </script>    
   </api>
   <script>
-  let refreshNetReceived2 = setInterval(RefreshNet,1000)
-  function RefreshNet(){
+let refreshNetReceived2 = setInterval(RefreshNet,5000)
+function RefreshNet(){
 const networkST = localStorage.getItem("Network")
 const network = JSON.parse(networkST)
-    
-  }
-  </script>
-  <script>
-const bar = document.getElementById("barMBPS")
 const MBpsCalc = network.MBps/1000
-let DBUsado = MBps
+let MBpsNet = MBpsCalc.toString(2)
+console.log(MBpsNet)
+
+const bar = document.getElementById("barMBPS")
 
 var width = 0;
-var id = setInterval(frame, 100);
+var id = setInterval(frame, 10);
 
 function frame() {
-if(width >= 12){
+if(width >= 100){
 bar.style.background = "blue"
 }
-if(width >= 25){
+if(width >= 200){
 bar.style.background = "yellow"
 }
-if(width >= 50){
+if(width >= 300){
 bar.style.background = "orange"
 }
-if(width >= 75){
+if(width >= 400){
 bar.style.background = "red"
 }
-if(width >= 99){
+if(width >= 500){
 bar.style.background = "purple"
 }
   
-if (width >= DBUsado) {
+if (width >= MBpsNet) {
 clearInterval(id);
 }else{
 width++;
-bar.style.width = width + "%";
-bar.innerHTML = width + "%/500MB";}
+bar.style.width = width + "px";
+bar.innerHTML = width + "/500MB";}
+}
 }
     </script>
 
