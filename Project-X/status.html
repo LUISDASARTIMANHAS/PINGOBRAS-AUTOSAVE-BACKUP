@@ -11,7 +11,7 @@
     <links></links>
 <title>Gamer City STATUS</title>
   </head>
-  <body>
+  <body style="background: black;">
 <div class="site-altura">
 <div class="conteudo" role="main">
 
@@ -24,11 +24,18 @@ CODE: <js verde id="">200</js>
 <br>
   
 <div class="boxbar" style="text-align: center; width:75%;">
-        Armazenamento Usado
-          <div class="bar" id="bar">0%</div>
-         500MB
-        </div>
-      
+Armazenamento Usado
+<div style="color:black;" class="bar" id="bar">0%</div>
+500MB
+</div>
+  
+<br>
+  
+<div class="boxbar" style="text-align: center; width:75%;">
+Total De Views 
+<div style="color:black; background: red;" class="bar" id="barViews">0</div>
+</div>
+  
        <br>
   
 Pais: <js verde id="pais">Sem informações</js>
@@ -63,5 +70,71 @@ async function getIpClient() {
 }
 
 getIpClient();
+  </script>
+  <script>
+  const bar = document.getElementById("bar")
+let DBUsado = 28
+
+var width = 0;
+var id = setInterval(frame, 100);
+
+function frame() {
+if(width >= 12){
+bar.style.background = "blue"
+}
+if(width >= 25){
+bar.style.background = "yellow"
+}
+if(width >= 50){
+bar.style.background = "orange"
+}
+if(width >= 75){
+bar.style.background = "red"
+}
+if(width >= 99){
+bar.style.background = "purple"
+}
+  
+if (width >= DBUsado) {
+clearInterval(id);
+}else{
+width++;
+bar.style.width = width + "%";
+bar.innerHTML = width + "%";}
+}
+
+  </script>
+  <script>
+  const barV = document.getElementById("barViews")
+let views = 17
+
+var width = 0;
+var id = setInterval(frame, 100);
+
+function frame() {
+if(width >= 12){
+barV.style.background = "b"
+}
+if(width >= 25){
+barV.style.background = "yellow"
+}
+if(width >= 50){
+barV.style.background = "orange"
+}
+if(width >= 75){
+barV.style.background = "green"
+}
+if(width >= 99){
+barV.style.background = "purple"
+}
+  
+if (width >= views) {
+clearInterval(id);
+}else{
+width++;
+barV.style.width = width + "%";
+barV.innerHTML = width + "%";}
+}
+
   </script>
 </html>

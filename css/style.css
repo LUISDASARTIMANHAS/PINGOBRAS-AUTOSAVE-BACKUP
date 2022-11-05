@@ -855,6 +855,18 @@ footer {
   height: 75%;
   transition: all 2s ease-out;
 }
+.boxbar {
+  width: 45%;
+  background-color: grey;
+}
+.bar {
+  width: 10%;
+  height: 30px;
+  background: green;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
 .titulo-do-produto {
   font-size: 20px;
   color: black;
