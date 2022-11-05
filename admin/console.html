@@ -133,9 +133,19 @@ function closeNav() {
 
 getIpClient();
 </script>    
-<script>
+  </api>
+  <script>
+  let refreshNetReceived2 = setInterval(RefreshNet,1000)
+  function RefreshNet(){
+const networkST = localStorage.getItem("Network")
+const network = JSON.parse(networkST)
+    
+  }
+  </script>
+  <script>
 const bar = document.getElementById("barMBPS")
-let DBUsado = 28
+const MBpsCalc = network.MBps/1000
+let DBUsado = MBps
 
 var width = 0;
 var id = setInterval(frame, 100);
@@ -165,5 +175,5 @@ bar.style.width = width + "%";
 bar.innerHTML = width + "%/500MB";}
 }
     </script>
-  </api>
+
 </html>
