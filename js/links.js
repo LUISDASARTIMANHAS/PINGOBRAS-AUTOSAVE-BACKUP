@@ -1,6 +1,8 @@
 let ms = "000"
-let s
-const looplinks = setInterval(refreshlinks, 60*5+ms);
+let sec = "60"
+let min = 2
+const timeRefresh = min*sec+ms
+const looplinks = setInterval(refreshlinks, timeRefresh);
 const links = document.querySelector("links");
 
 
