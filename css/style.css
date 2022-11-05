@@ -136,6 +136,12 @@ js{
 [purple]{
 background: purple;
 }
+[preto]{
+  color: black;
+}
+[black]{
+background: black;
+}
 [border]{
   padding: 4px;
   border: 2px solid black;
