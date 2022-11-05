@@ -15,7 +15,8 @@ scripts.innerHTML =
 "<script src=js/time.js defer></script>"+
 "<script src=js/worker.js defer></script>"+
 "<script src=GlobalDB.js defer></script>"+
-"<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>"
+"<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>"+
+"<script src=https://pingobras.glitch.me/js/copyright.js defer></script>"
 
 function refreshloadScripts() {
 scripts.innerHTML = 
@@ -27,5 +28,5 @@ scripts.innerHTML =
 "<script src=js/time.js defer></script>"+
 "<script src=js/worker.js defer></script>"+
 "<script src=GlobalDB.js defer></script>"+
-"<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>"  
+"<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>"+ 
 }//Fim do refresh Links
