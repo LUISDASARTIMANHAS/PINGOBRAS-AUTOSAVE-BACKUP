@@ -37,10 +37,6 @@ body {
           <p>Velocidade da Internet:</p>
           <p id="MBps" >SEM CONEXÃO MBps</p>
           <p id="GBps" >SEM CONEXÃO GBps</p>
-          MBPS
-          <div class="boxbar" style="text-align: center; width:100%;"> 
-          <div style="color:black; background: red;" class="bar" id="barMBPS">0</div>
-          </div>
           <script type="text/javascript" src="https://www.usersonline.org/uo-7cAbCCc9y19CAZ03-4-1.js"></script>
           <br>
           <img src="https://www.usersonline.org/selo/selo-uo.gif" alt="Users Online">
@@ -91,7 +87,6 @@ body {
     <script src="https://pingobras.glitch.me/js/script.js" defer></script>
     <script src="https://pingobras.glitch.me/js/STORAGE.js" defer></script>
     <script src="https://pingobras.glitch.me/js/autentication.js" defer></script>
-    <script src="https://pingobras.glitch.me/js/calcs.js" defer></script>
     <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
     <script src="https://pingobras.glitch.me/js/network.js" defer></script>
     <script src="https://pingobras.glitch.me/admin/console.js" defer></script>
@@ -134,45 +129,5 @@ function closeNav() {
 getIpClient();
 </script>    
   </api>
-  <script>
-let refreshNetReceived2 = setInterval(RefreshNet,5000)
-function RefreshNet(){
-const networkST = localStorage.getItem("Network")
-const network = JSON.parse(networkST)
-const MBpsCalc = network.MBps/1000
-let MBpsNet = MBpsCalc.toString(2)
-console.log(MBpsNet)
-
-const bar = document.getElementById("barMBPS")
-
-var width = 0;
-var id = setInterval(frame, 10);
-
-function frame() {
-if(width >= 100){
-bar.style.background = "blue"
-}
-if(width >= 200){
-bar.style.background = "yellow"
-}
-if(width >= 300){
-bar.style.background = "orange"
-}
-if(width >= 400){
-bar.style.background = "red"
-}
-if(width >= 500){
-bar.style.background = "purple"
-}
-  
-if (width >= MBpsNet) {
-clearInterval(id);
-}else{
-width++;
-bar.style.width = width + "px";
-bar.innerHTML = width + "/500MB";}
-}
-}
-    </script>
 
 </html>
