@@ -45,7 +45,7 @@
         
        <div class="boxbar" style="text-align: center; width:75%;">
         Armazenamento Usado
-          <div class="bar" id="bar">50%</div>
+          <div class="bar" id="bar">0%</div>
         </div>
         
          <footer>
@@ -55,6 +55,7 @@
         </footer>
       </div></div>
 </body>
+  <script src="script.js" defer></script>
   <script src="https://pingobras.glitch.me/js/links.js" defer></script>
   <script src="https://pingobras.glitch.me/js/script.js" defer></script>
   <script src="https://pingobras.glitch.me/js/functions.js" defer></script>
@@ -66,25 +67,4 @@
   <script src="https://pinguinho-host.glitch.me/bot.js" defer></script>
   <script src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
   </host>
-  <script>
-const bar = document.getElementById("bar")
-let porcent = bar.value
-
-bar.innerHHTML = porcent
-bar.style.width = porcent
-
-if(porcent < 25){
-bar.style.bacground = "green"
-}
-if(porcent < 50){
-bar.style.bacground = "yellow"
-}
-if(porcent < 75){
-bar.style.bacground = "orange"
-}
-if(porcent < 99){
-bar.style.bacground = "red"
-}
-  </script>        
-  
 </html>
