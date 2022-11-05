@@ -102,6 +102,12 @@ listDEV.style.display = 'block';
 })
 }
 
+function pausePingobras(){
+const music = document.getElementById('pingobras-music');
+music.pause
+  
+}
+
 
 //Events listener
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
