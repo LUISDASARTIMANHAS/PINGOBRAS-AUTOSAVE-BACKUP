@@ -23,16 +23,15 @@ CODE: <js verde id="">200</js>
   
 <br>
   
-<div class="boxbar" style="text-align: center; width:75%;">
 Armazenamento Usado
+<div class="boxbar" style="text-align: center; width:75%;">
 <div style="color:black;" class="bar" id="bar">0%</div>
-500MB
 </div>
   
 <br>
   
-<div class="boxbar" style="text-align: center; width:75%;">
-Total De Views 
+Total De Views
+<div class="boxbar" style="text-align: center; width:75%;"> 
 <div style="color:black; background: red;" class="bar" id="barViews">0</div>
 </div>
   
@@ -100,7 +99,7 @@ clearInterval(id);
 }else{
 width++;
 bar.style.width = width + "%";
-bar.innerHTML = width + "%";}
+bar.innerHTML = width + "%/500MB";}
 }
 
   </script>
@@ -113,7 +112,7 @@ var id = setInterval(frame, 100);
 
 function frame() {
 if(width >= 12){
-barV.style.background = "b"
+barV.style.background = "blue"
 }
 if(width >= 25){
 barV.style.background = "yellow"
@@ -133,7 +132,7 @@ clearInterval(id);
 }else{
 width++;
 barV.style.width = width + "%";
-barV.innerHTML = width + "%";}
+barV.innerHTML = width + "/500";}
 }
 
   </script>
