@@ -24,14 +24,9 @@ let last4 = LASTDEVICES.length - 4
 let last5 = LASTDEVICES.length - 5
 
 
-btntema.addEventListener('click', function() {
-      body.style.background = inputColor.value;
-      localStorage.setItem( 'UserBackground',inputColor.value);
-      body.style.color = 'black';
-  });
+
 function trocarPerfilImg(){
   let linkIMGPerfil = prompt("Insira O Link Da Foto De Perfil","https://")
-  perfilIcon.src = linkIMGPerfil;
   localStorage.setItem( 'UserPerfil',linkIMGPerfil);
 }
 
@@ -56,32 +51,25 @@ if(last == 5 || last > 5) {
 
 
 
-
+//account Setings
 if(userbg == "null") {
   body.style.background = "white"
 }else{
   body.style.background = userbg
   inputColor.value = userbg
 }
-
 if(perfilIconLink == "null") {
-  if(userLogadoImg2 == "null"||userLogadoImg2 == ""){
-    perfilIcon.src = perfilIconLink
-  }else{
-    perfilIcon.src = userLogadoImg2
-  }
-  alert("usuario sem perfil!")
   perfilIcon.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
-}else{
-  
 }
-
-
-let btnmostrarsenha = document.getElementById('mostrarsenha');
-btnmostrarsenha.addEventListener('click', function() {
-    if(senhaConta.style.display === 'block') {
-      senhaConta.style.display = 'none';
-  } else {
-      senhaConta.style.display = 'block';
-  }
+if(userLogadoImg2 == "null"||userLogadoImg2 == ""){
+    perfilIcon.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
+}else{
+    perfilIcon.src = userLogadoImg2
+}
+ 
+//events listener
+btntema.addEventListener('click', function() {
+      body.style.background = inputColor.value;
+      localStorage.setItem( 'UserBackground',inputColor.value);
+      body.style.color = 'black';
 });
