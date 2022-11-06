@@ -277,35 +277,3 @@ hr{
   padding: 15px;
   margin: -10px;
 }
-
-#msgError:hover{
-  background-color:purple;
-
-}
-
-#msgSuccess{
-  font-family:'Arial Black','Arial Bold',Gadget,sans-serif;
-  color: red;
-  padding: 10px;
-  border-radius: 4px;
-  font-size:20px;
- font-style:italic;
- text-transform:uppercase;
- text-align:center;
- text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
-  text-align: center;
-  color: limegreen;
-  background-color: lightgreen;
-  display: none;
-  border-style:solid;
- border-width:5px;
- border-top-color:white;
- border-right-color:red;
- border-bottom-color:yellow;
- border-left-color:blue;
- border-radius:25px;
- user-select: none;
-}
-#msgSuccess:hover{
-  background-color:purple;
-}
