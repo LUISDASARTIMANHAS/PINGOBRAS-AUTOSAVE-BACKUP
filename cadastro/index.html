@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3534/3534138.png" />
+    <link rel="stylesheet" href="cadastro/style.css"> 
     <links></links>
     
     <title>PINGOBRAS CADASTRO!</title>
@@ -15,7 +16,7 @@
    <div class="site-altura">
       <div class="conteudo" role="main">
   
-    <teladelogin>
+    <teladecadastro style="text-align:center; align-items: center;">
     <h1> PINGOBRAS CADASTRO </h1>
     <script type="text/javascript" 
                   src="https://usuariosonline.s12.com.br/uo-b7aay0C7Z27zdAd1-52-1.js">
@@ -24,14 +25,11 @@
           <img 
                src="https://usuariosonline.s12.com.br/selo/selo-uo.gif" 
                alt="usuários on-line">
-    <p vermelho> Alerta! A Criação De Conta É Local Atualmente,
-      E Só Pode Ser Acessada Pelo Seu Computador  </p>
-      <p amarelo> Para Que Seja Acessada Globalmente De Outros Computadores, 
-       E Necessario Fazer O Cadastro Pelo WA ou Discord Da Pingobras</p>
+      <p vermelho>E Necessario Fazer O Cadastro Pelo WA ou Discord Da Pingobras</p>
     <div id="msgError"></div>
     <div id="msgSuccess"></div>
     
-    <label-float>
+    <label-float hidden>
       <label 
            id="labelNome" 
            for="nome">
@@ -46,7 +44,7 @@
 
       <br>
       
-     <label-float>
+     <label-float hidden>
        <label 
             id="labelUsuario" 
             for="usuario">
@@ -62,7 +60,7 @@
 
       <br>
       
-     <label-float>
+     <label-float hidden>
        <label 
             id="labelSenha" 
             for="senha">
@@ -84,7 +82,7 @@
     
       <br>
       
-     <label-float>
+     <label-float hidden>
        <label 
             id="labelConfirmSenha" 
             for="confirmSenha">
@@ -106,23 +104,15 @@
 
       <br>
       
-     <button 
+     <button hidden
              style="width: 75%;"
              class="btn btn-cadastrar"
              onclick="cadastrar()">
        Cadastrar
   </button>
       
-      <br>
-      
-      <console style="display: block;">Leituras:
-      <js id="debugNome">Sem leituras</js>, 
-      <js id="debugUsuario">Sem leituras</js>, 
-      <js id="debugSenha">Sem leituras</js>
-      <js id="debugSenha2">Sem leituras</js>
-      </console>
       <a
-        class="btndc btn"
+        class="btndc btn cad"
         href="https://discord.gg/TUpNd6CQgg"
         target="_blank">
         <img
@@ -133,7 +123,7 @@
       </a>
       
       <a
-        class="btndc btn"
+        class="btndc btn cad"
         href="https://wa.me/55027995744791"
         target="_blank">
         <i style="padding: 0;
@@ -146,12 +136,12 @@
       </a>
       
         <a
-        class="btndc btn"
+        class="btndc btn cad"
         href="https://pingobras.glitch.me"
       >
         RETORNAR PARA PINGOBRAS
       </a>
-        </teladelogin>
+        </teladecadastro>
         
         
         <footer class="footer">

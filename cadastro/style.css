@@ -123,7 +123,21 @@ teladelogin{
   width: 75%;
   border-radius: 25px;
   z-index: 2;
-        }
+}
+teladeCadastro{
+  display: block;
+  padding: 15px;
+  background: #00000080;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  border-radius: 25px;
+  z-index: 2;
+}
+a.cad{
+  width: 100%;
+}
 .input-float{
       width: 100%;
       padding: 5px 5px;
