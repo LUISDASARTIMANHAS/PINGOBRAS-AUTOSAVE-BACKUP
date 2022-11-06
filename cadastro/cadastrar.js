@@ -78,17 +78,13 @@ confirmSenha.addEventListener('keyup', () => {
 })  
 
 
-
+//cadastramento
 function cadastrar(){
   let DBvalidNome = localStorage.getItem ('validNome')
   let DBvalidUsuario = localStorage.getItem ('validUsuario')
   let DBvalidSenha = localStorage.getItem ('validSenha')
   let DBvalidConfirmSenha = localStorage.getItem ('validConfirmSenha')
   
-document.querySelector('#debugNome').innerHTML = DBvalidNome
-document.querySelector('#debugUsuario').innerHTML = DBvalidUsuario
-document.querySelector('#debugSenha').innerHTML = DBvalidSenha
-document.querySelector('#debugSenha2').innerHTML = DBvalidConfirmSenha
   
   if(DBvalidNome == "true" & DBvalidUsuario == "true" & DBvalidSenha == "true" & DBvalidConfirmSenha == "true") {
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
@@ -112,6 +108,10 @@ document.querySelector('#debugSenha2').innerHTML = DBvalidConfirmSenha
   
 }
 
+
+
+
+//mostrar senhas
 btnMostrar.addEventListener('click', ()=>{
   let inputSenha = document.querySelector('#senha')
   if(inputSenha.getAttribute('type') == 'password'){
