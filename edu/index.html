@@ -28,8 +28,7 @@
 </head>
   <body style="background-image: url(https://image.shutterstock.com/image-illustration/edu-word-isolated-on-white-260nw-698216098.jpg); background-position: center;"> 
     <div class="site-altura">
-      <div class="conteudo" id="main" style="text-transform:capitalize;
-                                   text-align:center;" role="main">
+      <div class="conteudo" id="main" style="text-transform:capitalize; text-align:center;" role="main">
         
         <a hidden
           class="btnEdu btn"
@@ -166,8 +165,8 @@
         
         
   </div>
-    <div class="conteudo" id="error">
-      <msgerror>Favor Aguardar... O Sistema Está Adicionando Um Novo Trabalho!</msgerror>
+    <div class="conteudo">
+      <msgerror style="opacity: 1;" id="error">Favor Aguardar... O Sistema Está Adicionando Um Novo Trabalho!</msgerror>
       </div></div>
  </body> 
   <script src="https://pingobras.glitch.me/js/links.js" defer></script>
@@ -175,12 +174,11 @@
   <script>
     let adicionando = true
     let main = document.getElementById("main")
-    let errorLabel = document.getElementById("error")
+    let errorL = document.getElementById("error")
     
     if(adicionando == true){
-    alert("Favor Aguardar... O Sistema Está Adicionando Um Novo Trabalho!")
     main.style.display = "none"
-    main.style.display = "block"
+    errorL.style.display = "block"
     }else{
     alert("Carregando Arquivos...")
     }
