@@ -15,9 +15,9 @@ const filecreated = document.getElementById("filecreated");
 const filemodified = document.getElementById("filemodified");
 const Llink = document.getElementById("labelLink");
 
-
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
+if()
 let sizeCalc = UPDB.size/1000
 
 
