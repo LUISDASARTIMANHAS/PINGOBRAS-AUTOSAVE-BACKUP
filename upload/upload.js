@@ -17,23 +17,24 @@ const Llink = document.getElementById("labelLink");
 
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
-if()
-let sizeCalc = UPDB.size/1000
+if(!UPDB||UPDB == "null"){
+console.warn("Deu Pau Nos Dados Do Uploader Do Site!")
+}else{
+let sizeCalc = UPDB.size/1000  
 
-
+fileSize.innerHTML = sizeCalc+"Kb"
 statusLoad.innerHTML = UPDB.success
 statusServer.innerHTML = UPDB.status
 fileID.innerHTML = UPDB.id
 keyLink.innerHTML = UPDB.key
 fileName.innerHTML = UPDB.name
-fileSize.innerHTML = sizeCalc+"Kb"
 fileLink.innerHTML = UPDB.link
 fileExpire.innerHTML = UPDB.expires
 maxDownloads.innerHTML = UPDB.maxDownloads
 fileType.innerHTML = UPDB.mimeType
 filecreated.innerHTML = UPDB.created
 filemodified.innerHTML = UPDB.modified
-Llink.href = UPDB.link
+Llink.href = UPDB.link}
 
 
 const uploadFile = file => {
