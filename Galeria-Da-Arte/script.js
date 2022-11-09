@@ -1,8 +1,9 @@
 const bar = document.getElementById("bar")
-let DBUsado = 5
+let DBUsado = 8
 
 var width = 0;
 var id = setInterval(frame, 100);
+let DBrestante = 500-DBUsado
 
 function frame() {
 if(width >= 12){
