@@ -1,13 +1,17 @@
-const bar = document.getElementById("bar")
-let DBUsado = 8
+const bar = document.getElementById("bar");
+const DBRLabel = document.getElementById("DBRLabel");
+let DBUsado = 18
+const DBPercent = DBUsado/100;
 
+let DBrestante = 500-DBPercent;
 var width = 0;
 var id = setInterval(frame, 100);
-let DBrestante = 500-DBUsado
+
 
 function frame() {
 if(width >= 12){
 bar.style.background = "blue"
+DBRLabel
 }
 if(width >= 25){
 bar.style.background = "yellow"
@@ -27,5 +31,6 @@ clearInterval(id);
 }else{
 width++;
 bar.style.width = width + "%";
-bar.innerHTML = width + "%";}
+bar.innerHTML = width + "%/100%";
+DBRLabel.innerHTML = DBrestante+"/500MB"}
 }
