@@ -1,7 +1,7 @@
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
 let DBUsado = 98;
-const DBrestante = 500-DBUsado/100*10;
+const DBrestante = 500*DBUsado/100;
 
 
 var width = 0;
