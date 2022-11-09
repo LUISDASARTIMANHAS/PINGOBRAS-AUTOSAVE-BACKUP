@@ -1,6 +1,6 @@
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
-let DBUsado = 98;
+let DBUsado = 8;
 const DBrestante = 500*DBUsado/100;
 
 
