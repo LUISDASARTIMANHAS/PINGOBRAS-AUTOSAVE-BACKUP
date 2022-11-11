@@ -236,6 +236,7 @@ footer {
  border-left-color:blue;
  border-bottom-color:black;
  border-width:5px;
+ outline: none;
 }
 
 .PNG {
