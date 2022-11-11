@@ -240,14 +240,25 @@ footer {
 }
 .btn-LDA{
  border-radius:25px;
- border-top-color:white;
+ border-top-color:black;
  background-color:gray;
  border-style:solid;
  border-right-color:purple;
  border-left-color:blue;
- border-bottom-color:black;
+ border-bottom-color:white;
  border-width:5px;
  outline: none;
+ padding:7px;
+ width:20%;
+ line-height:22px;
+ text-transform:capitalize;
+ text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
+ margin: 7px;
+}
+.btn-LDA:hover{
+  background: green;
+  transform: translateY(5px);
+  transition: all .3s ease-out;
 }
 
 .PNG {
