@@ -221,24 +221,6 @@ footer {
 }
 
 
-input {
-  width: 100%;
-  background: gray;
-  box-sizing: border-box;
-  box-shadow: -8px 4px 20px gray;
-  margin-right: auto;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  font-size: 15px;
-  justify-content: center;
-  border: 3px solid silver;
-}
-input:hover{
-  background-image: linear-gradient(45deg, silver, green);
-  cursor: pointer;
-  box-shadow: -8px 20px 20px gray;
-  transition: all 1s ease-out;
-}
 .PNG {
   box-shadow: -8px 20px 20px gray;
   width: 50%;
