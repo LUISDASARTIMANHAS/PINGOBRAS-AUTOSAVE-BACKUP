@@ -1341,10 +1341,13 @@ tela-jogos{
     border-radius: 25px;
 }
 boll{
+  text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
   display:inline-block;
   margin-left:0px;
-  height:35px;
-  width:35px;
+  height:47px;
+  width:47px;
   border: 5px solid red;
   border-radius:25px;
+  font-size:29px;
+  font-weight:700;
 }

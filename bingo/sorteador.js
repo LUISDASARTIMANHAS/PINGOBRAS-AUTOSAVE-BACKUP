@@ -14,7 +14,6 @@ function Sorteador(){
       alertBolls.innerHTML = "Chega De Sortear Bolas!"
 }else{
   var divs = document.querySelectorAll('span'), i;
-  let boll = document.querySelectorAll("boll")
   numAleatorio = Math.floor(Math.random() * 90)
   QBolas = QBolas+1
   LabelNumTSort.innerHTML = QBolas+"/50"
@@ -23,8 +22,7 @@ function Sorteador(){
     
     for (i = 0; i < divs.length; ++i) {
       if(divs[i].innerText == numAleatorio){
-      	divs[i].style.color = "red";
-        boll[i].style.background = "gold";}	
+      	divs[i].style.color = "red";}	
     }}
         
 }//fim do sorteador
