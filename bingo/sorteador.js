@@ -1,6 +1,7 @@
 const LabelNumTSort = document.getElementById("LabelNumTSort")
 const LabelNumSort = document.getElementById("LabelNumSort")
 const LabelQNum = document.getElementById("LQuantNumCart")
+const alertBolls = document.getElementById("alertBolls")
 let sortNum = LabelNumSort.innerHTML
 var numAleatorio
 var QBolas = 0
@@ -10,7 +11,7 @@ function Sorteador(){
   if(QBolas == 50){
       console.log(QBolas)
       clearInterval(Sorteador)
-      LabelNumSort.innerHTML = "Chega De Sortear Bolas!"
+      alertBolls.innerHTML = "Chega De Sortear Bolas!"
 }else{
   var divs = document.querySelectorAll('span'), i;
   numAleatorio = Math.floor(Math.random() * 90)
