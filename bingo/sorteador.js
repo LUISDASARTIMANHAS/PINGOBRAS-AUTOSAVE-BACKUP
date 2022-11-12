@@ -1,18 +1,16 @@
-var sorteio = document.querySelector('p#numSorteio')
-var sortNum = sorteio.innerHTML
+var LabelNumSort = document.getElementById('LabelNumSort')
+var sortNum = LabelNumSort.innerHTML
 var numAleatorio
-let QNumSorteados = 50
-var NumSorteados = 0
 
 setInterval(Sorteador,1000)  
-  
 function Sorteador(){
-    numAleatorio = Math.floor(Math.random() * 90)
-    sorteio.innerHTML = numAleatorio
-    var divs = document.querySelectorAll('span'), i;
-
+  var divs = document.querySelectorAll('span'), i;
+  
+  numAleatorio = Math.floor(Math.random() * 90)
+  LabelNumSort.innerHTML = numAleatorio
+    
     for (i = 0; i < divs.length; ++i) {
       if(divs[i].innerText == numAleatorio){
       	divs[i].style.color = "red";}	
     }
-}
+}//fim do sorteador
