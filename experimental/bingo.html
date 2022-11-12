@@ -5,7 +5,7 @@
 <body>
 <h1 class="text-center">Teste Bingo</h1>
         <div class="num text-center">
-            <p id="numSorteio"></p>
+            <p id="numSorteio">Aguardando Sorteador...</p>
         </div>
         <div class="sorteio col-12 text-center">
             <a href="#" id="mylink" class="btn btn-primary text-center btn-randow" >sorteio</a>
@@ -27,14 +27,16 @@
                     <div class="col-sm" value="49"><span>49</span></div>
             </div>
         </div>
-
  </body>
 <script>
 var sorteio = document.querySelector('p#numSorteio')
-
 var sortNum = sorteio.innerHTML
 var numAleatorio
- document.getElementById("mylink").onclick = gerarAleatorio = () =>{
+let QNumSorteados = 50
+NumSorteados = 0
+
+for(NumSorteados = 0; NumSorteados < QNumSorteados; NumSorteados++) {
+setTimeout
     numAleatorio = Math.floor(Math.random() * 50)
     sorteio.innerHTML = numAleatorio
     var divs = document.querySelectorAll('span'), i;
@@ -45,7 +47,7 @@ var numAleatorio
       }
 			
     }
-    
+  
 }
 </script>
 </html>
