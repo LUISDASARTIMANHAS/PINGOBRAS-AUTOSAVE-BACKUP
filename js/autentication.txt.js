@@ -20,7 +20,7 @@ setTimeout(alert("admin autorizado code:bypass"),7000)
 window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//segunda chance pro adm
 if(token == "conectado") {
-setTimeout(alert("admin autorizado code:token"),7000)    
+setTimeout(alert("Admin Autorizado Por Login Anterior, code:token"),7000)    
 window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//adm falso
 const tokenSair ="desconectado";
