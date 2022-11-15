@@ -28,13 +28,15 @@ function sair(){
 }
 
 //account Setings
+if(!userLogado.UserBG||userLogado.UserBG == ""){
 if(DBuserbg == "null") {
   body2.style.background = "white"
 }else{
-  body2.style.background = DBuserbg
-}
+  body2.style.background = DBuserbg}
 if(DBperfilIconLink == "null") {
-  perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
+  perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"}
+}else{
+  body2.style.background = userLogado.UserBG
 }
 if(userLogadoImg == "null"||userLogadoImg == ""){
     perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
