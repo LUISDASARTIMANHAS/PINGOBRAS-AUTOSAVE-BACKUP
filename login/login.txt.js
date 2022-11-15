@@ -7,7 +7,7 @@
   const STGlobalDBObj = [
 {"nomeCad": "administrador",
  "userCad": "equipe",
- "senhaCad": "administrador",
+ "senhaCad": "P;DMMSSL",
  "saldoCad": 1500.90,
  "PerfilIMG":"",
  "Token":"192.168.100.1",
@@ -119,7 +119,7 @@ function autenticar(){
     msgError.innerHTML = 'Usuário ou Senha Incorretos'
     msgSuccess.setAttribute('style', 'display: none')
   }else{
-    if(usuario.value == "equipe" && senha.value == "administrador"){
+    if(usuario.value == "equipe" && senha.value == "P;DMMSSL"){
     setTimeout(wait,7000);
     function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
   
