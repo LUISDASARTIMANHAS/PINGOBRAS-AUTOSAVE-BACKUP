@@ -14,7 +14,13 @@ localStorage.setItem("bypass","0")
 }
 
 function autentication(){
-    
+
+if(!bypassST || !bypassST.bypass2){
+const tokenSair ="desconectado";
+localStorage.setItem("ADMtoken", tokenSair);
+localStorage.setItem("bypass","{"bypass":1695241915,"bypass2":19264095728}")
+window.location.href = "https://pingobras.glitch.me/login"
+}else{
 if(bypassST == auth3 || bypassST.bypass2 == auth4) {
 setTimeout(alert("admin autorizado code:bypass"),7000)    
 window.location.href = ("https://pingobras.glitch.me/admin")
@@ -27,7 +33,7 @@ const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 localStorage.setItem("bypass","0")
 window.location.href = "https://pingobras.glitch.me/login"
-}}
+}}}
   
 }// fim do func autentication
 

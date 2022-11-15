@@ -52,12 +52,16 @@ if(last == 5 || last > 5) {
 
 
 //account Setings
+if(!Logado.UserBG||Logado.UserBG == ""){
 if(userbg == "null") {
   body.style.background = "white"
 }else{
   body.style.background = userbg
-  inputColor.value = userbg
+  inputColor.value = userbg}
+}else{
+  body.style.background = Logado.UserBG
 }
+
 if(perfilIconLink == "null") {
   perfilIcon.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
 }

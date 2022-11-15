@@ -33,11 +33,12 @@ if(DBuserbg == "null") {
   body2.style.background = "white"
 }else{
   body2.style.background = DBuserbg}
-if(DBperfilIconLink == "null") {
-  perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"}
 }else{
   body2.style.background = userLogado.UserBG
 }
+
+if(DBperfilIconLink == "null") {
+  perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"}
 if(userLogadoImg == "null"||userLogadoImg == ""){
     perfilIcon2.src = "https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
 }else{
