@@ -10,12 +10,12 @@ let auth4 = 19264095713+day3
 if(!bypassST||!token||!bypassST.bypass2) {
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
-localStorage.setItem("bypass","{bypass:0,bypass2:0}")
+localStorage.setItem("bypass","bypass:0,bypass2:0")
 }
 
 function autentication(){
 
-if(bypassST == auth3 || bypassST.bypass2 == auth4) {
+if(bypassST.bypass == auth3 || bypassST.bypass2 == auth4) {
 setTimeout(alert("admin autorizado code:bypass"),7000)    
 window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//segunda chance pro adm
@@ -25,7 +25,7 @@ window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//adm falso
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
-localStorage.setItem("bypass","bypass","{bypass:0,bypass2:0}")
+localStorage.setItem("bypass","bypass","bypass:0,bypass2:0")
 window.location.href = "https://pingobras.glitch.me/login"
 }}
   
