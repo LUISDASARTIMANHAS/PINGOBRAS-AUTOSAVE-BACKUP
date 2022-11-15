@@ -1,7 +1,7 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
-  const STGlobalDBObj = [
-{"nomeCad": "administrador",
+  const STGlobalDBObj = {
+administrador:{"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
  "saldoCad": 1500.90,
@@ -10,7 +10,7 @@
  "UserBG":""
 },
 
-{"nomeCad": "Florisvaldo de Oliveira Schulz", 
+96451290:{"nomeCad": "Florisvaldo de Oliveira Schulz", 
  "userCad": "Valdo", 
  "senhaCad": "96451290", 
  "saldoCad": 88,
@@ -19,7 +19,7 @@
  "UserBG":"#FF0000"
 },
 
-{"nomeCad": "Luis Augusto de Souza Carvalho", 
+998774163:{"nomeCad": "Luis Augusto de Souza Carvalho", 
  "userCad": "LUIS DAS ARTIMANHAS", 
  "senhaCad": "998774163", 
  "saldoCad": 24,
@@ -28,7 +28,7 @@
  "UserBG":"#9900ff"
 },
 
-{"nomeCad": "José Eduardo Batista de Souza", 
+10062002:{"nomeCad": "José Eduardo Batista de Souza", 
  "userCad": "notfound", 
  "senhaCad": "10062002", 
  "saldoCad": 1,
@@ -37,7 +37,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Diogo Antonio Nienke Batista", 
+z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista", 
  "userCad": "did zin", 
  "senhaCad": "z0mbieltr2", 
  "saldoCad": 7,
@@ -46,7 +46,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Vinícius Lopes", 
+826961415130185749:{"nomeCad": "Vinícius Lopes", 
  "userCad": "AbDomineEst", 
  "senhaCad": "826961415130185749", 
  "saldoCad": 2,
@@ -55,7 +55,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Marquinhos",
+ 9595:{"nomeCad": "Marquinhos",
  "userCad": "Marq",
  "senhaCad": "9595",
  "saldoCad": 2,
@@ -64,7 +64,8 @@
  "UserBG":""
 }
   
-];
+};
+  let senha = document.getElementById('senha')
   const finder = JSON.parse(listaUserObj)
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
   const userscad = document.querySelector("#userCad")
@@ -79,16 +80,14 @@
   
   
 function autenticar(){
-  let usuario = document.querySelector('#usuario')
-  let senha = document.querySelector('#senha')
-  let msgError = document.querySelector('#msgError')
-  let msgSuccess = document.querySelector('#msgSuccess')
+  let usuario = document.getElementById('usuario')
+  let msgError = document.getElementById('msgError')
+  let msgSuccess = document.getElementById('msgSuccess')
   let userValid = {nome: '',user: '',senha: '',saldo: ''}
   let listaUser = JSON.parse(localStorage.getItem('listaUser'))
   console.log("usuario esperado: " + userValid)
   console.log("lista esperada: " + listaUser)
   
-  let STGlobalDBObj = []
   let userValid2 = {
     nome: '',
     user: '',
@@ -96,18 +95,17 @@ function autenticar(){
     saldo: '',
     PerfilImg: ''}
   
-  STGlobalDBObj = JSON.parse(localStorage.getItem('GlobalDB'))
-  STGlobalDBObj[0].forEach((item) => {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+    let Pesquisar = STGlobalDBObj[senha.value]
+    if(usuario.value == Pesquisar.userCad && senha.value == Pesquisar.senhaCad){
       userValid2 = {
-         nome: item.nomeCad,
-         user: item.userCad,
-         senha: item.senhaCad,
-         saldo: item.saldoCad,
-         PerfilImg: item.PerfilIMG}
+         nome: Pesquisar.nomeCad,
+         user: Pesquisar.userCad,
+         senha: Pesquisar.senhaCad,
+         saldo: Pesquisar.saldoCad,
+         PerfilImg: Pesquisar.PerfilIMG}
       
     }
-  })
+  
   
   if(!listaUser) {
   console.log("Não e possivel logar não há usuarios cadastrados localmente!");   
@@ -187,12 +185,12 @@ ClickMouseLOGIN.play();
 })
 
 
-  userscad.innerHTML = STGlobalDBObj[0].userCad + sep 
-  userscad2.innerHTML =  STGlobalDBObj[1].userCad + sep 
-  userscad3.innerHTML =  STGlobalDBObj[2].userCad + sep
-  userscad4.innerHTML = STGlobalDBObj[3].userCad + sep
-  userscad5.innerHTML = STGlobalDBObj[4].userCad + sep
-  userscad6.innerHTML = STGlobalDBObj[5].userCad + sep 
-  userscad7.innerHTML = STGlobalDBObj[6].userCad + sep 
+  userscad.innerHTML = STGlobalDBObj["administrador"].userCad + sep 
+  userscad2.innerHTML =  STGlobalDBObj["96451290"].userCad + sep 
+  userscad3.innerHTML =  STGlobalDBObj["998774163"].userCad + sep
+  userscad4.innerHTML = STGlobalDBObj["10062002"].userCad + sep
+  userscad5.innerHTML = STGlobalDBObj["z0mbieltr2"].userCad + sep
+  userscad6.innerHTML = STGlobalDBObj[826961415130185749].userCad + sep 
+  userscad7.innerHTML = STGlobalDBObj["9595"].userCad + sep 
   if(!finder[0]){}else{
   userscad8.innerHTML = finder[0].userCad}
