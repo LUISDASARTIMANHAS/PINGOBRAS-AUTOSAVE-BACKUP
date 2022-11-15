@@ -1,1 +1,197 @@
-function _0x35f6(_0x2346f2,_0xdfdee5){const _0x2aaa13=_0x2aaa();return _0x35f6=function(_0x35f6fe,_0x551b32){_0x35f6fe=_0x35f6fe-0x1bc;let _0x1c2d3b=_0x2aaa13[_0x35f6fe];return _0x1c2d3b;},_0x35f6(_0x2346f2,_0xdfdee5);}const _0xe348ce=_0x35f6;(function(_0x37d7a2,_0x47a2d3){const _0x14f19c=_0x35f6,_0x26684c=_0x37d7a2();while(!![]){try{const _0x27fec3=-parseInt(_0x14f19c(0x1f8))/0x1+parseInt(_0x14f19c(0x1e8))/0x2+-parseInt(_0x14f19c(0x213))/0x3*(parseInt(_0x14f19c(0x1e1))/0x4)+-parseInt(_0x14f19c(0x1db))/0x5+-parseInt(_0x14f19c(0x20a))/0x6+-parseInt(_0x14f19c(0x20c))/0x7*(-parseInt(_0x14f19c(0x1bd))/0x8)+parseInt(_0x14f19c(0x1d4))/0x9;if(_0x27fec3===_0x47a2d3)break;else _0x26684c['push'](_0x26684c['shift']());}catch(_0x2fa5b3){_0x26684c['push'](_0x26684c['shift']());}}}(_0x2aaa,0xa05d7));const buttonAutenticar=document['querySelector'](_0xe348ce(0x21a)),listaUserObj=localStorage['getItem'](_0xe348ce(0x1bf)),STGlobalDBObj=[{'nomeCad':_0xe348ce(0x202),'userCad':_0xe348ce(0x21b),'senhaCad':'administrador','saldoCad':1500.9,'PerfilIMG':'','Token':_0xe348ce(0x1f3),'UserBG':''},{'nomeCad':_0xe348ce(0x1e7),'userCad':_0xe348ce(0x201),'senhaCad':_0xe348ce(0x204),'saldoCad':0x58,'PerfilIMG':_0xe348ce(0x1cc),'Token':_0xe348ce(0x1f7),'UserBG':_0xe348ce(0x200)},{'nomeCad':_0xe348ce(0x1ce),'userCad':_0xe348ce(0x214),'senhaCad':'998774163','saldoCad':0x18,'PerfilIMG':'https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048','Token':_0xe348ce(0x1ea),'UserBG':_0xe348ce(0x20f)},{'nomeCad':_0xe348ce(0x1f2),'userCad':'notfound','senhaCad':_0xe348ce(0x1fb),'saldoCad':0x1,'PerfilIMG':'','Token':'192.168.100.45','UserBG':''},{'nomeCad':_0xe348ce(0x1e0),'userCad':_0xe348ce(0x1d7),'senhaCad':'z0mbieltr2','saldoCad':0x7,'PerfilIMG':_0xe348ce(0x1cf),'Token':_0xe348ce(0x209),'UserBG':''},{'nomeCad':'Vinícius\x20Lopes','userCad':_0xe348ce(0x1d1),'senhaCad':_0xe348ce(0x1f6),'saldoCad':0x2,'PerfilIMG':_0xe348ce(0x1ca),'Token':_0xe348ce(0x205),'UserBG':''},{'nomeCad':_0xe348ce(0x1f4),'userCad':'Marq','senhaCad':_0xe348ce(0x1fe),'saldoCad':0x2,'PerfilIMG':_0xe348ce(0x1ef),'Token':'192.168.100.3','UserBG':''}],finder=JSON[_0xe348ce(0x211)](listaUserObj),finder2=STGlobalDBObj,btnVerSenhaL=document[_0xe348ce(0x20e)]('verSenhaLogin'),userscad=document[_0xe348ce(0x1f0)](_0xe348ce(0x1c2)),userscad2=document['querySelector'](_0xe348ce(0x203)),userscad3=document['querySelector'](_0xe348ce(0x210)),userscad4=document[_0xe348ce(0x1f0)](_0xe348ce(0x1c1)),userscad5=document[_0xe348ce(0x1f0)](_0xe348ce(0x206)),userscad6=document[_0xe348ce(0x1f0)](_0xe348ce(0x1f9)),userscad7=document[_0xe348ce(0x1f0)]('#userCad7'),userscad8=document[_0xe348ce(0x1f0)](_0xe348ce(0x1d8));function _0x2aaa(){const _0x1d4482=['log','display:\x20none','933955mIAzmc','senhaCad','play','#msgError','null','Diogo\x20Antonio\x20Nienke\x20Batista','732372xuPkEY','placeholder','user','getAttribute','display:\x20block','token','Florisvaldo\x20de\x20Oliveira\x20Schulz','1337154NOCzxD','https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474','192.168.100.11','setAttribute','setItem','value','ADMtoken','https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png','querySelector','type','José\x20Eduardo\x20Batista\x20de\x20Souza','192.168.100.1','Marquinhos','addEventListener','826961415130185749','192.168.100.22','928305mHNhVc','#userCad6','https://pingobras.glitch.me/user','10062002','password','text','9595','Não\x20e\x20possivel\x20logar\x20não\x20há\x20usuarios\x20cadastrados\x20localmente!','#FF0000','Valdo','administrador','#userCad2','96451290','192.168.100.2','#userCad5','saldoCad','Usuário\x20ou\x20Senha\x20Incorretos','192.168.100.47','3037908LBOgra','lista\x20esperada:\x20','3623389CyRVJj','location','getElementById','#9900ff','#userCad3','parse','#senha','15qAAKgm','LUIS\x20DAS\x20ARTIMANHAS','substr','forEach','href','userLogado','ValidDB:','#autenticador','equipe','stringify','8BqSiZK','https://pingobras.glitch.me/admin','listaUser','click','#userCad4','#userCad','LOGIN>\x20bypass\x20setado!','nomeCad','usuario\x20esperado:\x20','userCad','innerHTML','senha','LOGIN>\x20token\x20admin\x20setado!','https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg','LOGIN>\x20token\x20User\x20setado!','https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313','style','Luis\x20Augusto\x20de\x20Souza\x20Carvalho','https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg','******','AbDomineEst','toString','getItem','18067770Ieexdd','random','Validando\x20acesso...','did\x20zin','#userCad8'];_0x2aaa=function(){return _0x1d4482;};return _0x2aaa();}let sep=',';function autenticar(){const _0x4ec219=_0xe348ce;let _0x4bd21b=document[_0x4ec219(0x1f0)]('#usuario'),_0x3a3f8d=document[_0x4ec219(0x1f0)](_0x4ec219(0x212)),_0xbea664=document[_0x4ec219(0x1f0)](_0x4ec219(0x1de)),_0x494424=document[_0x4ec219(0x1f0)]('#msgSuccess'),_0x3424b5={'nome':'','user':'','senha':'','saldo':''},_0x32bb51=JSON[_0x4ec219(0x211)](localStorage[_0x4ec219(0x1d3)](_0x4ec219(0x1bf)));console[_0x4ec219(0x1d9)](_0x4ec219(0x1c5)+_0x3424b5),console[_0x4ec219(0x1d9)](_0x4ec219(0x20b)+_0x32bb51);let _0x48782c=[],_0x4cdba8={'nome':'','user':'','senha':'','saldo':'','PerfilImg':''};_0x48782c=JSON['parse'](localStorage[_0x4ec219(0x1d3)]('GlobalDB')),_0x48782c[_0x4ec219(0x216)](_0xca02dd=>{const _0x153a9e=_0x4ec219;_0x4bd21b['value']==_0xca02dd[_0x153a9e(0x1c6)]&&_0x3a3f8d[_0x153a9e(0x1ed)]==_0xca02dd['senhaCad']&&(_0x4cdba8={'nome':_0xca02dd[_0x153a9e(0x1c4)],'user':_0xca02dd[_0x153a9e(0x1c6)],'senha':_0xca02dd[_0x153a9e(0x1dc)],'saldo':_0xca02dd[_0x153a9e(0x207)],'PerfilImg':_0xca02dd['PerfilIMG']});});!_0x32bb51?console[_0x4ec219(0x1d9)](_0x4ec219(0x1ff)):_0x32bb51==_0x4ec219(0x1df)||_0x32bb51==null?(console[_0x4ec219(0x1d9)](_0x4ec219(0x1ff)),_0xbea664[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),_0x4ec219(0x1e5)),_0xbea664[_0x4ec219(0x1c7)]=_0x4ec219(0x1ff),_0x494424['setAttribute'](_0x4ec219(0x1cd),_0x4ec219(0x1da))):_0x32bb51['forEach'](_0x38a3ab=>{const _0x4aaedb=_0x4ec219;_0x4bd21b[_0x4aaedb(0x1ed)]==_0x38a3ab['userCad']&&_0x3a3f8d[_0x4aaedb(0x1ed)]==_0x38a3ab[_0x4aaedb(0x1dc)]&&(_0x3424b5={'nome':_0x38a3ab['nomeCad'],'user':_0x38a3ab['userCad'],'senha':_0x38a3ab['senhaCad'],'saldo':_0x38a3ab[_0x4aaedb(0x207)]});});if(_0x4bd21b[_0x4ec219(0x1ed)]==''&&_0x3a3f8d[_0x4ec219(0x1ed)]=='')_0xbea664[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),'display:\x20block'),_0xbea664['innerHTML']=_0x4ec219(0x208),_0x494424['setAttribute'](_0x4ec219(0x1cd),_0x4ec219(0x1da));else{if(_0x4bd21b[_0x4ec219(0x1ed)]==_0x4ec219(0x21b)&&_0x3a3f8d[_0x4ec219(0x1ed)]==_0x4ec219(0x202)){setTimeout(_0x387514,0x1b58);function _0x387514(){const _0x3c1474=_0x4ec219;window[_0x3c1474(0x20d)][_0x3c1474(0x217)]=_0x3c1474(0x1be);}let _0x3922c3='conectado';localStorage[_0x4ec219(0x1ec)](_0x4ec219(0x1ee),_0x3922c3),console[_0x4ec219(0x1d9)](_0x4ec219(0x1c9));const _0x5ea23f=new Date();let _0x25ee4e=_0x5ea23f['getDate']();const _0x3d1c74={'bypass':0x650b56ac+_0x25ee4e,'bypass2':0x47c3ac5e1+_0x25ee4e},_0x2a4e6e=JSON['stringify'](_0x3d1c74);localStorage[_0x4ec219(0x1ec)]('bypass',_0x2a4e6e),console[_0x4ec219(0x1d9)](_0x4ec219(0x1c3)),_0xbea664[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),_0x4ec219(0x1da)),_0x494424[_0x4ec219(0x1c7)]=_0x4ec219(0x1d6),_0x494424[_0x4ec219(0x1eb)]('style',_0x4ec219(0x1e5));}else{if(_0x4bd21b[_0x4ec219(0x1ed)]==_0x3424b5[_0x4ec219(0x1e3)]&&_0x3a3f8d[_0x4ec219(0x1ed)]==_0x3424b5[_0x4ec219(0x1c8)]||_0x4bd21b[_0x4ec219(0x1ed)]==_0x4cdba8['user']&&_0x3a3f8d[_0x4ec219(0x1ed)]==_0x4cdba8[_0x4ec219(0x1c8)]){setTimeout(_0x268ea5,0x1b58);function _0x268ea5(){const _0x3015a7=_0x4ec219;window['location'][_0x3015a7(0x217)]=_0x3015a7(0x1fa);}let _0xdbd394=Math[_0x4ec219(0x1d5)]()[_0x4ec219(0x1d2)](0x9)[_0x4ec219(0x215)](0x10),_0x8076d5=Math[_0x4ec219(0x1d5)]()[_0x4ec219(0x1d2)](0x10)[_0x4ec219(0x215)](0x2),_0x15c180=_0x8076d5+_0x8076d5+_0x4ec219(0x219)+_0xdbd394;localStorage[_0x4ec219(0x1ec)](_0x4ec219(0x1e6),_0x15c180),localStorage[_0x4ec219(0x1ec)](_0x4ec219(0x218),JSON[_0x4ec219(0x1bc)](_0x3424b5)),localStorage['setItem'](_0x4ec219(0x218),JSON[_0x4ec219(0x1bc)](_0x4cdba8)),console[_0x4ec219(0x1d9)](_0x4ec219(0x1cb)),_0xbea664[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),'display:\x20none'),_0x494424[_0x4ec219(0x1c7)]=_0x4ec219(0x1d6),_0x494424['setAttribute'](_0x4ec219(0x1cd),_0x4ec219(0x1e5));}else _0xbea664[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),_0x4ec219(0x1e5)),_0xbea664[_0x4ec219(0x1c7)]='Usuário\x20ou\x20Senha\x20Incorretos',_0x494424[_0x4ec219(0x1eb)](_0x4ec219(0x1cd),_0x4ec219(0x1da));}}}const ClickMouseLOGIN=new Audio(_0xe348ce(0x1e9));btnVerSenhaL[_0xe348ce(0x1f5)](_0xe348ce(0x1c0),()=>{const _0x15462b=_0xe348ce;ClickMouseLOGIN[_0x15462b(0x1dd)]();let _0x4efb96=document[_0x15462b(0x20e)](_0x15462b(0x1c8));_0x4efb96[_0x15462b(0x1e4)](_0x15462b(0x1f1))==_0x15462b(0x1fc)?(_0x4efb96[_0x15462b(0x1eb)](_0x15462b(0x1f1),_0x15462b(0x1fd)),_0x4efb96['placeholder']='123456'):(_0x4efb96[_0x15462b(0x1eb)](_0x15462b(0x1f1),_0x15462b(0x1fc)),_0x4efb96[_0x15462b(0x1e2)]=_0x15462b(0x1d0));}),userscad[_0xe348ce(0x1c7)]=finder2[0x0][_0xe348ce(0x1c6)]+sep,userscad2[_0xe348ce(0x1c7)]=finder2[0x1][_0xe348ce(0x1c6)]+sep,userscad3[_0xe348ce(0x1c7)]=finder2[0x2][_0xe348ce(0x1c6)]+sep,userscad4[_0xe348ce(0x1c7)]=finder2[0x3][_0xe348ce(0x1c6)]+sep,userscad5['innerHTML']=finder2[0x4][_0xe348ce(0x1c6)]+sep,userscad6[_0xe348ce(0x1c7)]=finder2[0x5][_0xe348ce(0x1c6)]+sep,userscad7['innerHTML']=finder2[0x6][_0xe348ce(0x1c6)]+sep;if(!finder[0x0]){}else userscad8[_0xe348ce(0x1c7)]=finder[0x0][_0xe348ce(0x1c6)];
+  const buttonAutenticar = document.querySelector('#autenticador')
+  const listaUserObj = localStorage.getItem("listaUser");
+  const STGlobalDBObj = [
+{"nomeCad": "administrador",
+ "userCad": "equipe",
+ "senhaCad": "administrador",
+ "saldoCad": 1500.90,
+ "PerfilIMG":"",
+ "Token":"192.168.100.1",
+ "UserBG":""
+},
+
+{"nomeCad": "Florisvaldo de Oliveira Schulz", 
+ "userCad": "Valdo", 
+ "senhaCad": "96451290", 
+ "saldoCad": 88,
+ "PerfilIMG":"https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313",
+ "Token":"192.168.100.22",
+ "UserBG":"#FF0000"
+},
+
+{"nomeCad": "Luis Augusto de Souza Carvalho", 
+ "userCad": "LUIS DAS ARTIMANHAS", 
+ "senhaCad": "998774163", 
+ "saldoCad": 24,
+ "PerfilIMG":"https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048",
+ "Token":"192.168.100.11",
+ "UserBG":"#9900ff"
+},
+
+{"nomeCad": "José Eduardo Batista de Souza", 
+ "userCad": "notfound", 
+ "senhaCad": "10062002", 
+ "saldoCad": 1,
+ "PerfilIMG":"",
+ "Token":"192.168.100.45",
+ "UserBG":""
+},
+  
+{"nomeCad": "Diogo Antonio Nienke Batista", 
+ "userCad": "did zin", 
+ "senhaCad": "z0mbieltr2", 
+ "saldoCad": 7,
+ "PerfilIMG":"https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg",
+ "Token":"192.168.100.47",
+ "UserBG":""
+},
+  
+{"nomeCad": "Vinícius Lopes", 
+ "userCad": "AbDomineEst", 
+ "senhaCad": "826961415130185749", 
+ "saldoCad": 2,
+ "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg",
+ "Token":"192.168.100.2",
+ "UserBG":""
+},
+  
+{"nomeCad": "Marquinhos",
+ "userCad": "Marq",
+ "senhaCad": "9595",
+ "saldoCad": 2,
+ "PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
+ "Token":"192.168.100.3",
+ "UserBG":""
+}
+  
+];
+  const finder = JSON.parse(listaUserObj)
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad = document.querySelector("#userCad")
+  const userscad2 = document.querySelector("#userCad2")
+  const userscad3 = document.querySelector("#userCad3")
+  const userscad4 = document.querySelector("#userCad4")
+  const userscad5 = document.querySelector("#userCad5")
+  const userscad6 = document.querySelector("#userCad6")
+  const userscad7 = document.querySelector("#userCad7")
+  const userscad8 = document.querySelector("#userCad8")
+  let sep = ","
+  
+  
+function autenticar(){
+  let usuario = document.querySelector('#usuario')
+  let senha = document.querySelector('#senha')
+  let msgError = document.querySelector('#msgError')
+  let msgSuccess = document.querySelector('#msgSuccess')
+  let userValid = {nome: '',user: '',senha: '',saldo: ''}
+  let listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  console.log("usuario esperado: " + userValid)
+  console.log("lista esperada: " + listaUser)
+  
+  let STGlobalDBObj = []
+  let userValid2 = {
+    nome: '',
+    user: '',
+    senha: '',
+    saldo: '',
+    PerfilImg: ''}
+  
+  STGlobalDBObj.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid2 = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad,
+         saldo: item.saldoCad,
+         PerfilImg: item.PerfilIMG}
+      
+    }
+  })
+  
+  if(!listaUser) {
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");   
+}else{
+  if(listaUser == "null"|| listaUser == null){
+  console.log("Não e possivel logar não há usuarios cadastrados localmente!");
+  msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
+    msgSuccess.setAttribute('style', 'display: none')
+}else{
+    listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
+  })}}
+  
+  if(usuario.value == "" && senha.value == "") {
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')
+  }else{
+    if(usuario.value == "equipe" && senha.value == "administrador"){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = "https://pingobras.glitch.me/admin"}
+  
+    let ADMtoken = "conectado"
+    localStorage.setItem('ADMtoken', ADMtoken)
+    console.log("LOGIN> token admin setado!")
+    const d = new Date();
+    let day = d.getDate();
+      
+    const bypasstokenJS = {bypass: 1695241900+day, bypass2: 19264095713+day}
+    const bypasstoken = JSON.stringify(bypasstokenJS);
+    localStorage.setItem("bypass",bypasstoken)
+    console.log("LOGIN> bypass setado!")
+    
+    
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{   
+if(usuario.value == userValid.user && senha.value == userValid.senha||usuario.value == userValid2.user && senha.value == userValid2.senha){
+    setTimeout(wait,7000);
+    function wait() {window.location.href = 'https://pingobras.glitch.me/user'}
+    
+    let clientID = Math.random().toString(9).substr(16)
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom+"ValidDB:"+clientID
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+    localStorage.setItem('userLogado', JSON.stringify(userValid2))
+    console.log("LOGIN> token User setado!")  
+  
+    msgError.setAttribute('style', 'display: none')
+    msgSuccess.innerHTML = 'Validando acesso...'
+    msgSuccess.setAttribute('style', 'display: block')
+}else{
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou Senha Incorretos'
+    msgSuccess.setAttribute('style', 'display: none')}
+  }}//fim elses
+  
+  
+}//fim do autenticar
+
+
+const ClickMouseLOGIN = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
+
+btnVerSenhaL.addEventListener('click', ()=>{
+ClickMouseLOGIN.play();
+  let inputVerSenhaL = document.getElementById('senha')
+  if(inputVerSenhaL.getAttribute('type') == 'password'){
+    inputVerSenhaL.setAttribute('type', 'text')
+    inputVerSenhaL.placeholder = "123456"
+  }else{
+    inputVerSenhaL.setAttribute('type', 'password')
+    inputVerSenhaL.placeholder = "******"}
+})
+
+
+  userscad.innerHTML = STGlobalDBObj[0].userCad + sep 
+  userscad2.innerHTML =  STGlobalDBObj[1].userCad + sep 
+  userscad3.innerHTML =  STGlobalDBObj[2].userCad + sep
+  userscad4.innerHTML = STGlobalDBObj[3].userCad + sep
+  userscad5.innerHTML = STGlobalDBObj[4].userCad + sep
+  userscad6.innerHTML = STGlobalDBObj[5].userCad + sep 
+  userscad7.innerHTML = STGlobalDBObj[6].userCad + sep 
+  if(!finder[0]){}else{
+  userscad8.innerHTML = finder[0].userCad}
