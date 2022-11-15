@@ -1,7 +1,11 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
-  const STGlobalDBObj = {
-administrador:{"nomeCad": "administrador",
+  const finder = JSON.parse(listaUserObj)
+  const btnVerSenhaL = document.getElementById("verSenhaLogin")
+  const userscad8 = document.querySelector("#userCad8")
+  let sep = ","
+  const STGlobalDBObj = [
+{"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
  "saldoCad": 1500.90,
@@ -10,7 +14,7 @@ administrador:{"nomeCad": "administrador",
  "UserBG":""
 },
 
-96451290:{"nomeCad": "Florisvaldo de Oliveira Schulz", 
+{"nomeCad": "Florisvaldo de Oliveira Schulz", 
  "userCad": "Valdo", 
  "senhaCad": "96451290", 
  "saldoCad": 88,
@@ -19,7 +23,7 @@ administrador:{"nomeCad": "administrador",
  "UserBG":"#FF0000"
 },
 
-998774163:{"nomeCad": "Luis Augusto de Souza Carvalho", 
+{"nomeCad": "Luis Augusto de Souza Carvalho", 
  "userCad": "LUIS DAS ARTIMANHAS", 
  "senhaCad": "998774163", 
  "saldoCad": 24,
@@ -28,7 +32,7 @@ administrador:{"nomeCad": "administrador",
  "UserBG":"#9900ff"
 },
 
-10062002:{"nomeCad": "José Eduardo Batista de Souza", 
+{"nomeCad": "José Eduardo Batista de Souza", 
  "userCad": "notfound", 
  "senhaCad": "10062002", 
  "saldoCad": 1,
@@ -37,7 +41,7 @@ administrador:{"nomeCad": "administrador",
  "UserBG":""
 },
   
-z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista", 
+{"nomeCad": "Diogo Antonio Nienke Batista", 
  "userCad": "did zin", 
  "senhaCad": "z0mbieltr2", 
  "saldoCad": 7,
@@ -46,7 +50,7 @@ z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista",
  "UserBG":""
 },
   
-826961415130185749:{"nomeCad": "Vinícius Lopes", 
+{"nomeCad": "Vinícius Lopes", 
  "userCad": "AbDomineEst", 
  "senhaCad": "826961415130185749", 
  "saldoCad": 2,
@@ -55,7 +59,7 @@ z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista",
  "UserBG":""
 },
   
- 9595:{"nomeCad": "Marquinhos",
+ {"nomeCad": "Marquinhos",
  "userCad": "Marq",
  "senhaCad": "9595",
  "saldoCad": 2,
@@ -64,15 +68,10 @@ z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista",
  "UserBG":""
 }
   
-};
-  let senha = document.getElementById('senha')
-  const finder = JSON.parse(listaUserObj)
-  const btnVerSenhaL = document.getElementById("verSenhaLogin")
-  const userscad8 = document.querySelector("#userCad8")
-  let sep = ","
-  
+];
   
 function autenticar(){
+  let senha = document.getElementById('senha')
   let usuario = document.getElementById('usuario')
   let msgError = document.getElementById('msgError')
   let msgSuccess = document.getElementById('msgSuccess')
@@ -88,16 +87,18 @@ function autenticar(){
     saldo: '',
     PerfilImg: ''}
   
-    let Pesquisar = STGlobalDBObj[senha.value]
-    if(usuario.value == Pesquisar.userCad && senha.value == Pesquisar.senhaCad){
+    STGlobalDBObj.forEach((item) => {
+    console.log(item)
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
       userValid2 = {
-         nome: Pesquisar.nomeCad,
-         user: Pesquisar.userCad,
-         senha: Pesquisar.senhaCad,
-         saldo: Pesquisar.saldoCad,
-         PerfilImg: Pesquisar.PerfilIMG}
-      
-    }
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad,
+         saldo: item.saldoCad,
+         PerfilImg: item.PerfilIMG}      
+    } 
+  })
+
   
   
   if(!listaUser) {
