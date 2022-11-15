@@ -69,7 +69,7 @@ console.warn("Deu Pau No Calculo Da Internet Do Site")
   GBps.setAttribute('style', 'color: red')}
 }
   
-}
+} 
 }//Fim do loop
 
 

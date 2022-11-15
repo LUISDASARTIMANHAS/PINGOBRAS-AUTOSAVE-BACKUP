@@ -22,16 +22,12 @@ console.log("STORAGE/LOG> ⚠️recarregando codificanção do bypass...");
 localStorage.setItem("bypass", repeatbypass);
 console.warn("STORAGE/LOG> bypass recarregado!");
 
-let senhaPG = "0000"
-localStorage.setItem("Local-Luis-das-artimanhas",senhaPG);
 
 const refreshPerfil = localStorage.getItem( 'UserPerfil')
 localStorage.setItem( 'UserPerfil',refreshPerfil)
 
 
-  
 }//Fim do loop Storage
-
 
 
 let labelSiteSaldo = document.getElementById("siteSaldo")  
@@ -40,7 +36,3 @@ console.warn("Deu Pau No Dinheiro Do Site")
 }else{
 let Saldo = localStorage.getItem("SITESALDO")
 labelSiteSaldo.innerHTML = Saldo}
-
-let NetworkObj = localStorage.getItem("Network");  
-const Network = JSON.stringify(NetworkObj);
-localStorage.setItem("Network", Network);  
