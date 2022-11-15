@@ -68,13 +68,6 @@ z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista",
   let senha = document.getElementById('senha')
   const finder = JSON.parse(listaUserObj)
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
-  const userscad = document.querySelector("#userCad")
-  const userscad2 = document.querySelector("#userCad2")
-  const userscad3 = document.querySelector("#userCad3")
-  const userscad4 = document.querySelector("#userCad4")
-  const userscad5 = document.querySelector("#userCad5")
-  const userscad6 = document.querySelector("#userCad6")
-  const userscad7 = document.querySelector("#userCad7")
   const userscad8 = document.querySelector("#userCad8")
   let sep = ","
   
@@ -184,13 +177,5 @@ ClickMouseLOGIN.play();
     inputVerSenhaL.placeholder = "******"}
 })
 
-
-  userscad.innerHTML = STGlobalDBObj["administrador"].userCad + sep 
-  userscad2.innerHTML =  STGlobalDBObj["96451290"].userCad + sep 
-  userscad3.innerHTML =  STGlobalDBObj["998774163"].userCad + sep
-  userscad4.innerHTML = STGlobalDBObj["10062002"].userCad + sep
-  userscad5.innerHTML = STGlobalDBObj["z0mbieltr2"].userCad + sep
-  userscad6.innerHTML = STGlobalDBObj[826961415130185749].userCad + sep 
-  userscad7.innerHTML = STGlobalDBObj["9595"].userCad + sep 
   if(!finder[0]){}else{
   userscad8.innerHTML = finder[0].userCad}
