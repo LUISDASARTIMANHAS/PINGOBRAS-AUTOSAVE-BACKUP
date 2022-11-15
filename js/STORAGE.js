@@ -29,6 +29,12 @@ localStorage.setItem( 'UserPerfil',refreshPerfil)
 
 }//Fim do loop Storage
 
+let stlST = localStorage
+if(!stlST.SITESALDO||!stlST.GlobalDB){
+console.error("Nada Para Limpar")
+}else{
+stlST.clear()
+}
 
 let labelSiteSaldo = document.getElementById("siteSaldo")  
 if(!labelSiteSaldo) {

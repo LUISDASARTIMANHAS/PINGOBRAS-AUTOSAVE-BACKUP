@@ -87,3 +87,9 @@ if (button4){
   ClickMouse.play();}
 }
 
+let stl = localStorage
+if(!stl.SITESALDO||!stl.GlobalDB){
+console.error("Nada Para Limpar")
+}else{
+stl.clear()
+}
