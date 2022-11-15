@@ -3,6 +3,9 @@ const loopScript = setInterval(refreshScript, 15000);
 function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
 let STDEVICE = JSON.parse(sessionStorage.getItem("LASTDEVICES") || '[]')
+const btndisabled = document.querySelector("[disabled]");
+const btndisabled2 = document.querySelector("[disabled2]");
+
 
 window.addEventListener("load", function(){
 setTimeout(function open(event){
@@ -12,17 +15,6 @@ document.querySelector(".site-altura").style.cursor = "not-allowed";
   console.log("LOG> ⚠️Anuncio carregado!"); 
 },5000)
 });
-
-let fechar = document.querySelector("#close")
-if(!fechar) {
-console.warn("Deu Pau No Fechar Do Anúncio")
-}else{
-  fechar.addEventListener("mouseover", function(){
-    document.querySelector(".popup").style.display = "none";
-    document.querySelector(".site-altura").style.opacity = "1";
-    document.querySelector(".site-altura").style.cursor = "default";
-  console.log("LOG> ⚠️Anuncio fechado!");
-});}
 
   
 var check = false;
@@ -44,17 +36,30 @@ if(user == block){
 window.location.href = "https://google.com"
 }
 
-  
-  
+if(!btndisabled){  
+console.warn("")
+}else{
+btndisabled.addEventListener('click', function() {
+ window.location.href = "https://pingobras-404.glitch.me"
+ btndisabled.style.cursor = "progress"
+ console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")});
 }
+if(!btndisabled2){
+btndisabled2.addEventListener('click', function() {
+    window.location.href = "https://pingobras-404.glitch.me"
+    btndisabled2.style.cursor = "progress"
+    console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
+  });}
+
+  
+  
+}//refresh scripts
 
 
 
 
 const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
-function click(){
-  ClickMouse.play();
-}
+
 const button1 = document.querySelector("[button]");
 const button2 = document.querySelector("[click]");
 const button3 = document.querySelector("[click2]");
@@ -79,20 +84,4 @@ if (button4){
   console.log("click do mouse")
   ClickMouse.play();}
 }
-
-
-const btndisabled = document.querySelector("[disabled]");
-const btndisabled2 = document.querySelector("[disabled2]");
-if(!btndisabled){  
-btndisabled.addEventListener('click', function() {
-    window.location.href = "https://pingobras-404.glitch.me"
-    btndisabled.style.cursor = "progress"
-    console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
-});}
-if(!btndisabled2){
-btndisabled2.addEventListener('click', function() {
-    window.location.href = "https://pingobras-404.glitch.me"
-    btndisabled2.style.cursor = "progress"
-    console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
-  });}
 

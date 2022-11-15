@@ -1,4 +1,4 @@
-const looptime = setInterval(timeRefresh, 1000);
+const looptime = setInterval(timeRefresh2, 1000);
 
 
 let secondsplayer = "58"
@@ -8,7 +8,7 @@ let sethoursplayer = "19"
 
 const horaselect = sethoursplayer + minutesplayer
       
-function timeRefresh() {
+function timeRefresh2() {
 const time = new Date();
   
 const Gethours = time.getHours();

@@ -8,6 +8,8 @@ const listDEV = document.getElementById("listDevedores");
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
 var listChangelogs = document.getElementById('listChangelogs');
 const btnALL = document.querySelectorAll("button");
+const fechar = document.getElementById("close")
+
 
 function mostrarsenha() {
   let inputSenha = document.getElementById('senha')
@@ -93,5 +95,21 @@ Descer.addEventListener("click", function() {
   console.log("FUNCTIONS/LOG> O Usuario foi redirecionado para baixo!");});
 }
 
+if(!fechar) {
+console.warn("Deu Pau No Fechar Do Anúncio")
+}else{
+  fechar.addEventListener("mouseover", function(){
+    document.querySelector(".popup").style.display = "none";
+    document.querySelector(".site-altura").style.opacity = "1";
+    document.querySelector(".site-altura").style.cursor = "default";
+  console.log("LOG> ⚠️Anuncio fechado!");
+});}
 
-//songs
+//auto songs btnAll
+btnALL.addEventListener('mouseover', function() {
+ClickMouseFUNCTIONS.play();  
+});
+
+btnALL.addEventListener("click", function() {
+ClickMouseFUNCTIONS.play();
+});

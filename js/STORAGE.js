@@ -41,11 +41,6 @@ console.warn("Deu Pau No Dinheiro Do Site")
 let Saldo = localStorage.getItem("SITESALDO")
 labelSiteSaldo.innerHTML = Saldo}
 
-let STDEVICE = JSON.parse(sessionStorage.getItem("LASTDEVICES") || '[]')
-let NewDevice = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
-NewDevice.push(STDEVICE)
-sessionStorage.setItem("LASTDEVICES",NewDevice)
-
 let NetworkObj = localStorage.getItem("Network");  
 const Network = JSON.stringify(NetworkObj);
 localStorage.setItem("Network", Network);  
