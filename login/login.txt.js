@@ -88,7 +88,6 @@ function autenticar(){
     PerfilImg: ''}
   
     STGlobalDBObj.forEach((item) => {
-    console.log(item)
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
       userValid2 = {
          nome: item.nomeCad,
@@ -96,7 +95,7 @@ function autenticar(){
          senha: item.senhaCad,
          saldo: item.saldoCad,
          PerfilImg: item.PerfilIMG}      
-    } 
+    }console.log(userValid2) 
   })
 
   
