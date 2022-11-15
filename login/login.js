@@ -1,7 +1,7 @@
   const buttonAutenticar = document.querySelector('#autenticador')
   const listaUserObj = localStorage.getItem("listaUser");
-  const STGlobalDBObj = [
-{"nomeCad": "administrador",
+  const STGlobalDBObj = {
+administrador:{"nomeCad": "administrador",
  "userCad": "equipe",
  "senhaCad": "administrador",
  "saldoCad": 1500.90,
@@ -10,7 +10,7 @@
  "UserBG":""
 },
 
-{"nomeCad": "Florisvaldo de Oliveira Schulz", 
+96451290:{"nomeCad": "Florisvaldo de Oliveira Schulz", 
  "userCad": "Valdo", 
  "senhaCad": "96451290", 
  "saldoCad": 88,
@@ -19,7 +19,7 @@
  "UserBG":"#FF0000"
 },
 
-{"nomeCad": "Luis Augusto de Souza Carvalho", 
+998774163:{"nomeCad": "Luis Augusto de Souza Carvalho", 
  "userCad": "LUIS DAS ARTIMANHAS", 
  "senhaCad": "998774163", 
  "saldoCad": 24,
@@ -28,7 +28,7 @@
  "UserBG":"#9900ff"
 },
 
-{"nomeCad": "José Eduardo Batista de Souza", 
+10062002:{"nomeCad": "José Eduardo Batista de Souza", 
  "userCad": "notfound", 
  "senhaCad": "10062002", 
  "saldoCad": 1,
@@ -37,7 +37,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Diogo Antonio Nienke Batista", 
+z0mbieltr2:{"nomeCad": "Diogo Antonio Nienke Batista", 
  "userCad": "did zin", 
  "senhaCad": "z0mbieltr2", 
  "saldoCad": 7,
@@ -46,7 +46,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Vinícius Lopes", 
+826961415130185749:{"nomeCad": "Vinícius Lopes", 
  "userCad": "AbDomineEst", 
  "senhaCad": "826961415130185749", 
  "saldoCad": 2,
@@ -55,7 +55,7 @@
  "UserBG":""
 },
   
-{"nomeCad": "Marquinhos",
+ 9595:{"nomeCad": "Marquinhos",
  "userCad": "Marq",
  "senhaCad": "9595",
  "saldoCad": 2,
@@ -64,7 +64,8 @@
  "UserBG":""
 }
   
-];
+};
+  let senha = document.getElementById('senha')
   const finder = JSON.parse(listaUserObj)
   const btnVerSenhaL = document.getElementById("verSenhaLogin")
   const userscad = document.querySelector("#userCad")
@@ -79,10 +80,9 @@
   
   
 function autenticar(){
-  let usuario = document.querySelector('#usuario')
-  let senha = document.querySelector('#senha')
-  let msgError = document.querySelector('#msgError')
-  let msgSuccess = document.querySelector('#msgSuccess')
+  let usuario = document.getElementById('usuario')
+  let msgError = document.getElementById('msgError')
+  let msgSuccess = document.getElementById('msgSuccess')
   let userValid = {nome: '',user: '',senha: '',saldo: ''}
   let listaUser = JSON.parse(localStorage.getItem('listaUser'))
   console.log("usuario esperado: " + userValid)
@@ -96,7 +96,7 @@ function autenticar(){
     saldo: '',
     PerfilImg: ''}
   
-  STGlobalDBObj.forEach((item) => {
+  STGlobalDBObj[senha.value].forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
       userValid2 = {
          nome: item.nomeCad,
