@@ -37,19 +37,21 @@ window.location.href = "https://google.com"
 }
 
 if(!btndisabled){  
-console.warn("")
+console.warn("Deu Pau Nos Botões Desativados Do Site!")
 }else{
 btndisabled.addEventListener('click', function() {
- window.location.href = "https://pingobras-404.glitch.me"
+ btndisabled.href = "https://pingobras-404.glitch.me"
  btndisabled.style.cursor = "progress"
  console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")});
 }
 if(!btndisabled2){
+console.warn("Deu Pau Nos Botões Desativados 2 Do Site!")
+}else{
 btndisabled2.addEventListener('click', function() {
-    window.location.href = "https://pingobras-404.glitch.me"
-    btndisabled2.style.cursor = "progress"
-    console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")
-  });}
+ btndisabled2.href = "https://pingobras-404.glitch.me"
+ btndisabled2.style.cursor = "progress"
+ console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")});
+}
 
   
   
