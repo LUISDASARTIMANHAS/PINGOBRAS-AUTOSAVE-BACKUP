@@ -22,8 +22,6 @@ const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
-body.style.height = telaHeight+"px"
-document.querySelector("config").style.height = telaHeight+"px"
 
 
 function restart() {
