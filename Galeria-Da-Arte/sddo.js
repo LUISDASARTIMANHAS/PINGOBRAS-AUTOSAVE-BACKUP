@@ -1,11 +1,12 @@
 function authLDA(){
 let senhaSite = "qweasdzxc124"
-const executavel = document.getElementById("main");
-const body = document.getElementById("screenLoad");
+const main = document.getElementById("main");
+const login = document.getElementById("screenLoad");
 const labelLogin = document.getElementById("labelLogin");
 const loadingBar = document.getElementById("loadingBar");
-let executavelSty = executavel.style
-let bodySty = body.style
+const nav = document.querySelector("nav");
+let mainSty = main.style
+let loginSty = login.style
 const userinput = document.getElementById("userInput").value
   
     var iniciar2 = "no";
@@ -21,8 +22,9 @@ function frame() {
         iniciar2 = "sim";
 if(senhaSite == userinput) {
       alert("Hello My Friend")
-      bodySty.display = "none"
-      executavelSty.display = ""
+      loginSty.display = "none"
+      mainSty.display = ""
+      nav.style.display = ""
 }else{
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"}
 }else{

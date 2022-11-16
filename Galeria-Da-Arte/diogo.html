@@ -12,7 +12,7 @@
     
     <title>PINGOBRAS DESIGNERS</title>
 
-<nav class="cabecalho diogo-cabecalho copyright" >
+<nav style="display: none;" class="cabecalho diogo-cabecalho copyright" >
 
         <div class="info" >
           
@@ -55,15 +55,15 @@
           <div id="direitos" class="direitos">Loading...</div>
         </footer>
       </div>
-    <login id="screenLoad" class="conteudo" role="main">
+    <login style="background: gray;
+                  padding: 5px;" id="screenLoad" class="conteudo" role="main">
   <h1 id="labelLogin">AGUARDANDO LOGIN...</h1>
   
-  <input id="userInput" 
+  <input 
+         id="userInput" 
          class="input-LDA"
-         placeholder="0000"
-         type="number"
-         min="1000"
-         max="9000">
+         placeholder="123456789000"
+         type="password">
   <button onclick="authLDA()" class="btn-LDA">Enviar</button>
   
   <div style="width: 75%;" class="boxbar">
