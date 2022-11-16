@@ -7,14 +7,15 @@ let auth3 = 1695241900+day3
 let auth4 = 19264095713+day3
 
 
-if(!bypassJson2||!token||!bypassST||!bypassST.bypass2||bypassJson2 == null||bypassJson2 == "null") {
+if(!bypassJson2||!token||bypassJson2 == null||bypassJson2 == "null") {
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
 localStorage.setItem("bypass","0")
+window.location.href = "#"
 }
 
 function autentication(){
-if(!bypassJson2||!token||!bypassST.bypass2||bypassJson2 == "0"||bypassJson2 == "bypass"||bypassJson2 == null) {
+if(!bypassJson2||!token||bypassJson2 == "0"||bypassJson2 == "bypass"||bypassJson2 == null) {
 window.location.href = "https://pingobras.glitch.me/login"
 localStorage.removeItem("bypass")
 }
