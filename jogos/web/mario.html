@@ -79,12 +79,13 @@
                alt="cano do mario"
                class="pipe">
         </div>
-       <div id="configsM" style="background: gray; 
+       <div id="configsM" style="color: white;
+                                 background: black; 
                                  width: 100%; 
                                  text-align: center;
                                  cursor: crosshair;">
       <h1>Menu De Configurações</h1>
-      <p>Tela do usuario: <js id="labelTela">Sem Dimenções de tela</js></p>
+      <p style="width: 20%;">Tela do usuario: <js id="labelTela">Sem Dimenções de tela</js></p>
       <p>Modo de jogo: Padrão(medium)</p>
         <audio  
             controls
@@ -97,34 +98,27 @@
          
          <br>
          
-        <button verde class="btnNav gameCursor">
+        <button disabled verde class="btnNav gameCursor">
           Easy mode
         </button>
          
-         <br>
-         
-        <button laranja class="btnNav gameCursor">
+         <button laranja class="btnNav gameCursor">
           Medium mode
         </button>
-         
-         <br>
          
         <button vermelho class="btnNav gameCursor">
           Hard mode
         </button>
          
-         <br>
-         
         <button class="btnNav gameCursor" id="btnHit" onclick="HitBox()"> 
           Ativar Hit Box?
         </button>
-         
-         <br>
          
          <button class="btnNav gameCursor" id="btnRestart" onclick="restart()"> 
           Reiniciar Automatico?
         </button>
          
+         <br>
          <br>
          
         <button class="btnNav gameCursor" onclick="playGame()"> 
