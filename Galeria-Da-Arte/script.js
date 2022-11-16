@@ -1,8 +1,11 @@
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
-let storageSize = 3000
-let DBUsado = 2800.43/storageSize*100;
-const DBrestante = storageSize*DBUsado/100;
+let DBSize = 3000
+let DBSizeUploaded = 2462.24
+const DBUsado = DBSizeUploaded/DBSize*100;
+const DBrestante = DBSize*DBUsado/100;
+let DBSizeGB = DBSize/1000
+let DBrestanteGB = DBrestante/1000
 
 var width = 0;
 var id = setInterval(frame, 100);
@@ -35,5 +38,5 @@ clearInterval(id);
 width++;
 bar.style.width = width + "%";
 bar.innerHTML = width + "%/100%";
-DBRLabel.innerHTML = DBrestante+"MB/"+storageSize+"MB"}
+DBRLabel.innerHTML = DBrestanteGB+"MB/"+DBSizeGB+"GB"}
 }
