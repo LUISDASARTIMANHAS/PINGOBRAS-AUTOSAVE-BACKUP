@@ -16,6 +16,7 @@ localStorage.setItem("bypass","0")
 function autentication(){
 if(!bypassJson2||!token||!bypassST.bypass2||bypassJson2 == "0"||bypassJson2 == "bypass") {
 window.location.href = "https://pingobras.glitch.me/login"
+localStorage.removeItem("bypass")
 }
   
 if(bypassST.bypass == auth3 || bypassST.bypass2 == auth4) {
@@ -28,7 +29,7 @@ window.location.href = ("https://pingobras.glitch.me/admin")
 }else{//adm falso
 const tokenSair ="desconectado";
 localStorage.setItem("ADMtoken", tokenSair);
-localStorage.setItem("bypass","bypass","0")
+localStorage.setItem("bypass","0")
 window.location.href = "https://pingobras.glitch.me/login"
 }}
   
