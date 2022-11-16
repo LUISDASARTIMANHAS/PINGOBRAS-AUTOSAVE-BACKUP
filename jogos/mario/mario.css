@@ -68,7 +68,6 @@ config{
  width: 100%; 
  text-align: center;
  cursor: crosshair;
- height: 620px;
 }
 .pipe{
   position: absolute;
