@@ -1,9 +1,8 @@
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
-let DBUsado = 54;
-let DBStorage = 3000
-const DBrestante = 3000*DBUsado/100;
-let MBUsed = 2700.43/;
+let storageSize = 3000
+let DBUsado = 2800.43/storageSize*100;
+const DBrestante = storageSize*DBUsado/100;
 
 var width = 0;
 var id = setInterval(frame, 100);
@@ -36,5 +35,5 @@ clearInterval(id);
 width++;
 bar.style.width = width + "%";
 bar.innerHTML = width + "%/100%";
-DBRLabel.innerHTML = DBrestante+"MB/5GB"}
+DBRLabel.innerHTML = DBrestante+"MB/"+storageSize+"MB"}
 }
