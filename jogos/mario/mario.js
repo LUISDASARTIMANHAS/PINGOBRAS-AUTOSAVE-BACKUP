@@ -29,6 +29,7 @@ document.querySelector("config").style.height = telaHeight+"px"
 function restart() {
   autoReplay = "sim"
   btnAutoReplay.innerHTML = "Ativado!" 
+  btnAutoReplay.style.opacity = "0.65"
 }
 
 gameBoard.style.display = "none"
@@ -126,6 +127,7 @@ function HitBox() {
   pipePlant.style.border = "2px solid black"
   mario.style.border = "2px solid black"
   btnHit.innerHTML = "Ativado!"
+  btnHit.style.opacity = "0.65"
 }
 
 /*if(placarST){
