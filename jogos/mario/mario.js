@@ -15,8 +15,9 @@ const marioJump = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-2
 const marioGameover= new Audio("https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/Super Mario Bros. - Game Over Sound Effect.mp3?v=1662591735840");
 let placarLocal = 0;
 var second = 0;
-const labelPlacar = document.querySelector("#placar");
-const LabelHightScore = document.querySelector("#HightScore");
+const labelPlacar = document.getElementById("placar");
+const LabelHightScore = document.getElementById("HightScore");
+const LabelHSG = document.getElementById("HightScoreGlobal")
 const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
@@ -103,6 +104,7 @@ function perdeu() {
 
   
   LabelHightScore.innerHTML = HightScore
+  LabelHSG.innerHTML = HightScore
   if(placarLocal >= HightScore){
   localStorage.setItem("Mario Jump HightScore", placarLocal);}  
   
