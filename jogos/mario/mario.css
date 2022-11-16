@@ -59,6 +59,17 @@ js{
   background-size: cover;
   background-position: center center;
 }
+config{
+ font-size:20px;
+ text-transform:capitalize;
+ background-color:purple;
+ font-style:italic;
+ color: white;
+ width: 100%; 
+ text-align: center;
+ cursor: crosshair;
+ height: 620px;
+}
 .pipe{
   position: absolute;
   bottom: 0;

@@ -79,14 +79,16 @@
                alt="cano do mario"
                class="pipe">
         </div>
-       <div id="configsM" style="color: white;
-                                 background: black; 
-                                 width: 100%; 
-                                 text-align: center;
-                                 cursor: crosshair;">
+       <config id="configsM">
       <h1>Menu De Configurações</h1>
-      <p style="width: 20%;">Tela do usuario: <js id="labelTela">Sem Dimenções de tela</js></p>
-      <p>Modo de jogo: Padrão(medium)</p>
+      <p style=" font-style:normal;
+                 font-size:20px;
+                 text-transform:capitalize;
+                 text-align:left;">Tela do usuario: <js id="labelTela">Sem Dimenções de tela</js></p>
+      <p style="font-style:normal;
+                font-size:20px;
+                text-transform:capitalize;
+                text-align:left;">Modo de jogo: Padrão(medium)</p>
         <audio  
             controls
             class="audio"
@@ -106,7 +108,7 @@
           Medium mode
         </button>
          
-        <button vermelho class="btnNav gameCursor">
+        <button disabled vermelho class="btnNav gameCursor">
           Hard mode
         </button>
          
@@ -124,7 +126,7 @@
         <button class="btnNav gameCursor" onclick="playGame()"> 
           Iniciar Jogo
         </button>
-         </div>
+         </config>
         
       </div></div>
   </body>
