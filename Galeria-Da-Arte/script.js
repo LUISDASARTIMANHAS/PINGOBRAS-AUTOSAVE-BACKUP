@@ -1,3 +1,6 @@
+setTimeout(LoadStats,60000);
+
+function LoadStats(){
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
 let DBSize = 3000
@@ -40,3 +43,5 @@ bar.style.width = width + "%";
 bar.innerHTML = width + "%/100%";
 DBRLabel.innerHTML = DBrestanteGB+"MB/"+DBSizeGB+"GB"}
 }
+
+}//load Stats interval
