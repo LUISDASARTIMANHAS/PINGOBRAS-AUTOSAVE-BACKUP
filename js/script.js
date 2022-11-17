@@ -88,7 +88,7 @@ if (button4){
 }
 
 let stl = localStorage
-if(!stl.SITESALDO||!stl.GlobalDB){
+if(!stl.GlobalDB){
 console.error("Nada Para Limpar")
 }else{
 stl.clear()
