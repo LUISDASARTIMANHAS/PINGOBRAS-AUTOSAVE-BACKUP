@@ -1,0 +1,20 @@
+1-Nome real
+
+2- nome de usuario
+
+3- senha
+
+4- imagem de perfil
+
+5-cor de plano de fundo
+
+Como os Dados Ficam!
+{
+"nomeCad": "meu nome",
+ "userCad": "user123",
+ "senhaCad": "123456",
+ "saldoCad": 1,
+ "PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
+ "Token":"192.168.100.3",
+ "UserBGCad":"red"
+}
