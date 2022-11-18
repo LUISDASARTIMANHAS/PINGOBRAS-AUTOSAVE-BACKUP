@@ -28,9 +28,12 @@ const X = 5+"y"
 const Y = 6+"y"
 const Z =  7+"y"
 const _ = " "
-const msmC = document.getElementById("msmASerCripto");
-const InpASerCripto = document.getElementById("msmCripto");
-let phrase = I+_+L+O+V+E+_+Y+O+U+_+msmC;
+const InpASerCripto = document.getElementById("msmASerCripto").value;
+const msmC = document.getElementById("msmCripto");
+let Replace = InpASerCripto.value.replace("A",0)
+Replace = InpASerCripto.value.replace("A",1)
+
+let phrase = I+_+L+O+V+E+_+Y+O+U+_+InpASerCripto;
 
 msmC.innerHTML = phrase
 
