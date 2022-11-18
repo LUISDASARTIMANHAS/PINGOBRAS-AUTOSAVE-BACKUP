@@ -1,3 +1,6 @@
+const loopCripto = setInterval(refreshCripto,1000)
+
+function refreshCripto(){
 const A = 0
 const B = 1
 const C = 2
@@ -25,7 +28,10 @@ const X = 5+"y"
 const Y = 6+"y"
 const Z =  7+"y"
 const _ = " "
-const msmC = document.getElementById("msmCripto")
-let phrase = I+_+L+O+V+E+_+Y+O+U
+const msmC = document.getElementById("msmASerCripto");
+const InpASerCripto = document.getElementById("msmCripto");
+let phrase = I+_+L+O+V+E+_+Y+O+U+_+msmC;
 
 msmC.innerHTML = phrase
+
+}
