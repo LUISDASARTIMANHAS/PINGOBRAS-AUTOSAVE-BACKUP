@@ -25,5 +25,7 @@ const X = 5+"y"
 const Y = 6+"y"
 const Z =  7+"y"
 const _ = " "
+const msmC = document.getElementById("msmCripto")
 let phrase = I+_+L+O+V+E+_+Y+O+U
 
+msmC.innerHTML = phrase
