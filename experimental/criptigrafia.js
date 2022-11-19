@@ -1,6 +1,9 @@
 const loopCripto = setInterval(refreshCripto,1000)
 
 function refreshCripto(){
+let AR = value.replaceAll("A",0)
+let BR = AR.replaceAll("B",1)
+let CR = BR.replaceAll("E",3)
 const A = 0
 const B = 1
 const C = 2
