@@ -33,6 +33,13 @@
   --width: "largura";
   --white-space: "espaco em branco";
 }
+button{
+ text-transform:capitalize;
+ font-size:18px;
+ background-color:gray;
+ border-color:black;
+ border-width:5px;
+}
 .btnFixedLeft{
   font-size: 15px;
   font-weight: bold;
