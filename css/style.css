@@ -1,18 +1,3 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
 /* Our default values set as CSS variables */
 @font-face {
   font-family: "Noto Sans Mono", monospace;
@@ -40,8 +25,6 @@ to this section's matching END comment to see page-specific styles.
   --sub-tamanho: 17pt;
   --X: 0px;
   --Y: 390px;
-  --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929);
-  --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
   --IMGLuisdasartimanhas: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/doge-angry.png?v=1661855131002);
 
   --display: flex formato de celular;

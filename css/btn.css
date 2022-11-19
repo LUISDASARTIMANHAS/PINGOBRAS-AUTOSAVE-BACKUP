@@ -33,10 +33,12 @@
   --width: "largura";
   --white-space: "espaco em branco";
 }
-.btn-diogo{
-  color:white;
+.btn-criptografar{
+ border-radius:25px;
+ overflow:hidden;
+ background-color:purple;
+ width:25%;
 }
-
 .btn-entrar{
   background-color: purple;
     border: 5px solid black;
@@ -104,37 +106,6 @@
   cursor: help;
   box-shadow: -8px 20px 20px gray;
   color: gold;
-}
-.btn-open-chat:hover{
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transition: all .3s ease-out;
-}
-.btnadmin {
-  background-color: orange;
-  padding: var(--btn-tamanho);
-  font-weight: bold;
-  margin: 3px;
-}
-.btnadmin:hover{
-  cursor: wait;
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-}
-
-.btn-enviar-msm{
-  background-color: green;
-  color: white;
-  padding: 16px 20px;
-  border: 5px solid black;
-  width: 100%;
-}
-.btn-enviar-msm:hover{
-  box-shadow: -8px 20px 20px gray;
-  color: gold;
-  transform: translateY(5px);
-  transition: all .3s ease-out;
-  opacity: 0.8;
 }
 .btn-enviar-autentication{
   background-color: red;

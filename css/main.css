@@ -21,8 +21,6 @@
   --Y: 390px;
   --PINGOBRASIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/pingobras.png?v=1650114443929);
   --PINGOBRASIMG2: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS.png?v=1650116906906);
-  --IMGLuisdasartimanhas: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/doge-angry.png?v=1661855131002);
-
   --display: flex formato de celular;
   --height: "altuta";
   --Weight: "peso";
@@ -38,6 +36,8 @@ button{
  border-color:black;
  border-width:5px;
  margin: 5px;
+ border-left-color:blue;
+ border-right-color:purple;
 }
 .btnFixedLeft{
   font-size: 15px;
