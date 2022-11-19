@@ -25,14 +25,14 @@ const SR = RR.replaceAll("S",9+"x")
 const TR = SR.replaceAll("T",1+"y")
 const UR = TR.replaceAll("U",2+"y")
 const VR = UR.replaceAll("V",3+"y")
-const WR = UR.replaceAll("V",3+"y")
-const XR = UR.replaceAll("V",3+"y")
-const YR = UR.replaceAll("V",3+"y")
-const ZR = UR.replaceAll("V",3+"y")
-const ReplacedItems = ZR.replaceAll("V",3+"y")
+const WR = VR.replaceAll("W",4+"y")
+const XR = WR.replaceAll("X",5+"y")
+const YR = XR.replaceAll("Y",6+"y")
+const ZR = YR.replaceAll("Z",7+"y")
+const ReplacedItems = ZR
 
 const msmC = document.getElementById("msmCripto");
 
-msmC.innerHTML = VR
+msmC.innerHTML = ReplacedItems
 
 }

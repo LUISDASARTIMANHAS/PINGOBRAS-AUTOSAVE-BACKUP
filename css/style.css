@@ -297,6 +297,8 @@ background: black;
  border-width:5px;
  border-color:black;
  padding:5px;
+ outline: none;
+ min-width: 50%;
 }
 /******************************************************************************
 END Glitch hello-app default styles
