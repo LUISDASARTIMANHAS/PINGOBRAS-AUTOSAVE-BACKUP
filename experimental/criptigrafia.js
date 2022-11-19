@@ -25,22 +25,11 @@ const SR = RR.replaceAll("S",9+"x")
 const TR = SR.replaceAll("T",1+"y")
 const UR = TR.replaceAll("U",2+"y")
 const VR = UR.replaceAll("V",3+"y")
-const L = 2+"x"
-const M = 3+"x"
-const N = 4+"x"
-const O = 5+"x"
-const P = 6+"x"
-const Q = 7+"x"
-const R = 8+"x"
-const S = 9+"x"
-const T = 1+"y"
-const U = 2+"y"
-const V = 3+"y"
-const W = 4+"y"
-const X = 5+"y"
-const Y = 6+"y"
-const Z =  7+"y"
-const _ = " "
+const WR = UR.replaceAll("V",3+"y")
+const XR = UR.replaceAll("V",3+"y")
+const YR = UR.replaceAll("V",3+"y")
+const ZR = UR.replaceAll("V",3+"y")
+const ReplacedItems = ZR.replaceAll("V",3+"y")
 
 const msmC = document.getElementById("msmCripto");
 
