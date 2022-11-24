@@ -87,9 +87,10 @@ if (button4){
   ClickMouse.play();}
 }
 
-let stl = localStorage
-if(!stl.GlobalDB){
+let DBCLEAR = localStorage.getItem("GlobalDB")
+if(!DBCLEAR){
 console.error("Nada Para Limpar")
 }else{
-stl.clear()
+DBCLEAR.clear()
+window.location.href=""
 }

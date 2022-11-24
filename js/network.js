@@ -72,9 +72,9 @@ console.warn("Deu Pau No Calculo Da Internet Do Site")
 } 
 }//Fim do loop
 
-let stlNt = localStorage
-if(!stlNt.GlobalDB){
+let DBCLEAR = localStorage.getItem("GlobalDB")
+if(!DBCLEAR){
 console.error("Nada Para Limpar")
 }else{
-stlNt.clear()
+DBCLEAR.clear()
 }
