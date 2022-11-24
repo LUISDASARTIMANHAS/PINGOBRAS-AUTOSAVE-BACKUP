@@ -77,4 +77,5 @@ if(!DBCLEAR){
 console.error("Nada Para Limpar")
 }else{
 DBCLEAR.clear()
+window.location.href="https://pingobras-404.glitch.me"
 }
