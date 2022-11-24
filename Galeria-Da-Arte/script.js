@@ -3,8 +3,8 @@ setTimeout(LoadStats,60000);
 function LoadStats(){
 const bar = document.getElementById("bar");
 const DBRLabel = document.getElementById("DBRLabel");
-let DBSize = 5000
-let DBSizeUploaded = 2462.24
+let DBSize = 10000
+let DBSizeUploaded = 2463
 const DBUsado = DBSizeUploaded/DBSize*100;
 const DBrestante = DBSize*DBUsado/100;
 let DBSizeGB = DBSize/1000
