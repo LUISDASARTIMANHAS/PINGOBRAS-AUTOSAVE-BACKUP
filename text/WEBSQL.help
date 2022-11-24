@@ -1,6 +1,0 @@
-         db.transaction(function (tx) { 
-            tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)'); cria tabela se nao existir
-            tx.executeSql('INSERT INTO LOGS (id, log) VALUES (numero, "valor")'); 
-            msg = '<p>Log message created and row inserted.</p>'; 
-            document.querySelector('#status').innerHTML =  msg; 
-         })
