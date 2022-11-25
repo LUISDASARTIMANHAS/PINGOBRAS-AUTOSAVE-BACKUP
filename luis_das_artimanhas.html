@@ -107,7 +107,7 @@
   <input id="userInput" 
          class="input-LDA"
          placeholder="0000"
-         type="number"
+         type="password"
          min="1000"
          max="9000">
   <button onclick="authLDA()" class="btn-LDA">Enviar</button>
@@ -137,6 +137,8 @@
   <script src="admin/auth.js" defer></script>
   
   <script type="text/javascript">
+setInterval(NetSpeed,1000)    
+    
 function NetSpeed(){
   var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
   var time_start, end_time;
@@ -162,6 +164,8 @@ function NetSpeed(){
     var bps = (loadedBits / timeDuration).toFixed(2);
     var speedInKbps = (bps / 1024).toFixed(2);
     var speedInMbps = (speedInKbps / 1024).toFixed(2);
+    
+    if(bps == infinity)
     BPSL.innerHTML = bps
     KBPSL.innerHTML = speedInKbps
     MBPSL.innerHTML = speedInMbps
@@ -170,7 +174,6 @@ function NetSpeed(){
         </script>
   <host>
     <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>
-    <script src="https://equipe-host.glitch.me/bot.js" defer></script>
     <script src="https://pinguinho-host.glitch.me/bot.js" defer></script>
     <script src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
   </host>
