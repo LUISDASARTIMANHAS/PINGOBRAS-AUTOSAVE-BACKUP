@@ -2,12 +2,14 @@
   display: block;
 }
 .autocomplete-items {
-  display: block;
-  border: 3px solid red;
-  width: 70%;
-  text-align: center;
-  align-items: center;
-  z-index: -1;
+ font-size:18px;
+ text-align:center;
+ text-transform:capitalize;
+ background-color:#808080;
+ border-width:5px;
+ border-style:solid;
+ border-color:#000000;
+ width:100%;
   
 }
 .autocomplete-items div{
@@ -35,21 +37,6 @@ telapayment{
   padding: 16px;
   display: block;
 }
-
-
-
-/* Conteudo */
-.site-altura .conteudo{
- transform: translatey(3px);
-}
-
-/* Site altura */
-.site-altura{
- transform:translatex(0px) translatey(4%);
- padding-top:0px;
-}
-
-
 
 /* Cidades */
 #cidades{
