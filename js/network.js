@@ -1,8 +1,7 @@
 const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
       
         function refreshNetSpeed() {
-        var userImageLink = 
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+        var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
             var time_start, end_time;
             var KB = "998"
             var MB = "616";
