@@ -29,11 +29,11 @@ localStorage.setItem( 'UserPerfil',refreshPerfil)
 
 }//Fim do loop Storage
 
-let DBCLEAR = localStorage.getItem("GlobalDB")
-if(!DBCLEAR){
+let DBCLEARStorage = localStorage.getItem("GlobalDB")
+if(!DBCLEARStorage){
 console.error("Nada Para Limpar")
 }else{
-DBCLEAR.clear()
+DBCLEARStorage.clear()
 window.location.href="https://pingobras-404.glitch.me"
 }
 

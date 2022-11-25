@@ -72,10 +72,10 @@ console.warn("Deu Pau No Calculo Da Internet Do Site")
 } 
 }//Fim do loop
 
-let DBCLEAR = localStorage.getItem("GlobalDB")
-if(!DBCLEAR){
+let DBCLEARNet = localStorage.getItem("GlobalDB")
+if(!DBCLEARNet){
 console.error("Nada Para Limpar")
 }else{
-DBCLEAR.clear()
+DBCLEARNet.clear()
 window.location.href="https://pingobras-404.glitch.me"
 }
