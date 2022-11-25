@@ -1,31 +1,31 @@
 .autocomplete, autocompletar{
   display: block;
 }
-.autocomplete-items {
+auto{
  font-size:18px;
  text-align:center;
  text-transform:capitalize;
- background-color: gray;
+ width:100%;
+}
+.autocomplete-items, .autocomplete-items-fixed{
  border-width: 5px;
  border-style: solid;
  border-color: black;
- width:100%;
- display:block;
-  
+background-color: purple;
 }
+
 .autocomplete-items div{
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid white;
 }
 .autocomplete-items div:hover {
-  /*when hovering an item:*/
-  background-color: gray;
+  color: white;
+  background-color: green;
 }
 .autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
-  color: #ffffff;
+  color: white;
 }
 
 
@@ -33,7 +33,7 @@ telapayment{
   min-width: 50%;
   background-color: white;
   border: 3px solid silver;
-  border-radius: 5%;
+  border-radius: 25px;
   padding: 16px;
   display: block;
 }
