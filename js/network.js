@@ -1,19 +1,19 @@
 const loopNetSpeed = setInterval(refreshNetSpeed, 5000);
       
-        function refreshNetSpeed() {
-        var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
-            var time_start, end_time;
-            var KB = 998
-            var MB = 616;
-            var GB = 5;
-            var Size = GB+MB+KB
-            console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size)
-            var downloadImgSrc = new Image();
-            downloadImgSrc.onload = function () {
-                end_time = new Date().getTime();
-                displaySpeed();};
-            time_start = new Date().getTime();
-            downloadImgSrc.src = userImageLink;
+function refreshNetSpeed() {
+const userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+var end_time
+var KB = "998"
+var MB = "616";
+var GB = "5";
+var Size = GB+MB+KB
+let downloadImgSrc = new Image();           
+const time_start = new Date().getTime();
+  
+  
+  console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size)   
+  downloadImgSrc.onload = function () {end_time = new Date().getTime();displaySpeed();};
+  downloadImgSrc.src = userImageLink;
   
 function displaySpeed() {                
   var timeseconds = (end_time - time_start)/1024
