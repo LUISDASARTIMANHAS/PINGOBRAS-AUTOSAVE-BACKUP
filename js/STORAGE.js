@@ -1,5 +1,4 @@
 const loopStorage = setInterval(refreshStorage, 15000);
-const TentativasRestantesST = localStorage.getItem("Tentativas4G");
 
 function refreshStorage() {
 const siteSaldo = 81.50;

@@ -74,4 +74,11 @@ function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me/log
 }
   
   
-}
+}//Fim do refresh
+
+let labelSiteSaldoAuth = document.getElementById("siteSaldo")  
+if(!labelSiteSaldoAuth) {
+console.warn("Deu Pau No Dinheiro Do Site")
+}else{
+let Saldo = localStorage.getItem("SITESALDO")
+labelSiteSaldoAuth.innerHTML = Saldo}
