@@ -5,17 +5,17 @@
  font-size:18px;
  text-align:center;
  text-transform:capitalize;
- background-color:#808080;
- border-width:5px;
- border-style:solid;
- border-color:#000000;
+ background-color: gray;
+ border-width: 5px;
+ border-style: solid;
+ border-color: black;
  width:100%;
+ display:block;
   
 }
 .autocomplete-items div{
   padding: 10px;
   cursor: pointer;
-  background-color: blue;
   border-bottom: 1px solid white;
 }
 .autocomplete-items div:hover {
