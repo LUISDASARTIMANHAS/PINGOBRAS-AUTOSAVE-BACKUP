@@ -26,6 +26,10 @@
           <button onclick="NetSpeed()">
             Calcular Velociade De Internet
           </button>
+          
+          <p>BPS: <js id="BPSLDA">0BPS</js></p>
+          <p>KBPS: <js id="KBPSLDA">0KBPS</js></p>
+          <p>MBPS: <js id="MBPSLDA">0MBPS</js></p>
         </info>
           
         
@@ -134,10 +138,11 @@
   
   <script type="text/javascript">
 function NetSpeed(){
-    var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
-            var time_start, end_time;
-            
-            // The size in bytes
+  var userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+  var time_start, end_time;
+  const = document.getElementById("LDA")
+  
+  // The size in bytes
             var downloadSize = 5616998;
             var downloadImgSrc = new Image();
   
@@ -157,10 +162,8 @@ function NetSpeed(){
                 var bps = (loadedBits / timeDuration).toFixed(2);
                 var speedInKbps = (bps / 1024).toFixed(2);
                 var speedInMbps = (speedInKbps / 1024).toFixed(2);
-                alert("Your internet connection speed is: \n" 
-                      + bps + " bps\n" + speedInKbps 
-                      + " kbps\n" + speedInMbps + " Mbps\n");
-            }}
+                }
+}
         </script>
   <host>
     <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>
