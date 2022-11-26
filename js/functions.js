@@ -3,8 +3,6 @@ const alarm = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3c
 const ClickMouseFUNCTIONS = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
 const Subir = document.getElementById("back-to-top");
 const Descer = document.getElementById("jsDescer");
-const btnListDev = document.getElementById("btnlist");
-const listDEV = document.getElementById("listDevedores");
 let btnlistChangelogs = document.getElementById('btnlistChangelogs');
 var listChangelogs = document.getElementById('listChangelogs');
 const btnALL = document.querySelectorAll("button");
@@ -18,16 +16,20 @@ function mostrarsenha() {
   if(inputSenha.getAttribute('type') == 'password'){
     inputSenha.setAttribute('type', 'text')
     inputSenha.placeholder = "1234"
-  }else {
+  }else{
     inputSenha.setAttribute('type', 'password')
     inputSenha.placeholder = "****"}
-  
 } 
   
 function pageFilmSerie() {
 ClickMouseFUNCTIONS.play();
 window.location.href = "https://pingobras.glitch.me/user/films&series.html";
 };
+function RedirectDevedores() {
+  ClickMouseFUNCTIONS.play();
+  window.location.href = "calcs&dividendos.html"
+}
+
 
 function DESLOGAR() {
   ClickMouseFUNCTIONS.play();
@@ -40,18 +42,6 @@ function REDIRECIONAR() {window.location.href = "https://pingobras.glitch.me"}
 localStorage.setItem("bypass","0")
 }
 
-if(!btnListDev || !listDEV) {
-console.warn("Deu Pau Nos Dados Dos Devedores Do Site")
-}else{
-btnListDev.addEventListener('click', function() {
-  ClickMouseFUNCTIONS.play();
-if(listDEV.style.display === 'block') {listDEV.style.display = 'none';
-}else{listDEV.style.display = 'block';}
-});
-btnListDev.addEventListener('mouseover', function() {
-ClickMouseFUNCTIONS.play();
-listDEV.style.display = 'block';})
-}
 
 function pausePingobras(){
 const music = document.getElementById('pingobras-music');
