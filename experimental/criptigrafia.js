@@ -41,17 +41,7 @@ msmC.innerHTML = ReplacedItems
 function refreshDescripto(){
 let InpASerDescripto = document.getElementById("msmASerDescripto").value;
 let Criptografar2 = InpASerDescripto.toUpperCase()
-let AD = Criptografar2.replaceAll(0,"A")
-let BD = AD.replaceAll(1,"B")
-let CD = BD.replaceAll(2,"C")
-let DD = CD.replaceAll(3,"D")
-let ED = DD.replaceAll(4,"E")
-let FD = ED.replaceAll(5,"F")
-let GD = FD.replaceAll(6,"G")
-let HD = GD.replaceAll(7,"H")
-let ID = HD.replaceAll(8,"I")
-let JD = ID.replaceAll(9,"J")
-let KD = JD.replaceAll(1+"X","K")
+let KD = Criptografar2.replaceAll(1+"X","K")
 let LD = KD.replaceAll(2+"X","L")
 let MD = LD.replaceAll(3+"x","M")
 let ND = MD.replaceAll(4+"x","N")
@@ -67,7 +57,17 @@ let WD = VD.replaceAll(4+"y","W")
 let XD = WD.replaceAll(5+"y","X")
 let YD = XD.replaceAll(6+"y","Y")
 let ZD = YD.replaceAll(7+"y","Z")
-let ReplacedItems2 = ZD
+let AD = ZD.replaceAll(0,"A")
+let BD = AD.replaceAll(1,"B")
+let CD = BD.replaceAll(2,"C")
+let DD = CD.replaceAll(3,"D")
+let ED = DD.replaceAll(4,"E")
+let FD = ED.replaceAll(5,"F")
+let GD = FD.replaceAll(6,"G")
+let HD = GD.replaceAll(7,"H")
+let ID = HD.replaceAll(8,"I")
+let JD = ID.replaceAll(9,"J")
+let ReplacedItems2 = JD
 
 let msmD3 = document.getElementById("msmDescripto");
 
