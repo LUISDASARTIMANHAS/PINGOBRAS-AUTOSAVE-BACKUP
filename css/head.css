@@ -68,9 +68,9 @@ background: purple;
 }
 
 .cabecalho {
-  position: absolute;
+  position: fixed;
   top: 0;
-  background: gray;
+  /*background: gray;*/
   padding: 5px;
   width: 100%;
   border: 5px solid black;
@@ -80,6 +80,7 @@ background: purple;
   height: auto; 
   display: block;
   max-width:100%;
+  background: repeating-linear-gradient(45deg, purple, #00b489);
 }
 /* Page alturaure */
 .site-altura {
