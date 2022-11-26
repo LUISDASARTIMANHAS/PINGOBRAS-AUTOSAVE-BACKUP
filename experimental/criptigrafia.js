@@ -1,5 +1,6 @@
-const loopCripto = setInterval(refreshCripto,2000)
+const loopCripto = setInterval(refreshCripto,500)
 const loopDescripto = setInterval(refreshDescripto,1000)
+const msmC = document.getElementById("msmCripto");
 
 function refreshCripto(){
 const InpASerCripto = document.getElementById("msmASerCripto").value;
@@ -32,17 +33,13 @@ const YR = XR.replaceAll("Y",6+"y")
 const ZR = YR.replaceAll("Z",7+"y")
 const ReplacedItems = ZR
 
-const msmC = document.getElementById("msmCripto");
-
 msmC.innerHTML = ReplacedItems
-  
-function copyCripto(){
-  navigator.clipboard.writeText(ReplacedItems.value)
-  
-}
-  
+   
 }//Fim do criptografo
-
+function copyCripto(){
+  navigator.clipboard.writeText(msmC.innerText)
+  alert("Mensagem: "+msmC.innerText + " Copiada!")
+}
 
 function refreshDescripto(){
 let InpASerDescripto = document.getElementById("msmASerDescripto").value;
