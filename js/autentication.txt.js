@@ -5,7 +5,7 @@ const d3 = new Date();
 let day3 = d3.getDate();
 let auth3 = 1695241900+day3
 let auth4 = 19264095713+day3
-
+const adminData = document.getElementById("adminData");
 
 if(!bypassJson2||!token||bypassJson2 == null||bypassJson2 == "null") {
 const tokenSair ="desconectado";
@@ -42,9 +42,11 @@ if(token == "conectado") {
   const admstatus = document.getElementById("adminStatus");
  admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: green')
+  adminData.style.display = "block"
 }else{
   const status = "Status: Não conectado"
   const admstatus = document.getElementById("adminStatus");
   admstatus.innerHTML = status;
   admstatus.setAttribute('style', 'color: red')
+  adminData.style.display = "none"
 }
