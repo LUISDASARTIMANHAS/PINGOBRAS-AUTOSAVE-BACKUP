@@ -1,4 +1,4 @@
-const loopCripto = setInterval(refreshCripto,1000)
+const loopCripto = setInterval(refreshCripto,2000)
 const loopDescripto = setInterval(refreshDescripto,1000)
 
 function refreshCripto(){
