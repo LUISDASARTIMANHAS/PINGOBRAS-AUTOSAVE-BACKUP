@@ -35,6 +35,12 @@ const ReplacedItems = ZR
 const msmC = document.getElementById("msmCripto");
 
 msmC.innerHTML = ReplacedItems
+  
+function copyCripto(){
+  navigator.clipboard.writeText(ReplacedItems.value)
+  
+}
+  
 }//Fim do criptografo
 
 
