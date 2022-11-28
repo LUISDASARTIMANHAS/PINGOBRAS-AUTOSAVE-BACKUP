@@ -8,10 +8,11 @@ auto{
  width:100%;
 }
 .autocomplete-items, .autocomplete-items-fixed{
+ color: white;
  border-width: 5px;
  border-style: solid;
- border-color: black;
-background-color: purple;
+ border-color: silver;
+background-color: black;
 }
 
 .autocomplete-items div{
@@ -20,7 +21,7 @@ background-color: purple;
   border-bottom: 1px solid white;
 }
 .autocomplete-items div:hover {
-  color: white;
+  color: red;
   background-color: green;
 }
 .autocomplete-active {
