@@ -19,7 +19,7 @@
  "senhaCad": "96451290", 
  "saldoCad": 88,
  "PerfilIMG":"https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/valdo.jpg?v=1665316103313",
- "Token":"192.168.100.22",
+ "Token":"192.168.100.2",
  "UserBGCad":"#FF0000"
 },
 
@@ -28,7 +28,7 @@
  "senhaCad": "998774163", 
  "saldoCad": 24,
  "PerfilIMG":"https://cdn.discordapp.com/avatars/533042065408262164/33fa87caed0f1a449be530fef6a1d71b.webp?size=2048",
- "Token":"192.168.100.11",
+ "Token":"192.168.100.3",
  "UserBGCad":"#9900ff"
 },
 
@@ -37,7 +37,7 @@
  "senhaCad": "10062002", 
  "saldoCad": 1,
  "PerfilIMG":"",
- "Token":"192.168.100.45",
+ "Token":"192.168.100.4",
  "UserBGCad":""
 },
   
@@ -46,7 +46,7 @@
  "senhaCad": "z0mbieltr2", 
  "saldoCad": 7,
  "PerfilIMG":"https://cdn.discordapp.com/attachments/946172847108264026/1023227651223207966/306100080_633632671438689_3474531611291345899_n.jpg",
- "Token":"192.168.100.47",
+ "Token":"192.168.100.5",
  "UserBGCad":""
 },
   
@@ -55,7 +55,7 @@
  "senhaCad": "826961415130185749", 
  "saldoCad": 2,
  "PerfilIMG":"https://cdn.discordapp.com/attachments/1022972920517099580/1028807372484915302/d4d8e81995754e103fa84926b7e069d4.jpg",
- "Token":"192.168.100.2",
+ "Token":"192.168.100.6",
  "UserBGCad":""
 },
   
@@ -64,7 +64,7 @@
  "senhaCad": "9595",
  "saldoCad": 2,
  "PerfilIMG": "https://w7.pngwing.com/pngs/41/1022/png-transparent-lightning-mcqueen-disney-infinity-3-lightning-mcqueen-mater-cars-cars-orange-car-pixar-thumbnail.png",
- "Token":"192.168.100.3",
+ "Token":"192.168.100.7",
  "UserBGCad":""
 },
 
@@ -74,8 +74,18 @@
  "senhaCad": "cocoverde123",
  "saldoCad": 1,
  "PerfilIMG": "",
- "Token":"192.168.100.3",
+ "Token":"192.168.100.8",
  "UserBGCad":"black" 
+},
+
+{
+ "nomeCad": "AWAIT.......",
+ "userCad": "AWAIT...",
+ "senhaCad": "AWAIT...",
+ "saldoCad": 1,
+ "PerfilIMG": "",
+ "Token":"192.168.100.1",
+ "UserBGCad":""
 }
   
 ];
@@ -96,7 +106,8 @@ function autenticar(){
     senha: '',
     saldo: '',
     PerfilImg: '',
-    UserBG:''}
+    UserBG:'',
+    Token:"255.255.255.255"}
   
     STGlobalDBObj.forEach((item) => {
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
@@ -106,7 +117,8 @@ function autenticar(){
          senha: item.senhaCad,
          saldo: item.saldoCad,
          PerfilImg: item.PerfilIMG,
-         UserBG: item.UserBGCad}      
+         UserBG: item.UserBGCad,
+         Token:item.Token,}      
     }console.log(userValid2) 
   })
 
