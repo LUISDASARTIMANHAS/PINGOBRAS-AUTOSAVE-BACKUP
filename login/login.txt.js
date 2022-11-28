@@ -101,10 +101,10 @@ function autenticar(){
   console.log("lista esperada: " + listaUser)
   
   let userValid2 = {
-    nome: '',
-    user: '',
+    nome: 'https://pingobras.glitch.me',
+    user: 'SERVIDOR',
     senha: '',
-    saldo: '',
+    saldo: '0',
     PerfilImg: '',
     UserBG:'',
     Token:"255.255.255.255"}
