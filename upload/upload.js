@@ -14,9 +14,10 @@ const fileType = document.getElementById("fileType");
 const filecreated = document.getElementById("filecreated");
 const filemodified = document.getElementById("filemodified");
 const Llink = document.getElementById("labelLink");
-
 const UPDBObj = localStorage.getItem("Upload")
 const UPDB = JSON.parse(UPDBObj)
+
+
 if(!UPDB||UPDB == "null"){
 console.warn("Deu Pau Nos Dados Do Uploader Do Site!")
 }else{
