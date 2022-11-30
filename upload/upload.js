@@ -1,4 +1,5 @@
 
+try {//verificador de erros
 const fileInput = document.querySelector("#fileInput");
 const StatusUP = document.getElementById("statusUP");
 const statusLoad = document.getElementById("statusLoad");
@@ -92,3 +93,5 @@ fileInput.addEventListener("click", event => {
 }catch (err){
   alert(err);}
 }
+  
+}catch (error){alert(error)}// Fim Do Verificador de erros
