@@ -10,8 +10,8 @@ const userinput = document.getElementById("userInput").value
   
     var iniciar2 = "no";
     var barload = document.getElementById("barlogin");
-    var width = 50;
-    var barspeed = 200;
+    var width = 45;
+    var barspeed = 100;
     var id = setInterval(frame, barspeed);
 
 
