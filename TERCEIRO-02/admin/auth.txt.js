@@ -13,7 +13,7 @@ const userinput = document.getElementById("userInput").value
     var width = 45;
     var barspeed = 100;
     var id = setInterval(frame, barspeed);
-
+ 
 
 function frame() {
       if (width >= 100) {
@@ -23,6 +23,11 @@ if(senhaSite == userinput) {
       alert("Bem Vindo De Volta Terceiro 02")
       bodySty.display = "none"
       executavelSty.display = ""
+let TRID = Math.random().toString(2).substr(16)
+let mathRandom = Math.random().toString(16).substr(2)
+let tokenTR = mathRandom + mathRandom+"ValidDB:"+TRID
+  
+sessionStorage.setItem("tokenTR:",tokenTR)
 }else{
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"}
 }else{

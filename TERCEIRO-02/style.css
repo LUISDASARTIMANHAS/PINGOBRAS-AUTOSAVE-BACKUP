@@ -16,5 +16,9 @@ button{
  height:40px;
 }
 button:hover{
-  
+background: blue;
+cursor: pointer;
+box-shadow: -8px 20px 20px purple;
+transform: translateY(5px);
+transition: all .5s ease-out;
 }
