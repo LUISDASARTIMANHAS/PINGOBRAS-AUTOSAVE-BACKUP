@@ -1,6 +1,6 @@
-let TRID = Math.random().toString(3).substr(16)
+let TRID = Math.random().toString(26).substr(10)
 let mathRandom = Math.random().toString(8).substr(2)
-let tokenTR = mathRandom + mathRandom+"ValidDB:"+TRID
+let tokenTR = mathRandom + mathRandom +"ValidDB:"+TRID
 
 
 function authTR(){
