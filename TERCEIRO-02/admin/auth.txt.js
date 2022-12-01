@@ -1,3 +1,8 @@
+let TRID = Math.random().toString(3).substr(16)
+let mathRandom = Math.random().toString(8).substr(2)
+let tokenTR = mathRandom + mathRandom+"ValidDB:"+TRID
+
+
 function authTR(){
 let senhaSite = "2022"
 const executavel = document.getElementById("main");
@@ -22,11 +27,7 @@ function frame() {
 if(senhaSite == userinput) {
       alert("Bem Vindo De Volta Terceiro 02")
       bodySty.display = "none"
-      executavelSty.display = ""
-let TRID = Math.random().toString(2).substr(16)
-let mathRandom = Math.random().toString(16).substr(2)
-let tokenTR = mathRandom + mathRandom+"ValidDB:"+TRID
-  
+      executavelSty.display = ""  
 sessionStorage.setItem("tokenTR:",tokenTR)
 }else{
       labelLogin.innerHTML = "NÃO FOI POSSIVEL FAZER LOGIN⚠️"}
