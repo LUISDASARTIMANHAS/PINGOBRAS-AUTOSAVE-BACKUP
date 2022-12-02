@@ -1,6 +1,8 @@
 var canvas = document.getElementById("GameBoard");
 var context = canvas.getContext("2d");
-let meioARC = Math.PI/180
+const PI = Math.PI
+const meioARC = PI/180
+
 
 /*
 //desenhar game
@@ -25,10 +27,10 @@ context.fillRect(horizontal,vertical,TamLargura,TamAltura)
 //restaura as configs salvas por save
 horizontal = 100
 context.restore()
-context.fillRect(horizontal,vertical,TamLargura,TamAltura)*/
+context.fillRect(horizontal,vertical,TamLargura,TamAltura)
 
 //iniciando um novo caminho
-/*
+
 context.beginPath()
 context.moveTo(75,250)// Ponto inicial
 context.lineTo(150,50)//Percorrer trajeto com uma linha
@@ -51,9 +53,19 @@ context.beginPath()
 context.arc(50,50,40,90*meioARC, 270*meioARC,true)
 context.fill()
 context.stroke()
-*/
+
 
 context.beginPath()
-context.arc(250,50,40, 0,2*meioARC)
+context.arc(250,50,40, 0,2*PI)
 context.fill()
-context.stroke()
+context.stroke() 
+*/
+
+//Função construtora
+function meuCarro(cor,ano,valor){
+  this.cor = cor
+  this.ano = ano
+  this.valor = valor
+}
+
+var carro = new ()
