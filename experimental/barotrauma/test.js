@@ -69,6 +69,5 @@ function meuCarro(cor,ano,valor){
 }
 
 var carro = new meuCarro("vermelho", 2022,100000)
-{
-  document.query
-}
+
+document.getElementById("meuCarro").innerHTML = carro
