@@ -122,6 +122,9 @@ js{
 [hidden] {
   display: none !important;
 }
+[negrito]{
+font-weight:600;
+}
 [branco]{
   color: white;
 }
