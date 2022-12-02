@@ -12,6 +12,7 @@ context.fillRect(horizontal,vertical,TamLargura,TamAltura)
 // salvando configs.
 context.save()
 
+//desenhar game2
 vertical = 10
 horizontal = 50
 TamLargura = 30
@@ -19,4 +20,7 @@ TamAltura = 25
 context.fillStyle = "blue"
 context.fillRect(horizontal,vertical,TamLargura,TamAltura)
 
-context.rest
+//restaura as configs salvas por save
+horizontal = 100
+context.restore()
+context.fillRect(horizontal,vertical,TamLargura,TamAltura)
