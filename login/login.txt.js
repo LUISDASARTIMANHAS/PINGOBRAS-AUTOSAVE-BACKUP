@@ -5,10 +5,10 @@
   const userscad8 = document.querySelector("#userCad8")
   let sep = ","
   const STGlobalDBObj = [
-{"nomeCad": "administrador",
+{"nomeCad": "PINGOBRAS S.A",
  "userCad": "equipe",
  "senhaCad": "P;DMMSSL",
- "saldoCad": 1500.90,
+ "saldoCad": 169,
  "PerfilIMG":"",
  "Token":"192.168.100.1",
  "UserBGCad":""
