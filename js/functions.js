@@ -21,9 +21,9 @@ function mostrarsenha() {
     inputSenha.placeholder = "****"}
 } 
   
-function pageFilmSerie() {
+function pageLives() {
 ClickMouseFUNCTIONS.play();
-window.location.href = "https://pingobras.glitch.me/user/films&series.html";
+window.location.href = "https://pingobras.glitch.me/user/live";
 };
 function RedirectDevedores() {
   ClickMouseFUNCTIONS.play();
