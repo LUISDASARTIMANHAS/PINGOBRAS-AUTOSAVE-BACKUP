@@ -24,3 +24,15 @@ context.fillRect(horizontal,vertical,TamLargura,TamAltura)
 horizontal = 100
 context.restore()
 context.fillRect(horizontal,vertical,TamLargura,TamAltura)
+
+//iniciando um novo caminho
+context.beginPath();
+context.moveTo(75,250)// Ponto inicial
+context.lineTo(150,50)//Percorrer trajeto com uma linha
+context.lineTo(225,250)//Percorrer trajeto com uma linha
+context.lineTo(50,120)//Percorrer trajeto com uma linha
+context.lineTo(250,120)//Percorrer trajeto com uma linha
+context.lineTo(150,50)//Percorrer trajeto com uma linha
+
+context.lineWidth = 2
+context.
