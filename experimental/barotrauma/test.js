@@ -68,4 +68,7 @@ function meuCarro(cor,ano,valor){
   this.valor = valor
 }
 
-var carro = new ()
+var carro = new meuCarro("vermelho", 2022,100000)
+{
+  document.query
+}
