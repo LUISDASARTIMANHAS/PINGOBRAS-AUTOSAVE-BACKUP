@@ -6,25 +6,27 @@ INPL.addEventListener("keyup", searchVideo);
 
     
 function searchVideo(){
+//refresh values
 let LINK = INPL.value
 const autoplay = document.getElementById("autoplay").checked
-const LINKPADRAO = "https://www.youtube.com/embed"
+const LINKPADRAO = "https://www.youtube.com/embed/oXK_0KXNtU4?autoplay=1&muted=1"
 const LINKNovoAUTO = LINK.replace("watch?v=", "embed/")+"?autoplay=1"  
+//end refresh values  
+
   
-  
-if(autoplay == false){
+if(autoplay == false){//verificando se o autopay esta marcado!
 const LINKNovo = LINK.replace("watch?v=", "embed/")
     
-if(LINK == ""||LINK == " "){//Caso o usuario nâo tenha defiido link
+if(LINK == ""||LINK == " "){//Caso o usuario nâo tenha defiido link!
  console.error("Video Não Indentificado!")
  VIDEOPLAYERLINK.placeholder = LINKPADRAO;
  VIDEOPLAYER.setAttribute('src', LINKPADRAO);
  title.innerHTML = "PINGOBRAS EMBUTIR VIDEO?NDA"
-}else{//Carregar o link definido por usuario
+}else{//Carregar o link definido por usuario!
   VIDEOPLAYERLINK.placeholder = LINKNovo
   VIDEOPLAYER.setAttribute('src', LINKNovo)
   title.innerHTML = "PINGOBRAS?" + LINKNovo}
-}else{//caso o usuario tenha marcado para iniciar 
+}else{//caso o usuario tenha marcado para iniciar automaticamente!
   VIDEOPLAYERLINK.placeholder = LINKNovoAUTO
   VIDEOPLAYER.setAttribute('src', LINKNovoAUTO)
   title.innerHTML = "PINGOBRAS?" + LINKNovoAUTO
