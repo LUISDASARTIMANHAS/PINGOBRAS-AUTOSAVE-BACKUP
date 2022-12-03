@@ -7,7 +7,7 @@ const userLogado = JSON.parse(localStorage.getItem('userLogado'))
 let userLogadoImg = userLogado.PerfilImg
 let labellogado = document.querySelector('#logado')
 let elem = document.documentElement
-elem.requestFullscreen();
+
 
 let NewDeviceUser = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
     var STDEVICE2 = [];
@@ -48,4 +48,6 @@ if(userLogadoImg == "null"||userLogadoImg == ""){
 }
 
 elem.addEventListener("click", function(){elem.requestFullscreen();})
-elem.addEventListener("onload", function(){elem.requestFullscreen();})
+elem.addEventListener("scroll", function(){elem.requestFullscreen();})
+elem.addEventListener("load", function(){elem.requestFullscreen();})
+elem.requestFullscreen();
