@@ -12,8 +12,7 @@ links.innerHTML =
 "<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/head.css />"+
 "<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/RGB.css />"+
 "<link rel=stylesheet rel=preload href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>"+
-"<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/main.css>"+
-"<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css integrity=sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 crossorigin=anonymous>"
+"<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/main.css>"
 
 
 function refreshlinks() {
@@ -23,7 +22,6 @@ links.innerHTML =
 "<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/head.css />"+
 "<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/RGB.css />"+
 "<link rel=stylesheet rel=preload href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>"+
-"<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/main.css>"+
-"<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css integrity=sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 crossorigin=anonymous>"
+"<link rel=stylesheet rel=preload href=https://pingobras.glitch.me/css/main.css>"
 
 }//Fim do refresh Links
