@@ -46,9 +46,9 @@ if(userLogadoImg == "null"||userLogadoImg == ""){
 }else{
     perfilIcon2.src = userLogadoImg
 }
-    /* Chrome/Windows/android */
-  if(navegador == "Mozila") {elem.requestFullscreen();}
-    /* Safari */
+    /* Chrome/Windows/android/firefox */
+  if(navegador == "Mozila"||navegador == "Firefox") {elem.requestFullscreen();}
+    /* Safari/ios/mac/opera */
     if (navegador == "Safari") {elem.webkitRequestFullscreen()}
-      /* IE11 */
+      /* IE11/Edge/microsoft */
     if (navegador == ""){elem.msRequestFullscreen();}
