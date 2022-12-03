@@ -21,7 +21,7 @@
     <input 
            type="text" 
            class="form-control" 
-           id="video">
+           id="INPL">
   </div>
 </form>
       
@@ -36,7 +36,15 @@
 </switch>
   <js>Iniciar Video Automaticamente?</js>
      
-<iframe id="iframe" 
+     
+<input class="form-control" 
+       placeholder="https://" 
+       type="text" 
+       id="VIDEOPLAYERLINK" 
+       disabled
+       style="width: 95%;">     
+<iframe 
+        id="VIDEOPLAYER" 
         class="youtube-video"
         title="YouTube video player" 
         frameborder="0" 
@@ -51,13 +59,7 @@
         src="https://www.youtube.com/embed">
       Loading...
 </iframe>
-<p style="display: inline;">Link Da Janela:</p> 
-<input class="form-control" 
-       placeholder="https://" 
-       type="text" 
-       id="INPL" 
-       disabled
-       style="width: 95%;">
+
 
      
 <footer>
