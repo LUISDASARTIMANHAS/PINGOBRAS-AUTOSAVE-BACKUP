@@ -6,6 +6,8 @@ let perfilIcon2 = document.getElementById("perfilIcon")
 const userLogado = JSON.parse(localStorage.getItem('userLogado')) 
 let userLogadoImg = userLogado.PerfilImg
 let labellogado = document.querySelector('#logado')
+const elem = document.documentElement;
+let navegador = navigator.appCodeName
 
 let NewDeviceUser = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
     var STDEVICE2 = [];
@@ -44,3 +46,9 @@ if(userLogadoImg == "null"||userLogadoImg == ""){
 }else{
     perfilIcon2.src = userLogadoImg
 }
+    /* Chrome/Windows/android */
+  if(navegador == "Mozila") {elem.requestFullscreen();}
+    /* Safari */
+    if (navegador == "Safari") {elem.webkitRequestFullscreen()}
+      /* IE11 */
+    if (navegador == ""){elem.msRequestFullscreen();}
