@@ -15,7 +15,8 @@ const LINKNovoAUTO = LINK.replace("watch?v=", "embed/")+"?autoplay=1"
 
   
 if(autoplay == false){//verificando se o autopay esta marcado!
-const LINKNovo = LINK.replace("watch?v=", "embed/")
+var LINKNovo = LINK.replace("watch?v=", "embed/")
+LINKNovo = LINK.replace("youtu.be/", "www.youtube.com/embed/")
     
 if(LINK == ""||LINK == " "){//Caso o usuario nâo tenha defiido link!
  console.error("Video Não Indentificado!")
