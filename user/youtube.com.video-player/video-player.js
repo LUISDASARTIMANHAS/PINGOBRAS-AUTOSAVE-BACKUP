@@ -11,8 +11,8 @@ let LINK = INPL.value
 const autoplay = document.getElementById("autoplay").checked
 const LINKPADRAO = "https://www.youtube.com/embed/oXK_0KXNtU4?autoplay=1&muted=1"
 const LINKNovoAUTO = LINK.replace("watch?v=", "embed/")+"?autoplay=1"
-const LINKNovoAUTO2 = LINK.replace("youtu.be/", ".youtube.com/embed/")+"?autoplay=1"
-const LINKNovo2 = LINK.replace("youtu.be/", ".youtube.com/embed/")
+const LINKNovoAUTO2 = LINK.replace("youtu.be/", "youtube.com/embed/")+"?autoplay=1"
+const LINKNovo2 = LINK.replace("youtu.be/", "youtube.com/embed/")
 let matchLink2 = LINK.match("youtu.be")
 //end refresh values  
 
