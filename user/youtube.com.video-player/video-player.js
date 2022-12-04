@@ -41,29 +41,20 @@ if(LINK == ""||LINK == " "){//Caso o usuario nâo tenha defiido link!
 }else{
 if(autoplay == false){//verificando se o autopay esta marcado!
 
-
-if(matchLink2[0] == "youtu.be"){
-  VIDEOPLAYERLINK.placeholder = LINKNovo2
-  VIDEOPLAYER.setAttribute('src', LINKNovo2)
-  title.innerHTML = "PINGOBRAS?" + LINKNovo2
-}else{
 if(LINK == ""||LINK == " "){//Caso o usuario nâo tenha defiido link!
  console.error("Video Não Indentificado!")
  VIDEOPLAYERLINK.placeholder = LINKPADRAO;
  VIDEOPLAYER.setAttribute('src', LINKPADRAO);
  title.innerHTML = "PINGOBRAS EMBUTIR VIDEO?NDA"
-}else{//Carregar o link definido por usuario!
-  VIDEOPLAYERLINK.placeholder = LINKNovo
-  VIDEOPLAYER.setAttribute('src', LINKNovo)
-  title.innerHTML = "PINGOBRAS?" + LINKNovo}
-}
-  
+}else{
+ VIDEOPLAYERLINK.placeholder = LINKNovo2
+  VIDEOPLAYER.setAttribute('src', LINKNovo2)
+  title.innerHTML = "PINGOBRAS?" + LINKNovo2}
   
 }else{//caso o usuario tenha marcado para iniciar automaticamente!
   VIDEOPLAYERLINK.placeholder = LINKNovoAUTO2
   VIDEOPLAYER.setAttribute('src', LINKNovoAUTO2)
-  title.innerHTML = "PINGOBRAS?" + LINKNovoAUTO2    
-  }//fim do verificar autoplay
-}
+  title.innerHTML = "PINGOBRAS?" + LINKNovoAUTO2}//fim do verificar autoplay
   
+}//Fim Do verificar dominio novo
 }//Fim Da Func
