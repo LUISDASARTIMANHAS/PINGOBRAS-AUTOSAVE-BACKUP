@@ -22,6 +22,7 @@ const runTime = document.getElementById("runTime");
 const timeGame = setInterval(CalctimeGame,1000)
 let HightScore = localStorage.getItem("Mario Jump HightScore");
 let autoReplay = "não"
+const ReplayURL = "https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS/MARIO_GAME/"
 
 
 function restart() {
@@ -85,7 +86,7 @@ function perdeu() {
     setTimeout(Reload,9000)
     function Reload(){
       if(autoReplay == "sim"){
-      window.location.href = "https://pingobras.glitch.me/jogos/web/mario.html"}
+      window.location.href = ReplayURL}
     }
   }else{
     if(pipePosition < "-17" && marioPosition >= 80||pipePlantPosition < "-17" && marioPosition >= 90){
