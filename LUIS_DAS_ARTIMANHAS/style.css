@@ -7,7 +7,7 @@ a:hover{
 barraicon {
   position: absolute;
   width: 110%;
-  top: -95px;
+  top: 0;
   background-color: gray; 
   overflow: auto;
 }
