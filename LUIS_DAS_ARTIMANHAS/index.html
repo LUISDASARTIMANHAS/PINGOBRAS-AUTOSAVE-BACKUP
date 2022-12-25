@@ -16,7 +16,47 @@
       <div class="conteudo" role="main">
            
         <style>
-        barraicon {
+ 
+.server{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://cgbgames.com.br/central/images/img/02.png");
+       background-repeat: no-repeat;
+}
+.contato{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background: url("https://www.tijucas.sc.leg.br/institucional/fotos/2020/imagens-em-noticias/ouvidoria_pag.jpg");
+       background-repeat: no-repeat;
+       height: 100%;
+}
+.pesquisar{
+       font-family: "Courier New", Courier, monospace;
+       font-size: 25px; 
+       background-image: url("https://as2.ftcdn.net/v2/jpg/00/44/59/11/500_F_44591183_YpnEVlgXNy0x4uTfArngnFXM8Nu4umZI.jpg");
+       background-repeat: no-repeat;
+}
+a:hover{
+  color: red;
+}
+
+
+/* Button - Add it from the README instructions */
+btn,input{
+  border: 3px solid black;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1px;
+  box-shadow: -8px 4px 20px gray;
+  transition: 500ms;
+  margin-right: auto;
+}
+
+.dipped {
+  transform: translateY(5px);
+}
+
+barraicon {
   position: absolute;
   width: 110%;
   top: 0;
@@ -36,6 +76,67 @@ barraicon a {
 
 barraicon a:hover {
   background-color: green; /* Add a hover color */
+}
+
+.barramain{
+  background-color: white; /* Add an active/current color */
+}
+
+.barra-pesquisa {
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  font-size: 18px;
+  padding: 11px;
+  border: 2px solid gray;
+  outline: none;
+  color: black;
+  border-radius: 100px;
+}
+
+/* Style the navigation menu */
+menu{
+  list-style-type: none;
+  color: black;
+  background: white;
+  position: absolute;
+  left: 13%;
+  font-size: 20px;
+  top: 60%;
+  display: none;
+  width: 74%;
+  overflow: hidden;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  white-space: nowrap;
+}
+/* Style the navigation links */
+menu li a {
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+menu li a:hover {
+  background-color: green;
+  display: visible;
+}
+
+
+/* Style the submit button with a specific background color etc */
+.btn-contato{
+  position: relative;
+  right: -10%;
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 75%;
 }
 
         </style>
@@ -66,9 +167,9 @@ barraicon a:hover {
     <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>  
     </scripts>
     <host>
-    <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>  
-    <script src="https://equipe-host.glitch.me/bot.js" defer></script>
-    <script src="https://pinguinho-host.glitch.me/bot.js" defer></script>
-    <script src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
+    <script -src="https://pingobras-sistema.glitch.me/bot.js" defer></script>  
+    <script -src="https://equipe-host.glitch.me/bot.js" defer></script>
+    <script -src="https://pinguinho-host.glitch.me/bot.js" defer></script>
+    <script -src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
     </host>
 </html>
