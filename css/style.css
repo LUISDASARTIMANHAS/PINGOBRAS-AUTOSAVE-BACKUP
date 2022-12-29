@@ -139,11 +139,22 @@ a.btn-cadastro, .btnlogin{
     margin: 5px;
 }
 .video-game-LDA{
+font-size: 1.7rem;
+font-weight: 900;
+font-size: 1.7em;
+color: white;          
+align-items: center;
+padding: 8px;   
+background-image: linear-gradient(290deg, rgb(59, 43, 115) 55%, rgb(111, 47, 147), #6f2f93);
+background-position: center;
+text-align: center;
+text-decoration: none;
+margin: 5px;
  width:50%;
- height:600px;
+ height:520px;
  max-width:75%;
  min-width:25%;
- min-height:520px;
+ min-height:420px;
  max-height:720px;
 }
 .red-title{
