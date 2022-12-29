@@ -26,8 +26,12 @@ canvas {
 .teclado{
   display:none;
   background:gray;                  
-  border: 5px solid black;
-                    
+  border: 5px solid black;      
   width: 100%;                
-  align-items: ;
+  align-items: center;
+  text-align: center;
+}
+.btn-teclado{
+ height:50px;
+ width:50px;
 }

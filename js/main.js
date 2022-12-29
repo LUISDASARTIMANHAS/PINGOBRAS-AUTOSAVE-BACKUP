@@ -16,3 +16,6 @@ if (UP2input){
     UP2input.classList.toggle("dipped");
   };}
   
+function FullScreen(){
+  document.documentElement.requestFullscreen();
+}

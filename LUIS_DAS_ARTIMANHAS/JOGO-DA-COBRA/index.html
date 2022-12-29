@@ -14,35 +14,30 @@
     
   <title>PINGOBRAS JOGO DA COBRA</title>
   </head>  
-  <body>
+  <body class="copyright">
     <div class="site-altura">
       <div class="conteudo" role="main">
            
         
         <h1>Snake Game!</h1>
-        <button class="btnFixedRight"
-                id="ARDCbtn"
-                onclick="ARDCelular()">
-          Ativar Recursos Para Celular
-        </button>
         
         <canvas class="game-board" id="snake" width="620" height="620" ></canvas>
         
         <div class="teclado"
              id="Teclado">
-        <button>
+        <button class="btn-teclado">
          ⬅️ 
         </button>
           
-        <button>
+        <button class="btn-teclado">
          ⬇️
         </button>
           
-        <button>
+        <button class="btn-teclado">
          ⬆️
         </button>
           
-        <button>
+        <button class="btn-teclado">
          ➡️ 
         </button>
         </div>
@@ -56,6 +51,15 @@
             </footer>
        
 </div> </div>
+    <button class="btnFixedRight"
+            id="ARDCbtn"
+            onclick="ARDCelular()">
+          Ativar Recursos Para Celular
+        </button>
+    <button class="btnFixedLeft"
+            onclick="FullScreen()">
+          Tela Cheia
+        </button>
 </body>
 
   <scripts>
