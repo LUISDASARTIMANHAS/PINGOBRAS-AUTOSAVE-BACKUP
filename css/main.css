@@ -692,6 +692,8 @@ h1 {
   position: relative;
 }
 barraicon {
+  font-style:italic;
+  text-transform:capitalize;
   position: absolute;
   width: 110%;
   top: 0;
