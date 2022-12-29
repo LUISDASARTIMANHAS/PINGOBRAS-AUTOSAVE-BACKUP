@@ -138,6 +138,14 @@ a.btn-cadastro, .btnlogin{
     height: max-content;
     margin: 5px;
 }
+.video-game-LDA{
+ width:50%;
+ height:600px;
+ max-width:75%;
+ min-width:25%;
+ min-height:520px;
+ max-height:720px;
+}
 .red-title{
   font-size: 17px;
   color: red;
