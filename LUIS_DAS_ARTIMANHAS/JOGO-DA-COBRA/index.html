@@ -20,14 +20,17 @@
            
         
         <h1>Snake Game!</h1>
-        <button onclick="ARDCelular()">
+        <button id="ARDCbtn"
+                onclick="ARDCelular()">
           Ativar Recursos Para Celular
         </button>
+        
         <canvas class="game-board" id="snake" width="620" height="620" ></canvas>
         
         <div style="display:none;
                     background:gray;
-                    border: 5px solid black">
+                    border: 5px solid black"
+             id="Teclado">
         <button>
          ⬅️ 
         </button>
@@ -44,6 +47,8 @@
          ➡️ 
         </button>
         </div>
+       
+        
         
         <footer>
         <div class="links"></div>
@@ -55,7 +60,7 @@
 </body>
 
   <scripts>
-    <script src="https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA/script.js" defer></script> 
+    <script src="/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA/Recursos-D-Celular.js" defer></script>
     <script src="https://pingobras.glitch.me/js/links.js" defer></script>
     <script src="https://pingobras.glitch.me/js/main.js" defer></script>
     <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>  
@@ -67,10 +72,12 @@
     <script -src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
     </host>
   <script>
-    const 
+  const ARDCBTN = document.getElementById("ARDCbtn")
+const Recursos = document.getElementById("Teclado")
     
-  function ARDCelular(){
-    
+function ARDCelular(){
+  ARDCBTN.style.display = "none"
+  Recursos.style.display = "block"  
   }
   </script>
 </html>
