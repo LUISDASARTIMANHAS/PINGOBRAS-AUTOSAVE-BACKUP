@@ -5,7 +5,7 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Refresh" content="120">
+    <meta http-equiv="Refresh" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.7" />
     <link rel="stylesheet" href="https://pingobras.glitch.me/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA/style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5650/5650283.png" />
@@ -20,16 +20,15 @@
            
         
         <h1>Snake Game!</h1>
-        <button id="ARDCbtn"
+        <button class="btnFixedRight"
+                id="ARDCbtn"
                 onclick="ARDCelular()">
           Ativar Recursos Para Celular
         </button>
         
         <canvas class="game-board" id="snake" width="620" height="620" ></canvas>
         
-        <div style="display:none;
-                    background:gray;
-                    border: 5px solid black"
+        <div class="teclado"
              id="Teclado">
         <button>
          ⬅️ 
@@ -60,7 +59,7 @@
 </body>
 
   <scripts>
-    <script src="/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA/Recursos-D-Celular.js" defer></script>
+    <script src="/LUIS_DAS_ARTIMANHAS/JOGO-DA-COBRA/script.js" defer></script>
     <script src="https://pingobras.glitch.me/js/links.js" defer></script>
     <script src="https://pingobras.glitch.me/js/main.js" defer></script>
     <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>  

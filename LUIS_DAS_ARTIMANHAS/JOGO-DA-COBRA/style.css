@@ -22,3 +22,12 @@ canvas {
  border-left-color:#0000ff;
  border-width:7px;
 }
+
+.teclado{
+  display:none;
+  background:gray;                  
+  border: 5px solid black;
+                    
+  width: 100%;                
+  align-items: ;
+}
