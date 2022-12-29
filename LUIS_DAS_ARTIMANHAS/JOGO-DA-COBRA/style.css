@@ -13,6 +13,12 @@ body {
 }
 
 canvas {
-  background: gray;
-border: 5px solid black;
+ background: gray;
+ border: 5px solid black;
+ border-style:solid;
+ border-top-color:#ff0000;
+ border-right-color:#ffff00;
+ border-bottom-color:#008000;
+ border-left-color:#0000ff;
+ border-width:7px;
 }
