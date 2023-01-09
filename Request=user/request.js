@@ -1,27 +1,18 @@
-const URlRequest = "https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2023.1.8/ruffle.js"
-var oReq = new XMLHttpRequest();
+const URlRequest = document.getElementById("URLRequest")
+var Request = new XMLHttpRequest();
 
-function RequisitarRUFFLES() {
 
-oReq.onload = Results;
-oReq.open("get", URlRequest, true);
-oReq.send();
-console.log("Loading...")
-}
+function Requisitar() {
+const URlRequestValue = URlRequest.value
 
-function Results(){
-console.log(this.responseText);
-}
+Request.open("get", URlRequestValue, true);
+Request.addEventListener("progress", updateProgress, false);
+Request.addEventListener("load", transferComplete, false);
+Request.addEventListener("error", transferFailed, false);
+Request.addEventListener("abort", transferCanceled, false);
+Request.send()
 
-oReq.addEventListener("progress", updateProgress, false);
-oReq.addEventListener("load", transferComplete, false);
-oReq.addEventListener("error", transferFailed, false);
-oReq.addEventListener("abort", transferCanceled, false);
-
-oReq.open("get", URlRequest, true);
-
-oReq.send()
-
+  
 // progresso de transferências do servidor para o cliente (downloads)
 function updateProgress (oEvent) {
   if (oEvent.lengthComputable) {
@@ -34,6 +25,7 @@ function updateProgress (oEvent) {
 
 function transferComplete(evt) {
   alert("A transferência foi concluída.");
+  console.log(this.responseText);
 }
 
 function transferFailed(evt) {
@@ -43,3 +35,5 @@ function transferFailed(evt) {
 function transferCanceled(evt) {
   alert("A transferência foi cancelada pelo usuário.");
 }
+  
+}//Fim do  requisitar
