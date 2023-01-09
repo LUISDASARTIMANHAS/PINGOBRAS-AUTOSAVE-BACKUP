@@ -1,5 +1,7 @@
 const URlRequest = document.getElementById("URLRequest")
+const Results = document.getElementById("Results")
 var Request = new XMLHttpRequest();
+const MSGError = document.getElementById("msgError")
 
 
 function Requisitar() {
@@ -14,26 +16,27 @@ Request.send()
 
   
 // progresso de transferências do servidor para o cliente (downloads)
-function updateProgress (oEvent) {
-  if (oEvent.lengthComputable) {
+function updateProgress (oEvent){
+if (oEvent.lengthComputable){
     var percentComplete = oEvent.loaded / oEvent.total;
-    // ...
-  } else {
-    // Não é possível calcular informações de progresso uma vez que a dimensão total é desconhecida
-  }
+    bar.innerHTML = percentComplete
+}else{
+    transferComplete()}
 }
 
 function transferComplete(evt) {
-  alert("A transferência foi concluída.");
+  Results.innerHTML = "A transferência foi concluída.";
   console.log(this.responseText);
 }
 
 function transferFailed(evt) {
-  alert("Um erro ocorreu durante a transferência do arquivo.");
+  MSGError.style.display = "block";
+  MSGError.innerHTML = "Um erro ocorreu durante a transferência do arquivo.";
 }
 
 function transferCanceled(evt) {
-  alert("A transferência foi cancelada pelo usuário.");
+  MSGError.style.display = "block";
+  MSGError.innerHTML = "A transferência foi cancelada pelo usuário.";
 }
   
 }//Fim do  requisitar
