@@ -26,7 +26,6 @@ function FullScreen(){
 for (let i = 0; i < AreaDeTexto.length; i++) {
   AreaDeTexto[i].style.height = AreaDeTexto[i].scrollHeight;
   AreaDeTexto[i].addEventListener("input", AoDigitar, false);
-  AreaDeTexto[i].addEventListener("click", AoDigitar);
 }
 
 function AoDigitar() {
