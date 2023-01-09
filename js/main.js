@@ -24,11 +24,13 @@ function FullScreen(){
 
 
 for (let i = 0; i < AreaDeTexto.length; i++) {
-  AreaDeTexto[i].setAttribute("style", "height:" + (AreaDeTexto[i].scrollHeight) + "px");
+  AreaDeTexto[i].style.height = AreaDeTexto[i].scrollHeight;
   AreaDeTexto[i].addEventListener("input", AoDigitar, false);
+  AreaDeTexto[i].addEventListener("click", AoDigitar);
 }
 
 function AoDigitar() {
+  console.warn("Redimensionamento Automático Ativado!")
   this.style.height = 0;
   this.style.height = (this.scrollHeight) + "px";
 }
