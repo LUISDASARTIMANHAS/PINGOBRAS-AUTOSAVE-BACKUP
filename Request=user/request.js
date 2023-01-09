@@ -25,8 +25,7 @@ if (oEvent.lengthComputable){
 }
 
 function transferComplete(evt) {
-  Results.innerHTML = "A transferência foi concluída.";
-  console.log(this.responseText);
+  Results.innerHTML = this.responseText;
 }
 
 function transferFailed(evt) {
