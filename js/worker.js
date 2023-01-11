@@ -1,7 +1,7 @@
 const RegistroLink1 = "https://pingobras.glitch.me/js/worker.js"
 const RegistroLink2 = "https://pingobras.glitch.me/js/functions.js"
 const RegistroLink3 = "https://pingobras.glitch.me/js/network.js"
-const RegistroLink4 = "https://pingobras.glitch.me/js/copyright.js"
+const RegistroLink4 = "js/copyright.js"
 const RegistroLink5 = "https://pingobras.glitch.me/js/base.js"
 
 
@@ -13,10 +13,10 @@ if ("serviceWorker" in navigator) {
     .then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
 				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
-	      console.log("Network js registrado para todo o dominio!!");
+	      console.log("Script Js Registrado Para Todo O Domínio!!");
 	  	  })
 		
-    .catch(function (err) {console.error("Erro ao registrar Network js: ", err);});
+    .catch(function (err) {console.error("Erro Ao Registrar Um js: ", err);});
 }//Fim Do Registrador 
 
 
@@ -28,9 +28,9 @@ if ("serviceWorker" in navigator) {
 		.then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
 				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
-			console.log("Worker js registrado para todo o dominio!");
+			console.log("Script Js Registrado Para Todo O Domínio!");
   })
-		.catch(function (err) {console.error("Erro ao registrar worker: ", err);});
+		.catch(function (err) {console.error("Erro Ao Registrar Um Js: ", err);});
 }//Fim Do Registrador
 
 
@@ -42,10 +42,10 @@ if ("serviceWorker" in navigator) {
 		.then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
 				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
-			console.log("funções js registrado para todo o dominio!");
+			console.log("Script Js Registrado Para Todo O Domínio!");
 		})
   
-		.catch(function (err) {console.error("Erro ao registrar funções js: ", err);});
+		.catch(function (err) {console.error("Erro Ao Registrar Um js: ", err);});
 }//Fim Do Registrador
 
 
@@ -57,7 +57,7 @@ if ("serviceWorker" in navigator) {
 		.then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
 				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
-			console.log("Script js registrado para todo o dominio!");
+			console.log("Script Js Registrado Para Todo O Domínio!");
 		})
   
 		.catch(function (err) {console.error("Erro Ao Registrar Um js: ", err);});
