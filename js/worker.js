@@ -1,5 +1,5 @@
 if ("serviceWorker" in navigator) {
-	console.log("Registrando worker da network...");
+	console.log("Registrando Network js...");
 	navigator.serviceWorker
 		.register("js/network.js")
 		.then(function (reg) {
@@ -8,12 +8,13 @@ if ("serviceWorker" in navigator) {
 					reg.active.postMessage("claimMe");
 				});
 			}
-			console.log("Worker network registrado!");
+			console.log("Network js registrado para todo o dominio!!");
 		})
 		.catch(function (err) {
-			console.log("Erro ao registrar worker: ", err);
+			console.log("Erro ao registrar Network js: ", err);
 		});
 }
+
 if ("serviceWorker" in navigator) {
 	console.log("Registrando worker...");
 	navigator.serviceWorker
@@ -24,9 +25,26 @@ if ("serviceWorker" in navigator) {
 					reg.active.postMessage("claimMe");
 				});
 			}
-			console.log("Worker js registrado!");
+			console.log("Worker js registrado para todo o dominio!");
 		})
 		.catch(function (err) {
 			console.log("Erro ao registrar worker: ", err);
+		});
+}
+
+if ("serviceWorker" in navigator) {
+	console.log("Registrando funções js...");
+	navigator.serviceWorker
+    .register("js/functions.js")
+		.then(function (reg) {
+			if (navigator.serviceWorker.controller === null) {
+				navigator.serviceWorker.ready.then(() => {
+					reg.active.postMessage("claimMe");
+				});
+			}
+			console.log("funções js registrado para todo o dominio!");
+		})
+		.catch(function (err) {
+			console.log("Erro ao registrar funções js: ", err);
 		});
 }
