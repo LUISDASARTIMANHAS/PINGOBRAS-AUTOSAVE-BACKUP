@@ -1,6 +1,6 @@
-const RegistroLink1 = "https://pingobras.glitch.me/js/worker.js"
-const RegistroLink2 = "https://pingobras.glitch.me/js/functions.js"
-const RegistroLink3 = "https://pingobras.glitch.me/js/network.js"
+const RegistroLink1 = "js/worker.js"
+const RegistroLink2 = "js/functions.js"
+const RegistroLink3 = "js/network.js"
 const RegistroLink4 = "js/copyright.js"
 const RegistroLink5 = "https://pingobras.glitch.me/js/base.js"
 
