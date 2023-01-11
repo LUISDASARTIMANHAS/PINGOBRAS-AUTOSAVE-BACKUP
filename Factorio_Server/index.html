@@ -30,82 +30,92 @@
       <div class="control-item">
         <div class="control-label flex-row flex-space">
           <div>
-            <label for="saves"><font style="vertical-align: inherit"><font style="vertical-align: inherit">Salve </font></font></label>
+            <label for="saves"><font style="vertical-align: inherit"><font style="vertical-align: inherit">Saves De Mundos</font></font></label>
           </div>
           <div class="flex-row">
             <div class="control-link">
               <a id="delete-link" href="javascript:void(0);"><font style="vertical-align: inherit"><font style="vertical-align: inherit">[excluir]</font></font></a>
             </div>
-            <div class="control-link">
-              <a hidden="" id="upload-link" href="javascript:void(0);"><font style="vertical-align: inherit"><font style="vertical-align: inherit">[Envio]</font></font></a>
-            </div>
-            <div class="control-link">
-              <a id="download-link" href="javascript:void(0);"><font style="vertical-align: inherit"><font style="vertical-align: inherit">[download]</font></font></a>
-            </div>
+           
           </div>
         </div>
         <div>
-          <select id="saves">
-            <option value="slot1">
-              slot 1 (1.1.71, 0,7MB)
+          <section>
+            
+            <option>
+            <a value="slot1">
+              slot 1 (1.1.71), 0,7MB
+            </a>
             </option>
-            <option value="slot2">
+          
+            <option>
+            <a value="slot2">
               slot 2 (vazio)
+            </a>
             </option>
-            <option value="slot3">
+          
+            <option>
+            <a value="slot3">
               slot 3 (vazio)
+            </a>
             </option>
-            <option value="slot4">
+          
+            <option>
+            <a value="slot4">
               slot 4 (vazio)
+            </a>
             </option>
-            <option value="slot5">
+          
+            <option>
+            <a value="slot5">
               slot 5 (vazio)
+            </a>
             </option>
-            <option value="slot6">
+            
+            <option>
+            <a valuae="slot6">
               slot 6 (vazio)
+            </a>
             </option>
-            <option value="slot7">
+          
+            <option>
+            <a value="slot7">
               slot 7 (vazio)
+            </a>
             </option>
-            <option value="slot8">
+            
+            <option>
+            <a value="slot8">
               slot 8 (vazio)
+            </a>
             </option>
-            <option value="slot9">
-              slot 9 (vazio)
+            
+            <option>
+            <a value="slot9">
+              Auto Save (vazio), 0.0MB
+            </a>
             </option>
-          </select>
+            
+            </section>
         </div>
       </div>
+      
       <div class="control-item">
         <div class="control-label flex-row flex-space">
           <div>
             <label for="mods"><font style="vertical-align: inherit"><font style="vertical-align: inherit">Modificações</font></font></label>
           </div>
-          <div class="flex-row">
-            <div class="control-link">
-              <a id="mods-upload-link" href="javascript:void(0);"><font style="vertical-align: inherit"><font style="vertical-align: inherit">[Envio]</font></font></a>
-            </div>
-          </div>
+      
         </div>
         <div id="mods" class="flex-row">
           <div id="mods-enabled">
             <font style="vertical-align: inherit"><font style="vertical-align: inherit">0 ativado</font></font>
           </div>
-          <div class="control-link">
-            <a hidden="" id="mods-pick" href="javascript:void(0);"><font style="vertical-align: inherit"><font style="vertical-align: inherit">[escolher]</font></font></a>
-          </div>
-          <div id="mods-list"></div>
+   
         </div>
       </div>
-      <div class="control-item">
-        <button id="start-button" class="pure-button start-button">
-          <font style="vertical-align: inherit"><font style="vertical-align: inherit">Iniciar servidor</font></font>
-        </button>
-        <button disabled="" hidden="" id="stop-button" class="pure-button stop-button">
-          <font style="vertical-align: inherit"><font style="vertical-align: inherit">Parar servidor</font></font>
-        </button>
-      </div>
     </section>
+    
     <section class="output-container">
       <pre id="output-area" class="output-area">
       Servidor Conectado.
