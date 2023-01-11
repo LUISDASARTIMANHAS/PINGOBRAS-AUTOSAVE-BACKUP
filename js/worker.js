@@ -1,24 +1,29 @@
-if ("serviceWorker" in navigator) {
-	console.log("Registrando Network js...");
-	navigator.serviceWorker
-		.register("js/network.js")
-		.then(function (reg) {
-			if (navigator.serviceWorker.controller === null) {
-				navigator.serviceWorker.ready.then(() => {
-					reg.active.postMessage("claimMe");
-				});
-			}
-			console.log("Network js registrado para todo o dominio!!");
-		})
-		.catch(function (err) {
-			console.error("Erro ao registrar Network js: ", err);
-		});
-}
+const RegistroLink1 = "https://pingobras.glitch.me/js/worker.js"
+const RegistroLink2 = "https://pingobras.glitch.me/js/functions.js"
+const RegistroLink3 = "https://pingobras.glitch.me/js/network.js"
+const RegistroLink4 = "https://pingobras.glitch.me/js/copyright.js"
+const RegistroLink5 = "https://pingobras.glitch.me/js/base.js"
+
 
 if ("serviceWorker" in navigator) {
-	console.log("Registrando worker...");
+	console.log("Registrando Um Js...");
 	navigator.serviceWorker
-  .register("js/worker.js")
+	.register(RegistroLink1)
+		
+    .then(function (reg) {
+			if (navigator.serviceWorker.controller === null) {
+				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
+	      console.log("Network js registrado para todo o dominio!!");
+	  	  })
+		
+    .catch(function (err) {console.error("Erro ao registrar Network js: ", err);});
+}//Fim Do Registrador 
+
+
+if ("serviceWorker" in navigator) {
+	console.log("Registrando Um Js...");
+	navigator.serviceWorker
+  .register(RegistroLink2)
   
 		.then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
@@ -26,12 +31,13 @@ if ("serviceWorker" in navigator) {
 			console.log("Worker js registrado para todo o dominio!");
   })
 		.catch(function (err) {console.error("Erro ao registrar worker: ", err);});
-}
+}//Fim Do Registrador
+
 
 if ("serviceWorker" in navigator) {
-	console.log("Registrando funções js...");
+	console.log("Registrando Um Js...");
 	navigator.serviceWorker
-    .register("js/functions.js")
+  .register(RegistroLink3)
   
 		.then(function (reg) {
 			if (navigator.serviceWorker.controller === null) {
@@ -40,4 +46,19 @@ if ("serviceWorker" in navigator) {
 		})
   
 		.catch(function (err) {console.error("Erro ao registrar funções js: ", err);});
-}
+}//Fim Do Registrador
+
+
+if ("serviceWorker" in navigator) {
+	console.log("Registrando Um Js...");
+	navigator.serviceWorker
+  .register(RegistroLink4)
+  
+		.then(function (reg) {
+			if (navigator.serviceWorker.controller === null) {
+				navigator.serviceWorker.ready.then(() => {reg.active.postMessage("claimMe");});}
+			console.log("Script js registrado para todo o dominio!");
+		})
+  
+		.catch(function (err) {console.error("Erro Ao Registrar Um js: ", err);});
+}//Fim Do Registrador
