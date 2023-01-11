@@ -2,9 +2,31 @@
 body{
  text-transform:capitalize;
  text-align:center;
- color:#808080;
+ color:gray;
  font-size:20px;
  font-weight:500;
  font-style:normal;
  text-shadow:rgba(0, 0, 0, 0.3) 0px 1px 1px;
+}
+/* Division */
+.control-container .control-label div{
+ color:orange;
+  font-size:25px;
+}
+
+/* Control label */
+.control-container .control-item .control-label{
+ color:orange;
+  font-size:25px;
+}
+/* Saves */
+#saves{
+ font-weight:500;
+ font-size:20px;
+ font-style:normal;
+ text-align:center;
+ text-transform:capitalize;
+ text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
+ width:75% !important;
+ height:50px;
 }
