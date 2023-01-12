@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Factorio Zone</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Run your Factorio server in the cloud for free"
+    />
+    <meta name="keywords" content="Factorio, server, cloud, free" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.68" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://factorio.zone/cache/favicon.70a97ec1b68b5479dcbc.png"
+      sizes="256x256"
+    />
+    <link href="https://factorio.zone/cache/main.aab831443c4ce319ba60.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        document.getElementById("output-area").innerText =
+          "your browser is not supported";
+      };
+    </script>
+    <section class="header flex-row">
+      <header>Factorio Zone</header>
+      <div class="donate">
+        <form
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+          target="_blank"
+        >
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="RZJSEXXKEA2HW" />
+          <input
+            type="image"
+            src="cache/donate.59d3efdfda0df0196bb3.png"
+            name="submit"
+            title="PayPal - The safer, easier way to pay online!"
+            alt="Donate with PayPal button"
+          />
+        </form>
+      </div>
+    </section>
+    <section class="info">
+      <p>
+        Welcome! This website lets you run a
+        <a href="https://www.factorio.com/">Factorio</a> server for free.
+        <i
+          >It is not run by or associated with the developers of Factorio or
+          Wube Software.</i
+        >
+      </p>
+      <p>
+        Simply click the <strong>Start Server</strong> button to get running in
+        seconds. The IP address and port will show in the box to the right when
+        the server is ready. You may optionally select a different
+        <strong>Region</strong> for better latency to your location, as well as
+        the <strong>Version</strong> you prefer. Your save will be stored when
+        you click <strong>Stop Server</strong> and you can come back later to
+        continue it. The <strong>Save</strong> selection lets you pick from 9
+        slots for different saves. To upload a save game, select an empty save
+        slot or delete the existing save in the slot first.
+      </p>
+      <p>
+        If you have any suggestions or have any problems, please
+        <a href="https://discord.gg/Pg3KgZq" target="_blank">chat on Discord</a>
+        or
+        <a
+          href="https://forums.factorio.com/viewtopic.php?f=133&t=48014"
+          target="_blank"
+          >discuss on the forums</a
+        >
+        or <a href="mailto:admin@factorio.zone">email me</a>. Your feedback is
+        appreciated.
+      </p>
+    </section>
+    <section class="control-container flex-row">
+      <div class="control-item">
+        <div class="control-label"><label for="regions">Region</label></div>
+        <div><select id="regions"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label"><label for="versions">Version</label></div>
+        <div><select id="versions"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label flex-row flex-space">
+          <div><label for="saves">Save</label></div>
+          <div class="flex-row">
+            <div class="control-link">
+              <a hidden id="delete-link" href="javascript:void(0);">[delete]</a>
+            </div>
+            <div class="control-link">
+              <a hidden id="upload-link" href="javascript:void(0);">[upload]</a>
+            </div>
+            <div class="control-link">
+              <a hidden id="download-link" href="javascript:void(0);"
+                >[download]</a
+              >
+            </div>
+          </div>
+        </div>
+        <div><select id="saves"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label flex-row flex-space">
+          <div><label for="mods">Mods</label></div>
+          <div class="flex-row">
+            <div class="control-link">
+              <a hidden id="mods-upload-link" href="javascript:void(0);"
+                >[upload]</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="mods" class="flex-row">
+          <div id="mods-enabled">0 enabled</div>
+          <div class="control-link">
+            <a hidden id="mods-pick" href="javascript:void(0);">[pick]</a>
+          </div>
+          <div id="mods-list"></div>
+        </div>
+      </div>
+      <div class="control-item">
+        <button
+          disabled="disabled"
+          id="start-button"
+          class="pure-button start-button"
+        >
+          Start Server
+        </button>
+        <button
+          disabled="disabled"
+          hidden
+          id="stop-button"
+          class="pure-button stop-button"
+        >
+          Stop Server
+        </button>
+      </div>
+      <div class="control-item">
+        <label for="socket-info"></label>
+        <textarea
+          readonly="readonly"
+          id="socket-info"
+          class="socket-info"
+          rows="1"
+          cols="21"
+          title=""
+        ></textarea>
+      </div>
+    </section>
+    <section class="output-container">
+      <pre id="output-area" class="output-area"></pre>
+    </section>
+    <section class="input-container">
+      <label for="input-area"></label>
+      <input disabled="disabled" id="input-area" class="input-area" />
+    </section>
+    <script defer="defer" src="https://factorio.zone/cache/main.f224a5a85a601a6a0b5b.js"></script>
+  </body>
+</html>
