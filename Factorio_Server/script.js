@@ -337,6 +337,7 @@
                 this.callbacks.forEach((t) => t(JSON.parse(e.data)));
             }),
             setInterval(() => this.send("Factorio Server Ainda Esta Online"), 3e4);
+            this.output("info", "Conectado");
         }
         send(e) {
           this.websocket.send(e);
