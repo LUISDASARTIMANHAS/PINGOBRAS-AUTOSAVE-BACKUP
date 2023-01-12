@@ -325,7 +325,7 @@
         }
         open(e, t) {
           const n = "http:" === this.url.protocol ? "ws" : "wss";
-          (this.websocket = new (o())(`${n}://pingobras.glitch.me/api/user/login/ws`, null, {
+          (this.websocket = new (o())(`${n}://pingobras-websocket.glitch.me/login`, null, {
             reconnectInterval: 500,
             timeoutInterval: 5e3,
             maxReconnectInterval: 1e4,
@@ -347,7 +347,7 @@
         post(e, t, n) {
           console.log("post: " + e), console.log(t);
           const s = new XMLHttpRequest();
-          s.open("POST", this.url.protocol + "//" + "pingobras.glitch.me/api/user/login/login" + e, !0),
+          s.open("POST", this.url.protocol + "//" + "pingobras-websocket.glitch.me/login" + e, !0),
             s.setRequestHeader(
               "Content-Type",
               "application/x-www-form-urlencoded"
@@ -483,7 +483,7 @@
             case "visit":
               (this.visitSecret = e.secret),
                 this.client.post(
-                  "pingobras.glitch.me/api/user/login/loginlogin",
+                  "pingobras-websocket.glitch.me/login",
                   {
                     userToken: localStorage.getItem("userToken"),
                     visitSecret: this.visitSecret,
