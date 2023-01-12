@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Factorio Zone</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Run your Factorio server in the cloud for free"
+    />
+    <meta name="keywords" content="Factorio, server, cloud, free" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.68" />
+
+    <link
+      href="https://factorio.zone/cache/main.aab831443c4ce319ba60.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="control-container flex-row">
+      <div class="control-item">
+        <div class="control-label"><label for="regions">Region</label></div>
+        <div><select id="regions"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label"><label for="versions">Version</label></div>
+        <div><select id="versions"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label flex-row flex-space">
+          <div><label for="saves">Save</label></div>
+          <div class="flex-row">
+            <div class="control-link">
+              <a hidden id="delete-link" href="javascript:void(0);">[delete]</a>
+            </div>
+            <div class="control-link">
+              <a hidden id="upload-link" href="javascript:void(0);">[upload]</a>
+            </div>
+            <div class="control-link">
+              <a hidden id="download-link" href="javascript:void(0);"
+                >[download]</a
+              >
+            </div>
+          </div>
+        </div>
+        <div><select id="saves"></select></div>
+      </div>
+      <div class="control-item">
+        <div class="control-label flex-row flex-space">
+          <div><label for="mods">Mods</label></div>
+          <div class="flex-row">
+            <div class="control-link">
+              <a hidden id="mods-upload-link" href="javascript:void(0);"
+                >[upload]</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="mods" class="flex-row">
+          <div id="mods-enabled">0 enabled</div>
+          <div class="control-link">
+            <a hidden id="mods-pick" href="javascript:void(0);">[pick]</a>
+          </div>
+          <div id="mods-list"></div>
+        </div>
+      </div>
+      <div class="control-item">
+        <button
+          disabled="disabled"
+          id="start-button"
+          class="pure-button start-button"
+        >
+          Start Server
+        </button>
+        <button
+          disabled="disabled"
+          hidden
+          id="stop-button"
+          class="pure-button stop-button"
+        >
+          Stop Server
+        </button>
+      </div>
+      <div class="control-item">
+        <label for="socket-info"></label>
+        <textarea
+          readonly="readonly"
+          id="socket-info"
+          class="socket-info"
+          rows="1"
+          cols="21"
+          title=""
+        ></textarea>
+      </div>
+    </section>
+    <section class="output-container">
+      <pre id="output-area" class="output-area"></pre>
+    </section>
+    <section class="input-container">
+      <label for="input-area"></label>
+      <input disabled="disabled" id="input-area" class="input-area" />
+    </section>
+    <script
+      defer="defer"
+      src="/Factorio_Server/script.js"
+    ></script>
+  </body>
+</html>
