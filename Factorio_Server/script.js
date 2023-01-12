@@ -325,7 +325,7 @@
         }
         open(e, t) {
           const n = "http:" === this.url.protocol ? "ws" : "wss";
-          (this.websocket = new (o())(`${n}:///api/user/login/ws`, null, {
+          (this.websocket = new (o())(`${n}://api/user/login/ws`, null, {
             reconnectInterval: 500,
             timeoutInterval: 5e3,
             maxReconnectInterval: 1e4,
