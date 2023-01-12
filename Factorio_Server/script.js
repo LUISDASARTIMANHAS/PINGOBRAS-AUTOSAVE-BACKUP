@@ -276,7 +276,7 @@
                           ),
                         c.send(t)
                       );
-                    throw "INVALID_STATE_ERR : Pausing to reconnect websocket";
+                    throw "INVALID_STATE_ERR : Pauusando para reconexão websocket";
                   }),
                   (this.close = function (e, t) {
                     void 0 === e && (e = 1e3), (d = !0), c && c.close(e, t);
@@ -336,7 +336,7 @@
               console.log("websocket onmessage: " + e.data),
                 this.callbacks.forEach((t) => t(JSON.parse(e.data)));
             }),
-            setInterval(() => this.send("keepalive"), 3e4);
+            setInterval(() => this.send("Factorio Server Ainda Esta Online"), 3e4);
         }
         send(e) {
           this.websocket.send(e);
@@ -444,10 +444,10 @@
         }
         onConnected() {
           (this.connected = !0),
-            console.log(this.reconnecting ? "reconnected" : "connected"),
+            console.log(this.reconnecting ? "Reconectado" : "Conectado"),
             this.reconnecting
               ? (this.reconnected = !0)
-              : this.output("info", "connected");
+              : this.output("info", "Conectado");
           const e = {
             userAgent: navigator.userAgent,
             languages: navigator.languages,
@@ -460,7 +460,7 @@
           this.client.send("details " + JSON.stringify(e));
         }
         onDisconnected() {
-          console.log("reconnecting"),
+          console.log("Reconectando..."),
             this.reconnecting ||
               ((this.connected = !1),
               (this.reconnected = !1),
@@ -468,7 +468,7 @@
               setTimeout(() => {
                 (this.reconnecting = !1),
                   this.connected ||
-                    (this.output("info", "disconnected"),
+                    (this.output("info", "O SErVIDOR FOI DESCONECTADO!!!"),
                     (this.inputArea.disabled = !0),
                     (this.startButton.disabled = !0),
                     (this.stopButton.disabled = !0),
