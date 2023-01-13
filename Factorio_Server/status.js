@@ -20,12 +20,32 @@ if(IP == ""||!IP){
 }
 
 function Rgb(){
+setTimeout(r,1000)  
+setTimeout(g,2000)
+setTimeout(b,3000)
 
-setTimeout(,2000)  
-
-  
-saveHostLabel.style.color = "green"  
+function r(){
+saveHostLabel.style.color = "red"
+}
+function (){
+saveHostLabel.style.color = "green"
+}
+function b(){
 saveHostLabel.style.color = "blue"
+}
+function r(){
+saveHostLabel.style.color = "red"
+}
+function g(){
+saveHostLabel.style.color = "green"
+}
+function r(){
+saveHostLabel.style.color = "red"
+}
+function b(){
+saveHostLabel.style.color = "blue"
+Rgb()
+}
 
   
   
