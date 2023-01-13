@@ -2,6 +2,7 @@ const IPServer = document.getElementById("Porta-Server")
 const StatusLabel = document.getElementById("status-Server")
 const saveHostLabel = document.getElementById("save-Host")
 const Porta = ":21029"
+Rgb()
 
 let IP = "15.228.249.107"
 let Mundo = "FileTorradao Multi"
@@ -20,30 +21,41 @@ if(IP == ""||!IP){
 }
 
 function Rgb(){
-setTimeout(r,1000)  
-setTimeout(g,2000)
-setTimeout(b,3000)
+setTimeout(vermelho,100)  
+setTimeout(laranja,200)
+setTimeout(amarelo,300)
+setTimeout(verde,400)  
+setTimeout(azulClaro,500)
+setTimeout(azul,600)
+setTimeout(roxo,700)
 
-function r(){
+function vermelho(){
 saveHostLabel.style.color = "red"
+IPServer.style.color = "red"
 }
-function (){
+function laranja(){
+saveHostLabel.style.color = "orange"
+IPServer.style.color = "orange"
+}
+function amarelo(){
+saveHostLabel.style.color = "yellow"
+IPServer.style.color = "yellow"
+}
+function verde(){
 saveHostLabel.style.color = "green"
+IPServer.style.color = "green"
 }
-function b(){
+function azulClaro(){
+saveHostLabel.style.color = "lightblue"
+IPServer.style.color = "lightblue"
+}
+function azul(){
 saveHostLabel.style.color = "blue"
+IPServer.style.color = "blue"
 }
-function r(){
-saveHostLabel.style.color = "red"
-}
-function g(){
-saveHostLabel.style.color = "green"
-}
-function r(){
-saveHostLabel.style.color = "red"
-}
-function b(){
-saveHostLabel.style.color = "blue"
+function roxo(){
+saveHostLabel.style.color = "purple"
+IPServer.style.color = "purple"
 Rgb()
 }
 
