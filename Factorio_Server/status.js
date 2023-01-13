@@ -2,9 +2,10 @@ const IPServer = document.getElementById("Porta-Server")
 const StatusLabel = document.getElementById("status-Server")
 const saveHostLabel = document.getElementById("save-Host")
 const Porta = ":21029"
+const preIP = "15."
 Rgb()
 
-let IP = "15.228.249.107"
+let IP = ""
 let Mundo = "FileTorradao Multi"
 let sizeMundo = 1.4
 
@@ -16,7 +17,7 @@ if(IP == ""||!IP){
 }else{
   StatusLabel.innerHTML = "Online"
   StatusLabel.style.color = "green"
-  IPServer.innerHTML = IP + Porta
+  IPServer.innerHTML = preIP + IP + Porta
   saveHostLabel.innerHTML = Mundo + " (1.1.70) " + sizeMundo+"MB"
 }
 
