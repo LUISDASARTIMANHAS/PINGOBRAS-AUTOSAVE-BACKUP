@@ -1,12 +1,12 @@
 const IPServer = document.getElementById("Porta-Server")
 const StatusLabel = document.getElementById("status-Server")
 
-let IP = "15.228.167.22:21029"
+let IP = ""
 
 if(IP == ""||!IP){
   StatusLabel.innerHTML = "Parado"
   StatusLabel.style.color = "red"
-  IPServer.innerHTML = "SEM IP DO SRVIDOR"
+  IPServer.innerHTML = "SEM IP DO SERVIDOR"
 }else{
   StatusLabel.innerHTML = "Online"
   StatusLabel.style.color = "green"
