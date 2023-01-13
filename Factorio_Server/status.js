@@ -21,13 +21,13 @@ if(IP == ""||!IP){
 }
 
 function Rgb(){
-setTimeout(vermelho,100)  
-setTimeout(laranja,200)
-setTimeout(amarelo,300)
-setTimeout(verde,400)  
-setTimeout(azulClaro,500)
-setTimeout(azul,600)
-setTimeout(roxo,700)
+setTimeout(vermelho,1000)  
+setTimeout(laranja,2000)
+setTimeout(amarelo,3000)
+setTimeout(verde,4000)  
+setTimeout(azulClaro,5000)
+setTimeout(azul,6000)
+setTimeout(roxo,7000)
 
 function vermelho(){
 saveHostLabel.style.color = "red"
