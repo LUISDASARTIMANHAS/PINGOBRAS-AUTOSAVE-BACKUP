@@ -1,7 +1,9 @@
 const IPServer = document.getElementById("Porta-Server")
 const StatusLabel = document.getElementById("status-Server")
+const Porta = ":21029"
 
-let IP = "18.230.184.245:21029"
+let IP = "18.230.184.245"
+let HUB = ""
 
 if(IP == ""||!IP){
   StatusLabel.innerHTML = "Parado"
@@ -10,5 +12,5 @@ if(IP == ""||!IP){
 }else{
   StatusLabel.innerHTML = "Online"
   StatusLabel.style.color = "green"
-  IPServer.innerHTML = IP
+  IPServer.innerHTML = IP + Porta
 }
