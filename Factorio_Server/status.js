@@ -3,9 +3,9 @@ const StatusLabel = document.getElementById("status-Server")
 const saveHostLabel = document.getElementById("save-Host")
 const Porta = ":21029"
 
-let IP = ""
+let IP = "15.228.249.107"
 let Mundo = "FileTorradao Multi"
-let sizeMundo = 0
+let sizeMundo = 1.4
 
 if(IP == ""||!IP){
   StatusLabel.innerHTML = "Parado"
