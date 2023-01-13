@@ -4,7 +4,7 @@ const saveHostLabel = document.getElementById("save-Host")
 const Porta = ":21029"
 
 let IP = ""
-let Mundo = ""
+let Mundo = "FileTorradao Multi"
 let sizeMundo = 0
 
 if(IP == ""||!IP){
