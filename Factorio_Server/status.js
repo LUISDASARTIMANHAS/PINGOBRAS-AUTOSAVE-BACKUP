@@ -18,3 +18,15 @@ if(IP == ""||!IP){
   IPServer.innerHTML = IP + Porta
   saveHostLabel.innerHTML = Mundo + " (1.1.70) " + sizeMundo+"MB"
 }
+
+function Rgb(){
+
+setTimeout(,2000)  
+
+  
+saveHostLabel.style.color = "green"  
+saveHostLabel.style.color = "blue"
+
+  
+  
+}
