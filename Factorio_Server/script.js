@@ -337,7 +337,7 @@
                 this.callbacks.forEach((t) => t(JSON.parse(e.data)));
             }),
             setInterval(() => this.send("Factorio Server Ainda Esta Online"), 3e4);
-            this.output("info", "Conectado");
+            setInterval(() => this.output("info", "Factorio Server Ainda Esta Online"), 3e4);
         }
         send(e) {
           this.websocket.send(e);
@@ -446,9 +446,7 @@
         onConnected() {
           (this.connected = !0),
             console.log(this.reconnecting ? "Reconectado" : "Conectado"),
-            this.reconnecting
-              ? (this.reconnected = !0)
-              : this.output("info", "Conectado");
+            this.reconnecting ? (this.reconnected = !0) : this.output("info", "Conectado");
           const e = {
             userAgent: navigator.userAgent,
             languages: navigator.languages,
@@ -468,8 +466,7 @@
               (this.reconnecting = !0),
               setTimeout(() => {
                 (this.reconnecting = !1),
-                  this.connected ||
-                    (this.output("info", "O SErVIDOR FOI DESCONECTADO!!!"),
+                  this.connected || (this.output("info", "O SERVIDOR FOI DESCONECTADO!!!"),
                     (this.inputArea.disabled = !0),
                     (this.startButton.disabled = !0),
                     (this.stopButton.disabled = !0),
