@@ -337,7 +337,6 @@
                 this.callbacks.forEach((t) => t(JSON.parse(e.data)));
             }),
             setInterval(() => this.send("Factorio Server Ainda Esta Online"), 3e4);
-            setInterval(() => this.output("info", "Factorio Server Ainda Esta Online"), 3e4);
         }
         send(e) {
           this.websocket.send(e);
@@ -447,6 +446,7 @@
           (this.connected = !0),
             console.log(this.reconnecting ? "Reconectado" : "Conectado"),
             this.reconnecting ? (this.reconnected = !0) : this.output("info", "Conectado");
+           this.output("info", "Factorio Server Ainda Esta Online"); 
           const e = {
             userAgent: navigator.userAgent,
             languages: navigator.languages,
