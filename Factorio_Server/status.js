@@ -6,7 +6,7 @@ Rgb()
 
 let IP = "18.231.187.170"
 let Mundo = "FileTorradao Multi"
-let sizeMundo = 1.4
+let sizeMundo = 4.0
 
 if(IP == ""||!IP){
   StatusLabel.innerHTML = "Parado"
