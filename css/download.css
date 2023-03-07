@@ -175,6 +175,7 @@ hr {
   min-height: var(--wrapper-altura);
   display: grid;
   place-items: center;
+  width: 100%;
 }
 .conteudo {
   display: flex;

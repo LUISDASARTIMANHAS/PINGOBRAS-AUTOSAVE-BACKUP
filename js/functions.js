@@ -7,6 +7,8 @@ let btnlistChangelogs = document.getElementById('btnlistChangelogs');
 var listChangelogs = document.getElementById('listChangelogs');
 const btnALL = document.querySelectorAll("button");
 const fechar = document.getElementById("close")
+let RGB;
+
 
 
 function mostrarsenha() {
@@ -94,6 +96,40 @@ console.warn("Deu Pau No Fechar Do Anúncio")
     document.querySelector(".site-altura").style.cursor = "default";
   console.log("LOG> ⚠️Anuncio fechado!");
 });}
+
+function Rgb(){
+setTimeout(vermelho,1000)  
+setTimeout(laranja,2000)
+setTimeout(amarelo,3000)
+setTimeout(verde,4000)  
+setTimeout(azulClaro,5000)
+setTimeout(azul,6000)
+setTimeout(roxo,7000)
+
+function vermelho(){
+RGB.style.color = "red"
+}
+function laranja(){
+RGB.style.color = "orange"
+}
+function amarelo(){
+RGB.style.color = "yellow"
+}
+function verde(){
+RGB.style.color = "green"
+}
+function azulClaro(){
+RGB.style.color = "lightblue"
+}
+function azul(){
+RGB.style.color = "blue"
+}
+function roxo(){
+RGB.style.color = "purple"
+Rgb()
+}
+
+}
 
 //auto songs btnAll
 btnALL.addEventListener('mouseover', function() {

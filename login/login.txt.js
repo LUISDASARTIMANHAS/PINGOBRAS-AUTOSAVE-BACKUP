@@ -1,8 +1,10 @@
-  const buttonAutenticar = document.querySelector('#autenticador')
+  const buttonAutenticar = document.querySelector('#autenticador');
   const listaUserObj = localStorage.getItem("listaUser");
-  const finder = JSON.parse(listaUserObj)
-  const btnVerSenhaL = document.getElementById("verSenhaLogin")
-  const userscad8 = document.querySelector("#userCad8")
+  const finder = JSON.parse(listaUserObj);
+  const btnVerSenhaL = document.getElementById("verSenhaLogin");
+  const userscad8 = document.querySelector("#userCad8");
+  const labelUsers = document.getElementById("listaDeUsuarios");
+  let users = ""
   let sep = ","
   const STGlobalDBObj = [
 {"nomeCad": "PINGOBRAS S.A",
@@ -79,17 +81,33 @@
 },
 
 {
+ "nomeCad": "SEM NOME",
+ "userCad": "Batistagamer",
+ "senhaCad": "3271",
+ "saldoCad": 0,
+ "PerfilIMG": "https://cdn.discordapp.com/avatars/812030011128938576/d0f40cf142eb0f19a85f488223e1a3b2.webp?size=2048",
+ "Token":"192.168.100.9",
+ "UserBGCad":""
+},
+
+{
  "nomeCad": "AWAIT.......",
- "userCad": "AWAIT...",
+ "userCad": "New User",
  "senhaCad": "AWAIT...",
  "saldoCad": 1,
  "PerfilIMG": "",
  "Token":"192.168.100.1",
  "UserBGCad":""
 }
-  
 ];
-  
+//Mostra Os Usuarios Cadastrados
+for(let i = 0; i < STGlobalDBObj.length ; i++ ){
+  users += STGlobalDBObj[i].userCad + "<br>"
+console.log(STGlobalDBObj[i].userCad)
+}
+labelUsers.innerHTML = users
+
+
 function autenticar(){
   let senha = document.getElementById('senha')
   let usuario = document.getElementById('usuario')
@@ -124,7 +142,7 @@ function autenticar(){
 
   
   
-  if(!listaUser) {
+  if(!listaUser) {//verificando erros com o banco de dados
   console.log("Não e possivel logar não há usuarios cadastrados localmente!");   
 }else{
   if(listaUser == "null"|| listaUser == null){
@@ -133,10 +151,13 @@ function autenticar(){
     msgError.innerHTML = 'Não e possivel logar não há usuarios cadastrados localmente!'
     msgSuccess.setAttribute('style', 'display: none')
 }else{
-    listaUser.forEach((item) => {
+    listaUser.forEach((item) => {//procurando dados do usuario cadastrado 
     if(usuario.value == item.userCad && senha.value == item.senhaCad){
-      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}}
-  })}}
+     //definindo usuario logado
+      userValid = {nome: item.nomeCad,user: item.userCad,senha: item.senhaCad,saldo: item.saldoCad}
+    }})
+}
+}
   
   if(usuario.value == "" && senha.value == "") {
     msgError.setAttribute('style', 'display: block')

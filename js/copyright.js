@@ -18,7 +18,7 @@ footer.appendChild(newDireitos);
 direitos.classList.add("direitos")
 direitos.innerHTML = "<p class=copyright>"+ "Desenvolvedores:"+
 "<br>"+
-"©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano + navegadorLang+
+"©LUIS_DAS_ARTIMANHAS" + "&" + "DOUGLAS_PG 2010-" + ano +" "+ navegadorLang+
 "<br>"+
 "Todos os direitos reservados" +
 "<br>"+

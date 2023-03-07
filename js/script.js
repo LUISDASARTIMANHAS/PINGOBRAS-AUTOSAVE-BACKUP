@@ -1,12 +1,11 @@
 const loopScript = setInterval(refreshScript, 15000);
+const linkIP = document.querySelector("#linkIP");
 const factorioAlert = new Audio("https://cdn.glitch.global/fc6a494d-99b5-4c04-ab55-4c0f07bb3056/Som%20de%20alerta%20factorio.mp3?v=1669335545403")
 setTimeout(openPopupNews,10000);
 
 function refreshScript() {
 let STORAGE = localStorage.getItem("JSON STORAGE")
 let STDEVICE = JSON.parse(sessionStorage.getItem("LASTDEVICES") || '[]')
-const btndisabled = document.querySelector("[disabled]");
-const btndisabled2 = document.querySelector("[disabled2]");
 
 
 var check = false;
@@ -14,48 +13,21 @@ var check = false;
      
 if(check === true) {
 let body = document.querySelector("body")
-body.setAttribute('style', 'padding-top: 50% ')}
-  console.warn("LOG> Seu dispositivo: " +  navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName)
-let NewDevice = navigator.userAgent + " Utilizando: "+ navigator.appName +"." + navigator.appCodeName
-  STDEVICE.push(NewDevice)
-  
-const linkIP = document.querySelector("#linkIP");
+body.setAttribute('style', 'padding-top: 50% ')
+}
+
+
+
 linkIP.href = "http://" + linkIP.name
-  
-let block = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
-let user = navigator.userAgent
-if(user == block){
-window.location.href = "https://google.com"
-}
-
-if(!btndisabled){  
-console.warn("Deu Pau Nos Botões Desativados Do Site!")
-}else{
-btndisabled.addEventListener('click', function() {
- btndisabled.href = "https://pingobras-404.glitch.me"
- btndisabled.style.cursor = "progress"
- console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")});
-}
-if(!btndisabled2){
-console.warn("Deu Pau Nos Botões Desativados 2 Do Site!")
-}else{
-btndisabled2.addEventListener('click', function() {
- btndisabled2.href = "https://pingobras-404.glitch.me"
- btndisabled2.style.cursor = "progress"
- console.warn("MAIN/LOG> Usuario redirecionado para site fora do ar!")});
-}
-
   
   
 }//refresh scripts
 
 
 const ClickMouse = new Audio('https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/click%20do%20mouse.mp3?v=1661006466474');
-const button1 = document.querySelector("[button]");
-const button2 = document.querySelector("[click]");
-const button3 = document.querySelector("[click2]");
-const button4 = document.querySelector("a");
-
+const button1 = document.querySelectorAll("button");
+const buttonA = document.querySelectorAll("a");
+console.log(button1)
 
 function openPopupNews(){
 document.querySelector(".popup").style.display = "block";
@@ -65,26 +37,17 @@ console.log("LOG> ⚠️Anuncio carregado!");
 factorioAlert.play()}
 
 
-if (button1){
-  button1.onclick = function(){
-  console.log("click do mouse")
-  ClickMouse.play();}
+if (!buttonA){
+  console.info("Nenhum BTN link encontrado")
+}else{
+  
+    for (let i = 0; i < buttonA.length; i++) {
+      buttonA[i].onclick = function(){
+        console.log("click do mouse")
+        ClickMouse.play()}
+    }  
 }
-if (button2){
-  button2.onclick = function(){
-  console.log("click do mouse")
-  ClickMouse.play();}
-}
-if (button3){
-  button3.onclick = function(){
-  console.log("click do mouse")
-  ClickMouse.play();}
-}
-if (button4){
-  button4.onclick = function(){
-  console.log("click do mouse")
-  ClickMouse.play();}
-}
+
 
 let DBCLEAR = localStorage.getItem("GlobalDB")
 if(!DBCLEAR){

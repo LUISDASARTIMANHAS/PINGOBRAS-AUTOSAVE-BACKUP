@@ -12,7 +12,6 @@ scripts.innerHTML =
 "<script src=js/STORAGE.js defer></script>"+
 "<script src=js/functions.js defer></script>"+
 "<script src=js/network.js defer></script>"+
-"<script src=js/time.js defer></script>"+
 "<script src=js/worker.js defer></script>"+
 "<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>"+
 "<script src=https://pingobras.glitch.me/js/copyright.js defer></script>"
@@ -24,7 +23,6 @@ scripts.innerHTML =
 "<script src=js/STORAGE.js defer></script>"+
 "<script src=js/functions.js defer></script>"+
 "<script src=js/network.js defer></script>"+
-"<script src=js/time.js defer></script>"+
 "<script src=js/worker.js defer></script>"+
 "<script src=https://pingobras.glitch.me/cadastro/STORAGEcad.js defer></script>" 
 }//Fim do refresh Links

@@ -33,33 +33,215 @@
   --width: "largura";
   --white-space: "espaco em branco";
 }
-.btn-criptografar{
- border-radius:25px;
- overflow:hidden;
- background-color:purple;
- width:25%;
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
 }
-.btn-entrar{
-  background-color: purple;
-    border: 5px solid black;
-    padding: 10px;
-    width: 100%;
-    border-radius: 15px;
+.Ani-laminado{
+  animation: Ani-laminado 3s ease-in-out infinite;
+}
+
+/* 
+<button class="btn-laminado">
+Read More
+<div class="dot"></div>
+</button> 
+*/
+/* 11 */
+.btn-laminado {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
     color: white;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
 }
-.btn-entrar:hover{
-        background-image: linear-gradient(50deg, purple, blue);
-        cursor: pointer;
-        box-shadow: -8px 20px 20px gray;
-        transform: translateY(5px);
-        transition: all .5s ease-out;
-        }
-.btnvoltar{
+.btn-laminado:hover {
+    text-decoration: none;
+    color: white;
+  opacity: .7;
+}
+.btn-laminado:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    animation: Ani-laminado 3s ease-in-out infinite;
+}
+.btn-laminado:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+/*
+<button class=" btn-girada">
+<span>Click!</span>
+<span>Read More</span>
+</button>
+*/
+.btn-girada {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+  background: transparent;
+}
+.btn-girada span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-girada span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-girada span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-girada:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-girada:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+@keyframes Ani-laminado {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+button {
+  text-transform: capitalize;
+  font-size: 18px;
+  background-color: gray;
+  border-color: black;
+  border-width: 5px;
+  margin: 5px;
+  border-left-color: blue;
+  border-right-color: mediumpurple;
+}
+.btnFixedLeft {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10pt;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  opacity: 0.7;
+}
+.btnFixedLeft:hover {
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
+  opacity: 1;
+}
+.btnFixedRight {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10pt;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0.7;
+}
+.btnFixedRight:hover {
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 1s ease-out;
+  opacity: 1;
+}
+.btn-criptografar {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: purple;
+  width: 25%;
+}
+.btn-entrar {
+  background-color: purple;
+  border: 5px solid black;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.btn-entrar:hover {
+  background-image: linear-gradient(50deg, purple, blue);
+  cursor: pointer;
+  box-shadow: -8px 20px 20px gray;
+  transform: translateY(5px);
+  transition: all 0.5s ease-out;
+}
+.btnvoltar {
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -75,15 +257,14 @@
   color: white;
   text-decoration: none;
 }
-.btnvoltar:hover{
-        background-image: linear-gradient(50deg, blue, purple);
-        cursor: pointer;
-        transform: translateY(5px);
-        transition: all .5s ease-out;
+.btnvoltar:hover {
+  background-image: linear-gradient(50deg, blue, purple);
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: all 0.5s ease-out;
 }
 
-
-.btnReload{
+.btnReload {
   height: 45px;
   position: absolute;
   background: black;
@@ -94,20 +275,20 @@
   top: 0;
   border-radius: 50%;
 }
-.btnReload:hover { 
+.btnReload:hover {
   background: green;
   background-repeat: no repeat;
   cursor: pointer;
-  transform: translateY(5px);    
+  transform: translateY(5px);
   transition: all 1s ease-out;
 }
 
-.btnList:hover{
+.btnList:hover {
   cursor: help;
   box-shadow: -8px 20px 20px gray;
   color: gold;
 }
-.btn-enviar-autentication{
+.btn-enviar-autentication {
   background-color: red;
   color: black;
   padding: 10px;
@@ -115,17 +296,17 @@
   width: 75%;
   margin-top: 20px;
 }
-.btn-enviar-autentication:hover{
+.btn-enviar-autentication:hover {
   background: green;
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   color: gold;
   transform: translateY(5px);
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   opacity: 0.8;
 }
 
-.btn-cancel-msm{
+.btn-cancel-msm {
   color: white;
   padding: 16px 20px;
   border: 5px solid black;
@@ -133,22 +314,22 @@
   width: 100%;
   background-color: red;
 }
-.btn-cancel-msm:hover{
+.btn-cancel-msm:hover {
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   color: gold;
   transform: translateY(5px);
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   opacity: 0.8;
 }
 
-.btnlogin {
+.btnLogin {
   background-color: blue;
   padding: var(--btn-tamanho);
   cursor: pointer;
   justify-content: center;
 }
-.btnlogin:hover {
+.btnLogin:hover {
   background-image: linear-gradient(45deg, blue, green);
 }
 
@@ -175,7 +356,6 @@
   display: flex;
   color: white;
   text-decoration: none;
-  
 }
 .btn-cadastrar:hover {
   background-image: linear-gradient(45deg, purple, green);
@@ -188,20 +368,20 @@
 .btn-pages:hover {
   background-image: linear-gradient(45deg, green, blue);
 }
- .btn-danger{
-        background-color: red;
-        border: 5px solid black;
-        padding: 7px;
-        width: 100%;
-        border-radius: 15px;
-        color: white;
-        font-size: 15px;
-        margin-top: 10px;
-        justify-content: center;
-        transform: translateY(5px);
+.btn-danger {
+  background-color: red;
+  border: 5px solid black;
+  padding: 7px;
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  justify-content: center;
+  transform: translateY(5px);
 }
 
-.btn-subir{
+.btn-subir {
   font-size: 15px;
   border: 5px solid black;
   background-color: gray;
@@ -214,14 +394,14 @@
   color: white;
   cursor: zoom-in;
 }
-.btn-subir:hover{
+.btn-subir:hover {
   background-image: linear-gradient(45deg, gray, green);
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
   transition: all 1s ease-out;
 }
 
-.btn-descer{
+.btn-descer {
   font-size: 15px;
   border: 5px solid black;
   font-weight: bold;
@@ -233,7 +413,7 @@
   opacity: 0.6;
   cursor: zoom-out;
 }
-.btn-descer:hover{
+.btn-descer:hover {
   background-image: linear-gradient(45deg, purple, green);
   box-shadow: -8px 20px 20px gray;
   transform: translateY(5px);
@@ -241,15 +421,18 @@
   opacity: 1;
 }
 
-.btn-disabled, button[disabled], [disabled], fieldset[disabled] .disabled{
- cursor: not-allowed;
- filter: alpha(opacity=65);
- -webkit-box-shadow: none;
+.btn-disabled,
+button[disabled],
+[disabled],
+fieldset[disabled] .disabled {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
   box-shadow: none;
-  opacity: .65;
+  opacity: 0.65;
 }
 
-.btn{
+.btn {
   font-size: 15px;
   border: 5px solid black;
   font-weight: bold;
@@ -264,7 +447,7 @@
   justify-content: center;
   color: white;
 }
-.btn:hover{
+.btn:hover {
   width: 65%;
   padding: 5pt;
   box-shadow: -8px 20px 20px gray;
@@ -272,45 +455,44 @@
   transition: all 1s ease-out;
 }
 
-
-.btn-votacao-footer{
+.btn-votacao-footer {
   background-color: gray;
-  border: 3px solid black ;
+  border: 3px solid black;
   padding: var(--btn-tamanho);
   font-weight: bold;
   font-size: 15px;
   justify-content: center;
   width: 35%;
 }
-.btn-votacao-footer:hover{
+.btn-votacao-footer:hover {
   cursor: pointer;
   box-shadow: -8px 20px 20px gray;
   color: gold;
 }
 
-.btnDeslogar{
- float:right;
- cursor:pointer;
- margin: 3px;
+.btnDeslogar {
+  float: right;
+  cursor: pointer;
+  margin: 3px;
 }
-.btnDeslogar:hover{
+.btnDeslogar:hover {
   opacity: 0.5;
 }
-.btnMostrarSenha{
- float:right;
- cursor:pointer;
- margin: 3px;
- width: auto;
+.btnMostrarSenha {
+  float: right;
+  cursor: pointer;
+  margin: 3px;
+  width: auto;
 }
-.btnMostrarSenha:hover{
+.btnMostrarSenha:hover {
   opacity: 0.5;
 }
-.btnEdu{
+.btnEdu {
   background-color: blue;
   padding: var(--btn-tamanho);
   font-weight: bold;
 }
-.btnEdu:hover{
+.btnEdu:hover {
   background-image: linear-gradient(45deg, blue, green);
   width: 65%;
   padding: 5pt;
@@ -319,9 +501,20 @@
   transform: translateY(5px);
   transition: all 1s ease-out;
 }
-.eduIcon{
+.eduIcon {
   height: 50px;
   align-items: left;
   text-align: left;
   margin: 5px;
+}
+.btnChat {
+  background: green;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 7px 5px;
+  width: 75%;
+  border: 2px solid black;
+  margin: 5px;
+  border-radius: 25px;
 }

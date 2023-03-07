@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Refresh" content="120">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <link rel="icon" href="https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/PINGOBRAS icon.png?v=1665177105635" />
+    <links></links>
+    
+  <title>PINGOBRAS IP STATUS</title>
+  </head>  
+  <body>
+    <div class="site-altura">
+      <div class="conteudo" role="main">
+           
+        <tela style="display:inline;">
+       <js id="demo">Sem informações Analogicas</js>
+       <br>
+       <p style="display:inline;">Cidade: </p><js id="city">Sem informações</js>
+       <br>
+       <p style="display:inline;">Pais: </p><js id="pais">Sem informações</js>
+       <br>
+       <p style="display:inline;">Região: </p><js id="regiao">Sem informações</js>
+       <br> 
+       <p style="display:inline;">Fuso Horario: </p><js id="timezone">Sem informações</js>
+       <br>
+       <p style="display:inline;">Provedor IP: </p><js id="IP">Sem informações</js>
+       <br>
+       <p style="display:inline;">Host/Getaway IP: </p><js id="HostIP">Sem informações</js>
+       <br>
+       <p style="display:inline;">Fornecedor de acesso à internet: </p><js id="ISP">Sem informações</js>
+       <br>
+       <p style="display:inline;">localização: </p><js id="location">Sem informações</js>
+       <br> 
+       <p style="display:inline;">Codigo Postal: </p><js id="postal">Sem informações</js> 
+      </tela>
+
+        
+        <footer>
+        <div class="links"></div>
+    
+          <div id="direitos" class="direitos">Loading...</div>
+            </footer>
+       
+</div> </div>
+</body>
+
+  <scripts>
+    <script src="/js/links.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>  
+    </scripts>
+  <api>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    async function getIpClient() {
+  try {
+    const response = await axios.get('https://ipinfo.io/json');
+    document.getElementById("city").innerHTML = response.data.city;
+    document.getElementById("pais").innerHTML = response.data.country;
+    document.getElementById("regiao").innerHTML = response.data.region;
+    document.getElementById("timezone").innerHTML = response.data.timezone;
+    document.getElementById("location").innerHTML = response.data.loc
+    document.getElementById("IP").innerHTML = response.data.ip
+    document.getElementById("HostIP").innerHTML = response.data.hostname
+    document.getElementById("postal").innerHTML = response.data.postal
+    document.getElementById("ISP").innerHTML = response.data.org
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getIpClient();
+</script>    
+  </api>
+    <host>
+    <script src="https://pingobras-sistema.glitch.me/bot.js" defer></script>  
+    <script src="https://pinguinho-host.glitch.me/bot.js" defer></script>
+    <script src="https://satelite-bot-host.glitch.me/bot.js" defer></script>
+    </host>
+</html>

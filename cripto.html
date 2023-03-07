@@ -10,22 +10,32 @@
       <div class="conteudo" role="main">
     
         <tela>
+          <p class="title-crypto">Canal de conversa</p>
+          <p vermelho>E recomendável usar o canal 1 pois os canais mais adiante estão em desenvolvimendo e podem não funcionar!</p>
+          <input class="input-numero"
+                 type="number"
+                 id="channel"
+                 min="1"
+                 max="9"
+                 value="1" 
+                 required>
+          
+          <br>
+          
+        <p class="title-crypto">Mensagem</p>  
         <input class="input"
                type="text"
                id="msmASerCripto"
                value="Teste"
-               placeholder="Mensagem A Ser Criptografada" required>
+               placeholder="Mensagem A Ser Criptografada" 
+               required>
          
         <div style="font-size: 20px;">Mensagem Ciptografada: <js id="msmCripto">NDA</js></div> 
         <button onclick="copyCripto()">Copie Aqui!</button>
           
           <br>
           
-          <p style="font-style:italic;
-                    text-transform:uppercase;
-                    text-shadow:rgb(255, 255, 255) 1px 1px 0px, rgb(170, 170, 170) 2px 2px 0px;
-                    font-weight:600;
-                    font-size:20px;">Descriptografar</p>
+          <p class="title-crypto">Descriptografar</p>
           <input
                style=" background-color:gray;"
                class="input"
@@ -33,7 +43,13 @@
                id="msmASerDescripto"
                value="1y49x1y4"
                placeholder="Mensagem A Ser Descriptografada" required>
-          <div style="font-size: 20px;">Mensagem Descriptografada: <js id="msmDescripto">NDA</js></div>
+          <div style="font-size: 20px;
+                      white-space:break-spaces;">
+            Mensagem Descriptografada: 
+            <br>
+            <js id="msmDescripto">NDA</js>
+          
+          </div>
         </tela>
         
     </div></div>

@@ -1,0 +1,20 @@
+.labelVlCode {
+  font-weight:600;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 22px;
+  margin: 10px;
+}
+
+vlcode {
+  background-color: gray;
+  width: 75%;
+  text-align: center;
+  border-width: 5px;
+  border-top-color: red;
+  border-right-color: yellow;
+  border-style: solid;
+  border-bottom-color: white;
+  border-left-color: green;
+  padding: 10px;
+}

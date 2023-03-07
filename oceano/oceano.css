@@ -1,0 +1,11 @@
+:root{
+  
+  --oceanoIMG: url(https://cdn.glitch.global/b39d6a4a-0e14-4b41-930d-29d3ccd6c137/sea-1547609_1280.jpg?v=1678069888364)
+}
+
+
+body{
+  background: var(--oceanoIMG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

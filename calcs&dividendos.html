@@ -11,7 +11,7 @@
     <seo>
     <meta
       name="description"
-      content="Calcular juros para pegar emprestimos e Ver quem ja esta devendo alem de ver o!"/>
+      content="Calcular juros para pegar emprestimos e Ver quem ja esta devendo alem de ver os status de sua divida!!"/>
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="PINGOBRAS Calculos E Dividendos" />
     <meta property="og:type" content="article" />
@@ -33,14 +33,6 @@
 
      <tela>
        <h1>Calculadora E Dividendos</h1>
-       <script type="text/javascript" 
-                  src="https://usuariosonline.s12.com.br/uo-b7aay0C7Z27zdAd1-52-1.js">
-          </script>
-          <br>
-          <img 
-               src="https://usuariosonline.s12.com.br/selo/selo-uo.gif" 
-               alt="usuários on-line" 
-               border="0">
        
        <telacalc>
        <h1>Calcular juros da Pingobras</h1>
@@ -73,7 +65,7 @@
        
        <br>
        
-       <telasearch id="telasearch">
+       <telasearch hidden id="telasearch">
          <p>Buscar Dados de Dividendos</p>
          
          <input id="inputbuscar" class="buscar" 
@@ -90,10 +82,11 @@
         <li class="dividendos">
           <img title="Valdo Foto De Perfil"
                alt="erro ao carregar foto de Valdo"
-               class ="tumb-dividendos" 
-               src="https://cdn.discordapp.com/avatars/549210957549797419/a430a6377200d11f83900571daa551fb.webp?size=2048" />
+               class ="tumb-dividendos"
+               src="https://cdn.discordapp.com/avatars/549210957549797419/a430a6377200d11f83900571daa551fb.webp?size=2048" 
+/>
           <p>Nome: Valdo</p>
-          <p>Devendo: </p><js>145,00</js>
+          <p>Devendo: </p><js>128,00</js>
           <p>Emitido: 14/09/22</p>
           <p>Data de Pagamento: 01/01/2022</p>
           <p inline>Codigo Licenciado:</p><cod>08244891793</cod>
@@ -268,17 +261,16 @@
     <div class="msg-error-hour">
       <p>O Site está fechado apartir das<js horaselect>Sem horario definifo</js></p><p>Volte amanha!</p><p><time horario timer>horario</time></p>
     </div>
-    <script>
-    document.write(1)
-    </script>
+
     
 </body>
+  <scripts> 
+    <script src="./calcs&dividendos.js" defer></script>
     <script src="js/links.js" defer></script>
-    <script src="js/STORAGE.js" defer></script>
-    <script src="js/autentication.js" defer></script>
     <script src="js/calcs.js" defer></script>
     <script src="js/functions.js" defer></script>
-    <script src="https://pingobras.glitch.me/js/copyright.js" defer></script>
+    <script src="./js/copyright.js" defer></script>
+  </scripts>
     
   
 <script>

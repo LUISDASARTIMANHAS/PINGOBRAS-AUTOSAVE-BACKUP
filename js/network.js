@@ -7,13 +7,13 @@ var KB = "998"
 var MB = "616";
 var GB = "5";
 var Size = GB+MB+KB
-let downloadImgSrc = new Image();           
+let downloadImgSrc = new Image()          
+downloadImgSrc.src = userImageLink;
 const time_start = new Date().getTime();
-  
   
   console.log("TAMANHO DO DOWLOAD: " + GB+"." + MB + "GB/SizeCalc:" + Size)   
   downloadImgSrc.onload = function () {end_time = new Date().getTime();displaySpeed();};
-  downloadImgSrc.src = userImageLink;
+  
   
 function displaySpeed() {                
   var timeseconds = (end_time - time_start)/1024
